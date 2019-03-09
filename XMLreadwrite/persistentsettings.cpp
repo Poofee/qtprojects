@@ -235,11 +235,11 @@ bool ParseContext::handleEndElement(const QStringRef &name)
 {
     const Element e = element(name);
     if (ParseContext::isValueElement(e)) {
-        if(!m_valueStack.isEmpty())
+        if(m_valueStack.isEmpty())
             return true;
         const ParseValueStackEntry top = m_valueStack.pop();
         if (m_valueStack.isEmpty()) { // Last element? -> Done with that variable.
-            if(!m_currentVariableName.isEmpty())
+            if(m_currentVariableName.isEmpty())
                 return true;
             m_result.insert(m_currentVariableName, top.value());
             m_currentVariableName.clear();
@@ -285,7 +285,7 @@ QVariant ParseContext::readSimpleValue(QXmlStreamReader &r, const QXmlStreamAttr
     const QStringRef type = attributes.value(typeAttribute);
     const QString text = r.readElementText();
     if (type == QLatin1String("QChar")) { // Workaround: QTBUG-12345
-        if(text.size() == 1)
+        if(!(text.size() == 1))
             return QVariant();
         return QVariant(QChar(text.at(0)));
     }
@@ -302,19 +302,19 @@ QVariant ParseContext::readSimpleValue(QXmlStreamReader &r, const QXmlStreamAttr
  * @brief 从XML文件当中读取自定义嵌套数据结构QVariantMap。
  *
  */
-//PersistentSettingsReader::PersistentSettingsReader() = default;
+PersistentSettingsReader::PersistentSettingsReader() = default;
 
-//QVariant PersistentSettingsReader::restoreValue(const QString &variable, const QVariant &defaultValue) const
-//{
-//    if (m_valueMap.contains(variable))
-//        return m_valueMap.value(variable);
-//    return defaultValue;
-//}
+QVariant PersistentSettingsReader::restoreValue(const QString &variable, const QVariant &defaultValue) const
+{
+    if (m_valueMap.contains(variable))
+        return m_valueMap.value(variable);
+    return defaultValue;
+}
 
-//QVariantMap PersistentSettingsReader::restoreValues() const
-//{
-//    return m_valueMap;
-//}
+QVariantMap PersistentSettingsReader::restoreValues() const
+{
+    return m_valueMap;
+}
 
 
 /**
@@ -323,18 +323,18 @@ QVariant ParseContext::readSimpleValue(QXmlStreamReader &r, const QXmlStreamAttr
  * @param fileName
  * @return bool
  */
-//bool PersistentSettingsReader::load(const QString &fileName)
-//{
-//    m_valueMap.clear();
+bool PersistentSettingsReader::load(const QString &fileName)
+{
+    m_valueMap.clear();
 
-//    QFile file(fileName);
-//    if (!file.open(QIODevice::ReadOnly|QIODevice::Text))
-//        return false;
-//    ParseContext ctx;
-//    m_valueMap = ctx.parse(file);
-//    file.close();
-//    return true;
-//}
+    QFile file(fileName);
+    if (!file.open(QIODevice::ReadOnly|QIODevice::Text))
+        return false;
+    ParseContext ctx;
+    m_valueMap = ctx.parse(file);
+    file.close();
+    return true;
+}
 
 //static void writeVariantValue(QXmlStreamWriter &w, const Context &ctx,
 //                              const QVariant &variant, const QString &key = QString())
