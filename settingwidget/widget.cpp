@@ -28,7 +28,7 @@ Widget::Widget(QWidget *parent)
 
     icon = QIcon(":/icon/graph_64.144144144144px_1194479_easyicon.net.png");
     title = "Custom";
-    page = new generalPage();
+    page = new customPage();
     settingPages->insertTab(++index,page,icon,title);
 
     icon = QIcon(":/icon/terminal_64px_1188177_easyicon.net.png");

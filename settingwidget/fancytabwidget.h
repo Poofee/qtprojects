@@ -109,7 +109,7 @@ public:
     void insertTab(int index, QWidget *tab, const QIcon &icon, const QString &label);
     void removeTab(int index);
 
-//    void paintEvent(QPaintEvent *event) override;
+    void paintEvent(QPaintEvent *event) override;
 
     int currentIndex() const;
 
@@ -131,6 +131,7 @@ private:
 private:
     FancyTabBar *m_tabbar;
     QStackedLayout *m_pages;
+    QWidget *background;
 
 };
 

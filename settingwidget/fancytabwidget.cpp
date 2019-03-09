@@ -356,17 +356,25 @@ QSize FancyTabBar::tabSizeHint(bool minimum) const
 //
 //
 //////////////////////////////////////////
-FancyTabWidget::FancyTabWidget(QWidget *parent) : QWidget(parent)
+FancyTabWidget::FancyTabWidget(QWidget *parent)
+    : QWidget(parent)
+    ,background(new QWidget())
 {
+    QPalette pal(background->palette());
 
-    QWidget *back = new QWidget();
-    QPalette pal(back->palette());
+//    painter.setRenderHint(QPainter::Antialiasing, true);
+    QLinearGradient linearGradient(0,0,0,64);
+    linearGradient.setColorAt(0, Qt::white);
+    linearGradient.setColorAt(0.25, QColor(200,200,200));
+    linearGradient.setColorAt(0.5, QColor(160,160,160));
+    linearGradient.setColorAt(0.75, QColor(200,200,200));
+    linearGradient.setColorAt(1.0, Qt::white);
+//    painter.setBrush(QBrush(linearGradient));
+//    painter.drawEllipse(50, 50, 200, 150);
 
-
-
-    pal.setColor(QPalette::Background, QColor(212, 210, 213,150)); //设置背景黑色
-    back->setAutoFillBackground(true);
-    back->setPalette(pal);
+    pal.setBrush(QPalette::Background, QBrush(linearGradient));
+    background->setAutoFillBackground(true);
+    background->setPalette(pal);
 
     m_tabbar = new FancyTabBar(this);
 
@@ -379,7 +387,7 @@ FancyTabWidget::FancyTabWidget(QWidget *parent) : QWidget(parent)
     tabbarLayout->addWidget(m_tabbar);
     tabbarLayout->addStretch(1);
 
-    back->setLayout(tabbarLayout);
+    background->setLayout(tabbarLayout);
 
     m_pages = new QStackedLayout;
 
@@ -387,7 +395,7 @@ FancyTabWidget::FancyTabWidget(QWidget *parent) : QWidget(parent)
 
     mainLayout->setMargin(0);
     mainLayout->setSpacing(0);
-    mainLayout->addWidget(back);
+    mainLayout->addWidget(background);
     mainLayout->addLayout(m_pages);
 
     this->setLayout(mainLayout);
@@ -405,6 +413,11 @@ void FancyTabWidget::removeTab(int index)
 {
     m_pages->removeWidget(m_pages->widget(index));
     m_tabbar->removeTab(index);
+}
+
+void FancyTabWidget::paintEvent(QPaintEvent *event)
+{
+
 }
 
 //void FancyTabWidget::paintEvent(QPaintEvent *event)

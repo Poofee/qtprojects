@@ -8,3 +8,6 @@
 *.pdb
 *.ilk
 *.db
+*.stash
+/build-settingwidget-unknown-Debug/*.Debug
+*.Release
