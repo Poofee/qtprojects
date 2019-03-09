@@ -27,12 +27,12 @@ CONFIG += c++11
 SOURCES += \
         persistentsettings.cpp \
         main.cpp \
-        widget.cpp \
+        widget.cpp
 
 
 HEADERS += \
         persistentsettings.h \
-        widget.h \
+        widget.h
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

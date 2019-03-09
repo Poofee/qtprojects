@@ -336,52 +336,52 @@ bool PersistentSettingsReader::load(const QString &fileName)
     return true;
 }
 
-//static void writeVariantValue(QXmlStreamWriter &w, const Context &ctx,
-//                              const QVariant &variant, const QString &key = QString())
-//{
-//    switch (static_cast<int>(variant.type())) {
-//    case static_cast<int>(QVariant::StringList):
-//    case static_cast<int>(QVariant::List):
-//        w.writeStartElement(ctx.valueListElement);
-//        w.writeAttribute(ctx.typeAttribute, QLatin1String(QVariant::typeToName(QVariant::List)));
-//        if (!key.isEmpty())
-//            w.writeAttribute(ctx.keyAttribute, key);
-//        foreach (const QVariant &var, variant.toList())
-//            writeVariantValue(w, ctx, var);
-//        w.writeEndElement();
-//        break;
-//    case static_cast<int>(QVariant::Map): {
-//        w.writeStartElement(ctx.valueMapElement);
-//        w.writeAttribute(ctx.typeAttribute, QLatin1String(QVariant::typeToName(QVariant::Map)));
-//        if (!key.isEmpty())
-//            w.writeAttribute(ctx.keyAttribute, key);
-//        const QVariantMap varMap = variant.toMap();
-//        const QVariantMap::const_iterator cend = varMap.constEnd();
-//        for (QVariantMap::const_iterator i = varMap.constBegin(); i != cend; ++i)
-//            writeVariantValue(w, ctx, i.value(), i.key());
-//        w.writeEndElement();
-//    }
-//        break;
-//    case static_cast<int>(QMetaType::QObjectStar): // ignore QObjects!
-//    case static_cast<int>(QMetaType::VoidStar): // ignore void pointers!
-//        break;
-//    default:
-//        w.writeStartElement(ctx.valueElement);
-//        w.writeAttribute(ctx.typeAttribute, QLatin1String(variant.typeName()));
-//        if (!key.isEmpty())
-//            w.writeAttribute(ctx.keyAttribute, key);
-//        switch (variant.type()) {
-//        case QVariant::Rect:
-//            w.writeCharacters(rectangleToString(variant.toRect()));
-//            break;
-//        default:
-//            w.writeCharacters(variant.toString());
-//            break;
-//        }
-//        w.writeEndElement();
-//        break;
-//    }
-//}
+static void writeVariantValue(QXmlStreamWriter &w, const Context &ctx,
+                              const QVariant &variant, const QString &key = QString())
+{
+    switch (static_cast<int>(variant.type())) {
+    case static_cast<int>(QVariant::StringList):
+    case static_cast<int>(QVariant::List):
+        w.writeStartElement(ctx.valueListElement);
+        w.writeAttribute(ctx.typeAttribute, QLatin1String(QVariant::typeToName(QVariant::List)));
+        if (!key.isEmpty())
+            w.writeAttribute(ctx.keyAttribute, key);
+        foreach (const QVariant &var, variant.toList())
+            writeVariantValue(w, ctx, var);
+        w.writeEndElement();
+        break;
+    case static_cast<int>(QVariant::Map): {
+        w.writeStartElement(ctx.valueMapElement);
+        w.writeAttribute(ctx.typeAttribute, QLatin1String(QVariant::typeToName(QVariant::Map)));
+        if (!key.isEmpty())
+            w.writeAttribute(ctx.keyAttribute, key);
+        const QVariantMap varMap = variant.toMap();
+        const QVariantMap::const_iterator cend = varMap.constEnd();
+        for (QVariantMap::const_iterator i = varMap.constBegin(); i != cend; ++i)
+            writeVariantValue(w, ctx, i.value(), i.key());
+        w.writeEndElement();
+    }
+        break;
+    case static_cast<int>(QMetaType::QObjectStar): // ignore QObjects!
+    case static_cast<int>(QMetaType::VoidStar): // ignore void pointers!
+        break;
+    default:
+        w.writeStartElement(ctx.valueElement);
+        w.writeAttribute(ctx.typeAttribute, QLatin1String(variant.typeName()));
+        if (!key.isEmpty())
+            w.writeAttribute(ctx.keyAttribute, key);
+        switch (variant.type()) {
+        case QVariant::Rect:
+            w.writeCharacters(rectangleToString(variant.toRect()));
+            break;
+        default:
+            w.writeCharacters(variant.toString());
+            break;
+        }
+        w.writeEndElement();
+        break;
+    }
+}
 
 
 /**
@@ -390,71 +390,78 @@ bool PersistentSettingsReader::load(const QString &fileName)
  * @param fileName
  * @param docType
  */
-//PersistentSettingsWriter::PersistentSettingsWriter(const QString &fileName, const QString &docType)
-//    : m_fileName(fileName)
-//    , m_docType(docType)
-//{
+PersistentSettingsWriter::PersistentSettingsWriter(const QString &fileName, const QString &docType)
+    : m_fileName(fileName)
+    , m_docType(docType)
+{
 
-//}
+}
 
-//PersistentSettingsWriter::~PersistentSettingsWriter()
-//{
-//    write(m_savedData, nullptr);
-//}
+PersistentSettingsWriter::~PersistentSettingsWriter()
+{
+    write(m_savedData, nullptr);
+}
 
-//bool PersistentSettingsWriter::save(const QVariantMap &data, QString *errorString) const
-//{
-//    if (data == m_savedData)
-//        return true;
-//    return write(data, errorString);
-//}
+bool PersistentSettingsWriter::save(const QVariantMap &data, QString *errorString) const
+{
+    if (data == m_savedData)
+        return true;
+    return write(data, errorString);
+}
 
-//QString PersistentSettingsWriter::fileName() const
-//{
-//    return m_fileName;
-//}
+QString PersistentSettingsWriter::fileName() const
+{
+    return m_fileName;
+}
 
-//** * @brief Set contents of file (e.g. from data read from it). */
-//void PersistentSettingsWriter::setContents(const QVariantMap &data)
-//{
-//    m_savedData = data;
-//}
+/** * @brief Set contents of file (e.g. from data read from it). */
+void PersistentSettingsWriter::setContents(const QVariantMap &data)
+{
+    m_savedData = data;
+}
 
-//bool PersistentSettingsWriter::write(const QVariantMap &data, QString *errorString) const
-//{
-//    QDir tmp;
-//    tmp.mkpath(m_fileName.toFileInfo().path());
-//    FileSaver saver(m_fileName.toString(), QIODevice::Text);
-//    if (!saver.hasError()) {
-//        const Context ctx;
-//        QXmlStreamWriter w(saver.file());
-//        w.setAutoFormatting(true);
-//        w.setAutoFormattingIndent(1); // Historical, used to be QDom.
-//        w.writeStartDocument();
-//        w.writeDTD(QLatin1String("<!DOCTYPE ") + m_docType + QLatin1Char('>'));
-//        w.writeComment(QString::fromLatin1(" Written by %1 %2, %3. ").
-//                       arg(QCoreApplication::applicationName(),
-//                           QCoreApplication::applicationVersion(),
-//                           QDateTime::currentDateTime().toString(Qt::ISODate)));
-//        w.writeStartElement(ctx.materialListElement);
-//        const QVariantMap::const_iterator cend = data.constEnd();
-//        for (QVariantMap::const_iterator it =  data.constBegin(); it != cend; ++it) {
-//            w.writeStartElement(ctx.dataElement);
-//            w.writeTextElement(ctx.variableElement, it.key());
-//            writeVariantValue(w, ctx, it.value());
-//            w.writeEndElement();
-//        }
-//        w.writeEndDocument();
+bool PersistentSettingsWriter::write(const QVariantMap &data, QString *errorString) const
+{
+    QDir tmp;
+    tmp.mkpath(QFileInfo(m_fileName).path());
+
+    QFile *saver = new QFile{m_fileName};
+    if (!saver->open(QIODevice::WriteOnly | QIODevice::Text)) {
+        QString err = QFile::exists(m_fileName) ?
+                QObject::tr("Cannot overwrite file %1: %2") : QObject::tr("Cannot create file %1: %2");
+        qDebug()<<err.arg(QDir::toNativeSeparators(m_fileName), saver->errorString());;
+        return false;
+    }else{
+        const Context ctx;
+        QXmlStreamWriter w(saver);
+        w.setAutoFormatting(true);
+        w.setAutoFormattingIndent(1); // Historical, used to be QDom.
+        w.writeStartDocument();
+        w.writeDTD(QLatin1String("<!DOCTYPE ") + m_docType + QLatin1Char('>'));
+        w.writeComment(QString::fromLatin1(" Written by %1 %2, %3. ").
+                       arg(QCoreApplication::applicationName(),
+                           QCoreApplication::applicationVersion(),
+                           QDateTime::currentDateTime().toString(Qt::ISODate)));
+        w.writeStartElement(ctx.materialListElement);
+        const QVariantMap::const_iterator cend = data.constEnd();
+        for (QVariantMap::const_iterator it =  data.constBegin(); it != cend; ++it) {
+            w.writeStartElement(ctx.dataElement);
+            w.writeTextElement(ctx.variableElement, it.key());
+            writeVariantValue(w, ctx, it.value());
+            w.writeEndElement();
+        }
+        w.writeEndDocument();
 
 //        saver.setResult(&w);
-//    }
-//    bool ok = saver.finalize();
-//    if (ok) {
-//        m_savedData = data;
-//    } else if (errorString) {
-//        m_savedData.clear();
-//        *errorString = saver.errorString();
-//    }
+    }
+    bool ok = true;
+    saver->close();
+    if (ok) {
+        m_savedData = data;
+    } else if (errorString) {
+        m_savedData.clear();
+        *errorString = saver->errorString();
+    }
 
-//    return ok;
-//}
+    return ok;
+}

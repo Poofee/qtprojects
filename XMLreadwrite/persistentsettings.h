@@ -14,24 +14,24 @@ private:
     QMap<QString, QVariant> m_valueMap;
 };
 
-//class PersistentSettingsWriter
-//{
-//public:
-//    PersistentSettingsWriter(const QString &fileName, const QString &docType);
-//    ~PersistentSettingsWriter();
+class PersistentSettingsWriter
+{
+public:
+    PersistentSettingsWriter(const QString &fileName, const QString &docType);
+    ~PersistentSettingsWriter();
 
-//    bool save(const QVariantMap &data, QString *errorString) const;
+    bool save(const QVariantMap &data, QString *errorString) const;
 
-//    QString fileName() const;
+    QString fileName() const;
 
-//    void setContents(const QVariantMap &data);
+    void setContents(const QVariantMap &data);
 
-//private:
-//    bool write(const QVariantMap &data, QString *errorString) const;
+private:
+    bool write(const QVariantMap &data, QString *errorString) const;
 
-//    const QString m_fileName;
-//    const QString m_docType;
-//    mutable QMap<QString, QVariant> m_savedData;
-//};
+    const QString m_fileName;
+    const QString m_docType;
+    mutable QMap<QString, QVariant> m_savedData;
+};
 
 #endif // PERSISTENTSETTINGS_H
