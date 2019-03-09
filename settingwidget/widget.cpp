@@ -44,6 +44,7 @@ Widget::Widget(QWidget *parent)
     QHBoxLayout *hbox = new QHBoxLayout;
 
     hbox->addWidget(settingPages);
+    hbox->setContentsMargins(0,0,0,0);
 
     setLayout(hbox);
 }

@@ -32,6 +32,7 @@ FancyTabBar::FancyTabBar(QWidget *parent)
 void FancyTabBar::paintEvent(QPaintEvent *e)
 {
     qDebug()<<Q_FUNC_INFO;
+
     QPainter painter(this);
 
     for(int i = 0; i < count();++i)
@@ -235,7 +236,7 @@ void FancyTabBar::paintTab(QPainter *painter, int index) const
     const bool enabled = isTabEnabled(index);
     /** 绘制选中的背景 **/
     if(selected){
-        painter->fillRect(rect, QBrush(QColor(195, 193, 196,128)));
+        painter->fillRect(rect, QBrush(QColor(195, 193, 196,200)));
     }
 
     if(m_iconsOnly){
@@ -300,6 +301,9 @@ void FancyTabBar::setIconsOnly(bool iconOnly)
     m_iconsOnly = iconOnly;
 }
 
+/**sizeHint在未被重载的情况下，如果该窗口部件属于某个布局管理器，
+那么返回的值为QT为这个部件推荐的尺寸。如果不属于任何布局管理器的
+时候返回无效的值**/
 QSize FancyTabBar::sizeHint() const
 {
     const QSize sh = tabSizeHint();
@@ -354,6 +358,16 @@ QSize FancyTabBar::tabSizeHint(bool minimum) const
 //////////////////////////////////////////
 FancyTabWidget::FancyTabWidget(QWidget *parent) : QWidget(parent)
 {
+
+    QWidget *back = new QWidget();
+    QPalette pal(back->palette());
+
+
+
+    pal.setColor(QPalette::Background, QColor(212, 210, 213,150)); //设置背景黑色
+    back->setAutoFillBackground(true);
+    back->setPalette(pal);
+
     m_tabbar = new FancyTabBar(this);
 
     /** 顶部栏的水平布局 **/
@@ -365,13 +379,15 @@ FancyTabWidget::FancyTabWidget(QWidget *parent) : QWidget(parent)
     tabbarLayout->addWidget(m_tabbar);
     tabbarLayout->addStretch(1);
 
+    back->setLayout(tabbarLayout);
+
     m_pages = new QStackedLayout;
 
     QVBoxLayout *mainLayout = new QVBoxLayout;
 
     mainLayout->setMargin(0);
-    mainLayout->setSpacing(1);
-    mainLayout->addLayout(tabbarLayout);
+    mainLayout->setSpacing(0);
+    mainLayout->addWidget(back);
     mainLayout->addLayout(m_pages);
 
     this->setLayout(mainLayout);
