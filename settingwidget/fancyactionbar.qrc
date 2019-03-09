@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/fancyactionbar"/>
+    <qresource prefix="/">
+        <file>icon/fork_64.205457463884px_1217079_easyicon.net.png</file>
+        <file>icon/git_logo_media_social_64px_1212972_easyicon.net.png</file>
+        <file>icon/graph_64.144144144144px_1194479_easyicon.net.png</file>
+        <file>icon/terminal_64px_1188177_easyicon.net.png</file>
+        <file>icon/update_64.467153284672px_1143807_easyicon.net.png</file>
+    </qresource>
+</RCC>
