@@ -12,27 +12,29 @@
 
 
 FancyTabBar::FancyTabBar(QWidget *parent)
-    :QWidget(parent)
+    : QWidget(parent)
 {
-//    setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Preferred);
+    setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
 //    setAttribute(Qt::WA_OpaquePaintEvent, true);
 //    setFocusPolicy(Qt::NoFocus);
     setMouseTracking(true);
 
-    setMinimumSize(300,300);
+//    setMinimumSize(300,300);
 }
 
-bool FancyTabBar::event(QEvent *e)
-{
-
-    return true;
-}
+/** 刚开始无法接受其他事件，就是因为给这个返回值直接true了。。。 **/
+//bool FancyTabBar::event(QEvent *e)
+//{
+//    qDebug()<<Q_FUNC_INFO;
+//    return QWidget::event(e);
+//}
 
 void FancyTabBar::paintEvent(QPaintEvent *e)
 {
+    qDebug()<<Q_FUNC_INFO;
     QPainter painter(this);
 
-    for(int i = 0; i < count();)
+    for(int i = 0; i < count();++i)
         if(i != currentIndex())
             paintTab(&painter,i);
 
@@ -221,18 +223,19 @@ static void paintIcon(QPainter *painter, const QRect &rect,
 
 void FancyTabBar::paintTab(QPainter *painter, int index) const
 {
+    qDebug()<<Q_FUNC_INFO<<":"<<index;
     if(!validIndex(index))
         return;
 
     painter->save();
 
     const FancyTab *tab = m_tabs.at(index);
-    const QRect rect = tabRect(index);
+    const QRect rect = tabRect(index);qDebug()<<rect;
     const bool selected = (index == currentIndex());
     const bool enabled = isTabEnabled(index);
     /** 绘制选中的背景 **/
     if(selected){
-        painter->fillRect(rect, QBrush(Qt::gray));
+        painter->fillRect(rect, QBrush(QColor(195, 193, 196,128)));
     }
 
     if(m_iconsOnly){
@@ -244,24 +247,36 @@ void FancyTabBar::paintTab(QPainter *painter, int index) const
     painter->restore();
 }
 
-void FancyTabBar::mousePressEvent(QMouseEvent *e)
+void FancyTabBar::mousePressEvent(QMouseEvent *event)
 {
     qDebug()<<Q_FUNC_INFO;
+    event->accept();
+    for (int index = 0; index < m_tabs.count(); ++index) {
+        const QRect rect = tabRect(index);
+        if (rect.contains(event->pos())) {
+            if (isTabEnabled(index)) {
+                m_currentIndex = index;
+                update();
+                emit currentChanged(m_currentIndex);
+            }
+            break;
+        }
+    }
 }
 
 void FancyTabBar::mouseMoveEvent(QMouseEvent *e)
 {
-
+    qDebug()<<Q_FUNC_INFO;
 }
 
 void FancyTabBar::enterEvent(QEvent *e)
 {
-
+    qDebug()<<Q_FUNC_INFO;
 }
 
 void FancyTabBar::leaveEvent(QEvent *e)
 {
-
+    qDebug()<<Q_FUNC_INFO;
 }
 
 void FancyTabBar::setTabEnabled(int index, bool enable)
@@ -285,6 +300,20 @@ void FancyTabBar::setIconsOnly(bool iconOnly)
     m_iconsOnly = iconOnly;
 }
 
+QSize FancyTabBar::sizeHint() const
+{
+    const QSize sh = tabSizeHint();
+    qDebug()<<Q_FUNC_INFO<<":"<<sh.width()<<","<< sh.height();
+    return {sh.width() * m_tabs.count(), sh.height()};
+}
+
+QSize FancyTabBar::minimumSizeHint() const
+{
+    const QSize sh = tabSizeHint(true);
+    qDebug()<<Q_FUNC_INFO<<":"<<sh.width()<<","<< sh.height();
+    return {sh.width() * m_tabs.count(), sh.height()};
+}
+
 QRect FancyTabBar::tabRect(int index) const
 {
     QSize sh = tabSizeHint();
@@ -298,11 +327,11 @@ QRect FancyTabBar::tabRect(int index) const
 QSize FancyTabBar::tabSizeHint(bool minimum) const
 {
     if (m_iconsOnly) {
-        return {64, 64 / (minimum ? 3 : 1)};
+        return {64+8, 64+8 / (minimum ? 3 : 1)};
     }
 
     QFont boldFont(font());
-    boldFont.setPointSizeF(14);
+    boldFont.setPointSizeF(20);
     boldFont.setBold(true);
     const QFontMetrics fm(boldFont);
     const int spacing = 8;

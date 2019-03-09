@@ -3,3 +3,8 @@
 *.user
 *.vcxproj
 *.filters
+*.obj
+*.exe
+*.pdb
+*.ilk
+*.db

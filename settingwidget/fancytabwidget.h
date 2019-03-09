@@ -1,8 +1,9 @@
 #ifndef FANCYTABWIDGET_H
 #define FANCYTABWIDGET_H
 
-#include <QWidget>
 #include <QIcon>
+#include <QWidget>
+
 
 class QPainter;
 class QStackedLayout;
@@ -31,23 +32,26 @@ class FancyTabBar : public QWidget
 
 public:
     FancyTabBar(QWidget *parent = nullptr);
-
+protected:
     //event
-    bool event(QEvent * e) override;
+//    bool event(QEvent * e) override;
 
     void paintEvent(QPaintEvent *e) override;
     void paintTab(QPainter *painter, int index) const;
-    void mousePressEvent(QMouseEvent *e) override;
+    void mousePressEvent(QMouseEvent *event) override;
     void mouseMoveEvent(QMouseEvent *e) override;
     void enterEvent(QEvent *e) override;
     void leaveEvent(QEvent *e) override;
-
+public:
     bool validIndex(int index) const {return index >= 0 && index <= m_tabs.count();}
 
     void setTabEnabled(int index, bool enable);
     bool isTabEnabled(int index) const;
 
     void setIconsOnly(bool iconOnly);
+
+    QSize sizeHint() const override;
+    QSize minimumSizeHint() const override;
 
     //tab operation
     void insertTab(int index, const QIcon &icon, const QString &label)
@@ -76,7 +80,6 @@ public:
     void setCurrentIndex(int index){
         if(isTabEnabled(index) && index != m_currentIndex){
             m_currentIndex = index;
-            update();
             emit currentChanged(m_currentIndex);
         }
     }

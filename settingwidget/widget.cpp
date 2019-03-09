@@ -18,22 +18,32 @@ Widget::Widget(QWidget *parent)
     QIcon  icon(":/icon/fork_64.205457463884px_1217079_easyicon.net.png");
     QString title("General");
 
-    int index = 0;
-    settingPages->insertTab(index,page,icon,title);
+    int index = -1;
+    settingPages->insertTab(++index,page,icon,title);
 
-    FancyTabBar *bar = new FancyTabBar(this);
-    bar->insertTab(0,icon,title);
+    icon = QIcon(":/icon/git_logo_media_social_64px_1212972_easyicon.net.png");
+    title = "Git";
+    page = new gitPage();
+    settingPages->insertTab(++index,page,icon,title);
 
+    icon = QIcon(":/icon/graph_64.144144144144px_1194479_easyicon.net.png");
+    title = "Custom";
+    page = new generalPage();
+    settingPages->insertTab(++index,page,icon,title);
+
+    icon = QIcon(":/icon/terminal_64px_1188177_easyicon.net.png");
+    title = "Setting";
+    page = new integrationPage();
+    settingPages->insertTab(++index,page,icon,title);
+
+    icon = QIcon(":/icon/update_64.467153284672px_1143807_easyicon.net.png");
+    title = "Update";
+    page = new updatePage();
+    settingPages->insertTab(++index,page,icon,title);
 
     QHBoxLayout *hbox = new QHBoxLayout;
 
-//    QLabel *mylabel = new QLabel("general");
-
-
-//    hbox->addWidget(mylabel);
     hbox->addWidget(settingPages);
-//    hbox->addWidget(bar);
-//    bar->show();
 
     setLayout(hbox);
 }
