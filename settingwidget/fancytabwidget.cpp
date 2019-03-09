@@ -31,7 +31,7 @@ FancyTabBar::FancyTabBar(QWidget *parent)
 
 void FancyTabBar::paintEvent(QPaintEvent *e)
 {
-    qDebug()<<Q_FUNC_INFO;
+//    qDebug()<<Q_FUNC_INFO;
 
     QPainter painter(this);
 
@@ -224,19 +224,21 @@ static void paintIcon(QPainter *painter, const QRect &rect,
 
 void FancyTabBar::paintTab(QPainter *painter, int index) const
 {
-    qDebug()<<Q_FUNC_INFO<<":"<<index;
+//    qDebug()<<Q_FUNC_INFO<<":"<<index;
     if(!validIndex(index))
         return;
 
     painter->save();
 
     const FancyTab *tab = m_tabs.at(index);
-    const QRect rect = tabRect(index);qDebug()<<rect;
+    const QRect rect = tabRect(index);
     const bool selected = (index == currentIndex());
     const bool enabled = isTabEnabled(index);
     /** 绘制选中的背景 **/
     if(selected){
-        painter->fillRect(rect, QBrush(QColor(195, 193, 196,200)));
+        painter->fillRect(rect, QBrush(QColor(183, 221, 250,200)));
+        painter->setPen(QColor(18, 145, 243));
+        painter->drawRect(rect);
     }
 
     if(m_iconsOnly){
@@ -250,7 +252,7 @@ void FancyTabBar::paintTab(QPainter *painter, int index) const
 
 void FancyTabBar::mousePressEvent(QMouseEvent *event)
 {
-    qDebug()<<Q_FUNC_INFO;
+//    qDebug()<<Q_FUNC_INFO;
     event->accept();
     for (int index = 0; index < m_tabs.count(); ++index) {
         const QRect rect = tabRect(index);
@@ -267,17 +269,17 @@ void FancyTabBar::mousePressEvent(QMouseEvent *event)
 
 void FancyTabBar::mouseMoveEvent(QMouseEvent *e)
 {
-    qDebug()<<Q_FUNC_INFO;
+//    qDebug()<<Q_FUNC_INFO;
 }
 
 void FancyTabBar::enterEvent(QEvent *e)
 {
-    qDebug()<<Q_FUNC_INFO;
+//    qDebug()<<Q_FUNC_INFO;
 }
 
 void FancyTabBar::leaveEvent(QEvent *e)
 {
-    qDebug()<<Q_FUNC_INFO;
+//    qDebug()<<Q_FUNC_INFO;
 }
 
 void FancyTabBar::setTabEnabled(int index, bool enable)
@@ -307,14 +309,14 @@ void FancyTabBar::setIconsOnly(bool iconOnly)
 QSize FancyTabBar::sizeHint() const
 {
     const QSize sh = tabSizeHint();
-    qDebug()<<Q_FUNC_INFO<<":"<<sh.width()<<","<< sh.height();
+//    qDebug()<<Q_FUNC_INFO<<":"<<sh.width()<<","<< sh.height();
     return {sh.width() * m_tabs.count(), sh.height()};
 }
 
 QSize FancyTabBar::minimumSizeHint() const
 {
     const QSize sh = tabSizeHint(true);
-    qDebug()<<Q_FUNC_INFO<<":"<<sh.width()<<","<< sh.height();
+//    qDebug()<<Q_FUNC_INFO<<":"<<sh.width()<<","<< sh.height();
     return {sh.width() * m_tabs.count(), sh.height()};
 }
 
@@ -364,11 +366,11 @@ FancyTabWidget::FancyTabWidget(QWidget *parent)
 
 //    painter.setRenderHint(QPainter::Antialiasing, true);
     QLinearGradient linearGradient(0,0,0,64);
-    linearGradient.setColorAt(0, Qt::white);
+    linearGradient.setColorAt(0, QColor(220,220,220));
     linearGradient.setColorAt(0.25, QColor(200,200,200));
-    linearGradient.setColorAt(0.5, QColor(160,160,160));
+    linearGradient.setColorAt(0.5, QColor(180,180,180));
     linearGradient.setColorAt(0.75, QColor(200,200,200));
-    linearGradient.setColorAt(1.0, Qt::white);
+    linearGradient.setColorAt(1.0, QColor(220,220,220));
 //    painter.setBrush(QBrush(linearGradient));
 //    painter.drawEllipse(50, 50, 200, 150);
 
