@@ -15,5 +15,9 @@ generalPage::generalPage(QWidget *parent) : QWidget(parent)
     QLabel *mylabel = new QLabel("general");
 
     vbox->addWidget(mylabel);
+    mylabel = new QLabel("general1");
+    vbox->addWidget(mylabel);
+    mylabel = new QLabel("general2");
+    vbox->addWidget(mylabel);
     setLayout(vbox);
 }

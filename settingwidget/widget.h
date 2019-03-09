@@ -14,6 +14,8 @@ public:
     Widget(QWidget *parent = 0);
     ~Widget();
 
+    void paintEvent(QPaintEvent *e) override;
+
 public:
     FancyTabWidget *settingPages;
 };

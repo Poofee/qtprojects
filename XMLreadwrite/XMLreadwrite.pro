@@ -25,13 +25,14 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
+        persistentsettings.cpp \
         main.cpp \
         widget.cpp \
-    persistentsettings.cpp
+
 
 HEADERS += \
+        persistentsettings.h \
         widget.h \
-    persistentsettings.h
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

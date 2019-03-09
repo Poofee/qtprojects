@@ -54,3 +54,8 @@ Widget::~Widget()
 
 }
 
+void Widget::paintEvent(QPaintEvent *e)
+{
+    setFixedSize(this->width(),this->height());
+}
+
