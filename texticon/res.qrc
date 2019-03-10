@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icon/mode_Design.png</file>
+        <file>icon/mode_Design@2x.png</file>
+        <file>icon/mode_design_mask.png</file>
+        <file>icon/mode_design_mask@2x.png</file>
+        <file>icon/mode_Edit.png</file>
+        <file>icon/mode_Edit@2x.png</file>
+        <file>icon/mode_edit_mask.png</file>
+        <file>icon/mode_edit_mask@2x.png</file>
+        <file>icon/settingscategory_core.png</file>
+        <file>icon/settingscategory_core@2x.png</file>
+        <file>icon/settingscategory_design.png</file>
+        <file>icon/settingscategory_design@2x.png</file>
+    </qresource>
+</RCC>
