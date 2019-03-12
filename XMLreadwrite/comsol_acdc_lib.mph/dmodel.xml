@@ -1,0 +1,2564 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Model tag="Model5" name="comsol_acdc_lib.mph">
+  <!-- User comments -->
+  <entityComments T="0"></entityComments>
+  <!-- Created by -->
+  <entityAuthor T="0"></entityAuthor>
+  <!-- Creation time -->
+  <entityCreationTime T="11">1537257944427</entityCreationTime>
+  <!-- Last modification time -->
+  <entityModifyTime T="11">1537257944431</entityModifyTime>
+  <!-- Updated by -->
+  <entityModifiedBy T="0"></entityModifiedBy>
+  <fontsize T="5">-1</fontsize>
+  <fontfamily T="0">automatic</fontfamily>
+  <comsolVersion T="0">COMSOL Multiphysics 5.4 (Build: 213)</comsolVersion>
+  <!-- Unit base system -->
+  <baseSystem T="0">SI</baseSystem>
+  <!-- Serial number -->
+  <srl T="0">1016561</srl>
+  <!-- File version -->
+  <savedInVersion T="5">1260</savedInVersion>
+  <!-- Local model file path -->
+  <modelPath T="0">C:/sandboxes/sb_test/matlib/comsol_acdc_lib.mph</modelPath>
+  <ModelParam tag="param" name="Parameters">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1513195221867</entityCreationTime>
+    <ModelParamGroupList tag="group" name="Parameters">
+      <!-- User comments -->
+      <entityComments T="0"></entityComments>
+      <!-- Created by -->
+      <entityAuthor T="0"></entityAuthor>
+      <!-- Creation time -->
+      <entityCreationTime T="11">1525438623598</entityCreationTime>
+      <ModelParamGroup tag="default" name="Parameters 1">
+        <!-- Node status -->
+        <entityFlags T="51">NOREMOVE|NORETAG|NODEACTIVATE</entityFlags>
+        <!-- User comments -->
+        <entityComments T="0"></entityComments>
+        <!-- Created by -->
+        <entityAuthor T="0"></entityAuthor>
+        <!-- Creation time -->
+        <entityCreationTime T="11">1525438623598</entityCreationTime>
+        <ModelParamGroupCaseList tag="paramCase" name="Cases">
+          <!-- User comments -->
+          <entityComments T="0"></entityComments>
+          <!-- Created by -->
+          <entityAuthor T="0"></entityAuthor>
+          <!-- Creation time -->
+          <entityCreationTime T="11">1525438623910</entityCreationTime>
+        </ModelParamGroupCaseList>
+      </ModelParamGroup>
+    </ModelParamGroupList>
+  </ModelParam>
+  <PhysicsList tag="physics" name="Physics">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1513195221867</entityCreationTime>
+  </PhysicsList>
+  <GeomList tag="geom" name="Geometry Parts">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1513195221867</entityCreationTime>
+  </GeomList>
+  <GroupList tag="group" name="Load and Constraint Groups">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1513195221867</entityCreationTime>
+  </GroupList>
+  <OdeList tag="ode" name="OdeList">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1513195221867</entityCreationTime>
+  </OdeList>
+  <FieldList tag="field" name="FieldList">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1513195221882</entityCreationTime>
+  </FieldList>
+  <ProbeFeatureList tag="probe" name="ProbeFeatureList">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1513195221882</entityCreationTime>
+  </ProbeFeatureList>
+  <ProbeFeatureList tag="massProp" name="ProbeFeatureList">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1513195221882</entityCreationTime>
+  </ProbeFeatureList>
+  <FrameList tag="frame" name="FrameList">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1513195221882</entityCreationTime>
+  </FrameList>
+  <CplList tag="cpl" name="CplList">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1513195221882</entityCreationTime>
+  </CplList>
+  <ExtraDimList tag="extraDim" name="ExtraDimList">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1513195221882</entityCreationTime>
+  </ExtraDimList>
+  <FunctionFeatureList tag="func" name="Functions">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1513195221882</entityCreationTime>
+  </FunctionFeatureList>
+  <ExprList tag="expr" name="Variables">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1513195221882</entityCreationTime>
+  </ExprList>
+  <SelectionList tag="selection" name="SelectionList">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1513195221882</entityCreationTime>
+  </SelectionList>
+  <PairList tag="pair" name="PairList">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1513195221882</entityCreationTime>
+  </PairList>
+  <ViewList tag="view" name="Views">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1513195221882</entityCreationTime>
+  </ViewList>
+  <CommonList tag="common" name="CommonList">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1513195221882</entityCreationTime>
+    <CommonFeature op="CommonInputDefault" tag="cminpt" name="Common model inputs 1">
+      <!-- Node status -->
+      <entityFlags T="51">NOREMOVE|NORETAG|NODEACTIVATE</entityFlags>
+      <NodeDefaultValues>3,'p:minpDefName','p:minpVisibility','p:modified'</NodeDefaultValues>
+      <CommonList tag="feature" name="CommonList">
+        <!-- User comments -->
+        <entityComments T="0"></entityComments>
+        <!-- Created by -->
+        <entityAuthor T="0"></entityAuthor>
+        <!-- Creation time -->
+        <entityCreationTime T="11">1525438623910</entityCreationTime>
+      </CommonList>
+    </CommonFeature>
+  </CommonList>
+  <MaterialList tag="material" name="acdc_lib_descr">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1513195221882</entityCreationTime>
+    <Material op="Common" tag="copper" name="Copper">
+      <!-- User comments -->
+      <entityComments T="0"></entityComments>
+      <!-- Created by -->
+      <entityAuthor T="0"></entityAuthor>
+      <!-- Creation time -->
+      <entityCreationTime T="11">1513195222023</entityCreationTime>
+      <!-- Family -->
+      <propertyValue T="30" value="copper" name="p:family"></propertyValue>
+      <!-- Last family -->
+      <propertyValue T="30" value="copper" name="p:lastfamily"></propertyValue>
+      <identifier T="0">copper</identifier>
+      <NodeDefaultValues>16,'p:specular','p:customspecular','p:diffuse','p:customdiffuse','p:ambient','p:customambient','p:noise','p:noisescale','p:noisefreq','p:alpha','p:lighting','p:fresnel','p:roughness','p:shininess','p:groups','p:info'</NodeDefaultValues>
+      <MaterialModelList tag="materialmodel" name="MaterialModelList">
+        <!-- User comments -->
+        <entityComments T="0"></entityComments>
+        <!-- Created by -->
+        <entityAuthor T="0"></entityAuthor>
+        <!-- Creation time -->
+        <entityCreationTime T="11">1513195222023</entityCreationTime>
+        <MaterialModel tag="def" name="Basic">
+          <!-- Node status -->
+          <entityFlags T="51">NOREMOVE|NORETAG</entityFlags>
+          <!-- User comments -->
+          <entityComments T="0"></entityComments>
+          <!-- Created by -->
+          <entityAuthor T="0"></entityAuthor>
+          <!-- Creation time -->
+          <entityCreationTime T="11">1513195222023</entityCreationTime>
+          <!-- Parameter values -->
+          <param T="33" param="relpermeability" value="9|1,'1'|1,'0'|1,'0'|1,'0'|1,'1'|1,'0'|1,'0'|1,'0'|1,'1'"></param>
+          <param T="33" param="electricconductivity" value="9|1,'5.998e7[S/m]'|1,'0'|1,'0'|1,'0'|1,'5.998e7[S/m]'|1,'0'|1,'0'|1,'0'|1,'5.998e7[S/m]'"></param>
+          <param T="33" param="heatcapacity" value="1|1,'385[J/(kg*K)]'"></param>
+          <param T="33" param="relpermittivity" value="9|1,'1'|1,'0'|1,'0'|1,'0'|1,'1'|1,'0'|1,'0'|1,'0'|1,'1'"></param>
+          <param T="33" param="emissivity" value="1|1,'0.5'"></param>
+          <param T="33" param="density" value="1|1,'8940[kg/m^3]'"></param>
+          <param T="33" param="thermalconductivity" value="9|1,'400[W/(m*K)]'|1,'0'|1,'0'|1,'0'|1,'400[W/(m*K)]'|1,'0'|1,'0'|1,'0'|1,'400[W/(m*K)]'"></param>
+          <identifier T="0">def</identifier>
+          <InformationList tag="info" name="Information">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1513195222023</entityCreationTime>
+          </InformationList>
+          <FunctionFeatureList tag="func" name="Functions">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1513195222023</entityCreationTime>
+          </FunctionFeatureList>
+          <FeatureInfoList tag="featureInfo" name="FeatureInfoList">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1525438623910</entityCreationTime>
+            <FeatureInfo tag="info" name="Equation View">
+              <!-- Node status -->
+              <entityFlags T="51">NOREMOVE|NODEACTIVATE</entityFlags>
+              <!-- User comments -->
+              <entityComments T="0"></entityComments>
+              <!-- Created by -->
+              <entityAuthor T="0"></entityAuthor>
+              <!-- Creation time -->
+              <entityCreationTime T="11">1527094319090</entityCreationTime>
+            </FeatureInfo>
+          </FeatureInfoList>
+        </MaterialModel>
+        <MaterialModel tag="Enu" name="Young's modulus and Poisson's ratio">
+          <!-- Node status -->
+          <entityFlags T="51">NORETAG</entityFlags>
+          <!-- User comments -->
+          <entityComments T="0"></entityComments>
+          <!-- Created by -->
+          <entityAuthor T="0"></entityAuthor>
+          <!-- Creation time -->
+          <entityCreationTime T="11">1513195289859</entityCreationTime>
+          <!-- Parameter values -->
+          <param T="33" param="youngsmodulus" value="1|1,'126e9[Pa]'"></param>
+          <param T="33" param="poissonsratio" value="1|1,'0.34'"></param>
+          <identifier T="0">Enu</identifier>
+          <InformationList tag="info" name="Information">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1513195289874</entityCreationTime>
+            <Information tag="category" name="Information">
+              <!-- User comments -->
+              <entityComments T="0"></entityComments>
+              <!-- Created by -->
+              <entityAuthor T="0"></entityAuthor>
+              <!-- Creation time -->
+              <entityCreationTime T="11">1513195289874</entityCreationTime>
+              <body T="0">Solid_mechanics/Linear_elastic_material</body>
+            </Information>
+          </InformationList>
+          <FunctionFeatureList tag="func" name="Functions">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1513195289874</entityCreationTime>
+          </FunctionFeatureList>
+          <FeatureInfoList tag="featureInfo" name="FeatureInfoList">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1525438623910</entityCreationTime>
+            <FeatureInfo tag="info" name="Equation View">
+              <!-- Node status -->
+              <entityFlags T="51">NOREMOVE|NODEACTIVATE</entityFlags>
+              <!-- User comments -->
+              <entityComments T="0"></entityComments>
+              <!-- Created by -->
+              <entityAuthor T="0"></entityAuthor>
+              <!-- Creation time -->
+              <entityCreationTime T="11">1527094319090</entityCreationTime>
+            </FeatureInfo>
+          </FeatureInfoList>
+        </MaterialModel>
+        <MaterialModel tag="linzRes" name="Linearized resistivity">
+          <!-- Node status -->
+          <entityFlags T="51">NORETAG</entityFlags>
+          <!-- User comments -->
+          <entityComments T="0"></entityComments>
+          <!-- Created by -->
+          <entityAuthor T="0"></entityAuthor>
+          <!-- Creation time -->
+          <entityCreationTime T="11">1513195289890</entityCreationTime>
+          <!-- Parameter values -->
+          <param T="33" param="rho0" value="1|1,'1.667e-8[ohm*m]'"></param>
+          <param T="33" param="alpha" value="1|1,'3.862e-3[1/K]'"></param>
+          <param T="33" param="Tref" value="1|1,'293.15[K]'"></param>
+          <identifier T="0">ltr</identifier>
+          <!-- Model inputs -->
+          <input T="0">temperature</input>
+          <!-- Model outputs -->
+          <output T="0">rho0</output>
+          <output T="0">alpha</output>
+          <output T="0">Tref</output>
+          <InformationList tag="info" name="Information">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1513195289890</entityCreationTime>
+            <Information tag="category" name="Information">
+              <!-- User comments -->
+              <entityComments T="0"></entityComments>
+              <!-- Created by -->
+              <entityAuthor T="0"></entityAuthor>
+              <!-- Creation time -->
+              <entityCreationTime T="11">1513195289890</entityCreationTime>
+              <body T="0">Electromagnetic_models</body>
+            </Information>
+          </InformationList>
+          <FunctionFeatureList tag="func" name="Functions">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1513195289906</entityCreationTime>
+          </FunctionFeatureList>
+          <FeatureInfoList tag="featureInfo" name="FeatureInfoList">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1525438623910</entityCreationTime>
+            <FeatureInfo tag="info" name="Equation View">
+              <!-- Node status -->
+              <entityFlags T="51">NOREMOVE|NODEACTIVATE</entityFlags>
+              <!-- User comments -->
+              <entityComments T="0"></entityComments>
+              <!-- Created by -->
+              <entityAuthor T="0"></entityAuthor>
+              <!-- Creation time -->
+              <entityCreationTime T="11">1527094319105</entityCreationTime>
+            </FeatureInfo>
+          </FeatureInfoList>
+        </MaterialModel>
+      </MaterialModelList>
+      <MaterialList tag="materialList" name="Materials">
+        <!-- User comments -->
+        <entityComments T="0"></entityComments>
+        <!-- Created by -->
+        <entityAuthor T="0"></entityAuthor>
+        <!-- Creation time -->
+        <entityCreationTime T="11">1513195231381</entityCreationTime>
+      </MaterialList>
+      <InformationList tag="info" name="Information">
+        <!-- User comments -->
+        <entityComments T="0"></entityComments>
+        <!-- Created by -->
+        <entityAuthor T="0"></entityAuthor>
+        <!-- Creation time -->
+        <entityCreationTime T="11">1525438623644</entityCreationTime>
+      </InformationList>
+    </Material>
+    <Material op="Common" tag="soft_iron_without_losses" name="Soft Iron (Without Losses)">
+      <!-- User comments -->
+      <entityComments T="0"></entityComments>
+      <!-- Created by -->
+      <entityAuthor T="0"></entityAuthor>
+      <!-- Creation time -->
+      <entityCreationTime T="11">1513195329600</entityCreationTime>
+      <!-- Last modification time -->
+      <entityModifyTime T="11">1525438793723</entityModifyTime>
+      <!-- Updated by -->
+      <entityModifiedBy T="0"></entityModifiedBy>
+      <!-- Family -->
+      <propertyValue T="30" value="iron" name="p:family"></propertyValue>
+      <!-- Last family -->
+      <propertyValue T="30" value="iron" name="p:lastfamily"></propertyValue>
+      <identifier T="0">soft_iron_without_losses</identifier>
+      <NodeDefaultValues>16,'p:specular','p:customspecular','p:diffuse','p:customdiffuse','p:ambient','p:customambient','p:noise','p:noisescale','p:noisefreq','p:alpha','p:lighting','p:fresnel','p:roughness','p:shininess','p:groups','p:info'</NodeDefaultValues>
+      <MaterialModelList tag="materialmodel" name="MaterialModelList">
+        <!-- User comments -->
+        <entityComments T="0"></entityComments>
+        <!-- Created by -->
+        <entityAuthor T="0"></entityAuthor>
+        <!-- Creation time -->
+        <entityCreationTime T="11">1513195329600</entityCreationTime>
+        <MaterialModel tag="def" name="Basic">
+          <!-- Node status -->
+          <entityFlags T="51">NOREMOVE|NORETAG</entityFlags>
+          <!-- User comments -->
+          <entityComments T="0"></entityComments>
+          <!-- Created by -->
+          <entityAuthor T="0"></entityAuthor>
+          <!-- Creation time -->
+          <entityCreationTime T="11">1513195329600</entityCreationTime>
+          <!-- Parameter values -->
+          <param T="33" param="electricconductivity" value="9|1,'0[S/m]'|1,'0'|1,'0'|1,'0'|1,'0[S/m]'|1,'0'|1,'0'|1,'0'|1,'0[S/m]'"></param>
+          <param T="33" param="relpermittivity" value="9|1,'1'|1,'0'|1,'0'|1,'0'|1,'1'|1,'0'|1,'0'|1,'0'|1,'1'"></param>
+          <identifier T="0">def</identifier>
+          <InformationList tag="info" name="Information">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1513195329600</entityCreationTime>
+          </InformationList>
+          <FunctionFeatureList tag="func" name="Functions">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1513195329600</entityCreationTime>
+          </FunctionFeatureList>
+          <FeatureInfoList tag="featureInfo" name="FeatureInfoList">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1525438623910</entityCreationTime>
+            <FeatureInfo tag="info" name="Equation View">
+              <!-- Node status -->
+              <entityFlags T="51">NOREMOVE|NODEACTIVATE</entityFlags>
+              <!-- User comments -->
+              <entityComments T="0"></entityComments>
+              <!-- Created by -->
+              <entityAuthor T="0"></entityAuthor>
+              <!-- Creation time -->
+              <entityCreationTime T="11">1527094319105</entityCreationTime>
+            </FeatureInfo>
+          </FeatureInfoList>
+        </MaterialModel>
+        <MaterialModel tag="BHCurve" name="B-H Curve">
+          <!-- Node status -->
+          <entityFlags T="51">NORETAG</entityFlags>
+          <!-- User comments -->
+          <entityComments T="0"></entityComments>
+          <!-- Created by -->
+          <entityAuthor T="0"></entityAuthor>
+          <!-- Creation time -->
+          <entityCreationTime T="11">1513195333718</entityCreationTime>
+          <!-- Parameter values -->
+          <param T="33" param="normB" value="1|1,'BH(normHin)'"></param>
+          <param T="33" param="normH" value="1|1,'BH_inv(normBin)'"></param>
+          <param T="33" param="Wpm" value="1|1,'BH_prim(normHin)'"></param>
+          <param T="33" param="normHin" value="1|1,'sqrt(H1^2+H2^2+H3^2)'"></param>
+          <param T="33" param="normBin" value="1|1,'sqrt(B1^2+B2^2+B3^2)'"></param>
+          <param T="33" param="DESCR_PREFIX:normHin" value="1|1,'Magnetic field norm'"></param>
+          <param T="33" param="DESCR_PREFIX:normBin" value="1|1,'Magnetic flux density norm'"></param>
+          <identifier T="0">BHCurve</identifier>
+          <!-- Model inputs -->
+          <input T="0">magneticfield</input>
+          <input T="0">magneticfluxdensity</input>
+          <!-- Model outputs -->
+          <output T="0">normB</output>
+          <output T="0">normH</output>
+          <output T="0">Wpm</output>
+          <InformationList tag="info" name="Information">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1513195333718</entityCreationTime>
+            <Information tag="category" name="Information">
+              <!-- User comments -->
+              <entityComments T="0"></entityComments>
+              <!-- Created by -->
+              <entityAuthor T="0"></entityAuthor>
+              <!-- Creation time -->
+              <entityCreationTime T="11">1513195333718</entityCreationTime>
+              <body T="0">Electromagnetic_models</body>
+            </Information>
+          </InformationList>
+          <FunctionFeatureList tag="func" name="Functions">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1513195333718</entityCreationTime>
+            <FunctionFeature op="Interpolation" tag="BH" name="Interpolation 1">
+              <!-- User comments -->
+              <entityComments T="0"></entityComments>
+              <!-- Created by -->
+              <entityAuthor T="0"></entityAuthor>
+              <!-- Creation time -->
+              <entityCreationTime T="11">1513195333718</entityCreationTime>
+              <!-- Last modification time -->
+              <entityModifyTime T="11">1525438793723</entityModifyTime>
+              <!-- Updated by -->
+              <entityModifiedBy T="0"></entityModifiedBy>
+              <!-- Model resource -->
+              <propertyValue T="30" value="res1" name="p:modelres"></propertyValue>
+              <!-- Functions -->
+              <propertyValue T="30" valueMatrix="1|2,'BH','1'" name="p:funcs"></propertyValue>
+              <!-- Model resource -->
+              <propertyValue T="30" value="res2" name="p:interpres"></propertyValue>
+              <!-- Function name -->
+              <propertyValue T="30" value="BH" name="p:funcname"></propertyValue>
+              <!-- Function values -->
+              <propertyValue T="30" valueMatrix="16|2,'0','0'|2,'663.146','1'|2,'1067.5','1.1'|2,'1705.23','1.2'|2,'2463.11','1.3'|2,'3841.67','1.4'|2,'5425.74','1.5'|2,'7957.75','1.6'|2,'12298.3','1.7'|2,'20462.8','1.8'|2,'32169.6','1.9'|2,'61213.4','2.0'|2,'111408','2.1'|2,'175070','2.2'|2,'261469','2.3'|2,'318310','2.4'" name="p:table"></propertyValue>
+              <!-- Table from -->
+              <propertyValue T="30" value="" name="p:resultTable"></propertyValue>
+              <!-- Extrapolation -->
+              <propertyValue T="30" value="linear" name="p:extrap"></propertyValue>
+              <!-- Arguments -->
+              <propertyValue T="30" value="A/m" name="p:argunit"></propertyValue>
+              <!-- Function -->
+              <propertyValue T="30" value="T" name="p:fununit"></propertyValue>
+              <!-- Define inverse function -->
+              <propertyValue T="30" value="on" name="p:defineinv"></propertyValue>
+              <!-- Inverse function name -->
+              <propertyValue T="30" value="BH_inv" name="p:funcinvname"></propertyValue>
+              <!-- Define primitive function -->
+              <propertyValue T="30" value="on" name="p:defineprimfun"></propertyValue>
+              <!-- Primitive function name -->
+              <propertyValue T="30" value="BH_prim" name="p:primfunname"></propertyValue>
+              <!-- Random function name -->
+              <propertyValue T="30" value="rn_BH" name="p:randomname"></propertyValue>
+              <NodeDefaultValues>38,'p:sourcetype','p:importedname','p:importedstruct','p:importeddim','p:exportfilename','p:isexporting','p:source','p:filename','p:isuploaded','p:isexcel','p:sheet','p:range','p:nargs','p:scaledata','p:struct','p:tableexcelfilename','p:tableexcelsheet','p:tableexcelrange','p:tableexceloverwrite','p:tableexcelincludeheaders','p:tableexcelseparateunits','p:resultTableFile','p:hideFrameSettings','p:defvars','p:frame','p:relaxnamecheck','p:refreshcount','p:interp','p:extrapvalue','p:plotinv','p:allowinv','p:allowprim','p:allowrand','p:definerandom','p:randomnargs','p:randomrange','p:leftend','p:rightend'</NodeDefaultValues>
+              <FunctionFeatureList tag="feature" name="Functions">
+                <!-- User comments -->
+                <entityComments T="0"></entityComments>
+                <!-- Created by -->
+                <entityAuthor T="0"></entityAuthor>
+                <!-- Creation time -->
+                <entityCreationTime T="11">1513195333718</entityCreationTime>
+              </FunctionFeatureList>
+            </FunctionFeature>
+          </FunctionFeatureList>
+          <FeatureInfoList tag="featureInfo" name="FeatureInfoList">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1525438623910</entityCreationTime>
+            <FeatureInfo tag="info" name="Equation View">
+              <!-- Node status -->
+              <entityFlags T="51">NOREMOVE|NODEACTIVATE</entityFlags>
+              <!-- User comments -->
+              <entityComments T="0"></entityComments>
+              <!-- Created by -->
+              <entityAuthor T="0"></entityAuthor>
+              <!-- Creation time -->
+              <entityCreationTime T="11">1527094319105</entityCreationTime>
+            </FeatureInfo>
+          </FeatureInfoList>
+        </MaterialModel>
+        <MaterialModel tag="EffectiveBHCurve" name="Effective B-H Curve">
+          <!-- Node status -->
+          <entityFlags T="51">NORETAG</entityFlags>
+          <!-- User comments -->
+          <entityComments T="0"></entityComments>
+          <!-- Created by -->
+          <entityAuthor T="0"></entityAuthor>
+          <!-- Creation time -->
+          <entityCreationTime T="11">1513195333734</entityCreationTime>
+          <!-- Parameter values -->
+          <param T="33" param="normBeff" value="1|1,'BHeff(normHeffin)'"></param>
+          <param T="33" param="normHeff" value="1|1,'BHeff_inv(normBeffin)'"></param>
+          <param T="33" param="normHeffin" value="1|1,'sqrt(realdot(H1\,H1)+realdot(H2\,H2)+realdot(H3\,H3))'"></param>
+          <param T="33" param="normBeffin" value="1|1,'sqrt(realdot(B1\,B1)+realdot(B2\,B2)+realdot(B3\,B3))'"></param>
+          <param T="33" param="DESCR_PREFIX:normHeffin" value="1|1,'Effective magnetic field norm'"></param>
+          <param T="33" param="DESCR_PREFIX:normBeffin" value="1|1,'Effective magnetic flux density norm'"></param>
+          <identifier T="0">BHeff</identifier>
+          <!-- Model inputs -->
+          <input T="0">magneticfield</input>
+          <input T="0">magneticfluxdensity</input>
+          <!-- Model outputs -->
+          <output T="0">normBeff</output>
+          <output T="0">normHeff</output>
+          <InformationList tag="info" name="Information">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1513195333750</entityCreationTime>
+            <Information tag="category" name="Information">
+              <!-- User comments -->
+              <entityComments T="0"></entityComments>
+              <!-- Created by -->
+              <entityAuthor T="0"></entityAuthor>
+              <!-- Creation time -->
+              <entityCreationTime T="11">1513195333750</entityCreationTime>
+              <body T="0">Electromagnetic_models</body>
+            </Information>
+          </InformationList>
+          <FunctionFeatureList tag="func" name="Functions">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1513195333750</entityCreationTime>
+            <FunctionFeature op="Interpolation" tag="BHeff" name="Interpolation 1">
+              <!-- User comments -->
+              <entityComments T="0"></entityComments>
+              <!-- Created by -->
+              <entityAuthor T="0"></entityAuthor>
+              <!-- Creation time -->
+              <entityCreationTime T="11">1513195333750</entityCreationTime>
+              <!-- Last modification time -->
+              <entityModifyTime T="11">1525438793723</entityModifyTime>
+              <!-- Updated by -->
+              <entityModifiedBy T="0"></entityModifiedBy>
+              <!-- Model resource -->
+              <propertyValue T="30" value="res5" name="p:modelres"></propertyValue>
+              <!-- Functions -->
+              <propertyValue T="30" valueMatrix="1|2,'BHeff','1'" name="p:funcs"></propertyValue>
+              <!-- Model resource -->
+              <propertyValue T="30" value="res6" name="p:interpres"></propertyValue>
+              <!-- Function name -->
+              <propertyValue T="30" value="BHeff" name="p:funcname"></propertyValue>
+              <!-- Function values -->
+              <propertyValue T="30" valueMatrix="16|2,'0','0'|2,'663.146','1'|2,'1067.5','1.4943906486860214'|2,'1705.23','1.941630073817125'|2,'2463.11','2.257619494050335'|2,'3841.67','2.729755059668001'|2,'5425.74','2.8756651489647296'|2,'7957.75','3.149029234016385'|2,'12298.3','3.4529372126833744'|2,'20462.8','3.7845615956017395'|2,'32169.6','4.060195910283011'|2,'61213.4','4.421777266072753'|2,'111408','4.721954005107204'|2,'175070','4.941198649690261'|2,'261469','5.1446599438425515'|2,'318310','5.253346039640234'" name="p:table"></propertyValue>
+              <!-- Table from -->
+              <propertyValue T="30" value="" name="p:resultTable"></propertyValue>
+              <!-- Extrapolation -->
+              <propertyValue T="30" value="linear" name="p:extrap"></propertyValue>
+              <!-- Arguments -->
+              <propertyValue T="30" value="A/m" name="p:argunit"></propertyValue>
+              <!-- Function -->
+              <propertyValue T="30" value="T" name="p:fununit"></propertyValue>
+              <!-- Define inverse function -->
+              <propertyValue T="30" value="on" name="p:defineinv"></propertyValue>
+              <!-- Inverse function name -->
+              <propertyValue T="30" value="BHeff_inv" name="p:funcinvname"></propertyValue>
+              <!-- Primitive function name -->
+              <propertyValue T="30" value="BHeff_prim" name="p:primfunname"></propertyValue>
+              <!-- Random function name -->
+              <propertyValue T="30" value="rn_BHeff" name="p:randomname"></propertyValue>
+              <NodeDefaultValues>39,'p:sourcetype','p:importedname','p:importedstruct','p:importeddim','p:exportfilename','p:isexporting','p:source','p:filename','p:isuploaded','p:isexcel','p:sheet','p:range','p:nargs','p:scaledata','p:struct','p:tableexcelfilename','p:tableexcelsheet','p:tableexcelrange','p:tableexceloverwrite','p:tableexcelincludeheaders','p:tableexcelseparateunits','p:resultTableFile','p:hideFrameSettings','p:defvars','p:frame','p:relaxnamecheck','p:refreshcount','p:interp','p:extrapvalue','p:plotinv','p:allowinv','p:allowprim','p:defineprimfun','p:allowrand','p:definerandom','p:randomnargs','p:randomrange','p:leftend','p:rightend'</NodeDefaultValues>
+              <FunctionFeatureList tag="feature" name="Functions">
+                <!-- User comments -->
+                <entityComments T="0"></entityComments>
+                <!-- Created by -->
+                <entityAuthor T="0"></entityAuthor>
+                <!-- Creation time -->
+                <entityCreationTime T="11">1513195333750</entityCreationTime>
+              </FunctionFeatureList>
+            </FunctionFeature>
+          </FunctionFeatureList>
+          <FeatureInfoList tag="featureInfo" name="FeatureInfoList">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1525438623910</entityCreationTime>
+            <FeatureInfo tag="info" name="Equation View">
+              <!-- Node status -->
+              <entityFlags T="51">NOREMOVE|NODEACTIVATE</entityFlags>
+              <!-- User comments -->
+              <entityComments T="0"></entityComments>
+              <!-- Created by -->
+              <entityAuthor T="0"></entityAuthor>
+              <!-- Creation time -->
+              <entityCreationTime T="11">1527094319105</entityCreationTime>
+            </FeatureInfo>
+          </FeatureInfoList>
+        </MaterialModel>
+      </MaterialModelList>
+      <MaterialList tag="materialList" name="Materials">
+        <!-- User comments -->
+        <entityComments T="0"></entityComments>
+        <!-- Created by -->
+        <entityAuthor T="0"></entityAuthor>
+        <!-- Creation time -->
+        <entityCreationTime T="11">1513195353719</entityCreationTime>
+      </MaterialList>
+      <InformationList tag="info" name="Information">
+        <!-- User comments -->
+        <entityComments T="0"></entityComments>
+        <!-- Created by -->
+        <entityAuthor T="0"></entityAuthor>
+        <!-- Creation time -->
+        <entityCreationTime T="11">1525438623644</entityCreationTime>
+      </InformationList>
+    </Material>
+    <Material op="Common" tag="soft_iron_with_losses" name="Soft Iron (With Losses)">
+      <!-- User comments -->
+      <entityComments T="0"></entityComments>
+      <!-- Created by -->
+      <entityAuthor T="0"></entityAuthor>
+      <!-- Creation time -->
+      <entityCreationTime T="11">1513195352438</entityCreationTime>
+      <!-- Last modification time -->
+      <entityModifyTime T="11">1525438793723</entityModifyTime>
+      <!-- Updated by -->
+      <entityModifiedBy T="0"></entityModifiedBy>
+      <!-- Family -->
+      <propertyValue T="30" value="iron" name="p:family"></propertyValue>
+      <!-- Last family -->
+      <propertyValue T="30" value="iron" name="p:lastfamily"></propertyValue>
+      <identifier T="0">soft_iron_with_losses</identifier>
+      <NodeDefaultValues>16,'p:specular','p:customspecular','p:diffuse','p:customdiffuse','p:ambient','p:customambient','p:noise','p:noisescale','p:noisefreq','p:alpha','p:lighting','p:fresnel','p:roughness','p:shininess','p:groups','p:info'</NodeDefaultValues>
+      <MaterialModelList tag="materialmodel" name="MaterialModelList">
+        <!-- User comments -->
+        <entityComments T="0"></entityComments>
+        <!-- Created by -->
+        <entityAuthor T="0"></entityAuthor>
+        <!-- Creation time -->
+        <entityCreationTime T="11">1513195352438</entityCreationTime>
+        <MaterialModel tag="def" name="Basic">
+          <!-- Node status -->
+          <entityFlags T="51">NOREMOVE|NORETAG</entityFlags>
+          <!-- User comments -->
+          <entityComments T="0"></entityComments>
+          <!-- Created by -->
+          <entityAuthor T="0"></entityAuthor>
+          <!-- Creation time -->
+          <entityCreationTime T="11">1513195352439</entityCreationTime>
+          <!-- Parameter values -->
+          <param T="33" param="electricconductivity" value="9|1,'1.12e7[S/m]'|1,'0'|1,'0'|1,'0'|1,'1.12e7[S/m]'|1,'0'|1,'0'|1,'0'|1,'1.12e7[S/m]'"></param>
+          <param T="33" param="relpermittivity" value="9|1,'1'|1,'0'|1,'0'|1,'0'|1,'1'|1,'0'|1,'0'|1,'0'|1,'1'"></param>
+          <identifier T="0">def</identifier>
+          <InformationList tag="info" name="Information">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1513195352439</entityCreationTime>
+          </InformationList>
+          <FunctionFeatureList tag="func" name="Functions">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1513195352439</entityCreationTime>
+          </FunctionFeatureList>
+          <FeatureInfoList tag="featureInfo" name="FeatureInfoList">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1525438623910</entityCreationTime>
+            <FeatureInfo tag="info" name="Equation View">
+              <!-- Node status -->
+              <entityFlags T="51">NOREMOVE|NODEACTIVATE</entityFlags>
+              <!-- User comments -->
+              <entityComments T="0"></entityComments>
+              <!-- Created by -->
+              <entityAuthor T="0"></entityAuthor>
+              <!-- Creation time -->
+              <entityCreationTime T="11">1527094319105</entityCreationTime>
+            </FeatureInfo>
+          </FeatureInfoList>
+        </MaterialModel>
+        <MaterialModel tag="BHCurve" name="B-H Curve">
+          <!-- Node status -->
+          <entityFlags T="51">NORETAG</entityFlags>
+          <!-- User comments -->
+          <entityComments T="0"></entityComments>
+          <!-- Created by -->
+          <entityAuthor T="0"></entityAuthor>
+          <!-- Creation time -->
+          <entityCreationTime T="11">1513195352440</entityCreationTime>
+          <!-- Parameter values -->
+          <param T="33" param="normB" value="1|1,'BH(normHin)'"></param>
+          <param T="33" param="normH" value="1|1,'BH_inv(normBin)'"></param>
+          <param T="33" param="Wpm" value="1|1,'BH_prim(normHin)'"></param>
+          <param T="33" param="normHin" value="1|1,'sqrt(H1^2+H2^2+H3^2)'"></param>
+          <param T="33" param="normBin" value="1|1,'sqrt(B1^2+B2^2+B3^2)'"></param>
+          <param T="33" param="DESCR_PREFIX:normHin" value="1|1,'Magnetic field norm'"></param>
+          <param T="33" param="DESCR_PREFIX:normBin" value="1|1,'Magnetic flux density norm'"></param>
+          <identifier T="0">BHCurve</identifier>
+          <!-- Model inputs -->
+          <input T="0">magneticfield</input>
+          <input T="0">magneticfluxdensity</input>
+          <!-- Model outputs -->
+          <output T="0">normB</output>
+          <output T="0">normH</output>
+          <output T="0">Wpm</output>
+          <InformationList tag="info" name="Information">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1513195352441</entityCreationTime>
+            <Information tag="category" name="Information">
+              <!-- User comments -->
+              <entityComments T="0"></entityComments>
+              <!-- Created by -->
+              <entityAuthor T="0"></entityAuthor>
+              <!-- Creation time -->
+              <entityCreationTime T="11">1513195352441</entityCreationTime>
+              <body T="0">Electromagnetic_models</body>
+            </Information>
+          </InformationList>
+          <FunctionFeatureList tag="func" name="Functions">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1513195352441</entityCreationTime>
+            <FunctionFeature op="Interpolation" tag="BH" name="Interpolation 1">
+              <!-- User comments -->
+              <entityComments T="0"></entityComments>
+              <!-- Created by -->
+              <entityAuthor T="0"></entityAuthor>
+              <!-- Creation time -->
+              <entityCreationTime T="11">1513195352441</entityCreationTime>
+              <!-- Last modification time -->
+              <entityModifyTime T="11">1525438793723</entityModifyTime>
+              <!-- Updated by -->
+              <entityModifiedBy T="0"></entityModifiedBy>
+              <!-- Model resource -->
+              <propertyValue T="30" value="res9" name="p:modelres"></propertyValue>
+              <!-- Functions -->
+              <propertyValue T="30" valueMatrix="1|2,'BH','1'" name="p:funcs"></propertyValue>
+              <!-- Model resource -->
+              <propertyValue T="30" value="res10" name="p:interpres"></propertyValue>
+              <!-- Function name -->
+              <propertyValue T="30" value="BH" name="p:funcname"></propertyValue>
+              <!-- Function values -->
+              <propertyValue T="30" valueMatrix="16|2,'0','0'|2,'663.146','1'|2,'1067.5','1.1'|2,'1705.23','1.2'|2,'2463.11','1.3'|2,'3841.67','1.4'|2,'5425.74','1.5'|2,'7957.75','1.6'|2,'12298.3','1.7'|2,'20462.8','1.8'|2,'32169.6','1.9'|2,'61213.4','2.0'|2,'111408','2.1'|2,'175070','2.2'|2,'261469','2.3'|2,'318310','2.4'" name="p:table"></propertyValue>
+              <!-- Table from -->
+              <propertyValue T="30" value="" name="p:resultTable"></propertyValue>
+              <!-- Extrapolation -->
+              <propertyValue T="30" value="linear" name="p:extrap"></propertyValue>
+              <!-- Arguments -->
+              <propertyValue T="30" value="A/m" name="p:argunit"></propertyValue>
+              <!-- Function -->
+              <propertyValue T="30" value="T" name="p:fununit"></propertyValue>
+              <!-- Define inverse function -->
+              <propertyValue T="30" value="on" name="p:defineinv"></propertyValue>
+              <!-- Inverse function name -->
+              <propertyValue T="30" value="BH_inv" name="p:funcinvname"></propertyValue>
+              <!-- Define primitive function -->
+              <propertyValue T="30" value="on" name="p:defineprimfun"></propertyValue>
+              <!-- Primitive function name -->
+              <propertyValue T="30" value="BH_prim" name="p:primfunname"></propertyValue>
+              <!-- Random function name -->
+              <propertyValue T="30" value="rn_BH" name="p:randomname"></propertyValue>
+              <NodeDefaultValues>38,'p:sourcetype','p:importedname','p:importedstruct','p:importeddim','p:exportfilename','p:isexporting','p:source','p:filename','p:isuploaded','p:isexcel','p:sheet','p:range','p:nargs','p:scaledata','p:struct','p:tableexcelfilename','p:tableexcelsheet','p:tableexcelrange','p:tableexceloverwrite','p:tableexcelincludeheaders','p:tableexcelseparateunits','p:resultTableFile','p:hideFrameSettings','p:defvars','p:frame','p:relaxnamecheck','p:refreshcount','p:interp','p:extrapvalue','p:plotinv','p:allowinv','p:allowprim','p:allowrand','p:definerandom','p:randomnargs','p:randomrange','p:leftend','p:rightend'</NodeDefaultValues>
+              <FunctionFeatureList tag="feature" name="Functions">
+                <!-- User comments -->
+                <entityComments T="0"></entityComments>
+                <!-- Created by -->
+                <entityAuthor T="0"></entityAuthor>
+                <!-- Creation time -->
+                <entityCreationTime T="11">1513195352442</entityCreationTime>
+              </FunctionFeatureList>
+            </FunctionFeature>
+          </FunctionFeatureList>
+          <FeatureInfoList tag="featureInfo" name="FeatureInfoList">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1525438623910</entityCreationTime>
+            <FeatureInfo tag="info" name="Equation View">
+              <!-- Node status -->
+              <entityFlags T="51">NOREMOVE|NODEACTIVATE</entityFlags>
+              <!-- User comments -->
+              <entityComments T="0"></entityComments>
+              <!-- Created by -->
+              <entityAuthor T="0"></entityAuthor>
+              <!-- Creation time -->
+              <entityCreationTime T="11">1527094319105</entityCreationTime>
+            </FeatureInfo>
+          </FeatureInfoList>
+        </MaterialModel>
+        <MaterialModel tag="EffectiveBHCurve" name="Effective B-H Curve">
+          <!-- Node status -->
+          <entityFlags T="51">NORETAG</entityFlags>
+          <!-- User comments -->
+          <entityComments T="0"></entityComments>
+          <!-- Created by -->
+          <entityAuthor T="0"></entityAuthor>
+          <!-- Creation time -->
+          <entityCreationTime T="11">1513195352445</entityCreationTime>
+          <!-- Parameter values -->
+          <param T="33" param="normBeff" value="1|1,'BHeff(normHeffin)'"></param>
+          <param T="33" param="normHeff" value="1|1,'BHeff_inv(normBeffin)'"></param>
+          <param T="33" param="normHeffin" value="1|1,'sqrt(realdot(H1\,H1)+realdot(H2\,H2)+realdot(H3\,H3))'"></param>
+          <param T="33" param="normBeffin" value="1|1,'sqrt(realdot(B1\,B1)+realdot(B2\,B2)+realdot(B3\,B3))'"></param>
+          <param T="33" param="DESCR_PREFIX:normHeffin" value="1|1,'Effective magnetic field norm'"></param>
+          <param T="33" param="DESCR_PREFIX:normBeffin" value="1|1,'Effective magnetic flux density norm'"></param>
+          <identifier T="0">BHeff</identifier>
+          <!-- Model inputs -->
+          <input T="0">magneticfield</input>
+          <input T="0">magneticfluxdensity</input>
+          <!-- Model outputs -->
+          <output T="0">normBeff</output>
+          <output T="0">normHeff</output>
+          <InformationList tag="info" name="Information">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1513195352446</entityCreationTime>
+            <Information tag="category" name="Information">
+              <!-- User comments -->
+              <entityComments T="0"></entityComments>
+              <!-- Created by -->
+              <entityAuthor T="0"></entityAuthor>
+              <!-- Creation time -->
+              <entityCreationTime T="11">1513195352446</entityCreationTime>
+              <body T="0">Electromagnetic_models</body>
+            </Information>
+          </InformationList>
+          <FunctionFeatureList tag="func" name="Functions">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1513195352447</entityCreationTime>
+            <FunctionFeature op="Interpolation" tag="BHeff" name="Interpolation 1">
+              <!-- User comments -->
+              <entityComments T="0"></entityComments>
+              <!-- Created by -->
+              <entityAuthor T="0"></entityAuthor>
+              <!-- Creation time -->
+              <entityCreationTime T="11">1513195352447</entityCreationTime>
+              <!-- Last modification time -->
+              <entityModifyTime T="11">1525438793723</entityModifyTime>
+              <!-- Updated by -->
+              <entityModifiedBy T="0"></entityModifiedBy>
+              <!-- Model resource -->
+              <propertyValue T="30" value="res13" name="p:modelres"></propertyValue>
+              <!-- Functions -->
+              <propertyValue T="30" valueMatrix="1|2,'BHeff','1'" name="p:funcs"></propertyValue>
+              <!-- Model resource -->
+              <propertyValue T="30" value="res14" name="p:interpres"></propertyValue>
+              <!-- Function name -->
+              <propertyValue T="30" value="BHeff" name="p:funcname"></propertyValue>
+              <!-- Function values -->
+              <propertyValue T="30" valueMatrix="16|2,'0','0'|2,'663.146','1'|2,'1067.5','1.4943906486860214'|2,'1705.23','1.941630073817125'|2,'2463.11','2.257619494050335'|2,'3841.67','2.729755059668001'|2,'5425.74','2.8756651489647296'|2,'7957.75','3.149029234016385'|2,'12298.3','3.4529372126833744'|2,'20462.8','3.7845615956017395'|2,'32169.6','4.060195910283011'|2,'61213.4','4.421777266072753'|2,'111408','4.721954005107204'|2,'175070','4.941198649690261'|2,'261469','5.1446599438425515'|2,'318310','5.253346039640234'" name="p:table"></propertyValue>
+              <!-- Table from -->
+              <propertyValue T="30" value="" name="p:resultTable"></propertyValue>
+              <!-- Extrapolation -->
+              <propertyValue T="30" value="linear" name="p:extrap"></propertyValue>
+              <!-- Arguments -->
+              <propertyValue T="30" value="A/m" name="p:argunit"></propertyValue>
+              <!-- Function -->
+              <propertyValue T="30" value="T" name="p:fununit"></propertyValue>
+              <!-- Define inverse function -->
+              <propertyValue T="30" value="on" name="p:defineinv"></propertyValue>
+              <!-- Inverse function name -->
+              <propertyValue T="30" value="BHeff_inv" name="p:funcinvname"></propertyValue>
+              <!-- Primitive function name -->
+              <propertyValue T="30" value="BHeff_prim" name="p:primfunname"></propertyValue>
+              <!-- Random function name -->
+              <propertyValue T="30" value="rn_BHeff" name="p:randomname"></propertyValue>
+              <NodeDefaultValues>39,'p:sourcetype','p:importedname','p:importedstruct','p:importeddim','p:exportfilename','p:isexporting','p:source','p:filename','p:isuploaded','p:isexcel','p:sheet','p:range','p:nargs','p:scaledata','p:struct','p:tableexcelfilename','p:tableexcelsheet','p:tableexcelrange','p:tableexceloverwrite','p:tableexcelincludeheaders','p:tableexcelseparateunits','p:resultTableFile','p:hideFrameSettings','p:defvars','p:frame','p:relaxnamecheck','p:refreshcount','p:interp','p:extrapvalue','p:plotinv','p:allowinv','p:allowprim','p:defineprimfun','p:allowrand','p:definerandom','p:randomnargs','p:randomrange','p:leftend','p:rightend'</NodeDefaultValues>
+              <FunctionFeatureList tag="feature" name="Functions">
+                <!-- User comments -->
+                <entityComments T="0"></entityComments>
+                <!-- Created by -->
+                <entityAuthor T="0"></entityAuthor>
+                <!-- Creation time -->
+                <entityCreationTime T="11">1513195352448</entityCreationTime>
+              </FunctionFeatureList>
+            </FunctionFeature>
+          </FunctionFeatureList>
+          <FeatureInfoList tag="featureInfo" name="FeatureInfoList">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1525438623910</entityCreationTime>
+            <FeatureInfo tag="info" name="Equation View">
+              <!-- Node status -->
+              <entityFlags T="51">NOREMOVE|NODEACTIVATE</entityFlags>
+              <!-- User comments -->
+              <entityComments T="0"></entityComments>
+              <!-- Created by -->
+              <entityAuthor T="0"></entityAuthor>
+              <!-- Creation time -->
+              <entityCreationTime T="11">1527094319105</entityCreationTime>
+            </FeatureInfo>
+          </FeatureInfoList>
+        </MaterialModel>
+      </MaterialModelList>
+      <MaterialList tag="materialList" name="Materials">
+        <!-- User comments -->
+        <entityComments T="0"></entityComments>
+        <!-- Created by -->
+        <entityAuthor T="0"></entityAuthor>
+        <!-- Creation time -->
+        <entityCreationTime T="11">1513195353719</entityCreationTime>
+      </MaterialList>
+      <InformationList tag="info" name="Information">
+        <!-- User comments -->
+        <entityComments T="0"></entityComments>
+        <!-- Created by -->
+        <entityAuthor T="0"></entityAuthor>
+        <!-- Creation time -->
+        <entityCreationTime T="11">1525438623660</entityCreationTime>
+      </InformationList>
+    </Material>
+    <Material op="Common" tag="quartz" name="Quartz">
+      <!-- User comments -->
+      <entityComments T="0"></entityComments>
+      <!-- Created by -->
+      <entityAuthor T="0"></entityAuthor>
+      <!-- Creation time -->
+      <entityCreationTime T="11">1513195352924</entityCreationTime>
+      <!-- Family -->
+      <propertyValue T="30" value="custom" name="p:family"></propertyValue>
+      <!-- Specular color -->
+      <propertyValue T="30" value="custom" name="p:specular"></propertyValue>
+      <!-- Diffuse color -->
+      <propertyValue T="30" value="custom" name="p:diffuse"></propertyValue>
+      <!-- Ambient color -->
+      <propertyValue T="30" value="custom" name="p:ambient"></propertyValue>
+      <!-- Noise -->
+      <propertyValue T="30" value="on" name="p:noise"></propertyValue>
+      <!-- Normal vector noise frequency -->
+      <propertyValue T="30" value="1" name="p:noisefreq"></propertyValue>
+      <!-- Lighting model -->
+      <propertyValue T="30" value="cooktorrance" name="p:lighting"></propertyValue>
+      <!-- Reflectance at normal incidence -->
+      <propertyValue T="30" value="0.99" name="p:fresnel"></propertyValue>
+      <!-- Surface roughness -->
+      <propertyValue T="30" value="0.02" name="p:roughness"></propertyValue>
+      <!-- Specular exponent -->
+      <propertyValue T="30" value="200" name="p:shininess"></propertyValue>
+      <!-- Last family -->
+      <propertyValue T="30" value="custom" name="p:lastfamily"></propertyValue>
+      <identifier T="0">quartz</identifier>
+      <NodeDefaultValues>7,'p:customspecular','p:customdiffuse','p:customambient','p:noisescale','p:alpha','p:groups','p:info'</NodeDefaultValues>
+      <MaterialModelList tag="materialmodel" name="MaterialModelList">
+        <!-- User comments -->
+        <entityComments T="0"></entityComments>
+        <!-- Created by -->
+        <entityAuthor T="0"></entityAuthor>
+        <!-- Creation time -->
+        <entityCreationTime T="11">1513195352924</entityCreationTime>
+        <MaterialModel tag="def" name="Basic">
+          <!-- Node status -->
+          <entityFlags T="51">NOREMOVE|NORETAG</entityFlags>
+          <!-- User comments -->
+          <entityComments T="0"></entityComments>
+          <!-- Created by -->
+          <entityAuthor T="0"></entityAuthor>
+          <!-- Creation time -->
+          <entityCreationTime T="11">1513195352924</entityCreationTime>
+          <!-- Parameter values -->
+          <param T="33" param="relpermeability" value="9|1,'1'|1,'0'|1,'0'|1,'0'|1,'1'|1,'0'|1,'0'|1,'0'|1,'1'"></param>
+          <param T="33" param="electricconductivity" value="9|1,'1e-12[S/m]'|1,'0'|1,'0'|1,'0'|1,'1e-12[S/m]'|1,'0'|1,'0'|1,'0'|1,'1e-12[S/m]'"></param>
+          <param T="33" param="heatcapacity" value="1|1,'820[J/(kg*K)]'"></param>
+          <param T="33" param="relpermittivity" value="9|1,'4.2'|1,'0'|1,'0'|1,'0'|1,'4.2'|1,'0'|1,'0'|1,'0'|1,'4.2'"></param>
+          <param T="33" param="emissivity" value="1|1,'0.7'"></param>
+          <param T="33" param="density" value="1|1,'2600[kg/m^3]'"></param>
+          <param T="33" param="thermalconductivity" value="9|1,'3[W/(m*K)]'|1,'0'|1,'0'|1,'0'|1,'3[W/(m*K)]'|1,'0'|1,'0'|1,'0'|1,'3[W/(m*K)]'"></param>
+          <identifier T="0">def</identifier>
+          <InformationList tag="info" name="Information">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1513195352924</entityCreationTime>
+          </InformationList>
+          <FunctionFeatureList tag="func" name="Functions">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1513195352924</entityCreationTime>
+          </FunctionFeatureList>
+          <FeatureInfoList tag="featureInfo" name="FeatureInfoList">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1525438623910</entityCreationTime>
+            <FeatureInfo tag="info" name="Equation View">
+              <!-- Node status -->
+              <entityFlags T="51">NOREMOVE|NODEACTIVATE</entityFlags>
+              <!-- User comments -->
+              <entityComments T="0"></entityComments>
+              <!-- Created by -->
+              <entityAuthor T="0"></entityAuthor>
+              <!-- Creation time -->
+              <entityCreationTime T="11">1527094319105</entityCreationTime>
+            </FeatureInfo>
+          </FeatureInfoList>
+        </MaterialModel>
+      </MaterialModelList>
+      <MaterialList tag="materialList" name="Materials">
+        <!-- User comments -->
+        <entityComments T="0"></entityComments>
+        <!-- Created by -->
+        <entityAuthor T="0"></entityAuthor>
+        <!-- Creation time -->
+        <entityCreationTime T="11">1513195353719</entityCreationTime>
+      </MaterialList>
+      <InformationList tag="info" name="Information">
+        <!-- User comments -->
+        <entityComments T="0"></entityComments>
+        <!-- Created by -->
+        <entityAuthor T="0"></entityAuthor>
+        <!-- Creation time -->
+        <entityCreationTime T="11">1525438623676</entityCreationTime>
+      </InformationList>
+    </Material>
+    <Material op="Common" tag="graphite" name="Graphite">
+      <!-- User comments -->
+      <entityComments T="0"></entityComments>
+      <!-- Created by -->
+      <entityAuthor T="0"></entityAuthor>
+      <!-- Creation time -->
+      <entityCreationTime T="11">1513195353049</entityCreationTime>
+      <!-- Family -->
+      <propertyValue T="30" value="custom" name="p:family"></propertyValue>
+      <!-- Specular color -->
+      <propertyValue T="30" value="custom" name="p:specular"></propertyValue>
+      <!-- Custom color -->
+      <propertyValue T="30" valueMatrix="1|3,'0.7843137254901961','0.7843137254901961','0.7843137254901961'" name="p:customspecular"></propertyValue>
+      <!-- Diffuse color -->
+      <propertyValue T="30" value="custom" name="p:diffuse"></propertyValue>
+      <!-- Custom color -->
+      <propertyValue T="30" valueMatrix="1|3,'0.7843137254901961','0.7843137254901961','0.7843137254901961'" name="p:customdiffuse"></propertyValue>
+      <!-- Ambient color -->
+      <propertyValue T="30" value="custom" name="p:ambient"></propertyValue>
+      <!-- Custom color -->
+      <propertyValue T="30" valueMatrix="1|3,'0.39215686274509803','0.39215686274509803','0.39215686274509803'" name="p:customambient"></propertyValue>
+      <!-- Noise -->
+      <propertyValue T="30" value="on" name="p:noise"></propertyValue>
+      <!-- Normal vector noise frequency -->
+      <propertyValue T="30" value="1" name="p:noisefreq"></propertyValue>
+      <!-- Lighting model -->
+      <propertyValue T="30" value="cooktorrance" name="p:lighting"></propertyValue>
+      <!-- Reflectance at normal incidence -->
+      <propertyValue T="30" value="0.99" name="p:fresnel"></propertyValue>
+      <!-- Surface roughness -->
+      <propertyValue T="30" value="0.14" name="p:roughness"></propertyValue>
+      <!-- Specular exponent -->
+      <propertyValue T="30" value="200" name="p:shininess"></propertyValue>
+      <!-- Last family -->
+      <propertyValue T="30" value="custom" name="p:lastfamily"></propertyValue>
+      <identifier T="0">graphite</identifier>
+      <NodeDefaultValues>4,'p:noisescale','p:alpha','p:groups','p:info'</NodeDefaultValues>
+      <MaterialModelList tag="materialmodel" name="MaterialModelList">
+        <!-- User comments -->
+        <entityComments T="0"></entityComments>
+        <!-- Created by -->
+        <entityAuthor T="0"></entityAuthor>
+        <!-- Creation time -->
+        <entityCreationTime T="11">1513195353049</entityCreationTime>
+        <MaterialModel tag="def" name="Basic">
+          <!-- Node status -->
+          <entityFlags T="51">NOREMOVE|NORETAG</entityFlags>
+          <!-- User comments -->
+          <entityComments T="0"></entityComments>
+          <!-- Created by -->
+          <entityAuthor T="0"></entityAuthor>
+          <!-- Creation time -->
+          <entityCreationTime T="11">1513195353049</entityCreationTime>
+          <!-- Parameter values -->
+          <param T="33" param="relpermeability" value="9|1,'1'|1,'0'|1,'0'|1,'0'|1,'1'|1,'0'|1,'0'|1,'0'|1,'1'"></param>
+          <param T="33" param="electricconductivity" value="9|1,'3e3[S/m]'|1,'0'|1,'0'|1,'0'|1,'3e3[S/m]'|1,'0'|1,'0'|1,'0'|1,'3e3[S/m]'"></param>
+          <param T="33" param="heatcapacity" value="1|1,'710[J/(kg*K)]'"></param>
+          <param T="33" param="relpermittivity" value="9|1,'1'|1,'0'|1,'0'|1,'0'|1,'1'|1,'0'|1,'0'|1,'0'|1,'1'"></param>
+          <param T="33" param="emissivity" value="1|1,'1'"></param>
+          <param T="33" param="density" value="1|1,'1950[kg/m^3]'"></param>
+          <param T="33" param="thermalconductivity" value="9|1,'150[W/(m*K)]*(300[K]/T)'|1,'0'|1,'0'|1,'0'|1,'150[W/(m*K)]*(300[K]/T)'|1,'0'|1,'0'|1,'0'|1,'150[W/(m*K)]*(300[K]/T)'"></param>
+          <identifier T="0">def</identifier>
+          <!-- Model inputs -->
+          <input T="0">temperature</input>
+          <InformationList tag="info" name="Information">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1513195353049</entityCreationTime>
+          </InformationList>
+          <FunctionFeatureList tag="func" name="Functions">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1513195353049</entityCreationTime>
+          </FunctionFeatureList>
+          <FeatureInfoList tag="featureInfo" name="FeatureInfoList">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1525438623910</entityCreationTime>
+            <FeatureInfo tag="info" name="Equation View">
+              <!-- Node status -->
+              <entityFlags T="51">NOREMOVE|NODEACTIVATE</entityFlags>
+              <!-- User comments -->
+              <entityComments T="0"></entityComments>
+              <!-- Created by -->
+              <entityAuthor T="0"></entityAuthor>
+              <!-- Creation time -->
+              <entityCreationTime T="11">1527094319105</entityCreationTime>
+            </FeatureInfo>
+          </FeatureInfoList>
+        </MaterialModel>
+      </MaterialModelList>
+      <MaterialList tag="materialList" name="Materials">
+        <!-- User comments -->
+        <entityComments T="0"></entityComments>
+        <!-- Created by -->
+        <entityAuthor T="0"></entityAuthor>
+        <!-- Creation time -->
+        <entityCreationTime T="11">1513195353719</entityCreationTime>
+      </MaterialList>
+      <InformationList tag="info" name="Information">
+        <!-- User comments -->
+        <entityComments T="0"></entityComments>
+        <!-- Created by -->
+        <entityAuthor T="0"></entityAuthor>
+        <!-- Creation time -->
+        <entityCreationTime T="11">1525438623676</entityCreationTime>
+      </InformationList>
+    </Material>
+    <Material op="Common" tag="graphite_felt" name="Graphite Felt">
+      <!-- User comments -->
+      <entityComments T="0"></entityComments>
+      <!-- Created by -->
+      <entityAuthor T="0"></entityAuthor>
+      <!-- Creation time -->
+      <entityCreationTime T="11">1513195353189</entityCreationTime>
+      <!-- Last modification time -->
+      <entityModifyTime T="11">1525438793723</entityModifyTime>
+      <!-- Updated by -->
+      <entityModifiedBy T="0"></entityModifiedBy>
+      <!-- Family -->
+      <propertyValue T="30" value="custom" name="p:family"></propertyValue>
+      <!-- Specular color -->
+      <propertyValue T="30" value="custom" name="p:specular"></propertyValue>
+      <!-- Custom color -->
+      <propertyValue T="30" valueMatrix="1|3,'0.7843137254901961','0.7843137254901961','0.7843137254901961'" name="p:customspecular"></propertyValue>
+      <!-- Diffuse color -->
+      <propertyValue T="30" value="custom" name="p:diffuse"></propertyValue>
+      <!-- Custom color -->
+      <propertyValue T="30" valueMatrix="1|3,'0.7843137254901961','0.7843137254901961','0.7843137254901961'" name="p:customdiffuse"></propertyValue>
+      <!-- Ambient color -->
+      <propertyValue T="30" value="custom" name="p:ambient"></propertyValue>
+      <!-- Custom color -->
+      <propertyValue T="30" valueMatrix="1|3,'0.39215686274509803','0.39215686274509803','0.39215686274509803'" name="p:customambient"></propertyValue>
+      <!-- Noise -->
+      <propertyValue T="30" value="on" name="p:noise"></propertyValue>
+      <!-- Normal vector noise frequency -->
+      <propertyValue T="30" value="1" name="p:noisefreq"></propertyValue>
+      <!-- Lighting model -->
+      <propertyValue T="30" value="cooktorrance" name="p:lighting"></propertyValue>
+      <!-- Reflectance at normal incidence -->
+      <propertyValue T="30" value="0.99" name="p:fresnel"></propertyValue>
+      <!-- Surface roughness -->
+      <propertyValue T="30" value="0.14" name="p:roughness"></propertyValue>
+      <!-- Specular exponent -->
+      <propertyValue T="30" value="200" name="p:shininess"></propertyValue>
+      <!-- Last family -->
+      <propertyValue T="30" value="custom" name="p:lastfamily"></propertyValue>
+      <identifier T="0">graphite_felt</identifier>
+      <NodeDefaultValues>4,'p:noisescale','p:alpha','p:groups','p:info'</NodeDefaultValues>
+      <MaterialModelList tag="materialmodel" name="MaterialModelList">
+        <!-- User comments -->
+        <entityComments T="0"></entityComments>
+        <!-- Created by -->
+        <entityAuthor T="0"></entityAuthor>
+        <!-- Creation time -->
+        <entityCreationTime T="11">1513195353189</entityCreationTime>
+        <MaterialModel tag="def" name="Basic">
+          <!-- Node status -->
+          <entityFlags T="51">NOREMOVE|NORETAG</entityFlags>
+          <!-- User comments -->
+          <entityComments T="0"></entityComments>
+          <!-- Created by -->
+          <entityAuthor T="0"></entityAuthor>
+          <!-- Creation time -->
+          <entityCreationTime T="11">1513195353189</entityCreationTime>
+          <!-- Parameter values -->
+          <param T="33" param="relpermeability" value="9|1,'1'|1,'0'|1,'0'|1,'0'|1,'1'|1,'0'|1,'0'|1,'0'|1,'1'"></param>
+          <param T="33" param="electricconductivity" value="9|1,'100[S/m]'|1,'0'|1,'0'|1,'0'|1,'100[S/m]'|1,'0'|1,'0'|1,'0'|1,'100[S/m]'"></param>
+          <param T="33" param="heatcapacity" value="1|1,'200[J/(kg*K)]'"></param>
+          <param T="33" param="relpermittivity" value="9|1,'1'|1,'0'|1,'0'|1,'0'|1,'1'|1,'0'|1,'0'|1,'0'|1,'1'"></param>
+          <param T="33" param="emissivity" value="1|1,'1'"></param>
+          <param T="33" param="density" value="1|1,'120[kg/m^3]'"></param>
+          <param T="33" param="thermalconductivity" value="9|1,'0.3[W/(m*K)]'|1,'0'|1,'0'|1,'0'|1,'0.3[W/(m*K)]'|1,'0'|1,'0'|1,'0'|1,'0.3[W/(m*K)]'"></param>
+          <identifier T="0">def</identifier>
+          <InformationList tag="info" name="Information">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1513195353189</entityCreationTime>
+          </InformationList>
+          <FunctionFeatureList tag="func" name="Functions">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1513195353189</entityCreationTime>
+          </FunctionFeatureList>
+          <FeatureInfoList tag="featureInfo" name="FeatureInfoList">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1525438623910</entityCreationTime>
+            <FeatureInfo tag="info" name="Equation View">
+              <!-- Node status -->
+              <entityFlags T="51">NOREMOVE|NODEACTIVATE</entityFlags>
+              <!-- User comments -->
+              <entityComments T="0"></entityComments>
+              <!-- Created by -->
+              <entityAuthor T="0"></entityAuthor>
+              <!-- Creation time -->
+              <entityCreationTime T="11">1527094319121</entityCreationTime>
+            </FeatureInfo>
+          </FeatureInfoList>
+        </MaterialModel>
+      </MaterialModelList>
+      <MaterialList tag="materialList" name="Materials">
+        <!-- User comments -->
+        <entityComments T="0"></entityComments>
+        <!-- Created by -->
+        <entityAuthor T="0"></entityAuthor>
+        <!-- Creation time -->
+        <entityCreationTime T="11">1513195353719</entityCreationTime>
+      </MaterialList>
+      <InformationList tag="info" name="Information">
+        <!-- User comments -->
+        <entityComments T="0"></entityComments>
+        <!-- Created by -->
+        <entityAuthor T="0"></entityAuthor>
+        <!-- Creation time -->
+        <entityCreationTime T="11">1525438623676</entityCreationTime>
+      </InformationList>
+    </Material>
+    <Material op="Common" tag="silicon_carbide" name="Silicon Carbide">
+      <!-- User comments -->
+      <entityComments T="0"></entityComments>
+      <!-- Created by -->
+      <entityAuthor T="0"></entityAuthor>
+      <!-- Creation time -->
+      <entityCreationTime T="11">1513195353361</entityCreationTime>
+      <!-- Family -->
+      <propertyValue T="30" value="custom" name="p:family"></propertyValue>
+      <!-- Specular color -->
+      <propertyValue T="30" value="custom" name="p:specular"></propertyValue>
+      <!-- Diffuse color -->
+      <propertyValue T="30" value="custom" name="p:diffuse"></propertyValue>
+      <!-- Ambient color -->
+      <propertyValue T="30" value="custom" name="p:ambient"></propertyValue>
+      <!-- Noise -->
+      <propertyValue T="30" value="on" name="p:noise"></propertyValue>
+      <!-- Normal vector noise frequency -->
+      <propertyValue T="30" value="1" name="p:noisefreq"></propertyValue>
+      <!-- Lighting model -->
+      <propertyValue T="30" value="cooktorrance" name="p:lighting"></propertyValue>
+      <!-- Reflectance at normal incidence -->
+      <propertyValue T="30" value="0.99" name="p:fresnel"></propertyValue>
+      <!-- Surface roughness -->
+      <propertyValue T="30" value="0.02" name="p:roughness"></propertyValue>
+      <!-- Specular exponent -->
+      <propertyValue T="30" value="200" name="p:shininess"></propertyValue>
+      <!-- Last family -->
+      <propertyValue T="30" value="custom" name="p:lastfamily"></propertyValue>
+      <identifier T="0">silicon_carbide</identifier>
+      <NodeDefaultValues>7,'p:customspecular','p:customdiffuse','p:customambient','p:noisescale','p:alpha','p:groups','p:info'</NodeDefaultValues>
+      <MaterialModelList tag="materialmodel" name="MaterialModelList">
+        <!-- User comments -->
+        <entityComments T="0"></entityComments>
+        <!-- Created by -->
+        <entityAuthor T="0"></entityAuthor>
+        <!-- Creation time -->
+        <entityCreationTime T="11">1513195353361</entityCreationTime>
+        <MaterialModel tag="def" name="Basic">
+          <!-- Node status -->
+          <entityFlags T="51">NOREMOVE|NORETAG</entityFlags>
+          <!-- User comments -->
+          <entityComments T="0"></entityComments>
+          <!-- Created by -->
+          <entityAuthor T="0"></entityAuthor>
+          <!-- Creation time -->
+          <entityCreationTime T="11">1513195353361</entityCreationTime>
+          <!-- Parameter values -->
+          <param T="33" param="relpermeability" value="9|1,'1'|1,'0'|1,'0'|1,'0'|1,'1'|1,'0'|1,'0'|1,'0'|1,'1'"></param>
+          <param T="33" param="electricconductivity" value="9|1,'1e3[S/m]'|1,'0'|1,'0'|1,'0'|1,'1e3[S/m]'|1,'0'|1,'0'|1,'0'|1,'1e3[S/m]'"></param>
+          <param T="33" param="heatcapacity" value="1|1,'1200[J/(kg*K)]'"></param>
+          <param T="33" param="relpermittivity" value="9|1,'10'|1,'0'|1,'0'|1,'0'|1,'10'|1,'0'|1,'0'|1,'0'|1,'10'"></param>
+          <param T="33" param="emissivity" value="1|1,'0.5'"></param>
+          <param T="33" param="density" value="1|1,'3200[kg/m^3]'"></param>
+          <param T="33" param="thermalconductivity" value="9|1,'450[W/(m*K)]*(300[K]/T)^0.75'|1,'0'|1,'0'|1,'0'|1,'450[W/(m*K)]*(300[K]/T)^0.75'|1,'0'|1,'0'|1,'0'|1,'450[W/(m*K)]*(300[K]/T)^0.75'"></param>
+          <identifier T="0">def</identifier>
+          <!-- Model inputs -->
+          <input T="0">temperature</input>
+          <InformationList tag="info" name="Information">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1513195353361</entityCreationTime>
+          </InformationList>
+          <FunctionFeatureList tag="func" name="Functions">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1513195353361</entityCreationTime>
+          </FunctionFeatureList>
+          <FeatureInfoList tag="featureInfo" name="FeatureInfoList">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1525438623910</entityCreationTime>
+            <FeatureInfo tag="info" name="Equation View">
+              <!-- Node status -->
+              <entityFlags T="51">NOREMOVE|NODEACTIVATE</entityFlags>
+              <!-- User comments -->
+              <entityComments T="0"></entityComments>
+              <!-- Created by -->
+              <entityAuthor T="0"></entityAuthor>
+              <!-- Creation time -->
+              <entityCreationTime T="11">1527094319136</entityCreationTime>
+            </FeatureInfo>
+          </FeatureInfoList>
+        </MaterialModel>
+      </MaterialModelList>
+      <MaterialList tag="materialList" name="Materials">
+        <!-- User comments -->
+        <entityComments T="0"></entityComments>
+        <!-- Created by -->
+        <entityAuthor T="0"></entityAuthor>
+        <!-- Creation time -->
+        <entityCreationTime T="11">1513195353719</entityCreationTime>
+      </MaterialList>
+      <InformationList tag="info" name="Information">
+        <!-- User comments -->
+        <entityComments T="0"></entityComments>
+        <!-- Created by -->
+        <entityAuthor T="0"></entityAuthor>
+        <!-- Creation time -->
+        <entityCreationTime T="11">1525438623676</entityCreationTime>
+      </InformationList>
+    </Material>
+    <Material op="Common" tag="jilesatherton_hysteretic_material" name="Jiles-Atherton Hysteretic Material">
+      <!-- User comments -->
+      <entityComments T="0"></entityComments>
+      <!-- Created by -->
+      <entityAuthor T="0"></entityAuthor>
+      <!-- Creation time -->
+      <entityCreationTime T="11">1513195353454</entityCreationTime>
+      <!-- Last modification time -->
+      <entityModifyTime T="11">1525438793723</entityModifyTime>
+      <!-- Updated by -->
+      <entityModifiedBy T="0"></entityModifiedBy>
+      <!-- Family -->
+      <propertyValue T="30" value="iron" name="p:family"></propertyValue>
+      <!-- Last family -->
+      <propertyValue T="30" value="iron" name="p:lastfamily"></propertyValue>
+      <identifier T="0">jilesatherton_hysteretic_material</identifier>
+      <NodeDefaultValues>16,'p:specular','p:customspecular','p:diffuse','p:customdiffuse','p:ambient','p:customambient','p:noise','p:noisescale','p:noisefreq','p:alpha','p:lighting','p:fresnel','p:roughness','p:shininess','p:groups','p:info'</NodeDefaultValues>
+      <MaterialModelList tag="materialmodel" name="MaterialModelList">
+        <!-- User comments -->
+        <entityComments T="0"></entityComments>
+        <!-- Created by -->
+        <entityAuthor T="0"></entityAuthor>
+        <!-- Creation time -->
+        <entityCreationTime T="11">1513195353454</entityCreationTime>
+        <MaterialModel tag="def" name="Basic">
+          <!-- Node status -->
+          <entityFlags T="51">NOREMOVE|NORETAG</entityFlags>
+          <!-- User comments -->
+          <entityComments T="0"></entityComments>
+          <!-- Created by -->
+          <entityAuthor T="0"></entityAuthor>
+          <!-- Creation time -->
+          <entityCreationTime T="11">1513195353454</entityCreationTime>
+          <!-- Parameter values -->
+          <param T="33" param="electricconductivity" value="9|1,'0[S/m]'|1,'0'|1,'0'|1,'0'|1,'0[S/m]'|1,'0'|1,'0'|1,'0'|1,'0[S/m]'"></param>
+          <param T="33" param="relpermittivity" value="9|1,'1'|1,'0'|1,'0'|1,'0'|1,'1'|1,'0'|1,'0'|1,'0'|1,'1'"></param>
+          <identifier T="0">def</identifier>
+          <InformationList tag="info" name="Information">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1513195353454</entityCreationTime>
+          </InformationList>
+          <FunctionFeatureList tag="func" name="Functions">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1513195353454</entityCreationTime>
+          </FunctionFeatureList>
+          <FeatureInfoList tag="featureInfo" name="FeatureInfoList">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1525438623910</entityCreationTime>
+            <FeatureInfo tag="info" name="Equation View">
+              <!-- Node status -->
+              <entityFlags T="51">NOREMOVE|NODEACTIVATE</entityFlags>
+              <!-- User comments -->
+              <entityComments T="0"></entityComments>
+              <!-- Created by -->
+              <entityAuthor T="0"></entityAuthor>
+              <!-- Creation time -->
+              <entityCreationTime T="11">1527094319152</entityCreationTime>
+            </FeatureInfo>
+          </FeatureInfoList>
+        </MaterialModel>
+        <MaterialModel tag="JilesAtherton" name="Jiles-Atherton model parameters">
+          <!-- Node status -->
+          <entityFlags T="51">NORETAG</entityFlags>
+          <!-- User comments -->
+          <entityComments T="0"></entityComments>
+          <!-- Created by -->
+          <entityAuthor T="0"></entityAuthor>
+          <!-- Creation time -->
+          <entityCreationTime T="11">1513195353454</entityCreationTime>
+          <!-- Parameter values -->
+          <param T="33" param="MsJA" value="9|1,'1.6e6[A/m]'|1,'0'|1,'0'|1,'0'|1,'1.6e6[A/m]'|1,'0'|1,'0'|1,'0'|1,'1.6e6[A/m]'"></param>
+          <param T="33" param="aJA" value="9|1,'560[A/m]'|1,'0'|1,'0'|1,'0'|1,'560[A/m]'|1,'0'|1,'0'|1,'0'|1,'560[A/m]'"></param>
+          <param T="33" param="kJA" value="9|1,'1200[A/m]'|1,'0'|1,'0'|1,'0'|1,'1200[A/m]'|1,'0'|1,'0'|1,'0'|1,'1200[A/m]'"></param>
+          <param T="33" param="cJA" value="9|1,'0.1'|1,'0'|1,'0'|1,'0'|1,'0.1'|1,'0'|1,'0'|1,'0'|1,'0.1'"></param>
+          <param T="33" param="alphaJA" value="9|1,'0.0007'|1,'0'|1,'0'|1,'0'|1,'0.0007'|1,'0'|1,'0'|1,'0'|1,'0.0007'"></param>
+          <identifier T="0">ja</identifier>
+          <!-- Model outputs -->
+          <output T="0">MsJA</output>
+          <output T="0">aJA</output>
+          <output T="0">kJA</output>
+          <output T="0">cJA</output>
+          <output T="0">alphaJA</output>
+          <InformationList tag="info" name="Information">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1513195353470</entityCreationTime>
+            <Information tag="category" name="Information">
+              <!-- User comments -->
+              <entityComments T="0"></entityComments>
+              <!-- Created by -->
+              <entityAuthor T="0"></entityAuthor>
+              <!-- Creation time -->
+              <entityCreationTime T="11">1513195353470</entityCreationTime>
+              <body T="0">Electromagnetic_models</body>
+            </Information>
+          </InformationList>
+          <FunctionFeatureList tag="func" name="Functions">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1513195353470</entityCreationTime>
+          </FunctionFeatureList>
+          <FeatureInfoList tag="featureInfo" name="FeatureInfoList">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1525438623910</entityCreationTime>
+            <FeatureInfo tag="info" name="Equation View">
+              <!-- Node status -->
+              <entityFlags T="51">NOREMOVE|NODEACTIVATE</entityFlags>
+              <!-- User comments -->
+              <entityComments T="0"></entityComments>
+              <!-- Created by -->
+              <entityAuthor T="0"></entityAuthor>
+              <!-- Creation time -->
+              <entityCreationTime T="11">1527094319152</entityCreationTime>
+            </FeatureInfo>
+          </FeatureInfoList>
+        </MaterialModel>
+      </MaterialModelList>
+      <MaterialList tag="materialList" name="Materials">
+        <!-- User comments -->
+        <entityComments T="0"></entityComments>
+        <!-- Created by -->
+        <entityAuthor T="0"></entityAuthor>
+        <!-- Creation time -->
+        <entityCreationTime T="11">1513195353719</entityCreationTime>
+      </MaterialList>
+      <InformationList tag="info" name="Information">
+        <!-- User comments -->
+        <entityComments T="0"></entityComments>
+        <!-- Created by -->
+        <entityAuthor T="0"></entityAuthor>
+        <!-- Creation time -->
+        <entityCreationTime T="11">1525438623676</entityCreationTime>
+      </InformationList>
+    </Material>
+    <Material op="Common" tag="nonlinear_permanent_magnet" name="Nonlinear Permanent Magnet">
+      <!-- User comments -->
+      <entityComments T="0"></entityComments>
+      <!-- Created by -->
+      <entityAuthor T="0"></entityAuthor>
+      <!-- Creation time -->
+      <entityCreationTime T="11">1513195353579</entityCreationTime>
+      <!-- Last modification time -->
+      <entityModifyTime T="11">1525438793723</entityModifyTime>
+      <!-- Updated by -->
+      <entityModifiedBy T="0"></entityModifiedBy>
+      <!-- Family -->
+      <propertyValue T="30" value="iron" name="p:family"></propertyValue>
+      <!-- Last family -->
+      <propertyValue T="30" value="iron" name="p:lastfamily"></propertyValue>
+      <identifier T="0">nonlinear_permanent_magnet</identifier>
+      <NodeDefaultValues>16,'p:specular','p:customspecular','p:diffuse','p:customdiffuse','p:ambient','p:customambient','p:noise','p:noisescale','p:noisefreq','p:alpha','p:lighting','p:fresnel','p:roughness','p:shininess','p:groups','p:info'</NodeDefaultValues>
+      <MaterialModelList tag="materialmodel" name="MaterialModelList">
+        <!-- User comments -->
+        <entityComments T="0"></entityComments>
+        <!-- Created by -->
+        <entityAuthor T="0"></entityAuthor>
+        <!-- Creation time -->
+        <entityCreationTime T="11">1513195353579</entityCreationTime>
+        <MaterialModel tag="def" name="Basic">
+          <!-- Node status -->
+          <entityFlags T="51">NOREMOVE|NORETAG</entityFlags>
+          <!-- User comments -->
+          <entityComments T="0"></entityComments>
+          <!-- Created by -->
+          <entityAuthor T="0"></entityAuthor>
+          <!-- Creation time -->
+          <entityCreationTime T="11">1513195353579</entityCreationTime>
+          <!-- Parameter values -->
+          <param T="33" param="electricconductivity" value="9|1,'1.8e6[S/m]'|1,'0'|1,'0'|1,'0'|1,'1.8e6[S/m]'|1,'0'|1,'0'|1,'0'|1,'1.8e6[S/m]'"></param>
+          <param T="33" param="relpermittivity" value="9|1,'1'|1,'0'|1,'0'|1,'0'|1,'1'|1,'0'|1,'0'|1,'0'|1,'1'"></param>
+          <identifier T="0">def</identifier>
+          <InformationList tag="info" name="Information">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1513195353579</entityCreationTime>
+          </InformationList>
+          <FunctionFeatureList tag="func" name="Functions">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1513195353579</entityCreationTime>
+          </FunctionFeatureList>
+          <FeatureInfoList tag="featureInfo" name="FeatureInfoList">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1525438623910</entityCreationTime>
+            <FeatureInfo tag="info" name="Equation View">
+              <!-- Node status -->
+              <entityFlags T="51">NOREMOVE|NODEACTIVATE</entityFlags>
+              <!-- User comments -->
+              <entityComments T="0"></entityComments>
+              <!-- Created by -->
+              <entityAuthor T="0"></entityAuthor>
+              <!-- Creation time -->
+              <entityCreationTime T="11">1527094319152</entityCreationTime>
+            </FeatureInfo>
+          </FeatureInfoList>
+        </MaterialModel>
+        <MaterialModel tag="BHsCurve" name="B-Hs Curve">
+          <!-- Node status -->
+          <entityFlags T="51">NORETAG</entityFlags>
+          <!-- User comments -->
+          <entityComments T="0"></entityComments>
+          <!-- Created by -->
+          <entityAuthor T="0"></entityAuthor>
+          <!-- Creation time -->
+          <entityCreationTime T="11">1527093403135</entityCreationTime>
+          <!-- Last modification time -->
+          <entityModifyTime T="11">1527234056201</entityModifyTime>
+          <!-- Updated by -->
+          <entityModifiedBy T="0"></entityModifiedBy>
+          <!-- Parameter values -->
+          <param T="33" param="normB" value="1|1,'BHs(normHsin-Hc)'"></param>
+          <param T="33" param="normHs" value="1|1,'BHs_inv(normBin)+Hc'"></param>
+          <param T="33" param="Hc" value="1|1,'abs(BHs_inv(0))'"></param>
+          <param T="33" param="Wpm" value="1|1,'BHs_prim(normHsin-Hc)'"></param>
+          <param T="33" param="normHsin" value="1|1,'sqrt(Hs1^2+Hs2^2+Hs3^2)'"></param>
+          <param T="33" param="normBin" value="1|1,'sqrt(B1^2+B2^2+B3^2)'"></param>
+          <param T="33" param="DESCR_PREFIX:normHsin" value="1|1,'Shifted magnetic field norm'"></param>
+          <param T="33" param="DESCR_PREFIX:normBin" value="1|1,'Magnetic flux density norm'"></param>
+          <identifier T="0">BHsCurve</identifier>
+          <!-- Model inputs -->
+          <input T="0">shiftedmagneticfield</input>
+          <input T="0">magneticfluxdensity</input>
+          <!-- Model outputs -->
+          <output T="0">normB</output>
+          <output T="0">normHs</output>
+          <output T="0">Hc</output>
+          <output T="0">Wpm</output>
+          <FeatureInfoList tag="featureInfo" name="FeatureInfoList">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1527093403135</entityCreationTime>
+            <FeatureInfo tag="info" name="Equation View">
+              <!-- Node status -->
+              <entityFlags T="51">NOREMOVE|NODEACTIVATE</entityFlags>
+              <!-- User comments -->
+              <entityComments T="0"></entityComments>
+              <!-- Created by -->
+              <entityAuthor T="0"></entityAuthor>
+              <!-- Creation time -->
+              <entityCreationTime T="11">1527094319168</entityCreationTime>
+            </FeatureInfo>
+          </FeatureInfoList>
+          <FunctionFeatureList tag="func" name="Functions">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1527093403135</entityCreationTime>
+            <FunctionFeature op="Interpolation" tag="BHs" name="Interpolation 1">
+              <!-- User comments -->
+              <entityComments T="0"></entityComments>
+              <!-- Created by -->
+              <entityAuthor T="0"></entityAuthor>
+              <!-- Creation time -->
+              <entityCreationTime T="11">1527093424803</entityCreationTime>
+              <!-- Last modification time -->
+              <entityModifyTime T="11">1527094325330</entityModifyTime>
+              <!-- Updated by -->
+              <entityModifiedBy T="0"></entityModifiedBy>
+              <!-- Model resource -->
+              <propertyValue T="30" value="res21" name="p:modelres"></propertyValue>
+              <!-- Functions -->
+              <propertyValue T="30" valueMatrix="1|2,'BHs','1'" name="p:funcs"></propertyValue>
+              <!-- Model resource -->
+              <propertyValue T="30" value="res22" name="p:interpres"></propertyValue>
+              <!-- Function name -->
+              <propertyValue T="30" value="BHs" name="p:funcname"></propertyValue>
+              <!-- Function values -->
+              <propertyValue T="30" valueMatrix="11|2,'-50000','0'|2,'-48000','0.5'|2,'-47000','0.7'|2,'-46000','0.85'|2,'-44000','0.96'|2,'-40000','1.03'|2,'-35000','1.08'|2,'-30000','1.11'|2,'-20000','1.155'|2,'-10000','1.187'|2,'0','1.2'" name="p:table"></propertyValue>
+              <!-- Table from -->
+              <propertyValue T="30" value="" name="p:resultTable"></propertyValue>
+              <!-- Extrapolation -->
+              <propertyValue T="30" value="linear" name="p:extrap"></propertyValue>
+              <!-- Arguments -->
+              <propertyValue T="30" value="A/m" name="p:argunit"></propertyValue>
+              <!-- Function -->
+              <propertyValue T="30" value="T" name="p:fununit"></propertyValue>
+              <!-- Define inverse function -->
+              <propertyValue T="30" value="on" name="p:defineinv"></propertyValue>
+              <!-- Inverse function name -->
+              <propertyValue T="30" value="BHs_inv" name="p:funcinvname"></propertyValue>
+              <!-- Define primitive function -->
+              <propertyValue T="30" value="on" name="p:defineprimfun"></propertyValue>
+              <!-- Primitive function name -->
+              <propertyValue T="30" value="BHs_prim" name="p:primfunname"></propertyValue>
+              <!-- Random function name -->
+              <propertyValue T="30" value="rn_BHs" name="p:randomname"></propertyValue>
+              <NodeDefaultValues>38,'p:sourcetype','p:importedname','p:importedstruct','p:importeddim','p:exportfilename','p:isexporting','p:source','p:filename','p:isuploaded','p:isexcel','p:sheet','p:range','p:nargs','p:scaledata','p:struct','p:tableexcelfilename','p:tableexcelsheet','p:tableexcelrange','p:tableexceloverwrite','p:tableexcelincludeheaders','p:tableexcelseparateunits','p:resultTableFile','p:hideFrameSettings','p:defvars','p:frame','p:relaxnamecheck','p:refreshcount','p:interp','p:extrapvalue','p:plotinv','p:allowinv','p:allowprim','p:allowrand','p:definerandom','p:randomnargs','p:randomrange','p:leftend','p:rightend'</NodeDefaultValues>
+              <FunctionFeatureList tag="feature" name="Functions">
+                <!-- User comments -->
+                <entityComments T="0"></entityComments>
+                <!-- Created by -->
+                <entityAuthor T="0"></entityAuthor>
+                <!-- Creation time -->
+                <entityCreationTime T="11">1527093424819</entityCreationTime>
+              </FunctionFeatureList>
+            </FunctionFeature>
+          </FunctionFeatureList>
+          <InformationList tag="info" name="Information">
+            <!-- User comments -->
+            <entityComments T="0"></entityComments>
+            <!-- Created by -->
+            <entityAuthor T="0"></entityAuthor>
+            <!-- Creation time -->
+            <entityCreationTime T="11">1527093403275</entityCreationTime>
+            <Information tag="category" name="Information">
+              <!-- User comments -->
+              <entityComments T="0"></entityComments>
+              <!-- Created by -->
+              <entityAuthor T="0"></entityAuthor>
+              <!-- Creation time -->
+              <entityCreationTime T="11">1527093403275</entityCreationTime>
+              <body T="0">Electromagnetic_models</body>
+            </Information>
+          </InformationList>
+        </MaterialModel>
+      </MaterialModelList>
+      <MaterialList tag="materialList" name="Materials">
+        <!-- User comments -->
+        <entityComments T="0"></entityComments>
+        <!-- Created by -->
+        <entityAuthor T="0"></entityAuthor>
+        <!-- Creation time -->
+        <entityCreationTime T="11">1513195353719</entityCreationTime>
+      </MaterialList>
+      <InformationList tag="info" name="Information">
+        <!-- User comments -->
+        <entityComments T="0"></entityComments>
+        <!-- Created by -->
+        <entityAuthor T="0"></entityAuthor>
+        <!-- Creation time -->
+        <entityCreationTime T="11">1525438623676</entityCreationTime>
+      </InformationList>
+    </Material>
+  </MaterialList>
+  <MeshList tag="mesh" name="Mesh Parts">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1513195221882</entityCreationTime>
+  </MeshList>
+  <BatchList tag="batch">
+    <BatchFeatureList tag="feature" name="BatchFeatureList">
+      <!-- User comments -->
+      <entityComments T="0"></entityComments>
+      <!-- Created by -->
+      <entityAuthor T="0"></entityAuthor>
+      <!-- Creation time -->
+      <entityCreationTime T="11">1513195353719</entityCreationTime>
+      <batchList T="50">/batch</batchList>
+    </BatchFeatureList>
+  </BatchList>
+  <OptSequence tag="optsequence">
+    <OptFeatureList op="objective" tag="objective" name="OptFeatureList">
+      <!-- User comments -->
+      <entityComments T="0"></entityComments>
+      <!-- Created by -->
+      <entityAuthor T="0"></entityAuthor>
+      <!-- Creation time -->
+      <entityCreationTime T="11">1513195221882</entityCreationTime>
+      <optListType T="114">OBJECTIVE</optListType>
+      <!-- Sequence -->
+      <sequence T="50">/optsequence</sequence>
+    </OptFeatureList>
+    <OptFeatureList op="gconstr" tag="gconstr" name="OptFeatureList">
+      <!-- User comments -->
+      <entityComments T="0"></entityComments>
+      <!-- Created by -->
+      <entityAuthor T="0"></entityAuthor>
+      <!-- Creation time -->
+      <entityCreationTime T="11">1527094319682</entityCreationTime>
+      <optListType T="114">GCONSTR</optListType>
+      <!-- Sequence -->
+      <sequence T="50">/optsequence</sequence>
+    </OptFeatureList>
+    <OptFeatureList op="bound" tag="bound" name="OptFeatureList">
+      <!-- User comments -->
+      <entityComments T="0"></entityComments>
+      <!-- Created by -->
+      <entityAuthor T="0"></entityAuthor>
+      <!-- Creation time -->
+      <entityCreationTime T="11">1527094319682</entityCreationTime>
+      <optListType T="114">BOUND</optListType>
+      <!-- Sequence -->
+      <sequence T="50">/optsequence</sequence>
+    </OptFeatureList>
+    <ConstrList op="constr" tag="constr" name="ConstrList">
+      <!-- User comments -->
+      <entityComments T="0"></entityComments>
+      <!-- Created by -->
+      <entityAuthor T="0"></entityAuthor>
+      <!-- Creation time -->
+      <entityCreationTime T="11">1527094319682</entityCreationTime>
+    </ConstrList>
+  </OptSequence>
+  <StudyList tag="study" name="StudyList">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1513195221882</entityCreationTime>
+  </StudyList>
+  <SolverSequenceList tag="sol" name="SolverSequenceList">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1513195221882</entityCreationTime>
+  </SolverSequenceList>
+  <Results tag="result" name="Results">
+    <!-- Node status -->
+    <entityFlags T="51">NOREMOVE|NODEACTIVATE</entityFlags>
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1513195221882</entityCreationTime>
+    <DatasetFeatureList tag="dataset" name="Data Sets">
+      <!-- User comments -->
+      <entityComments T="0"></entityComments>
+      <!-- Created by -->
+      <entityAuthor T="0"></entityAuthor>
+      <!-- Creation time -->
+      <entityCreationTime T="11">1513195221882</entityCreationTime>
+    </DatasetFeatureList>
+    <ExportFeatureList tag="export" name="Export">
+      <!-- User comments -->
+      <entityComments T="0"></entityComments>
+      <!-- Created by -->
+      <entityAuthor T="0"></entityAuthor>
+      <!-- Creation time -->
+      <entityCreationTime T="11">1513195221882</entityCreationTime>
+    </ExportFeatureList>
+    <NumericalFeatureList tag="numerical" name="Derived Values">
+      <!-- User comments -->
+      <entityComments T="0"></entityComments>
+      <!-- Created by -->
+      <entityAuthor T="0"></entityAuthor>
+      <!-- Creation time -->
+      <entityCreationTime T="11">1513195221882</entityCreationTime>
+    </NumericalFeatureList>
+    <TableFeatureList tag="table" name="Tables">
+      <!-- User comments -->
+      <entityComments T="0"></entityComments>
+      <!-- Created by -->
+      <entityAuthor T="0"></entityAuthor>
+      <!-- Creation time -->
+      <entityCreationTime T="11">1513195221882</entityCreationTime>
+    </TableFeatureList>
+    <ResultFeatureList tag="feature" name="ResultFeatureList">
+      <!-- User comments -->
+      <entityComments T="0"></entityComments>
+      <!-- Created by -->
+      <entityAuthor T="0"></entityAuthor>
+      <!-- Creation time -->
+      <entityCreationTime T="11">1513195353719</entityCreationTime>
+    </ResultFeatureList>
+    <ResultParam tag="param" name="Parameters">
+      <!-- User comments -->
+      <entityComments T="0"></entityComments>
+      <!-- Created by -->
+      <entityAuthor T="0"></entityAuthor>
+      <!-- Creation time -->
+      <entityCreationTime T="11">1525438623691</entityCreationTime>
+    </ResultParam>
+    <ReportFeatureList tag="report" name="Reports">
+      <!-- User comments -->
+      <entityComments T="0"></entityComments>
+      <!-- Created by -->
+      <entityAuthor T="0"></entityAuthor>
+      <!-- Creation time -->
+      <entityCreationTime T="11">1525438623910</entityCreationTime>
+    </ReportFeatureList>
+    <EvaluationGroupFeatureList tag="evaluationgroup" name="Evaluation Group">
+      <!-- User comments -->
+      <entityComments T="0"></entityComments>
+      <!-- Created by -->
+      <entityAuthor T="0"></entityAuthor>
+      <!-- Creation time -->
+      <entityCreationTime T="11">1525438953858</entityCreationTime>
+    </EvaluationGroupFeatureList>
+  </Results>
+  <ModelNodeList tag="modelNode" name="Extra Dimensions">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1513195221882</entityCreationTime>
+  </ModelNodeList>
+  <GeomManagerNative tag="geomManagerNative">
+  </GeomManagerNative>
+  <History tag="hist">
+    <!-- Last modification time -->
+    <entityModifyTime T="11">1533220819318</entityModifyTime>
+    <!-- Updated by -->
+    <entityModifiedBy T="0"></entityModifiedBy>
+    <!-- List of commands -->
+    <actions T="0">t(s("/")) m(s("label")) s("comsol_acdc_lib.bak.mph")</actions>
+    <actions T="0">t(s("/material")) m(s("create")) s("copper") s("Common") s("")</actions>
+    <actions T="0">t(s("/material")) m(s("create")) s("soft_iron_without_losses") s("Common") s("")</actions>
+    <actions T="0">t(s("/material")) m(s("create")) s("soft_iron_with_losses") s("Common") s("")</actions>
+    <actions T="0">t(s("/material")) m(s("create")) s("quartz") s("Common") s("")</actions>
+    <actions T="0">t(s("/material")) m(s("create")) s("graphite") s("Common") s("")</actions>
+    <actions T="0">t(s("/material")) m(s("create")) s("graphite_felt") s("Common") s("")</actions>
+    <actions T="0">t(s("/material")) m(s("create")) s("silicon_carbide") s("Common") s("")</actions>
+    <actions T="0">t(s("/material")) m(s("create")) s("jilesatherton_hysteretic_material") s("Common") s("")</actions>
+    <actions T="0">t(s("/material")) m(s("create")) s("nonlinear_permanent_magnet") s("Common") s("")</actions>
+    <actions T="0">t(s("/material/copper/materialmodel")) m(s("create")) s("Enu") s("Young's modulus and Poisson's ratio")</actions>
+    <actions T="0">t(s("/material/copper/materialmodel")) m(s("create")) s("linzRes") s("Linearized resistivity")</actions>
+    <actions T="0">t(s("/material/soft_iron_without_losses/materialmodel")) m(s("create")) s("BHCurve") s("B-H Curve")</actions>
+    <actions T="0">t(s("/material/soft_iron_without_losses/materialmodel/BHCurve/func")) m(s("create")) s("BH") s("Interpolation")</actions>
+    <actions T="0">t(s("/material/soft_iron_without_losses/materialmodel")) m(s("create")) s("EffectiveBHCurve") s("Effective B-H Curve")</actions>
+    <actions T="0">t(s("/material/soft_iron_without_losses/materialmodel/EffectiveBHCurve/func")) m(s("create")) s("BHeff") s("Interpolation")</actions>
+    <actions T="0">t(s("/material/soft_iron_with_losses/materialmodel")) m(s("create")) s("BHCurve") s("B-H Curve")</actions>
+    <actions T="0">t(s("/material/soft_iron_with_losses/materialmodel/BHCurve/func")) m(s("create")) s("BH") s("Interpolation")</actions>
+    <actions T="0">t(s("/material/soft_iron_with_losses/materialmodel")) m(s("create")) s("EffectiveBHCurve") s("Effective B-H Curve")</actions>
+    <actions T="0">t(s("/material/soft_iron_with_losses/materialmodel/EffectiveBHCurve/func")) m(s("create")) s("BHeff") s("Interpolation")</actions>
+    <actions T="0">t(s("/material/jilesatherton_hysteretic_material/materialmodel")) m(s("create")) s("JilesAtherton") s("Jiles-Atherton model parameters")</actions>
+    <actions T="0">t(s("/material/nonlinear_permanent_magnet/materialmodel")) m(s("create")) s("BHsCurve") s("B-Hs Curve")</actions>
+    <actions T="0">t(s("/material/nonlinear_permanent_magnet/materialmodel/BHsCurve/func")) m(s("create")) s("BHs") s("Interpolation")</actions>
+    <actions T="0">t(s("/material/copper")) m(s("label")) s("Copper")</actions>
+    <actions T="0">t(s("/material/copper")) m(s("set")) s("family") s("copper")</actions>
+    <actions T="0">t(s("/material/copper/materialmodel/def")) m(s("set")) s("relpermeability") sa(s("1"),s("0"),s("0"),s("0"),s("1"),s("0"),s("0"),s("0"),s("1"))</actions>
+    <actions T="0">t(s("/material/copper/materialmodel/def")) m(s("set")) s("electricconductivity") sa(s("5.998e7[S/m]"),s("0"),s("0"),s("0"),s("5.998e7[S/m]"),s("0"),s("0"),s("0"),s("5.998e7[S/m]"))</actions>
+    <actions T="0">t(s("/material/copper/materialmodel/def")) m(s("set")) s("heatcapacity") s("385[J/(kg*K)]")</actions>
+    <actions T="0">t(s("/material/copper/materialmodel/def")) m(s("set")) s("relpermittivity") sa(s("1"),s("0"),s("0"),s("0"),s("1"),s("0"),s("0"),s("0"),s("1"))</actions>
+    <actions T="0">t(s("/material/copper/materialmodel/def")) m(s("set")) s("emissivity") s("0.5")</actions>
+    <actions T="0">t(s("/material/copper/materialmodel/def")) m(s("set")) s("density") s("8940[kg/m^3]")</actions>
+    <actions T="0">t(s("/material/copper/materialmodel/def")) m(s("set")) s("thermalconductivity") sa(s("400[W/(m*K)]"),s("0"),s("0"),s("0"),s("400[W/(m*K)]"),s("0"),s("0"),s("0"),s("400[W/(m*K)]"))</actions>
+    <actions T="0">t(s("/material/copper/materialmodel/Enu")) m(s("set")) s("youngsmodulus") s("126e9[Pa]")</actions>
+    <actions T="0">t(s("/material/copper/materialmodel/Enu")) m(s("set")) s("poissonsratio") s("0.34")</actions>
+    <actions T="0">t(s("/material/copper/materialmodel/linzRes")) m(s("set")) s("rho0") s("")</actions>
+    <actions T="0">t(s("/material/copper/materialmodel/linzRes")) m(s("set")) s("alpha") s("")</actions>
+    <actions T="0">t(s("/material/copper/materialmodel/linzRes")) m(s("set")) s("Tref") s("")</actions>
+    <actions T="0">t(s("/material/copper/materialmodel/linzRes")) m(s("set")) s("rho0") s("1.667e-8[ohm*m]")</actions>
+    <actions T="0">t(s("/material/copper/materialmodel/linzRes")) m(s("set")) s("alpha") s("3.862e-3[1/K]")</actions>
+    <actions T="0">t(s("/material/copper/materialmodel/linzRes")) m(s("set")) s("Tref") s("293.15[K]")</actions>
+    <actions T="0">t(s("/material/copper/materialmodel/linzRes")) m(s("addInput")) s("temperature")</actions>
+    <actions T="0">t(s("/material/soft_iron_without_losses")) m(s("label")) s("Soft Iron (Without Losses)")</actions>
+    <actions T="0">t(s("/material/soft_iron_without_losses")) m(s("set")) s("family") s("iron")</actions>
+    <actions T="0">t(s("/material/soft_iron_without_losses/materialmodel/def")) m(s("set")) s("electricconductivity") sa(s("0[S/m]"),s("0"),s("0"),s("0"),s("0[S/m]"),s("0"),s("0"),s("0"),s("0[S/m]"))</actions>
+    <actions T="0">t(s("/material/soft_iron_without_losses/materialmodel/def")) m(s("set")) s("relpermittivity") sa(s("1"),s("0"),s("0"),s("0"),s("1"),s("0"),s("0"),s("0"),s("1"))</actions>
+    <actions T="0">t(s("/material/soft_iron_without_losses/materialmodel/BHCurve")) m(s("label")) s("B-H Curve")</actions>
+    <actions T="0">t(s("/material/soft_iron_without_losses/materialmodel/BHCurve/func/BH")) m(s("label")) s("Interpolation 1")</actions>
+    <actions T="0">t(s("/material/soft_iron_without_losses/materialmodel/BHCurve/func/BH")) m(s("set")) s("table") saa(sa(s("0"),s("0")),sa(s("663.146"),s("1")),sa(s("1067.5"),s("1.1")),sa(s("1705.23"),s("1.2")),sa(s("2463.11"),s("1.3")),sa(s("3841.67"),s("1.4")),sa(s("5425.74"),s("1.5")),sa(s("7957.75"),s("1.6")),sa(s("12298.3"),s("1.7")),sa(s("20462.8"),s("1.8")),sa(s("32169.6"),s("1.9")),sa(s("61213.4"),s("2.0")),sa(s("111408"),s("2.1")),sa(s("175070"),s("2.2")),sa(s("261469"),s("2.3")),sa(s("318310"),s("2.4")))</actions>
+    <actions T="0">t(s("/material/soft_iron_without_losses/materialmodel/BHCurve/func/BH")) m(s("set")) s("extrap") s("linear")</actions>
+    <actions T="0">t(s("/material/soft_iron_without_losses/materialmodel/BHCurve/func/BH")) m(s("set")) s("argunit") s("A/m")</actions>
+    <actions T="0">t(s("/material/soft_iron_without_losses/materialmodel/BHCurve/func/BH")) m(s("set")) s("fununit") s("T")</actions>
+    <actions T="0">t(s("/material/soft_iron_without_losses/materialmodel/BHCurve/func/BH")) m(s("set")) s("defineinv") b(true)</actions>
+    <actions T="0">t(s("/material/soft_iron_without_losses/materialmodel/BHCurve/func/BH")) m(s("set")) s("defineprimfun") b(true)</actions>
+    <actions T="0">t(s("/material/soft_iron_without_losses/materialmodel/BHCurve")) m(s("set")) s("normB") s("")</actions>
+    <actions T="0">t(s("/material/soft_iron_without_losses/materialmodel/BHCurve")) m(s("set")) s("normH") s("")</actions>
+    <actions T="0">t(s("/material/soft_iron_without_losses/materialmodel/BHCurve")) m(s("set")) s("Wpm") s("")</actions>
+    <actions T="0">t(s("/material/soft_iron_without_losses/materialmodel/BHCurve")) m(s("set")) s("normB") s("BH(normHin)")</actions>
+    <actions T="0">t(s("/material/soft_iron_without_losses/materialmodel/BHCurve")) m(s("set")) s("normH") s("BH_inv(normBin)")</actions>
+    <actions T="0">t(s("/material/soft_iron_without_losses/materialmodel/BHCurve")) m(s("set")) s("Wpm") s("BH_prim(normHin)")</actions>
+    <actions T="0">t(s("/material/soft_iron_without_losses/materialmodel/BHCurve")) m(s("descr")) s("normHin") s("Magnetic field norm")</actions>
+    <actions T="0">t(s("/material/soft_iron_without_losses/materialmodel/BHCurve")) m(s("descr")) s("normBin") s("Magnetic flux density norm")</actions>
+    <actions T="0">t(s("/material/soft_iron_without_losses/materialmodel/BHCurve")) m(s("addInput")) s("magneticfield")</actions>
+    <actions T="0">t(s("/material/soft_iron_without_losses/materialmodel/BHCurve")) m(s("addInput")) s("magneticfluxdensity")</actions>
+    <actions T="0">t(s("/material/soft_iron_without_losses/materialmodel/EffectiveBHCurve")) m(s("label")) s("Effective B-H Curve")</actions>
+    <actions T="0">t(s("/material/soft_iron_without_losses/materialmodel/EffectiveBHCurve/func/BHeff")) m(s("label")) s("Interpolation 1")</actions>
+    <actions T="0">t(s("/material/soft_iron_without_losses/materialmodel/EffectiveBHCurve/func/BHeff")) m(s("set")) s("table") saa(sa(s("0"),s("0")),sa(s("663.146"),s("1")),sa(s("1067.5"),s("1.4943906486860214")),sa(s("1705.23"),s("1.941630073817125")),sa(s("2463.11"),s("2.257619494050335")),sa(s("3841.67"),s("2.729755059668001")),sa(s("5425.74"),s("2.8756651489647296")),sa(s("7957.75"),s("3.149029234016385")),sa(s("12298.3"),s("3.4529372126833744")),sa(s("20462.8"),s("3.7845615956017395")),sa(s("32169.6"),s("4.060195910283011")),sa(s("61213.4"),s("4.421777266072753")),sa(s("111408"),s("4.721954005107204")),sa(s("175070"),s("4.941198649690261")),sa(s("261469"),s("5.1446599438425515")),sa(s("318310"),s("5.253346039640234")))</actions>
+    <actions T="0">t(s("/material/soft_iron_without_losses/materialmodel/EffectiveBHCurve/func/BHeff")) m(s("set")) s("extrap") s("linear")</actions>
+    <actions T="0">t(s("/material/soft_iron_without_losses/materialmodel/EffectiveBHCurve/func/BHeff")) m(s("set")) s("argunit") s("A/m")</actions>
+    <actions T="0">t(s("/material/soft_iron_without_losses/materialmodel/EffectiveBHCurve/func/BHeff")) m(s("set")) s("fununit") s("T")</actions>
+    <actions T="0">t(s("/material/soft_iron_without_losses/materialmodel/EffectiveBHCurve/func/BHeff")) m(s("set")) s("defineinv") b(true)</actions>
+    <actions T="0">t(s("/material/soft_iron_without_losses/materialmodel/EffectiveBHCurve")) m(s("set")) s("normBeff") s("")</actions>
+    <actions T="0">t(s("/material/soft_iron_without_losses/materialmodel/EffectiveBHCurve")) m(s("set")) s("normHeff") s("")</actions>
+    <actions T="0">t(s("/material/soft_iron_without_losses/materialmodel/EffectiveBHCurve")) m(s("set")) s("normBeff") s("BHeff(normHeffin)")</actions>
+    <actions T="0">t(s("/material/soft_iron_without_losses/materialmodel/EffectiveBHCurve")) m(s("set")) s("normHeff") s("BHeff_inv(normBeffin)")</actions>
+    <actions T="0">t(s("/material/soft_iron_without_losses/materialmodel/EffectiveBHCurve")) m(s("descr")) s("normHeffin") s("Effective magnetic field norm")</actions>
+    <actions T="0">t(s("/material/soft_iron_without_losses/materialmodel/EffectiveBHCurve")) m(s("descr")) s("normBeffin") s("Effective magnetic flux density norm")</actions>
+    <actions T="0">t(s("/material/soft_iron_without_losses/materialmodel/EffectiveBHCurve")) m(s("addInput")) s("magneticfield")</actions>
+    <actions T="0">t(s("/material/soft_iron_without_losses/materialmodel/EffectiveBHCurve")) m(s("addInput")) s("magneticfluxdensity")</actions>
+    <actions T="0">t(s("/material/soft_iron_with_losses")) m(s("label")) s("Soft Iron (With Losses)")</actions>
+    <actions T="0">t(s("/material/soft_iron_with_losses")) m(s("set")) s("family") s("iron")</actions>
+    <actions T="0">t(s("/material/soft_iron_with_losses/materialmodel/def")) m(s("set")) s("electricconductivity") sa(s("1.12e7[S/m]"),s("0"),s("0"),s("0"),s("1.12e7[S/m]"),s("0"),s("0"),s("0"),s("1.12e7[S/m]"))</actions>
+    <actions T="0">t(s("/material/soft_iron_with_losses/materialmodel/def")) m(s("set")) s("relpermittivity") sa(s("1"),s("0"),s("0"),s("0"),s("1"),s("0"),s("0"),s("0"),s("1"))</actions>
+    <actions T="0">t(s("/material/soft_iron_with_losses/materialmodel/BHCurve")) m(s("label")) s("B-H Curve")</actions>
+    <actions T="0">t(s("/material/soft_iron_with_losses/materialmodel/BHCurve/func/BH")) m(s("label")) s("Interpolation 1")</actions>
+    <actions T="0">t(s("/material/soft_iron_with_losses/materialmodel/BHCurve/func/BH")) m(s("set")) s("table") saa(sa(s("0"),s("0")),sa(s("663.146"),s("1")),sa(s("1067.5"),s("1.1")),sa(s("1705.23"),s("1.2")),sa(s("2463.11"),s("1.3")),sa(s("3841.67"),s("1.4")),sa(s("5425.74"),s("1.5")),sa(s("7957.75"),s("1.6")),sa(s("12298.3"),s("1.7")),sa(s("20462.8"),s("1.8")),sa(s("32169.6"),s("1.9")),sa(s("61213.4"),s("2.0")),sa(s("111408"),s("2.1")),sa(s("175070"),s("2.2")),sa(s("261469"),s("2.3")),sa(s("318310"),s("2.4")))</actions>
+    <actions T="0">t(s("/material/soft_iron_with_losses/materialmodel/BHCurve/func/BH")) m(s("set")) s("extrap") s("linear")</actions>
+    <actions T="0">t(s("/material/soft_iron_with_losses/materialmodel/BHCurve/func/BH")) m(s("set")) s("argunit") s("A/m")</actions>
+    <actions T="0">t(s("/material/soft_iron_with_losses/materialmodel/BHCurve/func/BH")) m(s("set")) s("fununit") s("T")</actions>
+    <actions T="0">t(s("/material/soft_iron_with_losses/materialmodel/BHCurve/func/BH")) m(s("set")) s("defineinv") b(true)</actions>
+    <actions T="0">t(s("/material/soft_iron_with_losses/materialmodel/BHCurve/func/BH")) m(s("set")) s("defineprimfun") b(true)</actions>
+    <actions T="0">t(s("/material/soft_iron_with_losses/materialmodel/BHCurve")) m(s("set")) s("normB") s("")</actions>
+    <actions T="0">t(s("/material/soft_iron_with_losses/materialmodel/BHCurve")) m(s("set")) s("normH") s("")</actions>
+    <actions T="0">t(s("/material/soft_iron_with_losses/materialmodel/BHCurve")) m(s("set")) s("Wpm") s("")</actions>
+    <actions T="0">t(s("/material/soft_iron_with_losses/materialmodel/BHCurve")) m(s("set")) s("normB") s("BH(normHin)")</actions>
+    <actions T="0">t(s("/material/soft_iron_with_losses/materialmodel/BHCurve")) m(s("set")) s("normH") s("BH_inv(normBin)")</actions>
+    <actions T="0">t(s("/material/soft_iron_with_losses/materialmodel/BHCurve")) m(s("set")) s("Wpm") s("BH_prim(normHin)")</actions>
+    <actions T="0">t(s("/material/soft_iron_with_losses/materialmodel/BHCurve")) m(s("descr")) s("normHin") s("Magnetic field norm")</actions>
+    <actions T="0">t(s("/material/soft_iron_with_losses/materialmodel/BHCurve")) m(s("descr")) s("normBin") s("Magnetic flux density norm")</actions>
+    <actions T="0">t(s("/material/soft_iron_with_losses/materialmodel/BHCurve")) m(s("addInput")) s("magneticfield")</actions>
+    <actions T="0">t(s("/material/soft_iron_with_losses/materialmodel/BHCurve")) m(s("addInput")) s("magneticfluxdensity")</actions>
+    <actions T="0">t(s("/material/soft_iron_with_losses/materialmodel/EffectiveBHCurve")) m(s("label")) s("Effective B-H Curve")</actions>
+    <actions T="0">t(s("/material/soft_iron_with_losses/materialmodel/EffectiveBHCurve/func/BHeff")) m(s("label")) s("Interpolation 1")</actions>
+    <actions T="0">t(s("/material/soft_iron_with_losses/materialmodel/EffectiveBHCurve/func/BHeff")) m(s("set")) s("table") saa(sa(s("0"),s("0")),sa(s("663.146"),s("1")),sa(s("1067.5"),s("1.4943906486860214")),sa(s("1705.23"),s("1.941630073817125")),sa(s("2463.11"),s("2.257619494050335")),sa(s("3841.67"),s("2.729755059668001")),sa(s("5425.74"),s("2.8756651489647296")),sa(s("7957.75"),s("3.149029234016385")),sa(s("12298.3"),s("3.4529372126833744")),sa(s("20462.8"),s("3.7845615956017395")),sa(s("32169.6"),s("4.060195910283011")),sa(s("61213.4"),s("4.421777266072753")),sa(s("111408"),s("4.721954005107204")),sa(s("175070"),s("4.941198649690261")),sa(s("261469"),s("5.1446599438425515")),sa(s("318310"),s("5.253346039640234")))</actions>
+    <actions T="0">t(s("/material/soft_iron_with_losses/materialmodel/EffectiveBHCurve/func/BHeff")) m(s("set")) s("extrap") s("linear")</actions>
+    <actions T="0">t(s("/material/soft_iron_with_losses/materialmodel/EffectiveBHCurve/func/BHeff")) m(s("set")) s("argunit") s("A/m")</actions>
+    <actions T="0">t(s("/material/soft_iron_with_losses/materialmodel/EffectiveBHCurve/func/BHeff")) m(s("set")) s("fununit") s("T")</actions>
+    <actions T="0">t(s("/material/soft_iron_with_losses/materialmodel/EffectiveBHCurve/func/BHeff")) m(s("set")) s("defineinv") b(true)</actions>
+    <actions T="0">t(s("/material/soft_iron_with_losses/materialmodel/EffectiveBHCurve")) m(s("set")) s("normBeff") s("")</actions>
+    <actions T="0">t(s("/material/soft_iron_with_losses/materialmodel/EffectiveBHCurve")) m(s("set")) s("normHeff") s("")</actions>
+    <actions T="0">t(s("/material/soft_iron_with_losses/materialmodel/EffectiveBHCurve")) m(s("set")) s("normBeff") s("BHeff(normHeffin)")</actions>
+    <actions T="0">t(s("/material/soft_iron_with_losses/materialmodel/EffectiveBHCurve")) m(s("set")) s("normHeff") s("BHeff_inv(normBeffin)")</actions>
+    <actions T="0">t(s("/material/soft_iron_with_losses/materialmodel/EffectiveBHCurve")) m(s("descr")) s("normHeffin") s("Effective magnetic field norm")</actions>
+    <actions T="0">t(s("/material/soft_iron_with_losses/materialmodel/EffectiveBHCurve")) m(s("descr")) s("normBeffin") s("Effective magnetic flux density norm")</actions>
+    <actions T="0">t(s("/material/soft_iron_with_losses/materialmodel/EffectiveBHCurve")) m(s("addInput")) s("magneticfield")</actions>
+    <actions T="0">t(s("/material/soft_iron_with_losses/materialmodel/EffectiveBHCurve")) m(s("addInput")) s("magneticfluxdensity")</actions>
+    <actions T="0">t(s("/material/quartz")) m(s("label")) s("Quartz")</actions>
+    <actions T="0">t(s("/material/quartz")) m(s("set")) s("family") s("custom")</actions>
+    <actions T="0">t(s("/material/quartz")) m(s("set")) s("specular") s("custom")</actions>
+    <actions T="0">t(s("/material/quartz")) m(s("set")) s("diffuse") s("custom")</actions>
+    <actions T="0">t(s("/material/quartz")) m(s("set")) s("ambient") s("custom")</actions>
+    <actions T="0">t(s("/material/quartz")) m(s("set")) s("noise") b(true)</actions>
+    <actions T="0">t(s("/material/quartz")) m(s("set")) s("noisefreq") i(1)</actions>
+    <actions T="0">t(s("/material/quartz")) m(s("set")) s("lighting") s("cooktorrance")</actions>
+    <actions T="0">t(s("/material/quartz")) m(s("set")) s("fresnel") d(0.99)</actions>
+    <actions T="0">t(s("/material/quartz")) m(s("set")) s("roughness") d(0.02)</actions>
+    <actions T="0">t(s("/material/quartz")) m(s("set")) s("customspecular") ia(1,1,1)</actions>
+    <actions T="0">t(s("/material/quartz")) m(s("set")) s("customdiffuse") ia(1,1,1)</actions>
+    <actions T="0">t(s("/material/quartz")) m(s("set")) s("customambient") ia(1,1,1)</actions>
+    <actions T="0">t(s("/material/quartz/materialmodel/def")) m(s("set")) s("relpermeability") sa(s("1"),s("0"),s("0"),s("0"),s("1"),s("0"),s("0"),s("0"),s("1"))</actions>
+    <actions T="0">t(s("/material/quartz/materialmodel/def")) m(s("set")) s("electricconductivity") sa(s("1e-12[S/m]"),s("0"),s("0"),s("0"),s("1e-12[S/m]"),s("0"),s("0"),s("0"),s("1e-12[S/m]"))</actions>
+    <actions T="0">t(s("/material/quartz/materialmodel/def")) m(s("set")) s("heatcapacity") s("820[J/(kg*K)]")</actions>
+    <actions T="0">t(s("/material/quartz/materialmodel/def")) m(s("set")) s("relpermittivity") sa(s("4.2"),s("0"),s("0"),s("0"),s("4.2"),s("0"),s("0"),s("0"),s("4.2"))</actions>
+    <actions T="0">t(s("/material/quartz/materialmodel/def")) m(s("set")) s("emissivity") s("0.7")</actions>
+    <actions T="0">t(s("/material/quartz/materialmodel/def")) m(s("set")) s("density") s("2600[kg/m^3]")</actions>
+    <actions T="0">t(s("/material/quartz/materialmodel/def")) m(s("set")) s("thermalconductivity") sa(s("3[W/(m*K)]"),s("0"),s("0"),s("0"),s("3[W/(m*K)]"),s("0"),s("0"),s("0"),s("3[W/(m*K)]"))</actions>
+    <actions T="0">t(s("/material/graphite")) m(s("label")) s("Graphite")</actions>
+    <actions T="0">t(s("/material/graphite")) m(s("set")) s("family") s("custom")</actions>
+    <actions T="0">t(s("/material/graphite")) m(s("set")) s("specular") s("custom")</actions>
+    <actions T="0">t(s("/material/graphite")) m(s("set")) s("customspecular") da(0.7843137254901961,0.7843137254901961,0.7843137254901961)</actions>
+    <actions T="0">t(s("/material/graphite")) m(s("set")) s("diffuse") s("custom")</actions>
+    <actions T="0">t(s("/material/graphite")) m(s("set")) s("customdiffuse") da(0.7843137254901961,0.7843137254901961,0.7843137254901961)</actions>
+    <actions T="0">t(s("/material/graphite")) m(s("set")) s("ambient") s("custom")</actions>
+    <actions T="0">t(s("/material/graphite")) m(s("set")) s("customambient") da(0.39215686274509803,0.39215686274509803,0.39215686274509803)</actions>
+    <actions T="0">t(s("/material/graphite")) m(s("set")) s("noise") b(true)</actions>
+    <actions T="0">t(s("/material/graphite")) m(s("set")) s("noisefreq") i(1)</actions>
+    <actions T="0">t(s("/material/graphite")) m(s("set")) s("lighting") s("cooktorrance")</actions>
+    <actions T="0">t(s("/material/graphite")) m(s("set")) s("fresnel") d(0.99)</actions>
+    <actions T="0">t(s("/material/graphite")) m(s("set")) s("roughness") d(0.14)</actions>
+    <actions T="0">t(s("/material/graphite/materialmodel/def")) m(s("set")) s("relpermeability") sa(s("1"),s("0"),s("0"),s("0"),s("1"),s("0"),s("0"),s("0"),s("1"))</actions>
+    <actions T="0">t(s("/material/graphite/materialmodel/def")) m(s("set")) s("electricconductivity") sa(s("3e3[S/m]"),s("0"),s("0"),s("0"),s("3e3[S/m]"),s("0"),s("0"),s("0"),s("3e3[S/m]"))</actions>
+    <actions T="0">t(s("/material/graphite/materialmodel/def")) m(s("set")) s("heatcapacity") s("710[J/(kg*K)]")</actions>
+    <actions T="0">t(s("/material/graphite/materialmodel/def")) m(s("set")) s("relpermittivity") sa(s("1"),s("0"),s("0"),s("0"),s("1"),s("0"),s("0"),s("0"),s("1"))</actions>
+    <actions T="0">t(s("/material/graphite/materialmodel/def")) m(s("set")) s("emissivity") s("1")</actions>
+    <actions T="0">t(s("/material/graphite/materialmodel/def")) m(s("set")) s("density") s("1950[kg/m^3]")</actions>
+    <actions T="0">t(s("/material/graphite/materialmodel/def")) m(s("set")) s("thermalconductivity") sa(s("150[W/(m*K)]*(300[K]/T)"),s("0"),s("0"),s("0"),s("150[W/(m*K)]*(300[K]/T)"),s("0"),s("0"),s("0"),s("150[W/(m*K)]*(300[K]/T)"))</actions>
+    <actions T="0">t(s("/material/graphite/materialmodel/def")) m(s("addInput")) s("temperature")</actions>
+    <actions T="0">t(s("/material/graphite_felt")) m(s("label")) s("Graphite Felt")</actions>
+    <actions T="0">t(s("/material/graphite_felt")) m(s("set")) s("family") s("custom")</actions>
+    <actions T="0">t(s("/material/graphite_felt")) m(s("set")) s("specular") s("custom")</actions>
+    <actions T="0">t(s("/material/graphite_felt")) m(s("set")) s("customspecular") da(0.7843137254901961,0.7843137254901961,0.7843137254901961)</actions>
+    <actions T="0">t(s("/material/graphite_felt")) m(s("set")) s("diffuse") s("custom")</actions>
+    <actions T="0">t(s("/material/graphite_felt")) m(s("set")) s("customdiffuse") da(0.7843137254901961,0.7843137254901961,0.7843137254901961)</actions>
+    <actions T="0">t(s("/material/graphite_felt")) m(s("set")) s("ambient") s("custom")</actions>
+    <actions T="0">t(s("/material/graphite_felt")) m(s("set")) s("customambient") da(0.39215686274509803,0.39215686274509803,0.39215686274509803)</actions>
+    <actions T="0">t(s("/material/graphite_felt")) m(s("set")) s("noise") b(true)</actions>
+    <actions T="0">t(s("/material/graphite_felt")) m(s("set")) s("noisefreq") i(1)</actions>
+    <actions T="0">t(s("/material/graphite_felt")) m(s("set")) s("lighting") s("cooktorrance")</actions>
+    <actions T="0">t(s("/material/graphite_felt")) m(s("set")) s("fresnel") d(0.99)</actions>
+    <actions T="0">t(s("/material/graphite_felt")) m(s("set")) s("roughness") d(0.14)</actions>
+    <actions T="0">t(s("/material/graphite_felt/materialmodel/def")) m(s("set")) s("relpermeability") sa(s("1"),s("0"),s("0"),s("0"),s("1"),s("0"),s("0"),s("0"),s("1"))</actions>
+    <actions T="0">t(s("/material/graphite_felt/materialmodel/def")) m(s("set")) s("electricconductivity") sa(s("100[S/m]"),s("0"),s("0"),s("0"),s("100[S/m]"),s("0"),s("0"),s("0"),s("100[S/m]"))</actions>
+    <actions T="0">t(s("/material/graphite_felt/materialmodel/def")) m(s("set")) s("heatcapacity") s("200[J/(kg*K)]")</actions>
+    <actions T="0">t(s("/material/graphite_felt/materialmodel/def")) m(s("set")) s("relpermittivity") sa(s("1"),s("0"),s("0"),s("0"),s("1"),s("0"),s("0"),s("0"),s("1"))</actions>
+    <actions T="0">t(s("/material/graphite_felt/materialmodel/def")) m(s("set")) s("emissivity") s("1")</actions>
+    <actions T="0">t(s("/material/graphite_felt/materialmodel/def")) m(s("set")) s("density") s("120[kg/m^3]")</actions>
+    <actions T="0">t(s("/material/graphite_felt/materialmodel/def")) m(s("set")) s("thermalconductivity") sa(s("0.3[W/(m*K)]"),s("0"),s("0"),s("0"),s("0.3[W/(m*K)]"),s("0"),s("0"),s("0"),s("0.3[W/(m*K)]"))</actions>
+    <actions T="0">t(s("/material/silicon_carbide")) m(s("label")) s("Silicon Carbide")</actions>
+    <actions T="0">t(s("/material/silicon_carbide")) m(s("set")) s("family") s("custom")</actions>
+    <actions T="0">t(s("/material/silicon_carbide")) m(s("set")) s("specular") s("custom")</actions>
+    <actions T="0">t(s("/material/silicon_carbide")) m(s("set")) s("diffuse") s("custom")</actions>
+    <actions T="0">t(s("/material/silicon_carbide")) m(s("set")) s("ambient") s("custom")</actions>
+    <actions T="0">t(s("/material/silicon_carbide")) m(s("set")) s("noise") b(true)</actions>
+    <actions T="0">t(s("/material/silicon_carbide")) m(s("set")) s("noisefreq") i(1)</actions>
+    <actions T="0">t(s("/material/silicon_carbide")) m(s("set")) s("lighting") s("cooktorrance")</actions>
+    <actions T="0">t(s("/material/silicon_carbide")) m(s("set")) s("fresnel") d(0.99)</actions>
+    <actions T="0">t(s("/material/silicon_carbide")) m(s("set")) s("roughness") d(0.02)</actions>
+    <actions T="0">t(s("/material/silicon_carbide")) m(s("set")) s("customspecular") ia(1,1,1)</actions>
+    <actions T="0">t(s("/material/silicon_carbide")) m(s("set")) s("customdiffuse") ia(1,1,1)</actions>
+    <actions T="0">t(s("/material/silicon_carbide")) m(s("set")) s("customambient") ia(1,1,1)</actions>
+    <actions T="0">t(s("/material/silicon_carbide/materialmodel/def")) m(s("set")) s("relpermeability") sa(s("1"),s("0"),s("0"),s("0"),s("1"),s("0"),s("0"),s("0"),s("1"))</actions>
+    <actions T="0">t(s("/material/silicon_carbide/materialmodel/def")) m(s("set")) s("electricconductivity") sa(s("1e3[S/m]"),s("0"),s("0"),s("0"),s("1e3[S/m]"),s("0"),s("0"),s("0"),s("1e3[S/m]"))</actions>
+    <actions T="0">t(s("/material/silicon_carbide/materialmodel/def")) m(s("set")) s("heatcapacity") s("1200[J/(kg*K)]")</actions>
+    <actions T="0">t(s("/material/silicon_carbide/materialmodel/def")) m(s("set")) s("relpermittivity") sa(s("10"),s("0"),s("0"),s("0"),s("10"),s("0"),s("0"),s("0"),s("10"))</actions>
+    <actions T="0">t(s("/material/silicon_carbide/materialmodel/def")) m(s("set")) s("emissivity") s("0.5")</actions>
+    <actions T="0">t(s("/material/silicon_carbide/materialmodel/def")) m(s("set")) s("density") s("3200[kg/m^3]")</actions>
+    <actions T="0">t(s("/material/silicon_carbide/materialmodel/def")) m(s("set")) s("thermalconductivity") sa(s("450[W/(m*K)]*(300[K]/T)^0.75"),s("0"),s("0"),s("0"),s("450[W/(m*K)]*(300[K]/T)^0.75"),s("0"),s("0"),s("0"),s("450[W/(m*K)]*(300[K]/T)^0.75"))</actions>
+    <actions T="0">t(s("/material/silicon_carbide/materialmodel/def")) m(s("addInput")) s("temperature")</actions>
+    <actions T="0">t(s("/material/jilesatherton_hysteretic_material")) m(s("label")) s("Jiles-Atherton Hysteretic Material")</actions>
+    <actions T="0">t(s("/material/jilesatherton_hysteretic_material")) m(s("set")) s("family") s("iron")</actions>
+    <actions T="0">t(s("/material/jilesatherton_hysteretic_material/materialmodel/def")) m(s("set")) s("electricconductivity") sa(s("0[S/m]"),s("0"),s("0"),s("0"),s("0[S/m]"),s("0"),s("0"),s("0"),s("0[S/m]"))</actions>
+    <actions T="0">t(s("/material/jilesatherton_hysteretic_material/materialmodel/def")) m(s("set")) s("relpermittivity") sa(s("1"),s("0"),s("0"),s("0"),s("1"),s("0"),s("0"),s("0"),s("1"))</actions>
+    <actions T="0">t(s("/material/jilesatherton_hysteretic_material/materialmodel/JilesAtherton")) m(s("set")) s("MsJA") s("")</actions>
+    <actions T="0">t(s("/material/jilesatherton_hysteretic_material/materialmodel/JilesAtherton")) m(s("set")) s("aJA") s("")</actions>
+    <actions T="0">t(s("/material/jilesatherton_hysteretic_material/materialmodel/JilesAtherton")) m(s("set")) s("kJA") s("")</actions>
+    <actions T="0">t(s("/material/jilesatherton_hysteretic_material/materialmodel/JilesAtherton")) m(s("set")) s("cJA") s("")</actions>
+    <actions T="0">t(s("/material/jilesatherton_hysteretic_material/materialmodel/JilesAtherton")) m(s("set")) s("alphaJA") s("")</actions>
+    <actions T="0">t(s("/material/jilesatherton_hysteretic_material/materialmodel/JilesAtherton")) m(s("set")) s("MsJA") sa(s("1.6e6[A/m]"),s("0"),s("0"),s("0"),s("1.6e6[A/m]"),s("0"),s("0"),s("0"),s("1.6e6[A/m]"))</actions>
+    <actions T="0">t(s("/material/jilesatherton_hysteretic_material/materialmodel/JilesAtherton")) m(s("set")) s("aJA") sa(s("560[A/m]"),s("0"),s("0"),s("0"),s("560[A/m]"),s("0"),s("0"),s("0"),s("560[A/m]"))</actions>
+    <actions T="0">t(s("/material/jilesatherton_hysteretic_material/materialmodel/JilesAtherton")) m(s("set")) s("kJA") sa(s("1200[A/m]"),s("0"),s("0"),s("0"),s("1200[A/m]"),s("0"),s("0"),s("0"),s("1200[A/m]"))</actions>
+    <actions T="0">t(s("/material/jilesatherton_hysteretic_material/materialmodel/JilesAtherton")) m(s("set")) s("cJA") sa(s("0.1"),s("0"),s("0"),s("0"),s("0.1"),s("0"),s("0"),s("0"),s("0.1"))</actions>
+    <actions T="0">t(s("/material/jilesatherton_hysteretic_material/materialmodel/JilesAtherton")) m(s("set")) s("alphaJA") sa(s("0.0007"),s("0"),s("0"),s("0"),s("0.0007"),s("0"),s("0"),s("0"),s("0.0007"))</actions>
+    <actions T="0">t(s("/material/nonlinear_permanent_magnet")) m(s("label")) s("Nonlinear Permanent Magnet")</actions>
+    <actions T="0">t(s("/material/nonlinear_permanent_magnet")) m(s("set")) s("family") s("iron")</actions>
+    <actions T="0">t(s("/material/nonlinear_permanent_magnet/materialmodel/def")) m(s("set")) s("electricconductivity") sa(s("1.8e6[S/m]"),s("0"),s("0"),s("0"),s("1.8e6[S/m]"),s("0"),s("0"),s("0"),s("1.8e6[S/m]"))</actions>
+    <actions T="0">t(s("/material/nonlinear_permanent_magnet/materialmodel/def")) m(s("set")) s("relpermittivity") sa(s("1"),s("0"),s("0"),s("0"),s("1"),s("0"),s("0"),s("0"),s("1"))</actions>
+    <actions T="0">t(s("/material/nonlinear_permanent_magnet/materialmodel/BHsCurve")) m(s("label")) s("B-Hs Curve")</actions>
+    <actions T="0">t(s("/material/nonlinear_permanent_magnet/materialmodel/BHsCurve/func/BHs")) m(s("label")) s("Interpolation 1")</actions>
+    <actions T="0">t(s("/material/nonlinear_permanent_magnet/materialmodel/BHsCurve/func/BHs")) m(s("set")) s("table") saa(sa(s("-50000"),s("0")),sa(s("-48000"),s("0.5")),sa(s("-47000"),s("0.7")),sa(s("-46000"),s("0.85")),sa(s("-44000"),s("0.96")),sa(s("-40000"),s("1.03")),sa(s("-35000"),s("1.08")),sa(s("-30000"),s("1.11")),sa(s("-20000"),s("1.155")),sa(s("-10000"),s("1.187")),sa(s("0"),s("1.2")))</actions>
+    <actions T="0">t(s("/material/nonlinear_permanent_magnet/materialmodel/BHsCurve/func/BHs")) m(s("set")) s("extrap") s("linear")</actions>
+    <actions T="0">t(s("/material/nonlinear_permanent_magnet/materialmodel/BHsCurve/func/BHs")) m(s("set")) s("argunit") s("A/m")</actions>
+    <actions T="0">t(s("/material/nonlinear_permanent_magnet/materialmodel/BHsCurve/func/BHs")) m(s("set")) s("fununit") s("T")</actions>
+    <actions T="0">t(s("/material/nonlinear_permanent_magnet/materialmodel/BHsCurve/func/BHs")) m(s("set")) s("defineinv") b(true)</actions>
+    <actions T="0">t(s("/material/nonlinear_permanent_magnet/materialmodel/BHsCurve/func/BHs")) m(s("set")) s("defineprimfun") b(true)</actions>
+    <actions T="0">t(s("/material/nonlinear_permanent_magnet/materialmodel/BHsCurve")) m(s("set")) s("normB") s("")</actions>
+    <actions T="0">t(s("/material/nonlinear_permanent_magnet/materialmodel/BHsCurve")) m(s("set")) s("normHs") s("")</actions>
+    <actions T="0">t(s("/material/nonlinear_permanent_magnet/materialmodel/BHsCurve")) m(s("set")) s("Hc") s("")</actions>
+    <actions T="0">t(s("/material/nonlinear_permanent_magnet/materialmodel/BHsCurve")) m(s("set")) s("Wpm") s("")</actions>
+    <actions T="0">t(s("/material/nonlinear_permanent_magnet/materialmodel/BHsCurve")) m(s("set")) s("normB") s("BHs(normHsin-Hc)")</actions>
+    <actions T="0">t(s("/material/nonlinear_permanent_magnet/materialmodel/BHsCurve")) m(s("set")) s("normHs") s("BHs_inv(normBin)+Hc")</actions>
+    <actions T="0">t(s("/material/nonlinear_permanent_magnet/materialmodel/BHsCurve")) m(s("set")) s("Hc") s("abs(BHs_inv(0))")</actions>
+    <actions T="0">t(s("/material/nonlinear_permanent_magnet/materialmodel/BHsCurve")) m(s("set")) s("Wpm") s("BHs_prim(normHsin-Hc)")</actions>
+    <actions T="0">t(s("/material/nonlinear_permanent_magnet/materialmodel/BHsCurve")) m(s("descr")) s("normHsin") s("Shifted magnetic field norm")</actions>
+    <actions T="0">t(s("/material/nonlinear_permanent_magnet/materialmodel/BHsCurve")) m(s("descr")) s("normBin") s("Magnetic flux density norm")</actions>
+    <actions T="0">t(s("/material/nonlinear_permanent_magnet/materialmodel/BHsCurve")) m(s("addInput")) s("shiftedmagneticfield")</actions>
+    <actions T="0">t(s("/material/nonlinear_permanent_magnet/materialmodel/BHsCurve")) m(s("addInput")) s("magneticfluxdensity")</actions>
+    <actions T="0">t(s("/common/cminpt")) m(s("label")) s("Common model inputs 1")</actions>
+    <actions T="0">t(s("/")) m(s("label")) s("comsol_acdc_lib.mph")</actions>
+  </History>
+  <MultiphysicsCouplingList tag="multiphysics" name="MultiphysicsCouplingList">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1513195222023</entityCreationTime>
+  </MultiphysicsCouplingList>
+  <CoordsysList tag="coordsys" name="CoordsysList">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1513195222023</entityCreationTime>
+  </CoordsysList>
+  <FileResourceList tag="file" name="FileResourceList">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1513195333718</entityCreationTime>
+    <FileResource tag="res1">
+      <!-- Node status -->
+      <entityFlags T="51">NOREMOVE|NORETAG</entityFlags>
+      <!-- True if the file is an external file that should not be stored in the mph file. -->
+      <external T="3">true</external>
+      <!-- If set to true, ignore this resource when resetting the model history. -->
+      <ignoreWhenResettingHistory T="3">true</ignoreWhenResettingHistory>
+    </FileResource>
+    <FileResource tag="res2">
+      <!-- Node status -->
+      <entityFlags T="51">NOREMOVE|NORETAG</entityFlags>
+      <!-- If set to true, the file is stored on the server. -->
+      <server T="3">true</server>
+      <!-- If set to true, ignore this resource when resetting the model history. -->
+      <ignoreWhenResettingHistory T="3">true</ignoreWhenResettingHistory>
+    </FileResource>
+    <FileResource tag="res5">
+      <!-- Node status -->
+      <entityFlags T="51">NOREMOVE|NORETAG</entityFlags>
+      <!-- True if the file is an external file that should not be stored in the mph file. -->
+      <external T="3">true</external>
+      <!-- If set to true, ignore this resource when resetting the model history. -->
+      <ignoreWhenResettingHistory T="3">true</ignoreWhenResettingHistory>
+    </FileResource>
+    <FileResource tag="res6">
+      <!-- Node status -->
+      <entityFlags T="51">NOREMOVE|NORETAG</entityFlags>
+      <!-- If set to true, the file is stored on the server. -->
+      <server T="3">true</server>
+      <!-- If set to true, ignore this resource when resetting the model history. -->
+      <ignoreWhenResettingHistory T="3">true</ignoreWhenResettingHistory>
+    </FileResource>
+    <FileResource tag="res9">
+      <!-- Node status -->
+      <entityFlags T="51">NOREMOVE|NORETAG</entityFlags>
+      <!-- True if the file is an external file that should not be stored in the mph file. -->
+      <external T="3">true</external>
+      <!-- If set to true, ignore this resource when resetting the model history. -->
+      <ignoreWhenResettingHistory T="3">true</ignoreWhenResettingHistory>
+    </FileResource>
+    <FileResource tag="res10">
+      <!-- Node status -->
+      <entityFlags T="51">NOREMOVE|NORETAG</entityFlags>
+      <!-- If set to true, the file is stored on the server. -->
+      <server T="3">true</server>
+      <!-- If set to true, ignore this resource when resetting the model history. -->
+      <ignoreWhenResettingHistory T="3">true</ignoreWhenResettingHistory>
+    </FileResource>
+    <FileResource tag="res13">
+      <!-- Node status -->
+      <entityFlags T="51">NOREMOVE|NORETAG</entityFlags>
+      <!-- True if the file is an external file that should not be stored in the mph file. -->
+      <external T="3">true</external>
+      <!-- If set to true, ignore this resource when resetting the model history. -->
+      <ignoreWhenResettingHistory T="3">true</ignoreWhenResettingHistory>
+    </FileResource>
+    <FileResource tag="res14">
+      <!-- Node status -->
+      <entityFlags T="51">NOREMOVE|NORETAG</entityFlags>
+      <!-- If set to true, the file is stored on the server. -->
+      <server T="3">true</server>
+      <!-- If set to true, ignore this resource when resetting the model history. -->
+      <ignoreWhenResettingHistory T="3">true</ignoreWhenResettingHistory>
+    </FileResource>
+    <FileResource tag="res21">
+      <!-- Node status -->
+      <entityFlags T="51">NOREMOVE|NORETAG</entityFlags>
+      <!-- If set to true, ignore this resource when resetting the model history. -->
+      <ignoreWhenResettingHistory T="3">true</ignoreWhenResettingHistory>
+    </FileResource>
+    <FileResource tag="res22">
+      <!-- Node status -->
+      <entityFlags T="51">NOREMOVE|NORETAG</entityFlags>
+      <!-- If set to true, the file is stored on the server. -->
+      <server T="3">true</server>
+      <!-- If set to true, ignore this resource when resetting the model history. -->
+      <ignoreWhenResettingHistory T="3">true</ignoreWhenResettingHistory>
+    </FileResource>
+  </FileResourceList>
+  <AppBuilderFeatureList tag="applicationNodeList" name="AppBuilderFeatureList">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1513195353719</entityCreationTime>
+  </AppBuilderFeatureList>
+  <SolutionData tag="soldata">
+  </SolutionData>
+  <ReducedModelList tag="reduced" name="Reduced Models">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1513195353719</entityCreationTime>
+  </ReducedModelList>
+  <InformationList tag="information" name="Information">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1525438623598</entityCreationTime>
+    <Information tag="expectedComputationTime" name="Information">
+      <!-- User comments -->
+      <entityComments T="0"></entityComments>
+      <!-- Created by -->
+      <entityAuthor T="0"></entityAuthor>
+      <!-- Creation time -->
+      <entityCreationTime T="11">1525438623598</entityCreationTime>
+      <title T="0">Expected_computation_time</title>
+      <body T="0"></body>
+    </Information>
+    <Information tag="lastComputationTime" name="Information 2">
+      <!-- User comments -->
+      <entityComments T="0"></entityComments>
+      <!-- Created by -->
+      <entityAuthor T="0"></entityAuthor>
+      <!-- Creation time -->
+      <entityCreationTime T="11">1525438623598</entityCreationTime>
+      <title T="0">Last_computation_time</title>
+      <body T="0"></body>
+    </Information>
+  </InformationList>
+  <ElementSetList tag="elementset" name="ElementSetList">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1525438623722</entityCreationTime>
+  </ElementSetList>
+  <CapeOpen tag="thermo" name="Thermodynamics">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1525438623847</entityCreationTime>
+    <CapeOpenFeatureList tag="feature" name="Functions">
+      <!-- User comments -->
+      <entityComments T="0"></entityComments>
+      <!-- Created by -->
+      <entityAuthor T="0"></entityAuthor>
+      <!-- Creation time -->
+      <entityCreationTime T="11">1525438623847</entityCreationTime>
+    </CapeOpenFeatureList>
+  </CapeOpen>
+  <ShapeList tag="shape" name="ShapeList">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1525438623847</entityCreationTime>
+  </ShapeList>
+  <MethodCallFeatureList tag="methodCall" name="Method Calls">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1525438623894</entityCreationTime>
+  </MethodCallFeatureList>
+  <UnitSystemList tag="unitsystem" name="UnitSystemList">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1525438623910</entityCreationTime>
+  </UnitSystemList>
+  <FormFeatureList tag="formInstance" name="Settings Forms">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1525438954669</entityCreationTime>
+  </FormFeatureList>
+  <NodeGroupList tag="nodeGroup" name="NodeGroupList">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1525438954669</entityCreationTime>
+  </NodeGroupList>
+  <IntRuleList tag="intrule" name="IntRuleList">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1527094319667</entityCreationTime>
+  </IntRuleList>
+  <WeakList tag="weak" name="WeakList">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1527094319667</entityCreationTime>
+  </WeakList>
+  <InitList tag="init" name="InitList">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1527094319682</entityCreationTime>
+  </InitList>
+  <ElemList tag="elem" name="ElemList">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1527094319682</entityCreationTime>
+  </ElemList>
+  <ConstrList tag="constr" name="ConstrList">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1527094319682</entityCreationTime>
+  </ConstrList>
+  <BEMFeatureList tag="bem" name="Boundary Element PDE List">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1527094319682</entityCreationTime>
+  </BEMFeatureList>
+  <CoeffList tag="coeff" name="CoeffList">
+    <!-- User comments -->
+    <entityComments T="0"></entityComments>
+    <!-- Created by -->
+    <entityAuthor T="0"></entityAuthor>
+    <!-- Creation time -->
+    <entityCreationTime T="11">1527094320743</entityCreationTime>
+  </CoeffList>
+</Model>
+
