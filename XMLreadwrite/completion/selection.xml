@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<COMSOLCompletionData>
+  <model.selection geomspecific="true">
+    <Features>
+      <S1D axi="false" dim="1">
+        <Explicit descr="Explicit" id="sel" props="ceyyqbxw fceyqrst eqwxfrxb fvryarft" topic="selection_Explicit"/>
+        <Union descr="Union" id="uni" props="arzxexqf uzczqxdr eqwxfrxb fvryarft" topic="selection_Union"/>
+        <Intersection descr="Intersection" id="int" props="arzxexqf ezfyuucf eqwxfrxb fvryarft" topic="selection_Intersection"/>
+        <Difference descr="Difference" id="dif" props="arzxexqf fqedqfey ruazqyre eqwxfrxb fvryarft" topic="selection_Difference"/>
+        <Complement descr="Complement" id="com" props="arzxexqf cbecweea eqwxfrxb fvryarft" topic="selection_Complement"/>
+        <Adjacent descr="Adjacent" id="adj" props="zdqydxzp zzduxaau cywrqrqw dvudacrx uwrqbrdx eqwxfrxb fvryarft" topic="selection_Adjacent"/>
+        <Ball descr="Ball" id="ball" props="arzxexqf ceyyqbxw fceyqrst cbzwdtds ttfvufqf rwdrytuy abbwtwqa uqzaeycc wwuxfdrt awssaczw eqwxfrxb fvryarft" topic="selection_Ball"/>
+        <Box descr="Box" id="box" props="arzxexqf ceyyqbxw fceyqrst cbzwdtds ttfvufqf trqbcaft aaybwytt xbtdwutv fubdqrxv cvwefdxx teeezabx sduyqeae eqwxfrxb fvryarft" topic="selection_Box"/>
+        <Cylinder descr="Cylinder" id="cyl" props="arzxexqf ceyyqbxw fceyqrst cbzwdtds ttfvufqf bxwzuuzx crdrceyr vuxvyyct bxedvauf bzscuaqz fuqqaaar dcbazsyv abswvdvq txtvwvct fesauxxv tzzywvvw dtzcstdw eqwxfrxb fvryarft" topic="selection_Cylinder"/>
+        <Disk descr="Disk" id="disk" props="arzxexqf ceyyqbxw fceyqrst cbzwdtds ttfvufqf rwdrytuy abbwtwqa uqzaeycc bxwzuuzx crdrceyr bzscuaqz fuqqaaar tzccvtrw eqwxfrxb fvryarft" topic="selection_Disk"/>
+        <FromGeom descr="Object_selection" id="obj" props="eqwxfrxb fvryarft" topic="selection_FromGeom"/>
+        <FromMesh descr="Explicit" id="sel" props="ceyyqbxw fceyqrst eqwxfrxb fvryarft" topic="selection_FromMesh"/>
+        <ModelEntityImage>
+          <Selection descr="Selection" id="image" props="cbuuzrdy wtfqcrcq cuawbuxb sxswydct dusvusvq fuxcwvee scxtvcxp bzadtrup rzswusav wqefaafr tysuqfzv xadtwseq txbeycdb wqbuwvbe fdyrwbca esfveevc vxutxzvw eexqebrp fvewcusa sssdbqss wqtdcscv zvyrryfu vtqdxtaq uwacvaqv aqcttycw zbuytuzs fxabvwrp swyqzsbu rxddsydb bavstweq bzbfaexq zdusdzxt bwqudurq xbvzvazt vvfcdrea bezeetby urefcwry fvryarft" topic="entityImage"/>
+        </ModelEntityImage>
+      </S1D>
+      <S2D axi="false" dim="2">
+        <Explicit descr="Explicit" id="sel" props="ceyyqbxw fceyqrst eqwxfrxb fvryarft" topic="selection_Explicit"/>
+        <Union descr="Union" id="uni" props="wwqqwzfz uzczqxdr eqwxfrxb fvryarft" topic="selection_Union"/>
+        <Intersection descr="Intersection" id="int" props="wwqqwzfz ezfyuucf eqwxfrxb fvryarft" topic="selection_Intersection"/>
+        <Difference descr="Difference" id="dif" props="wwqqwzfz fqedqfey ruazqyre eqwxfrxb fvryarft" topic="selection_Difference"/>
+        <Complement descr="Complement" id="com" props="wwqqwzfz cbecweea eqwxfrxb fvryarft" topic="selection_Complement"/>
+        <Adjacent descr="Adjacent" id="adj" props="dayzqwwt zzduxaau uqdrrafu dvudacrx uwrqbrdx eqwxfrxb fvryarft" topic="selection_Adjacent"/>
+        <Ball descr="Ball" id="ball" props="wwqqwzfz ceyyqbxw fceyqrst cbzwdtds ttfvufqf rwdrytuy abbwtwqa uqzaeycc wwuxfdrt awssaczw eqwxfrxb fvryarft" topic="selection_Ball"/>
+        <Box descr="Box" id="box" props="wwqqwzfz ceyyqbxw fceyqrst cbzwdtds ttfvufqf trqbcaft aaybwytt xbtdwutv fubdqrxv cvwefdxx teeezabx sduyqeae eqwxfrxb fvryarft" topic="selection_Box"/>
+        <Cylinder descr="Cylinder" id="cyl" props="wwqqwzfz ceyyqbxw fceyqrst cbzwdtds ttfvufqf bxwzuuzx crdrceyr vuxvyyct bxedvauf bzscuaqz fuqqaaar dcbazsyv abswvdvq txtvwvct fesauxxv tzzywvvw dtzcstdw eqwxfrxb fvryarft" topic="selection_Cylinder"/>
+        <Disk descr="Disk" id="disk" props="wwqqwzfz ceyyqbxw fceyqrst cbzwdtds ttfvufqf rwdrytuy abbwtwqa uqzaeycc bxwzuuzx crdrceyr bzscuaqz fuqqaaar tzccvtrw eqwxfrxb fvryarft" topic="selection_Disk"/>
+        <FromGeom descr="Object_selection" id="obj" props="eqwxfrxb fvryarft" topic="selection_FromGeom"/>
+        <FromMesh descr="Explicit" id="sel" props="ceyyqbxw fceyqrst eqwxfrxb fvryarft" topic="selection_FromMesh"/>
+        <ContinuousTangent descr="Continuous_tangent" id="cont" props="deefbrbr cbzwdtds ttfvufqf xvaszrvf fceyqrst eqwxfrxb fvryarft" topic="selection_ContinuousTangent"/>
+        <ModelEntityImage>
+          <Selection descr="Selection" id="image" props="cbuuzrdy wtfqcrcq cuawbuxb vbszqsyy fdvtrscr sxswydct dusvusvq fuxcwvee scxtvcxp bzadtrup rzswusav wqefaafr tysuqfzv xadtwseq txbeycdb wqbuwvbe fdyrwbca esfveevc vxutxzvw eexqebrp fvewcusa sssdbqss wqtdcscv zvyrryfu vtqdxtaq uwacvaqv aqcttycw zbuytuzs fxabvwrp swyqzsbu rxddsydb bavstweq bzbfaexq zdusdzxt bwqudurq xbvzvazt vvfcdrea bezeetby urefcwry fvryarft" topic="entityImage"/>
+        </ModelEntityImage>
+      </S2D>
+      <S3D axi="false" dim="3">
+        <Explicit descr="Explicit" id="sel" props="ceyyqbxw fceyqrst eqwxfrxb fvryarft" topic="selection_Explicit"/>
+        <Union descr="Union" id="uni" props="xutqdxvr uzczqxdr eqwxfrxb fvryarft" topic="selection_Union"/>
+        <Intersection descr="Intersection" id="int" props="xutqdxvr ezfyuucf eqwxfrxb fvryarft" topic="selection_Intersection"/>
+        <Difference descr="Difference" id="dif" props="xutqdxvr fqedqfey ruazqyre eqwxfrxb fvryarft" topic="selection_Difference"/>
+        <Complement descr="Complement" id="com" props="xutqdxvr cbecweea eqwxfrxb fvryarft" topic="selection_Complement"/>
+        <Adjacent descr="Adjacent" id="adj" props="zrtdufax zzduxaau tcazqbqq dvudacrx uwrqbrdx eqwxfrxb fvryarft" topic="selection_Adjacent"/>
+        <Ball descr="Ball" id="ball" props="xutqdxvr ceyyqbxw fceyqrst cbzwdtds ttfvufqf rwdrytuy abbwtwqa uqzaeycc wwuxfdrt awssaczw eqwxfrxb fvryarft" topic="selection_Ball"/>
+        <Box descr="Box" id="box" props="xutqdxvr ceyyqbxw fceyqrst cbzwdtds ttfvufqf trqbcaft aaybwytt xbtdwutv fubdqrxv cvwefdxx teeezabx sduyqeae eqwxfrxb fvryarft" topic="selection_Box"/>
+        <Cylinder descr="Cylinder" id="cyl" props="xutqdxvr ceyyqbxw fceyqrst cbzwdtds ttfvufqf bxwzuuzx crdrceyr vuxvyyct bxedvauf bzscuaqz fuqqaaar dcbazsyv abswvdvq txtvwvct fesauxxv tzzywvvw dtzcstdw eqwxfrxb fvryarft" topic="selection_Cylinder"/>
+        <Disk descr="Disk" id="disk" props="xutqdxvr ceyyqbxw fceyqrst cbzwdtds ttfvufqf rwdrytuy abbwtwqa uqzaeycc bxwzuuzx crdrceyr bzscuaqz fuqqaaar tzccvtrw eqwxfrxb fvryarft" topic="selection_Disk"/>
+        <FromGeom descr="Object_selection" id="obj" props="eqwxfrxb fvryarft" topic="selection_FromGeom"/>
+        <FromMesh descr="Explicit" id="sel" props="ceyyqbxw fceyqrst eqwxfrxb fvryarft" topic="selection_FromMesh"/>
+        <ContinuousTangent descr="Continuous_tangent" id="cont" props="ftdefcxe cbzwdtds ttfvufqf xvaszrvf fceyqrst eqwxfrxb fvryarft" topic="selection_ContinuousTangent"/>
+        <ModelEntityImage>
+          <Selection descr="Selection" id="image" props="cbuuzrdy wtfqcrcq cuawbuxb cbseeefb vbszqsyy fdvtrscr sxswydct dusvusvq fuxcwvee scxtvcxp bzadtrup rzswusav wqefaafr tysuqfzv xadtwseq txbeycdb wqbuwvbe fdyrwbca esfveevc vxutxzvw eexqebrp fvewcusa sssdbqss wqtdcscv zvyrryfu vtqdxtaq uwacvaqv aqcttycw zbuytuzs fxabvwrp swyqzsbu rxddsydb bavstweq bzbfaexq zdusdzxt bwqudurq xbvzvazt vvfcdrea bezeetby urefcwry fvryarft" topic="entityImage"/>
+        </ModelEntityImage>
+      </S3D>
+      <S1DAxi axi="true" dim="1">
+        <Explicit descr="Explicit" id="sel" props="ceyyqbxw fceyqrst eqwxfrxb fvryarft" topic="selection_Explicit"/>
+        <Union descr="Union" id="uni" props="arzxexqf uzczqxdr eqwxfrxb fvryarft" topic="selection_Union"/>
+        <Intersection descr="Intersection" id="int" props="arzxexqf ezfyuucf eqwxfrxb fvryarft" topic="selection_Intersection"/>
+        <Difference descr="Difference" id="dif" props="arzxexqf fqedqfey ruazqyre eqwxfrxb fvryarft" topic="selection_Difference"/>
+        <Complement descr="Complement" id="com" props="arzxexqf cbecweea eqwxfrxb fvryarft" topic="selection_Complement"/>
+        <Adjacent descr="Adjacent" id="adj" props="zdqydxzp zzduxaau cywrqrqw dvudacrx uwrqbrdx eqwxfrxb fvryarft" topic="selection_Adjacent"/>
+        <Ball descr="Ball" id="ball" props="arzxexqf ceyyqbxw fceyqrst cbzwdtds ttfvufqf rwdrytus abbwtwqb yvytcdut wwuxfdrt awssaczw eqwxfrxb fvryarft" topic="selection_Ball"/>
+        <Box descr="Box" id="box" props="arzxexqf ceyyqbxw fceyqrst cbzwdtds ttfvufqf trqbcaed aaybwysd xbtdwutw fubdqrxw svavwtse tdbsbqwe sduyqeae eqwxfrxb fvryarft" topic="selection_Box"/>
+        <Cylinder descr="Cylinder" id="cyl" props="arzxexqf ceyyqbxw fceyqrst cbzwdtds ttfvufqf bxwzuuzx crdrceyr vuxvyyct bxedvauf bzscuaqz fuqqaaar dcbazsyv abswvdvq cxrcqdbx fesauxxv tzzywvvw dtzcstdw eqwxfrxb fvryarft" topic="selection_Cylinder"/>
+        <Disk descr="Disk" id="disk" props="arzxexqf ceyyqbxw fceyqrst cbzwdtds ttfvufqf rwdrytus abbwtwqb yvytcdut bxwzuuzx crdrceyr bzscuaqz fuqqaaar tzccvtrw eqwxfrxb fvryarft" topic="selection_Disk"/>
+        <FromGeom descr="Object_selection" id="obj" props="eqwxfrxb fvryarft" topic="selection_FromGeom"/>
+        <FromMesh descr="Explicit" id="sel" props="ceyyqbxw fceyqrst eqwxfrxb fvryarft" topic="selection_FromMesh"/>
+        <ModelEntityImage>
+          <Selection descr="Selection" id="image" props="cbuuzrdy wtfqcrcq cuawbuxb sxswydct dusvusvq fuxcwvee scxtvcxp bzadtrup rzswusav wqefaafr tysuqfzv xadtwseq txbeycdb wqbuwvbe fdyrwbca esfveevc vxutxzvw eexqebrp fvewcusa sssdbqss wqtdcscv zvyrryfu vtqdxtaq uwacvaqv aqcttycw zbuytuzs fxabvwrp swyqzsbu rxddsydb bavstweq bzbfaexq zdusdzxt bwqudurq xbvzvazt vvfcdrea bezeetby urefcwry fvryarft" topic="entityImage"/>
+        </ModelEntityImage>
+      </S1DAxi>
+      <S2DAxi axi="true" dim="2">
+        <Explicit descr="Explicit" id="sel" props="ceyyqbxw fceyqrst eqwxfrxb fvryarft" topic="selection_Explicit"/>
+        <Union descr="Union" id="uni" props="wwqqwzfz uzczqxdr eqwxfrxb fvryarft" topic="selection_Union"/>
+        <Intersection descr="Intersection" id="int" props="wwqqwzfz ezfyuucf eqwxfrxb fvryarft" topic="selection_Intersection"/>
+        <Difference descr="Difference" id="dif" props="wwqqwzfz fqedqfey ruazqyre eqwxfrxb fvryarft" topic="selection_Difference"/>
+        <Complement descr="Complement" id="com" props="wwqqwzfz cbecweea eqwxfrxb fvryarft" topic="selection_Complement"/>
+        <Adjacent descr="Adjacent" id="adj" props="dayzqwwt zzduxaau uqdrrafu dvudacrx uwrqbrdx eqwxfrxb fvryarft" topic="selection_Adjacent"/>
+        <Ball descr="Ball" id="ball" props="wwqqwzfz ceyyqbxw fceyqrst cbzwdtds ttfvufqf rwdrytus abbwtwqb yvytcdut wwuxfdrt awssaczw eqwxfrxb fvryarft" topic="selection_Ball"/>
+        <Box descr="Box" id="box" props="wwqqwzfz ceyyqbxw fceyqrst cbzwdtds ttfvufqf trqbcaed aaybwysd xbtdwutw fubdqrxw svavwtse tdbsbqwe sduyqeae eqwxfrxb fvryarft" topic="selection_Box"/>
+        <Cylinder descr="Cylinder" id="cyl" props="wwqqwzfz ceyyqbxw fceyqrst cbzwdtds ttfvufqf bxwzuuzx crdrceyr vuxvyyct bxedvauf bzscuaqz fuqqaaar dcbazsyv abswvdvq cxrcqdbx fesauxxv tzzywvvw dtzcstdw eqwxfrxb fvryarft" topic="selection_Cylinder"/>
+        <Disk descr="Disk" id="disk" props="wwqqwzfz ceyyqbxw fceyqrst cbzwdtds ttfvufqf rwdrytus abbwtwqb yvytcdut bxwzuuzx crdrceyr bzscuaqz fuqqaaar tzccvtrw eqwxfrxb fvryarft" topic="selection_Disk"/>
+        <FromGeom descr="Object_selection" id="obj" props="eqwxfrxb fvryarft" topic="selection_FromGeom"/>
+        <FromMesh descr="Explicit" id="sel" props="ceyyqbxw fceyqrst eqwxfrxb fvryarft" topic="selection_FromMesh"/>
+        <ContinuousTangent descr="Continuous_tangent" id="cont" props="deefbrbr cbzwdtds ttfvufqf xvaszrvf fceyqrst eqwxfrxb fvryarft" topic="selection_ContinuousTangent"/>
+        <ModelEntityImage>
+          <Selection descr="Selection" id="image" props="cbuuzrdy wtfqcrcq cuawbuxb vbszqsyy fdvtrscr sxswydct dusvusvq fuxcwvee scxtvcxp bzadtrup rzswusav wqefaafr tysuqfzv xadtwseq txbeycdb wqbuwvbe fdyrwbca esfveevc vxutxzvw eexqebrp fvewcusa sssdbqss wqtdcscv zvyrryfu vtqdxtaq uwacvaqv aqcttycw zbuytuzs fxabvwrp swyqzsbu rxddsydb bavstweq bzbfaexq zdusdzxt bwqudurq xbvzvazt vvfcdrea bezeetby urefcwry fvryarft" topic="entityImage"/>
+        </ModelEntityImage>
+      </S2DAxi>
+    </Features>
+    <Properties>
+      <ceyyqbxw descr="Group_by_continuous_tangent" descrs="On|Off" name="groupcontang" type="Boolean" values="on|off"/>
+      <fceyqrst descr="Angular_tolerance" name="angletol" type="Double"/>
+      <eqwxfrxb descr="Color" descrs="None|Custom|#Color 1|#Color 2|#Color 3|#Color 4|#Color 5|#Color 6|#Color 7|#Color 8|#Color 9|#Color 10|#Color 11|#Color 12|#Color 13|#Color 14|#Color 15|#Color 16|#Color 17|#Color 18|#Color 19|#Color 20" name="color" type="String" values="none|custom|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20"/>
+      <fvryarft descr="Custom_color" name="customcolor" type="DoubleArray"/>
+      <cbuuzrdy descr="Plot_window" descrs="New_window" name="window" type="String" values="new"/>
+      <wtfqcrcq descr="Window_title" name="windowtitle" type="String"/>
+      <cuawbuxb descr="View" descrs="Automatic|A_reference_to_a_view" isref="true" name="view" type="String" values="auto|{View}"/>
+      <sxswydct descr="Zooming" descrs="No_zooming|Zoom_extents|Zoom_to_selection" name="zooming" type="String" values="nozooming|zoomextents|zoomtoselection"/>
+      <dusvusvq descr="Zoom_level" name="zoomlevel" type="Int"/>
+      <fuxcwvee descr="Size" descrs="Current[present]|Manual_web|Manual_print" name="size" type="String" values="current|manualweb|manualprint"/>
+      <scxtvcxp descr="Unit" descrs="Millimeters_(mm)|Inches_(in)|Pixels_(px)" name="webunit" type="String" values="mm|in|px"/>
+      <bzadtrup descr="Lock_aspect_ratio" descrs="On|Off" name="weblockratio" type="Boolean" values="on|off"/>
+      <rzswusav descr="Width" name="webwidth" type="Double"/>
+      <wqefaafr descr="Height" name="webheight" type="Double"/>
+      <tysuqfzv descr="Resolution" name="webresolution" type="Int"/>
+      <xadtwseq descr="Unit" descrs="Millimeters_(mm)|Inches_(in)|Pixels_(px)" name="printunit" type="String" values="mm|in|px"/>
+      <txbeycdb descr="Lock_aspect_ratio" descrs="On|Off" name="printlockratio" type="Boolean" values="on|off"/>
+      <wqbuwvbe descr="Width" name="printwidth" type="Double"/>
+      <fdyrwbca descr="Height" name="printheight" type="Double"/>
+      <esfveevc descr="Resolution" name="printresolution" type="Int"/>
+      <vxutxzvw descr="Antialiasing" descrs="On|Off" name="antialias" type="Boolean" values="on|off"/>
+      <eexqebrp descr="Target" descrs="File|Clipboard" name="target" type="String" values="file|clipboard"/>
+      <fvewcusa descr="Format" descrs="#BMP|#EPS|#JPEG|#PNG|#TIFF|#GIF|#glTF" name="imagetype" type="String" values="bmp|eps|jpeg|png|tiff|gif|gltf"/>
+      <sssdbqss descr="Filename" name="bmpfilename" type="String"/>
+      <wqtdcscv descr="Filename" name="epsfilename" type="String"/>
+      <zvyrryfu descr="Quality" descrs="On|Off" name="qualityactive" type="Boolean" values="on|off"/>
+      <vtqdxtaq descr="Level" name="qualitylevel" type="Int"/>
+      <uwacvaqv descr="Filename" name="jpegfilename" type="String"/>
+      <aqcttycw descr="Filename" name="pngfilename" type="String"/>
+      <zbuytuzs descr="Filename" name="tifffilename" type="String"/>
+      <fxabvwrp descr="Filename" name="giffilename" type="String"/>
+      <swyqzsbu descr="Filename" name="gltffilename" type="String"/>
+      <rxddsydb descr="Include" descrs="Off|On" name="options" type="String" values="off|on"/>
+      <bavstweq descr="Title" descrs="On|Off" name="title" type="Boolean" values="on|off"/>
+      <bzbfaexq descr="Axes" descrs="On|Off" name="axes" type="Boolean" values="on|off"/>
+      <zdusdzxt descr="Grid" descrs="On|Off" name="showgrid" type="Boolean" values="on|off"/>
+      <bwqudurq descr="Grid" descrs="On|Off" name="grid" type="Boolean" values="on|off"/>
+      <xbvzvazt descr="Axis_orientation" descrs="On|Off" name="axisorientation" type="Boolean" values="on|off"/>
+      <vvfcdrea descr="Logotype" descrs="On|Off" name="logo" type="Boolean" values="on|off"/>
+      <bezeetby descr="Font_size" name="fontsize" type="Int"/>
+      <urefcwry descr="Background" descrs="Current[present]|Color|Transparent" name="background" type="String" values="current|color|transparent"/>
+      <arzxexqf descr="Level" descrs="Domain|Boundary" name="entitydim" type="Int" values="1|0"/>
+      <uzczqxdr descr="Selections_to_add" descrs="A_reference_to_a_selection" isref="true" name="input" type="StringArray" values="{Selection}"/>
+      <ezfyuucf descr="Selections_to_intersect" descrs="A_reference_to_a_selection" isref="true" name="input" type="StringArray" values="{Selection}"/>
+      <fqedqfey descr="Selections_to_add" descrs="A_reference_to_a_selection" isref="true" name="add" type="StringArray" values="{Selection}"/>
+      <ruazqyre descr="Selections_to_subtract" descrs="A_reference_to_a_selection" isref="true" name="subtract" type="StringArray" values="{Selection}"/>
+      <cbecweea descr="Selections_to_invert" descrs="A_reference_to_a_selection" isref="true" name="input" type="StringArray" values="{Selection}"/>
+      <zdqydxzp descr="Geometric_entity_level" descrs="Domain|Boundary" name="entitydim" type="Int" values="1|0"/>
+      <zzduxaau descr="Input_selections" descrs="A_reference_to_a_selection" isref="true" name="input" type="StringArray" values="{Selection}"/>
+      <cywrqrqw descr="Geometric_entity_level" descrs="Adjacent_domains|Adjacent_boundaries" name="outputdim" type="Int" values="1|0"/>
+      <dvudacrx descr="Exterior_boundaries" descrs="On|Off" name="exterior" type="Boolean" values="on|off"/>
+      <uwrqbrdx descr="Interior_boundaries" descrs="On|Off" name="interior" type="Boolean" values="on|off"/>
+      <cbzwdtds descr="Entities" descrs="All|From_selections" name="inputent" type="String" values="all|selections"/>
+      <ttfvufqf descr="Selections" descrs="A_reference_to_a_selection" isref="true" name="input" type="StringArray" values="{Selection}"/>
+      <rwdrytuy descr="#x" name="posx" type="Double"/>
+      <abbwtwqa descr="#y" name="posy" type="Double"/>
+      <uqzaeycc descr="#z" name="posz" type="Double"/>
+      <wwuxfdrt descr="Radius" name="r" type="Double"/>
+      <awssaczw descr="Include_entity_if" descrs="Entity_intersects_ball|Entity_inside_ball|Some_vertex_inside_ball|All_vertices_inside_ball" name="condition" type="String" values="intersects|inside|somevertex|allvertices"/>
+      <trqbcaft descr="X_minimum#x" name="xmin" type="Double"/>
+      <aaybwytt descr="X_maximum#x" name="xmax" type="Double"/>
+      <xbtdwutv descr="X_minimum#y" name="ymin" type="Double"/>
+      <fubdqrxv descr="X_maximum#y" name="ymax" type="Double"/>
+      <cvwefdxx descr="X_minimum#z" name="zmin" type="Double"/>
+      <teeezabx descr="X_maximum#z" name="zmax" type="Double"/>
+      <sduyqeae descr="Include_entity_if" descrs="Entity_intersects_box|Entity_inside_box|Some_vertex_inside_box|All_vertices_inside_box" name="condition" type="String" values="intersects|inside|somevertex|allvertices"/>
+      <bxwzuuzx descr="Outer_radius" name="r" type="Double"/>
+      <crdrceyr descr="Inner_radius" name="rin" type="Double"/>
+      <vuxvyyct descr="Top_distance" name="top" type="Double"/>
+      <bxedvauf descr="Bottom_distance" name="bottom" type="Double"/>
+      <bzscuaqz descr="Start_angle" name="angle1" type="Double"/>
+      <fuqqaaar descr="End_angle" name="angle2" type="Double"/>
+      <dcbazsyv descr="Position" name="pos" type="DoubleArray"/>
+      <abswvdvq descr="Axis" name="axis" type="DoubleArray"/>
+      <txtvwvct descr="Axis_type" descrs="X-axis#x|X-axis#y|X-axis#z|Cartesian|Spherical" name="axistype" type="String" values="x|y|z|cartesian|spherical"/>
+      <fesauxxv descr="Axis" name="ax3" type="DoubleArray"/>
+      <tzzywvvw descr="Axis" name="ax2" type="DoubleArray"/>
+      <dtzcstdw descr="Include_entity_if" descrs="Entity_intersects_cylinder|Entity_inside_cylinder|Some_vertex_inside_cylinder|All_vertices_inside_cylinder" name="condition" type="String" values="intersects|inside|somevertex|allvertices"/>
+      <tzccvtrw descr="Include_entity_if" descrs="Entity_intersects_disk|Entity_inside_disk|Some_vertex_inside_disk|All_vertices_inside_disk" name="condition" type="String" values="intersects|inside|somevertex|allvertices"/>
+      <vbszqsyy descr="Show_selection_colors" descrs="On|Off|From_view" name="showselection" type="String" values="on|off|fromview"/>
+      <fdvtrscr descr="Show_material_color_and_texture" descrs="On|Off|From_view" name="showmaterial" type="String" values="on|off|fromview"/>
+      <wwqqwzfz descr="Level" descrs="Domain|Boundary|Point" name="entitydim" type="Int" values="2|1|0"/>
+      <dayzqwwt descr="Geometric_entity_level" descrs="Domain|Boundary|Point" name="entitydim" type="Int" values="2|1|0"/>
+      <uqdrrafu descr="Geometric_entity_level" descrs="Adjacent_domains|Adjacent_boundaries|Adjacent_points" name="outputdim" type="Int" values="2|1|0"/>
+      <deefbrbr descr="Level" descrs="Boundary" name="entitydim" type="Int" values="1"/>
+      <xvaszrvf descr="Seed_selections" descrs="A_reference_to_a_selection" isref="true" name="seedselections" type="StringArray" values="{Selection}"/>
+      <cbseeefb descr="Wireframe_rendering" descrs="On|Off|From_view" name="renderwireframe" type="String" values="on|off|fromview"/>
+      <xutqdxvr descr="Level" descrs="Domain|Boundary|Edge|Point" name="entitydim" type="Int" values="3|2|1|0"/>
+      <zrtdufax descr="Geometric_entity_level" descrs="Domain|Boundary|Edge|Point" name="entitydim" type="Int" values="3|2|1|0"/>
+      <tcazqbqq descr="Geometric_entity_level" descrs="Adjacent_domains|Adjacent_boundaries|Adjacent_edges|Adjacent_points" name="outputdim" type="Int" values="3|2|1|0"/>
+      <ftdefcxe descr="Level" descrs="Boundary|Edge" name="entitydim" type="Int" values="2|1"/>
+      <rwdrytus descr="#r" name="posx" type="Double"/>
+      <abbwtwqb descr="#z" name="posy" type="Double"/>
+      <yvytcdut descr="#phi" name="posz" type="Double"/>
+      <trqbcaed descr="X_minimum#r" name="xmin" type="Double"/>
+      <aaybwysd descr="X_maximum#r" name="xmax" type="Double"/>
+      <xbtdwutw descr="X_minimum#z" name="ymin" type="Double"/>
+      <fubdqrxw descr="X_maximum#z" name="ymax" type="Double"/>
+      <svavwtse descr="X_minimum#phi" name="zmin" type="Double"/>
+      <tdbsbqwe descr="X_maximum#phi" name="zmax" type="Double"/>
+      <cxrcqdbx descr="Axis_type" descrs="X-axis#r|X-axis#z|X-axis#ϕ|Cartesian|Spherical" name="axistype" type="String" values="x|y|z|cartesian|spherical"/>
+    </Properties>
+  </model.selection>
+</COMSOLCompletionData>

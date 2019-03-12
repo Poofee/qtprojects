@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<COMSOLCompletionData>
+  <model.result.table geomspecific="false">
+    <TableFeature topic="TableFeatureList">
+      <Table descr="Table" id="tbl" props="rydsxwsq fydzwzsa uatfafaw wfvvsvse swsxtxzu vzcyxdyd abavbsaf rsxstvdz zvwfzxwu rwvuvccu zsxbtrzd wzcvcsus" topic="table_Table"/>
+    </TableFeature>
+    <Properties>
+      <rydsxwsq descr="Presentation_format" descrs="All" name="format" type="String" values="all"/>
+      <fydzwzsa descr="Column_description" descrs="None[description]|From_data|Manual" name="descr" type="String" values="none|data|manual"/>
+      <uatfafaw descr="Description" name="descrmanual" type="String"/>
+      <wfvvsvse descr="Rows" descrs="None[parameter]" name="rows" type="String" values="none"/>
+      <swsxtxzu descr="Columns" descrs="None[parameter]" name="cols" type="String" values="none"/>
+      <vzcyxdyd descr="Data" descrs="None[parameter]" name="datacol" type="Int" values="1"/>
+      <abavbsaf descr="Parameter_value" descrs="None[parameter]" name="param" type="Int" values="1"/>
+      <rsxstvdz descr="Import" name="import" type="String"/>
+      <zvwfzxwu descr="Store_table" descrs="In_model|On_file|In_model_and_on_file" name="storetable" type="String" values="inmodel|onfile|inmodelandonfile"/>
+      <rwvuvccu descr="Maximum_number_of_rows" name="tablebuffersize" type="Int"/>
+      <zsxbtrzd descr="Filename" name="filename" type="String"/>
+      <wzcvcsus descr="Arguments" name="headers" type="StringMatrix"/>
+    </Properties>
+  </model.result.table>
+</COMSOLCompletionData>

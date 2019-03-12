@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<COMSOLCompletionData>
+  <model.func geomspecific="false">
+    <FunctionFeature topic="FunctionFeatureList">
+      <Analytic descr="Analytic" id="an" props="fzuuayxu erffwdrc vvcvwrqt tdsfvaub stqrdxbq xcyasyas ydyxxxcy syztadwy tzxucwqd wutxryea vbrquyrp ccfvtdya" topic="func_Analytic"/>
+      <Elevation descr="Elevation_(DEM)" id="elev" props="fzuuayxu svbuvtsv zcceusuc ecrbcczr szdwvwau xvzxdzzu zsxbtrzd rbrqtbaq aueyrfew teqfbbtc bxrfwdap" topic="func_Elevation"/>
+      <External descr="External" id="ext" props="vwcdayyx rcvurbbe zxexrxcw yyyzyzea cybxvcsz ccfvtdya" topic="func_External"/>
+      <GaussianPulse descr="Gaussian_pulse" id="gp" props="fzuuayxu fyqdcdtz csqtscxt" topic="func_GaussianPulse"/>
+      <Image descr="Image" id="im" props="fzuuayxu svbuvtsv btzscazv szuzswwr xvzxdzzu zsxbtrzd bvttdvbb trqbcaft aaybwytt xbtdwutv fubdqrxv rfxrbqde zddrswbr bcyvwyrr srafzcws aueyrfew teqfbbtc usabqafv srucvsfp zbzswdat rvrsqaet evcuqwev vfutausv tzxucwqd wutxryea" topic="func_Image"/>
+      <Interpolation descr="Interpolation" id="int" props="svbuvtsv ebfbtsux bfcuqrtt xvzxdzzu rcvurbbe yuywcasb zsxbtrzd bxvcbztr stedxrfr syzbbbaw vbyuurrv uzwzcyyp fzuuayxu zybzyuqd sqxtzbsr rtzvqqwq cbbtywyd cvffbytq teqfbbtc usabqafv tzxucwqd wutxryea wfqvedrt ezqexduw cqzrbudc usbqawux yudveesx cqafbzdd eqfbudft besarrct fwfswbzu zvzzasda tyffyyrq" topic="func_Interpolation"/>
+      <MATLAB descr="MATLAB" id="extm" props="ycfbucdp rtddwxwc rcvurbbe zxexrxcw ccfvtdya" topic="func_MATLAB"/>
+      <Piecewise descr="Piecewise" id="pw" props="fzuuayxu cqweeyas tbtzstyv usabqafv azdqfeqy rrfbbrab xcaxcvet uwxyfcxz yxrrdszb tzxucwqd wutxryea" topic="func_Piecewise"/>
+      <Ramp descr="Ramp" id="rm" props="fzuuayxu fyqdcdtz atbveqxr zvdctuaz rfedftsa tzdcaube yszyvdsd cydwdyrq aucqctst aeyxtbzp" topic="func_Ramp"/>
+      <Random descr="Random" id="rn" props="fzuuayxu syzbbbaw ebarycqb vufzutrz uvcarswv zraezsac atqetaaf xsrdcwdp" topic="func_Random"/>
+      <Rectangle descr="Rectangle[function]" id="rect" props="fzuuayxu cacdcssd wvdzfxcd ydrvdtcf syfqqvvq aeyxtbzp" topic="func_Rectangle"/>
+      <Step descr="Step[function]" id="step" props="fzuuayxu fyqdcdtz rfvudxat awaqdeuv ydrvdtcf syfqqvvq aeyxtbzp" topic="func_Step"/>
+      <Triangle descr="Triangle" id="tri" props="fzuuayxu cacdcssd wvdzfxcd ydrvdtcf syfqqvvq aeyxtbzp" topic="func_Triangle"/>
+      <Wave descr="Waveform" id="wv" props="fzuuayxu zytarzdq waeyduzr ydrvdtcf aeyxtbzp wtwbxerc eyeftcdy cacuzsxr bcxszyxr" topic="func_Wave"/>
+      <FunctionSwitch descr="Switch[function]" id="sw" props="fzuuayxu" topic="func_FunctionSwitch">
+        <Analytic descr="Analytic" id="an" props="fzuuayxu erffwdrc vvcvwrqt tdsfvaub stqrdxbq xcyasyas ydyxxxcy syztadwy tzxucwqd wutxryea vbrquyrp ccfvtdya" topic="func_Analytic"/>
+        <Interpolation descr="Interpolation" id="int" props="svbuvtsv ebfbtsux bfcuqrtt xvzxdzzu rcvurbbe yuywcasb zsxbtrzd bxvcbztr stedxrfr syzbbbaw vbyuurrv uzwzcyyp fzuuayxu zybzyuqd sqxtzbsr rtzvqqwq cbbtywyd cvffbytq teqfbbtc usabqafv tzxucwqd wutxryea wfqvedrt ezqexduw cqzrbudc usbqawux yudveesx cqafbzdd eqfbudft besarrct fwfswbzu zvzzasda tyffyyrq" topic="func_Interpolation"/>
+        <Piecewise descr="Piecewise" id="pw" props="fzuuayxu cqweeyas tbtzstyv usabqafv azdqfeqy rrfbbrab xcaxcvet uwxyfcxz yxrrdszb tzxucwqd wutxryea" topic="func_Piecewise"/>
+        <GaussianPulse descr="Gaussian_pulse" id="gp" props="fzuuayxu fyqdcdtz csqtscxt" topic="func_GaussianPulse"/>
+        <Ramp descr="Ramp" id="rm" props="fzuuayxu fyqdcdtz atbveqxr zvdctuaz rfedftsa tzdcaube yszyvdsd cydwdyrq aucqctst aeyxtbzp" topic="func_Ramp"/>
+        <Rectangle descr="Rectangle[function]" id="rect" props="fzuuayxu cacdcssd wvdzfxcd ydrvdtcf syfqqvvq aeyxtbzp" topic="func_Rectangle"/>
+        <Step descr="Step[function]" id="step" props="fzuuayxu fyqdcdtz rfvudxat awaqdeuv ydrvdtcf syfqqvvq aeyxtbzp" topic="func_Step"/>
+        <Triangle descr="Triangle" id="tri" props="fzuuayxu cacdcssd wvdzfxcd ydrvdtcf syfqqvvq aeyxtbzp" topic="func_Triangle"/>
+        <Wave descr="Waveform" id="wv" props="fzuuayxu zytarzdq waeyduzr ydrvdtcf aeyxtbzp wtwbxerc eyeftcdy cacuzsxr bcxszyxr" topic="func_Wave"/>
+        <Random descr="Random" id="rn" props="fzuuayxu syzbbbaw ebarycqb vufzutrz uvcarswv zraezsac atqetaaf xsrdcwdp" topic="func_Random"/>
+      </FunctionSwitch>
+    </FunctionFeature>
+    <ModelEntityImage>
+      <Function descr="Function" id="image" props="cbuuzrdy wtfqcrcq fuxcwvee scxtvcxp bzadtrup rzswusav wqefaafr tysuqfzv xadtwseq txbeycdb wqbuwvbe fdyrwbca esfveevc vxutxzvw eexqebrp fvewcusa sssdbqss wqtdcscv zvyrryfu vtqdxtaq uwacvaqv aqcttycw zbuytuzs fxabvwrp swyqzsbu rxddsydb bavstweq bzbfaexq zdusdzxt bwqudurq xbvzvazt vvfcdrea bezeetby urefcwry fvryarft" topic="entityImage"/>
+    </ModelEntityImage>
+    <Properties>
+      <fzuuayxu descr="Function_name" name="funcname" type="String"/>
+      <erffwdrc descr="Expression" name="expr" type="String"/>
+      <vvcvwrqt descr="Arguments" name="args" type="StringArray"/>
+      <tdsfvaub descr="Derivatives" descrs="Automatic|Manual" name="dermethod" type="String" values="automatic|manual"/>
+      <stqrdxbq descr="Arguments" name="argders" type="StringMatrix"/>
+      <xcyasyas descr="Make_periodic" descrs="On|Off" name="periodic" type="String" values="on|off"/>
+      <ydyxxxcy descr="Lower_limit" name="periodiclower" type="Double"/>
+      <syztadwy descr="Upper_limit" name="periodicupper" type="Double"/>
+      <tzxucwqd descr="Arguments" name="argunit" type="String"/>
+      <wutxryea descr="Function" name="fununit" type="String"/>
+      <vbrquyrp descr="May_produce_complex_output_for_real_arguments" descrs="On|Off" name="complex" type="Boolean" values="on|off"/>
+      <ccfvtdya descr="Arguments" name="plotargs" type="StringMatrix"/>
+      <cbuuzrdy descr="Plot_window" descrs="New_window" name="window" type="String" values="new"/>
+      <wtfqcrcq descr="Window_title" name="windowtitle" type="String"/>
+      <fuxcwvee descr="Size" descrs="Current[present]|Manual_web|Manual_print" name="size" type="String" values="current|manualweb|manualprint"/>
+      <scxtvcxp descr="Unit" descrs="Millimeters_(mm)|Inches_(in)|Pixels_(px)" name="webunit" type="String" values="mm|in|px"/>
+      <bzadtrup descr="Lock_aspect_ratio" descrs="On|Off" name="weblockratio" type="Boolean" values="on|off"/>
+      <rzswusav descr="Width" name="webwidth" type="Double"/>
+      <wqefaafr descr="Height" name="webheight" type="Double"/>
+      <tysuqfzv descr="Resolution" name="webresolution" type="Int"/>
+      <xadtwseq descr="Unit" descrs="Millimeters_(mm)|Inches_(in)|Pixels_(px)" name="printunit" type="String" values="mm|in|px"/>
+      <txbeycdb descr="Lock_aspect_ratio" descrs="On|Off" name="printlockratio" type="Boolean" values="on|off"/>
+      <wqbuwvbe descr="Width" name="printwidth" type="Double"/>
+      <fdyrwbca descr="Height" name="printheight" type="Double"/>
+      <esfveevc descr="Resolution" name="printresolution" type="Int"/>
+      <vxutxzvw descr="Antialiasing" descrs="On|Off" name="antialias" type="Boolean" values="on|off"/>
+      <eexqebrp descr="Target" descrs="File|Clipboard" name="target" type="String" values="file|clipboard"/>
+      <fvewcusa descr="Format" descrs="#BMP|#EPS|#JPEG|#PNG|#TIFF|#GIF|#glTF" name="imagetype" type="String" values="bmp|eps|jpeg|png|tiff|gif|gltf"/>
+      <sssdbqss descr="Filename" name="bmpfilename" type="String"/>
+      <wqtdcscv descr="Filename" name="epsfilename" type="String"/>
+      <zvyrryfu descr="Quality" descrs="On|Off" name="qualityactive" type="Boolean" values="on|off"/>
+      <vtqdxtaq descr="Level" name="qualitylevel" type="Int"/>
+      <uwacvaqv descr="Filename" name="jpegfilename" type="String"/>
+      <aqcttycw descr="Filename" name="pngfilename" type="String"/>
+      <zbuytuzs descr="Filename" name="tifffilename" type="String"/>
+      <fxabvwrp descr="Filename" name="giffilename" type="String"/>
+      <swyqzsbu descr="Filename" name="gltffilename" type="String"/>
+      <rxddsydb descr="Include" descrs="Off|On" name="options" type="String" values="off|on"/>
+      <bavstweq descr="Title" descrs="On|Off" name="title" type="Boolean" values="on|off"/>
+      <bzbfaexq descr="Axes" descrs="On|Off" name="axes" type="Boolean" values="on|off"/>
+      <zdusdzxt descr="Grid" descrs="On|Off" name="showgrid" type="Boolean" values="on|off"/>
+      <bwqudurq descr="Grid" descrs="On|Off" name="grid" type="Boolean" values="on|off"/>
+      <xbvzvazt descr="Axis_orientation" descrs="On|Off" name="axisorientation" type="Boolean" values="on|off"/>
+      <vvfcdrea descr="Logotype" descrs="On|Off" name="logo" type="Boolean" values="on|off"/>
+      <bezeetby descr="Font_size" name="fontsize" type="Int"/>
+      <urefcwry descr="Background" descrs="Current[present]|Color|Transparent" name="background" type="String" values="current|color|transparent"/>
+      <fvryarft descr="Custom_color" name="customcolor" type="DoubleArray"/>
+      <svbuvtsv descr="Filename" name="importedname" type="String"/>
+      <zcceusuc descr="Cell_name" name="cellname" type="String"/>
+      <ecrbcczr descr="Description" name="description" type="String"/>
+      <szdwvwau descr="Southeast_corner" name="importedsecorner" type="String"/>
+      <xvzxdzzu descr="Export[verb]..." name="exportfilename" type="None"/>
+      <zsxbtrzd descr="Filename" name="filename" type="String"/>
+      <rbrqtbaq descr="Southeast_corner" name="secorner" type="String"/>
+      <aueyrfew descr="Interpolation" descrs="Nearest_neighbor|Linear" name="interp" type="String" values="neighbor|linear"/>
+      <teqfbbtc descr="Extrapolation" descrs="Constant|Linear|Nearest_function|Specific_value" name="extrap" type="String" values="const|linear|interior|value"/>
+      <bxrfwdap descr="Replace_missing_data_with" name="elevmissing" type="Double"/>
+      <vwcdayyx descr="Library" name="path" type="String"/>
+      <rcvurbbe descr="Functions" name="funcs" type="StringMatrix"/>
+      <zxexrxcw descr="Arguments" name="ders" type="StringMatrix"/>
+      <yyyzyzea descr="Initialization_data" name="init" type="String"/>
+      <cybxvcsz descr="Thread_safe" descrs="On|Off" name="threadsafe" type="Boolean" values="on|off"/>
+      <fyqdcdtz descr="Location" name="location" type="Double"/>
+      <csqtscxt descr="Standard_deviation" name="sigma" type="Double"/>
+      <btzscazv descr="Width" name="importedwidth" type="String"/>
+      <szuzswwr descr="Height" name="importedheight" type="String"/>
+      <bvttdvbb descr="In_place" descrs="On|Off" name="inplace" type="Boolean" values="on|off"/>
+      <trqbcaft descr="X_minimum#x" name="xmin" type="Double"/>
+      <aaybwytt descr="X_maximum#x" name="xmax" type="Double"/>
+      <xbtdwutv descr="X_minimum#y" name="ymin" type="Double"/>
+      <fubdqrxv descr="X_maximum#y" name="ymax" type="Double"/>
+      <rfxrbqde descr="Flip_horizontally" descrs="On|Off" name="flipx" type="Boolean" values="on|off"/>
+      <zddrswbr descr="Flip_vertically" descrs="On|Off" name="flipy" type="Boolean" values="on|off"/>
+      <bcyvwyrr descr="Scaling" descrs="Automatic|Manual" name="scaling" type="String" values="automatic|manual"/>
+      <srafzcws descr="Expression" name="manualexpr" type="String"/>
+      <usabqafv descr="Value_outside_range" name="extrapvalue" type="Double"/>
+      <srucvsfp descr="Clipping" descrs="None|Manual" name="clipping" type="String" values="none|manual"/>
+      <zbzswdat descr="X_minimum#x" name="clipxmin" type="Double"/>
+      <rvrsqaet descr="X_maximum#x" name="clipxmax" type="Double"/>
+      <evcuqwev descr="X_minimum#y" name="clipymin" type="Double"/>
+      <vfutausv descr="X_maximum#y" name="clipymax" type="Double"/>
+      <ebfbtsux descr="Data_type" name="importedstruct" type="String"/>
+      <bfcuqrtt descr="Dimension" name="importeddim" type="String"/>
+      <yuywcasb descr="Data_source" descrs="File|Local_table|Result_table" name="source" type="String" values="file|table|resultTable"/>
+      <bxvcbztr descr="Sheet" name="sheet" type="String"/>
+      <stedxrfr descr="Range" name="range" type="String"/>
+      <syzbbbaw descr="Number_of_arguments" name="nargs" type="Int"/>
+      <vbyuurrv descr="Internal_scaling_of_data_points" descrs="Automatic|On|Off" name="scaledata" type="String" values="auto|on|off"/>
+      <uzwzcyyp descr="Data_format" descrs="Grid|Sectionwise|Spreadsheet" name="struct" type="String" values="grid|sectionwise|spreadsheet"/>
+      <zybzyuqd descr="Function_values" name="table" type="StringMatrix"/>
+      <sqxtzbsr descr="Table_from" name="resultTable" type="String" values=""/>
+      <rtzvqqwq descr="Use_spatial_coordinates_as_arguments" descrs="Off|On" name="defvars" type="String" values="off|on"/>
+      <cbbtywyd descr="Frame" descrs="Mesh_frame|Geometry_frame|Material_frame|Spatial_frame" name="frame" type="String" values="mesh|geometry|material|spatial"/>
+      <cvffbytq descr="Interpolation" descrs="Nearest_neighbor|Linear|Piecewise_cubic|Cubic_spline" name="interp" type="String" values="neighbor|linear|piecewisecubic|cubicspline"/>
+      <wfqvedrt descr="Plot_the_inverse_function" descrs="On|Off" name="plotinv" type="Boolean" values="on|off"/>
+      <ezqexduw descr="Define_inverse_function" descrs="On|Off" name="defineinv" type="String" values="on|off"/>
+      <cqzrbudc descr="Inverse_function_name" name="funcinvname" type="String"/>
+      <usbqawux descr="Define_primitive_function" descrs="On|Off" name="defineprimfun" type="String" values="on|off"/>
+      <yudveesx descr="Primitive_function_name" name="primfunname" type="String"/>
+      <cqafbzdd descr="Define_random_function" descrs="On|Off" name="definerandom" type="String" values="on|off"/>
+      <eqfbudft descr="Random_function_name" name="randomname" type="String"/>
+      <besarrct descr="Number_of_arguments" name="randomnargs" type="Int"/>
+      <fwfswbzu descr="Range" descrs="Automatic|Manual" name="randomrange" type="String" values="automatic|manual"/>
+      <zvzzasda descr="Lower_limit" name="leftend" type="Double"/>
+      <tyffyyrq descr="Upper_limit" name="rightend" type="Double"/>
+      <ycfbucdp descr="Clear_functions" name="clear" type="String"/>
+      <rtddwxwc descr="Clear_functions_automatically_before_solving" descrs="On|Off" name="clearsolve" type="Boolean" values="on|off"/>
+      <cqweeyas descr="Argument" name="arg" type="String"/>
+      <tbtzstyv descr="Extrapolation" descrs="Constant|None|Nearest_function|Specific_value|Periodic" name="extrap" type="String" values="constant|none|interior|value|periodic"/>
+      <azdqfeqy descr="Smoothing" descrs="No_smoothing|Continuous_function|Continuous_first_derivative|Continuous_second_derivative" name="smooth" type="String" values="none|cont|contd1|contd2"/>
+      <rrfbbrab descr="Transition_zone" descrs="Relative_size|Absolute_size" name="zonelengthtype" type="String" values="relative|absolute"/>
+      <xcaxcvet descr="Size_of_transition_zone" name="smoothzone" type="String"/>
+      <uwxyfcxz descr="Smooth_at_endpoints" descrs="On|Off" name="smoothends" type="Boolean" values="on|off"/>
+      <yxrrdszb descr="Intervals" name="pieces" type="StringMatrix"/>
+      <atbveqxr descr="Slope" name="slope" type="Double"/>
+      <zvdctuaz descr="Cutoff" name="cutoff" type="Double"/>
+      <rfedftsa descr="Cutoff" descrs="On|Off" name="cutoffactive" type="Boolean" values="on|off"/>
+      <tzdcaube descr="Size_of_transition_zone_at_start" name="smoothzoneloc" type="Double"/>
+      <yszyvdsd descr="Size_of_transition_zone_at_start" descrs="On|Off" name="smoothzonelocactive" type="Boolean" values="on|off"/>
+      <cydwdyrq descr="Size_of_transition_zone_at_cutoff" name="smoothzonecutoff" type="Double"/>
+      <aucqctst descr="Size_of_transition_zone_at_cutoff" descrs="On|Off" name="smoothzonecutoffactive" type="Boolean" values="on|off"/>
+      <aeyxtbzp descr="Number_of_continuous_derivatives" name="ncontder" type="String" values="1|2"/>
+      <ebarycqb descr="Distribution" descrs="Uniform|Normal[distribution]" name="type" type="String" values="uniform|normal"/>
+      <vufzutrz descr="Mean" name="mean" type="String"/>
+      <uvcarswv descr="Range" name="uniformrange" type="Double"/>
+      <zraezsac descr="Standard_deviation" name="normalsigma" type="Double"/>
+      <atqetaaf descr="Use_random_seed" descrs="On|Off" name="seedactive" type="String" values="on|off"/>
+      <xsrdcwdp descr="Random_seed" name="seed" type="String"/>
+      <cacdcssd descr="Lower_limit" name="lower" type="Double"/>
+      <wvdzfxcd descr="Upper_limit" name="upper" type="Double"/>
+      <ydrvdtcf descr="Size_of_transition_zone" name="smooth" type="Double"/>
+      <syfqqvvq descr="Size_of_transition_zone" descrs="On|Off" name="smoothactive" type="Boolean" values="on|off"/>
+      <rfvudxat descr="From" name="from" type="Double"/>
+      <awaqdeuv descr="To" name="to" type="Double"/>
+      <zytarzdq descr="Type" descrs="Sawtooth|Sine|Square[waveform]|Triangle" name="type" type="String" values="sawtooth|sine|square|triangle"/>
+      <waeyduzr descr="Smoothing" descrs="On|Off" name="smoothactive" type="String" values="on|off"/>
+      <wtwbxerc descr="Duty_cycle" name="dutycycle" type="Double"/>
+      <eyeftcdy descr="Angular_frequency" name="freq" type="Double"/>
+      <cacuzsxr descr="Phase" name="phase" type="Double"/>
+      <bcxszyxr descr="Amplitude" name="amplitude" type="Double"/>
+    </Properties>
+  </model.func>
+</COMSOLCompletionData>

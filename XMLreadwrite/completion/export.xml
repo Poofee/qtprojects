@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<COMSOLCompletionData>
+  <model.result.export geomspecific="false">
+    <ExportFeature topic="ExportList">
+      <Animation descr="Animation" id="anim" props="ycuxcesv uctfuaxp xcqbryzq aaxwtzfy bayracwd aucbsyya fxabvwrp dvaavbar eqxwvryd dsfasyux aabfcucd vcsexqxr fesaxwcd rewtdwtw cxuedrtw fvsttdfu zesazqrx fzswvfzt xsycwufd stcsdwyc rxzqbryc ddrfbtad ybqzwqxr zuaxdabq fuafwfvx wzxbrwxb tzxxaydr bdueywur vdvuruct xazuuyyx watwdwfu wwvusrbe fvruwbyq rsvuzfuu cqwybwyy yyfdqaxv tezyddfc yaxdefxt wqvrxrtr stcvbarx dbvywvvb awzufrya wdzxettq sycsdefx turutcuq utubyeew vevfwssz esascuxc fyvcaaee zecexfsd yurffcfx bcecqtxu ruutzvay xysefrtw ztrwbbey rffzsuvr fezqdrzd sadfqxrx vfwfbazx vbyswdrf azztcfqp rxddsydb bavstweq xwscqbcc bzbfaexq zdusdzxt bwqudurq xbvzvazt vvfcdrea bezeetby cayvztxy fvryarft fucctuwz vxutxzvw afsrtusu" topic="export_Animation"/>
+      <Data descr="Data" id="data" props="fesfyqcx vqctddcw ytwwrtfu fczsrfbx bssysaxf stcvbarx bstrbcwu awzufrya bzyqrdxa ftauxwvx xsaufxxy stqvdzyu utqcfcxt xrvfztfq zzeyqbyd vdzyrvdu tcqurvty etudxvbp fudvatbx zsxbtrzd bayracwd vwtzacqd btvvrvfy txfuqbys rqyaydww fsrcwbuv uscwuzux dtaeuzsu suvysxsw xvqsqvsy ztxdzfxb bccdytfc bdxasfzc ewrdwyxd ewcarurd exxwbfbd brwfyvcs bzvrraes fadrqaqz uaqaxdxa vfaydwex wyqdtucf xystrqpp avyazsbx txacrase cuavwurq eaxrucua dabubaus ewzqxuee szdqcxrd suecdutd ssauccqc ftxqvcvx xcuvqqwf" topic="export_Data"/>
+      <Image1D descr="Image" id="img" props="ycuxcesv fuxcwvee scxtvcxp bzadtrup rzswusav wqefaafr tysuqfzv zvcdbzcw xadtwseq txbeycdb wqbuwvbe fdyrwbca esfveevc catyyqvb vfwfbazx vxutxzvw eexqebrp sqrzsvqz sssdbqss wqtdcscv zvyrryfu vtqdxtaq uwacvaqv aqcttycw zbuytuzs fxabvwrp swyqzsbu bayracwd rxddsydb bavstweq bzbctabq bzbfaexq zdusdzxt bwqudurq xbvzvazt vvfcdrea bezeetby urefcwry fvryarft" topic="export_Image1D"/>
+      <Image2D descr="Image" id="img" props="ycuxcesv wrqxtbae fuxcwvee scxtvcxp bzadtrup rzswusav wqefaafr tysuqfzv zvcdbzcw xadtwseq txbeycdb wqbuwvbe fdyrwbca esfveevc catyyqvb vfwfbazx vxutxzvw eexqebrp dyafqacq sssdbqss wqtdcscv zvyrryfu vtqdxtaq uwacvaqv aqcttycw zbuytuzs fxabvwrp swyqzsbu bayracwd rxddsydb bavstweq xwscqbcc bzbfaexq zdusdzxt bwqudurq xbvzvazt vvfcdrea bezeetby urefcwry fvryarft" topic="export_Image2D"/>
+      <Image3D descr="Image" id="img" props="ycuxcesv wrqxtbae fuxcwvee scxtvcxp bzadtrup rzswusav wqefaafr tysuqfzv zvcdbzcw xadtwseq txbeycdb wqbuwvbe fdyrwbca esfveevc catyyqvb vfwfbazx vxutxzvw eexqebrp rufzyuat sssdbqss wqtdcscv zvyrryfu vtqdxtaq uwacvaqv aqcttycw zbuytuzs fxabvwrp swyqzsbu bayracwd rxddsydb bavstweq xwscqbcc bzbfaexq zdusdzxt bwqudurq xbvzvazt vvfcdrea bezeetby urefcwry fvryarft" topic="export_Image3D"/>
+      <Mesh descr="Mesh" id="mesh" props="fesfyqcx eqyqtsyu xsfybyrs fxudtbdc drfsrczq bfcfzatz drawzdsw ueebexqc zsxbtrzd bayracwd eswszzea" topic="export_Mesh"/>
+      <Plot descr="Plot[noun]" id="plot" props="uedxwvax zcwyxdac fudvatbx zsxbtrzd bayracwd brwfyvcs ucexeqvu vfaydwex wyqdtucf xystrqpp avyazsbx" topic="export_Plot"/>
+      <Table descr="Table" id="tbl" props="cbyyvyqy tsuqzqfu eyrrtawy zsxbtrzd bayracwd bxvcbztr stedxrfr uqydwcqw vfaydwex wyqdtucf avyazsbx" topic="export_Table"/>
+    </ExportFeature>
+    <Properties>
+      <ycuxcesv descr="Subject" descrs="None[subject]|A_reference_to_a_plot_group" isref="true" name="plotgroup" type="String" values="none|{ResultFeature}"/>
+      <uctfuaxp descr="Target" descrs="Player|File" name="target" type="String" values="player|file"/>
+      <xcqbryzq descr="Output_type" descrs="Image_sequence|Movie" name="type" type="String" values="imageseq|movie"/>
+      <aaxwtzfy descr="Filename" name="imagefilename" type="String"/>
+      <bayracwd descr="Always_ask_for_filename" descrs="On|Off" name="alwaysask" type="Boolean" values="on|off"/>
+      <aucbsyya descr="Format" descrs="GIF|Flash[file]|AVI|WebM" name="movietype" type="String" values="gif|flash|avi|webm"/>
+      <fxabvwrp descr="Filename" name="giffilename" type="String"/>
+      <dvaavbar descr="Open_in_browser" descrs="On|Off" name="gifopen" type="Boolean" values="on|off"/>
+      <eqxwvryd descr="Filename" name="flashfilename" type="String"/>
+      <dsfasyux descr="Interpolate_between_frames" descrs="On|Off" name="flashinterp" type="Boolean" values="on|off"/>
+      <aabfcucd descr="Open_in_browser" descrs="On|Off" name="flashopen" type="Boolean" values="on|off"/>
+      <vcsexqxr descr="Filename" name="avifilename" type="String"/>
+      <fesaxwcd descr="Quality" name="aviqual" type="Double"/>
+      <rewtdwtw descr="Filename" name="webmfilename" type="String"/>
+      <cxuedrtw descr="Open_in_browser" descrs="On|Off" name="webmopen" type="Boolean" values="on|off"/>
+      <fvsttdfu descr="Codec" descrs="VP8|VP9" name="webmcodec" type="String" values="vp8|vp9"/>
+      <zesazqrx descr="Lossless" descrs="On|Off" name="webmlossless" type="Boolean" values="on|off"/>
+      <fzswvfzt descr="Quality" name="webmcqlevel" type="Double"/>
+      <xsycwufd descr="Advanced_parameters" descrs="Automatic|Manual" name="webmadvanced" type="String" values="automatic|manual"/>
+      <stcsdwyc descr="Enable_parallel_encoding" descrs="On|Off" name="webmparallelencoding" type="Boolean" values="on|off"/>
+      <rxzqbryc descr="Enable_parallel_decoding" descrs="On|Off" name="webmparalleldecoding" type="Boolean" values="on|off"/>
+      <ddrfbtad descr="Dither" descrs="Off|1|2|3|4|5" name="webmdither" type="String" values="0.0|1.0|2.0|3.0|4.0|5.0"/>
+      <ybqzwqxr descr="Optimize_for" descrs="Speed_faster_encoding|Quality_slower_encoding" name="webmquality" type="String" values="optimizeForSpeed|optimizeForQuality"/>
+      <zuaxdabq descr="Color_space" descrs="BT601_limited_range|BT601_full_range|BT709_limited_range|BT_709_full_range" name="webmyuvmatrix" type="String" values="BT601Limited|BT601Full|BT709Limited|BT709Full"/>
+      <fuafwfvx descr="Frames_per_second" name="fps" type="Double"/>
+      <wzxbrwxb descr="Sequence_type" descrs="Result_parameter|Global_parameter|Dynamic_data_extension|Stored_solutions" name="sweeptype" type="String" values="parameter|globalparameter|dde|solutions"/>
+      <tzxxaydr descr="Parameter" descrs="None" name="parameter" type="String" values="none"/>
+      <bdueywur descr="Start" name="pstart" type="Double"/>
+      <vdvuruct descr="Stop" name="pstop" type="Double"/>
+      <xazuuyyx descr="Unit" name="punit" type="String"/>
+      <watwdwfu descr="Parameter" descrs="None" name="globalparameter" type="String" values="none"/>
+      <wwvusrbe descr="Start" name="globalpstart" type="Double"/>
+      <fvruwbyq descr="Stop" name="globalpstop" type="Double"/>
+      <rsvuzfuu descr="Unit" name="globalpunit" type="String"/>
+      <cqwybwyy descr="Cycle_type" descrs="Full_harmonic|Half_harmonic|Linear" name="cycletype" type="String" values="fullharm|halfharm|linear"/>
+      <yyfdqaxv descr="Loop_over" descrs="All_solutions" name="solnumtype" type="String" values="all"/>
+      <tezyddfc descr="#Parameter value" name="outersolnumsingle" type="Int" values="1"/>
+      <yaxdefxt descr="#Parameter values" name="outersolnumarray" type="IntArray" values="1"/>
+      <wqvrxrtr descr="Inner_type" descrs="First[step]|Last|All" name="outerinnertype" type="String" values="first|last|all"/>
+      <stcvbarx descr="Solution" name="solnum" type="IntArray" values=""/>
+      <dbvywvvb descr="Select_via" descrs="Interpolated_times|Stored_output_times" name="timeinterp" type="String" values="on|off"/>
+      <awzufrya descr="Times" name="t" type="DoubleArray"/>
+      <wdzxettq descr="Loop_single_level" name="singlelooplevel" type="StringArray"/>
+      <sycsdefx descr="Interpolated_single_times" name="singleinterp" type="DoubleArray"/>
+      <turutcuq descr="" descrs="All|From_list|Manual|Interpolated" name="looplevelinput" type="String" values="all|manual|manualindices|interp"/>
+      <utubyeew descr="" name="looplevel" type="IntArray" values=""/>
+      <vevfwssz descr="" name="looplevelindices" type="DoubleArray"/>
+      <esascuxc descr="" name="interp" type="DoubleArray"/>
+      <fyvcaaee descr="All_solutions" name="allarray" type="IntArray" values=""/>
+      <zecexfsd descr="Frame_selection" descrs="All|Number_of_frames" name="framesel" type="String" values="all|number"/>
+      <yurffcfx descr="Number_of_frames" name="maxframes" type="Int"/>
+      <bcecqtxu descr="Frame_number" name="showframe" type="Int"/>
+      <ruutzvay descr="Solution_number" name="shownparameter" type="String"/>
+      <xysefrtw descr="Size" descrs="Current[present]|Manual" name="size" type="String" values="current|manual"/>
+      <ztrwbbey descr="Lock_aspect_ratio" descrs="On|Off" name="lockratio" type="Boolean" values="on|off"/>
+      <rffzsuvr descr="Width" name="width" type="Double"/>
+      <fezqdrzd descr="Height" name="height" type="Double"/>
+      <sadfqxrx descr="Record_in_reverse_order" descrs="On|Off" name="reverse" type="Boolean" values="on|off"/>
+      <vfwfbazx descr="Zoom_extents" descrs="On|Off" name="zoomextents" type="Boolean" values="on|off"/>
+      <vbyswdrf descr="Display_each_frame_for" name="frametime" type="Double"/>
+      <azztcfqp descr="Repeat" descrs="On|Off" name="repeat" type="Boolean" values="on|off"/>
+      <rxddsydb descr="Include" descrs="Off|On" name="options" type="String" values="off|on"/>
+      <bavstweq descr="Title" descrs="On|Off" name="title" type="Boolean" values="on|off"/>
+      <xwscqbcc descr="Color_legend" descrs="On|Off" name="legend" type="Boolean" values="on|off"/>
+      <bzbfaexq descr="Axes" descrs="On|Off" name="axes" type="Boolean" values="on|off"/>
+      <zdusdzxt descr="Grid" descrs="On|Off" name="showgrid" type="Boolean" values="on|off"/>
+      <bwqudurq descr="Grid" descrs="On|Off" name="grid" type="Boolean" values="on|off"/>
+      <xbvzvazt descr="Axis_orientation" descrs="On|Off" name="axisorientation" type="Boolean" values="on|off"/>
+      <vvfcdrea descr="Logotype" descrs="On|Off" name="logo" type="Boolean" values="on|off"/>
+      <bezeetby descr="Font_size" name="fontsize" type="Int"/>
+      <cayvztxy descr="Background" descrs="Current[present]|Color" name="background" type="String" values="current|color"/>
+      <fvryarft descr="Custom_color" name="customcolor" type="DoubleArray"/>
+      <fucctuwz descr="Resolution" name="resolution" type="Int"/>
+      <vxutxzvw descr="Antialiasing" descrs="On|Off" name="antialias" type="Boolean" values="on|off"/>
+      <afsrtusu descr="Synchronize_scales_between_frames" descrs="On|Off" name="synchronize" type="Boolean" values="on|off"/>
+      <fesfyqcx descr="Data_set" descrs="None|A_reference_to_a_data_set" isref="true" name="data" type="String" values="none|{DatasetFeature}"/>
+      <vqctddcw descr="#Parameter selection" descrs="All|First[step]|Last|From_list|Manual" name="outerinput" type="String" values="all|first|last|manual|manualindices"/>
+      <ytwwrtfu descr="Parameter_values" name="outersolnum" type="IntArray" values="1"/>
+      <fczsrfbx descr="Parameter_indices" name="outersolnumindices" type="DoubleArray"/>
+      <bssysaxf descr="Solution_selection" descrs="All|First[step]|Last|From_list|Manual" name="innerinput" type="String" values="all|first|last|manual|manualindices"/>
+      <bstrbcwu descr="#Solution indices" name="solnumindices" type="DoubleArray"/>
+      <bzyqrdxa descr="Loop_level_input" name="looplevelinput" type="StringArray"/>
+      <ftauxwvx descr="Loop_level" name="looplevel" type="DoubleRowMatrix"/>
+      <xsaufxxy descr="Loop_level_indices" name="looplevelindices" type="DoubleRowMatrix"/>
+      <stqvdzyu descr="Interpolated_times" name="interp" type="DoubleRowMatrix"/>
+      <utqcfcxt descr="Expression" name="expr" type="StringArray"/>
+      <xrvfztfq descr="Unit" name="unit" type="StringArray"/>
+      <zzeyqbyd descr="Description" name="descr" type="StringArray"/>
+      <vdzyrvdu descr="Expression_evaluated_for" descrs="Static_solution|Harmonic_perturbation|Total_instantaneous_solution|Average_for_total_solution|RMS_for_total_solution|Peak_value_for_total_solution" name="evalmethod" type="String" values="linpoint|harmonic|lintotal|lintotalavg|lintotalrms|lintotalpeak"/>
+      <tcqurvty descr="Compute_differential" descrs="On|Off" name="differential" type="Boolean" values="on|off"/>
+      <etudxvbp descr="Parameters" name="const" type="StringMatrix"/>
+      <fudvatbx descr="File_type" descrs="Text|#Unstructured VTK File (*.vtu)" name="exporttype" type="String" values="text|vtu"/>
+      <zsxbtrzd descr="Filename" name="filename" type="String"/>
+      <vwtzacqd descr="Points_to_evaluate_in" descrs="From_file|Grid|Regular_grid|Take_from_data_set" name="location" type="String" values="file|grid|regulargrid|fromdataset"/>
+      <btvvrvfy descr="Coordinate_file" name="coordfilename" type="String"/>
+      <txfuqbys descr="Data_format" descrs="Grid|Spreadsheet" name="gridstruct" type="String" values="grid|spreadsheet"/>
+      <rqyaydww descr="#x" name="gridx1" type="DoubleArray"/>
+      <fsrcwbuv descr="#x" name="gridx2" type="DoubleArray"/>
+      <uscwuzux descr="#y" name="gridy2" type="DoubleArray"/>
+      <dtaeuzsu descr="#x" name="gridx3" type="DoubleArray"/>
+      <suvysxsw descr="#y" name="gridy3" type="DoubleArray"/>
+      <xvqsqvsy descr="#z" name="gridz3" type="DoubleArray"/>
+      <ztxdzfxb descr="Number_of_X_points#x" name="regulargridx1" type="String"/>
+      <bccdytfc descr="Number_of_X_points#x" name="regulargridx2" type="String"/>
+      <bdxasfzc descr="Number_of_X_points#y" name="regulargridy2" type="String"/>
+      <ewrdwyxd descr="Number_of_X_points#x" name="regulargridx3" type="String"/>
+      <ewcarurd descr="Number_of_X_points#y" name="regulargridy3" type="String"/>
+      <exxwbfbd descr="Number_of_X_points#z" name="regulargridz3" type="String"/>
+      <brwfyvcs descr="Data_format" descrs="Sectionwise|Spreadsheet" name="struct" type="String" values="sectionwise|spreadsheet"/>
+      <bzvrraes descr="Transpose" descrs="On|Off" name="transpose" type="Boolean" values="on|off"/>
+      <fadrqaqz descr="Space_dimension" descrs="Take_from_data_set|Global|0|1|2|3" name="sdim" type="String" values="fromdataset|global|0|1|2|3"/>
+      <uaqaxdxa descr="Geometry_level" descrs="Take_from_data_set|Volume[geometry]|Surface|Line|Point" name="level" type="String" values="fromdataset|volume|surface|line|point"/>
+      <vfaydwex descr="Include_header" descrs="On|Off" name="header" type="Boolean" values="on|off"/>
+      <wyqdtucf descr="Full_precision" descrs="On|Off" name="fullprec" type="Boolean" values="on|off"/>
+      <xystrqpp descr="Sort" descrs="On|Off" name="sort" type="Boolean" values="on|off"/>
+      <avyazsbx descr="If_the_file_exists" descrs="Append|Overwrite" name="ifexists" type="String" values="append|overwrite"/>
+      <txacrase descr="Evaluate_in" descrs="Lagrange_points|Gauss_points" name="pattern" type="String" values="lagrange|gauss"/>
+      <cuavwurq descr="Smoothing" descrs="None[smoothing]|Inside_material_domains[smoothing]|Inside_geometry_domains[smoothing]|Everywhere|Expression" name="smooth" type="String" values="none|material|internal|everywhere|expression"/>
+      <eaxrucua descr="Expression" name="smoothexpr" type="String"/>
+      <dabubaus descr="Smoothing_threshold" descrs="None|Manual" name="threshold" type="String" values="none|manual"/>
+      <ewzqxuee descr="Threshold[smoothing]" name="thresholdvalue" type="Double"/>
+      <szdqcxrd descr="True_if_smoothing_inside_material_domains_can_be_used" descrs="On|Off" name="allowmaterialsmoothing" type="Boolean" values="on|off"/>
+      <suecdutd descr="Resolution" descrs="Finer|Fine|Normal[usual]|Custom" name="resolution" type="String" values="finer|fine|normal|custom"/>
+      <ssauccqc descr="Lagrange-element_node-point_order" name="lagorder" type="Int"/>
+      <ftxqvcvx descr="Gauss_point_order" name="gporder" type="Int"/>
+      <xcuvqqwf descr="Recover" descrs="Off|Within_domains|Everywhere" name="recover" type="String" values="off|pprint|ppr"/>
+      <fuxcwvee descr="Size" descrs="Current[present]|Manual_web|Manual_print" name="size" type="String" values="current|manualweb|manualprint"/>
+      <scxtvcxp descr="Unit" descrs="Millimeters_(mm)|Inches_(in)|Pixels_(px)" name="webunit" type="String" values="mm|in|px"/>
+      <bzadtrup descr="Lock_aspect_ratio" descrs="On|Off" name="weblockratio" type="Boolean" values="on|off"/>
+      <rzswusav descr="Width" name="webwidth" type="Double"/>
+      <wqefaafr descr="Height" name="webheight" type="Double"/>
+      <tysuqfzv descr="Resolution" name="webresolution" type="Int"/>
+      <zvcdbzcw descr="Image_size" name="sizedesc" type="String"/>
+      <xadtwseq descr="Unit" descrs="Millimeters_(mm)|Inches_(in)|Pixels_(px)" name="printunit" type="String" values="mm|in|px"/>
+      <txbeycdb descr="Lock_aspect_ratio" descrs="On|Off" name="printlockratio" type="Boolean" values="on|off"/>
+      <wqbuwvbe descr="Width" name="printwidth" type="Double"/>
+      <fdyrwbca descr="Height" name="printheight" type="Double"/>
+      <esfveevc descr="Resolution" name="printresolution" type="Int"/>
+      <catyyqvb descr="Size_on_screen" name="screensizedesc" type="String"/>
+      <eexqebrp descr="Target" descrs="File|Clipboard" name="target" type="String" values="file|clipboard"/>
+      <sqrzsvqz descr="Format" descrs="#BMP|#EPS|#JPEG|#PNG|#TIFF|#GIF" name="imagetype" type="String" values="bmp|eps|jpeg|png|tiff|gif"/>
+      <sssdbqss descr="Filename" name="bmpfilename" type="String"/>
+      <wqtdcscv descr="Filename" name="epsfilename" type="String"/>
+      <zvyrryfu descr="Quality" descrs="On|Off" name="qualityactive" type="Boolean" values="on|off"/>
+      <vtqdxtaq descr="Level" name="qualitylevel" type="Int"/>
+      <uwacvaqv descr="Filename" name="jpegfilename" type="String"/>
+      <aqcttycw descr="Filename" name="pngfilename" type="String"/>
+      <zbuytuzs descr="Filename" name="tifffilename" type="String"/>
+      <swyqzsbu descr="Filename" name="gltffilename" type="String"/>
+      <bzbctabq descr="Legend" descrs="On|Off" name="legend" type="Boolean" values="on|off"/>
+      <urefcwry descr="Background" descrs="Current[present]|Color|Transparent" name="background" type="String" values="current|color|transparent"/>
+      <wrqxtbae descr="View" descrs="From_plot_group|New_view|A_reference_to_a_view" isref="true" name="view" type="String" values="auto|new|{View}"/>
+      <dyafqacq descr="Format" descrs="#BMP|#JPEG|#PNG|#TIFF|#GIF" name="imagetype" type="String" values="bmp|jpeg|png|tiff|gif"/>
+      <rufzyuat descr="Format" descrs="#BMP|#JPEG|#PNG|#TIFF|#GIF|#glTF" name="imagetype" type="String" values="bmp|jpeg|png|tiff|gif|gltf"/>
+      <eqyqtsyu descr="#Parameter value" name="outersolnum" type="Int" values="1"/>
+      <xsfybyrs descr="Solution_number" name="solnum" type="String" values=""/>
+      <fxudtbdc descr="Selection" isref="true" name="solnum" type="Int" values="1"/>
+      <drfsrczq descr="Time" name="t" type="Double"/>
+      <bfcfzatz descr="Loop_level" name="looplevel" type="StringArray"/>
+      <drawzdsw descr="Interpolated_times" name="interp" type="DoubleArray"/>
+      <ueebexqc descr="File_type" descrs="#COMSOL Multiphysics Binary File (*.mphbin)|#COMSOL Multiphysics Text File (*.mphtxt)|#STL Binary File (*.stl)|#STL Text File (*.stl)" name="type3D" type="String" values="mphbinary|mphascii|stlbin|stlascii"/>
+      <eswszzea descr="File_type" descrs="#COMSOL Multiphysics Binary File (*.mphbin)|#COMSOL Multiphysics Text File (*.mphtxt)" name="typedefault" type="String" values="mphbinary|mphascii"/>
+      <uedxwvax descr="Plot_group" descrs="None[group]|A_reference_to_a_plot_group" isref="true" name="plotgroup" type="String" values="none|{ResultFeature}"/>
+      <zcwyxdac descr="Plot[noun]" descrs="A_reference_to_a_plot" isref="true" name="plot" type="String" values="{ModelEntity}"/>
+      <ucexeqvu descr="Only_export_starting_points_and_endpoints" descrs="On|Off" name="compact" type="Boolean" values="on|off"/>
+      <cbyyvyqy descr="Source" descrs="Table|Evaluation_group" name="source" type="String" values="table|evaluationgroup"/>
+      <tsuqzqfu descr="Table" descrs="None[table]|A_reference_to_a_model_entity" isref="true" name="table" type="String" values="none|{TableFeature}"/>
+      <eyrrtawy descr="Evaluation_group" descrs="None[evaluation_group]|A_reference_to_a_model_entity" isref="true" name="evaluationgroup" type="String" values="none|{EvaluationGroupFeature}"/>
+      <bxvcbztr descr="Sheet" name="sheet" type="String"/>
+      <stedxrfr descr="Range" name="range" type="String"/>
+      <uqydwcqw descr="Overwrite" descrs="On|Off" name="overwrite" type="Boolean" values="on|off"/>
+    </Properties>
+  </model.result.export>
+</COMSOLCompletionData>

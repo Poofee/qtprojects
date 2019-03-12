@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<COMSOLCompletionData>
+  <model.probe geomspecific="true">
+    <ProbeFeature topic="ProbeFeatureList">
+      <Global axi="false" dim="-1">
+        <GlobalVariable descr="Global_variable_probe" id="var" props="tucwfsxv erffwdrc yuuauvcb txaxctbt ryexacwc rdzbsawv scqtsqae" topic="probe_GlobalVariable"/>
+        <ModelEntityImage>
+          <Probe descr="Probe" id="image" props="cbuuzrdy wtfqcrcq cuawbuxb cbseeefb vbszqsyy fdvtrscr sxswydct dusvusvq fuxcwvee scxtvcxp bzadtrup rzswusav wqefaafr tysuqfzv xadtwseq txbeycdb wqbuwvbe fdyrwbca esfveevc vxutxzvw eexqebrp fvewcusa sssdbqss wqtdcscv zvyrryfu vtqdxtaq uwacvaqv aqcttycw zbuytuzs fxabvwrp swyqzsbu rxddsydb bavstweq bzbfaexq zdusdzxt bwqudurq xbvzvazt vvfcdrea bezeetby urefcwry fvryarft" topic="entityImage"/>
+        </ModelEntityImage>
+      </Global>
+      <S1D axi="false" dim="1">
+        <Domain descr="Domain_probe" id="dom" props="vucwrqwt tucwfsxv erffwdrc yuuauvcb txaxctbt ryexacwc yscaqwvw rbqvsazz cbbtywyd bxrucqea fteweecq rdzbsawv scqtsqae" topic="probe_Domain"/>
+        <DomainPoint descr="Domain_point_probe" id="pdom" props="cbbtywyd bwsyvtze xzcbabap tavyaqzf fdqsfxzf cyattbqe zdrysqtv vruwwvsr xdbdebfr wffdfbsd beyyedaq twcdzzxe" topic="probe_DomainPoint">
+          <PointExpr descr="Point_probe_expression" id="ppb" props="tucwfsxv erffwdrc yuuauvcb txaxctbt ryexacwc rdzbsawv scqtsqae" topic="probe_PointExpr"/>
+        </DomainPoint>
+        <GlobalVariable descr="Global_variable_probe" id="var" props="tucwfsxv erffwdrc yuuauvcb txaxctbt ryexacwc rdzbsawv scqtsqae" topic="probe_GlobalVariable"/>
+        <ModelEntityImage>
+          <Probe descr="Probe" id="image" props="cbuuzrdy wtfqcrcq cuawbuxb cbseeefb vbszqsyy fdvtrscr sxswydct dusvusvq fuxcwvee scxtvcxp bzadtrup rzswusav wqefaafr tysuqfzv xadtwseq txbeycdb wqbuwvbe fdyrwbca esfveevc vxutxzvw eexqebrp fvewcusa sssdbqss wqtdcscv zvyrryfu vtqdxtaq uwacvaqv aqcttycw zbuytuzs fxabvwrp swyqzsbu rxddsydb bavstweq bzbfaexq zdusdzxt bwqudurq xbvzvazt vvfcdrea bezeetby urefcwry fvryarft" topic="entityImage"/>
+        </ModelEntityImage>
+      </S1D>
+      <S2D axi="false" dim="2">
+        <Domain descr="Domain_probe" id="dom" props="vucwrqwt tucwfsxv erffwdrc yuuauvcb txaxctbt ryexacwc yscaqwvw rbqvsazz cbbtywyd bxrucqea fteweecq rdzbsawv scqtsqae" topic="probe_Domain"/>
+        <Boundary descr="Boundary_probe" id="bnd" props="vucwrqwt tucwfsxv erffwdrc yuuauvcb txaxctbt ryexacwc yscaqwvw rbqvsazz cbbtywyd bxrucqea rdzbsawv scqtsqae" topic="probe_Boundary"/>
+        <DomainPoint descr="Domain_point_probe" id="pdom" props="cbbtywyd bwsyvtze xzcbabap tavyaqzf fdqsfxzf cyattbqe zdrysqtv vruwwvsr xdbdebfr wffdfbsd beyyedaq twcdzzxe" topic="probe_DomainPoint">
+          <PointExpr descr="Point_probe_expression" id="ppb" props="tucwfsxv erffwdrc yuuauvcb txaxctbt ryexacwc rdzbsawv scqtsqae" topic="probe_PointExpr"/>
+        </DomainPoint>
+        <GlobalVariable descr="Global_variable_probe" id="var" props="tucwfsxv erffwdrc yuuauvcb txaxctbt ryexacwc rdzbsawv scqtsqae" topic="probe_GlobalVariable"/>
+        <ModelEntityImage>
+          <Probe descr="Probe" id="image" props="cbuuzrdy wtfqcrcq cuawbuxb cbseeefb vbszqsyy fdvtrscr sxswydct dusvusvq fuxcwvee scxtvcxp bzadtrup rzswusav wqefaafr tysuqfzv xadtwseq txbeycdb wqbuwvbe fdyrwbca esfveevc vxutxzvw eexqebrp fvewcusa sssdbqss wqtdcscv zvyrryfu vtqdxtaq uwacvaqv aqcttycw zbuytuzs fxabvwrp swyqzsbu rxddsydb bavstweq bzbfaexq zdusdzxt bwqudurq xbvzvazt vvfcdrea bezeetby urefcwry fvryarft" topic="entityImage"/>
+        </ModelEntityImage>
+      </S2D>
+      <S3D axi="false" dim="3">
+        <Domain descr="Domain_probe" id="dom" props="vucwrqwt tucwfsxv erffwdrc yuuauvcb txaxctbt ryexacwc yscaqwvw rbqvsazz cbbtywyd bxrucqea fteweecq rdzbsawv scqtsqae" topic="probe_Domain"/>
+        <Boundary descr="Boundary_probe" id="bnd" props="vucwrqwt tucwfsxv erffwdrc yuuauvcb txaxctbt ryexacwc yscaqwvw rbqvsazz cbbtywyd bxrucqea rdzbsawv scqtsqae" topic="probe_Boundary"/>
+        <Edge descr="Edge_probe" id="edge" props="vucwrqwt tucwfsxv erffwdrc yuuauvcb txaxctbt ryexacwc yscaqwvw rbqvsazz cbbtywyd rdzbsawv scqtsqae" topic="probe_Edge"/>
+        <DomainPoint descr="Domain_point_probe" id="pdom" props="cbbtywyd bwsyvtze xzcbabap tavyaqzf fdqsfxzf cyattbqe zdrysqtv vruwwvsr xdbdebfr wffdfbsd beyyedaq twcdzzxe" topic="probe_DomainPoint">
+          <PointExpr descr="Point_probe_expression" id="ppb" props="tucwfsxv erffwdrc yuuauvcb txaxctbt ryexacwc rdzbsawv scqtsqae" topic="probe_PointExpr"/>
+        </DomainPoint>
+        <BoundaryPoint descr="Boundary_point_probe" id="pbnd" props="csqstdss cbbtywyd tdudazrr rsswdqvv" topic="probe_BoundaryPoint">
+          <PointExpr descr="Point_probe_expression" id="ppb" props="tucwfsxv erffwdrc yuuauvcb txaxctbt ryexacwc rdzbsawv scqtsqae" topic="probe_PointExpr"/>
+        </BoundaryPoint>
+        <GlobalVariable descr="Global_variable_probe" id="var" props="tucwfsxv erffwdrc yuuauvcb txaxctbt ryexacwc rdzbsawv scqtsqae" topic="probe_GlobalVariable"/>
+        <ModelEntityImage>
+          <Probe descr="Probe" id="image" props="cbuuzrdy wtfqcrcq cuawbuxb cbseeefb vbszqsyy fdvtrscr sxswydct dusvusvq fuxcwvee scxtvcxp bzadtrup rzswusav wqefaafr tysuqfzv xadtwseq txbeycdb wqbuwvbe fdyrwbca esfveevc vxutxzvw eexqebrp fvewcusa sssdbqss wqtdcscv zvyrryfu vtqdxtaq uwacvaqv aqcttycw zbuytuzs fxabvwrp swyqzsbu rxddsydb bavstweq bzbfaexq zdusdzxt bwqudurq xbvzvazt vvfcdrea bezeetby urefcwry fvryarft" topic="entityImage"/>
+        </ModelEntityImage>
+      </S3D>
+      <S1DAxi axi="true" dim="1">
+        <Domain descr="Domain_probe" id="dom" props="vucwrqwt tucwfsxv erffwdrc yuuauvcb txaxctbt ryexacwc yscaqwvw rbqvsazz cbbtywyd bxrucqea fteweecq rdzbsawv scqtsqae" topic="probe_Domain"/>
+        <DomainPoint descr="Domain_point_probe" id="pdom" props="cbbtywyd bwsyvtze xzcbabap tavyaqzf fdqsfxzf cyattbqe zdrysqtv vruwwvsr xdbdebfr wffdfbsd beyyedaq twcdzzxe" topic="probe_DomainPoint">
+          <PointExpr descr="Point_probe_expression" id="ppb" props="tucwfsxv erffwdrc yuuauvcb txaxctbt ryexacwc rdzbsawv scqtsqae" topic="probe_PointExpr"/>
+        </DomainPoint>
+        <GlobalVariable descr="Global_variable_probe" id="var" props="tucwfsxv erffwdrc yuuauvcb txaxctbt ryexacwc rdzbsawv scqtsqae" topic="probe_GlobalVariable"/>
+        <ModelEntityImage>
+          <Probe descr="Probe" id="image" props="cbuuzrdy wtfqcrcq cuawbuxb cbseeefb vbszqsyy fdvtrscr sxswydct dusvusvq fuxcwvee scxtvcxp bzadtrup rzswusav wqefaafr tysuqfzv xadtwseq txbeycdb wqbuwvbe fdyrwbca esfveevc vxutxzvw eexqebrp fvewcusa sssdbqss wqtdcscv zvyrryfu vtqdxtaq uwacvaqv aqcttycw zbuytuzs fxabvwrp swyqzsbu rxddsydb bavstweq bzbfaexq zdusdzxt bwqudurq xbvzvazt vvfcdrea bezeetby urefcwry fvryarft" topic="entityImage"/>
+        </ModelEntityImage>
+      </S1DAxi>
+      <S2DAxi axi="true" dim="2">
+        <Domain descr="Domain_probe" id="dom" props="vucwrqwt tucwfsxv erffwdrc yuuauvcb txaxctbt ryexacwc yscaqwvw rbqvsazz cbbtywyd bxrucqea fteweecq rdzbsawv scqtsqae" topic="probe_Domain"/>
+        <Boundary descr="Boundary_probe" id="bnd" props="vucwrqwt tucwfsxv erffwdrc yuuauvcb txaxctbt ryexacwc yscaqwvw rbqvsazz cbbtywyd bxrucqea rdzbsawv scqtsqae" topic="probe_Boundary"/>
+        <DomainPoint descr="Domain_point_probe" id="pdom" props="cbbtywyd bwsyvtze xzcbabap tavyaqzf fdqsfxzf cyattbqe zdrysqtv vruwwvsr xdbdebfr wffdfbsd beyyedaq twcdzzxe" topic="probe_DomainPoint">
+          <PointExpr descr="Point_probe_expression" id="ppb" props="tucwfsxv erffwdrc yuuauvcb txaxctbt ryexacwc rdzbsawv scqtsqae" topic="probe_PointExpr"/>
+        </DomainPoint>
+        <GlobalVariable descr="Global_variable_probe" id="var" props="tucwfsxv erffwdrc yuuauvcb txaxctbt ryexacwc rdzbsawv scqtsqae" topic="probe_GlobalVariable"/>
+        <ModelEntityImage>
+          <Probe descr="Probe" id="image" props="cbuuzrdy wtfqcrcq cuawbuxb cbseeefb vbszqsyy fdvtrscr sxswydct dusvusvq fuxcwvee scxtvcxp bzadtrup rzswusav wqefaafr tysuqfzv xadtwseq txbeycdb wqbuwvbe fdyrwbca esfveevc vxutxzvw eexqebrp fvewcusa sssdbqss wqtdcscv zvyrryfu vtqdxtaq uwacvaqv aqcttycw zbuytuzs fxabvwrp swyqzsbu rxddsydb bavstweq bzbfaexq zdusdzxt bwqudurq xbvzvazt vvfcdrea bezeetby urefcwry fvryarft" topic="entityImage"/>
+        </ModelEntityImage>
+      </S2DAxi>
+    </ProbeFeature>
+    <Properties>
+      <tucwfsxv descr="Probe_variable" name="probename" type="String"/>
+      <erffwdrc descr="Expression" name="expr" type="String"/>
+      <yuuauvcb descr="Table_and_plot_unit" name="unit" type="String" values="1"/>
+      <txaxctbt descr="Description" descrs="On|Off" name="descractive" type="Boolean" values="on|off"/>
+      <ryexacwc descr="Description" name="descr" type="String"/>
+      <rdzbsawv descr="Output_table" descrs="Default|New_table|A_reference_to_a_model_entity" isref="true" name="table" type="String" values="default|new|{TableFeature}"/>
+      <scqtsqae descr="Plot_window" descrs="Default|New_window" name="window" type="String" values="default|new"/>
+      <cbuuzrdy descr="Plot_window" descrs="New_window" name="window" type="String" values="new"/>
+      <wtfqcrcq descr="Window_title" name="windowtitle" type="String"/>
+      <cuawbuxb descr="View" descrs="Automatic|A_reference_to_a_view" isref="true" name="view" type="String" values="auto|{View}"/>
+      <cbseeefb descr="Wireframe_rendering" descrs="On|Off|From_view" name="renderwireframe" type="String" values="on|off|fromview"/>
+      <vbszqsyy descr="Show_selection_colors" descrs="On|Off|From_view" name="showselection" type="String" values="on|off|fromview"/>
+      <fdvtrscr descr="Show_material_color_and_texture" descrs="On|Off|From_view" name="showmaterial" type="String" values="on|off|fromview"/>
+      <sxswydct descr="Zooming" descrs="No_zooming|Zoom_extents|Zoom_to_selection" name="zooming" type="String" values="nozooming|zoomextents|zoomtoselection"/>
+      <dusvusvq descr="Zoom_level" name="zoomlevel" type="Int"/>
+      <fuxcwvee descr="Size" descrs="Current[present]|Manual_web|Manual_print" name="size" type="String" values="current|manualweb|manualprint"/>
+      <scxtvcxp descr="Unit" descrs="Millimeters_(mm)|Inches_(in)|Pixels_(px)" name="webunit" type="String" values="mm|in|px"/>
+      <bzadtrup descr="Lock_aspect_ratio" descrs="On|Off" name="weblockratio" type="Boolean" values="on|off"/>
+      <rzswusav descr="Width" name="webwidth" type="Double"/>
+      <wqefaafr descr="Height" name="webheight" type="Double"/>
+      <tysuqfzv descr="Resolution" name="webresolution" type="Int"/>
+      <xadtwseq descr="Unit" descrs="Millimeters_(mm)|Inches_(in)|Pixels_(px)" name="printunit" type="String" values="mm|in|px"/>
+      <txbeycdb descr="Lock_aspect_ratio" descrs="On|Off" name="printlockratio" type="Boolean" values="on|off"/>
+      <wqbuwvbe descr="Width" name="printwidth" type="Double"/>
+      <fdyrwbca descr="Height" name="printheight" type="Double"/>
+      <esfveevc descr="Resolution" name="printresolution" type="Int"/>
+      <vxutxzvw descr="Antialiasing" descrs="On|Off" name="antialias" type="Boolean" values="on|off"/>
+      <eexqebrp descr="Target" descrs="File|Clipboard" name="target" type="String" values="file|clipboard"/>
+      <fvewcusa descr="Format" descrs="#BMP|#EPS|#JPEG|#PNG|#TIFF|#GIF|#glTF" name="imagetype" type="String" values="bmp|eps|jpeg|png|tiff|gif|gltf"/>
+      <sssdbqss descr="Filename" name="bmpfilename" type="String"/>
+      <wqtdcscv descr="Filename" name="epsfilename" type="String"/>
+      <zvyrryfu descr="Quality" descrs="On|Off" name="qualityactive" type="Boolean" values="on|off"/>
+      <vtqdxtaq descr="Level" name="qualitylevel" type="Int"/>
+      <uwacvaqv descr="Filename" name="jpegfilename" type="String"/>
+      <aqcttycw descr="Filename" name="pngfilename" type="String"/>
+      <zbuytuzs descr="Filename" name="tifffilename" type="String"/>
+      <fxabvwrp descr="Filename" name="giffilename" type="String"/>
+      <swyqzsbu descr="Filename" name="gltffilename" type="String"/>
+      <rxddsydb descr="Include" descrs="Off|On" name="options" type="String" values="off|on"/>
+      <bavstweq descr="Title" descrs="On|Off" name="title" type="Boolean" values="on|off"/>
+      <bzbfaexq descr="Axes" descrs="On|Off" name="axes" type="Boolean" values="on|off"/>
+      <zdusdzxt descr="Grid" descrs="On|Off" name="showgrid" type="Boolean" values="on|off"/>
+      <bwqudurq descr="Grid" descrs="On|Off" name="grid" type="Boolean" values="on|off"/>
+      <xbvzvazt descr="Axis_orientation" descrs="On|Off" name="axisorientation" type="Boolean" values="on|off"/>
+      <vvfcdrea descr="Logotype" descrs="On|Off" name="logo" type="Boolean" values="on|off"/>
+      <bezeetby descr="Font_size" name="fontsize" type="Int"/>
+      <urefcwry descr="Background" descrs="Current[present]|Color|Transparent" name="background" type="String" values="current|color|transparent"/>
+      <fvryarft descr="Custom_color" name="customcolor" type="DoubleArray"/>
+      <vucwrqwt descr="Type" descrs="Average|Maximum|Minimum|Integral" name="type" type="String" values="average|maximum|minimum|integral"/>
+      <yscaqwvw descr="Method" descrs="Integration|Summation_over_nodes" name="method" type="String" values="integration|summation"/>
+      <rbqvsazz descr="Integration_order" name="intorder" type="Int"/>
+      <cbbtywyd descr="Frame" descrs="Mesh_frame|Geometry_frame|Material_frame|Spatial_frame" name="frame" type="String" values="mesh|geometry|material|spatial"/>
+      <bxrucqea descr="Compute_surface_integral_(axial_symmetry)" descrs="On|Off" name="intsurface" type="Boolean" values="on|off"/>
+      <fteweecq descr="Compute_volume_integral_(axial_symmetry)" descrs="On|Off" name="intvolume" type="Boolean" values="on|off"/>
+      <bwsyvtze descr="Coordinates" name="coords1" type="DoubleArray"/>
+      <xzcbabap descr="Snap_to_closest_point" descrs="On|Off" name="bndsnap1" type="Boolean" values="on|off"/>
+      <tavyaqzf descr="Coordinates" name="coords2" type="DoubleArray"/>
+      <fdqsfxzf descr="Snap_to_closest_boundary" descrs="On|Off" name="bndsnap2" type="Boolean" values="on|off"/>
+      <cyattbqe descr="Line_entry_method" descrs="Point_and_surface_normal|Point_and_direction|Two_points|None" name="method" type="String" values="pointnormal|pointdir|twopoints|none"/>
+      <zdrysqtv descr="Depth_along_line" name="depthpointnormal" type="Double"/>
+      <vruwwvsr descr="Depth_along_line" name="depthpointdir" type="Double"/>
+      <xdbdebfr descr="Point_being_modified" descrs="First_point|Second_point" name="twopointscurrent" type="String" values="first|second"/>
+      <wffdfbsd descr="Depth_along_line" name="depthtwopoints" type="Double"/>
+      <beyyedaq descr="Coordinates" name="coords3" type="DoubleArray"/>
+      <twcdzzxe descr="Snap_to_closest_boundary" descrs="On|Off" name="bndsnap3" type="Boolean" values="on|off"/>
+      <csqstdss descr="Selection" name="dom" type="Selection"/>
+      <tdudazrr descr="Coordinates" name="rawcoords" type="DoubleArray"/>
+      <rsswdqvv descr="On_surface" name="snapcoords" type="StringArray"/>
+    </Properties>
+  </model.probe>
+</COMSOLCompletionData>

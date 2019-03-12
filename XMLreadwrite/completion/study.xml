@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<COMSOLCompletionData>
+  <model.study geomspecific="false">
+    <Study descr="Study" id="std" props="fvsvcyby yvecvvcw sqysbduw efxxvear" topic="Study">
+      <MultigridLevel descr="Multigrid_level" id="mgl" props="csfyzuxq bzbudtrq" topic="batch_multigrid"/>
+      <StudyFeature>
+        <Stationary descr="Stationary" id="stat" props="fasftxxc vctftsyu eufdfxxu ebqqyazf szasxbys afyqrrrw ewaqwrtx bbbdetcd csfyzuxq bdrtavwb svbaebqt bfdaecdx vvwyqaav rvcsxrdq ffffswwc wqwwxzrc fazvdwfc eeqrbyaa veaxxdvx vxtybvqy eawqfsfz vcwatuuv zrqysdvf aeveezcs bfsfyctz avsqdtqt fxudtbdc drfsrczq ysetrdax zwrxvvvx tuysdsyz wzsswqry xswbuafc xxavsvqv yuurbctc etqwfedw uzdawvsz dureqzdp rbrdexxr sqsvrqsu wewewtsd febbeuaq bzbudtrq uxxqyacy xudvzxbr sewvqwra aqxqcbus ceetzeew vxfwtbve axbveqbd vfstwcwq rfcfwefq wxvafadr cbfzezcs wcfuuxdw tsvcazwd uzqcqcxf fucyfzuw ydqttbvr fqyfsvce czrbexqd cftuvxbd syuceztx tqecbuzx crusxvft aqucvufa bwsvcsfe aurffede rfwubcyx wfvazdve aufqfytr yavtxser dzxezqvd ubertzyq yquqdvye syyycfws zaybrqcs aeqbsquu bfqszwwu evcraqbs yzedquuu ffdwsbev zrwubqxq wrsfuqbf" topic="study_stationary"/>
+        <Transient descr="Time_dependent" id="time" props="afyatsyq sqzbwxuz tdezrcay yacswccy fvedybww fzrrfsuy vctftsyu yydafasc uqcbxfzu bxyxcqtu csfcwwtq svabfvzu vyyudyty cdydbtrq arqvfubz eufdfxxu ebqqyazf yxcybrxb szasxbys afyqrrrw aezcywuc bbbdetcd csfyzuxq bdrtavwb svbaebqt bfdaecdx vvwyqaav rvcsxrdq ffffswwc wqwwxzrc fazvdwfc eeqrbyaa veaxxdvx vxtybvqy eawqfsfz vcwatuuv zrqysdvf aeveezcs bfsfyctz avsqdtqt fxudtbdc drfsrczq ysetrdax zwrxvvvx tuysdsyz wzsswqry xswbuafc xxavsvqv yuurbctc etqwfedw uzdawvsz dureqzdp rbrdexxr sqsvrqsu wewewtsd febbeuaq bzbudtrq wfvazdve aufqfytr yavtxser dzxezqvd ubertzyq eccrfcdw cyyzqfwd sqebabrq cecqewzx zrwubqxq wrsfuqbf" topic="study_transient"/>
+        <Eigenfrequency descr="Eigenfrequency" id="eig" props="fasftxxc dfeuafdw uftvfbrs dqcctfrr avsvfvwr erasrssp xrrzdbdz fyvtstrz datwvrxs vdvcusdu dwyaybuf fwdcvuqw bvwvqacu rrqxxvuv wwwavqxz dzyxvtdr acfuydab fwxyxzvu vctftsyu yydafasc uqcbxfzu bxyxcqtu csfcwwtq svabfvzu vyyudyty cdydbtrq arqvfubz bbbdetcd csfyzuxq bdrtavwb svbaebqt bfdaecdx vvwyqaav rvcsxrdq ffffswwc wqwwxzrc fazvdwfc eeqrbyaa veaxxdvx vxtybvqy eawqfsfz vcwatuuv zrqysdvf aeveezcs bfsfyctz avsqdtqt fxudtbdc drfsrczq ysetrdax zwrxvvvx tuysdsyz wzsswqry xswbuafc xxavsvqv yuurbctc etqwfedw uzdawvsz dureqzdp rbrdexxr sqsvrqsu wewewtsd febbeuaq bzbudtrq uxxqyacy ytctuyre sewvqwra aqxqcbus ceetzeew vxfwtbve axbveqbd vfstwcwq rfcfwefq wxvafadr cbfzezcs wcfuuxdw tsvcazwd uzqcqcxf xddfcxdt fqyfsvce czrbexqd cftuvxbd syuceztx tqecbuzx crusxvft aqucvufa bwsvcsfe aurffede rfwubcyx wfvazdve aufqfytr yavtxser dzxezqvd ubertzyq wrsfuqbf" topic="study_eigenfrequency"/>
+        <Eigenvalue descr="Eigenvalue" id="eigv" props="fasftxxc twqsuqvt xssvesqa trqvrwqx wyvrtssb xuewfbra rftrqzyt dwavtzse datwvrxs vdvcusdu rrrdvfad zvyqcqzw bvwvqacu rrqxxvuv wwwavqxz dzyxvtdr acfuydab fwxyxzvu vctftsyu yydafasc uqcbxfzu bxyxcqtu csfcwwtq svabfvzu vyyudyty cdydbtrq arqvfubz bbbdetcd csfyzuxq bdrtavwb svbaebqt bfdaecdx vvwyqaav rvcsxrdq ffffswwc wqwwxzrc fazvdwfc eeqrbyaa veaxxdvx vxtybvqy eawqfsfz vcwatuuv zrqysdvf aeveezcs bfsfyctz avsqdtqt fxudtbdc drfsrczq ysetrdax zwrxvvvx tuysdsyz wzsswqry xswbuafc xxavsvqv yuurbctc etqwfedw uzdawvsz dureqzdp rbrdexxr sqsvrqsu wewewtsd febbeuaq bzbudtrq uxxqyacy ytctuyre sewvqwra aqxqcbus ceetzeew vxfwtbve axbveqbd vfstwcwq rfcfwefq wxvafadr cbfzezcs wcfuuxdw tsvcazwd uzqcqcxf xddfcxdt fqyfsvce czrbexqd cftuvxbd syuceztx tqecbuzx crusxvft aqucvufa bwsvcsfe aurffede rfwubcyx wfvazdve aufqfytr yavtxser dzxezqvd ubertzyq wrsfuqbf" topic="study_eigenvalue"/>
+        <Frequency descr="Frequency_domain" id="freq" props="byrsubxu ywxsrbfz xwvbeqdy efzyvuts ffdwsbev vctftsyu eufdfxxu ebqqyazf szasxbys afyqrrrw bbbdetcd csfyzuxq bdrtavwb svbaebqt bfdaecdx vvwyqaav rvcsxrdq ffffswwc wqwwxzrc fazvdwfc eeqrbyaa veaxxdvx vxtybvqy eawqfsfz vcwatuuv zrqysdvf aeveezcs bfsfyctz avsqdtqt fxudtbdc drfsrczq ysetrdax zwrxvvvx tuysdsyz wzsswqry xswbuafc xxavsvqv yuurbctc etqwfedw uzdawvsz dureqzdp rbrdexxr sqsvrqsu wewewtsd febbeuaq bzbudtrq uxxqyacy xudvzxbr sewvqwra aqxqcbus ceetzeew vxfwtbve axbveqbd vfstwcwq rfcfwefq wxvafadr cbfzezcs wcfuuxdw tsvcazwd uzqcqcxf fucyfzuw ydqttbvr fqyfsvce czrbexqd cftuvxbd syuceztx tqecbuzx crusxvft aqucvufa bwsvcsfe aurffede rfwubcyx wfvazdve aufqfytr tveessfc btqdcwfy tuqarurb yquqdvye scaxrxbx bsxewqbe fycuvzce wrsfuqbf" topic="study_frequency"/>
+        <Parametric descr="Parametric_sweep" id="param" props="txebyrav sqfvtwuw dzxezqvd ubertzyq wwxyyqzx vvwtrsrp xceqtvcr eufdfxxu ebqqyazf szasxbys afyqrrrw wzywtybx wedctarb rwrswdfd rxrydcvz cvqwsbtp dbtxfyyr zsxbtrzd uvecutae wbtctfqq" topic="study_parametric"/>
+        <FunctionSweep descr="Function_sweep" id="funsw" props="zqctdvdt dzxezqvd tbqezwfd eufdfxxu ebqqyazf szasxbys afyqrrrw wzywtybx wedctarb rwrswdfd rxrydcvz cvqwsbtp dbtxfyyr zsxbtrzd rxswbvdy wbtctfqq" topic="study_functionsweep"/>
+        <MaterialSweep descr="Material_sweep" id="matsw" props="zqctdvdt dzxezqvd tbqezwfd eufdfxxu ebqqyazf szasxbys afyqrrrw wzywtybx wedctarb rwrswdfd rxrydcvz cvqwsbtp dbtxfyyr zsxbtrzd rxswbvdy wbtctfqq" topic="study_materialsweep"/>
+        <StudyReference descr="Study_reference" id="ref" props="sbquazva" topic="study_studyreference"/>
+        <CombineSolution descr="Combine_solutions" id="cmbsol" props="xqrzabzx dtcrvcys vredsyxp ywcxcrss ybcxydvt xvdwbxfs bsczzfya cabuxqeu dwszbcvs cveqwqas uqxxycvu fxucdcwb fwbbextw rzdvvwad bczfxqxf tuuduzyy fedrsawt drfsrczq ysquafde zwrxvvvx wzewyzuy uybexbcy cebytcyy" topic="study_combinesolution"/>
+        <Batch descr="Batch" id="batch" props="uxdcuruc wtzrseed weubassc vufxzsqb abwzbefx zrabybzu rwtfdyvw vfwdxzvs uwxqtqey cfaetyqu" topic="study_batch"/>
+        <BatchSweep descr="Batch_sweep" id="batsw" props="txebyrav sqfvtwuw dzxezqvd ubertzyq wwxyyqzx vvwtrsrp xceqtvcr szasxbys afyqrrrw wzywtybx wedctarb rwrswdfd rxrydcvz uxdcuruc wtzrseed cybfuwet abecfrst svavdabb vbwqtsey vyszqewd wddcwstp weubassc vufxzsqb abwzbefx zrabybzu rwtfdyvw vfwdxzvs uwxqtqey cfaetyqu" topic="study_batchsweep"/>
+        <ClusterComputing descr="Cluster_computing" id="cluco" props="uxdcuruc wtzrseed uqcvcarq tzucewst fzbbvvcq weubassc fuzfxyys cuqvcdwq ffqdzccb zzwwstbr ydqfrasv xdarfxey vufxzsqb abwzbefx zrabybzu fzwbcvbt waxcasdc syqwvzbq czqquecq rwtfdyvw vfwdxzvs wbtctfqq xwqtfxyp bqvdvzqf bqtwarrq xzebbrab tqvrzqxv eutqfeba auzsurzz fbvwafts wrwrvrww rfzecbqu udqywsub eqzwwytt xcuftxae tvcxtyqb crcvwcyd yzfvcbba zvzauvwz dbuddequ xcffyxup aaqbufrw wtzuftva rrssyufa cuyvyqzd xbuaxevd fwccdtzp aszfuaxw uwxqtqey cfaetyqu" topic="study_clustercomputing"/>
+        <ClusterSweep descr="Cluster_sweep" id="clusw" props="txebyrav sqfvtwuw dzxezqvd ubertzyq wwxyyqzx vvwtrsrp xceqtvcr szasxbys afyqrrrw wzywtybx wedctarb rwrswdfd rxrydcvz uxdcuruc wtzrseed cybfuwet uqcvcarq tzucewst fzbbvvcq abecfrst svavdabb vbwqtsey vyszqewd wddcwstp weubassc fuzfxyys cuqvcdwq ffqdzccb zzwwstbr ydqfrasv xdarfxey vufxzsqb abwzbefx zrabybzu fzwbcvbt waxcasdc syqwvzbq czqquecq rwtfdyvw vfwdxzvs xwqtfxyp bqvdvzqf bqtwarrq xzebbrab tqvrzqxv eutqfeba auzsurzz fbvwafts wrwrvrww rfzecbqu udqywsub eqzwwytt xcuftxae tvcxtyqb crcvwcyd yzfvcbba zvzauvwz dbuddequ xcffyxup aaqbufrw wtzuftva rrssyufa cuyvyqzd xbuaxevd fwccdtzp aszfuaxw uwxqtqey cfaetyqu" topic="study_clustersweep"/>
+        <Optimization descr="Optimization" id="opt" props="fdurwfsf rsctazyx wfsxwyvv uxsedtba rvuufqsr tdtqucaa ycaqxyta sbvxvruc wbtctfqq byyfacsu zzeyqbyd yzqqdvvu ycezrsxx zquffuzf fbsatees zuyfedry ywrbsrzv crerdeab tczxdtbc yqecxqrx zfxxawau yvzfafes aeswwzva sqfvtwuw raqqzfby ywesyfss wqtqxwrt sbdtxrrf vuvasazx wtfetwxb zttxyvvt bdwvdrvc euweqxdp wzburqrt trfesvbw bvuaascv wzzrbzuv ratzyabe cttvvvrs fezeexwc eydduurb ecwfqvty byeewbsv varqdtfc eufdfxxu ebqqyazf szasxbys afyqrrrw ccsyqebe trsrcxtd bwvtyvux swcrwzby rbydwteq tbxvyacs bxcafbcv bvavvycd bzvwtcat yasqwddy" topic="study_optimization"/>
+        <Sensitivity descr="Sensitivity" id="sens" props="fabqdefy tdtqucaa byyfacsu zzeyqbyd yzqqdvvu ycezrsxx zquffuzf fbsatees cyrrazzb bdearzta yqecxqrx zfxxawau ftwwdyad sqfvtwuw raqqzfby ywesyfss" topic="study_sensitivity"/>
+        <ParameterEstimation descr="Parameter_estimation" id="est" props="sbbwvwqe aqqvbdze sbctwyxb xzfbqetb ezatxsde yqecxqrx zfxxawau yvzfafes aeswwzva sqfvtwuw dadquavp rsctazyx rvuufqsr ycaqxyta fursqvud wbtctfqq eufdfxxu ebqqyazf szasxbys afyqrrrw ccsyqebe trsrcxtd bwvtyvux swcrwzby rbydwteq tbxvyacs bxcafbcv bvavvycd bzvwtcat yasqwddy" topic="study_parameterestimation"/>
+        <ModelReduction descr="Model_reduction" id="mr" props="yuqtzexf yeeqrzeu fzyqcasq eqqueere sutyutux dyfuqxbs zttbzaqy ydadutxt sqzbwxuz tdezrcay zbqxvdva zbuxfxub ywxsrbfz xwvbeqdy zdatutrr azxbxdas aryvcaqu xqqcwevt afwuafys tqcccest seurudsq bbbdetcd csfyzuxq bdrtavwb svbaebqt bfdaecdx vvwyqaav rvcsxrdq ffffswwc wqwwxzrc fazvdwfc eeqrbyaa veaxxdvx vxtybvqy eawqfsfz vcwatuuv zrqysdvf aeveezcs bfsfyctz avsqdtqt fxudtbdc drfsrczq ysetrdax zwrxvvvx tuysdsyz wzsswqry xswbuafc xxavsvqv yuurbctc etqwfedw uzdawvsz dureqzdp rbrdexxr sqsvrqsu wewewtsd febbeuaq swyaztyd detefdxf bfqszwwu evcraqbs yzedquuu bzbudtrq fbyabcxc cxafvwvu cuwqcqur sdraaxqr wssaxzrb xyaysfyd eeyybcff veafewdz rcyvsbzr czaeqqud zddrwqxf zqdyecrv sucfeyxf wdcdbdxe rqwfaqcw zsffvuza yzeuxqbf ddueszds sqfvtwuw teaudxyy vbcasczw efvxvwsp wwaascvp sswsusxv wxdedbru dfezzzdq cefbftzd xxacfrrp rttftxfd eufdfxxu ebqqyazf szasxbys afyqrrrw" topic="study_modelreduction"/>
+        <RandomVibration descr="Random_vibration" id="rv" props="byrsubxu ywxsrbfz xwvbeqdy efzyvuts vctftsyu eufdfxxu ebqqyazf szasxbys afyqrrrw bbbdetcd csfyzuxq bdrtavwb svbaebqt bfdaecdx vvwyqaav rvcsxrdq ffffswwc wqwwxzrc fazvdwfc eeqrbyaa veaxxdvx vxtybvqy eawqfsfz vcwatuuv zrqysdvf aeveezcs bfsfyctz avsqdtqt fxudtbdc drfsrczq ysetrdax zwrxvvvx tuysdsyz wzsswqry xswbuafc xxavsvqv yuurbctc etqwfedw uzdawvsz dureqzdp rbrdexxr sqsvrqsu wewewtsd febbeuaq bzbudtrq xxrdyuup zxxadbqx eybqwfcp zsffvuza syfstfbd arrsetbd" topic="study_randomvibration"/>
+        <TimeDiscrete descr="Time_discrete" id="discr" props="afyatsyq sqzbwxuz tdezrcay yacswccy fvedybww fzrrfsuy vctftsyu yydafasc uqcbxfzu bxyxcqtu csfcwwtq svabfvzu vyyudyty cdydbtrq arqvfubz eufdfxxu ebqqyazf yxcybrxb szasxbys afyqrrrw aezcywuc bbbdetcd csfyzuxq bdrtavwb svbaebqt bfdaecdx vvwyqaav rvcsxrdq ffffswwc wqwwxzrc fazvdwfc eeqrbyaa veaxxdvx vxtybvqy eawqfsfz vcwatuuv zrqysdvf aeveezcs bfsfyctz avsqdtqt fxudtbdc drfsrczq ysetrdax zwrxvvvx tuysdsyz wzsswqry xswbuafc xxavsvqv yuurbctc etqwfedw uzdawvsz dureqzdp rbrdexxr sqsvrqsu wewewtsd febbeuaq bzbudtrq wfvazdve aufqfytr yavtxser dzxezqvd ubertzyq eccrfcdw cyyzqfwd wrsfuqbf" topic="study_timediscrete"/>
+        <Transientmodal descr="Time_dependent_modal" id="timod" props="afyatsyq sqzbwxuz tdezrcay yacswccy fvedybww fzrrfsuy vctftsyu bbbdetcd csfyzuxq bdrtavwb svbaebqt bfdaecdx vvwyqaav rvcsxrdq ffffswwc wqwwxzrc fazvdwfc eeqrbyaa veaxxdvx vxtybvqy eawqfsfz vcwatuuv zrqysdvf aeveezcs bfsfyctz avsqdtqt fxudtbdc drfsrczq ysetrdax zwrxvvvx tuysdsyz wzsswqry xswbuafc xxavsvqv yuurbctc etqwfedw uzdawvsz dureqzdp rbrdexxr sqsvrqsu wewewtsd febbeuaq bzbudtrq" topic="study_transientmodal"/>
+        <Transientmodalreduction descr="Modal_reduced_model" id="timodred" props="afyatsyq vctftsyu bbbdetcd csfyzuxq bdrtavwb svbaebqt bfdaecdx vvwyqaav rvcsxrdq ffffswwc wqwwxzrc fazvdwfc eeqrbyaa veaxxdvx vxtybvqy eawqfsfz vcwatuuv zrqysdvf aeveezcs bfsfyctz avsqdtqt fxudtbdc drfsrczq ysetrdax zwrxvvvx tuysdsyz wzsswqry xswbuafc xxavsvqv yuurbctc etqwfedw uzdawvsz dureqzdp rbrdexxr sqsvrqsu wewewtsd febbeuaq bzbudtrq" topic="study_transientmodalreduction"/>
+        <Frequencymodal descr="Frequency_domain_modal" id="frmod" props="byrsubxu ywxsrbfz xwvbeqdy efzyvuts facrbcyc ffdwsbev vctftsyu bbbdetcd csfyzuxq bdrtavwb svbaebqt bfdaecdx vvwyqaav rvcsxrdq ffffswwc wqwwxzrc fazvdwfc eeqrbyaa veaxxdvx vxtybvqy eawqfsfz vcwatuuv zrqysdvf aeveezcs bfsfyctz avsqdtqt fxudtbdc drfsrczq ysetrdax zwrxvvvx tuysdsyz wzsswqry xswbuafc xxavsvqv yuurbctc etqwfedw uzdawvsz dureqzdp rbrdexxr sqsvrqsu wewewtsd febbeuaq bzbudtrq" topic="study_frequencymodal"/>
+        <Frequencylinearized descr="Frequency_domain,_linearized" id="frlin" props="byrsubxu ywxsrbfz xwvbeqdy efzyvuts ffdwsbev vctftsyu eufdfxxu ebqqyazf szasxbys afyqrrrw bbbdetcd csfyzuxq bdrtavwb svbaebqt bfdaecdx vvwyqaav rvcsxrdq ffffswwc wqwwxzrc fazvdwfc eeqrbyaa veaxxdvx vxtybvqy eawqfsfz vcwatuuv zrqysdvf aeveezcs bfsfyctz avsqdtqt fxudtbdc drfsrczq ysetrdax zwrxvvvx tuysdsyz wzsswqry xswbuafc xxavsvqv yuurbctc etqwfedw uzdawvsz dureqzdp rbrdexxr sqsvrqsu wewewtsd febbeuaq bzbudtrq uxxqyacy xudvzxbr sewvqwra aqxqcbus ceetzeew vxfwtbve axbveqbd vfstwcwq rfcfwefq wxvafadr cbfzezcs wcfuuxdw tsvcazwd uzqcqcxf fucyfzuw ydqttbvr fqyfsvce czrbexqd cftuvxbd syuceztx tqecbuzx crusxvft aqucvufa bwsvcsfe aurffede rfwubcyx wfvazdve aufqfytr tveessfc btqdcwfy tuqarurb yquqdvye scaxrxbx bsxewqbe fycuvzce wrsfuqbf" topic="study_frequencylinearized"/>
+        <StationaryPlugflow descr="Stationary_plugflow" id="spf" props="fasftxxc zusyeqfd dcrxurxb fvedybww fzrrfsuy vctftsyu yydafasc uqcbxfzu bxyxcqtu csfcwwtq svabfvzu vyyudyty cdydbtrq arqvfubz eufdfxxu ebqqyazf yxcybrxb szasxbys afyqrrrw aezcywuc bbbdetcd csfyzuxq bdrtavwb svbaebqt bfdaecdx vvwyqaav rvcsxrdq ffffswwc wqwwxzrc fazvdwfc eeqrbyaa veaxxdvx vxtybvqy eawqfsfz vcwatuuv zrqysdvf aeveezcs bfsfyctz avsqdtqt fxudtbdc drfsrczq ysetrdax zwrxvvvx tuysdsyz wzsswqry xswbuafc xxavsvqv yuurbctc etqwfedw uzdawvsz dureqzdp rbrdexxr sqsvrqsu wewewtsd febbeuaq bzbudtrq wfvazdve aufqfytr yavtxser dzxezqvd ubertzyq eccrfcdw cyyzqfwd sqebabrq cecqewzx zrwubqxq wrsfuqbf" topic="study_stationaryplugflow"/>
+        <RayTracing descr="Ray_tracing" id="rtrac" props="fasftxxc swrqsxda sqzbwxuz tdezrcay uaezduaq zyzbffsx zcaedvsb fvedybww fzrrfsuy xayctqxp twuqacbt ytqtzetv vctftsyu yydafasc uqcbxfzu bxyxcqtu csfcwwtq svabfvzu vyyudyty cdydbtrq arqvfubz eufdfxxu ebqqyazf yxcybrxb szasxbys afyqrrrw aezcywuc bbbdetcd csfyzuxq bdrtavwb svbaebqt bfdaecdx vvwyqaav rvcsxrdq ffffswwc wqwwxzrc fazvdwfc eeqrbyaa veaxxdvx vxtybvqy eawqfsfz vcwatuuv zrqysdvf aeveezcs bfsfyctz avsqdtqt fxudtbdc drfsrczq ysetrdax zwrxvvvx tuysdsyz wzsswqry xswbuafc xxavsvqv yuurbctc etqwfedw uzdawvsz dureqzdp rbrdexxr sqsvrqsu wewewtsd febbeuaq bzbudtrq wfvazdve aufqfytr yavtxser dzxezqvd ubertzyq eccrfcdw cyyzqfwd sqebabrq cecqewzx zrwubqxq wrsfuqbf" topic="study_raytracing"/>
+        <BidirectionallyCoupledParticleTracing descr="Bidirectionally_coupled_particle_tracing" id="bcpt" props="afyatsyq sqzbwxuz tdezrcay yacswccy fvedybww fzrrfsuy vctftsyu yydafasc uqcbxfzu bxyxcqtu csfcwwtq svabfvzu vyyudyty cdydbtrq arqvfubz eufdfxxu ebqqyazf yxcybrxb szasxbys afyqrrrw aezcywuc bbbdetcd csfyzuxq bdrtavwb svbaebqt bfdaecdx vvwyqaav rvcsxrdq ffffswwc wqwwxzrc fazvdwfc eeqrbyaa veaxxdvx vxtybvqy eawqfsfz vcwatuuv zrqysdvf aeveezcs bfsfyctz avsqdtqt fxudtbdc drfsrczq ysetrdax zwrxvvvx tuysdsyz wzsswqry xswbuafc xxavsvqv yuurbctc etqwfedw uzdawvsz dureqzdp rbrdexxr sqsvrqsu wewewtsd febbeuaq bzbudtrq wfvazdve aufqfytr yavtxser dzxezqvd ubertzyq eccrfcdw cyyzqfwd sqebabrq cecqewzx zrwubqxq wrsfuqbf" topic="study_bidirectionallycoupledparticletracing"/>
+        <BidirectionallyCoupledRayTracing descr="Bidirectionally_coupled_ray_tracing" id="bcrt" props="fasftxxc swrqsxda sqzbwxuz tdezrcay uaezduaq zyzbffsx zcaedvsb fvedybww fzrrfsuy xayctqxp twuqacbt ytqtzetv vctftsyu yydafasc uqcbxfzu bxyxcqtu csfcwwtq svabfvzu vyyudyty cdydbtrq arqvfubz eufdfxxu ebqqyazf yxcybrxb szasxbys afyqrrrw aezcywuc bbbdetcd csfyzuxq bdrtavwb svbaebqt bfdaecdx vvwyqaav rvcsxrdq ffffswwc wqwwxzrc fazvdwfc eeqrbyaa veaxxdvx vxtybvqy eawqfsfz vcwatuuv zrqysdvf aeveezcs bfsfyctz avsqdtqt fxudtbdc drfsrczq ysetrdax zwrxvvvx tuysdsyz wzsswqry xswbuafc xxavsvqv yuurbctc etqwfedw uzdawvsz dureqzdp rbrdexxr sqsvrqsu wewewtsd febbeuaq bzbudtrq wfvazdve aufqfytr yavtxser dzxezqvd ubertzyq eccrfcdw cyyzqfwd sqebabrq cecqewzx zrwubqxq wrsfuqbf" topic="study_bidirectionallycoupledraytracing"/>
+        <SchrodingerPoisson descr="Schrodinger_poisson" id="sdpo" props="fasftxxc dfeuafdw uftvfbrs dqcctfrr avsvfvwr erasrssp xrrzdbdz fyvtstrz datwvrxs vdvcusdu dwyaybuf fwdcvuqw bvwvqacu rrqxxvuv wwwavqxz dzyxvtdr acfuydab fwxyxzvu vctftsyu yydafasc uqcbxfzu bxyxcqtu csfcwwtq svabfvzu vyyudyty cdydbtrq arqvfubz bbbdetcd csfyzuxq bdrtavwb svbaebqt bfdaecdx vvwyqaav rvcsxrdq ffffswwc wqwwxzrc fazvdwfc eeqrbyaa veaxxdvx vxtybvqy eawqfsfz vcwatuuv zrqysdvf aeveezcs bfsfyctz avsqdtqt fxudtbdc drfsrczq ysetrdax zwrxvvvx tuysdsyz wzsswqry xswbuafc xxavsvqv yuurbctc etqwfedw uzdawvsz dureqzdp rbrdexxr sqsvrqsu wewewtsd febbeuaq bzbudtrq uxxqyacy ytctuyre sewvqwra aqxqcbus ceetzeew vxfwtbve axbveqbd vfstwcwq rfcfwefq wxvafadr cbfzezcs wcfuuxdw tsvcazwd uzqcqcxf xddfcxdt fqyfsvce czrbexqd cftuvxbd syuceztx tqecbuzx crusxvft aqucvufa bwsvcsfe aurffede rfwubcyx wfvazdve aufqfytr yavtxser dzxezqvd ubertzyq wrsfuqbf" topic="study_schrodingerpoisson"/>
+        <TimeDependentFixedGeometry descr="Time_dependent,_Fixed_geometry" id="tdfg" props="afyatsyq sqzbwxuz tdezrcay yacswccy fvedybww fzrrfsuy vctftsyu yydafasc uqcbxfzu bxyxcqtu csfcwwtq svabfvzu vyyudyty cdydbtrq arqvfubz eufdfxxu ebqqyazf yxcybrxb szasxbys afyqrrrw aezcywuc bbbdetcd csfyzuxq bdrtavwb svbaebqt bfdaecdx vvwyqaav rvcsxrdq ffffswwc wqwwxzrc fazvdwfc eeqrbyaa veaxxdvx vxtybvqy eawqfsfz vcwatuuv zrqysdvf aeveezcs bfsfyctz avsqdtqt fxudtbdc drfsrczq ysetrdax zwrxvvvx tuysdsyz wzsswqry xswbuafc xxavsvqv yuurbctc etqwfedw uzdawvsz dureqzdp rbrdexxr sqsvrqsu wewewtsd febbeuaq bzbudtrq wfvazdve aufqfytr yavtxser dzxezqvd ubertzyq eccrfcdw cyyzqfwd sqebabrq cecqewzx zrwubqxq wrsfuqbf" topic="study_timedependentfixedgeometry"/>
+        <ParticleTrajectories descr="Particle_trajectories" id="patra" props="afyatsyq sqzbwxuz tdezrcay yacswccy fvedybww fzrrfsuy vctftsyu yydafasc uqcbxfzu bxyxcqtu csfcwwtq svabfvzu vyyudyty cdydbtrq arqvfubz eufdfxxu ebqqyazf yxcybrxb szasxbys afyqrrrw aezcywuc bbbdetcd csfyzuxq bdrtavwb svbaebqt bfdaecdx vvwyqaav rvcsxrdq ffffswwc wqwwxzrc fazvdwfc eeqrbyaa veaxxdvx vxtybvqy eawqfsfz vcwatuuv zrqysdvf aeveezcs bfsfyctz avsqdtqt fxudtbdc drfsrczq ysetrdax zwrxvvvx wzsswqry xswbuafc xxavsvqv yuurbctc etqwfedw uzdawvsz dureqzdp rbrdexxr sqsvrqsu wewewtsd febbeuaq bzbudtrq wfvazdve aufqfytr yavtxser dzxezqvd ubertzyq eccrfcdw cyyzqfwd sqebabrq cecqewzx zrwubqxq wrsfuqbf" topic="study_particletrajectories"/>
+        <MeanEnergies descr="Mean_energies" id="ebar" props="fasftxxc cxdfrfdp ywqfxebe efzyvuts ffdwsbev vctftsyu eufdfxxu ebqqyazf szasxbys afyqrrrw bbbdetcd csfyzuxq bdrtavwb svbaebqt bfdaecdx vvwyqaav rvcsxrdq ffffswwc wqwwxzrc fazvdwfc eeqrbyaa veaxxdvx vxtybvqy eawqfsfz vcwatuuv zrqysdvf aeveezcs bfsfyctz avsqdtqt fxudtbdc drfsrczq ysetrdax zwrxvvvx tuysdsyz wzsswqry xswbuafc xxavsvqv yuurbctc etqwfedw uzdawvsz dureqzdp rbrdexxr sqsvrqsu wewewtsd febbeuaq bzbudtrq uxxqyacy xudvzxbr sewvqwra aqxqcbus ceetzeew vxfwtbve axbveqbd vfstwcwq rfcfwefq wxvafadr cbfzezcs wcfuuxdw tsvcazwd uzqcqcxf fucyfzuw ydqttbvr fqyfsvce czrbexqd cftuvxbd syuceztx tqecbuzx crusxvft aqucvufa bwsvcsfe aurffede rfwubcyx wfvazdve aufqfytr tveessfc btqdcwfy tuqarurb yquqdvye scaxrxbx bsxewqbe fycuvzce wrsfuqbf" topic="study_meanenergies"/>
+        <ReducedElectricFields descr="Reduced_electric_fields" id="ref" props="fasftxxc xvdryead ucxasxyp efzyvuts ffdwsbev vctftsyu eufdfxxu ebqqyazf szasxbys afyqrrrw bbbdetcd csfyzuxq bdrtavwb svbaebqt bfdaecdx vvwyqaav rvcsxrdq ffffswwc wqwwxzrc fazvdwfc eeqrbyaa veaxxdvx vxtybvqy eawqfsfz vcwatuuv zrqysdvf aeveezcs bfsfyctz avsqdtqt fxudtbdc drfsrczq ysetrdax zwrxvvvx tuysdsyz wzsswqry xswbuafc xxavsvqv yuurbctc etqwfedw uzdawvsz dureqzdp rbrdexxr sqsvrqsu wewewtsd febbeuaq bzbudtrq uxxqyacy xudvzxbr sewvqwra aqxqcbus ceetzeew vxfwtbve axbveqbd vfstwcwq rfcfwefq wxvafadr cbfzezcs wcfuuxdw tsvcazwd uzqcqcxf fucyfzuw ydqttbvr fqyfsvce czrbexqd cftuvxbd syuceztx tqecbuzx crusxvft aqucvufa bwsvcsfe aurffede rfwubcyx wfvazdve aufqfytr tveessfc btqdcwfy tuqarurb yquqdvye scaxrxbx bsxewqbe fycuvzce wrsfuqbf" topic="study_reducedelectricfields"/>
+        <EEDFInitialization descr="EEDF_initialization" id="edfi" props="fasftxxc vctftsyu eufdfxxu ebqqyazf szasxbys afyqrrrw ewaqwrtx bbbdetcd csfyzuxq bdrtavwb svbaebqt bfdaecdx vvwyqaav rvcsxrdq ffffswwc wqwwxzrc fazvdwfc eeqrbyaa veaxxdvx vxtybvqy eawqfsfz vcwatuuv zrqysdvf aeveezcs bfsfyctz avsqdtqt fxudtbdc drfsrczq ysetrdax zwrxvvvx tuysdsyz wzsswqry xswbuafc xxavsvqv yuurbctc etqwfedw uzdawvsz dureqzdp rbrdexxr sqsvrqsu wewewtsd febbeuaq bzbudtrq uxxqyacy xudvzxbr sewvqwra aqxqcbus ceetzeew vxfwtbve axbveqbd vfstwcwq rfcfwefq wxvafadr cbfzezcs wcfuuxdw tsvcazwd uzqcqcxf fucyfzuw ydqttbvr fqyfsvce czrbexqd cftuvxbd syuceztx tqecbuzx crusxvft aqucvufa bwsvcsfe aurffede rfwubcyx wfvazdve aufqfytr yavtxser dzxezqvd ubertzyq yquqdvye syyycfws zaybrqcs aeqbsquu bfqszwwu evcraqbs yzedquuu ffdwsbev zrwubqxq wrsfuqbf" topic="study_eedfinitialization"/>
+        <TimePeriodic descr="Time_periodic" id="tper" props="fasftxxc vctftsyu eufdfxxu ebqqyazf szasxbys afyqrrrw ewaqwrtx bbbdetcd csfyzuxq bdrtavwb svbaebqt bfdaecdx vvwyqaav rvcsxrdq ffffswwc wqwwxzrc fazvdwfc eeqrbyaa veaxxdvx vxtybvqy eawqfsfz vcwatuuv zrqysdvf aeveezcs bfsfyctz avsqdtqt fxudtbdc drfsrczq ysetrdax zwrxvvvx tuysdsyz wzsswqry xswbuafc xxavsvqv yuurbctc etqwfedw uzdawvsz dureqzdp rbrdexxr sqsvrqsu wewewtsd febbeuaq bzbudtrq uxxqyacy xudvzxbr sewvqwra aqxqcbus ceetzeew vxfwtbve axbveqbd vfstwcwq rfcfwefq wxvafadr cbfzezcs wcfuuxdw tsvcazwd uzqcqcxf fucyfzuw ydqttbvr fqyfsvce czrbexqd cftuvxbd syuceztx tqecbuzx crusxvft aqucvufa bwsvcsfe aurffede rfwubcyx wfvazdve aufqfytr yavtxser dzxezqvd ubertzyq yquqdvye syyycfws zaybrqcs aeqbsquu bfqszwwu evcraqbs yzedquuu ffdwsbev zrwubqxq wrsfuqbf" topic="study_timeperiodic"/>
+        <TimePeriodicToTimeDependent descr="Time_periodic_to_time_dependent" id="tptd" props="afyatsyq sqzbwxuz tdezrcay yacswccy fvedybww fzrrfsuy vctftsyu yydafasc uqcbxfzu bxyxcqtu csfcwwtq svabfvzu vyyudyty cdydbtrq arqvfubz eufdfxxu ebqqyazf yxcybrxb szasxbys afyqrrrw aezcywuc bbbdetcd csfyzuxq bdrtavwb svbaebqt bfdaecdx vvwyqaav rvcsxrdq ffffswwc wqwwxzrc fazvdwfc eeqrbyaa veaxxdvx vxtybvqy eawqfsfz vcwatuuv zrqysdvf aeveezcs bfsfyctz avsqdtqt fxudtbdc drfsrczq ysetrdax zwrxvvvx tuysdsyz wzsswqry xswbuafc xxavsvqv yuurbctc etqwfedw uzdawvsz dureqzdp rbrdexxr sqsvrqsu wewewtsd febbeuaq bzbudtrq wfvazdve aufqfytr yavtxser dzxezqvd ubertzyq eccrfcdw cyyzqfwd sqebabrq cecqewzx zrwubqxq wrsfuqbf" topic="study_timeperiodictotimedependent"/>
+        <CyclicVoltammetry descr="Cyclic_voltammetry" id="cyclv" props="fasftxxc yacswccy fvedybww fzrrfsuy vctftsyu yydafasc uqcbxfzu bxyxcqtu csfcwwtq svabfvzu vyyudyty cdydbtrq arqvfubz eufdfxxu ebqqyazf yxcybrxb szasxbys afyqrrrw aezcywuc bbbdetcd csfyzuxq bdrtavwb svbaebqt bfdaecdx vvwyqaav rvcsxrdq ffffswwc wqwwxzrc fazvdwfc eeqrbyaa veaxxdvx vxtybvqy eawqfsfz vcwatuuv zrqysdvf aeveezcs bfsfyctz avsqdtqt fxudtbdc drfsrczq ysetrdax zwrxvvvx tuysdsyz wzsswqry xswbuafc xxavsvqv yuurbctc etqwfedw uzdawvsz dureqzdp rbrdexxr sqsvrqsu wewewtsd febbeuaq bzbudtrq wfvazdve aufqfytr yavtxser dzxezqvd ubertzyq eccrfcdw cyyzqfwd sqebabrq cecqewzx zrwubqxq wrsfuqbf" topic="study_cyclicvoltammetry"/>
+        <Fatigue descr="Fatigue" id="ftge" props="fasftxxc vctftsyu bbbdetcd csfyzuxq svbaebqt bfdaecdx vvwyqaav rvcsxrdq ffffswwc wqwwxzrc fazvdwfc eeqrbyaa veaxxdvx vxtybvqy eawqfsfz vcwatuuv zrqysdvf aeveezcs bfsfyctz avsqdtqt fxudtbdc drfsrczq ysetrdax zwrxvvvx tuysdsyz wzsswqry xswbuafc xxavsvqv yuurbctc fusqrsfw dureqzdp rbrdexxr sqsvrqsu wewewtsd febbeuaq bzbudtrq cruwdwae xudvzxbr sewvqwra aqxqcbus ceetzeew vxfwtbve axbveqbd aufqfytr yavtxser dzxezqvd ubertzyq yquqdvye syyycfws aeqbsquu bfqszwwu evcraqbs yzedquuu ffdwsbev yxtdweqs wrsfuqbf" topic="study_fatigue"/>
+        <TimeToFreqFFT descr="Time_to_frequency_FFT" id="tffft" props="afyatsyq vczuwwdw bazqezwa fezyzqtr zvseqswy sqzbwxuz razseqdu ddfxzbxu ywxsrbfz ucvcurvu yydtvxfw euuzrvqb tduvzats tsxvfscu zacctatq tasqdyrd crbbrrwy xdtbdsux ueaczxbb yvzvdrwr fbudquxr vctftsyu bbbdetcd csfyzuxq bdrtavwb svbaebqt bfdaecdx vvwyqaav rvcsxrdq ffffswwc wqwwxzrc fazvdwfc eeqrbyaa veaxxdvx vxtybvqy tuysdsyz wzsswqry xswbuafc xxavsvqv yuurbctc etqwfedw uzdawvsz dureqzdp rbrdexxr sqsvrqsu wewewtsd febbeuaq bzbudtrq" topic="study_timetofreqfft"/>
+        <FreqToTimeFFT descr="Frequency_to_time_FFT" id="ftfft" props="afyatsyq vczuwwdw bazqezwa fezyzqtr zvseqswy sqzbwxuz dazbzqtz yydtvxfw yxcfuxbt sazafwrw tsxvfscu zacctatq dyccrcdv ytecwcsz abrufwzq tzbdcucr ueaczxbb fbzfpppp zqewdxcp tzadzfcd yytsdyzb exruzdqw uvyruqxd ddqzfvxp xqrzerqy ayfbfebc rqcdebts vctftsyu bbbdetcd csfyzuxq bdrtavwb svbaebqt bfdaecdx vvwyqaav rvcsxrdq ffffswwc wqwwxzrc fazvdwfc eeqrbyaa veaxxdvx vxtybvqy tuysdsyz wzsswqry xswbuafc xxavsvqv yuurbctc etqwfedw uzdawvsz dureqzdp rbrdexxr sqsvrqsu wewewtsd febbeuaq bzbudtrq" topic="study_freqtotimefft"/>
+        <Wavelength descr="Wavelength_domain" id="wave" props="fasftxxc ctdyavyt tezswxrs efzyvuts ffdwsbev vctftsyu eufdfxxu ebqqyazf szasxbys afyqrrrw bbbdetcd csfyzuxq bdrtavwb svbaebqt bfdaecdx vvwyqaav rvcsxrdq ffffswwc wqwwxzrc fazvdwfc eeqrbyaa veaxxdvx vxtybvqy eawqfsfz vcwatuuv zrqysdvf aeveezcs bfsfyctz avsqdtqt fxudtbdc drfsrczq ysetrdax zwrxvvvx tuysdsyz wzsswqry xswbuafc xxavsvqv yuurbctc etqwfedw uzdawvsz dureqzdp rbrdexxr sqsvrqsu wewewtsd febbeuaq bzbudtrq uxxqyacy xudvzxbr sewvqwra aqxqcbus ceetzeew vxfwtbve axbveqbd vfstwcwq rfcfwefq wxvafadr cbfzezcs wcfuuxdw tsvcazwd uzqcqcxf fucyfzuw ydqttbvr fqyfsvce czrbexqd cftuvxbd syuceztx tqecbuzx crusxvft aqucvufa bwsvcsfe aurffede rfwubcyx wfvazdve aufqfytr tveessfc btqdcwfy tuqarurb yquqdvye byseyfad bsxewqbe fycuvzce wrsfuqbf" topic="study_wavelength"/>
+        <FrequencyAdaptive descr="Adaptive_frequency_sweep" id="frawe" props="byrsubxu ywxsrbfz xwvbeqdy wvytceer szewqcze fzrrfsuy vctftsyu eufdfxxu ebqqyazf szasxbys afyqrrrw bbbdetcd csfyzuxq bdrtavwb svbaebqt bfdaecdx vvwyqaav rvcsxrdq ffffswwc wqwwxzrc fazvdwfc eeqrbyaa veaxxdvx vxtybvqy eawqfsfz vcwatuuv zrqysdvf aeveezcs bfsfyctz avsqdtqt fxudtbdc drfsrczq ysetrdax zwrxvvvx tuysdsyz wzsswqry xswbuafc xxavsvqv yuurbctc etqwfedw uzdawvsz dureqzdp rbrdexxr sqsvrqsu wewewtsd febbeuaq bzbudtrq uxxqyacy xudvzxbr sewvqwra aqxqcbus ceetzeew vxfwtbve axbveqbd vfstwcwq rfcfwefq wxvafadr cbfzezcs wcfuuxdw tsvcazwd uzqcqcxf fucyfzuw ydqttbvr fqyfsvce czrbexqd cftuvxbd syuceztx tqecbuzx crusxvft aqucvufa bwsvcsfe aurffede rfwubcyx wfvazdve aufqfytr tveessfc btqdcwfy tuqarurb yquqdvye scaxrxbx" topic="study_frequencyadaptive"/>
+        <ModeAnalysis descr="Mode_analysis" id="mode" props="fasftxxc vctftsyu ufuqdaub ayzxfeub ruayzdcz twywtxud wbvybzqe uqzdbucd vscutbar ceedrwfy rdwyrvcc datwvrxs vdvcusdu uzfussbf srcyywue bvwvqacu rrqxxvuv wwwavqxz dzyxvtdr acfuydab zqrqtadu bbbdetcd csfyzuxq bdrtavwb svbaebqt bfdaecdx vvwyqaav rvcsxrdq ffffswwc wqwwxzrc fazvdwfc eeqrbyaa veaxxdvx vxtybvqy eawqfsfz vcwatuuv zrqysdvf aeveezcs bfsfyctz avsqdtqt fxudtbdc drfsrczq ysetrdax zwrxvvvx tuysdsyz wzsswqry xswbuafc xxavsvqv yuurbctc etqwfedw uzdawvsz dureqzdp rbrdexxr sqsvrqsu wewewtsd febbeuaq bzbudtrq uxxqyacy ytctuyre sewvqwra aqxqcbus ceetzeew vxfwtbve axbveqbd vfstwcwq rfcfwefq wxvafadr cbfzezcs wcfuuxdw tsvcazwd uzqcqcxf xddfcxdt fqyfsvce czrbexqd cftuvxbd syuceztx tqecbuzx crusxvft aqucvufa bwsvcsfe aurffede rfwubcyx wfvazdve aufqfytr yavtxser dzxezqvd ubertzyq wrsfuqbf" topic="study_modeanalysis"/>
+        <BoundaryModeAnalysis descr="Boundary_mode_analysis" id="bma" props="fasftxxc vctftsyu fzcutfad eudswyye ayzxfeub ruayzdcz twywtxud wbvybzqe trqvrwqx vscutbar ceedrwfy rdwyrvcc datwvrxs vdvcusdu uzfussbf srcyywue bvwvqacu rrqxxvuv wwwavqxz dzyxvtdr acfuydab zqrqtadu bbbdetcd csfyzuxq bdrtavwb svbaebqt bfdaecdx vvwyqaav rvcsxrdq ffffswwc wqwwxzrc fazvdwfc eeqrbyaa veaxxdvx vxtybvqy eawqfsfz vcwatuuv zrqysdvf aeveezcs bfsfyctz avsqdtqt fxudtbdc drfsrczq ysetrdax zwrxvvvx tuysdsyz wzsswqry xswbuafc xxavsvqv yuurbctc etqwfedw uzdawvsz dureqzdp rbrdexxr sqsvrqsu wewewtsd febbeuaq bzbudtrq uxxqyacy ytctuyre sewvqwra aqxqcbus ceetzeew vxfwtbve axbveqbd vfstwcwq rfcfwefq wxvafadr cbfzezcs wcfuuxdw tsvcazwd uzqcqcxf xddfcxdt fqyfsvce czrbexqd cftuvxbd syuceztx tqecbuzx crusxvft aqucvufa bwsvcsfe aurffede rfwubcyx wfvazdve aufqfytr yavtxser dzxezqvd ubertzyq wrsfuqbf" topic="study_boundarymodeanalysis"/>
+        <CoilCurrentCalculation descr="Coil_geometry_analysis" id="ccc" props="fasftxxc vctftsyu azrazttu bzffxucr bbbdetcd csfyzuxq bdrtavwb svbaebqt bfdaecdx vvwyqaav rvcsxrdq ffffswwc wqwwxzrc fazvdwfc eeqrbyaa veaxxdvx vxtybvqy eawqfsfz vcwatuuv zrqysdvf aeveezcs bfsfyctz avsqdtqt fxudtbdc drfsrczq ysetrdax zwrxvvvx tuysdsyz wzsswqry xswbuafc xxavsvqv yuurbctc etqwfedw uzdawvsz dureqzdp rbrdexxr sqsvrqsu wewewtsd febbeuaq bzbudtrq uxxqyacy xudvzxbr sewvqwra aqxqcbus ceetzeew vxfwtbve axbveqbd vfstwcwq rfcfwefq wxvafadr cbfzezcs wcfuuxdw tsvcazwd uzqcqcxf fucyfzuw ydqttbvr fqyfsvce czrbexqd cftuvxbd syuceztx tqecbuzx crusxvft aqucvufa bwsvcsfe aurffede rfwubcyx wfvazdve aufqfytr yavtxser dzxezqvd ubertzyq yquqdvye syyycfws zaybrqcs aeqbsquu bfqszwwu evcraqbs yzedquuu ffdwsbev zrwubqxq wrsfuqbf" topic="study_coilcurrentcalculation"/>
+        <StationarySourceSweep descr="Stationary_source_sweep" id="stssw" props="edszvvyq zttzvyda bbbdetcd csfyzuxq bdrtavwb svbaebqt bfdaecdx vvwyqaav rvcsxrdq ffffswwc wqwwxzrc fazvdwfc eeqrbyaa veaxxdvx vxtybvqy eawqfsfz vcwatuuv zrqysdvf aeveezcs bfsfyctz avsqdtqt fxudtbdc drfsrczq ysetrdax zwrxvvvx tuysdsyz wzsswqry xswbuafc xxavsvqv yuurbctc etqwfedw uzdawvsz dureqzdp rbrdexxr sqsvrqsu wewewtsd febbeuaq bzbudtrq vctftsyu" topic="study_stationarysourcesweep"/>
+        <FrequencyStationary descr="Frequency-stationary" id="fstat" props="fasftxxc vctftsyu vtvuyffv eufdfxxu ebqqyazf szasxbys afyqrrrw ewaqwrtx bbbdetcd csfyzuxq bdrtavwb svbaebqt bfdaecdx vvwyqaav rvcsxrdq ffffswwc wqwwxzrc fazvdwfc eeqrbyaa veaxxdvx vxtybvqy eawqfsfz vcwatuuv zrqysdvf aeveezcs bfsfyctz avsqdtqt fxudtbdc drfsrczq ysetrdax zwrxvvvx tuysdsyz wzsswqry xswbuafc xxavsvqv yuurbctc etqwfedw uzdawvsz dureqzdp rbrdexxr sqsvrqsu wewewtsd febbeuaq bzbudtrq uxxqyacy xudvzxbr sewvqwra aqxqcbus ceetzeew vxfwtbve axbveqbd vfstwcwq rfcfwefq wxvafadr cbfzezcs wcfuuxdw tsvcazwd uzqcqcxf fucyfzuw ydqttbvr fqyfsvce czrbexqd cftuvxbd syuceztx tqecbuzx crusxvft aqucvufa bwsvcsfe aurffede rfwubcyx wfvazdve aufqfytr yavtxser dzxezqvd ubertzyq yquqdvye syyycfws zaybrqcs aeqbsquu bfqszwwu evcraqbs yzedquuu ffdwsbev zrwubqxq wrsfuqbf" topic="study_frequencystationary"/>
+        <FrequencyTransient descr="Frequency-transient" id="ftrans" props="afyatsyq sqzbwxuz tdezrcay yacswccy fvedybww fzrrfsuy vctftsyu vtvuyffv eufdfxxu ebqqyazf yxcybrxb szasxbys afyqrrrw aezcywuc bbbdetcd csfyzuxq bdrtavwb svbaebqt bfdaecdx vvwyqaav rvcsxrdq ffffswwc wqwwxzrc fazvdwfc eeqrbyaa veaxxdvx vxtybvqy eawqfsfz vcwatuuv zrqysdvf aeveezcs bfsfyctz avsqdtqt fxudtbdc drfsrczq ysetrdax zwrxvvvx tuysdsyz wzsswqry xswbuafc xxavsvqv yuurbctc etqwfedw uzdawvsz dureqzdp rbrdexxr sqsvrqsu wewewtsd febbeuaq bzbudtrq wfvazdve aufqfytr yavtxser dzxezqvd ubertzyq eccrfcdw cyyzqfwd sqebabrq cecqewzx zrwubqxq wrsfuqbf" topic="study_frequencytransient"/>
+        <CurrentDistributionInitialization descr="Current_distribution_initialization" id="cdi" props="fasftxxc vctftsyu dczwrxts bbbdetcd csfyzuxq bdrtavwb svbaebqt bfdaecdx vvwyqaav rvcsxrdq ffffswwc wqwwxzrc fazvdwfc eeqrbyaa veaxxdvx vxtybvqy eawqfsfz vcwatuuv zrqysdvf aeveezcs bfsfyctz avsqdtqt fxudtbdc drfsrczq ysetrdax zwrxvvvx tuysdsyz wzsswqry xswbuafc xxavsvqv yuurbctc etqwfedw uzdawvsz dureqzdp rbrdexxr sqsvrqsu wewewtsd febbeuaq bzbudtrq uxxqyacy xudvzxbr sewvqwra aqxqcbus ceetzeew vxfwtbve axbveqbd vfstwcwq rfcfwefq wxvafadr cbfzezcs wcfuuxdw tsvcazwd uzqcqcxf fucyfzuw ydqttbvr fqyfsvce czrbexqd cftuvxbd syuceztx tqecbuzx crusxvft aqucvufa bwsvcsfe aurffede rfwubcyx wfvazdve aufqfytr yavtxser dzxezqvd ubertzyq yquqdvye syyycfws zaybrqcs aeqbsquu bfqszwwu evcraqbs yzedquuu ffdwsbev zrwubqxq wrsfuqbf" topic="study_currentdistributioninitialization"/>
+        <SemiconductorInitialization descr="Semiconductor_initialization" id="semii" props="fasftxxc vctftsyu bbbdetcd csfyzuxq bdrtavwb svbaebqt bfdaecdx vvwyqaav rvcsxrdq ffffswwc wqwwxzrc fazvdwfc eeqrbyaa veaxxdvx vxtybvqy eawqfsfz vcwatuuv zrqysdvf aeveezcs bfsfyctz avsqdtqt fxudtbdc drfsrczq ysetrdax zwrxvvvx tuysdsyz wzsswqry xswbuafc xxavsvqv yuurbctc etqwfedw uzdawvsz dureqzdp rbrdexxr sqsvrqsu wewewtsd febbeuaq bzbudtrq uxxqyacy xudvzxbr sewvqwra aqxqcbus ceetzeew vxfwtbve axbveqbd vfstwcwq rfcfwefq wxvafadr cbfzezcs wcfuuxdw tsvcazwd uzqcqcxf fucyfzuw ydqttbvr fqyfsvce czrbexqd cftuvxbd syuceztx tqecbuzx crusxvft aqucvufa bwsvcsfe aurffede rfwubcyx wfvazdve aufqfytr yavtxser dzxezqvd ubertzyq yquqdvye syyycfws zaybrqcs aeqbsquu bfqszwwu evcraqbs yzedquuu ffdwsbev zrwubqxq wrsfuqbf" topic="study_semiconductorinitialization"/>
+        <ViscoelasticTransientInitialization descr="Viscoelastic_transient_initialization" id="viscoinit" props="fasftxxc vctftsyu eufdfxxu ebqqyazf szasxbys afyqrrrw ewaqwrtx bbbdetcd csfyzuxq bdrtavwb svbaebqt bfdaecdx vvwyqaav rvcsxrdq ffffswwc wqwwxzrc fazvdwfc eeqrbyaa veaxxdvx vxtybvqy eawqfsfz vcwatuuv zrqysdvf aeveezcs bfsfyctz avsqdtqt fxudtbdc drfsrczq ysetrdax zwrxvvvx tuysdsyz wzsswqry xswbuafc xxavsvqv yuurbctc etqwfedw uzdawvsz dureqzdp rbrdexxr sqsvrqsu wewewtsd febbeuaq bzbudtrq uxxqyacy xudvzxbr sewvqwra aqxqcbus ceetzeew vxfwtbve axbveqbd vfstwcwq rfcfwefq wxvafadr cbfzezcs wcfuuxdw tsvcazwd uzqcqcxf fucyfzuw ydqttbvr fqyfsvce czrbexqd cftuvxbd syuceztx tqecbuzx crusxvft aqucvufa bwsvcsfe aurffede rfwubcyx wfvazdve aufqfytr yavtxser dzxezqvd ubertzyq yquqdvye syyycfws zaybrqcs aeqbsquu bfqszwwu evcraqbs yzedquuu ffdwsbev zrwubqxq wrsfuqbf" topic="study_viscoelastictransientinitialization"/>
+        <LinearBuckling descr="Linear_buckling" id="buckling" props="fasftxxc vctftsyu vuwtybcu dtryrvwv vdvcusdu bbbdetcd csfyzuxq bdrtavwb svbaebqt bfdaecdx vvwyqaav rvcsxrdq ffffswwc wqwwxzrc fazvdwfc eeqrbyaa veaxxdvx vxtybvqy eawqfsfz vcwatuuv zrqysdvf aeveezcs bfsfyctz avsqdtqt fxudtbdc drfsrczq ysetrdax zwrxvvvx tuysdsyz wzsswqry xswbuafc xxavsvqv yuurbctc etqwfedw uzdawvsz dureqzdp rbrdexxr sqsvrqsu wewewtsd febbeuaq bzbudtrq uxxqyacy ytctuyre sewvqwra aqxqcbus ceetzeew vxfwtbve axbveqbd vfstwcwq rfcfwefq wxvafadr cbfzezcs wcfuuxdw tsvcazwd uzqcqcxf xddfcxdt fqyfsvce czrbexqd cftuvxbd syuceztx tqecbuzx crusxvft aqucvufa bwsvcsfe aurffede rfwubcyx wfvazdve aufqfytr yavtxser dzxezqvd ubertzyq wrsfuqbf" topic="study_linearbuckling"/>
+        <BoltPretension descr="Bolt_pre-tension" id="bolt" props="fasftxxc vctftsyu eufdfxxu ebqqyazf szasxbys afyqrrrw ewaqwrtx bbbdetcd csfyzuxq bdrtavwb svbaebqt bfdaecdx vvwyqaav rvcsxrdq ffffswwc wqwwxzrc fazvdwfc eeqrbyaa veaxxdvx vxtybvqy eawqfsfz vcwatuuv zrqysdvf aeveezcs bfsfyctz avsqdtqt fxudtbdc drfsrczq ysetrdax zwrxvvvx tuysdsyz wzsswqry xswbuafc xxavsvqv yuurbctc etqwfedw uzdawvsz dureqzdp rbrdexxr sqsvrqsu wewewtsd febbeuaq bzbudtrq uxxqyacy xudvzxbr sewvqwra aqxqcbus ceetzeew vxfwtbve axbveqbd vfstwcwq rfcfwefq wxvafadr cbfzezcs wcfuuxdw tsvcazwd uzqcqcxf fucyfzuw ydqttbvr fqyfsvce czrbexqd cftuvxbd syuceztx tqecbuzx crusxvft aqucvufa bwsvcsfe aurffede rfwubcyx wfvazdve aufqfytr yavtxser dzxezqvd ubertzyq yquqdvye syyycfws zaybrqcs aeqbsquu bfqszwwu evcraqbs yzedquuu ffdwsbev zrwubqxq wrsfuqbf" topic="study_boltpretension"/>
+        <TransientInitialization descr="Transient_initialization" id="transi" props="afyatsyq sqzbwxuz tdezrcay yacswccy fvedybww fzrrfsuy vctftsyu eufdfxxu ebqqyazf yxcybrxb szasxbys afyqrrrw aezcywuc bbbdetcd csfyzuxq bdrtavwb svbaebqt bfdaecdx vvwyqaav rvcsxrdq ffffswwc wqwwxzrc fazvdwfc eeqrbyaa veaxxdvx vxtybvqy eawqfsfz vcwatuuv zrqysdvf aeveezcs bfsfyctz avsqdtqt fxudtbdc drfsrczq ysetrdax zwrxvvvx tuysdsyz wzsswqry xswbuafc xxavsvqv yuurbctc etqwfedw uzdawvsz dureqzdp rbrdexxr sqsvrqsu wewewtsd febbeuaq bzbudtrq wfvazdve aufqfytr yavtxser dzxezqvd ubertzyq eccrfcdw cyyzqfwd sqebabrq cecqewzx zrwubqxq wrsfuqbf" topic="study_transientinitialization"/>
+        <WallDistanceInitialization descr="Wall_distance_initialization" id="wdi" props="fasftxxc vctftsyu eufdfxxu ebqqyazf szasxbys afyqrrrw ewaqwrtx bbbdetcd csfyzuxq bdrtavwb svbaebqt bfdaecdx vvwyqaav rvcsxrdq ffffswwc wqwwxzrc fazvdwfc eeqrbyaa veaxxdvx vxtybvqy eawqfsfz vcwatuuv zrqysdvf aeveezcs bfsfyctz avsqdtqt fxudtbdc drfsrczq ysetrdax zwrxvvvx tuysdsyz wzsswqry xswbuafc xxavsvqv yuurbctc etqwfedw uzdawvsz dureqzdp rbrdexxr sqsvrqsu wewewtsd febbeuaq bzbudtrq uxxqyacy xudvzxbr sewvqwra aqxqcbus ceetzeew vxfwtbve axbveqbd vfstwcwq rfcfwefq wxvafadr cbfzezcs wcfuuxdw tsvcazwd uzqcqcxf fucyfzuw ydqttbvr fqyfsvce czrbexqd cftuvxbd syuceztx tqecbuzx crusxvft aqucvufa bwsvcsfe aurffede rfwubcyx wfvazdve aufqfytr yavtxser dzxezqvd ubertzyq yquqdvye syyycfws zaybrqcs aeqbsquu bfqszwwu evcraqbs yzedquuu ffdwsbev zrwubqxq wrsfuqbf" topic="study_walldistanceinitialization"/>
+        <StationaryFreeSurface descr="Stationary_free_surface" id="sfs" props="fasftxxc vctftsyu eufdfxxu ebqqyazf szasxbys afyqrrrw ewaqwrtx bbbdetcd csfyzuxq bdrtavwb svbaebqt bfdaecdx vvwyqaav rvcsxrdq ffffswwc wqwwxzrc fazvdwfc eeqrbyaa veaxxdvx vxtybvqy eawqfsfz vcwatuuv zrqysdvf aeveezcs bfsfyctz avsqdtqt fxudtbdc drfsrczq ysetrdax zwrxvvvx tuysdsyz wzsswqry xswbuafc xxavsvqv yuurbctc etqwfedw uzdawvsz dureqzdp rbrdexxr sqsvrqsu wewewtsd febbeuaq bzbudtrq uxxqyacy xudvzxbr sewvqwra aqxqcbus ceetzeew vxfwtbve axbveqbd vfstwcwq rfcfwefq wxvafadr cbfzezcs wcfuuxdw tsvcazwd uzqcqcxf fucyfzuw ydqttbvr fqyfsvce czrbexqd cftuvxbd syuceztx tqecbuzx crusxvft aqucvufa bwsvcsfe aurffede rfwubcyx wfvazdve aufqfytr yavtxser dzxezqvd ubertzyq yquqdvye syyycfws zaybrqcs aeqbsquu bfqszwwu evcraqbs yzedquuu ffdwsbev zrwubqxq wrsfuqbf" topic="study_stationaryfreesurface"/>
+        <PhaseInitialization descr="Phase_initialization" id="phasei" props="fasftxxc vctftsyu eufdfxxu ebqqyazf szasxbys afyqrrrw ewaqwrtx bbbdetcd csfyzuxq bdrtavwb svbaebqt bfdaecdx vvwyqaav rvcsxrdq ffffswwc wqwwxzrc fazvdwfc eeqrbyaa veaxxdvx vxtybvqy eawqfsfz vcwatuuv zrqysdvf aeveezcs bfsfyctz avsqdtqt fxudtbdc drfsrczq ysetrdax zwrxvvvx tuysdsyz wzsswqry xswbuafc xxavsvqv yuurbctc etqwfedw uzdawvsz dureqzdp rbrdexxr sqsvrqsu wewewtsd febbeuaq bzbudtrq uxxqyacy xudvzxbr sewvqwra aqxqcbus ceetzeew vxfwtbve axbveqbd vfstwcwq rfcfwefq wxvafadr cbfzezcs wcfuuxdw tsvcazwd uzqcqcxf fucyfzuw ydqttbvr fqyfsvce czrbexqd cftuvxbd syuceztx tqecbuzx crusxvft aqucvufa bwsvcsfe aurffede rfwubcyx wfvazdve aufqfytr yavtxser dzxezqvd ubertzyq yquqdvye syyycfws zaybrqcs aeqbsquu bfqszwwu evcraqbs yzedquuu ffdwsbev zrwubqxq wrsfuqbf" topic="study_phaseinitialization"/>
+        <TransientFluid descr="Time_dependent_fluid" id="tranf" props="afyatsyq sqzbwxuz tdezrcay yacswccy fvedybww fzrrfsuy vctftsyu eufdfxxu ebqqyazf yxcybrxb szasxbys afyqrrrw aezcywuc bbbdetcd csfyzuxq bdrtavwb svbaebqt bfdaecdx vvwyqaav rvcsxrdq ffffswwc wqwwxzrc fazvdwfc eeqrbyaa veaxxdvx vxtybvqy eawqfsfz vcwatuuv zrqysdvf aeveezcs bfsfyctz avsqdtqt fxudtbdc drfsrczq ysetrdax zwrxvvvx tuysdsyz wzsswqry xswbuafc xxavsvqv yuurbctc etqwfedw uzdawvsz dureqzdp rbrdexxr sqsvrqsu wewewtsd febbeuaq bzbudtrq wfvazdve aufqfytr yavtxser dzxezqvd ubertzyq eccrfcdw cyyzqfwd sqebabrq cecqewzx zrwubqxq wrsfuqbf" topic="study_transientfluid"/>
+        <TransientSolid descr="Time_dependent_solid" id="trans" props="afyatsyq sqzbwxuz tdezrcay yacswccy fvedybww fzrrfsuy vctftsyu eufdfxxu ebqqyazf yxcybrxb szasxbys afyqrrrw aezcywuc bbbdetcd csfyzuxq bdrtavwb svbaebqt bfdaecdx vvwyqaav rvcsxrdq ffffswwc wqwwxzrc fazvdwfc eeqrbyaa veaxxdvx vxtybvqy eawqfsfz vcwatuuv zrqysdvf aeveezcs bfsfyctz avsqdtqt fxudtbdc drfsrczq ysetrdax zwrxvvvx tuysdsyz wzsswqry xswbuafc xxavsvqv yuurbctc etqwfedw uzdawvsz dureqzdp rbrdexxr sqsvrqsu wewewtsd febbeuaq bzbudtrq wfvazdve aufqfytr yavtxser dzxezqvd ubertzyq eccrfcdw cyyzqfwd sqebabrq cecqewzx zrwubqxq wrsfuqbf" topic="study_transientsolid"/>
+        <StationaryFluid descr="Stationary_fluid" id="statf" props="fasftxxc vctftsyu eufdfxxu ebqqyazf szasxbys afyqrrrw ewaqwrtx bbbdetcd csfyzuxq bdrtavwb svbaebqt bfdaecdx vvwyqaav rvcsxrdq ffffswwc wqwwxzrc fazvdwfc eeqrbyaa veaxxdvx vxtybvqy eawqfsfz vcwatuuv zrqysdvf aeveezcs bfsfyctz avsqdtqt fxudtbdc drfsrczq ysetrdax zwrxvvvx tuysdsyz wzsswqry xswbuafc xxavsvqv yuurbctc etqwfedw uzdawvsz dureqzdp rbrdexxr sqsvrqsu wewewtsd febbeuaq bzbudtrq uxxqyacy xudvzxbr sewvqwra aqxqcbus ceetzeew vxfwtbve axbveqbd vfstwcwq rfcfwefq wxvafadr cbfzezcs wcfuuxdw tsvcazwd uzqcqcxf fucyfzuw ydqttbvr fqyfsvce czrbexqd cftuvxbd syuceztx tqecbuzx crusxvft aqucvufa bwsvcsfe aurffede rfwubcyx wfvazdve aufqfytr yavtxser dzxezqvd ubertzyq yquqdvye syyycfws zaybrqcs aeqbsquu bfqszwwu evcraqbs yzedquuu ffdwsbev zrwubqxq wrsfuqbf" topic="study_stationaryfluid"/>
+        <StationarySolid descr="Stationary_solid" id="stats" props="fasftxxc vctftsyu eufdfxxu ebqqyazf szasxbys afyqrrrw ewaqwrtx bbbdetcd csfyzuxq bdrtavwb svbaebqt bfdaecdx vvwyqaav rvcsxrdq ffffswwc wqwwxzrc fazvdwfc eeqrbyaa veaxxdvx vxtybvqy eawqfsfz vcwatuuv zrqysdvf aeveezcs bfsfyctz avsqdtqt fxudtbdc drfsrczq ysetrdax zwrxvvvx tuysdsyz wzsswqry xswbuafc xxavsvqv yuurbctc etqwfedw uzdawvsz dureqzdp rbrdexxr sqsvrqsu wewewtsd febbeuaq bzbudtrq uxxqyacy xudvzxbr sewvqwra aqxqcbus ceetzeew vxfwtbve axbveqbd vfstwcwq rfcfwefq wxvafadr cbfzezcs wcfuuxdw tsvcazwd uzqcqcxf fucyfzuw ydqttbvr fqyfsvce czrbexqd cftuvxbd syuceztx tqecbuzx crusxvft aqucvufa bwsvcsfe aurffede rfwubcyx wfvazdve aufqfytr yavtxser dzxezqvd ubertzyq yquqdvye syyycfws zaybrqcs aeqbsquu bfqszwwu evcraqbs yzedquuu ffdwsbev zrwubqxq wrsfuqbf" topic="study_stationarysolid"/>
+        <FrozenRotor descr="Frozen_rotor" id="frrot" props="fasftxxc vctftsyu eufdfxxu ebqqyazf szasxbys afyqrrrw ewaqwrtx bbbdetcd csfyzuxq bdrtavwb svbaebqt bfdaecdx vvwyqaav rvcsxrdq ffffswwc wqwwxzrc fazvdwfc eeqrbyaa veaxxdvx vxtybvqy eawqfsfz vcwatuuv zrqysdvf aeveezcs bfsfyctz avsqdtqt fxudtbdc drfsrczq ysetrdax zwrxvvvx tuysdsyz wzsswqry xswbuafc xxavsvqv yuurbctc etqwfedw uzdawvsz dureqzdp rbrdexxr sqsvrqsu wewewtsd febbeuaq bzbudtrq uxxqyacy xudvzxbr sewvqwra aqxqcbus ceetzeew vxfwtbve axbveqbd vfstwcwq rfcfwefq wxvafadr cbfzezcs wcfuuxdw tsvcazwd uzqcqcxf fucyfzuw ydqttbvr fqyfsvce czrbexqd cftuvxbd syuceztx tqecbuzx crusxvft aqucvufa bwsvcsfe aurffede rfwubcyx wfvazdve aufqfytr yavtxser dzxezqvd ubertzyq yquqdvye syyycfws zaybrqcs aeqbsquu bfqszwwu evcraqbs yzedquuu ffdwsbev zrwubqxq wrsfuqbf" topic="study_frozenrotor"/>
+        <FlowsheetInitialization descr="Flowsheet_initialization" id="fsini" props="fasftxxc vctftsyu eufdfxxu ebqqyazf szasxbys afyqrrrw ewaqwrtx bbbdetcd csfyzuxq bdrtavwb svbaebqt bfdaecdx vvwyqaav rvcsxrdq ffffswwc wqwwxzrc fazvdwfc eeqrbyaa veaxxdvx vxtybvqy eawqfsfz vcwatuuv zrqysdvf aeveezcs bfsfyctz avsqdtqt fxudtbdc drfsrczq ysetrdax zwrxvvvx tuysdsyz wzsswqry xswbuafc xxavsvqv yuurbctc etqwfedw uzdawvsz dureqzdp rbrdexxr sqsvrqsu wewewtsd febbeuaq bzbudtrq uxxqyacy xudvzxbr sewvqwra aqxqcbus ceetzeew vxfwtbve axbveqbd vfstwcwq rfcfwefq wxvafadr cbfzezcs wcfuuxdw tsvcazwd uzqcqcxf fucyfzuw ydqttbvr fqyfsvce czrbexqd cftuvxbd syuceztx tqecbuzx crusxvft aqucvufa bwsvcsfe aurffede rfwubcyx wfvazdve aufqfytr yavtxser dzxezqvd ubertzyq yquqdvye syyycfws zaybrqcs aeqbsquu bfqszwwu evcraqbs yzedquuu ffdwsbev zrwubqxq wrsfuqbf" topic="study_flowsheetinitialization"/>
+        <StudyReference descr="Study_reference" id="ref" props="sbquazva" topic="study_studyreference"/>
+      </StudyFeature>
+    </Study>
+    <Properties>
+      <fvsvcyby descr="Generate_default_plots" descrs="On|Off" name="genPlots" type="Boolean" values="on|off"/>
+      <yvecvvcw descr="Generate_convergence_plots" descrs="On|Off" name="genConv" type="Boolean" values="on|off"/>
+      <sqysbduw descr="Store_solution_for_all_intermediate_study_steps" descrs="On|Off" name="storeSol" type="Boolean" values="on|off"/>
+      <efxxvear descr="Last_computation_time" name="lastComputationTime" type="String"/>
+      <fasftxxc descr="Parameter_list_method" descrs="Manual" name="ftplistmethod" type="String" values="manual"/>
+      <vctftsyu descr="Include_geometric_nonlinearity" descrs="On|Off" name="geometricNonlinearity" type="Boolean" values="on|off"/>
+      <eufdfxxu descr="Plot[verb]" descrs="On|Off" name="plot" type="String" values="on|off"/>
+      <ebqqyazf descr="Plot_group" descrs="A_reference_to_a_plot_group" isref="true" name="plotgroup" type="String" values="Default|{ResultFeature}"/>
+      <szasxbys descr="Probes" descrs="All|None|Manual" name="probesel" type="String" values="all|none|manual"/>
+      <afyqrrrw descr="Probes" descrs="A_reference_to_a_probe" isref="true" name="probes" type="StringArray" values="{ProbeFeature}"/>
+      <ewaqwrtx descr="Update_at" descrs="Steps_stored_in_output|Steps_taken_by_solver" name="probefreq" type="String" values="pout|psteps"/>
+      <bbbdetcd descr="Use_in_this_study" name="activate" type="StringArray"/>
+      <csfyzuxq descr="Discretization" name="discretization" type="StringArray"/>
+      <bdrtavwb descr="Modify_model_configuration_for_study_step" descrs="On|Off" name="useadvanceddisable" type="Boolean" values="on|off"/>
+      <svbaebqt descr="Disabled_variables" descrs="A_reference_to_a_variable_feature" isref="true" name="disabledvariables" type="StringArray" values="{Expr}"/>
+      <bfdaecdx descr="Disabled_coordinate_systems" descrs="A_reference_to_a_coordinate_system_feature" isref="true" name="disabledcoordinatesystems" type="StringArray" values="{Coordsys}"/>
+      <vvwyqaav descr="Disabled_common_features" name="disabledcommon" type="StringArray" values=""/>
+      <rvcsxrdq descr="Disabled_physics_interfaces" name="disabledphysics" type="StringArray"/>
+      <ffffswwc descr="Disable_frame_control_for_physics_interfaces" descrs="#General Form PDE (g)|#Solid Mechanics (solid)|#Fatigue (ftg)|#null|#null" name="disableFrameControl" type="StringArray" values="g|solid|ftg|frame:material1|frame:spatial1"/>
+      <wqwwxzrc descr="Disabled_coupling_feature" name="disabledcoupling" type="StringArray" values=""/>
+      <fazvdwfc descr="Disabled_reduced_models" name="disabledreduced" type="StringArray" values=""/>
+      <eeqrbyaa descr="Use_in_this_study" name="activateCoupling" type="StringArray"/>
+      <veaxxdvx descr="Use_in_this_study" name="activaterom" type="StringArray"/>
+      <vxtybvqy descr="Reconstruction" name="reconstructors" type="StringArray"/>
+      <eawqfsfz descr="Settings" descrs="User_controlled|Physics_controlled" name="useinitsol" type="String" values="on|off"/>
+      <vcwatuuv descr="Method" descrs="Initial_expression|Solution" name="initmethod" type="String" values="init|sol"/>
+      <zrqysdvf descr="Study" descrs="Zero_solution|A_reference_to_a_study" isref="true" name="initstudy" type="String" values="zero|{Study}"/>
+      <aeveezcs descr="Solution" descrs="Current[present]|A_reference_to_a_solution" isref="true" name="initsol" type="String" values="current|{SolverSequence}"/>
+      <bfsfyctz descr="Use" descrs="Current[present]|A_reference_to_a_solution" isref="true" name="initsoluse" type="String" values="current|{SolverSequence}"/>
+      <avsqdtqt descr="Solution_number" descrs="Automatic|First|Last|Interpolated|Manual" name="solnum" type="String" values="auto|first|last|interp|manual"/>
+      <fxudtbdc descr="Selection" isref="true" name="solnum" type="Int" values="1"/>
+      <drfsrczq descr="Time" name="t" type="Double"/>
+      <ysetrdax descr="Index" name="manualsolnum" type="Double"/>
+      <zwrxvvvx descr="Selection" name="listsolnum" type="IntArray" values="1"/>
+      <tuysdsyz descr="Settings" descrs="User_controlled|Physics_controlled" name="usesol" type="String" values="on|off"/>
+      <wzsswqry descr="Method" descrs="Initial_expression|Solution" name="notsolmethod" type="String" values="init|sol"/>
+      <xswbuafc descr="Study" descrs="Zero_solution|A_reference_to_a_study" isref="true" name="notstudy" type="String" values="zero|{Study}"/>
+      <xxavsvqv descr="Solution" descrs="Current[present]|A_reference_to_a_solution" isref="true" name="notsol" type="String" values="current|{SolverSequence}"/>
+      <yuurbctc descr="Use" descrs="Current[present]|A_reference_to_a_solution" isref="true" name="notsoluse" type="String" values="current|{SolverSequence}"/>
+      <etqwfedw descr="Solution_number" descrs="Automatic|All|First|Last|From_list|Interpolated|Manual" name="notsolnum" type="String" values="auto|all|first|last|from_list|interp|manual"/>
+      <uzdawvsz descr="Selection" isref="true" name="notsolnum" type="Int" values="1"/>
+      <dureqzdp descr="Time" name="nott" type="Double"/>
+      <rbrdexxr descr="Index" name="notmanualsolnum" type="DoubleArray"/>
+      <sqsvrqsu descr="Selection" name="notlistsolnum" type="IntArray" values="1"/>
+      <wewewtsd descr="Settings" descrs="All|For_selections" name="usestoresel" type="String" values="all|selection"/>
+      <febbeuaq descr="Selections" descrs="A_reference_to_a_selection" isref="true" name="storesel" type="StringArray" values="{Selection}"/>
+      <bzbudtrq descr="Mesh" name="mesh" type="StringArray"/>
+      <uxxqyacy descr="Adaptation_and_error_estimates" descrs="Error_estimates|Adaptation_and_error_estimates|None" name="errestandadap" type="String" values="errest|adaption|none"/>
+      <xudvzxbr descr="Error_estimate" descrs="L2_norm_of_error_squared|Functional" name="errestim" type="String" values="l2errest|goalerrest"/>
+      <sewvqwra descr="Scaling_factor" name="l2scale" type="String"/>
+      <aqxqcbus descr="Stability_estimate_derivative_order" name="l2staborder" type="String"/>
+      <ceetzeew descr="Functional_type" descrs="Predefined|Manual" name="goalfunctype" type="String" values="gfpredef|gfman"/>
+      <vxfwtbve descr="Solution_functional" descrs="Integral|L2_norm|L1_norm|Approximate_Linf_norm" name="goalfuncpredef" type="String" values="gfint|gfl2|gfl1|gflinf"/>
+      <axbveqbd descr="Functional" name="gfunc" type="String"/>
+      <vfstwcwq descr="Adaption_in_geometry" descrs="A_reference_to_an_undeformed_geometry" isref="true" name="adapgeom" type="String" values="{Geom}"/>
+      <rfcfwefq descr="Residual_order" descrs="On|Off" name="resorderactive" type="Boolean" values="on|off"/>
+      <wxvafadr descr="Residual_order" name="resorder" type="String"/>
+      <cbfzezcs descr="Error_expression" name="errorexpr" type="StringArray"/>
+      <wcfuuxdw descr="Active" descrs="On|Off" name="errexpractive" type="StringArray" values="on|off"/>
+      <tsvcazwd descr="Solution_selection" descrs="Use_first|Use_last|Manual|All" name="selection" type="String" values="first|last|manual|sum"/>
+      <uzqcqcxf descr="Indices" name="adapsolnum" type="DoubleArray"/>
+      <fucyfzuw descr="Weights" name="weights" type="DoubleArray"/>
+      <ydqttbvr descr="Adjoint_solution_error_estimate" descrs="PPR_for_Lagrange|Gradient_based" name="adjppr" type="String" values="on|off"/>
+      <fqyfsvce descr="Save_solution_on_every_adapted_mesh" descrs="On|Off" name="savesolsref" type="Boolean" values="on|off"/>
+      <czrbexqd descr="Adaptation_method" descrs="General_modification|Rebuild_mesh|Regular_refinement|Longest_edge_refinement" name="meshadaptmethod" type="String" values="modify|rebuild|regular|longest"/>
+      <cftuvxbd descr="Allow_coarsening" descrs="On|Off" name="allowcoarsening" type="Boolean" values="on|off"/>
+      <syuceztx descr="Maximum_coarsening_factor" name="maxscale" type="Double"/>
+      <tqecbuzx descr="Element_selection" descrs="Rough_global_minimum|Fraction_of_worst_error|Fraction_of_elements" name="elselect" type="String" values="globalmin|worst|elements"/>
+      <crusxvft descr="Element_count_growth_factor" name="globalminpar" type="Double"/>
+      <aqucvufa descr="Element_fraction" name="worstpar" type="Double"/>
+      <bwsvcsfe descr="Element_fraction" name="elementspar" type="Double"/>
+      <aurffede descr="Maximum_number_of_adaptations" name="ngen" type="Double"/>
+      <rfwubcyx descr="Maximum_number_of_elements" name="maxt" type="Double"/>
+      <wfvazdve descr="Auxiliary_sweep" descrs="On|Off" name="useparam" type="String" values="on|off"/>
+      <aufqfytr descr="Sweep_type" descrs="All_combinations|Specified_combinations" name="sweeptype" type="String" values="filled|sparse"/>
+      <yavtxser descr="Auxiliary_parameter" name="pname" type="StringArray" values=""/>
+      <dzxezqvd descr="Parameter_value_list" name="plistarr" type="DoubleRowMatrix"/>
+      <ubertzyq descr="Unit" name="punit" type="StringArray"/>
+      <yquqdvye descr="Run_continuation_for" descrs="No_parameter|Last_parameter|Manual" name="pcontinuationmode" type="String" values="no|last|manual"/>
+      <syyycfws descr="Continuation_parameter" descrs="No_parameter" name="pcontinuation" type="String" values=""/>
+      <zaybrqcs descr="Define_load_cases" descrs="On|Off" name="useloadcase" type="String" values="on|off"/>
+      <aeqbsquu descr="Load_cases" name="loadcase" type="StringArray"/>
+      <bfqszwwu descr="Load_group_status" descrs="On|Off" name="loadgroup" type="StringMatrix" values="on|off"/>
+      <evcraqbs descr="Load_group_weight" name="loadgroupweight" type="DoubleMatrix"/>
+      <yzedquuu descr="Constraint_group_status" descrs="On|Off" name="constraintgroup" type="StringMatrix" values="on|off"/>
+      <ffdwsbev descr="Reuse_solution_from_previous_step" descrs="No|Yes|Auto" name="preusesol" type="String" values="no|yes|auto"/>
+      <zrwubqxq descr="Optimization" descrs="On|Off" name="optimization" type="Boolean" values="on|off"/>
+      <wrsfuqbf descr="Distribute_parametric_solver" descrs="On|Off" name="pdistrib" type="Boolean" values="on|off"/>
+      <afyatsyq descr="Time_list_method" descrs="Manual" name="ftplistmethod" type="String" values="manual"/>
+      <sqzbwxuz descr="Time_unit" name="tunit" type="String" values="fs|ps|ns|µs|ms|cs|ds|s|min|ks|h|d|Ms|a|Gs"/>
+      <tdezrcay descr="Times" name="tlist" type="DoubleArray"/>
+      <yacswccy descr="Initial_time" name="initialtime" type="Double"/>
+      <fvedybww descr="Tolerance" descrs="User_controlled|Physics_controlled" name="usertol" type="String" values="on|off"/>
+      <fzrrfsuy descr="Relative_tolerance" name="rtol" type="Double"/>
+      <yydafasc descr="Termination_method" descrs="Convergence_of_global_variable|Minimization_of_global_variable|Fixed_number_of_iterations" name="method" type="String" values="convergence_of_global_variable|minimization_of_global_variable|fixed_number_of_iterations"/>
+      <uqcbxfzu descr="Global_variable" name="expr" type="String"/>
+      <bxyxcqtu descr="Relative_tolerance" name="rtolterm" type="Double"/>
+      <csfcwwtq descr="Relative_tolerance_threshold" name="rtolthresh" type="Double"/>
+      <svabfvzu descr="Maximum_number_of_iterations" name="maxiter" type="Int"/>
+      <vyyudyty descr="Minimum_number_of_iterations" name="miniter" type="Int"/>
+      <cdydbtrq descr="Absolute_tolerance" name="atolterm" type="Double"/>
+      <arqvfubz descr="Number_of_iterations" name="iter" type="Int"/>
+      <yxcybrxb descr="Update_at" descrs="Times_stored_in_output|Time_steps_taken_by_solver" name="plotfreq" type="String" values="tout|tsteps"/>
+      <aezcywuc descr="Update_at" descrs="Times_stored_in_output|Time_steps_taken_by_solver" name="probefreq" type="String" values="tout|tsteps"/>
+      <eccrfcdw descr="Time_adaption" descrs="On|Off" name="timeadaption" type="String" values="on|off"/>
+      <cyyzqfwd descr="Adaption_in_geometry" descrs="A_reference_to_an_undeformed_geometry" isref="true" name="timeadapgeom" type="String" values="{Geom}"/>
+      <sqebabrq descr="Automatic_remeshing" descrs="On|Off" name="autoremesh" type="String" values="on|off"/>
+      <cecqewzx descr="Remesh_in_geometry" descrs="A_reference_to_an_undeformed_geometry" isref="true" name="autoremeshgeom" type="String" values="{Geom}"/>
+      <dfeuafdw descr="Eigenfrequency_search_method" descrs="Manual|Region|All_(filled_matrix)" name="eigmethod" type="String" values="manual|region|all"/>
+      <uftvfbrs descr="Desired_number_of_eigenfrequencies" name="neigs" type="Double"/>
+      <dqcctfrr descr="Desired_number_of_eigenfrequencies" descrs="On|Off" name="neigsactive" type="Boolean" values="on|off"/>
+      <avsvfvwr descr="Unit" name="eigunit" type="String" values="|mHz|cHz|dHz|Hz|kHz|MHz|GHz|THz"/>
+      <erasrssp descr="Search_for_eigenfrequencies_around" name="shift" type="String"/>
+      <xrrzdbdz descr="Search_for_eigenfrequencies_around" descrs="On|Off" name="shiftactive" type="Boolean" values="on|off"/>
+      <fyvtstrz descr="Eigenfrequency_search_method_around_shift" descrs="Closest_in_absolute_value|Larger_real_part|Smaller_real_part|Larger_imaginary_part|Smaller_imaginary_part" name="eigwhich" type="String" values="lm|lr|sr|li|si"/>
+      <datwvrxs descr="Use_real_symmetric_eigenvalue_solver" descrs="Automatic|Off" name="usesymeig" type="String" values="auto|off"/>
+      <vdvcusdu descr="Real_symmetric_eigenvalue_solver_consistency_check" descrs="On|Off" name="eigsymchk" type="Boolean" values="on|off"/>
+      <dwyaybuf descr="Approximate_number_of_eigenfrequencies" name="appnreigs" type="Double"/>
+      <fwdcvuqw descr="Maximum_number_of_eigenfrequencies" name="maxnreigs" type="Double"/>
+      <bvwvqacu descr="Perform_consistency_check" descrs="On|Off" name="chkeigregion" type="Boolean" values="on|off"/>
+      <rrqxxvuv descr="Smallest_real_part" name="eigsr" type="Double"/>
+      <wwwavqxz descr="Largest_real_part" name="eiglr" type="Double"/>
+      <dzyxvtdr descr="Smallest_imaginary_part" name="eigsi" type="Double"/>
+      <acfuydab descr="Largest_imaginary_part" name="eigli" type="Double"/>
+      <fwxyxzvu descr="Maximum_matrix_size" name="maxmatsize" type="Double"/>
+      <ytctuyre descr="Error_estimate" descrs="L2_norm_of_error_squared" name="errestim" type="String" values="l2errest"/>
+      <xddfcxdt descr="Weights_for_eigenmodes" name="weights" type="DoubleArray"/>
+      <twqsuqvt descr="Eigenvalue_search_method_X#" descrs="Manual|Region|All_(filled_matrix)" name="eigmethod" type="String" values="manual|region|all"/>
+      <xssvesqa descr="Desired_number_of_eigenvalues" name="neigs" type="Double"/>
+      <trqvrwqx descr="Unit" name="eigunit" type="String" values="|nrad/s|µrad/s|mrad/s|crad/s|drad/s|rad/s|krad/s|Mrad/s|Grad/s"/>
+      <wyvrtssb descr="Desired_number_of_eigenvalues" descrs="On|Off" name="neigsactive" type="Boolean" values="on|off"/>
+      <xuewfbra descr="Search_for_eigenvalues_around" name="shift" type="String"/>
+      <rftrqzyt descr="Search_for_eigenvalues_around" descrs="On|Off" name="shiftactive" type="Boolean" values="on|off"/>
+      <dwavtzse descr="Eigenvalue_search_method_around_shift" descrs="Closest_in_absolute_value|Larger_real_part|Smaller_real_part|Larger_imaginary_part|Smaller_imaginary_part" name="eigwhich" type="String" values="lm|lr|sr|li|si"/>
+      <rrrdvfad descr="Approximate_number_of_eigenvalues" name="appnreigs" type="Double"/>
+      <zvyqcqzw descr="Maximum_number_of_eigenvalues" name="maxnreigs" type="Double"/>
+      <byrsubxu descr="Frequency_method" descrs="Manual" name="ftplistmethod" type="String" values="manual"/>
+      <ywxsrbfz descr="Frequency_unit" name="punit" type="String" values="mHz|cHz|dHz|Hz|kHz|MHz|GHz|THz"/>
+      <xwvbeqdy descr="Frequencies" name="plist" type="DoubleArray"/>
+      <efzyvuts descr="Load_parameter_values" name="loadparameters" type="String"/>
+      <tveessfc descr="Auxiliary_parameter" name="pname_aux" type="StringArray" values=""/>
+      <btqdcwfy descr="Parameter_value_list" name="plistarr_aux" type="DoubleRowMatrix"/>
+      <tuqarurb descr="Unit" name="punit_aux" type="StringArray"/>
+      <scaxrxbx descr="Continuation_parameter" descrs="No_parameter|#freq" name="pcontinuation" type="String" values="|freq"/>
+      <bsxewqbe descr="Use_asymptotic_waveform_evaluation" descrs="On|Off" name="awe" type="String" values="on|off"/>
+      <fycuvzce descr="AWE_expressions" name="awefunc" type="StringArray"/>
+      <txebyrav descr="Sweep_type" descrs="All_combinations|Specified_combinations|Parameter_switch" name="sweeptype" type="String" values="filled|sparse|switch"/>
+      <sqfvtwuw descr="Parameter_name" name="pname" type="StringArray" values=""/>
+      <wwxyyqzx descr="Switch" name="switchname" type="StringArray" values=""/>
+      <vvwtrsrp descr="Parameter_value_list" name="switchlistarr" type="DoubleRowMatrix"/>
+      <xceqtvcr descr="Cases" descrs="All|User_defined" name="switchcase" type="StringArray" values="all|user"/>
+      <wzywtybx descr="Accumulated_probe_table" descrs="On|Off" name="useaccumtable" type="String" values="on|off"/>
+      <wedctarb descr="Output_table" descrs="New|A_reference_to_a_model_entity" isref="true" name="accumtable" type="String" values="new|{TableFeature}"/>
+      <rwrswdfd descr="Use_all_probes" descrs="On|Off" name="accumtableall" type="Boolean" values="on|off"/>
+      <rxrydcvz descr="Default_solver_sequence_generation" descrs="Using_global_parameters|Using_first_parameter_tuple|Using_last_parameter_tuple|Using_each_parameter_tuple" name="defsolvergen" type="String" values="global|first|last|all"/>
+      <cvqwsbtp descr="Keep_solutions_in_memory" descrs="Only_last|All" name="keepsol" type="String" values="last|all"/>
+      <dbtxfyyr descr="Save_each_solution_as_model_file" descrs="On|Off" name="save" type="String" values="on|off"/>
+      <zsxbtrzd descr="Filename" name="filename" type="String"/>
+      <uvecutae descr="Use_parametric_solver" descrs="Automatic|Off" name="paramselect" type="String" values="auto|off"/>
+      <wbtctfqq descr="Distribute_parametric_sweep" descrs="On|Off" name="pdistrib" type="Boolean" values="on|off"/>
+      <zqctdvdt descr="Switch" name="pname" type="StringArray" values=""/>
+      <tbqezwfd descr="Cases" descrs="All|User_defined" name="pcase" type="StringArray" values="all|user"/>
+      <rxswbvdy descr="Use_parametric_solver" descrs="Off" name="paramselect" type="String" values="off"/>
+      <sbquazva descr="Study_reference" descrs="None|A_reference_to_a_study" isref="true" name="studyref" type="String" values="{Study}"/>
+      <xqrzabzx descr="Solution_operation" descrs="Concatenation|Summation|Weighted_summation|Remove_solutions" name="soloper" type="String" values="concatenation|summation|wgtsum|remsol"/>
+      <dtcrvcys descr="First_solution" descrs="Current[present]|A_reference_to_a_solution" isref="true" name="cssol1" type="String" values="current|{SolverSequence}"/>
+      <vredsyxp descr="Second_solution" descrs="Current[present]|A_reference_to_a_solution" isref="true" name="cssol2" type="String" values="current|{SolverSequence}"/>
+      <ywcxcrss descr="Solution" descrs="Current[present]|A_reference_to_a_solution" isref="true" name="cssol" type="String" values="current|{SolverSequence}"/>
+      <ybcxydvt descr="Solution" descrs="Current[present]|A_reference_to_a_solution" isref="true" name="cssolwghtsum" type="String" values="current|{SolverSequence}"/>
+      <xvdwbxfs descr="Weights_method" descrs="One_expression|List_of_expressions" name="weightsmethod" type="String" values="oneexpr|listexprs"/>
+      <bsczzfya descr="Expression" name="weightoneexpr" type="String"/>
+      <cabuxqeu descr="Indices" name="wsolnum" type="StringArray"/>
+      <dwszbcvs descr="List_of_expressions" name="weightslistexpr" type="StringArray"/>
+      <cveqwqas descr="Active" descrs="On|Off" name="weightslistexpractive" type="StringArray" values="on|off"/>
+      <uqxxycvu descr="Clear_source_solution" descrs="On|Off" name="clearsrcsol" type="Boolean" values="on|off"/>
+      <fxucdcwb descr="Study" descrs="Zero_solution|A_reference_to_a_study" isref="true" name="removestudy" type="String" values="zero|{Study}"/>
+      <fwbbextw descr="Solution" descrs="Current[present]|A_reference_to_a_solution" isref="true" name="removesol" type="String" values="current|{SolverSequence}"/>
+      <rzdvvwad descr="Use" descrs="Current[present]|A_reference_to_a_solution" isref="true" name="removesoluse" type="String" values="current|{SolverSequence}"/>
+      <bczfxqxf descr="Exclude_or_include" descrs="Exclude|Include" name="excludeorinclude" type="String" values="exclude|include"/>
+      <tuuduzyy descr="Exclude_method" descrs="Explicit|Implicit" name="excmethod" type="String" values="explicit|implicit"/>
+      <fedrsawt descr="Selection" descrs="All|From_list|Manual" isref="true" name="solnum" type="String" values="all|from_list|manual"/>
+      <ysquafde descr="Index" name="manualsolnum" type="DoubleArray"/>
+      <wzewyzuy descr="Excluded_if" name="remsolfromexprexc" type="String"/>
+      <uybexbcy descr="Include_method" descrs="Explicit|Implicit" name="incmethod" type="String" values="explicit|implicit"/>
+      <cebytcyy descr="Included_if" name="remsolfromexprinc" type="String"/>
+      <uxdcuruc descr="Filename" name="batchfile" type="String"/>
+      <wtzrseed descr="Generate_solver_sequence_in_external_process" descrs="On|Off" name="extsolvergen" type="Boolean" values="on|off"/>
+      <weubassc descr="Settings" descrs="User_controlled|Preferences_controlled" name="clustersettings" type="String" values="on|off"/>
+      <vufxzsqb descr="Directory" name="batchdir" type="String"/>
+      <abwzbefx descr="Specify_server_directory_path" descrs="On|Off" name="specserverdir" type="String" values="on|off"/>
+      <zrabybzu descr="Directory" name="serverdir" type="String"/>
+      <rwtfdyvw descr="Number_of_job_restarts" name="maxrestart" type="Int"/>
+      <vfwdxzvs descr="Alive_time_(seconds)" name="maxalive" type="Int"/>
+      <uwxqtqey descr="Use_graphics" descrs="On|Off" name="graphics" type="Boolean" values="on|off"/>
+      <cfaetyqu descr="Number_of_simultaneous_jobs" name="maxallow" type="Int"/>
+      <cybfuwet descr="Add_parameters_to_filename" descrs="Parameter_name_and_value|Index" name="paramfilename" type="String" values="on|index"/>
+      <abecfrst descr="Clear_meshes" descrs="On|Off" name="clearmesh" type="Boolean" values="on|off"/>
+      <svavdabb descr="Clear_solutions" descrs="On|Off" name="clearsol" type="Boolean" values="on|off"/>
+      <vbwqtsey descr="Synchronize_solutions" descrs="On|Off" name="synchsolutions" type="Boolean" values="on|off"/>
+      <vyszqewd descr="Synchronize_accumulated_probe_table" descrs="On|Off" name="synchaccumprobetable" type="Boolean" values="on|off"/>
+      <wddcwstp descr="Output_model_to_file" descrs="On|Off" name="savefile" type="Boolean" values="on|off"/>
+      <uqcvcarq descr="Number_of_nodes" name="nn" type="Double"/>
+      <tzucewst descr="Number_of_slots" name="sgenn" type="Double"/>
+      <fzbbvvcq descr="Use_batch_license" descrs="On|Off" name="batchlic" type="Boolean" values="on|off"/>
+      <fuzfxyys descr="Scheduler_type" descrs="General|HPCS_2008_2012_2016|OGS/GE|SLURM|PBS|Not_distributed" name="clustertype" type="String" values="general|whpc2008|sge|slurm|pbs|none"/>
+      <cuqvcdwq descr="Host_file" name="hostfile" type="String"/>
+      <ffqdzccb descr="Bootstrap_server" name="mpibootstrap" type="String"/>
+      <zzwwstbr descr="Scheduler" name="scheduler" type="String"/>
+      <ydqfrasv descr="User" name="user" type="String"/>
+      <xdarfxey descr="Queue_name" name="sgequeue" type="String"/>
+      <fzwbcvbt descr="Specify_external_COMSOL_batch_directory_path" descrs="On|Off" name="specbatchdir" type="String" values="on|off"/>
+      <waxcasdc descr="Directory" name="rundir" type="String"/>
+      <syqwvzbq descr="Specify_external_COMSOL_installation_directory_path" descrs="On|Off" name="speccomsoldir" type="String" values="on|off"/>
+      <czqquecq descr="Directory" name="comsoldir" type="String"/>
+      <xwqtfxyp descr="Settings" descrs="User_controlled|Preferences_controlled" name="remotesettings" type="String" values="on|off"/>
+      <bqvdvzqf descr="Run_remote" descrs="On|Off" name="remote" type="String" values="on|off"/>
+      <bqtwarrq descr="Remote_invoke_command" descrs="None|#SSH|Write_command_to_file|#MPI|User" name="remotecmd" type="String" values="none|ssh|file|mpi|user"/>
+      <xzebbrab descr="SSH_command" descrs="#SSH|#Putty|User" name="sshcmd" type="String" values="ssh|putty|user"/>
+      <tqvrzqxv descr="Command" name="sshusercmd" type="String"/>
+      <eutqfeba descr="SSH_directory" name="sshpath" type="String"/>
+      <auzsurzz descr="SSH_key_file" name="sshkey" type="String"/>
+      <fbvwafts descr="Forward_ports" name="sshports" type="StringArray"/>
+      <wrwrvrww descr="Port_host" name="sshporthost" type="String"/>
+      <rfzecbqu descr="SSH_user" name="sshuser" type="String"/>
+      <udqywsub descr="File_with_command_line" name="filecmd" type="String"/>
+      <eqzwwytt descr="Command" name="remoteusercmd" type="String"/>
+      <xcuftxae descr="File_transfer_command" descrs="None|#SCP|File_list|User" name="filetransfercmd" type="String" values="none|scp|file|user"/>
+      <tvcxtyqb descr="SCP_command" descrs="#SCP|#Putty|User" name="scpcmd" type="String" values="scp|putty|user"/>
+      <crcvwcyd descr="Command" name="scpusercmd" type="String"/>
+      <yzfvcbba descr="SCP_directory" name="scppath" type="String"/>
+      <zvzauvwz descr="SCP_key_file" name="scpkey" type="String"/>
+      <dbuddequ descr="SCP_user" name="scpuser" type="String"/>
+      <xcffyxup descr="File_with_list_of_files_to_remote" name="filetransferto" type="String"/>
+      <aaqbufrw descr="File_with_list_of_files_from_remote" name="filetransferfrom" type="String"/>
+      <wtzuftva descr="To_remote_command" name="filetransfertousercmd" type="String"/>
+      <rrssyufa descr="From_remote_command" name="filetransferfromusercmd" type="String"/>
+      <cuyvyqzd descr="Remote_hosts_list" descrs="Table|File" name="remotehostssrc" type="String" values="table|file"/>
+      <xbuaxevd descr="Remote_hosts" name="remotehosts" type="StringArray"/>
+      <fwccdtzp descr="Remote_hosts_file" name="remotehostsfile" type="String"/>
+      <aszfuaxw descr="Remote_OS" descrs="Native|#Windows|#Linux" name="remoteos" type="String" values="native|windows|linux"/>
+      <fdurwfsf descr="Method" descrs="Coordinate_search|Monte_Carlo|Nelder_Mead|BOBYQA|COBYLA|SNOPT|MMA|Levenberg-Marquardt" name="optsolver" type="String" values="coordsearch|montecarlo|neldermead|bobyqa|cobyla|snopt|mma|lm"/>
+      <rsctazyx descr="Optimality_tolerance" name="opttol" type="Double"/>
+      <wfsxwyvv descr="Random_seed" descrs="On|Off" name="useseed" type="Boolean" values="on|off"/>
+      <uxsedtba descr="Random_seed" name="randseed" type="Int"/>
+      <rvuufqsr descr="Optimality_tolerance" name="opttolinner" type="Double"/>
+      <tdtqucaa descr="Study_step" descrs="None|A_reference_to_a_study_step" isref="true" name="gradientStep" type="String" values="none|{StudyFeature}"/>
+      <ycaqxyta descr="Maximum_number_of_model_evaluations" name="nsolvemax" type="Int"/>
+      <sbvxvruc descr="Lsq_time_param_method" descrs="Manual" name="lsqdatamethod" type="String" values="manual"/>
+      <byyfacsu descr="Expression" name="optobj" type="StringArray"/>
+      <zzeyqbyd descr="Description" name="descr" type="StringArray"/>
+      <yzqqdvvu descr="Evaluate_for[studystep]" descrs="None" name="optobjEvaluateFor" type="StringArray" values=""/>
+      <ycezrsxx descr="Active" descrs="On|Off" name="objectiveActive" type="StringArray" values="on|off"/>
+      <zquffuzf descr="Evaluate_for[studystep]" descrs="None" name="objectiveEvaluateFor" type="StringArray" values=""/>
+      <fbsatees descr="Objective_functions_from_physics_interface" name="objectiveName" type="StringArray"/>
+      <zuyfedry descr="Type" descrs="Minimization|Maximization" name="objectivetype" type="String" values="minimization|maximization"/>
+      <ywrbsrzv descr="Multiple_objectives" descrs="Sum_of_objectives|Minimum_of_objectives|Maximum_of_objectives" name="multiobjective" type="String" values="sum|min|max"/>
+      <crerdeab descr="Solution" descrs="Auto|Use_first|Use_last|Sum_of_objectives|Minimum_of_objectives|Maximum_of_objectives" name="objectivesolution" type="String" values="auto|first|last|sum|min|max"/>
+      <tczxdtbc descr="Outer solution" descrs="Sum_of_objectives|Minimum_of_objectives|Maximum_of_objectives" name="outersolution" type="String" values="sum|min|max"/>
+      <yqecxqrx descr="Initial_value" name="initval" type="StringArray"/>
+      <zfxxawau descr="Scale" name="scale" type="StringArray"/>
+      <yvzfafes descr="Lower_bound" name="lbound" type="StringArray"/>
+      <aeswwzva descr="Upper_bound" name="ubound" type="StringArray"/>
+      <raqqzfby descr="Solve_for" descrs="On|Off" name="controlVariableActive" type="StringArray" values="on|off"/>
+      <ywesyfss descr="Control_variables_from_physics_interface" name="controlVariableName" type="StringArray"/>
+      <wqtqxwrt descr="Expression" name="constraintExpression" type="StringArray"/>
+      <sbdtxrrf descr="Lower_bound" name="constraintLbound" type="StringArray"/>
+      <vuvasazx descr="Upper_bound" name="constraintUbound" type="StringArray"/>
+      <wtfetwxb descr="Evaluate_for[studystep]" descrs="None" name="constraintEvaluateFor" type="StringArray" values=""/>
+      <zttxyvvt descr="Active" descrs="On|Off" name="constraintActive" type="StringArray" values="on|off"/>
+      <bdwvdrvc descr="Evaluate_for[studystep]" descrs="None" name="constraintEvaluateForPhysics" type="StringArray" values=""/>
+      <euweqxdp descr="Constraints_from_physics_interface" name="constraintName" type="StringArray"/>
+      <wzburqrt descr="Constraint_handling_method" descrs="Penalty|Augmented_Lagrangian" name="constrmethod" type="String" values="penalty|augLagrange"/>
+      <trfesvbw descr="Penalty_parameter_rho_opt" descrs="Automatic|Manual" name="coefrho" type="String" values="auto|manual"/>
+      <bvuaascv descr="rho_opt" name="rho" type="Double"/>
+      <wzzrbzuv descr="Tolerance_factor_for_the_penalty_parameter_tau_opt" name="tau" type="Double"/>
+      <ratzyabe descr="Multiplication_factor_for_the_penalty_parameter_gamma_opt" name="gamma" type="Double"/>
+      <cttvvvrs descr="Upper_bound_on_Lagrange_multipliers_mu_opt" name="mu" type="Double"/>
+      <fezeexwc descr="Maximum_number_of_augmented_iterations" name="nlagevals" type="Int"/>
+      <eydduurb descr="Tolerance_for_the_subsolver_delta_opt" descrs="Dynamic_I|Dynamic_II|Static" name="deltachoice" type="String" values="dynamic|dynamic2|static"/>
+      <ecwfqvty descr="a_opt" name="aCoef" type="Double"/>
+      <byeewbsv descr="delta_opt" name="delta" type="Double"/>
+      <varqdtfc descr="Constraint_tolerance" name="constrtol" type="Double"/>
+      <ccsyqebe descr="Keep_objective_values_in_table" descrs="On|Off" name="useobjtable" type="String" values="on|off"/>
+      <trsrcxtd descr="Output_table" descrs="New|A_reference_to_a_model_entity" isref="true" name="objtable" type="String" values="new|{TableFeature}"/>
+      <bwvtyvux descr="Show_individual_objective_values" descrs="On|Off" name="showindobj" type="Boolean" values="on|off"/>
+      <swcrwzby descr="Table_graph" descrs="On|Off" name="plotobj" type="String" values="on|off"/>
+      <rbydwteq descr="Plot_window" descrs="Graphics|New_window" name="window" type="String" values="graphics|new"/>
+      <tbxvyacs descr="Keep_constraint_values_in_table" descrs="On|Off" name="useconstrtable" type="String" values="on|off"/>
+      <bxcafbcv descr="Output_table" descrs="New|A_reference_to_a_model_entity" isref="true" name="constrtable" type="String" values="new|{TableFeature}"/>
+      <bvavvycd descr="Optimization_log" descrs="Minimal|Normal[usual]|Detailed" name="convinfo" type="String" values="off|on|detailed"/>
+      <bzvwtcat descr="Keep_solutions_in_memory" descrs="Automatic|Only_last|All" name="keepsol" type="String" values="auto|last|all"/>
+      <yasqwddy descr="Stop_if_error" descrs="On|Off" name="err" type="Boolean" values="on|off"/>
+      <fabqdefy descr="Gradient_method" descrs="Forward|Adjoint" name="gradientMethod" type="String" values="forward|adjoint"/>
+      <cyrrazzb descr="Multiple_objectives" descrs="Sum_of_objectives" name="multiobjective" type="String" values="sum"/>
+      <bdearzta descr="Solution" descrs="Auto" name="objectivesolution" type="String" values="auto"/>
+      <ftwwdyad descr="Value_type" descrs="Real|Complex" name="valuetype" type="StringArray" values="real|complex"/>
+      <sbbwvwqe descr="Study_step" descrs="None|A_reference_to_a_study_step" isref="true" name="parameterEstimationStep" type="String" values="none|{StudyFeature}"/>
+      <aqqvbdze descr="Model_expression" name="modelExpression" type="String"/>
+      <sbctwyxb descr="Reference_data_source" descrs="Interpolation_function|User_defined" name="referenceDataSource" type="String" values="function|userDefined"/>
+      <xzfbqetb descr="Reference_function" descrs="None|A_reference_to_an_interpolation_function" isref="true" name="referenceFunction" type="String" values="none|{FunctionFeature}"/>
+      <ezatxsde descr="Reference_expression" name="referenceExpression" type="String"/>
+      <dadquavp descr="Method" descrs="BOBYQA|Levenberg-Marquardt|SNOPT" name="optsolver" type="String" values="bobyqa|lm|snopt"/>
+      <fursqvud descr="Lsq_time_param_method" descrs="Manual|From_lsq_objective" name="lsqdatamethod" type="String" values="manual|lsq"/>
+      <yuqtzexf descr="Model_reduction_method" descrs="Modal|AWE" name="reducedModelType" type="String" values="modal|awe"/>
+      <yeeqrzeu descr="Training_study" descrs="None|A_reference_to_a_study" isref="true" name="trainingStudy" type="String" values="none|{Study}"/>
+      <fzyqcasq descr="Defined_by_study_step" descrs="Automatic|A_reference_to_a_study_step" isref="true" name="trainingStep" type="String" values="auto|{StudyFeature}"/>
+      <eqqueere descr="Compute" descrs="Initially|Always" name="trainingRecompute" type="String" values="initially|always"/>
+      <sutyutux descr="Unreduced_model_study" descrs="None|A_reference_to_a_study" isref="true" name="unreducedModelStudy" type="String" values="none|{Study}"/>
+      <dyfuqxbs descr="Defined_by_study_step" descrs="None|A_reference_to_a_study_step" isref="true" name="unreducedModelStep" type="String" values="none|{StudyFeature}"/>
+      <zttbzaqy descr="Reduced_model_simulation" descrs="On|Off" name="romSolveTransient" type="String" values="on|off"/>
+      <ydadutxt descr="Synchronize_with_defined_study_step" descrs="Yes|Manual" name="synchtransientprop" type="String" values="yes|manual"/>
+      <zbqxvdva descr="Reduced_model_simulation" descrs="On|Off" name="romSolveFrequency" type="String" values="on|off"/>
+      <zbuxfxub descr="Synchronize_with_defined_study_step" descrs="Yes|Manual" name="synchfreqprop" type="String" values="yes|manual"/>
+      <zdatutrr descr="Create_reduced_model" descrs="On|Off" name="soltypeonline" type="String" values="on|off"/>
+      <azxbxdas descr="Reduced_model" descrs="New|" isref="true" name="romdata" type="String" values="new|{ReducedModel}"/>
+      <aryvcaqu descr="Enable_reconstruction" descrs="On|Off" name="romReconstruct" type="Boolean" values="on|off"/>
+      <xqqcwevt descr="Store_reduced_matrices" descrs="On|Off" name="soltypemat" type="Boolean" values="on|off"/>
+      <afwuafys descr="Unreduced_model_study" descrs="None|A_reference_to_a_study" isref="true" name="unreducedModelStudyAWE" type="String" values="none|{Study}"/>
+      <tqcccest descr="Defined_by_study_step" descrs="None|A_reference_to_a_study_step" isref="true" name="unreducedModelStepAWE" type="String" values="none|{StudyFeature}"/>
+      <seurudsq descr="Relative_tolerance_for_adaptation" name="rtol" type="Double"/>
+      <swyaztyd descr="#geometricNonlinearity" descrs="On|Off" name="geometricNonlinearity" type="Boolean" values="on|off"/>
+      <detefdxf descr="#loadcase" name="loadcase" type="StringArray"/>
+      <fbyabcxc descr="#errestandadap" name="errestandadap" type="String"/>
+      <cxafvwvu descr="t description" name="tdescr" type="String"/>
+      <cuwqcqur descr="Use_asymptotic_waveform_evaluation" descrs="On|Off" name="awe" type="Boolean" values="on|off"/>
+      <sdraaxqr descr="Use_rtol" descrs="On|Off" name="usertol" type="Boolean" values="on|off"/>
+      <wssaxzrb descr="#goalerrest" descrs="On|Off" name="goalerrest" type="Boolean" values="on|off"/>
+      <xyaysfyd descr="#useloadcase" descrs="On|Off" name="useloadcase" type="Boolean" values="on|off"/>
+      <eeyybcff descr="#adaption" descrs="On|Off" name="adaption" type="Boolean" values="on|off"/>
+      <veafewdz descr="#timeadaption" descrs="On|Off" name="timeadaption" type="Boolean" values="on|off"/>
+      <rcyvsbzr descr="#autoremesh" descrs="On|Off" name="autoremesh" type="Boolean" values="on|off"/>
+      <czaeqqud descr="#optimization" descrs="On|Off" name="optimization" type="Boolean" values="on|off"/>
+      <zddrwqxf descr="#useparam" descrs="On|Off" name="useparam" type="Boolean" values="on|off"/>
+      <zqdyecrv descr="#usetunit" descrs="On|Off" name="usetunit" type="Boolean" values="on|off"/>
+      <sucfeyxf descr="#soltypesol" descrs="On|Off" name="soltypesol" type="Boolean" values="on|off"/>
+      <wdcdbdxe descr="#linearity" name="linearity" type="String"/>
+      <rqwfaqcw descr="Parameters" name="pnameawe" type="StringArray"/>
+      <zsffvuza descr="Use" name="useInput" type="StringArray"/>
+      <yzeuxqbf descr="Training_expression" name="trainingExpression" type="StringArray"/>
+      <ddueszds descr="Value" name="initval" type="StringArray"/>
+      <teaudxyy descr="Expression" name="qoiexpr" type="StringArray"/>
+      <vbcasczw descr="Variable" name="qoiname" type="StringArray"/>
+      <efvxvwsp descr="Description" name="qoidescr" type="StringArray"/>
+      <wwaascvp descr="Unit" name="qoiunit" type="StringArray"/>
+      <sswsusxv descr="Expression" name="awefunc" type="StringArray"/>
+      <wxdedbru descr="Variable" name="awevar" type="StringArray"/>
+      <dfezzzdq descr="Description" name="awefuncdesc" type="StringArray"/>
+      <cefbftzd descr="Unit" name="awefuncunit" type="StringArray"/>
+      <xxacfrrp descr="Scale" name="awefuncscale" type="StringArray"/>
+      <rttftxfd descr="Use_for_adaptation" descrs="On|Off" name="awefuncuse" type="StringArray" values="on|off"/>
+      <xxrdyuup descr="Reduced_model" descrs="None|" isref="true" name="romdata" type="String" values="none|{ReducedModel}"/>
+      <zxxadbqx descr="Correlations" descrs="Not_correlated|Correlated" name="correlationtype" type="String" values="none|full"/>
+      <eybqwfcp descr="Input_configuration" name="psdsources" type="StringMatrix"/>
+      <syfstfbd descr="Output_selection" name="psdtargets" type="StringMatrix"/>
+      <arrsetbd descr="Cross_output_selection" name="crosstargets" type="StringMatrix"/>
+      <facrbcyc descr="Parameter_list_type" descrs="Frequency|Fraction|Spread" name="pout" type="String" values="plist|fraction|spread"/>
+      <zusyeqfd descr="Volume_unit" name="tunit" type="String" values="nm^3|µm^3|nl|mm^3|µl|ml|cm^3|cl|dl|pt|qt|l|dm^3|gal|impgal|m^3|kl|Ml|Gl|km^3|Mm^3|Gm^3"/>
+      <dcrxurxb descr="Volumes" name="tlist" type="DoubleArray"/>
+      <swrqsxda descr="Time_step_specification" descrs="Specify_time_steps|Specify_maximum_path_length" name="timestepspec" type="String" values="specifytime|specifylength"/>
+      <uaezduaq descr="Length_unit" name="lunit" type="String" values="Å|nm|µin|µm|mil|mm|cm|in|dm|ft|yd|m|km|mi|nmi|Mm|Gm"/>
+      <zyzbffsx descr="Lengths" name="llist" type="DoubleArray"/>
+      <zcaedvsb descr="Characteristic_group_velocity" name="charvel" type="Double"/>
+      <xayctqxp descr="Stop_condition" descrs="None|No_active_rays_remaining|Active_rays_have_intensity_below_threshold|Active_rays_exceed_maximum_number_of_reflections" name="raystopcond" type="String" values="nostop|noactive|rayintensity|reflections"/>
+      <twuqacbt descr="Threshold_ray_intensity" name="thresholdintensity" type="Double"/>
+      <ytqtzetv descr="Number_of_reflections" name="numberofreflections" type="Int"/>
+      <cxdfrfdp descr="Mean_energies_unit" name="punit" type="String" values="nV|abvolt|µV|mV|cV|dV|V|statvolt|kV|MV|GV"/>
+      <ywqfxebe descr="Mean_energies" name="plist" type="DoubleArray"/>
+      <xvdryead descr="Townsends_unit" name="punit" type="String"/>
+      <ucxasxyp descr="Reduced_electric_fields" name="plist" type="DoubleArray"/>
+      <fusqrsfw descr="Selection" descrs="All|From_list|Manual" isref="true" name="notsolnum" type="String" values="all|from_list|manual"/>
+      <cruwdwae descr="Adaptation_and_error_estimates" descrs="Error_estimates|None" name="errestandadap" type="String" values="errest|none"/>
+      <yxtdweqs descr="Keep_values_of_variables_not_solved_for_in_the_Fatigue_solution" descrs="On|Off" name="keepnotsolstatic" type="Boolean" values="on|off"/>
+      <vczuwwdw descr="Prescribed_by" descrs="Initial_expression|Solution" name="linpmethod" type="String" values="init|sol"/>
+      <bazqezwa descr="Input_study" descrs="Current[present]|A_reference_to_a_study" isref="true" name="linpstudy" type="String" values="current|{Study}"/>
+      <fezyzqtr descr="Solution" descrs="Current[present]|A_reference_to_a_solution" isref="true" name="linpsol" type="String" values="current|{SolverSequence}"/>
+      <zvseqswy descr="Use" descrs="Current[present]|A_reference_to_a_solution" isref="true" name="linpsoluse" type="String" values="current|{SolverSequence}"/>
+      <razseqdu descr="Start_time" name="fftstarttime" type="Double"/>
+      <ddfxzbxu descr="End_time" name="fftendtime" type="Double"/>
+      <ucvcurvu descr="Maximum_output_frequency" name="fftmaxfreq" type="Double"/>
+      <yydtvxfw descr="Scaling" descrs="Continuous_fourier_transform|Discrete_fourier_transform" name="fftscaling" type="String" values="cont|discrete"/>
+      <euuzrvqb descr="Use_window_function" descrs="On|Off" name="fftwindowfw" type="String" values="on|off"/>
+      <tduvzats descr="Window_function" descrs="From_expression|Cutoff|Rectangular[function]|Gaussian|Hamming|Hanning|Blackman|Tukey" name="fftwintypefw" type="String" values="fromexpr|cutoff|rectangle|gauss|hamming|hanning|blackman|tukey"/>
+      <tsxvfscu descr="Expression" name="fftwinexpr" type="String"/>
+      <zacctatq descr="Cutoff_fraction" name="fftwincutoff" type="Double"/>
+      <tasqdyrd descr="Window_start" name="fftwinminfw" type="Double"/>
+      <crbbrrwy descr="Window_end" name="fftwinmaxfw" type="Double"/>
+      <xdtbdsux descr="Window_center" name="fftwincenterfw" type="Double"/>
+      <ueaczxbb descr="Standard_deviation" name="fftwindev" type="Double"/>
+      <yvzvdrwr descr="Width" name="fftwinalpha" type="Double"/>
+      <fbudquxr descr="Do_not_store_negative_frequencies_for_real_input" descrs="On|Off" name="fftrealstore" type="Boolean" values="on|off"/>
+      <dazbzqtz descr="Times" name="fftouttrange" type="DoubleArray"/>
+      <yxcfuxbt descr="Use_window_function" descrs="On|Off" name="fftwindowinv" type="String" values="on|off"/>
+      <sazafwrw descr="Window_function" descrs="From_expression|Cutoff|Rectangular[function]|Gaussian|Hamming|Hanning|Blackman|Tukey" name="fftwintypeinv" type="String" values="fromexpr|cutoff|rectangle|gauss|hamming|hanning|blackman|tukey"/>
+      <dyccrcdv descr="Frequency_unit" name="winpunit" type="String" values="mHz|cHz|dHz|Hz|kHz|MHz|GHz|THz"/>
+      <ytecwcsz descr="Window_start" name="fftwinmininv" type="Double"/>
+      <abrufwzq descr="Window_end" name="fftwinmaxinv" type="Double"/>
+      <tzbdcucr descr="Window_center" name="fftwincenterinv" type="Double"/>
+      <fbzfpppp descr="Window_parameter" name="fftwinalpha" type="Double"/>
+      <zqewdxcp descr="Add_stationary_solution" descrs="On|Off" name="addstatsol" type="String" values="on|off"/>
+      <tzadzfcd descr="Method" descrs="Solution|Initial_expression" name="statmethod" type="String" values="sol|init"/>
+      <yytsdyzb descr="Study" descrs="Zero_solution|A_reference_to_a_study" isref="true" name="statstudy" type="String" values="zero|{Study}"/>
+      <exruzdqw descr="Solution" descrs="Current[present]|A_reference_to_a_solution" isref="true" name="statsol" type="String" values="current|{SolverSequence}"/>
+      <uvyruqxd descr="Use" descrs="Current[present]|A_reference_to_a_solution" isref="true" name="statsoluse" type="String" values="current|{SolverSequence}"/>
+      <ddqzfvxp descr="Solution_number" descrs="Automatic|First|Last|Interpolated|Manual" name="statsolnum" type="String" values="auto|first|last|interp|manual"/>
+      <xqrzerqy descr="Selection" isref="true" name="statsolnum" type="Int" values="1"/>
+      <ayfbfebc descr="Time" name="statt" type="Double"/>
+      <rqcdebts descr="Index" name="statmanualsolnum" type="DoubleArray"/>
+      <ctdyavyt descr="Wavelength_unit" name="punit" type="String" values="Å|nm|µin|µm|mil|mm|cm|in|dm|ft|yd|m|km|mi|nmi|Mm|Gm"/>
+      <tezswxrs descr="Wavelengths" name="plist" type="DoubleArray"/>
+      <byseyfad descr="Continuation_parameter" descrs="No_parameter|#lambda0" name="pcontinuation" type="String" values="|lambda0"/>
+      <wvytceer descr="AWE_expression_type" descrs="Physics_controlled|User_controlled" name="awefunctype" type="String" values="physicscontrolled|usercontrolled"/>
+      <szewqcze descr="Expressions" name="awefunc" type="StringArray"/>
+      <ufuqdaub descr="Transform[of_eigenvalues]" descrs="None|Out-of-plane_wave_number" name="transform" type="String" values="none|outofplanewavenumber"/>
+      <ayzxfeub descr="Mode_analysis_frequency" name="modeFreq" type="String"/>
+      <ruayzdcz descr="Mode_search_method" descrs="Manual|Region|All_(filled_matrix)" name="eigmethod" type="String" values="manual|region|all"/>
+      <twywtxud descr="Desired_number_of_modes" descrs="On|Off" name="neigsactive" type="Boolean" values="on|off"/>
+      <wbvybzqe descr="Desired_number_of_modes" name="neigs" type="Int"/>
+      <uqzdbucd descr="Unit" name="eigunit" type="String" values="|nrad/m|µrad/m|mrad/m|crad/m|drad/m|rad/m|krad/m|Mrad/m|Grad/m"/>
+      <vscutbar descr="Search_for_modes_around" descrs="On|Off" name="shiftactive" type="Boolean" values="on|off"/>
+      <ceedrwfy descr="Search_for_modes_around" name="shift" type="String"/>
+      <rdwyrvcc descr="Mode_search_method_around_shift" descrs="Closest_in_absolute_value|Larger_real_part|Smaller_real_part|Larger_imaginary_part|Smaller_imaginary_part" name="eigwhich" type="String" values="lm|lr|sr|li|si"/>
+      <uzfussbf descr="Approximate_number_of_modes" name="appnreigs" type="Int"/>
+      <srcyywue descr="Maximum_number_of_modes" name="maxnreigs" type="Int"/>
+      <zqrqtadu descr="Maximum_matrix_size" name="maxmatsize" type="Int"/>
+      <fzcutfad descr="Transform[of_eigenvalues]" descrs="None" name="transform" type="String" values="none"/>
+      <eudswyye descr="Port_name" name="PortName" type="String"/>
+      <azrazttu descr="Solve_only_specified_coils" descrs="On|Off" name="SpecifyCoils" type="String" values="on|off"/>
+      <bzffxucr descr="Coil_names" name="CoilName" type="String"/>
+      <edszvvyq descr="Solve_only_for_specified_sources[source_sweep]" descrs="On|Off" name="specifysources" type="String" values="on|off"/>
+      <zttzvyda descr="Source_names[source_sweep]" name="sourcenames" type="String"/>
+      <vtvuyffv descr="Frequency" name="freq" type="Double"/>
+      <dczwrxts descr="Current_distribution_type" descrs="Primary|Secondary" name="initType" type="String" values="primary|secondary"/>
+      <vuwtybcu descr="Desired_number_of_buckling_modes" name="neigs" type="Int"/>
+      <dtryrvwv descr="Desired_number_of_buckling_modes" descrs="On|Off" name="neigsactive" type="Boolean" values="on|off"/>
+    </Properties>
+  </model.study>
+</COMSOLCompletionData>

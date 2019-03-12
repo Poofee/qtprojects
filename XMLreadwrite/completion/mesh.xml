@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<COMSOLCompletionData>
+  <model.mesh geomspecific="true">
+    <Mesh topic="MeshList">
+      <S1D axi="false" dim="1">
+        <MeshSequence descr="Mesh" id="mesh" props="vbyuuwcr zfdxdvvz vtyfvcst" topic="MeshSequence">
+          <ModelEntityImage>
+            <Mesh descr="Mesh" id="image" props="cbuuzrdy wtfqcrcq cuawbuxb vfwfbazx dusvusvq fuxcwvee scxtvcxp bzadtrup rzswusav wqefaafr tysuqfzv xadtwseq txbeycdb wqbuwvbe fdyrwbca esfveevc vxutxzvw eexqebrp fvewcusa sssdbqss wqtdcscv zvyrryfu vtqdxtaq uwacvaqv aqcttycw zbuytuzs fxabvwrp swyqzsbu rxddsydb bavstweq bzbfaexq zdusdzxt bwqudurq xbvzvazt vvfcdrea bezeetby urefcwry fvryarft" topic="entityImage"/>
+          </ModelEntityImage>
+          <MeshFeature>
+            <Edge descr="Edge" id="edg" topic="mesh_Edge">
+              <Size descr="Size" id="size" props="eurzbavu vdzddswe wxfebcfr yvyuxbse bqzsyfrv cqdxyfqv bxeqvzds rasvdsus cyqvcsdx yysuzcvr rxrevses bvaxztva ctzvbeqr" topic="mesh_Size"/>
+              <SizeExpression descr="Size_expression" id="se" props="uusrrvcz sxwcecfr rbaxdrrr fawcxbqt xtcrbvcp sbsvbfzx tsvcazwd uzqcqcxf fucyfzuw rafqzqrp cbfzezcs wcfuuxdw tqecbuzx crusxvft bvaadtqw aqucvufa bwsvcsfe ywxxsebp ruvsdfxe tfztfaab cwafqrvb vcfbxbuw" topic="mesh_SizeExpression"/>
+              <Distribution descr="Distribution" id="dis" props="crvcczqr drbcfxae tyddqffu zexfdfud ffvzuavy yeytxstd xqcdbdup ssyrcaqv" topic="mesh_Distribution"/>
+            </Edge>
+            <ModelEntityImage>
+              <MeshFeature descr="Mesh_feature" id="image" props="cbuuzrdy wtfqcrcq cuawbuxb sxswydct dusvusvq fuxcwvee scxtvcxp bzadtrup rzswusav wqefaafr tysuqfzv xadtwseq txbeycdb wqbuwvbe fdyrwbca esfveevc vxutxzvw eexqebrp fvewcusa sssdbqss wqtdcscv zvyrryfu vtqdxtaq uwacvaqv aqcttycw zbuytuzs fxabvwrp swyqzsbu rxddsydb bavstweq bzbfaexq zdusdzxt bwqudurq xbvzvazt vvfcdrea bezeetby urefcwry fvryarft" topic="entityImage"/>
+            </ModelEntityImage>
+            <Copy descr="Copy" id="copy" props="acxztzst tbbcuzvd" topic="mesh_Copy"/>
+            <Refine descr="Refine" id="ref" props="wwxtydex" topic="mesh_Refine"/>
+            <Adapt descr="Adapt" id="ada" props="sbsvbfzx tsvcazwd uzqcqcxf fucyfzuw rafqzqrp cbfzezcs wcfuuxdw tqecbuzx crusxvft bvaadtqw aqucvufa bwsvcsfe sxwcecfr" topic="mesh_Adapt"/>
+            <Reference descr="Reference" id="rf" props="wawyvqwf" topic="mesh_Reference"/>
+            <Size descr="Size" id="size" props="eurzbavu vdzddswe wxfebcfr yvyuxbse bqzsyfrv cqdxyfqv bxeqvzds rasvdsus cyqvcsdx yysuzcvr rxrevses bvaxztva ctzvbeqr" topic="mesh_Size"/>
+            <SizeExpression descr="Size_expression" id="se" props="uusrrvcz sxwcecfr rbaxdrrr fawcxbqt xtcrbvcp sbsvbfzx tsvcazwd uzqcqcxf fucyfzuw rafqzqrp cbfzezcs wcfuuxdw tqecbuzx crusxvft bvaadtqw aqucvufa bwsvcsfe ywxxsebp ruvsdfxe tfztfaab cwafqrvb vcfbxbuw" topic="mesh_SizeExpression">
+              <Scale descr="Scale" id="sca" props="buuvcayy" topic="mesh_Scale"/>
+            </SizeExpression>
+            <Distribution descr="Distribution" id="dis" props="crvcczqr drbcfxae tyddqffu zexfdfud ffvzuavy yeytxstd xqcdbdup ssyrcaqv" topic="mesh_Distribution"/>
+            <Scale descr="Scale" id="sca" props="buuvcayy" topic="mesh_Scale"/>
+          </MeshFeature>
+        </MeshSequence>
+      </S1D>
+      <S2D axi="false" dim="2">
+        <MeshSequence descr="Mesh" id="mesh" props="vbyuuwcr zfdxdvvz vtyfvcst" topic="MeshSequence">
+          <ModelEntityImage>
+            <Mesh descr="Mesh" id="image" props="cbuuzrdy wtfqcrcq cuawbuxb uuaxdywt vbszqsyy fdvtrscr vfwfbazx dusvusvq fuxcwvee scxtvcxp bzadtrup rzswusav wqefaafr tysuqfzv xadtwseq txbeycdb wqbuwvbe fdyrwbca esfveevc vxutxzvw eexqebrp fvewcusa sssdbqss wqtdcscv zvyrryfu vtqdxtaq uwacvaqv aqcttycw zbuytuzs fxabvwrp swyqzsbu rxddsydb bavstweq bzbfaexq zdusdzxt bwqudurq xbvzvazt vvfcdrea bezeetby urefcwry fvryarft" topic="entityImage"/>
+          </ModelEntityImage>
+          <MeshFeature>
+            <FreeTri descr="Free_triangular" id="ftri" props="rastscuw dvxdyewz vtvvuawb frqfaeyf uxcutyvp swssvdsv bfdstscz" topic="mesh_FreeTri">
+              <Size descr="Size" id="size" props="eurzbavu vdzddswe wxfebcfr yvyuxbse bqzsyfrv cqdxyfqv bxeqvzds rasvdsus cyqvcsdx yysuzcvr rxrevses bvaxztva ctzvbeqr" topic="mesh_Size"/>
+              <SizeExpression descr="Size_expression" id="se" props="uusrrvcz sxwcecfr rbaxdrrr fawcxbqt xtcrbvcp sbsvbfzx tsvcazwd uzqcqcxf fucyfzuw rafqzqrp cbfzezcs wcfuuxdw tqecbuzx crusxvft bvaadtqw aqucvufa bwsvcsfe ywxxsebp ruvsdfxe tfztfaab cwafqrvb vcfbxbuw" topic="mesh_SizeExpression"/>
+              <Distribution descr="Distribution" id="dis" props="crvcczqr drbcfxae tyddqffu zexfdfud ffvzuavy yeytxstd xqcdbdup ssyrcaqv" topic="mesh_Distribution"/>
+              <CornerRefinement descr="Corner_refinement" id="cr" props="ryvfeafz cyvatuwc cdcuyrey" topic="mesh_CornerRefinement"/>
+            </FreeTri>
+            <ModelEntityImage>
+              <MeshFeature descr="Mesh_feature" id="image" props="cbuuzrdy wtfqcrcq cuawbuxb uuaxdywt vbszqsyy fdvtrscr sxswydct dusvusvq fuxcwvee scxtvcxp bzadtrup rzswusav wqefaafr tysuqfzv xadtwseq txbeycdb wqbuwvbe fdyrwbca esfveevc vxutxzvw eexqebrp fvewcusa sssdbqss wqtdcscv zvyrryfu vtqdxtaq uwacvaqv aqcttycw zbuytuzs fxabvwrp swyqzsbu rxddsydb bavstweq bzbfaexq zdusdzxt bwqudurq xbvzvazt vvfcdrea bezeetby urefcwry fvryarft" topic="entityImage"/>
+            </ModelEntityImage>
+            <FreeQuad descr="Free_quad" id="fq" props="rastscuw dvxdyewz vtvvuawb frqfaeyf uxcutyvp swssvdsv waqctbwf" topic="mesh_FreeQuad">
+              <Size descr="Size" id="size" props="eurzbavu vdzddswe wxfebcfr yvyuxbse bqzsyfrv cqdxyfqv bxeqvzds rasvdsus cyqvcsdx yysuzcvr rxrevses bvaxztva ctzvbeqr" topic="mesh_Size"/>
+              <SizeExpression descr="Size_expression" id="se" props="uusrrvcz sxwcecfr rbaxdrrr fawcxbqt xtcrbvcp sbsvbfzx tsvcazwd uzqcqcxf fucyfzuw rafqzqrp cbfzezcs wcfuuxdw tqecbuzx crusxvft bvaadtqw aqucvufa bwsvcsfe ywxxsebp ruvsdfxe tfztfaab cwafqrvb vcfbxbuw" topic="mesh_SizeExpression"/>
+              <Distribution descr="Distribution" id="dis" props="crvcczqr drbcfxae tyddqffu zexfdfud ffvzuavy yeytxstd xqcdbdup ssyrcaqv" topic="mesh_Distribution"/>
+              <CornerRefinement descr="Corner_refinement" id="cr" props="ryvfeafz cyvatuwc cdcuyrey" topic="mesh_CornerRefinement"/>
+            </FreeQuad>
+            <Map descr="Mapped" id="map" props="frqfaeyf uxcutyvp swssvdsv zbdbsdce rastscuw" topic="mesh_Map">
+              <Size descr="Size" id="size" props="eurzbavu vdzddswe wxfebcfr yvyuxbse bqzsyfrv cqdxyfqv bxeqvzds rasvdsus cyqvcsdx yysuzcvr rxrevses bvaxztva ctzvbeqr" topic="mesh_Size"/>
+              <Distribution descr="Distribution" id="dis" props="crvcczqr drbcfxae tyddqffu zexfdfud ffvzuavy yeytxstd xqcdbdup ssyrcaqv" topic="mesh_Distribution"/>
+            </Map>
+            <Edge descr="Edge" id="edg" props="frqfaeyf uxcutyvp swssvdsv" topic="mesh_Edge">
+              <Size descr="Size" id="size" props="eurzbavu vdzddswe wxfebcfr yvyuxbse bqzsyfrv cqdxyfqv bxeqvzds rasvdsus cyqvcsdx yysuzcvr rxrevses bvaxztva ctzvbeqr" topic="mesh_Size"/>
+              <SizeExpression descr="Size_expression" id="se" props="uusrrvcz sxwcecfr rbaxdrrr fawcxbqt xtcrbvcp sbsvbfzx tsvcazwd uzqcqcxf fucyfzuw rafqzqrp cbfzezcs wcfuuxdw tqecbuzx crusxvft bvaadtqw aqucvufa bwsvcsfe ywxxsebp ruvsdfxe tfztfaab cwafqrvb vcfbxbuw" topic="mesh_SizeExpression"/>
+              <Distribution descr="Distribution" id="dis" props="crvcczqr drbcfxae tyddqffu zexfdfud ffvzuavy yeytxstd xqcdbdup ssyrcaqv" topic="mesh_Distribution"/>
+              <CornerRefinement descr="Corner_refinement" id="cr" props="ryvfeafz cyvatuwc cdcuyrey" topic="mesh_CornerRefinement"/>
+            </Edge>
+            <CopyDomain descr="Copy_domain" id="cpd" props="axdvvdxc wactvaeq suafqwru frqfaeyf uxcutyvp swssvdsv" topic="mesh_CopyDomain"/>
+            <CopyEdge descr="Copy_edge" id="cpe" props="ftxtrddb sqzvxvfx evvvaudc suafqwru frqfaeyf uxcutyvp swssvdsv" topic="mesh_CopyEdge"/>
+            <Copy descr="Copy" id="copy" props="acxztzst tbbcuzvd wbcqxvwt zstydyru sdqayxtq suafqwru frqfaeyf uxcutyvp swssvdsv" topic="mesh_Copy"/>
+            <BndLayer descr="Boundary_layers" id="bl" props="bxcueeuv rsuyfrcp bzdbccxy teatxqsd eeyusrcs vebucvue euxzysyt uxcutyvp swssvdsv rastscuw" topic="mesh_BndLayer">
+              <Scale descr="Scale" id="sca" props="buuvcayy" topic="mesh_Scale"/>
+            </BndLayer>
+            <Refine descr="Refine" id="ref" props="xtafdyve acvszraf rfeuuvqx ddbuvret rxwzxuvp bfuwausr wwxtydex" topic="mesh_Refine"/>
+            <Adapt descr="Adapt" id="ada" props="sbsvbfzx tsvcazwd uzqcqcxf fucyfzuw tdbvqstd cbfzezcs wcfuuxdw etsfexbe cftuvxbd tqecbuzx crusxvft bvaadtqw aqucvufa bwsvcsfe sxwcecfr veqfuzzv" topic="mesh_Adapt"/>
+            <Convert descr="Convert" id="conv" props="dsbxvvxa" topic="mesh_Convert"/>
+            <Reference descr="Reference" id="rf" props="wawyvqwf" topic="mesh_Reference"/>
+            <Size descr="Size" id="size" props="eurzbavu vdzddswe wxfebcfr yvyuxbse bqzsyfrv cqdxyfqv bxeqvzds rasvdsus cyqvcsdx yysuzcvr rxrevses bvaxztva ctzvbeqr" topic="mesh_Size"/>
+            <SizeExpression descr="Size_expression" id="se" props="uusrrvcz sxwcecfr rbaxdrrr fawcxbqt xtcrbvcp sbsvbfzx tsvcazwd uzqcqcxf fucyfzuw rafqzqrp cbfzezcs wcfuuxdw tqecbuzx crusxvft bvaadtqw aqucvufa bwsvcsfe ywxxsebp ruvsdfxe tfztfaab cwafqrvb vcfbxbuw" topic="mesh_SizeExpression">
+              <Scale descr="Scale" id="sca" props="buuvcayy" topic="mesh_Scale"/>
+            </SizeExpression>
+            <Distribution descr="Distribution" id="dis" props="crvcczqr drbcfxae tyddqffu zexfdfud ffvzuavy yeytxstd xqcdbdup ssyrcaqv" topic="mesh_Distribution"/>
+            <CornerRefinement descr="Corner_refinement" id="cr" props="ryvfeafz cyvatuwc cdcuyrey" topic="mesh_CornerRefinement"/>
+            <Scale descr="Scale" id="sca" props="buuvcayy" topic="mesh_Scale"/>
+          </MeshFeature>
+        </MeshSequence>
+      </S2D>
+      <S3D axi="false" dim="3">
+        <MeshSequence descr="Mesh" id="mesh" props="vbyuuwcr zfdxdvvz vtyfvcst" topic="MeshSequence">
+          <ModelEntityImage>
+            <Mesh descr="Mesh" id="image" props="cbuuzrdy wtfqcrcq cuawbuxb uuaxdywt vbszqsyy fdvtrscr vfwfbazx dusvusvq fuxcwvee scxtvcxp bzadtrup rzswusav wqefaafr tysuqfzv xadtwseq txbeycdb wqbuwvbe fdyrwbca esfveevc vxutxzvw eexqebrp fvewcusa sssdbqss wqtdcscv zvyrryfu vtqdxtaq uwacvaqv aqcttycw zbuytuzs fxabvwrp swyqzsbu rxddsydb bavstweq bzbfaexq zdusdzxt bwqudurq xbvzvazt vvfcdrea bezeetby urefcwry fvryarft" topic="entityImage"/>
+          </ModelEntityImage>
+          <MeshFeature>
+            <FreeTet descr="Free_tetrahedral" id="ftet" props="rastscuw dvxdyewz vtvvuawb frqfaeyf uxcutyvp swssvdsv drsdqwwd ecacesfr rsbcwvzq vqwafaaz crfxxbyp zczzvdsq" topic="mesh_FreeTet">
+              <Size descr="Size" id="size" props="eurzbavu vdzddswe wxfebcfr yvyuxbse bqzsyfrv cqdxyfqv bxeqvzds rasvdsus cyqvcsdx yysuzcvr rxrevses bvaxztva ctzvbeqr" topic="mesh_Size"/>
+              <SizeExpression descr="Size_expression" id="se" props="uusrrvcz sxwcecfr rbaxdrrr fawcxbqt xtcrbvcp sbsvbfzx tsvcazwd uzqcqcxf fucyfzuw rafqzqrp cbfzezcs wcfuuxdw tqecbuzx crusxvft bvaadtqw aqucvufa bwsvcsfe ywxxsebp ruvsdfxe tfztfaab cwafqrvb vcfbxbuw" topic="mesh_SizeExpression"/>
+              <Distribution descr="Distribution" id="dis" props="crvcczqr drbcfxae tyddqffu zexfdfud ffvzuavy yeytxstd xqcdbdup ssyrcaqv" topic="mesh_Distribution"/>
+              <CornerRefinement descr="Corner_refinement" id="cr" props="ryvfeafz cyvatuwc cdcuyrey" topic="mesh_CornerRefinement"/>
+            </FreeTet>
+            <ModelEntityImage>
+              <MeshFeature descr="Mesh_feature" id="image" props="cbuuzrdy wtfqcrcq cuawbuxb uuaxdywt vbszqsyy fdvtrscr sxswydct dusvusvq fuxcwvee scxtvcxp bzadtrup rzswusav wqefaafr tysuqfzv xadtwseq txbeycdb wqbuwvbe fdyrwbca esfveevc vxutxzvw eexqebrp fvewcusa sssdbqss wqtdcscv zvyrryfu vtqdxtaq uwacvaqv aqcttycw zbuytuzs fxabvwrp swyqzsbu rxddsydb bavstweq bzbfaexq zdusdzxt bwqudurq xbvzvazt vvfcdrea bezeetby urefcwry fvryarft" topic="entityImage"/>
+            </ModelEntityImage>
+            <Sweep descr="Swept" id="swe" props="wqxbcasc xrvvzdwc cbcxrrfz xqadwyxc frqfaeyf uxcutyvp swssvdsv rastscuw frvfyucw scxdyyqx" topic="mesh_Sweep">
+              <Size descr="Size" id="size" props="eurzbavu vdzddswe wxfebcfr yvyuxbse bqzsyfrv cqdxyfqv bxeqvzds rasvdsus cyqvcsdx yysuzcvr rxrevses bvaxztva ctzvbeqr" topic="mesh_Size"/>
+              <Distribution descr="Distribution" id="dis" props="crvcczqr drbcfxae tyddqffu zexfdfud ffvzuavy yeytxstd xqcdbdup ssyrcaqv" topic="mesh_Distribution"/>
+            </Sweep>
+            <FreeTri descr="Free_triangular" id="ftri" props="rastscuw dvxdyewz vtvvuawb frqfaeyf uxcutyvp swssvdsv drsdqwwd bfdstscz" topic="mesh_FreeTri">
+              <Size descr="Size" id="size" props="eurzbavu vdzddswe wxfebcfr yvyuxbse bqzsyfrv cqdxyfqv bxeqvzds rasvdsus cyqvcsdx yysuzcvr rxrevses bvaxztva ctzvbeqr" topic="mesh_Size"/>
+              <SizeExpression descr="Size_expression" id="se" props="uusrrvcz sxwcecfr rbaxdrrr fawcxbqt xtcrbvcp sbsvbfzx tsvcazwd uzqcqcxf fucyfzuw rafqzqrp cbfzezcs wcfuuxdw tqecbuzx crusxvft bvaadtqw aqucvufa bwsvcsfe ywxxsebp ruvsdfxe tfztfaab cwafqrvb vcfbxbuw" topic="mesh_SizeExpression"/>
+              <Distribution descr="Distribution" id="dis" props="crvcczqr drbcfxae tyddqffu zexfdfud ffvzuavy yeytxstd xqcdbdup ssyrcaqv" topic="mesh_Distribution"/>
+              <CornerRefinement descr="Corner_refinement" id="cr" props="ryvfeafz cyvatuwc cdcuyrey" topic="mesh_CornerRefinement"/>
+            </FreeTri>
+            <FreeQuad descr="Free_quad" id="fq" props="rastscuw dvxdyewz vtvvuawb frqfaeyf uxcutyvp swssvdsv drsdqwwd waqctbwf" topic="mesh_FreeQuad">
+              <Size descr="Size" id="size" props="eurzbavu vdzddswe wxfebcfr yvyuxbse bqzsyfrv cqdxyfqv bxeqvzds rasvdsus cyqvcsdx yysuzcvr rxrevses bvaxztva ctzvbeqr" topic="mesh_Size"/>
+              <SizeExpression descr="Size_expression" id="se" props="uusrrvcz sxwcecfr rbaxdrrr fawcxbqt xtcrbvcp sbsvbfzx tsvcazwd uzqcqcxf fucyfzuw rafqzqrp cbfzezcs wcfuuxdw tqecbuzx crusxvft bvaadtqw aqucvufa bwsvcsfe ywxxsebp ruvsdfxe tfztfaab cwafqrvb vcfbxbuw" topic="mesh_SizeExpression"/>
+              <Distribution descr="Distribution" id="dis" props="crvcczqr drbcfxae tyddqffu zexfdfud ffvzuavy yeytxstd xqcdbdup ssyrcaqv" topic="mesh_Distribution"/>
+              <CornerRefinement descr="Corner_refinement" id="cr" props="ryvfeafz cyvatuwc cdcuyrey" topic="mesh_CornerRefinement"/>
+            </FreeQuad>
+            <Map descr="Mapped" id="map" props="czxzwcys frqfaeyf uxcutyvp swssvdsv zbdbsdce rastscuw" topic="mesh_Map">
+              <Size descr="Size" id="size" props="eurzbavu vdzddswe wxfebcfr yvyuxbse bqzsyfrv cqdxyfqv bxeqvzds rasvdsus cyqvcsdx yysuzcvr rxrevses bvaxztva ctzvbeqr" topic="mesh_Size"/>
+              <Distribution descr="Distribution" id="dis" props="crvcczqr drbcfxae tyddqffu zexfdfud ffvzuavy yeytxstd xqcdbdup ssyrcaqv" topic="mesh_Distribution"/>
+            </Map>
+            <Edge descr="Edge" id="edg" props="frqfaeyf uxcutyvp swssvdsv" topic="mesh_Edge">
+              <Size descr="Size" id="size" props="eurzbavu vdzddswe wxfebcfr yvyuxbse bqzsyfrv cqdxyfqv bxeqvzds rasvdsus cyqvcsdx yysuzcvr rxrevses bvaxztva ctzvbeqr" topic="mesh_Size"/>
+              <SizeExpression descr="Size_expression" id="se" props="uusrrvcz sxwcecfr rbaxdrrr fawcxbqt xtcrbvcp sbsvbfzx tsvcazwd uzqcqcxf fucyfzuw rafqzqrp cbfzezcs wcfuuxdw tqecbuzx crusxvft bvaadtqw aqucvufa bwsvcsfe ywxxsebp ruvsdfxe tfztfaab cwafqrvb vcfbxbuw" topic="mesh_SizeExpression"/>
+              <Distribution descr="Distribution" id="dis" props="crvcczqr drbcfxae tyddqffu zexfdfud ffvzuavy yeytxstd xqcdbdup ssyrcaqv" topic="mesh_Distribution"/>
+              <CornerRefinement descr="Corner_refinement" id="cr" props="ryvfeafz cyvatuwc cdcuyrey" topic="mesh_CornerRefinement"/>
+            </Edge>
+            <CopyDomain descr="Copy_domain" id="cpd" props="axdvvdxc wactvaeq suafqwru frqfaeyf uxcutyvp swssvdsv" topic="mesh_CopyDomain"/>
+            <CopyFace descr="Copy_face" id="cpf" props="ftxtrddb sqzvxvfx suafqwru frqfaeyf uxcutyvp swssvdsv" topic="mesh_CopyFace"/>
+            <CopyEdge descr="Copy_edge" id="cpe" props="fzycdset xzesdzux evvvaudc suafqwru frqfaeyf uxcutyvp swssvdsv" topic="mesh_CopyEdge"/>
+            <Copy descr="Copy" id="copy" props="acxztzst tbbcuzvd cdrttaff zstydyru sdqayxtq suafqwru frqfaeyf uxcutyvp swssvdsv" topic="mesh_Copy"/>
+            <BndLayer descr="Boundary_layers" id="bl" props="cswyqwvd rsuyfrcp bzdbccxy teatxqsd eeyusrcs vebucvue euxzysyt uxcutyvp swssvdsv rastscuw" topic="mesh_BndLayer">
+              <Scale descr="Scale" id="sca" props="buuvcayy" topic="mesh_Scale"/>
+            </BndLayer>
+            <Refine descr="Refine" id="ref" props="xtafdyve acvszraf rfeuuvqx ddbuvret rxwzxuvp bfuwausr etqyezyt aqdyfwvf wwxtydex" topic="mesh_Refine"/>
+            <Adapt descr="Adapt" id="ada" props="sbsvbfzx tsvcazwd uzqcqcxf fucyfzuw tdbvqstd cbfzezcs wcfuuxdw etsfexbe cftuvxbd tqecbuzx crusxvft bvaadtqw aqucvufa bwsvcsfe sxwcecfr veqfuzzv" topic="mesh_Adapt"/>
+            <Convert descr="Convert" id="conv" props="dsbxvvxa" topic="mesh_Convert"/>
+            <Reference descr="Reference" id="rf" props="wawyvqwf" topic="mesh_Reference"/>
+            <Size descr="Size" id="size" props="eurzbavu vdzddswe wxfebcfr yvyuxbse bqzsyfrv cqdxyfqv bxeqvzds rasvdsus cyqvcsdx yysuzcvr rxrevses bvaxztva ctzvbeqr" topic="mesh_Size"/>
+            <SizeExpression descr="Size_expression" id="se" props="uusrrvcz sxwcecfr rbaxdrrr fawcxbqt xtcrbvcp sbsvbfzx tsvcazwd uzqcqcxf fucyfzuw rafqzqrp cbfzezcs wcfuuxdw tqecbuzx crusxvft bvaadtqw aqucvufa bwsvcsfe ywxxsebp ruvsdfxe tfztfaab cwafqrvb vcfbxbuw" topic="mesh_SizeExpression">
+              <Scale descr="Scale" id="sca" props="buuvcayy" topic="mesh_Scale"/>
+            </SizeExpression>
+            <Distribution descr="Distribution" id="dis" props="crvcczqr drbcfxae tyddqffu zexfdfud ffvzuavy yeytxstd xqcdbdup ssyrcaqv" topic="mesh_Distribution"/>
+            <CornerRefinement descr="Corner_refinement" id="cr" props="ryvfeafz cyvatuwc cdcuyrey" topic="mesh_CornerRefinement"/>
+            <Scale descr="Scale" id="sca" props="buuvcayy" topic="mesh_Scale"/>
+          </MeshFeature>
+        </MeshSequence>
+      </S3D>
+      <S1DAxi axi="true" dim="1">
+        <MeshSequence descr="Mesh" id="mesh" props="vbyuuwcr zfdxdvvz vtyfvcst" topic="MeshSequence">
+          <ModelEntityImage>
+            <Mesh descr="Mesh" id="image" props="cbuuzrdy wtfqcrcq cuawbuxb vfwfbazx dusvusvq fuxcwvee scxtvcxp bzadtrup rzswusav wqefaafr tysuqfzv xadtwseq txbeycdb wqbuwvbe fdyrwbca esfveevc vxutxzvw eexqebrp fvewcusa sssdbqss wqtdcscv zvyrryfu vtqdxtaq uwacvaqv aqcttycw zbuytuzs fxabvwrp swyqzsbu rxddsydb bavstweq bzbfaexq zdusdzxt bwqudurq xbvzvazt vvfcdrea bezeetby urefcwry fvryarft" topic="entityImage"/>
+          </ModelEntityImage>
+          <MeshFeature>
+            <Edge descr="Edge" id="edg" topic="mesh_Edge">
+              <Size descr="Size" id="size" props="eurzbavu vdzddswe wxfebcfr yvyuxbse bqzsyfrv cqdxyfqv bxeqvzds rasvdsus cyqvcsdx yysuzcvr rxrevses bvaxztva ctzvbeqr" topic="mesh_Size"/>
+              <SizeExpression descr="Size_expression" id="se" props="uusrrvcz sxwcecfr rbaxdrrr fawcxbqt xtcrbvcp sbsvbfzx tsvcazwd uzqcqcxf fucyfzuw rafqzqrp cbfzezcs wcfuuxdw tqecbuzx crusxvft bvaadtqw aqucvufa bwsvcsfe ywxxsebp ruvsdfxe tfztfaab cwafqrvb vcfbxbuw" topic="mesh_SizeExpression"/>
+              <Distribution descr="Distribution" id="dis" props="crvcczqr drbcfxae tyddqffu zexfdfud ffvzuavy yeytxstd xqcdbdup ssyrcaqv" topic="mesh_Distribution"/>
+            </Edge>
+            <ModelEntityImage>
+              <MeshFeature descr="Mesh_feature" id="image" props="cbuuzrdy wtfqcrcq cuawbuxb sxswydct dusvusvq fuxcwvee scxtvcxp bzadtrup rzswusav wqefaafr tysuqfzv xadtwseq txbeycdb wqbuwvbe fdyrwbca esfveevc vxutxzvw eexqebrp fvewcusa sssdbqss wqtdcscv zvyrryfu vtqdxtaq uwacvaqv aqcttycw zbuytuzs fxabvwrp swyqzsbu rxddsydb bavstweq bzbfaexq zdusdzxt bwqudurq xbvzvazt vvfcdrea bezeetby urefcwry fvryarft" topic="entityImage"/>
+            </ModelEntityImage>
+            <Copy descr="Copy" id="copy" props="acxztzst tbbcuzvd" topic="mesh_Copy"/>
+            <Refine descr="Refine" id="ref" props="wwxtydex" topic="mesh_Refine"/>
+            <Adapt descr="Adapt" id="ada" props="sbsvbfzx tsvcazwd uzqcqcxf fucyfzuw rafqzqrp cbfzezcs wcfuuxdw tqecbuzx crusxvft bvaadtqw aqucvufa bwsvcsfe sxwcecfr" topic="mesh_Adapt"/>
+            <Reference descr="Reference" id="rf" props="wawyvqwf" topic="mesh_Reference"/>
+            <Size descr="Size" id="size" props="eurzbavu vdzddswe wxfebcfr yvyuxbse bqzsyfrv cqdxyfqv bxeqvzds rasvdsus cyqvcsdx yysuzcvr rxrevses bvaxztva ctzvbeqr" topic="mesh_Size"/>
+            <SizeExpression descr="Size_expression" id="se" props="uusrrvcz sxwcecfr rbaxdrrr fawcxbqt xtcrbvcp sbsvbfzx tsvcazwd uzqcqcxf fucyfzuw rafqzqrp cbfzezcs wcfuuxdw tqecbuzx crusxvft bvaadtqw aqucvufa bwsvcsfe ywxxsebp ruvsdfxe tfztfaab cwafqrvb vcfbxbuw" topic="mesh_SizeExpression">
+              <Scale descr="Scale" id="sca" props="buuvcayy" topic="mesh_Scale"/>
+            </SizeExpression>
+            <Distribution descr="Distribution" id="dis" props="crvcczqr drbcfxae tyddqffu zexfdfud ffvzuavy yeytxstd xqcdbdup ssyrcaqv" topic="mesh_Distribution"/>
+            <Scale descr="Scale" id="sca" props="buuvcayy" topic="mesh_Scale"/>
+          </MeshFeature>
+        </MeshSequence>
+      </S1DAxi>
+      <S2DAxi axi="true" dim="2">
+        <MeshSequence descr="Mesh" id="mesh" props="vbyuuwcr zfdxdvvz vtyfvcst" topic="MeshSequence">
+          <ModelEntityImage>
+            <Mesh descr="Mesh" id="image" props="cbuuzrdy wtfqcrcq cuawbuxb uuaxdywt vbszqsyy fdvtrscr vfwfbazx dusvusvq fuxcwvee scxtvcxp bzadtrup rzswusav wqefaafr tysuqfzv xadtwseq txbeycdb wqbuwvbe fdyrwbca esfveevc vxutxzvw eexqebrp fvewcusa sssdbqss wqtdcscv zvyrryfu vtqdxtaq uwacvaqv aqcttycw zbuytuzs fxabvwrp swyqzsbu rxddsydb bavstweq bzbfaexq zdusdzxt bwqudurq xbvzvazt vvfcdrea bezeetby urefcwry fvryarft" topic="entityImage"/>
+          </ModelEntityImage>
+          <MeshFeature>
+            <FreeTri descr="Free_triangular" id="ftri" props="rastscuw dvxdyewt vtvvuawc frqfaeyf uxcutyvp swssvdsv bfdstscz" topic="mesh_FreeTri">
+              <Size descr="Size" id="size" props="eurzbavu vdzddswe wxfebcfr yvyuxbse bqzsyfrv cqdxyfqv bxeqvzds rasvdsus cyqvcsdx yysuzcvr rxrevses bvaxztva ctzvbeqr" topic="mesh_Size"/>
+              <SizeExpression descr="Size_expression" id="se" props="uusrrvcz sxwcecfr rbaxdrrr fawcxbqt xtcrbvcp sbsvbfzx tsvcazwd uzqcqcxf fucyfzuw rafqzqrp cbfzezcs wcfuuxdw tqecbuzx crusxvft bvaadtqw aqucvufa bwsvcsfe ywxxsebp ruvsdfxe tfztfaab cwafqrvb vcfbxbuw" topic="mesh_SizeExpression"/>
+              <Distribution descr="Distribution" id="dis" props="crvcczqr drbcfxae tyddqffu zexfdfud ffvzuavy yeytxstd xqcdbdup ssyrcaqv" topic="mesh_Distribution"/>
+              <CornerRefinement descr="Corner_refinement" id="cr" props="ryvfeafz cyvatuwc cdcuyrey" topic="mesh_CornerRefinement"/>
+            </FreeTri>
+            <ModelEntityImage>
+              <MeshFeature descr="Mesh_feature" id="image" props="cbuuzrdy wtfqcrcq cuawbuxb uuaxdywt vbszqsyy fdvtrscr sxswydct dusvusvq fuxcwvee scxtvcxp bzadtrup rzswusav wqefaafr tysuqfzv xadtwseq txbeycdb wqbuwvbe fdyrwbca esfveevc vxutxzvw eexqebrp fvewcusa sssdbqss wqtdcscv zvyrryfu vtqdxtaq uwacvaqv aqcttycw zbuytuzs fxabvwrp swyqzsbu rxddsydb bavstweq bzbfaexq zdusdzxt bwqudurq xbvzvazt vvfcdrea bezeetby urefcwry fvryarft" topic="entityImage"/>
+            </ModelEntityImage>
+            <FreeQuad descr="Free_quad" id="fq" props="rastscuw dvxdyewt vtvvuawc frqfaeyf uxcutyvp swssvdsv waqctbwf" topic="mesh_FreeQuad">
+              <Size descr="Size" id="size" props="eurzbavu vdzddswe wxfebcfr yvyuxbse bqzsyfrv cqdxyfqv bxeqvzds rasvdsus cyqvcsdx yysuzcvr rxrevses bvaxztva ctzvbeqr" topic="mesh_Size"/>
+              <SizeExpression descr="Size_expression" id="se" props="uusrrvcz sxwcecfr rbaxdrrr fawcxbqt xtcrbvcp sbsvbfzx tsvcazwd uzqcqcxf fucyfzuw rafqzqrp cbfzezcs wcfuuxdw tqecbuzx crusxvft bvaadtqw aqucvufa bwsvcsfe ywxxsebp ruvsdfxe tfztfaab cwafqrvb vcfbxbuw" topic="mesh_SizeExpression"/>
+              <Distribution descr="Distribution" id="dis" props="crvcczqr drbcfxae tyddqffu zexfdfud ffvzuavy yeytxstd xqcdbdup ssyrcaqv" topic="mesh_Distribution"/>
+              <CornerRefinement descr="Corner_refinement" id="cr" props="ryvfeafz cyvatuwc cdcuyrey" topic="mesh_CornerRefinement"/>
+            </FreeQuad>
+            <Map descr="Mapped" id="map" props="frqfaeyf uxcutyvp swssvdsv zbdbsdce rastscuw" topic="mesh_Map">
+              <Size descr="Size" id="size" props="eurzbavu vdzddswe wxfebcfr yvyuxbse bqzsyfrv cqdxyfqv bxeqvzds rasvdsus cyqvcsdx yysuzcvr rxrevses bvaxztva ctzvbeqr" topic="mesh_Size"/>
+              <Distribution descr="Distribution" id="dis" props="crvcczqr drbcfxae tyddqffu zexfdfud ffvzuavy yeytxstd xqcdbdup ssyrcaqv" topic="mesh_Distribution"/>
+            </Map>
+            <Edge descr="Edge" id="edg" props="frqfaeyf uxcutyvp swssvdsv" topic="mesh_Edge">
+              <Size descr="Size" id="size" props="eurzbavu vdzddswe wxfebcfr yvyuxbse bqzsyfrv cqdxyfqv bxeqvzds rasvdsus cyqvcsdx yysuzcvr rxrevses bvaxztva ctzvbeqr" topic="mesh_Size"/>
+              <SizeExpression descr="Size_expression" id="se" props="uusrrvcz sxwcecfr rbaxdrrr fawcxbqt xtcrbvcp sbsvbfzx tsvcazwd uzqcqcxf fucyfzuw rafqzqrp cbfzezcs wcfuuxdw tqecbuzx crusxvft bvaadtqw aqucvufa bwsvcsfe ywxxsebp ruvsdfxe tfztfaab cwafqrvb vcfbxbuw" topic="mesh_SizeExpression"/>
+              <Distribution descr="Distribution" id="dis" props="crvcczqr drbcfxae tyddqffu zexfdfud ffvzuavy yeytxstd xqcdbdup ssyrcaqv" topic="mesh_Distribution"/>
+              <CornerRefinement descr="Corner_refinement" id="cr" props="ryvfeafz cyvatuwc cdcuyrey" topic="mesh_CornerRefinement"/>
+            </Edge>
+            <CopyDomain descr="Copy_domain" id="cpd" props="axdvvdxc wactvaeq suafqwru frqfaeyf uxcutyvp swssvdsv" topic="mesh_CopyDomain"/>
+            <CopyEdge descr="Copy_edge" id="cpe" props="ftxtrddb sqzvxvfx evvvaudc suafqwru frqfaeyf uxcutyvp swssvdsv" topic="mesh_CopyEdge"/>
+            <Copy descr="Copy" id="copy" props="acxztzst tbbcuzvd wbcqxvwt zstydyru sdqayxtq suafqwru frqfaeyf uxcutyvp swssvdsv" topic="mesh_Copy"/>
+            <BndLayer descr="Boundary_layers" id="bl" props="bxcueeuv rsuyfrcp bzdbccxy teatxqsd eeyusrcs vebucvue euxzysyt uxcutyvp swssvdsv rastscuw" topic="mesh_BndLayer">
+              <Scale descr="Scale" id="sca" props="buuvcayy" topic="mesh_Scale"/>
+            </BndLayer>
+            <Refine descr="Refine" id="ref" props="xtafdyve acvszraf rfeuuvqx ddbuvret rxwzxuvp bfuwausr wwxtydex" topic="mesh_Refine"/>
+            <Adapt descr="Adapt" id="ada" props="sbsvbfzx tsvcazwd uzqcqcxf fucyfzuw tdbvqstd cbfzezcs wcfuuxdw etsfexbe cftuvxbd tqecbuzx crusxvft bvaadtqw aqucvufa bwsvcsfe sxwcecfr veqfuzzv" topic="mesh_Adapt"/>
+            <Convert descr="Convert" id="conv" props="dsbxvvxa" topic="mesh_Convert"/>
+            <Reference descr="Reference" id="rf" props="wawyvqwf" topic="mesh_Reference"/>
+            <Size descr="Size" id="size" props="eurzbavu vdzddswe wxfebcfr yvyuxbse bqzsyfrv cqdxyfqv bxeqvzds rasvdsus cyqvcsdx yysuzcvr rxrevses bvaxztva ctzvbeqr" topic="mesh_Size"/>
+            <SizeExpression descr="Size_expression" id="se" props="uusrrvcz sxwcecfr rbaxdrrr fawcxbqt xtcrbvcp sbsvbfzx tsvcazwd uzqcqcxf fucyfzuw rafqzqrp cbfzezcs wcfuuxdw tqecbuzx crusxvft bvaadtqw aqucvufa bwsvcsfe ywxxsebp ruvsdfxe tfztfaab cwafqrvb vcfbxbuw" topic="mesh_SizeExpression">
+              <Scale descr="Scale" id="sca" props="buuvcayy" topic="mesh_Scale"/>
+            </SizeExpression>
+            <Distribution descr="Distribution" id="dis" props="crvcczqr drbcfxae tyddqffu zexfdfud ffvzuavy yeytxstd xqcdbdup ssyrcaqv" topic="mesh_Distribution"/>
+            <CornerRefinement descr="Corner_refinement" id="cr" props="ryvfeafz cyvatuwc cdcuyrey" topic="mesh_CornerRefinement"/>
+            <Scale descr="Scale" id="sca" props="buuvcayy" topic="mesh_Scale"/>
+          </MeshFeature>
+        </MeshSequence>
+      </S2DAxi>
+    </Mesh>
+    <Properties>
+      <vbyuuwcr descr="Sequence_type" descrs="User_controlled_mesh|Physics_controlled_mesh" name="meshtype" type="String" values="manual|automatic"/>
+      <zfdxdvvz descr="Element_size" descrs="Extremely_fine|Extra_fine|Finer|Fine|Normal[usual]|Coarse|Coarser|Extra_coarse|Extremely_coarse" name="meshsize" type="String" values="1.0|2.0|3.0|4.0|5.0|6.0|7.0|8.0|9.0"/>
+      <vtyfvcst descr="#" name="phys" type="StringMatrix"/>
+      <cbuuzrdy descr="Plot_window" descrs="New_window" name="window" type="String" values="new"/>
+      <wtfqcrcq descr="Window_title" name="windowtitle" type="String"/>
+      <cuawbuxb descr="View" descrs="Automatic|A_reference_to_a_view" isref="true" name="view" type="String" values="auto|{View}"/>
+      <sxswydct descr="Zooming" descrs="No_zooming|Zoom_extents|Zoom_to_selection" name="zooming" type="String" values="nozooming|zoomextents|zoomtoselection"/>
+      <dusvusvq descr="Zoom_level" name="zoomlevel" type="Int"/>
+      <fuxcwvee descr="Size" descrs="Current[present]|Manual_web|Manual_print" name="size" type="String" values="current|manualweb|manualprint"/>
+      <scxtvcxp descr="Unit" descrs="Millimeters_(mm)|Inches_(in)|Pixels_(px)" name="webunit" type="String" values="mm|in|px"/>
+      <bzadtrup descr="Lock_aspect_ratio" descrs="On|Off" name="weblockratio" type="Boolean" values="on|off"/>
+      <rzswusav descr="Width" name="webwidth" type="Double"/>
+      <wqefaafr descr="Height" name="webheight" type="Double"/>
+      <tysuqfzv descr="Resolution" name="webresolution" type="Int"/>
+      <xadtwseq descr="Unit" descrs="Millimeters_(mm)|Inches_(in)|Pixels_(px)" name="printunit" type="String" values="mm|in|px"/>
+      <txbeycdb descr="Lock_aspect_ratio" descrs="On|Off" name="printlockratio" type="Boolean" values="on|off"/>
+      <wqbuwvbe descr="Width" name="printwidth" type="Double"/>
+      <fdyrwbca descr="Height" name="printheight" type="Double"/>
+      <esfveevc descr="Resolution" name="printresolution" type="Int"/>
+      <vxutxzvw descr="Antialiasing" descrs="On|Off" name="antialias" type="Boolean" values="on|off"/>
+      <eexqebrp descr="Target" descrs="File|Clipboard" name="target" type="String" values="file|clipboard"/>
+      <fvewcusa descr="Format" descrs="#BMP|#EPS|#JPEG|#PNG|#TIFF|#GIF|#glTF" name="imagetype" type="String" values="bmp|eps|jpeg|png|tiff|gif|gltf"/>
+      <sssdbqss descr="Filename" name="bmpfilename" type="String"/>
+      <wqtdcscv descr="Filename" name="epsfilename" type="String"/>
+      <zvyrryfu descr="Quality" descrs="On|Off" name="qualityactive" type="Boolean" values="on|off"/>
+      <vtqdxtaq descr="Level" name="qualitylevel" type="Int"/>
+      <uwacvaqv descr="Filename" name="jpegfilename" type="String"/>
+      <aqcttycw descr="Filename" name="pngfilename" type="String"/>
+      <zbuytuzs descr="Filename" name="tifffilename" type="String"/>
+      <fxabvwrp descr="Filename" name="giffilename" type="String"/>
+      <swyqzsbu descr="Filename" name="gltffilename" type="String"/>
+      <rxddsydb descr="Include" descrs="Off|On" name="options" type="String" values="off|on"/>
+      <bavstweq descr="Title" descrs="On|Off" name="title" type="Boolean" values="on|off"/>
+      <bzbfaexq descr="Axes" descrs="On|Off" name="axes" type="Boolean" values="on|off"/>
+      <zdusdzxt descr="Grid" descrs="On|Off" name="showgrid" type="Boolean" values="on|off"/>
+      <bwqudurq descr="Grid" descrs="On|Off" name="grid" type="Boolean" values="on|off"/>
+      <xbvzvazt descr="Axis_orientation" descrs="On|Off" name="axisorientation" type="Boolean" values="on|off"/>
+      <vvfcdrea descr="Logotype" descrs="On|Off" name="logo" type="Boolean" values="on|off"/>
+      <bezeetby descr="Font_size" name="fontsize" type="Int"/>
+      <urefcwry descr="Background" descrs="Current[present]|Color|Transparent" name="background" type="String" values="current|color|transparent"/>
+      <fvryarft descr="Custom_color" name="customcolor" type="DoubleArray"/>
+      <eurzbavu descr="Calibrate_for" descrs="General_physics|Fluid_dynamics|Plasma|Semiconductor" name="table" type="String" values="default|cfd|plasma|semi"/>
+      <vdzddswe descr="Maximum_element_size" name="hmax" type="Double"/>
+      <wxfebcfr descr="Maximum_element_size" descrs="On|Off" name="hmaxactive" type="Boolean" values="on|off"/>
+      <yvyuxbse descr="Minimum_element_size" name="hmin" type="Double"/>
+      <bqzsyfrv descr="Minimum_element_size" descrs="On|Off" name="hminactive" type="Boolean" values="on|off"/>
+      <cqdxyfqv descr="Curvature_factor" name="hcurve" type="Double"/>
+      <bxeqvzds descr="Curvature_factor" descrs="On|Off" name="hcurveactive" type="Boolean" values="on|off"/>
+      <rasvdsus descr="Resolution_of_narrow_regions" name="hnarrow" type="Double"/>
+      <cyqvcsdx descr="Resolution_of_narrow_regions" descrs="On|Off" name="hnarrowactive" type="Boolean" values="on|off"/>
+      <yysuzcvr descr="Maximum_element_growth_rate" name="hgrad" type="Double"/>
+      <rxrevses descr="Maximum_element_growth_rate" descrs="On|Off" name="hgradactive" type="Boolean" values="on|off"/>
+      <bvaxztva descr="Predefined_size" descrs="Extremely_fine|Extra_fine|Finer|Fine|Normal[usual]|Coarse|Coarser|Extra_coarse|Extremely_coarse" name="hauto" type="Double" values="1|2|3|4|5|6|7|8|9"/>
+      <ctzvbeqr descr="Custom_element_size" descrs="Predefined|Custom" name="custom" type="String" values="off|on"/>
+      <uusrrvcz descr="Evaluate_on" descrs="Grid|Solution|Initial_expression" name="evaltype" type="String" values="grid|solution|initialexpression"/>
+      <sxwcecfr descr="Size_expression" name="sizeexpr" type="String"/>
+      <rbaxdrrr descr="Grid_type" descrs="Resolution|Cell_size" name="gridtype" type="String" values="cellresolution|cellsize"/>
+      <fawcxbqt descr="Number_of_cells_per_dimension" name="numcell" type="Int"/>
+      <xtcrbvcp descr="Side_length" name="cellsize" type="Double"/>
+      <sbsvbfzx descr="Solution" descrs="None[solution]|A_reference_to_a_solution" isref="true" name="solution" type="String" values="none|{SolverSequence}"/>
+      <tsvcazwd descr="Solution_selection" descrs="Use_first|Use_last|Manual|All" name="selection" type="String" values="first|last|manual|sum"/>
+      <uzqcqcxf descr="Indices" name="adapsolnum" type="DoubleArray"/>
+      <fucyfzuw descr="Weights" name="weights" type="DoubleArray"/>
+      <rafqzqrp descr="Type_of_expression" descrs="Error_indicator|Absolute_size" name="exprtype" type="String" values="error|size"/>
+      <cbfzezcs descr="Error_expression" name="errorexpr" type="StringArray"/>
+      <wcfuuxdw descr="Active" descrs="On|Off" name="errexpractive" type="StringArray" values="on|off"/>
+      <tqecbuzx descr="Element_selection" descrs="Rough_global_minimum|Fraction_of_worst_error|Fraction_of_elements" name="elselect" type="String" values="globalmin|worst|elements"/>
+      <crusxvft descr="Element_count_growth_factor" name="globalminpar" type="Double"/>
+      <bvaadtqw descr="Error_orders" name="horder" type="DoubleArray"/>
+      <aqucvufa descr="Element_fraction" name="worstpar" type="Double"/>
+      <bwsvcsfe descr="Element_fraction" name="elementspar" type="Double"/>
+      <ywxxsebp descr="Mesh" descrs="Automatic|A_reference_to_a_mesh" isref="true" name="mesh" type="String" values="auto|{Mesh}"/>
+      <ruvsdfxe descr="Study_step" descrs="None|A_reference_to_a_study_step" isref="true" name="studystep" type="String" values="none|{ModelEntity}"/>
+      <tfztfaab descr="Reevaluate_with_updated_model" name="reevaluate" type="None"/>
+      <cwafqrvb descr="Update_when_parameter_is_changed" descrs="None" name="updatecondition" type="Double" values="0"/>
+      <vcfbxbuw descr="Maximum_size_field_growth_rate" name="hmeshgrad" type="Double"/>
+      <crvcczqr descr="Distribution_type" descrs="Explicit|Fixed_number_of_elements|Predefined" name="type" type="String" values="explicit|number|predefined"/>
+      <drbcfxae descr="Relative_placement_of_vertices_along_edge" name="explicit" type="DoubleArray"/>
+      <tyddqffu descr="Reverse_direction" descrs="On|Off" name="reverse" type="Boolean" values="on|off"/>
+      <zexfdfud descr="Number_of_elements" name="numelem" type="Double"/>
+      <ffvzuavy descr="Number_of_elements" name="elemcount" type="Double"/>
+      <yeytxstd descr="Element_ratio" name="elemratio" type="Double"/>
+      <xqcdbdup descr="Growth_formula" descrs="Arithmetic_sequence|Geometric_sequence" name="method" type="String" values="arithmetic|geometric"/>
+      <ssyrcaqv descr="Symmetric_distribution" descrs="On|Off" name="symmetric" type="Boolean" values="on|off"/>
+      <acxztzst descr="Mesh" descrs="A_reference_to_a_mesh|None" isref="true" name="mesh" type="String" values="{Mesh}|none"/>
+      <tbbcuzvd descr="Build_source_mesh_automatically" descrs="On|Off" name="buildsource" type="Boolean" values="on|off"/>
+      <wwxtydex descr="Number_of_refinements" name="numrefine" type="Double" values="1|2|3|4|5"/>
+      <wawyvqwf descr="Mesh" descrs="None|A_reference_to_a_mesh" isref="true" name="sequence" type="String" values="none|{Mesh}"/>
+      <buuvcayy descr="Element_size_scale" name="scale" type="Double"/>
+      <vfwfbazx descr="Zoom_extents" descrs="On|Off" name="zoomextents" type="Boolean" values="on|off"/>
+      <rastscuw descr="Continue_meshing" descrs="On|Off" name="continue" type="Boolean" values="on|off"/>
+      <dvxdyewz descr="X-direction_scale#x" name="xscale" type="Double"/>
+      <vtvvuawb descr="X-direction_scale#y" name="yscale" type="Double"/>
+      <frqfaeyf descr="Smooth_across_removed_control_entities" descrs="On|Off" name="smoothcontrol" type="String" values="on|off"/>
+      <uxcutyvp descr="Number_of_iterations" name="smoothmaxiter" type="Double"/>
+      <swssvdsv descr="Maximum_element_depth_to_process" name="smoothmaxdepth" type="Double"/>
+      <bfdstscz descr="Method" descrs="Automatic|Delaunay|Advancing_front" name="method" type="String" values="auto|del|af"/>
+      <uuaxdywt descr="Mesh_rendering" descrs="On|Off|From_view" name="rendermesh" type="String" values="on|off|fromview"/>
+      <vbszqsyy descr="Show_selection_colors" descrs="On|Off|From_view" name="showselection" type="String" values="on|off|fromview"/>
+      <fdvtrscr descr="Show_material_color_and_texture" descrs="On|Off|From_view" name="showmaterial" type="String" values="on|off|fromview"/>
+      <ryvfeafz descr="Boundary_selection" name="boundary" type="Selection"/>
+      <cyvatuwc descr="Minimum_angle_between_boundaries" name="minangle" type="Double"/>
+      <cdcuyrey descr="Element_size_scaling_factor" name="refinement" type="Double"/>
+      <waqctbwf descr="Method" descrs="Automatic|Legacy_version_52|Legacy_version_52a" name="method" type="String" values="auto|legacy52|legacy52a"/>
+      <zbdbsdce descr="Adjust_evenly_distributed_edge_mesh" descrs="On|Off" name="adjustedgdistr" type="Boolean" values="on|off"/>
+      <axdvvdxc descr="Source_domains" name="source" type="Selection"/>
+      <wactvaeq descr="Destination_domains" name="destination" type="Selection"/>
+      <suafqwru descr="Copy_method" descrs="Automatic|Single_destination_(many-to-one)|Array_copy_(many-to-many)" name="copymethod" type="String" values="auto|singlecopy|arraycopy"/>
+      <ftxtrddb descr="Source_boundaries" name="source" type="Selection"/>
+      <sqzvxvfx descr="Destination_boundaries" name="destination" type="Selection"/>
+      <evvvaudc descr="Direction" descrs="Automatic_orientation|Same_orientation|Opposite_orientation" name="direction" type="String" values="auto|same|opposite"/>
+      <wbcqxvwt descr="Geometric_entity_level" descrs="Entire_geometry|Domain|Boundary" name="dimension" type="Int" values="all|2|1"/>
+      <zstydyru descr="Source_entities" name="source" type="Selection"/>
+      <sdqayxtq descr="Destination_entities" name="destination" type="Selection"/>
+      <bxcueeuv descr="Handling_of_sharp_corners" descrs="Trimming|Splitting|None" name="sharpcorners" type="String" values="trim|split|none"/>
+      <rsuyfrcp descr="Minimum_angle_for_trimming" name="trimminangle" type="Double"/>
+      <bzdbccxy descr="Maximum_angle_for_trimming" name="trimmaxangle" type="Double"/>
+      <teatxqsd descr="Minimum_angle_for_splitting" name="splitangle" type="Double"/>
+      <eeyusrcs descr="Maximum_angle_per_split" name="splitdivangle" type="Double"/>
+      <vebucvue descr="Maximum_layer_decrement" name="layerdec" type="Int"/>
+      <euxzysyt descr="Smooth_transition_to_interior_mesh" descrs="On|Off" name="smoothtransition" type="String" values="on|off"/>
+      <xtafdyve descr="Refinement_method" descrs="Split_longest_side|Regular_refinement" name="rmethod" type="String" values="longest|regular"/>
+      <acvszraf descr="Specify_bounding_box" descrs="Use_bounding_box|No_bounding_box" name="boxcoord" type="String" values="on|off"/>
+      <rfeuuvqx descr="xmax" name="xmax" type="Double"/>
+      <ddbuvret descr="xmin" name="xmin" type="Double"/>
+      <rxwzxuvp descr="ymax" name="ymax" type="Double"/>
+      <bfuwausr descr="ymin" name="ymin" type="Double"/>
+      <tdbvqstd descr="Type_of_expression" descrs="Error_indicator|Absolute_size|Anisotropic_metric" name="exprtype" type="String" values="error|size|metric"/>
+      <etsfexbe descr="Adaptation_method" descrs="General_modification|Regular_refinement|Longest_edge_refinement" name="method" type="String" values="modify|regular|longest"/>
+      <cftuvxbd descr="Allow_coarsening" descrs="On|Off" name="allowcoarsening" type="Boolean" values="on|off"/>
+      <veqfuzzv descr="Size_field_metric" name="metric" type="StringMatrix"/>
+      <dsbxvvxa descr="Element_split_method" descrs="Insert_diagonal_edges|Insert_center_points" name="splitmethod" type="String" values="diagonal|center"/>
+      <drsdqwwd descr="X-direction_scale#z" name="zscale" type="Double"/>
+      <ecacesfr descr="Method" descrs="Automatic|Delaunay|Delaunay_(legacy_version)" name="method" type="String" values="auto|del|dellegacy52"/>
+      <rsbcwvzq descr="Optimization_level" descrs="Basic|Medium|High" name="optlevel" type="String" values="basic|medium|high"/>
+      <vqwafaaz descr="Avoid_inverted_curved_elements" descrs="On|Off" name="optcurved" type="Boolean" values="on|off"/>
+      <crfxxbyp descr="Avoid_too_large_elements" descrs="On|Off" name="optlarge" type="Boolean" values="on|off"/>
+      <zczzvdsq descr="Avoid_too_small_elements" descrs="On|Off" name="optsmall" type="Boolean" values="on|off"/>
+      <wqxbcasc descr="Sweep_path_calculation" descrs="Automatic|Sweep_following_straight_lines|Sweep_following_circular_arcs|Sweep_using_interpolation" name="sweeppath" type="String" values="auto|straight|circular|general"/>
+      <xrvvzdwc descr="Destination_mesh_generation" descrs="Determine_suitable_method|Use_a_rigid_transformation|Morph_source_onto_destination|Project_source_onto_destination" name="targetmesh" type="String" values="auto|rigid|morph|project"/>
+      <cbcxrrfz descr="Face_meshing_method" descrs="Quadrilateral_(Hexahedron)|Triangular_(Prism)|Quadrilateral_(Legacy_52)|Quadrilateral_(Legacy_52a)" name="facemethod" type="String" values="quad|tri|quadlegacy52|quadlegacy52a"/>
+      <xqadwyxc descr="Interpolation_method_for_linking_faces" descrs="Automatic|Transfinite_in_2D|Transfinite_in_3D" name="mapinterpmethod" type="String" values="auto|transfinite2D|transfinite3D"/>
+      <frvfyucw descr="Source_faces" name="sourceface" type="Selection"/>
+      <scxdyyqx descr="Destination_faces" name="targetface" type="Selection"/>
+      <czxzwcys descr="Interpolation_method" descrs="Automatic|Transfinite_in_2D|Transfinite_in_3D" name="interpmethod" type="String" values="auto|transfinite2D|transfinite3D"/>
+      <fzycdset descr="Source_edges" name="source" type="Selection"/>
+      <xzesdzux descr="Destination_edges" name="destination" type="Selection"/>
+      <cdrttaff descr="Geometric_entity_level" descrs="Entire_geometry|Domain|Boundary|Edge" name="dimension" type="Int" values="all|3|2|1"/>
+      <cswyqwvd descr="Handling_of_sharp_edges" descrs="Trimming|Splitting|None" name="sharpcorners" type="String" values="trim|split|none"/>
+      <etqyezyt descr="zmax" name="zmax" type="Double"/>
+      <aqdyfwvf descr="zmin" name="zmin" type="Double"/>
+      <dvxdyewt descr="X-direction_scale#r" name="xscale" type="Double"/>
+      <vtvvuawc descr="X-direction_scale#z" name="yscale" type="Double"/>
+    </Properties>
+  </model.mesh>
+</COMSOLCompletionData>

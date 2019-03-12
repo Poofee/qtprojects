@@ -1,0 +1,1015 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<COMSOLCompletionData>
+  <model.geom geomspecific="true">
+    <Geom topic="GeomList">
+      <S1D axi="false" dim="1">
+        <GeomSequence descr="Geometry" id="geom" props="exwreyqp xwefzewp xtvbssba dcezudca ywfzftvd xrybeuqu cwrsxtyc" topic="GeomSequence">
+          <GeomFeature>
+            <Import descr="Import" id="imp" props="tryrtqvb twqbvbur cbuyxffc xzadwtut eysebcxy acebxrxe zsxbtrzd tetcxrup bfsaxazb uqbwzqya tsxxrsfd" topic="geom_Import"/>
+            <Interval descr="Interval" id="i" props="tryrtqvb twqbvbur cbuyxffc ffsvybyd awbfzuwt vdvuwycq wbxbvcua yzrytsbx ravuqarv bbusrsbs ueqyvyfc" topic="geom_Interval"/>
+            <Point descr="Point" id="pt" props="tryrtqvb twqbvbur afwytrzd wvcfxasv" topic="geom_Point"/>
+            <Union descr="Union" id="uni" props="tryrtqvb twqbvbur cbuyxffc rydssubd zddtyarq wdvfqvau aavcytcy adcycqdb wsysctys" topic="geom_Union">
+              <description>Compose objects using a Boolean set formula.</description>
+            </Union>
+            <Intersection descr="Intersection" id="int" props="tryrtqvb twqbvbur cbuyxffc rydssubd zddtyarq wdvfqvau aavcytcy adcycqdb wsysctys" topic="geom_Intersection">
+              <description>Compose objects using a Boolean set formula.</description>
+            </Intersection>
+            <Difference descr="Difference" id="dif" props="tryrtqvb twqbvbur cbuyxffc avtvbtqa wqscsbaz zddtyarq wdvfqvau aavcytcy adcycqdb wsysctys" topic="geom_Difference">
+              <description>Compose objects using a Boolean set formula.</description>
+            </Difference>
+            <Compose descr="Compose" id="co" props="tryrtqvb twqbvbur cbuyxffc rydssubd zddtyarq wdvfqvau aavcytcy adcycqdb wsysctys zaxrvrxu" topic="geom_Compose">
+              <description>Compose objects using a Boolean set formula.</description>
+            </Compose>
+            <Partition descr="Partition_objects" id="par" props="tryrtqvb twqbvbur cbuyxffc vecyrazt ssbvddqr wuqsxsuq yxxfddxu aavcytcy adcycqdb wsysctys" topic="geom_Partition"/>
+            <ConvertToSolid descr="Convert_to_solid" id="csol" props="tryrtqvb twqbvbur cbuyxffc rydssubd zddtyarq aavcytcy adcycqdb wsysctys" topic="geom_ConvertToSolid"/>
+            <ConvertToPoint descr="Convert_to_point" id="cpt" props="tryrtqvb twqbvbur afwytrzd rydssubd zddtyarq aavcytcy adcycqdb wsysctys" topic="geom_ConvertToPoint"/>
+            <Split descr="Split" id="spl" props="tryrtqvb twqbvbur cbuyxffc rydssubd zddtyarq" topic="geom_Split"/>
+            <Array descr="Array" id="arr" props="tryrtqvb twqbvbur cbuyxffc rydssubd abxbzddr wdacvdxd" topic="geom_Array"/>
+            <Copy descr="Copy" id="copy" props="tryrtqvb twqbvbur cbuyxffc rydssubd zddtyarq cdqbafvx" topic="geom_Copy"/>
+            <Mirror descr="Mirror[reflect]" id="mir" props="tryrtqvb twqbvbur cbuyxffc rydssubd zddtyarq bcaebced axtyrwdz" topic="geom_Mirror"/>
+            <Move descr="Move" id="mov" props="tryrtqvb twqbvbur cbuyxffc rydssubd zddtyarq cdqbafvx" topic="geom_Move"/>
+            <Scale descr="Scale" id="sca" props="tryrtqvb twqbvbur cbuyxffc rydssubd zddtyarq sbayzuqc fwuaubvc vbezqafa yyvbcsdq afwwazwd" topic="geom_Scale"/>
+            <Delete descr="Delete_entities" id="del" props="tryrtqvb twqbvbur cbuyxffc tcsrxbaa wzszxbec" topic="geom_Delete"/>
+            <PartInstance descr="Part_instance" id="pi" props="rueabfya awtaqvqs buezsduw tszvbssz ctctsbdd wqwzrcbs dtttddbd vdwfezcp uvucfqdt wdzstyfc ruydyyxy axdzxcbs ezyxebxd sfvbbcrs udbbsvas xzrsubqb" topic="geom_PartInstance"/>
+            <If descr="If" id="if" props="etaadbxr" topic="geom_If"/>
+            <ElseIf descr="Else_if" id="elseif" props="etaadbxr" topic="geom_ElseIf"/>
+            <Else descr="Else" id="else" topic="geom_Else"/>
+            <EndIf descr="End_if" id="endif" topic="geom_EndIf"/>
+            <ParameterCheck descr="Parameter_check" id="pch" props="etaadbxr xwxqfapp" topic="geom_ParameterCheck"/>
+            <ExplicitSelection descr="Explicit_selection" id="sel" props="yfcuuvws ceyyqbxw fceyqrst bxtyqtyq csfwxvyz tryrtqvb" topic="geom_ExplicitSelection"/>
+            <BallSelection descr="Ball_selection" id="ballsel" props="teuydsvy ceyyqbxw fceyqrst cbzwdtds wtreavve rwdrytuy abbwtwqa uqzaeycc wwuxfdrt awssaczw bxtyqtyq csfwxvyz tryrtqvb" topic="geom_BallSelection"/>
+            <BoxSelection descr="Box_selection" id="boxsel" props="teuydsvy ceyyqbxw fceyqrst cbzwdtds wtreavve trqbcaft aaybwytt xbtdwutv fubdqrxv cvwefdxx teeezabx sduyqeae bxtyqtyq csfwxvyz tryrtqvb" topic="geom_BoxSelection"/>
+            <UnionSelection descr="Union_selection" id="unisel" props="teuydsvy rebfuydc bxtyqtyq csfwxvyz tryrtqvb" topic="geom_UnionSelection"/>
+            <IntersectionSelection descr="Intersection_selection" id="intsel" props="teuydsvy tcsdexze bxtyqtyq csfwxvyz tryrtqvb" topic="geom_IntersectionSelection"/>
+            <DifferenceSelection descr="Difference_selection" id="difsel" props="teuydsvy vcuxzrav yfcqucsf bxtyqtyq csfwxvyz tryrtqvb" topic="geom_DifferenceSelection"/>
+            <ComplementSelection descr="Complement_selection" id="comsel" props="teuydsvy abtvdwet bxtyqtyq csfwxvyz tryrtqvb" topic="geom_ComplementSelection"/>
+            <AdjacentSelection descr="Adjacent_selection" id="adjsel" props="zdqydxzp yrqtxwwz cywrqrqw dvudacrx uwrqbrdx bxtyqtyq csfwxvyz tryrtqvb" topic="geom_AdjacentSelection"/>
+          </GeomFeature>
+          <ModelEntityImage>
+            <Geometry descr="Geometry" id="image" props="cbuuzrdy wtfqcrcq cuawbuxb vfwfbazx dusvusvq fuxcwvee scxtvcxp bzadtrup rzswusav wqefaafr tysuqfzv xadtwseq txbeycdb wqbuwvbe fdyrwbca esfveevc vxutxzvw eexqebrp fvewcusa sssdbqss wqtdcscv zvyrryfu vtqdxtaq uwacvaqv aqcttycw zbuytuzs fxabvwrp swyqzsbu rxddsydb bavstweq bzbfaexq zdusdzxt bwqudurq xbvzvazt vvfcdrea bezeetby urefcwry fvryarft" topic="entityImage"/>
+          </ModelEntityImage>
+        </GeomSequence>
+      </S1D>
+      <S2D axi="false" dim="2">
+        <GeomSequence descr="Geometry" id="geom" props="exwreyqp xwefzewp xtvbssba dcezudca ywfzftvd xrybeuqu cwrsxtyc" topic="GeomSequence">
+          <GeomFeature>
+            <Import descr="Import" id="imp" props="tryrtqvb twqbvbur wrdedfqt eqwxfrxb fvryarft uezbardb dxvwfytc sveyrdtz adcwerqr uzrxxuvb bbqfqrqy xzadwtut twwqvxfp wxaexxcq zsxbtrzd tetcxrup bfsaxazb uqbwzqya tsxxrsfd eufzvafx wzqzqwaw waqqwuxu vydeffss xretasyd fbuyrbxt dqxzcvvu adcycqdb avtyrvwv udecvssp cxyuqxaa dqqcecta waweuvdz xwswbzty wcfzxfzx xavretec wxazczud etdbutdq ayqztfca sddtztuz tsyfstby tqbvdqzz twurczfw tuwyxwdx wdvfqvau zudqwber fwtdzzzw dcrecyfs syrfxwcw davcvysq bfdubswp xsvbdavw bvayeyqp ssftqwxe fexefvda" topic="geom_Import"/>
+            <Circle descr="Circle" id="c" props="tryrtqvb twqbvbur wrdedfqt eqwxfrxb fvryarft ryeqxrxd dcbazsyv ayxvqatr zcbexbvr syrxcwat wwsudtsu fterfrbw bvxbrzxr dadfffdw uzbuefyr sdqtftdz wwuxfdrt fvcbvbrb ezavxyvc" topic="geom_Circle">
+              <description>Create a circle or disk in 2D.</description>
+            </Circle>
+            <Ellipse descr="Ellipse" id="e" props="tryrtqvb twqbvbur wrdedfqt eqwxfrxb fvryarft ryeqxrxd dcbazsyv ayxvqatr zcbexbvr syrxcwat wwsudtsu fterfrbw bvxbrzxr dadfffdw uzbuefyr zxbwbeqb vzaazqeb tatvbyrx cuywbzrq fvcbvbrb ezavxyvc" topic="geom_Ellipse"/>
+            <Rectangle descr="Rectangle[geometry]" id="r" props="tryrtqvb twqbvbur wrdedfqt eqwxfrxb fvryarft ryeqxrxd dcbazsyv ayxvqatr zcbexbvr syrxcwat wwsudtsu fterfrbw bvxbrzxr dadfffdw uzbuefyr wyfyryvu xtzdavys uruvwvws fcervvaw dcytzwub ftfbatyt vruvvtvx etcaszvq" topic="geom_Rectangle"/>
+            <Square descr="Square" id="sq" props="tryrtqvb twqbvbur wrdedfqt eqwxfrxb fvryarft ryeqxrxd dcbazsyv ayxvqatr zcbexbvr syrxcwat wwsudtsu fterfrbw bvxbrzxr dadfffdw uzbuefyr wyfyryvu xtzdavys uruvwvws fcervvaw eqysycbt dustrfxp drcrsfep" topic="geom_Square"/>
+            <BezierPolygon descr="Bezier_polygon" id="b" props="tryrtqvb twqbvbur wrdedfqt eqwxfrxb fvryarft eqexqtfv tctstwct rbvafase rszrvwcs zyrryexw" topic="geom_BezierPolygon"/>
+            <InterpolationCurve descr="Interpolation_curve" id="ic" props="tryrtqvb twqbvbur wrdedfqt eqwxfrxb fvryarft zyrryexw vvyvfbqw zsxbtrzd brwfyvcs vzzvdcxu yqttdvxc xueuvcud vwxwtasd fzrrfsuy fxeeqxrq vrbdvaec zycdavxb edtscvcc" topic="geom_InterpolationCurve"/>
+            <LineSegment descr="Line_segment" id="ls" props="tryrtqvb twqbvbur eszweudy aeebeewy dsrscaaq fbwuzxbx ccuaccax eybwzqux eycuqaww ubtatadx vqxbrzay" topic="geom_LineSegment"/>
+            <ParametricCurve descr="Parametric_curve" id="pc" props="tryrtqvb twqbvbur eszweudy dcbazsyv ayxvqatr zcbexbvr wwsudtsu wuvewwuw yxqbryse cuvufyee uvdxrtwq fzrrfsuy tafxzwdy efxxbdzd" topic="geom_ParametricCurve"/>
+            <Point descr="Point" id="pt" props="tryrtqvb twqbvbur dfdwxdfp rvrfuxvp wvcfxasv" topic="geom_Point"/>
+            <Polygon descr="Polygon" id="pol" props="tryrtqvb twqbvbur wrdedfqt eqwxfrxb fvryarft zyrryexw tztuaetr vvyvfbqw zsxbtrzd vzzvdcxu yqttdvxc xueuvcud vwxwtasd" topic="geom_Polygon"/>
+            <Union descr="Union" id="uni" props="tryrtqvb twqbvbur wrdedfqt eqwxfrxb fvryarft rydssubd zddtyarq wdvfqvau aavcytcy adcycqdb wsysctys" topic="geom_Union">
+              <description>Compose objects using a Boolean set formula.</description>
+            </Union>
+            <Intersection descr="Intersection" id="int" props="tryrtqvb twqbvbur wrdedfqt eqwxfrxb fvryarft rydssubd zddtyarq wdvfqvau aavcytcy adcycqdb wsysctys" topic="geom_Intersection">
+              <description>Compose objects using a Boolean set formula.</description>
+            </Intersection>
+            <Difference descr="Difference" id="dif" props="tryrtqvb twqbvbur wrdedfqt eqwxfrxb fvryarft avtvbtqa wqscsbaz zddtyarq wdvfqvau aavcytcy adcycqdb wsysctys" topic="geom_Difference">
+              <description>Compose objects using a Boolean set formula.</description>
+            </Difference>
+            <Compose descr="Compose" id="co" props="tryrtqvb twqbvbur wrdedfqt eqwxfrxb fvryarft rydssubd zddtyarq wdvfqvau aavcytcy adcycqdb wsysctys zaxrvrxu" topic="geom_Compose">
+              <description>Compose objects using a Boolean set formula.</description>
+            </Compose>
+            <Partition descr="Partition_objects" id="par" props="tryrtqvb twqbvbur wrdedfqt eqwxfrxb fvryarft vecyrazt ssbvddqr wuqsxsuq yxxfddxu aavcytcy adcycqdb wsysctys" topic="geom_Partition"/>
+            <PartitionDomains descr="Partition_domains" id="pard" props="tryrtqvb twqbvbur wrdedfqt eqwxfrxb fvryarft wzewstre tavurtcf rwuzbced udabzsaa xfbuetwx dwxzxbqt tbrbfwex yyytrzaw aavcytcy adcycqdb wsysctys" topic="geom_PartitionDomains"/>
+            <PartitionEdges descr="Partition_edges" id="pare" props="tryrtqvb twqbvbur wrdedfqt eqwxfrxb fvryarft fzrsqtfe dqtsyrwp fuvddbyw duvyyafq" topic="geom_PartitionEdges"/>
+            <ConvertToSolid descr="Convert_to_solid" id="csol" props="tryrtqvb twqbvbur wrdedfqt eqwxfrxb fvryarft rydssubd zddtyarq aavcytcy adcycqdb wsysctys" topic="geom_ConvertToSolid"/>
+            <ConvertToCurve descr="Convert_to_curve" id="ccur" props="tryrtqvb twqbvbur eszweudy rydssubd zddtyarq aavcytcy adcycqdb wsysctys" topic="geom_ConvertToCurve"/>
+            <ConvertToPoint descr="Convert_to_point" id="cpt" props="tryrtqvb twqbvbur dfdwxdfp rydssubd zddtyarq aavcytcy adcycqdb wsysctys" topic="geom_ConvertToPoint"/>
+            <Split descr="Split" id="spl" props="tryrtqvb twqbvbur wrdedfqt eqwxfrxb fvryarft rydssubd zddtyarq" topic="geom_Split"/>
+            <Array descr="Array" id="arr" props="tryrtqvb twqbvbur wrdedfqt eqwxfrxb fvryarft rydssubd etcaszvq ybzszauz azvrusfw datcevzr xyerewsz wdacvdxd" topic="geom_Array"/>
+            <Copy descr="Copy" id="copy" props="tryrtqvb twqbvbur wrdedfqt eqwxfrxb fvryarft rydssubd zddtyarq bfervyrx cdqbafvx tsfdqabx aezdydtx" topic="geom_Copy"/>
+            <Mirror descr="Mirror[reflect]" id="mir" props="tryrtqvb twqbvbur wrdedfqt eqwxfrxb fvryarft rydssubd zddtyarq ryeqxrxd bcaebced wtwubfvx axtyrwdz" topic="geom_Mirror"/>
+            <Move descr="Move" id="mov" props="tryrtqvb twqbvbur wrdedfqt eqwxfrxb fvryarft rydssubd zddtyarq bfervyrx cdqbafvx tsfdqabx aezdydtx" topic="geom_Move"/>
+            <Rotate descr="Rotate" id="rot" props="tryrtqvb twqbvbur wrdedfqt eqwxfrxb fvryarft rydssubd zddtyarq syrxcwat scuzertx ryeqxrxd ftyuzdpp" topic="geom_Rotate"/>
+            <Scale descr="Scale" id="sca" props="tryrtqvb twqbvbur wrdedfqt eqwxfrxb fvryarft rydssubd zddtyarq sbayzuqc fwuaubvc vbezqafa yyvbcsdq ryeqxrxd afwwazwd" topic="geom_Scale"/>
+            <Chamfer descr="Chamfer" id="cha" props="tryrtqvb twqbvbur wrdedfqt eqwxfrxb fvryarft eauzfycy xxcxsvdx tcdtyyup" topic="geom_Chamfer">
+              <description>Create flattened corners in 2D objects.</description>
+            </Chamfer>
+            <Fillet descr="Fillet" id="fil" props="tryrtqvb twqbvbur wrdedfqt eqwxfrxb fvryarft fctcusyc udtdqezx carwbrtt" topic="geom_Fillet"/>
+            <Tangent descr="Tangent" id="tan" props="tryrtqvb twqbvbur eszweudy aafvyuru vfuvrfzt wwvuxvqa drcerysf eeqszezy sddxdqxu wduxtcrv" topic="geom_Tangent"/>
+            <Delete descr="Delete_entities" id="del" props="tryrtqvb twqbvbur wrdedfqt eqwxfrxb fvryarft tcsrxbaa wzszxbec" topic="geom_Delete"/>
+            <EditObject descr="Edit_object" id="edo" props="tryrtqvb twqbvbur wrdedfqt eqwxfrxb fvryarft rzztsaxw vcutszuz tddwesby uuqewver ustubqar fzrfufcq xfecsfay rufwtzsa ebvxfrtw acrzduat vtwcfezp uyfcsuxv vtdswccq auxcuacs" topic="geom_EditObject"/>
+            <CrossSection descr="Cross_section" id="cro" props="tryrtqvb twqbvbur wrdedfqt eqwxfrxb fvryarft vdsbddts xuudxdtr fqatrabu bsxrvcrr eyqawccy aavcytcy adcycqdb wsysctys" topic="geom_CrossSection"/>
+            <IgnoreVertices descr="Ignore_vertices" id="igv" props="sttybsfs esduzbzr" topic="geom_IgnoreVertices"/>
+            <IgnoreEdges descr="Ignore_edges" id="ige" props="wdruqzqb cyrsvqvr esduzbzr" topic="geom_IgnoreEdges"/>
+            <CompositeEdges descr="Form_composite_edges" id="cme" props="sqatxqae esduzbzr" topic="geom_CompositeEdges">
+              <description>Form composite edges.</description>
+            </CompositeEdges>
+            <CompositeDomains descr="Form_composite_domains" id="cmd" props="sdayrefv dtxztvyu esduzbzr" topic="geom_CompositeDomains">
+              <description>Form composite domains.</description>
+            </CompositeDomains>
+            <CollapseEdges descr="Collapse_edges" id="cle" props="acyvuuaw azwxtuzr" topic="geom_CollapseEdges">
+              <description>Collapse edges.</description>
+            </CollapseEdges>
+            <MergeVertices descr="Merge_vertices" id="mrv" props="edtxeesv wcxvdxet" topic="geom_MergeVertices"/>
+            <MeshControlVertices descr="Mesh_control_vertices" id="mcv" props="ufttutyy" topic="geom_MeshControlVertices"/>
+            <MeshControlEdges descr="Mesh_control_edges" id="mce" props="uqcsbqyf wabteuur" topic="geom_MeshControlEdges"/>
+            <MeshControlDomains descr="Mesh_control_domains" id="mcd" props="sddcuuzw" topic="geom_MeshControlDomains"/>
+            <PartInstance descr="Part_instance" id="pi" props="rueabfya awtaqvqs buezsduw tszvbssz wdacvdxd rwqrctfy ctctsbdd wqwzrcbs dtttddbd rcvydxte xddxaexr uyvsfqze zvuxrvzw vdwfezcp uvucfqdt wdzstyfc ruydyyxy axdzxcbs ezyxebxd sfvbbcrs udbbsvas xzrsubqb" topic="geom_PartInstance"/>
+            <If descr="If" id="if" props="etaadbxr" topic="geom_If"/>
+            <ElseIf descr="Else_if" id="elseif" props="etaadbxr" topic="geom_ElseIf"/>
+            <Else descr="Else" id="else" topic="geom_Else"/>
+            <EndIf descr="End_if" id="endif" topic="geom_EndIf"/>
+            <ParameterCheck descr="Parameter_check" id="pch" props="etaadbxr xwxqfapp" topic="geom_ParameterCheck"/>
+            <ExplicitSelection descr="Explicit_selection" id="sel" props="yfcuuvws ceyyqbxw fceyqrst bxtyqtyq csfwxvyz tryrtqvb eqwxfrxb fvryarft" topic="geom_ExplicitSelection"/>
+            <BallSelection descr="Ball_selection" id="ballsel" props="ewuqzavw ceyyqbxw fceyqrst cbzwdtds wtreavve rwdrytuy abbwtwqa uqzaeycc wwuxfdrt awssaczw bxtyqtyq csfwxvyz tryrtqvb eqwxfrxb fvryarft" topic="geom_BallSelection"/>
+            <BoxSelection descr="Box_selection" id="boxsel" props="ewuqzavw ceyyqbxw fceyqrst cbzwdtds wtreavve trqbcaft aaybwytt xbtdwutv fubdqrxv cvwefdxx teeezabx sduyqeae bxtyqtyq csfwxvyz tryrtqvb eqwxfrxb fvryarft" topic="geom_BoxSelection"/>
+            <DiskSelection descr="Disk_selection" id="disksel" props="ewuqzavw ceyyqbxw fceyqrst cbzwdtds wtreavve rwdrytuy abbwtwqa uqzaeycc bxwzuuzx crdrceyr bzscuaqz fuqqaaar tzccvtrw bxtyqtyq csfwxvyz tryrtqvb eqwxfrxb fvryarft" topic="geom_DiskSelection"/>
+            <UnionSelection descr="Union_selection" id="unisel" props="ewuqzavw rebfuydc bxtyqtyq csfwxvyz tryrtqvb eqwxfrxb fvryarft" topic="geom_UnionSelection"/>
+            <IntersectionSelection descr="Intersection_selection" id="intsel" props="ewuqzavw tcsdexze bxtyqtyq csfwxvyz tryrtqvb eqwxfrxb fvryarft" topic="geom_IntersectionSelection"/>
+            <DifferenceSelection descr="Difference_selection" id="difsel" props="ewuqzavw vcuxzrav yfcqucsf bxtyqtyq csfwxvyz tryrtqvb eqwxfrxb fvryarft" topic="geom_DifferenceSelection"/>
+            <ComplementSelection descr="Complement_selection" id="comsel" props="ewuqzavw abtvdwet bxtyqtyq csfwxvyz tryrtqvb eqwxfrxb fvryarft" topic="geom_ComplementSelection"/>
+            <AdjacentSelection descr="Adjacent_selection" id="adjsel" props="dayzqwwt yrqtxwwz uqdrrafu dvudacrx uwrqbrdx bxtyqtyq csfwxvyz tryrtqvb eqwxfrxb fvryarft" topic="geom_AdjacentSelection"/>
+            <Parallel descr="Parallel" id="para" props="yxvzbeeq" topic="geom_Parallel"/>
+            <Perpendicular descr="Perpendicular" id="perp" props="axzabrsa cfabdcwb" topic="geom_Perpendicular"/>
+            <TangentConstraint descr="Tangent_constraint" id="tanc" props="zdvyfzvv rutwufxc uzrawfwt xeeadxtu arstwwzb dacvrysp xeqzxbuf yurdsxqp" topic="geom_TangentConstraint"/>
+            <Coincident descr="Coincident" id="coi" props="scuwqqrq zubzvfrr xeqzxbuf yurdsxqp" topic="geom_Coincident"/>
+            <Concentric descr="Concentric" id="con" props="xfbuetwx szsdtwqr" topic="geom_Concentric"/>
+            <EqualDistance descr="Equal_distance" id="eqdist" props="scuwqqrq zubzvfrr vssftftx tbxtucad xeqzxbuf yurdsxqp srryrxxw zwqvvzyc" topic="geom_EqualDistance"/>
+            <EqualRadius descr="Equal_radius" id="eqrad" props="vcauwdxw wfazusuz" topic="geom_EqualRadius"/>
+            <Distance descr="Distance" id="dist" props="scuwqqrq zubzvfrr ryfrsvbz xeqzxbuf yurdsxqp" topic="geom_Distance"/>
+            <XDistance descr="x-Distance" id="xdist" props="scuwqqrq zubzvfrr ryfrsvbz xeqzxbuf yurdsxqp" topic="geom_XDistance"/>
+            <YDistance descr="y-Distance" id="ydist" props="scuwqqrq zubzvfrr ryfrsvbz xeqzxbuf yurdsxqp" topic="geom_YDistance"/>
+            <DirDistance descr="Directed_distance" id="ddist" props="scuwqqrq zubzvfrr bsexqvye dwecbwvq uwwetfft ryfrsvbz xeqzxbuf yurdsxqp" topic="geom_DirDistance"/>
+            <TotalEdgeLength descr="Total_edge_length" id="telen" props="xfbuetwx dxvuaadb" topic="geom_TotalEdgeLength"/>
+            <Angle descr="Angle" id="ang" props="bbabfbyu ddvzdvar tdctddvr wzfaqqas fdceurxr xeqzxbuf yurdsxqp" topic="geom_Angle"/>
+            <Radius descr="Radius" id="rad" props="xxruwtwe carwbrtt" topic="geom_Radius"/>
+            <Position descr="Position" id="pos" props="brvybwuu ebwwxtrf" topic="geom_Position"/>
+          </GeomFeature>
+          <ModelEntityImage>
+            <Geometry descr="Geometry" id="image" props="cbuuzrdy wtfqcrcq cuawbuxb vbszqsyy fdvtrscr vfwfbazx dusvusvq fuxcwvee scxtvcxp bzadtrup rzswusav wqefaafr tysuqfzv xadtwseq txbeycdb wqbuwvbe fdyrwbca esfveevc vxutxzvw eexqebrp fvewcusa sssdbqss wqtdcscv zvyrryfu vtqdxtaq uwacvaqv aqcttycw zbuytuzs fxabvwrp swyqzsbu rxddsydb bavstweq bzbfaexq zdusdzxt bwqudurq xbvzvazt vvfcdrea bezeetby urefcwry fvryarft" topic="entityImage"/>
+          </ModelEntityImage>
+        </GeomSequence>
+      </S2D>
+      <S3D axi="false" dim="3">
+        <GeomSequence descr="Geometry" id="geom" props="exwreyqp xwefzewp xtvbssba zzdctzqf dcezudca ywfzftvd xrybeuqu cwrsxtyc" topic="GeomSequence">
+          <GeomFeature>
+            <Import descr="Import" id="imp" props="tryrtqvb twqbvbur wecezrxp eqwxfrxb fvryarft uezbardb dxvwfytc sveyrdtz adcwerqr uzrxxuvb bbqfqrqy xzadwtut atbdzrbp uedxaesx zsxbtrzd tetcxrup bfsaxazb uqbwzqya tsxxrsfd batzcyte wxtzvdfv ucwbcwaw trdtzwfs eufzvafx tarftzff ayfuxtsq stcceefs drbbrrsy ebtbtdtp fqdqrfxp srybqecw fcvyvcdb tfvytxcq ezsytbuy usuqzxqy bxeuabqp vbbrtyap fewazxvz equfyvee vzweuxda xuefrxwu fraauzyt vfcrtdqd uauwczdf zyzaades wuffftxy ddbvyqwb vfyeeyav zsbtzetc avtyrvwv udecvssp cxyuqxaa dqqcecta sfwdderz xwswbzty dvzsuvxb cvezucvc wcfzxfzx xavretec wxazczud etdbutdq ayqztfca sddtztuz tsyfstby tqbvdqzz twurczfw tuwyxwdx wdvfqvau zudqwber fwtdzzzw dcrecyfs syrfxwcw davcvysq bfdubswp xsvbdavw fbuyrbxt dqxzcvvu adcycqdb bvayeyqp eeuaevsb utvtfuss eqvrxbua wudbxqwa xzrafzda ssftqwxe vcxcxxcu fexefvda" topic="geom_Import"/>
+            <Block descr="Block" id="blk" props="tryrtqvb twqbvbur wecezrxp eqwxfrxb fvryarft trqtxxtf tfyxxbxp dcbazsyv ayxvqatr zcbexbvr zrqxecxr wwsudtsu aradcttw abswvdvq txtvwvct fesauxxv tzzywvvw bvxbrzxr dcytzwub bdvtfcex uddxqdcu etcaszvq dadfffdw uzbuefyr zqzqbetf wqwwdatx tsdrsrrp wedzuttc bdayebff xbzayesz zrqqavup" topic="geom_Block">
+              <description>Create a right-angled solid or surface block in 3D.</description>
+            </Block>
+            <Cone descr="Cone" id="cone" props="tryrtqvb twqbvbur wecezrxp eqwxfrxb fvryarft trqtxxtf tfyxxbxp dcbazsyv ayxvqatr zcbexbvr zrqxecxr wwsudtsu aradcttw abswvdvq txtvwvct fesauxxv tzzywvvw dadfffdw uzbuefyr efwfydws uruvwvws fcervvaw vcxesvyv dsdffbre stvzvtzr vtwdbvzc rvbuvfae" topic="geom_Cone">
+              <description>Create a solid or surface circular right cone or frustum in 3D.</description>
+            </Cone>
+            <Cylinder descr="Cylinder" id="cyl" props="tryrtqvb twqbvbur wecezrxp eqwxfrxb fvryarft trqtxxtf tfyxxbxp dcbazsyv ayxvqatr zcbexbvr zrqxecxr wwsudtsu aradcttw abswvdvq txtvwvct fesauxxv tzzywvvw dadfffdw uzbuefyr efwfydws uruvwvws fcervvaw wwuxfdrt dsdffbre" topic="geom_Cylinder"/>
+            <ECone descr="Eccentric_cone" id="econ" props="tryrtqvb twqbvbur wecezrxp eqwxfrxb fvryarft trqtxxtf tfyxxbxp dcbazsyv ayxvqatr zcbexbvr zrqxecxr wwsudtsu aradcttw abswvdvq txtvwvct fesauxxv tzzywvvw zxbwbeqb vzaazqeb cuywbzrq dsdffbre ebuzcezx vtudxvsx" topic="geom_ECone"/>
+            <Ellipsoid descr="Ellipsoid" id="elp" props="tryrtqvb twqbvbur wecezrxp eqwxfrxb fvryarft trqtxxtf tfyxxbxp dcbazsyv ayxvqatr zcbexbvr zrqxecxr wwsudtsu aradcttw abswvdvq txtvwvct fesauxxv tzzywvvw dadfffdw uzbuefyr zxbwbeqb vzaazqeb rbzewtcb cuywbzrq" topic="geom_Ellipsoid"/>
+            <Helix descr="Helix" id="hel" props="tryrtqvb twqbvbur wecezrxp eqwxfrxb fvryarft trqtxxtf tfyxxbxp dcbazsyv ayxvqatr zcbexbvr zrqxecxr wwsudtsu aradcttw abswvdvq txtvwvct fesauxxv tzzywvvw vqbqruvf azazdxcb yyywddub sqwzycpp tuabdfxq sautvscv drxutvea ysrwcfuc xexdtxvz fzrrfsuy" topic="geom_Helix"/>
+            <Hexahedron descr="Hexahedron" id="hex" props="tryrtqvb twqbvbur wecezrxp eqwxfrxb fvryarft trqtxxtf tfyxxbxp aradcttw baadettx" topic="geom_Hexahedron"/>
+            <ParametricSurface descr="Parametric_surface" id="ps" props="tryrtqvb twqbvbur wfuyttca eqwxfrxb fvryarft trqtxxtf tfyxxbxp dcbazsyv ayxvqatr zcbexbvr zrqxecxr wwsudtsu abswvdvq txtvwvct fesauxxv tzzywvvw bzyerzrf ctuzzerf byutvfut ayrrrfaq audbxbfe zzdvtdss uvdxrtwq fzrrfsuy tafxzwdy" topic="geom_ParametricSurface"/>
+            <Pyramid descr="Pyramid" id="pyr" props="tryrtqvb twqbvbur wecezrxp eqwxfrxb fvryarft trqtxxtf tfyxxbxp dcbazsyv ayxvqatr zcbexbvr zrqxecxr wwsudtsu aradcttw abswvdvq txtvwvct fesauxxv tzzywvvw axxzrszw sdfecdtw dsdffbre ebuzcezx vtudxvsx" topic="geom_Pyramid"/>
+            <Sphere descr="Sphere" id="sph" props="tryrtqvb twqbvbur wecezrxp eqwxfrxb fvryarft trqtxxtf tfyxxbxp dcbazsyv ayxvqatr zcbexbvr zrqxecxr wwsudtsu aradcttw abswvdvq txtvwvct fesauxxv tzzywvvw dadfffdw uzbuefyr wwuxfdrt" topic="geom_Sphere"/>
+            <Tetrahedron descr="Tetrahedron" id="tet" props="tryrtqvb twqbvbur wecezrxp eqwxfrxb fvryarft trqtxxtf tfyxxbxp baadettx aradcttw" topic="geom_Tetrahedron"/>
+            <Torus descr="Torus" id="tor" props="tryrtqvb twqbvbur wecezrxp eqwxfrxb fvryarft trqtxxtf tfyxxbxp dcbazsyv ayxvqatr zcbexbvr zrqxecxr wwsudtsu aradcttw abswvdvq txtvwvct fesauxxv tzzywvvw azazdxcb yyywddub yquacyff uraxzzbq" topic="geom_Torus"/>
+            <BezierPolygon descr="Bezier_polygon" id="b" props="tryrtqvb twqbvbur bzssbtbb trqtxxtf tfyxxbxp tctstwct rbvafase rszrvwcs edcyatfp" topic="geom_BezierPolygon"/>
+            <InterpolationCurve descr="Interpolation_curve" id="ic" props="tryrtqvb twqbvbur bzssbtbb trqtxxtf tfyxxbxp edcyatfp vvyvfbqw zsxbtrzd brwfyvcs vzzvdcxu yqttdvxc xueuvcud vwxwtasd tyqyryqd fzrrfsuy fxeeqxrq vrbdvaec zycdavxb edtscvcc" topic="geom_InterpolationCurve"/>
+            <LineSegment descr="Line_segment" id="ls" props="tryrtqvb twqbvbur bzssbtbb trqtxxtf tfyxxbxp aeebeewy dsrscaaq ccuaccax eybwzqux eycuqaww vqxbrzay" topic="geom_LineSegment"/>
+            <ParametricCurve descr="Parametric_curve" id="pc" props="tryrtqvb twqbvbur bzssbtbb trqtxxtf tfyxxbxp dcbazsyv ayxvqatr zcbexbvr zrqxecxr wwsudtsu abswvdvq txtvwvct fesauxxv tzzywvvw wuvewwuw yxqbryse cuvufyee uvdxrtwq fzrrfsuy tafxzwdy efxxbdzd" topic="geom_ParametricCurve"/>
+            <Point descr="Point" id="pt" props="tryrtqvb twqbvbur dfdwxdfp trqtxxtf tfyxxbxp wvcfxasv" topic="geom_Point"/>
+            <Polygon descr="Polygon" id="pol" props="tryrtqvb twqbvbur bzssbtbb trqtxxtf tfyxxbxp edcyatfp tztuaetr vvyvfbqw zsxbtrzd vzzvdcxu yqttdvxc xueuvcud vwxwtasd tyqyryqd" topic="geom_Polygon"/>
+            <WorkPlane descr="Work_plane" id="wp" props="tryrtqvb twqbvbur wfuyttca eqwxfrxb fvryarft scecweze usbczrrw uywtycqw etwbwqrv sqafaxrb uaeatzdc zvrbdtre dfudwcwq ssvubxvt seczfres aevzfatx ydeuwars xbdurtxx uwwetfft bxaczdxe dvvduubt fcqrquqv duvvruxq trzwxebv zrzetvty dvveayzs bxwraatr fbuxexbz srsetfeu trqtxxtf ydsyrfee dyrutasv sbrcstay bssbfacu afbwvwrd ebsuxtfe xexczevq zdzsqqwx tasebrxv uvfezsca btybesbp rzaasqte wwsudtsu yybqescx asewyuzs reebcrqw yuxuxrrt syrwuvqw aavcytcy adcycqdb wsysctys dtqbsbrx bsqwwzyc yexxrbyf sausytcf" topic="geom_WorkPlane"/>
+            <Extrude descr="Extrude" id="ext" props="tryrtqvb twqbvbur wecezrxp eqwxfrxb fvryarft uzdtsbfz fqatrabu rydssubd uvbffztc vsswuyqb fezzwuyd zacqarbw tyddqffu yttxdbdb yvuusutc fzcyzzva deqazwfu eyafzarr ceqctzts yuqwsxqs" topic="geom_Extrude"/>
+            <Revolve descr="Revolve" id="rev" props="tryrtqvb twqbvbur wecezrxp eqwxfrxb fvryarft dwuwytbz fqatrabu rydssubd uvbffztc vsswuyqb rveffbtq btyeabce czwccyux bzscuaqz fuqqaaar fezdxuec yrwscbzu tcfbedde sqytedez rxsqefed vesfuuqv yuqwsxqs" topic="geom_Revolve"/>
+            <Sweep descr="Sweep" id="swe" props="tryrtqvb twqbvbur wecezrxp eqwxfrxb fvryarft wcbxxwqq rswdxqdr zddtyarq csesbqwp vxecqtrd vfyarecs tfafwexd ctcsewas fttvzfxe aevarfvc ztaswstd eedyzruv ysrwcfuc wezddqve efcwvsbz xexdtxvz fzrrfsuy tafxzwdy" topic="geom_Sweep"/>
+            <Union descr="Union" id="uni" props="tryrtqvb twqbvbur wecezrxp eqwxfrxb fvryarft rydssubd zddtyarq wdvfqvau aavcytcy adcycqdb wsysctys" topic="geom_Union">
+              <description>Compose objects using a Boolean set formula.</description>
+            </Union>
+            <Intersection descr="Intersection" id="int" props="tryrtqvb twqbvbur wecezrxp eqwxfrxb fvryarft rydssubd zddtyarq wdvfqvau aavcytcy adcycqdb wsysctys" topic="geom_Intersection">
+              <description>Compose objects using a Boolean set formula.</description>
+            </Intersection>
+            <Difference descr="Difference" id="dif" props="tryrtqvb twqbvbur wecezrxp eqwxfrxb fvryarft avtvbtqa wqscsbaz zddtyarq wdvfqvau aavcytcy adcycqdb wsysctys" topic="geom_Difference">
+              <description>Compose objects using a Boolean set formula.</description>
+            </Difference>
+            <Compose descr="Compose" id="co" props="tryrtqvb twqbvbur wecezrxp eqwxfrxb fvryarft rydssubd zddtyarq wdvfqvau aavcytcy adcycqdb wsysctys zaxrvrxu" topic="geom_Compose">
+              <description>Compose objects using a Boolean set formula.</description>
+            </Compose>
+            <Partition descr="Partition_objects" id="par" props="tryrtqvb twqbvbur wecezrxp eqwxfrxb fvryarft vecyrazt wuqsxsuq zybwuwtr ssbvddqr yxxfddxu fqatrabu aavcytcy adcycqdb wsysctys" topic="geom_Partition"/>
+            <PartitionDomains descr="Partition_domains" id="pard" props="tryrtqvb twqbvbur wecezrxp eqwxfrxb fvryarft wzewstre tdusrctc fqatrabu ecrcbxwx dxsaezvw tbrbfwex yyytrzaw aavcytcy adcycqdb wsysctys" topic="geom_PartitionDomains"/>
+            <PartitionFaces descr="Partition_faces" id="parf" props="tryrtqvb twqbvbur wecezrxp eqwxfrxb fvryarft dxqsaffe axyuvtxe vrufffce zeqybbex fqatrabu aavcytcy adcycqdb wsysctys" topic="geom_PartitionFaces"/>
+            <PartitionEdges descr="Partition_edges" id="pare" props="tryrtqvb twqbvbur wecezrxp eqwxfrxb fvryarft fzrsqtfe dqtsyrwp fuvddbyw duvyyafq" topic="geom_PartitionEdges"/>
+            <ConvertToSolid descr="Convert_to_solid" id="csol" props="tryrtqvb twqbvbur wecezrxp eqwxfrxb fvryarft rydssubd zddtyarq aavcytcy adcycqdb wsysctys" topic="geom_ConvertToSolid"/>
+            <ConvertToSurface descr="Convert_to_surface" id="csur" props="tryrtqvb twqbvbur wfuyttca eqwxfrxb fvryarft rydssubd zddtyarq aavcytcy adcycqdb wsysctys" topic="geom_ConvertToSurface"/>
+            <ConvertToCurve descr="Convert_to_curve" id="ccur" props="tryrtqvb twqbvbur bzssbtbb rydssubd zddtyarq aavcytcy adcycqdb wsysctys" topic="geom_ConvertToCurve"/>
+            <ConvertToPoint descr="Convert_to_point" id="cpt" props="tryrtqvb twqbvbur dfdwxdfp rydssubd zddtyarq aavcytcy adcycqdb wsysctys" topic="geom_ConvertToPoint"/>
+            <ConvertToCOMSOL descr="Convert_to_COMSOL" id="ccom" props="tryrtqvb twqbvbur wecezrxp eqwxfrxb fvryarft rydssubd" topic="geom_ConvertToCOMSOL"/>
+            <Split descr="Split" id="spl" props="tryrtqvb twqbvbur wecezrxp eqwxfrxb fvryarft rydssubd zddtyarq" topic="geom_Split"/>
+            <Array descr="Array" id="arr" props="tryrtqvb twqbvbur wecezrxp eqwxfrxb fvryarft rydssubd trqtxxtf tfyxxbxp etcaszvq zvqxatyz azvrusfw datcevzr wdacvdxd" topic="geom_Array"/>
+            <Copy descr="Copy" id="copy" props="tryrtqvb twqbvbur wecezrxp eqwxfrxb fvryarft rydssubd zddtyarq trqtxxtf tfyxxbxp cdqbafvx aezdydtx zqsfwbrx" topic="geom_Copy"/>
+            <Mirror descr="Mirror[reflect]" id="mir" props="tryrtqvb twqbvbur wecezrxp eqwxfrxb fvryarft rydssubd zddtyarq trqtxxtf tfyxxbxp bcaebced axtyrwdz" topic="geom_Mirror"/>
+            <Move descr="Move" id="mov" props="tryrtqvb twqbvbur wecezrxp eqwxfrxb fvryarft rydssubd zddtyarq trqtxxtf tfyxxbxp cdqbafvx aezdydtx zqsfwbrx" topic="geom_Move"/>
+            <Rotate descr="Rotate" id="rot" props="tryrtqvb twqbvbur wecezrxp eqwxfrxb fvryarft rydssubd zddtyarq trqtxxtf tfyxxbxp scuzertx ftyuzdpp abswvdvq txtvwvct fesauxxv tzzywvvw" topic="geom_Rotate"/>
+            <Scale descr="Scale" id="sca" props="tryrtqvb twqbvbur wecezrxp eqwxfrxb fvryarft rydssubd zddtyarq trqtxxtf tfyxxbxp sbayzuqc fwuaubvc vbezqafa yyvbcsdq afwwazwd" topic="geom_Scale"/>
+            <Delete descr="Delete_entities" id="del" props="tryrtqvb twqbvbur wecezrxp eqwxfrxb fvryarft tcsrxbaa wzszxbec" topic="geom_Delete"/>
+            <CapFaces descr="Cap_faces" id="cap" props="tryrtqvb twqbvbur wecezrxp eqwxfrxb fvryarft ebqayqzd" topic="geom_CapFaces"/>
+            <Knit descr="Knit_to_solid" id="knit" props="tryrtqvb twqbvbur wecezrxp eqwxfrxb fvryarft rydssubd tqbtfzzq fqdqrfxp" topic="geom_Knit"/>
+            <Repair descr="Repair" id="rep" props="tryrtqvb twqbvbur wecezrxp eqwxfrxb fvryarft rydssubd tqbtfzzq atcdssfa" topic="geom_Repair"/>
+            <RemoveDetails descr="Remove_details" id="rmd" props="wxesaqyw vwbcqqzd uzeysdxd byrbsfbx uvcwydad tevtdtet rccrxcdc asaabdqp rcwwebuc crdbtuys vswatfyu xfwrvdzs xvvtxzdf tcsrxbaa" topic="geom_RemoveDetails">
+              <IgnoreVertices descr="Ignore_vertices" id="igv" props="sttybsfs esduzbzr" topic="geom_IgnoreVertices"/>
+              <IgnoreEdges descr="Ignore_edges" id="ige" props="wdruqzqb cyrsvqvr esduzbzr" topic="geom_IgnoreEdges"/>
+              <IgnoreFaces descr="Ignore_faces" id="igf" props="wxuzfcwb crddqebv esduzbzr" topic="geom_IgnoreFaces"/>
+              <CompositeEdges descr="Form_composite_edges" id="cme" props="sqatxqae esduzbzr" topic="geom_CompositeEdges">
+                <description>Form composite edges.</description>
+              </CompositeEdges>
+              <CompositeFaces descr="Form_composite_faces" id="cmf" props="wcfqurue cyrsvqvr esduzbzr" topic="geom_CompositeFaces">
+                <description>Form composite faces.</description>
+              </CompositeFaces>
+              <CompositeDomains descr="Form_composite_domains" id="cmd" props="sdayrefv crddqebv esduzbzr" topic="geom_CompositeDomains">
+                <description>Form composite domains.</description>
+              </CompositeDomains>
+              <CollapseEdges descr="Collapse_edges" id="cle" props="acyvuuaw azwxtuzr" topic="geom_CollapseEdges">
+                <description>Collapse edges.</description>
+              </CollapseEdges>
+              <CollapseFaces descr="Collapse_faces" id="clf" props="frqbeqqw xbrxdwvz xxzaxsww udztyccv" topic="geom_CollapseFaces">
+                <description>Collapse faces.</description>
+              </CollapseFaces>
+              <CollapseFaceRegions descr="Collapse_face_regions" id="cfr" props="edrzbedu atcwsqce xwaqvadw" topic="geom_CollapseFaceRegions"/>
+              <MergeVertices descr="Merge_vertices" id="mrv" props="edtxeesv wcxvdxet" topic="geom_MergeVertices"/>
+              <MergeEdges descr="Merge_edges" id="mre" props="cxvxqtxp wuxzyqrx" topic="geom_MergeEdges"/>
+            </RemoveDetails>
+            <MeshControlVertices descr="Mesh_control_vertices" id="mcv" props="ufttutyy" topic="geom_MeshControlVertices"/>
+            <MeshControlEdges descr="Mesh_control_edges" id="mce" props="uqcsbqyf wabteuur" topic="geom_MeshControlEdges"/>
+            <MeshControlFaces descr="Mesh_control_faces" id="mcf" props="ydubszsf errassrf" topic="geom_MeshControlFaces"/>
+            <MeshControlDomains descr="Mesh_control_domains" id="mcd" props="sddcuuzw" topic="geom_MeshControlDomains"/>
+            <PartInstance descr="Part_instance" id="pi" props="rueabfya awtaqvqs buezsduw tszvbssz ycydwzfy trqtxxtf tfyxxbxp wdacvdxd abswvdvq erfcauwc fesauxxv tzzywvvw rwqrctfy ctctsbdd wqwzrcbs dtttddbd rcvydxte xddxaexr uyvsfqze zvuxrvzw tdtrsayc eqdtsetp dtruecec fzzxqeyy vdwfezcp uvucfqdt wdzstyfc ruydyyxy axdzxcbs ezyxebxd sfvbbcrs udbbsvas xzrsubqb" topic="geom_PartInstance"/>
+            <If descr="If" id="if" props="etaadbxr" topic="geom_If"/>
+            <ElseIf descr="Else_if" id="elseif" props="etaadbxr" topic="geom_ElseIf"/>
+            <Else descr="Else" id="else" topic="geom_Else"/>
+            <EndIf descr="End_if" id="endif" topic="geom_EndIf"/>
+            <ParameterCheck descr="Parameter_check" id="pch" props="etaadbxr xwxqfapp" topic="geom_ParameterCheck"/>
+            <ExplicitSelection descr="Explicit_selection" id="sel" props="yfcuuvws ceyyqbxw fceyqrst bxtyqtyq csfwxvyz tryrtqvb eqwxfrxb fvryarft" topic="geom_ExplicitSelection"/>
+            <BallSelection descr="Ball_selection" id="ballsel" props="rervwzas ceyyqbxw fceyqrst cbzwdtds wtreavve rwdrytuy abbwtwqa uqzaeycc wwuxfdrt awssaczw bxtyqtyq csfwxvyz tryrtqvb eqwxfrxb fvryarft" topic="geom_BallSelection"/>
+            <BoxSelection descr="Box_selection" id="boxsel" props="rervwzas ceyyqbxw fceyqrst cbzwdtds wtreavve trqbcaft aaybwytt xbtdwutv fubdqrxv cvwefdxx teeezabx sduyqeae bxtyqtyq csfwxvyz tryrtqvb eqwxfrxb fvryarft" topic="geom_BoxSelection"/>
+            <CylinderSelection descr="Cylinder_selection" id="cylsel" props="rervwzas ceyyqbxw fceyqrst cbzwdtds wtreavve bxwzuuzx crdrceyr vuxvyyct bxedvauf bzscuaqz fuqqaaar dcbazsyv abswvdvq txtvwvct fesauxxv tzzywvvw dtzcstdw bxtyqtyq csfwxvyz tryrtqvb eqwxfrxb fvryarft" topic="geom_CylinderSelection"/>
+            <UnionSelection descr="Union_selection" id="unisel" props="rervwzas rebfuydc bxtyqtyq csfwxvyz tryrtqvb eqwxfrxb fvryarft" topic="geom_UnionSelection"/>
+            <IntersectionSelection descr="Intersection_selection" id="intsel" props="rervwzas tcsdexze bxtyqtyq csfwxvyz tryrtqvb eqwxfrxb fvryarft" topic="geom_IntersectionSelection"/>
+            <DifferenceSelection descr="Difference_selection" id="difsel" props="rervwzas vcuxzrav yfcqucsf bxtyqtyq csfwxvyz tryrtqvb eqwxfrxb fvryarft" topic="geom_DifferenceSelection"/>
+            <ComplementSelection descr="Complement_selection" id="comsel" props="rervwzas abtvdwet bxtyqtyq csfwxvyz tryrtqvb eqwxfrxb fvryarft" topic="geom_ComplementSelection"/>
+            <AdjacentSelection descr="Adjacent_selection" id="adjsel" props="zrtdufax yrqtxwwz tcazqbqq dvudacrx uwrqbrdx bxtyqtyq csfwxvyz tryrtqvb eqwxfrxb fvryarft" topic="geom_AdjacentSelection"/>
+          </GeomFeature>
+          <ModelEntityImage>
+            <Geometry descr="Geometry" id="image" props="cbuuzrdy wtfqcrcq cuawbuxb vbszqsyy fdvtrscr vfwfbazx dusvusvq fuxcwvee scxtvcxp bzadtrup rzswusav wqefaafr tysuqfzv xadtwseq txbeycdb wqbuwvbe fdyrwbca esfveevc vxutxzvw eexqebrp fvewcusa sssdbqss wqtdcscv zvyrryfu vtqdxtaq uwacvaqv aqcttycw zbuytuzs fxabvwrp swyqzsbu rxddsydb bavstweq bzbfaexq zdusdzxt bwqudurq xbvzvazt vvfcdrea bezeetby urefcwry fvryarft" topic="entityImage"/>
+          </ModelEntityImage>
+        </GeomSequence>
+      </S3D>
+      <S1DAxi axi="true" dim="1">
+        <GeomSequence descr="Geometry" id="geom" props="exwreyqp xwefzewp xtvbssba dcezudca ywfzftvd xrybeuqu cwrsxtyc" topic="GeomSequence">
+          <GeomFeature>
+            <Import descr="Import" id="imp" props="tryrtqvb twqbvbur cbuyxffc xzadwtut eysebcxy acebxrxe zsxbtrzd tetcxrup bfsaxazb uqbwzqya tsxxrsfd" topic="geom_Import"/>
+            <Interval descr="Interval" id="i" props="tryrtqvb twqbvbur cbuyxffc ffsvybyd awbfzuwt vdvuwycq wbxbvcua yzrytsbx ravuqarv bbusrsbs ueqyvyfc" topic="geom_Interval"/>
+            <Point descr="Point" id="pt" props="tryrtqvb twqbvbur afwytrzd wvcfxasv" topic="geom_Point"/>
+            <Union descr="Union" id="uni" props="tryrtqvb twqbvbur cbuyxffc rydssubd zddtyarq wdvfqvau aavcytcy adcycqdb wsysctys" topic="geom_Union">
+              <description>Compose objects using a Boolean set formula.</description>
+            </Union>
+            <Intersection descr="Intersection" id="int" props="tryrtqvb twqbvbur cbuyxffc rydssubd zddtyarq wdvfqvau aavcytcy adcycqdb wsysctys" topic="geom_Intersection">
+              <description>Compose objects using a Boolean set formula.</description>
+            </Intersection>
+            <Difference descr="Difference" id="dif" props="tryrtqvb twqbvbur cbuyxffc avtvbtqa wqscsbaz zddtyarq wdvfqvau aavcytcy adcycqdb wsysctys" topic="geom_Difference">
+              <description>Compose objects using a Boolean set formula.</description>
+            </Difference>
+            <Compose descr="Compose" id="co" props="tryrtqvb twqbvbur cbuyxffc rydssubd zddtyarq wdvfqvau aavcytcy adcycqdb wsysctys zaxrvrxu" topic="geom_Compose">
+              <description>Compose objects using a Boolean set formula.</description>
+            </Compose>
+            <Partition descr="Partition_objects" id="par" props="tryrtqvb twqbvbur cbuyxffc vecyrazt ssbvddqr wuqsxsuq yxxfddxu aavcytcy adcycqdb wsysctys" topic="geom_Partition"/>
+            <ConvertToSolid descr="Convert_to_solid" id="csol" props="tryrtqvb twqbvbur cbuyxffc rydssubd zddtyarq aavcytcy adcycqdb wsysctys" topic="geom_ConvertToSolid"/>
+            <ConvertToPoint descr="Convert_to_point" id="cpt" props="tryrtqvb twqbvbur afwytrzd rydssubd zddtyarq aavcytcy adcycqdb wsysctys" topic="geom_ConvertToPoint"/>
+            <Split descr="Split" id="spl" props="tryrtqvb twqbvbur cbuyxffc rydssubd zddtyarq" topic="geom_Split"/>
+            <Array descr="Array" id="arr" props="tryrtqvb twqbvbur cbuyxffc rydssubd abxbzddr wdacvdxd" topic="geom_Array"/>
+            <Copy descr="Copy" id="copy" props="tryrtqvb twqbvbur cbuyxffc rydssubd zddtyarq cdqbafvr" topic="geom_Copy"/>
+            <Mirror descr="Mirror[reflect]" id="mir" props="tryrtqvb twqbvbur cbuyxffc rydssubd zddtyarq bcaebced axtyrwdz" topic="geom_Mirror"/>
+            <Move descr="Move" id="mov" props="tryrtqvb twqbvbur cbuyxffc rydssubd zddtyarq cdqbafvr" topic="geom_Move"/>
+            <Scale descr="Scale" id="sca" props="tryrtqvb twqbvbur cbuyxffc rydssubd zddtyarq sbayzuqc fwuaubvc vbezqafa yyvbcsdq afwwazwd" topic="geom_Scale"/>
+            <Delete descr="Delete_entities" id="del" props="tryrtqvb twqbvbur cbuyxffc tcsrxbaa wzszxbec" topic="geom_Delete"/>
+            <PartInstance descr="Part_instance" id="pi" props="rueabfya awtaqvqs buezsduw tszvbssz ctctsbdd wqwzrcbs dtttddbd vdwfezcp uvucfqdt wdzstyfc ruydyyxy axdzxcbs ezyxebxd sfvbbcrs udbbsvas xzrsubqb" topic="geom_PartInstance"/>
+            <If descr="If" id="if" props="etaadbxr" topic="geom_If"/>
+            <ElseIf descr="Else_if" id="elseif" props="etaadbxr" topic="geom_ElseIf"/>
+            <Else descr="Else" id="else" topic="geom_Else"/>
+            <EndIf descr="End_if" id="endif" topic="geom_EndIf"/>
+            <ParameterCheck descr="Parameter_check" id="pch" props="etaadbxr xwxqfapp" topic="geom_ParameterCheck"/>
+            <ExplicitSelection descr="Explicit_selection" id="sel" props="yfcuuvws ceyyqbxw fceyqrst bxtyqtyq csfwxvyz tryrtqvb" topic="geom_ExplicitSelection"/>
+            <BallSelection descr="Ball_selection" id="ballsel" props="teuydsvy ceyyqbxw fceyqrst cbzwdtds wtreavve rwdrytus abbwtwqb uqzaecsx wwuxfdrt awssaczw bxtyqtyq csfwxvyz tryrtqvb" topic="geom_BallSelection"/>
+            <BoxSelection descr="Box_selection" id="boxsel" props="teuydsvy ceyyqbxw fceyqrst cbzwdtds wtreavve trqbcaed aaybwysd xbtdwutw fubdqrxw cvwfqqds teeezers sduyqeae bxtyqtyq csfwxvyz tryrtqvb" topic="geom_BoxSelection"/>
+            <UnionSelection descr="Union_selection" id="unisel" props="teuydsvy rebfuydc bxtyqtyq csfwxvyz tryrtqvb" topic="geom_UnionSelection"/>
+            <IntersectionSelection descr="Intersection_selection" id="intsel" props="teuydsvy tcsdexze bxtyqtyq csfwxvyz tryrtqvb" topic="geom_IntersectionSelection"/>
+            <DifferenceSelection descr="Difference_selection" id="difsel" props="teuydsvy vcuxzrav yfcqucsf bxtyqtyq csfwxvyz tryrtqvb" topic="geom_DifferenceSelection"/>
+            <ComplementSelection descr="Complement_selection" id="comsel" props="teuydsvy abtvdwet bxtyqtyq csfwxvyz tryrtqvb" topic="geom_ComplementSelection"/>
+            <AdjacentSelection descr="Adjacent_selection" id="adjsel" props="zdqydxzp yrqtxwwz cywrqrqw dvudacrx uwrqbrdx bxtyqtyq csfwxvyz tryrtqvb" topic="geom_AdjacentSelection"/>
+          </GeomFeature>
+          <ModelEntityImage>
+            <Geometry descr="Geometry" id="image" props="cbuuzrdy wtfqcrcq cuawbuxb vfwfbazx dusvusvq fuxcwvee scxtvcxp bzadtrup rzswusav wqefaafr tysuqfzv xadtwseq txbeycdb wqbuwvbe fdyrwbca esfveevc vxutxzvw eexqebrp fvewcusa sssdbqss wqtdcscv zvyrryfu vtqdxtaq uwacvaqv aqcttycw zbuytuzs fxabvwrp swyqzsbu rxddsydb bavstweq bzbfaexq zdusdzxt bwqudurq xbvzvazt vvfcdrea bezeetby urefcwry fvryarft" topic="entityImage"/>
+          </ModelEntityImage>
+        </GeomSequence>
+      </S1DAxi>
+      <S2DAxi axi="true" dim="2">
+        <GeomSequence descr="Geometry" id="geom" props="exwreyqp xwefzewp xtvbssba dcezudca ywfzftvd xrybeuqu cwrsxtyc" topic="GeomSequence">
+          <GeomFeature>
+            <Import descr="Import" id="imp" props="tryrtqvb twqbvbur wrdedfqt eqwxfrxb fvryarft uezbardb dxvwfytc sveyrdtz adcwerqr uzrxxuvb bbqfqrqy xzadwtut twwqvxfp wxaexxcq zsxbtrzd tetcxrup bfsaxazb uqbwzqya tsxxrsfd eufzvafx wzqzqwaw waqqwuxu vydeffss xretasyd fbuyrbxt dqxzcvvu adcycqdb avtyrvwv udecvssp cxyuqxaa dqqcecta waweuvdz xwswbzty wcfzxfzx xavretec wxazczud etdbutdq ayqztfca sddtztuz tsyfstby tqbvdqzz twurczfw tuwyxwdx wdvfqvau zudqwber fwtdzzzw dcrecyfs syrfxwcw davcvysq bfdubswp xsvbdavw bvayeyqp ssftqwxe fexefvda" topic="geom_Import"/>
+            <Circle descr="Circle" id="c" props="tryrtqvb twqbvbur wrdedfqt eqwxfrxb fvryarft ryeqxrxd dcbazsyv ayxvqatr zcbexbvr syrxcwat wwsudtsu fterfrbw bvxbrzxr dadfffdw uzbuefyr sdqtftdz wwuxfdrt fvcbvbrb ezavxyvc" topic="geom_Circle">
+              <description>Create a circle or disk in 2D.</description>
+            </Circle>
+            <Ellipse descr="Ellipse" id="e" props="tryrtqvb twqbvbur wrdedfqt eqwxfrxb fvryarft ryeqxrxd dcbazsyv ayxvqatr zcbexbvr syrxcwat wwsudtsu fterfrbw bvxbrzxr dadfffdw uzbuefyr zxbwbeqb vzaazqeb tatvbyrx cuywbzrq fvcbvbrb ezavxyvc" topic="geom_Ellipse"/>
+            <Rectangle descr="Rectangle[geometry]" id="r" props="tryrtqvb twqbvbur wrdedfqt eqwxfrxb fvryarft ryeqxrxd dcbazsyv ayxvqatr zcbexbvr syrxcwat wwsudtsu fterfrbw bvxbrzxr dadfffdw uzbuefyr wyfyryvu xtzdavys uruvwvws fcervvaw dcytzwub ftfbatyt vruvvtvx etcaszvq" topic="geom_Rectangle"/>
+            <Square descr="Square" id="sq" props="tryrtqvb twqbvbur wrdedfqt eqwxfrxb fvryarft ryeqxrxd dcbazsyv ayxvqatr zcbexbvr syrxcwat wwsudtsu fterfrbw bvxbrzxr dadfffdw uzbuefyr wyfyryvu xtzdavys uruvwvws fcervvaw eqysycbt dustrfxp drcrsfep" topic="geom_Square"/>
+            <BezierPolygon descr="Bezier_polygon" id="b" props="tryrtqvb twqbvbur wrdedfqt eqwxfrxb fvryarft eqexqtfv tctstwct rbvafase rszrvwcs zyrryexw" topic="geom_BezierPolygon"/>
+            <InterpolationCurve descr="Interpolation_curve" id="ic" props="tryrtqvb twqbvbur wrdedfqt eqwxfrxb fvryarft zyrryexw vvyvfbqw zsxbtrzd brwfyvcs vzzvdcxu yqttdvxc xueuvcux vwxwtase fzrrfsuy fxeeqxrq vrbdvaec zycdavxb edtscvcc" topic="geom_InterpolationCurve"/>
+            <LineSegment descr="Line_segment" id="ls" props="tryrtqvb twqbvbur eszweudy aeebeewy dsrscaaq fbwuzxbx ccuaccax eybwzqux eycuqaww ubtatadx vqxbrzay" topic="geom_LineSegment"/>
+            <ParametricCurve descr="Parametric_curve" id="pc" props="tryrtqvb twqbvbur eszweudy dcbazsyv ayxvqatr zcbexbvr wwsudtsu wuvewwuw yxqbryse cuvufyee uvdxrtwq fzrrfsuy tafxzwdy efxxbdzd" topic="geom_ParametricCurve"/>
+            <Point descr="Point" id="pt" props="tryrtqvb twqbvbur dfdwxdfp rvrfuxvp wvcfxasv" topic="geom_Point"/>
+            <Polygon descr="Polygon" id="pol" props="tryrtqvb twqbvbur wrdedfqt eqwxfrxb fvryarft zyrryexw tztuaetr vvyvfbqw zsxbtrzd vzzvdcxu yqttdvxc xueuvcux vwxwtase" topic="geom_Polygon"/>
+            <Union descr="Union" id="uni" props="tryrtqvb twqbvbur wrdedfqt eqwxfrxb fvryarft rydssubd zddtyarq wdvfqvau aavcytcy adcycqdb wsysctys" topic="geom_Union">
+              <description>Compose objects using a Boolean set formula.</description>
+            </Union>
+            <Intersection descr="Intersection" id="int" props="tryrtqvb twqbvbur wrdedfqt eqwxfrxb fvryarft rydssubd zddtyarq wdvfqvau aavcytcy adcycqdb wsysctys" topic="geom_Intersection">
+              <description>Compose objects using a Boolean set formula.</description>
+            </Intersection>
+            <Difference descr="Difference" id="dif" props="tryrtqvb twqbvbur wrdedfqt eqwxfrxb fvryarft avtvbtqa wqscsbaz zddtyarq wdvfqvau aavcytcy adcycqdb wsysctys" topic="geom_Difference">
+              <description>Compose objects using a Boolean set formula.</description>
+            </Difference>
+            <Compose descr="Compose" id="co" props="tryrtqvb twqbvbur wrdedfqt eqwxfrxb fvryarft rydssubd zddtyarq wdvfqvau aavcytcy adcycqdb wsysctys zaxrvrxu" topic="geom_Compose">
+              <description>Compose objects using a Boolean set formula.</description>
+            </Compose>
+            <Partition descr="Partition_objects" id="par" props="tryrtqvb twqbvbur wrdedfqt eqwxfrxb fvryarft vecyrazt ssbvddqr wuqsxsuq yxxfddxu aavcytcy adcycqdb wsysctys" topic="geom_Partition"/>
+            <PartitionDomains descr="Partition_domains" id="pard" props="tryrtqvb twqbvbur wrdedfqt eqwxfrxb fvryarft wzewstre tavurtcf rwuzbced udabzsaa xfbuetwx dwxzxbqt tbrbfwex yyytrzaw aavcytcy adcycqdb wsysctys" topic="geom_PartitionDomains"/>
+            <PartitionEdges descr="Partition_edges" id="pare" props="tryrtqvb twqbvbur wrdedfqt eqwxfrxb fvryarft fzrsqtfe dqtsyrwp fuvddbyw duvyyafq" topic="geom_PartitionEdges"/>
+            <ConvertToSolid descr="Convert_to_solid" id="csol" props="tryrtqvb twqbvbur wrdedfqt eqwxfrxb fvryarft rydssubd zddtyarq aavcytcy adcycqdb wsysctys" topic="geom_ConvertToSolid"/>
+            <ConvertToCurve descr="Convert_to_curve" id="ccur" props="tryrtqvb twqbvbur eszweudy rydssubd zddtyarq aavcytcy adcycqdb wsysctys" topic="geom_ConvertToCurve"/>
+            <ConvertToPoint descr="Convert_to_point" id="cpt" props="tryrtqvb twqbvbur dfdwxdfp rydssubd zddtyarq aavcytcy adcycqdb wsysctys" topic="geom_ConvertToPoint"/>
+            <Split descr="Split" id="spl" props="tryrtqvb twqbvbur wrdedfqt eqwxfrxb fvryarft rydssubd zddtyarq" topic="geom_Split"/>
+            <Array descr="Array" id="arr" props="tryrtqvb twqbvbur wrdedfqt eqwxfrxb fvryarft rydssubd etcaszvq ybzszauz azvrusfw datcevzr xyerewsz wdacvdxd" topic="geom_Array"/>
+            <Copy descr="Copy" id="copy" props="tryrtqvb twqbvbur wrdedfqt eqwxfrxb fvryarft rydssubd zddtyarq bfervyrx cdqbafvr tsfdqabx aezdydty" topic="geom_Copy"/>
+            <Mirror descr="Mirror[reflect]" id="mir" props="tryrtqvb twqbvbur wrdedfqt eqwxfrxb fvryarft rydssubd zddtyarq ryeqxrxd bcaebced wtwubfvx axtyrwdz" topic="geom_Mirror"/>
+            <Move descr="Move" id="mov" props="tryrtqvb twqbvbur wrdedfqt eqwxfrxb fvryarft rydssubd zddtyarq bfervyrx cdqbafvr tsfdqabx aezdydty" topic="geom_Move"/>
+            <Rotate descr="Rotate" id="rot" props="tryrtqvb twqbvbur wrdedfqt eqwxfrxb fvryarft rydssubd zddtyarq syrxcwat scuzertx ryeqxrxd ftyuzdpp" topic="geom_Rotate"/>
+            <Scale descr="Scale" id="sca" props="tryrtqvb twqbvbur wrdedfqt eqwxfrxb fvryarft rydssubd zddtyarq sbayzuqc fwuaubvc vbezqafa yyvbcsdq ryeqxrxd afwwazwd" topic="geom_Scale"/>
+            <Chamfer descr="Chamfer" id="cha" props="tryrtqvb twqbvbur wrdedfqt eqwxfrxb fvryarft eauzfycy xxcxsvdx tcdtyyup" topic="geom_Chamfer">
+              <description>Create flattened corners in 2D objects.</description>
+            </Chamfer>
+            <Fillet descr="Fillet" id="fil" props="tryrtqvb twqbvbur wrdedfqt eqwxfrxb fvryarft fctcusyc udtdqezx carwbrtt" topic="geom_Fillet"/>
+            <Tangent descr="Tangent" id="tan" props="tryrtqvb twqbvbur eszweudy aafvyuru vfuvrfzt wwvuxvqa drcerysf eeqszezy sddxdqxu wduxtcrv" topic="geom_Tangent"/>
+            <Delete descr="Delete_entities" id="del" props="tryrtqvb twqbvbur wrdedfqt eqwxfrxb fvryarft tcsrxbaa wzszxbec" topic="geom_Delete"/>
+            <EditObject descr="Edit_object" id="edo" props="tryrtqvb twqbvbur wrdedfqt eqwxfrxb fvryarft rzztsaxw vcutszuz tddwesby uuqewver ustubqar fzrfufcq xfecsfay rufwtzsa ebvxfrtw acrzduat vtwcfezp uyfcsuxv vtdswcba auxcuact" topic="geom_EditObject"/>
+            <CrossSection descr="Cross_section" id="cro" props="tryrtqvb twqbvbur wrdedfqt eqwxfrxb fvryarft vdsbddts xuudxdtr fqatrabu bsxrvcrr eyqawccy aavcytcy adcycqdb wsysctys" topic="geom_CrossSection"/>
+            <IgnoreVertices descr="Ignore_vertices" id="igv" props="sttybsfs esduzbzr" topic="geom_IgnoreVertices"/>
+            <IgnoreEdges descr="Ignore_edges" id="ige" props="wdruqzqb cyrsvqvr esduzbzr" topic="geom_IgnoreEdges"/>
+            <CompositeEdges descr="Form_composite_edges" id="cme" props="sqatxqae esduzbzr" topic="geom_CompositeEdges">
+              <description>Form composite edges.</description>
+            </CompositeEdges>
+            <CompositeDomains descr="Form_composite_domains" id="cmd" props="sdayrefv dtxztvyu esduzbzr" topic="geom_CompositeDomains">
+              <description>Form composite domains.</description>
+            </CompositeDomains>
+            <CollapseEdges descr="Collapse_edges" id="cle" props="acyvuuaw azwxtuzr" topic="geom_CollapseEdges">
+              <description>Collapse edges.</description>
+            </CollapseEdges>
+            <MergeVertices descr="Merge_vertices" id="mrv" props="edtxeesv wcxvdxet" topic="geom_MergeVertices"/>
+            <MeshControlVertices descr="Mesh_control_vertices" id="mcv" props="ufttutyy" topic="geom_MeshControlVertices"/>
+            <MeshControlEdges descr="Mesh_control_edges" id="mce" props="uqcsbqyf wabteuur" topic="geom_MeshControlEdges"/>
+            <MeshControlDomains descr="Mesh_control_domains" id="mcd" props="sddcuuzw" topic="geom_MeshControlDomains"/>
+            <PartInstance descr="Part_instance" id="pi" props="rueabfya awtaqvqs buezsduw tszvbssz wdacvdxd rwqrctfy ctctsbdd wqwzrcbs dtttddbd rcvydxte xddxaexr uyvsfqze zvuxrvzw vdwfezcp uvucfqdt wdzstyfc ruydyyxy axdzxcbs ezyxebxd sfvbbcrs udbbsvas xzrsubqb" topic="geom_PartInstance"/>
+            <If descr="If" id="if" props="etaadbxr" topic="geom_If"/>
+            <ElseIf descr="Else_if" id="elseif" props="etaadbxr" topic="geom_ElseIf"/>
+            <Else descr="Else" id="else" topic="geom_Else"/>
+            <EndIf descr="End_if" id="endif" topic="geom_EndIf"/>
+            <ParameterCheck descr="Parameter_check" id="pch" props="etaadbxr xwxqfapp" topic="geom_ParameterCheck"/>
+            <ExplicitSelection descr="Explicit_selection" id="sel" props="yfcuuvws ceyyqbxw fceyqrst bxtyqtyq csfwxvyz tryrtqvb eqwxfrxb fvryarft" topic="geom_ExplicitSelection"/>
+            <BallSelection descr="Ball_selection" id="ballsel" props="ewuqzavw ceyyqbxw fceyqrst cbzwdtds wtreavve rwdrytus abbwtwqb uqzaecsx wwuxfdrt awssaczw bxtyqtyq csfwxvyz tryrtqvb eqwxfrxb fvryarft" topic="geom_BallSelection"/>
+            <BoxSelection descr="Box_selection" id="boxsel" props="ewuqzavw ceyyqbxw fceyqrst cbzwdtds wtreavve trqbcaed aaybwysd xbtdwutw fubdqrxw cvwfqqds teeezers sduyqeae bxtyqtyq csfwxvyz tryrtqvb eqwxfrxb fvryarft" topic="geom_BoxSelection"/>
+            <DiskSelection descr="Disk_selection" id="disksel" props="ewuqzavw ceyyqbxw fceyqrst cbzwdtds wtreavve rwdrytus abbwtwqb uqzaecsx bxwzuuzx crdrceyr bzscuaqz fuqqaaar tzccvtrw bxtyqtyq csfwxvyz tryrtqvb eqwxfrxb fvryarft" topic="geom_DiskSelection"/>
+            <UnionSelection descr="Union_selection" id="unisel" props="ewuqzavw rebfuydc bxtyqtyq csfwxvyz tryrtqvb eqwxfrxb fvryarft" topic="geom_UnionSelection"/>
+            <IntersectionSelection descr="Intersection_selection" id="intsel" props="ewuqzavw tcsdexze bxtyqtyq csfwxvyz tryrtqvb eqwxfrxb fvryarft" topic="geom_IntersectionSelection"/>
+            <DifferenceSelection descr="Difference_selection" id="difsel" props="ewuqzavw vcuxzrav yfcqucsf bxtyqtyq csfwxvyz tryrtqvb eqwxfrxb fvryarft" topic="geom_DifferenceSelection"/>
+            <ComplementSelection descr="Complement_selection" id="comsel" props="ewuqzavw abtvdwet bxtyqtyq csfwxvyz tryrtqvb eqwxfrxb fvryarft" topic="geom_ComplementSelection"/>
+            <AdjacentSelection descr="Adjacent_selection" id="adjsel" props="dayzqwwt yrqtxwwz uqdrrafu dvudacrx uwrqbrdx bxtyqtyq csfwxvyz tryrtqvb eqwxfrxb fvryarft" topic="geom_AdjacentSelection"/>
+            <Parallel descr="Parallel" id="para" props="yxvzbeeq" topic="geom_Parallel"/>
+            <Perpendicular descr="Perpendicular" id="perp" props="axzabrsa cfabdcwb" topic="geom_Perpendicular"/>
+            <TangentConstraint descr="Tangent_constraint" id="tanc" props="zdvyfzvv rutwufxc uzrawfwt xeeadxtu arstwwzb dacvrysp xeqzxbuf yurdsxqp" topic="geom_TangentConstraint"/>
+            <Coincident descr="Coincident" id="coi" props="scuwqqrq zubzvfrr xeqzxbuf yurdsxqp" topic="geom_Coincident"/>
+            <Concentric descr="Concentric" id="con" props="xfbuetwx szsdtwqr" topic="geom_Concentric"/>
+            <EqualDistance descr="Equal_distance" id="eqdist" props="scuwqqrq zubzvfrr vssftftx tbxtucad xeqzxbuf yurdsxqp srryrxxw zwqvvzyc" topic="geom_EqualDistance"/>
+            <EqualRadius descr="Equal_radius" id="eqrad" props="vcauwdxw wfazusuz" topic="geom_EqualRadius"/>
+            <Distance descr="Distance" id="dist" props="scuwqqrq zubzvfrr ryfrsvbz xeqzxbuf yurdsxqp" topic="geom_Distance"/>
+            <XDistance descr="x-Distance" id="xdist" props="scuwqqrq zubzvfrr ryfrsvbz xeqzxbuf yurdsxqp" topic="geom_XDistance"/>
+            <YDistance descr="y-Distance" id="ydist" props="scuwqqrq zubzvfrr ryfrsvbz xeqzxbuf yurdsxqp" topic="geom_YDistance"/>
+            <DirDistance descr="Directed_distance" id="ddist" props="scuwqqrq zubzvfrr bsexqvye dwecbwvq uwwetfft ryfrsvbz xeqzxbuf yurdsxqp" topic="geom_DirDistance"/>
+            <TotalEdgeLength descr="Total_edge_length" id="telen" props="xfbuetwx dxvuaadb" topic="geom_TotalEdgeLength"/>
+            <Angle descr="Angle" id="ang" props="bbabfbyu ddvzdvar tdctddvr wzfaqqas fdceurxr xeqzxbuf yurdsxqp" topic="geom_Angle"/>
+            <Radius descr="Radius" id="rad" props="xxruwtwe carwbrtt" topic="geom_Radius"/>
+            <Position descr="Position" id="pos" props="brvybwuu ebwwxtrf" topic="geom_Position"/>
+          </GeomFeature>
+          <ModelEntityImage>
+            <Geometry descr="Geometry" id="image" props="cbuuzrdy wtfqcrcq cuawbuxb vbszqsyy fdvtrscr vfwfbazx dusvusvq fuxcwvee scxtvcxp bzadtrup rzswusav wqefaafr tysuqfzv xadtwseq txbeycdb wqbuwvbe fdyrwbca esfveevc vxutxzvw eexqebrp fvewcusa sssdbqss wqtdcscv zvyrryfu vtqdxtaq uwacvaqv aqcttycw zbuytuzs fxabvwrp swyqzsbu rxddsydb bavstweq bzbfaexq zdusdzxt bwqudurq xbvzvazt vvfcdrea bezeetby urefcwry fvryarft" topic="entityImage"/>
+          </ModelEntityImage>
+        </GeomSequence>
+      </S2DAxi>
+    </Geom>
+    <Properties>
+      <exwreyqp descr="Scale_values_when_changing_units" descrs="On|Off" name="scale" type="Boolean" values="on|off"/>
+      <xwefzewp descr="Length_unit" name="lengthunit" type="String" values="Å|nm|µin|µm|mil|mm|cm|in|dm|ft|yd|m|km|mi|nmi|Mm|Gm"/>
+      <xtvbssba descr="Angular_unit" descrs="Degrees|Radians" name="angularunit" type="String" values="deg|rad"/>
+      <dcezudca descr="Default_repair_tolerance" descrs="Automatic|Relative|Absolute" name="repairtoltype" type="String" values="auto|relative|absolute"/>
+      <ywfzftvd descr="Default_relative_repair_tolerance" name="repairtol" type="Double"/>
+      <xrybeuqu descr="Default_absolute_repair_tolerance" name="absrepairtol" type="Double"/>
+      <cwrsxtyc descr="Automatic_rebuild" descrs="Off|On" name="autorebuild" type="String" values="off|on"/>
+      <tryrtqvb descr="Contribute_to" descrs="A_reference_to_a_cumulative_selection|None" isref="true" name="contributeto" type="String" values="{GeomObjectSelectionFeature}|none"/>
+      <twqbvbur descr="Resulting_objects_selection" descrs="On|Off" name="selresult" type="String" values="on|off"/>
+      <cbuyxffc descr="Show_in_physics" descrs="All_levels|Domain_selection|Boundary_selection|Off" name="selresultshow" type="String" values="all|dom|bnd|off"/>
+      <xzadwtut descr="Individual_object_selections" descrs="On|Off" name="selindividual" type="String" values="on|off"/>
+      <eysebcxy descr="Show_in_physics" descrs="All_levels|Domain_selection|Boundary_selection|Off" name="selindividualshow" type="String" values="all|dom|bnd|off"/>
+      <acebxrxe descr="Source[import]" descrs="Any_importable_file|Mesh|COMSOL_Multiphysics_file" name="type" type="String" values="file|mesh|native"/>
+      <zsxbtrzd descr="Filename" name="filename" type="String"/>
+      <tetcxrup descr="Geometry" descrs="None|A_reference_to_a_geometry_sequence" isref="true" name="sequence" type="String" values="none|{Geom}"/>
+      <bfsaxazb descr="Mesh" descrs="None|A_reference_to_a_mesh" isref="true" name="mesh" type="String" values="none|{Mesh}"/>
+      <uqbwzqya descr="Filename" name="meshfilename" type="String"/>
+      <tsxxrsfd descr="Import" name="import_action" type="None"/>
+      <ffsvybyd descr="Specify" descrs="Coordinates|Interval_lengths" name="specify" type="String" values="coord|len"/>
+      <awbfzuwt descr="Coordinate_source" descrs="Table|Vector" name="coordsource" type="String" values="table|vector"/>
+      <vdvuwycq descr="Coordinates" name="coord" type="DoubleArray"/>
+      <wbxbvcua descr="Coordinates" name="coordvec" type="DoubleArray"/>
+      <yzrytsbx descr="Left_endpoint" name="left" type="Double"/>
+      <ravuqarv descr="Length_source" descrs="Table|Vector" name="lensource" type="String" values="table|vector"/>
+      <bbusrsbs descr="Lengths" name="len" type="DoubleArray"/>
+      <ueqyvyfc descr="Lengths" name="lenvec" type="DoubleArray"/>
+      <afwytrzd descr="Show_in_physics" descrs="All_levels|Boundary_selection|Off" name="selresultshow" type="String" values="all|bnd|off"/>
+      <wvcfxasv descr="Point_coordinate" name="p" type="DoubleRowMatrix"/>
+      <rydssubd descr="Input_objects" name="input" type="Selection"/>
+      <zddtyarq descr="Keep_input_objects" descrs="On|Off" name="keep" type="Boolean" values="on|off"/>
+      <wdvfqvau descr="Keep_interior_boundaries" descrs="On|Off" name="intbnd" type="Boolean" values="on|off"/>
+      <aavcytcy descr="Repair_tolerance" descrs="Automatic|Relative|Absolute" name="repairtoltype" type="String" values="auto|relative|absolute"/>
+      <adcycqdb descr="Relative_repair_tolerance" name="repairtol" type="Double"/>
+      <wsysctys descr="Absolute_repair_tolerance" name="absrepairtol" type="Double"/>
+      <avtvbtqa descr="Objects_to_add" name="input" type="Selection"/>
+      <wqscsbaz descr="Objects_to_subtract" name="input2" type="Selection"/>
+      <zaxrvrxu descr="Set_formula" name="formula" type="String"/>
+      <vecyrazt descr="Objects_to_partition" name="input" type="Selection"/>
+      <ssbvddqr descr="Tool_objects" name="tool" type="Selection"/>
+      <wuqsxsuq descr="Keep_objects_to_partition" descrs="On|Off" name="keepinput" type="Boolean" values="on|off"/>
+      <yxxfddxu descr="Keep_tool_objects" descrs="On|Off" name="keeptool" type="Boolean" values="on|off"/>
+      <abxbzddr descr="Size" name="size" type="Double"/>
+      <wdacvdxd descr="Displacement" name="displ" type="DoubleArray"/>
+      <cdqbafvx descr="#x" name="displx" type="DoubleArray"/>
+      <bcaebced descr="Point_in_plane" name="pos" type="DoubleArray"/>
+      <axtyrwdz descr="Plane_normal" name="axis" type="DoubleArray"/>
+      <sbayzuqc descr="Scaling" descrs="Isotropic|Anisotropic" name="type" type="String" values="isotropic|anisotropic"/>
+      <fwuaubvc descr="Factor" name="isotropic" type="Double"/>
+      <vbezqafa descr="Anisotropic_scaling" name="anisotropic" type="DoubleArray"/>
+      <yyvbcsdq descr="Factor" name="factor" type="DoubleArray"/>
+      <afwwazwd descr="Center_of_scaling" name="pos" type="DoubleArray"/>
+      <tcsrxbaa descr="Selection" name="input" type="Selection"/>
+      <wzszxbec descr="Algorithm version" name="compat" type="String" values="4.2a|4.3"/>
+      <rueabfya descr="Part" descrs="A_reference_to_a_part|Local_part" isref="true" name="part" type="String" values="{Geom}|local"/>
+      <awtaqvqs descr="Choose_from_library..." name="choosefromlibrary" type="None"/>
+      <buezsduw descr="Name" name="inputname" type="StringArray"/>
+      <tszvbssz descr="Expression" name="inputexpr" type="DoubleArray"/>
+      <ctctsbdd descr="Selection name" name="selnameobj" type="StringArray"/>
+      <wqwzrcbs descr="Contribute_to" descrs="None" name="selcontributetoobj" type="StringArray" values="none"/>
+      <dtttddbd descr="Keep" descrs="On|Off" name="selkeepobj" type="StringArray" values="on|off"/>
+      <vdwfezcp descr="Selection name" name="selnamebnd" type="StringArray"/>
+      <uvucfqdt descr="Contribute_to" descrs="None" name="selcontributetobnd" type="StringArray" values="none"/>
+      <wdzstyfc descr="Keep" descrs="On|Off" name="selkeepbnd" type="StringArray" values="on|off"/>
+      <ruydyyxy descr="Physics" descrs="On|Off" name="selshowbnd" type="StringArray" values="on|off"/>
+      <axdzxcbs descr="Selection name" name="selnamedom" type="StringArray"/>
+      <ezyxebxd descr="Contribute_to" descrs="None" name="selcontributetodom" type="StringArray" values="none"/>
+      <sfvbbcrs descr="Keep" descrs="On|Off" name="selkeepdom" type="StringArray" values="on|off"/>
+      <udbbsvas descr="Physics" descrs="On|Off" name="selshowdom" type="StringArray" values="on|off"/>
+      <xzrsubqb descr="Keep_noncontributing_selections" descrs="On|Off" name="selkeepnoncontr" type="Boolean" values="on|off"/>
+      <etaadbxr descr="Condition" name="condition" type="Double"/>
+      <xwxqfapp descr="Error_message" name="message" type="String"/>
+      <yfcuuvws descr="Entities_to_select" name="selection" type="Selection"/>
+      <ceyyqbxw descr="Group_by_continuous_tangent" descrs="On|Off" name="groupcontang" type="Boolean" values="on|off"/>
+      <fceyqrst descr="Angular_tolerance" name="angletol" type="Double"/>
+      <bxtyqtyq descr="Keep_selection" descrs="On|Off" name="selkeep" type="String" values="on|off"/>
+      <csfwxvyz descr="Show_in_physics" descrs="On|Off" name="selshow" type="String" values="on|off"/>
+      <teuydsvy descr="Level" descrs="Object|Domain|Boundary" name="entitydim" type="Int" values="-1|1|0"/>
+      <cbzwdtds descr="Entities" descrs="All|From_selections" name="inputent" type="String" values="all|selections"/>
+      <wtreavve descr="Selections" descrs="A_reference_to_a_selection" isref="true" name="input" type="StringArray" values="{GeomObjectSelectionFeature}"/>
+      <rwdrytuy descr="#x" name="posx" type="Double"/>
+      <abbwtwqa descr="#y" name="posy" type="Double"/>
+      <uqzaeycc descr="#z" name="posz" type="Double"/>
+      <wwuxfdrt descr="Radius" name="r" type="Double"/>
+      <awssaczw descr="Include_entity_if" descrs="Entity_intersects_ball|Entity_inside_ball|Some_vertex_inside_ball|All_vertices_inside_ball" name="condition" type="String" values="intersects|inside|somevertex|allvertices"/>
+      <trqbcaft descr="X_minimum#x" name="xmin" type="Double"/>
+      <aaybwytt descr="X_maximum#x" name="xmax" type="Double"/>
+      <xbtdwutv descr="X_minimum#y" name="ymin" type="Double"/>
+      <fubdqrxv descr="X_maximum#y" name="ymax" type="Double"/>
+      <cvwefdxx descr="X_minimum#z" name="zmin" type="Double"/>
+      <teeezabx descr="X_maximum#z" name="zmax" type="Double"/>
+      <sduyqeae descr="Include_entity_if" descrs="Entity_intersects_box|Entity_inside_box|Some_vertex_inside_box|All_vertices_inside_box" name="condition" type="String" values="intersects|inside|somevertex|allvertices"/>
+      <rebfuydc descr="Selections_to_add" descrs="A_reference_to_a_selection" isref="true" name="input" type="StringArray" values="{GeomObjectSelectionFeature}"/>
+      <tcsdexze descr="Selections_to_intersect" descrs="A_reference_to_a_selection" isref="true" name="input" type="StringArray" values="{GeomObjectSelectionFeature}"/>
+      <vcuxzrav descr="Selections_to_add" descrs="A_reference_to_a_selection" isref="true" name="add" type="StringArray" values="{GeomObjectSelectionFeature}"/>
+      <yfcqucsf descr="Selections_to_subtract" descrs="A_reference_to_a_selection" isref="true" name="subtract" type="StringArray" values="{GeomObjectSelectionFeature}"/>
+      <abtvdwet descr="Selections_to_invert" descrs="A_reference_to_a_selection" isref="true" name="input" type="StringArray" values="{GeomObjectSelectionFeature}"/>
+      <zdqydxzp descr="Geometric_entity_level" descrs="Domain|Boundary" name="entitydim" type="Int" values="1|0"/>
+      <yrqtxwwz descr="Input_selections" descrs="A_reference_to_a_selection" isref="true" name="input" type="StringArray" values="{GeomObjectSelectionFeature}"/>
+      <cywrqrqw descr="Geometric_entity_level" descrs="Adjacent_domains|Adjacent_boundaries" name="outputdim" type="Int" values="1|0"/>
+      <dvudacrx descr="Exterior_boundaries" descrs="On|Off" name="exterior" type="Boolean" values="on|off"/>
+      <uwrqbrdx descr="Interior_boundaries" descrs="On|Off" name="interior" type="Boolean" values="on|off"/>
+      <cbuuzrdy descr="Plot_window" descrs="New_window" name="window" type="String" values="new"/>
+      <wtfqcrcq descr="Window_title" name="windowtitle" type="String"/>
+      <cuawbuxb descr="View" descrs="Automatic|A_reference_to_a_view" isref="true" name="view" type="String" values="auto|{View}"/>
+      <vfwfbazx descr="Zoom_extents" descrs="On|Off" name="zoomextents" type="Boolean" values="on|off"/>
+      <dusvusvq descr="Zoom_level" name="zoomlevel" type="Int"/>
+      <fuxcwvee descr="Size" descrs="Current[present]|Manual_web|Manual_print" name="size" type="String" values="current|manualweb|manualprint"/>
+      <scxtvcxp descr="Unit" descrs="Millimeters_(mm)|Inches_(in)|Pixels_(px)" name="webunit" type="String" values="mm|in|px"/>
+      <bzadtrup descr="Lock_aspect_ratio" descrs="On|Off" name="weblockratio" type="Boolean" values="on|off"/>
+      <rzswusav descr="Width" name="webwidth" type="Double"/>
+      <wqefaafr descr="Height" name="webheight" type="Double"/>
+      <tysuqfzv descr="Resolution" name="webresolution" type="Int"/>
+      <xadtwseq descr="Unit" descrs="Millimeters_(mm)|Inches_(in)|Pixels_(px)" name="printunit" type="String" values="mm|in|px"/>
+      <txbeycdb descr="Lock_aspect_ratio" descrs="On|Off" name="printlockratio" type="Boolean" values="on|off"/>
+      <wqbuwvbe descr="Width" name="printwidth" type="Double"/>
+      <fdyrwbca descr="Height" name="printheight" type="Double"/>
+      <esfveevc descr="Resolution" name="printresolution" type="Int"/>
+      <vxutxzvw descr="Antialiasing" descrs="On|Off" name="antialias" type="Boolean" values="on|off"/>
+      <eexqebrp descr="Target" descrs="File|Clipboard" name="target" type="String" values="file|clipboard"/>
+      <fvewcusa descr="Format" descrs="#BMP|#EPS|#JPEG|#PNG|#TIFF|#GIF|#glTF" name="imagetype" type="String" values="bmp|eps|jpeg|png|tiff|gif|gltf"/>
+      <sssdbqss descr="Filename" name="bmpfilename" type="String"/>
+      <wqtdcscv descr="Filename" name="epsfilename" type="String"/>
+      <zvyrryfu descr="Quality" descrs="On|Off" name="qualityactive" type="Boolean" values="on|off"/>
+      <vtqdxtaq descr="Level" name="qualitylevel" type="Int"/>
+      <uwacvaqv descr="Filename" name="jpegfilename" type="String"/>
+      <aqcttycw descr="Filename" name="pngfilename" type="String"/>
+      <zbuytuzs descr="Filename" name="tifffilename" type="String"/>
+      <fxabvwrp descr="Filename" name="giffilename" type="String"/>
+      <swyqzsbu descr="Filename" name="gltffilename" type="String"/>
+      <rxddsydb descr="Include" descrs="Off|On" name="options" type="String" values="off|on"/>
+      <bavstweq descr="Title" descrs="On|Off" name="title" type="Boolean" values="on|off"/>
+      <bzbfaexq descr="Axes" descrs="On|Off" name="axes" type="Boolean" values="on|off"/>
+      <zdusdzxt descr="Grid" descrs="On|Off" name="showgrid" type="Boolean" values="on|off"/>
+      <bwqudurq descr="Grid" descrs="On|Off" name="grid" type="Boolean" values="on|off"/>
+      <xbvzvazt descr="Axis_orientation" descrs="On|Off" name="axisorientation" type="Boolean" values="on|off"/>
+      <vvfcdrea descr="Logotype" descrs="On|Off" name="logo" type="Boolean" values="on|off"/>
+      <bezeetby descr="Font_size" name="fontsize" type="Int"/>
+      <urefcwry descr="Background" descrs="Current[present]|Color|Transparent" name="background" type="String" values="current|color|transparent"/>
+      <fvryarft descr="Custom_color" name="customcolor" type="DoubleArray"/>
+      <wrdedfqt descr="Show_in_physics" descrs="All_levels|Domain_selection|Boundary_selection|Point_selection|Off" name="selresultshow" type="String" values="all|dom|bnd|pnt|off"/>
+      <eqwxfrxb descr="Color" descrs="None|Custom|#Color 1|#Color 2|#Color 3|#Color 4|#Color 5|#Color 6|#Color 7|#Color 8|#Color 9|#Color 10|#Color 11|#Color 12|#Color 13|#Color 14|#Color 15|#Color 16|#Color 17|#Color 18|#Color 19|#Color 20" name="color" type="String" values="none|custom|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20"/>
+      <uezbardb descr="Layer_selections" descrs="On|Off" name="sellayer" type="String" values="on|off"/>
+      <dxvwfytc descr="Show_in_physics" descrs="All_levels|Domain_selection|Boundary_selection|Off" name="sellayershow" type="String" values="all|dom|bnd|off"/>
+      <sveyrdtz descr="Cell_selections" descrs="On|Off" name="selcell" type="String" values="on|off"/>
+      <adcwerqr descr="Show_in_physics" descrs="All_levels|Domain_selection|Boundary_selection|Off" name="selcellshow" type="String" values="all|dom|bnd|off"/>
+      <uzrxxuvb descr="Net_selections" descrs="On|Off" name="selnet" type="String" values="on|off"/>
+      <bbqfqrqy descr="Show_in_physics" descrs="All_levels|Domain_selection|Boundary_selection|Off" name="selnetshow" type="String" values="all|dom|bnd|off"/>
+      <twwqvxfp descr="Show_in_physics" descrs="All_levels|Domain_selection|Boundary_selection|Point_selection|Off" name="selindividualshow" type="String" values="all|dom|bnd|pnt|off"/>
+      <wxaexxcq descr="Source[import]" descrs="Any_importable_file|Mesh|COMSOL_Multiphysics_file|DXF_file|ECAD_file" name="type" type="String" values="file|mesh|native|dxf|ecad"/>
+      <eufzvafx descr="Include_result_from_virtual_operations" descrs="On|Off" name="includevirtual" type="Boolean" values="on|off"/>
+      <wzqzqwaw descr="Layer_name" name="alllayers" type="StringArray"/>
+      <waqqwuxu descr="Layer_selection" descrs="All|Selected" name="layerselection" type="String" values="all|selected"/>
+      <vydeffss descr="Layers_to_import" name="layers" type="StringArray" values=""/>
+      <xretasyd descr="Knitting_of_curves" descrs="Form_solids|Knit_curves|Do_not_knit" name="knit" type="String" values="solid|curve|off"/>
+      <fbuyrbxt descr="Repair_imported_objects" descrs="On|Off" name="repairgeom" type="String" values="on|off"/>
+      <dqxzcvvu descr="Repair_tolerance" descrs="Automatic|Relative" name="repairtoltype" type="String" values="auto|relative"/>
+      <avtyrvwv descr="Length_unit_in_file" name="fileunit" type="String"/>
+      <udecvssp descr="Update_geometry_unit" descrs="On|Off" name="updategeomunit" type="Boolean" values="on|off"/>
+      <cxyuqxaa descr="Net_to_import" descrs="Default_(top_net)" name="cell" type="String" values=""/>
+      <dqqcecta descr="Filter_by_subnet" descrs="All" name="cellfilter" type="String" values=""/>
+      <waweuvdz descr="Grouping_of_geometries" descrs="By_layer|No_grouping" name="grouping" type="String" values="layer|none"/>
+      <xwswbzty descr="Ignore_line_width" descrs="On|Off" name="ignorelinewidth" type="Boolean" values="on|off"/>
+      <wcfzxfzx descr="Show_names_from_file" descrs="On|Off" name="shownamesfromfile" type="Boolean" values="on|off"/>
+      <xavretec descr="Split_by_datatype" descrs="On|Off" name="splitbydatatype" type="Boolean" values="on|off"/>
+      <wxazczud descr="Layer_name" name="layername" type="StringArray"/>
+      <etdbutdq descr="Height" name="height" type="DoubleArray"/>
+      <ayqztfca descr="Elevation" name="elevation" type="DoubleArray"/>
+      <sddtztuz descr="Import" descrs="On|Off" name="importlayer" type="StringArray" values="on|off"/>
+      <tsyfstby descr="Definitions" name="ld2" type="StringMatrix"/>
+      <tqbvdqzz descr="Definitions" name="ld1" type="StringMatrix"/>
+      <twurczfw descr="Definitions" name="ld4" type="StringMatrix"/>
+      <tuwyxwdx descr="Definitions" name="ld3" type="StringMatrix"/>
+      <zudqwber descr="Recognize_arcs" descrs="Automatic|Manual|Off" name="findarcs" type="String" values="auto|manual|off"/>
+      <fwtdzzzw descr="Minimum_angle_between_segments" name="arcminangle" type="Double"/>
+      <dcrecyfs descr="Maximum_angle_between_segments" name="arcmaxangle" type="Double"/>
+      <syrfxwcw descr="Maximum_curvature_deviation" name="arcradiustol" type="Double"/>
+      <davcvysq descr="Maximum_length_deviation" name="arcdistancetol" type="Double"/>
+      <bfdubswp descr="Maximum_deviation_from_circle" name="arcmaxcircledev" type="Double"/>
+      <xsvbdavw descr="Find_straight_lines" descrs="On|Off" name="findlines" type="Boolean" values="on|off"/>
+      <bvayeyqp descr="Type_of_bond_wires" descrs="Edges|Blocks|Cylinders" name="bondtype" type="String" values="edge|block|cylinder"/>
+      <ssftqwxe descr="Ignore_text_objects" descrs="On|Off" name="ignoretext" type="Boolean" values="on|off"/>
+      <fexefvda descr="Selection_name" name="selnetnamedom" type="StringArray"/>
+      <ryeqxrxd descr="pos constrained" name="posconstr" type="StringArray"/>
+      <dcbazsyv descr="Position" name="pos" type="DoubleArray"/>
+      <ayxvqatr descr="x" name="x" type="Double"/>
+      <zcbexbvr descr="y" name="y" type="Double"/>
+      <syrxcwat descr="rot constrained" descrs="On|Off" name="rotconstr" type="Boolean" values="on|off"/>
+      <wwsudtsu descr="Rotation" name="rot" type="Double"/>
+      <fterfrbw descr="Type" descrs="Solid[geometric]|Curve" name="type" type="String" values="solid|curve"/>
+      <bvxbrzxr descr="Base" descrs="Center|Corner" name="base" type="String" values="center|corner"/>
+      <dadfffdw descr="Layers" name="layername" type="StringArray"/>
+      <uzbuefyr descr="Layers" name="layer" type="DoubleArray"/>
+      <sdqtftdz descr="r constrained" descrs="On|Off" name="rconstr" type="Boolean" values="on|off"/>
+      <fvcbvbrb descr="angle constrained" descrs="On|Off" name="angleconstr" type="Boolean" values="on|off"/>
+      <ezavxyvc descr="Sector_angle" name="angle" type="Double"/>
+      <zxbwbeqb descr="a-semiaxis" name="a" type="Double"/>
+      <vzaazqeb descr="b-semiaxis" name="b" type="Double"/>
+      <tatvbyrx descr="semiaxes constrained" name="semiaxesconstr" type="StringArray"/>
+      <cuywbzrq descr="Semiaxes" name="semiaxes" type="DoubleArray"/>
+      <wyfyryvu descr="Layers_to_the_left" descrs="On|Off" name="layerleft" type="Boolean" values="on|off"/>
+      <xtzdavys descr="Layers_to_the_right" descrs="On|Off" name="layerright" type="Boolean" values="on|off"/>
+      <uruvwvws descr="Layers_on_bottom" descrs="On|Off" name="layerbottom" type="Boolean" values="on|off"/>
+      <fcervvaw descr="Layers_on_top" descrs="On|Off" name="layertop" type="Boolean" values="on|off"/>
+      <dcytzwub descr="Width" name="lx" type="Double"/>
+      <ftfbatyt descr="Height" name="ly" type="Double"/>
+      <vruvvtvx descr="size constrained" name="sizeconstr" type="StringArray"/>
+      <etcaszvq descr="Size" name="size" type="DoubleArray"/>
+      <eqysycbt descr="Side_length" name="l" type="Double"/>
+      <dustrfxp descr="size constrained" descrs="On|Off" name="sizeconstr" type="Boolean" values="on|off"/>
+      <drcrsfep descr="Side_length" name="size" type="Double"/>
+      <eqexqtfv descr="p constrained" descrs="On|Off" name="pconstr" type="StringArray" values="on|off"/>
+      <tctstwct descr="Control_points" name="p" type="DoubleMatrix"/>
+      <rbvafase descr="Degree" name="degree" type="IntArray"/>
+      <rszrvwcs descr="Weights" name="w" type="DoubleArray"/>
+      <zyrryexw descr="Type" descrs="Solid[geometric]|Closed_curve|Open_curve" name="type" type="String" values="solid|closed|open"/>
+      <vvyvfbqw descr="Data_source" descrs="File|Table|Vectors" name="source" type="String" values="file|table|vectors"/>
+      <brwfyvcs descr="Data_format" descrs="Sectionwise|Spreadsheet" name="struct" type="String" values="sectionwise|spreadsheet"/>
+      <vzzvdcxu descr="Rebuild_with_current_file" name="rebuild" type="None"/>
+      <yqttdvxc descr="Data_points" name="table" type="DoubleMatrix"/>
+      <xueuvcud descr="#x" name="x" type="DoubleArray"/>
+      <vwxwtasd descr="#y" name="y" type="DoubleArray"/>
+      <fzrrfsuy descr="Relative_tolerance" name="rtol" type="Double"/>
+      <fxeeqxrq descr="Condition_at_starting_point" descrs="Zero_curvature|Tangent_direction" name="startcond" type="String" values="zerocurv|tangent"/>
+      <vrbdvaec descr="#Start tangent" name="starttang" type="DoubleArray"/>
+      <zycdavxb descr="Condition_at_endpoint" descrs="Zero_curvature|Tangent_direction" name="endcond" type="String" values="zerocurv|tangent"/>
+      <edtscvcc descr="#End tangent" name="endtang" type="DoubleArray"/>
+      <eszweudy descr="Show_in_physics" descrs="All_levels|Boundary_selection|Point_selection|Off" name="selresultshow" type="String" values="all|bnd|pnt|off"/>
+      <aeebeewy descr="Specify" descrs="Vertex|Coordinates" name="specify1" type="String" values="vertex|coord"/>
+      <dsrscaaq descr="Start_vertex" name="vertex1" type="Selection"/>
+      <fbwuzxbx descr="coord1 constrained" name="coord1constr" type="StringArray"/>
+      <ccuaccax descr="Coordinates" name="coord1" type="DoubleArray"/>
+      <eybwzqux descr="Specify" descrs="Vertex|Coordinates" name="specify2" type="String" values="vertex|coord"/>
+      <eycuqaww descr="End_vertex" name="vertex2" type="Selection"/>
+      <ubtatadx descr="coord2 constrained" name="coord2constr" type="StringArray"/>
+      <vqxbrzay descr="Coordinates" name="coord2" type="DoubleArray"/>
+      <wuvewwuw descr="Name" name="parname" type="String"/>
+      <yxqbryse descr="Minimum" name="parmin" type="Double"/>
+      <cuvufyee descr="Maximum" name="parmax" type="Double"/>
+      <uvdxrtwq descr="Expressions" name="coord" type="StringArray"/>
+      <tafxzwdy descr="Maximum_number_of_knots" name="maxknots" type="Int"/>
+      <efxxbdzd descr="Reparameterize_using_arc_length" descrs="On|Off" name="reparameterize" type="Boolean" values="on|off"/>
+      <dfdwxdfp descr="Show_in_physics" descrs="All_levels|Point_selection|Off" name="selresultshow" type="String" values="all|pnt|off"/>
+      <rvrfuxvp descr="p constrained" name="pconstr" type="StringArray"/>
+      <tztuaetr descr="table constrained" descrs="On|Off" name="tableconstr" type="StringArray" values="on|off"/>
+      <wzewstre descr="Domains_to_partition" name="domain" type="Selection"/>
+      <tavurtcf descr="Partition_with" descrs="Line_segments_between_vertices|Lines_through_vertices|Edges|Extended_edges|Objects" name="partitionwith" type="String" values="linesegments|lines|edges|extendededges|objects"/>
+      <rwuzbced descr="Vertices_defining_line_segments" name="vertexsegment" type="Selection"/>
+      <udabzsaa descr="Vertices_defining_lines" name="vertexline" type="Selection"/>
+      <xfbuetwx descr="Edges" name="edge" type="Selection"/>
+      <dwxzxbqt descr="Straight_or_circular_edges" name="extendededge" type="Selection"/>
+      <tbrbfwex descr="Objects" name="object" type="Selection"/>
+      <yyytrzaw descr="Keep_objects" descrs="On|Off" name="keepobject" type="Boolean" values="on|off"/>
+      <fzrsqtfe descr="Edges_to_partition" name="edge" type="Selection"/>
+      <dqtsyrwp descr="Type_of_specification" descrs="Arc_length|Vertex_projection" name="position" type="String" values="arclength|projection"/>
+      <fuvddbyw descr="Relative_arc_length_parameters" name="param" type="DoubleArray"/>
+      <duvyyafq descr="Vertices_to_project" name="vertexproj" type="Selection"/>
+      <ybzszauz descr="Array_type" descrs="Linear|Rectangular" name="type" type="String" values="linear|rectangular"/>
+      <azvrusfw descr="Size" name="linearsize" type="Double"/>
+      <datcevzr descr="Full_size" name="fullsize" type="DoubleArray"/>
+      <xyerewsz descr="displ constrained" name="displconstr" type="StringArray"/>
+      <bfervyrx descr="displx constrained" descrs="On|Off" name="displxconstr" type="Boolean" values="on|off"/>
+      <tsfdqabx descr="disply constrained" descrs="On|Off" name="displyconstr" type="Boolean" values="on|off"/>
+      <aezdydtx descr="#y" name="disply" type="DoubleArray"/>
+      <wtwubfvx descr="axis constrained" name="axisconstr" type="StringArray"/>
+      <scuzertx descr="Rotation" name="rot" type="DoubleArray"/>
+      <ftyuzdpp descr="Point_on_axis_of_rotation" name="pos" type="DoubleArray"/>
+      <eauzfycy descr="Vertices_to_chamfer" name="point" type="Selection"/>
+      <xxcxsvdx descr="dist constrained" descrs="On|Off" name="distconstr" type="Boolean" values="on|off"/>
+      <tcdtyyup descr="Distance_from_vertex" name="dist" type="Double"/>
+      <fctcusyc descr="Vertices_to_fillet" name="point" type="Selection"/>
+      <udtdqezx descr="radius constrained" descrs="On|Off" name="radiusconstr" type="Boolean" values="on|off"/>
+      <carwbrtt descr="Radius" name="radius" type="Double"/>
+      <aafvyuru descr="Edge_to_tangent" name="edge" type="Selection"/>
+      <vfuvrfzt descr="Parameter_start_guess" name="start" type="Double"/>
+      <wwvuxvqa descr="Type_of_tangent" descrs="Edge-edge|Edge-point|Edge-coordinate" name="type" type="String" values="edge|point|coord"/>
+      <drcerysf descr="Second_edge_to_tangent" name="edge2" type="Selection"/>
+      <eeqszezy descr="Parameter_start_guess_for_second_edge" name="start2" type="Double"/>
+      <sddxdqxu descr="Point" name="point" type="Selection"/>
+      <wduxtcrv descr="Point" name="coord" type="DoubleArray"/>
+      <rzztsaxw descr="Input_object" name="input" type="Selection"/>
+      <vcutszuz descr="Edge" name="edge" type="Int"/>
+      <tddwesby descr="New" name="edgeactions" type="None"/>
+      <uuqewver descr="Control points bezier" name="ctrlbezier" type="DoubleMatrix"/>
+      <ustubqar descr="Control points spline" name="ctrlspline" type="DoubleMatrix"/>
+      <fzrfufcq descr="Degree" descrs="Linear|Quadratic|Cubic" name="degree" type="Int" values="1|2|3"/>
+      <xfecsfay descr="Start_vertex" name="start" type="Int"/>
+      <rufwtzsa descr="Disconnect" name="disconnectstart" type="None"/>
+      <ebvxfrtw descr="End_vertex" name="end" type="Int"/>
+      <acrzduat descr="Disconnect" name="disconnectend" type="None"/>
+      <vtwcfezp descr="Vertex" name="vertex" type="Int"/>
+      <uyfcsuxv descr="New" name="vtxactions" type="None"/>
+      <vtdswccq descr="#x" name="xvertex" type="Double"/>
+      <auxcuacs descr="#y" name="yvertex" type="Double"/>
+      <vdsbddts descr="Selections_from_3D" descrs="On|Off" name="selfrom3d" type="String" values="on|off"/>
+      <xuudxdtr descr="Show_in_physics" descrs="On|Off" name="selfrom3dshow" type="Boolean" values="on|off"/>
+      <fqatrabu descr="Work_plane" descrs="A_reference_to_a_work_plane|None" isref="true" name="workplane" type="String" values="{ModelEntity}|none"/>
+      <bsxrvcrr descr="Intersect" descrs="All_objects|Selected_objects" name="intersect" type="String" values="all|selected"/>
+      <eyqawccy descr="Objects_to_intersect" name="input" type="Selection"/>
+      <sttybsfs descr="Vertices_to_ignore" name="input" type="Selection"/>
+      <esduzbzr descr="Keep_input_for_mesh_control" descrs="On|Off" name="keepformesh" type="Boolean" values="on|off"/>
+      <wdruqzqb descr="Edges_to_ignore" name="input" type="Selection"/>
+      <cyrsvqvr descr="Ignore_adjacent_vertices" descrs="On|Off" name="ignorevtx" type="Boolean" values="on|off"/>
+      <sqatxqae descr="Edges_to_composite" name="input" type="Selection"/>
+      <sdayrefv descr="Domains_to_composite" name="input" type="Selection"/>
+      <dtxztvyu descr="Ignore_adjacent_vertices" descrs="On|Off" name="ignoreadj" type="Boolean" values="on|off"/>
+      <acyvuuaw descr="Edges_to_collapse" name="input" type="Selection"/>
+      <azwxtuzr descr="Ignore_merged_vertices" descrs="On|Off" name="ignoremerged" type="Boolean" values="on|off"/>
+      <edtxeesv descr="Vertex_to_keep" name="keepvtx" type="Selection"/>
+      <wcxvdxet descr="Vertex_to_remove" name="removevtx" type="Selection"/>
+      <ufttutyy descr="Vertices_to_include" name="input" type="Selection"/>
+      <uqcsbqyf descr="Edges_to_include" name="input" type="Selection"/>
+      <wabteuur descr="Include_adjacent_vertices" descrs="On|Off" name="includevtx" type="Boolean" values="on|off"/>
+      <sddcuuzw descr="Domains_to_include" name="input" type="Selection"/>
+      <rwqrctfy descr="Rotation_angle" name="rot" type="Double"/>
+      <rcvydxte descr="Selection name" name="selnamepnt" type="StringArray"/>
+      <xddxaexr descr="Contribute_to" descrs="None" name="selcontributetopnt" type="StringArray" values="none"/>
+      <uyvsfqze descr="Keep" descrs="On|Off" name="selkeeppnt" type="StringArray" values="on|off"/>
+      <zvuxrvzw descr="Physics" descrs="On|Off" name="selshowpnt" type="StringArray" values="on|off"/>
+      <ewuqzavw descr="Level" descrs="Object|Domain|Boundary|Point" name="entitydim" type="Int" values="-1|2|1|0"/>
+      <bxwzuuzx descr="Outer_radius" name="r" type="Double"/>
+      <crdrceyr descr="Inner_radius" name="rin" type="Double"/>
+      <bzscuaqz descr="Start_angle" name="angle1" type="Double"/>
+      <fuqqaaar descr="End_angle" name="angle2" type="Double"/>
+      <tzccvtrw descr="Include_entity_if" descrs="Entity_intersects_disk|Entity_inside_disk|Some_vertex_inside_disk|All_vertices_inside_disk" name="condition" type="String" values="intersects|inside|somevertex|allvertices"/>
+      <dayzqwwt descr="Geometric_entity_level" descrs="Domain|Boundary|Point" name="entitydim" type="Int" values="2|1|0"/>
+      <uqdrrafu descr="Geometric_entity_level" descrs="Adjacent_domains|Adjacent_boundaries|Adjacent_points" name="outputdim" type="Int" values="2|1|0"/>
+      <yxvzbeeq descr="Straight_edges" name="edge" type="Selection"/>
+      <axzabrsa descr="First_edge" name="entity1" type="Selection"/>
+      <cfabdcwb descr="Second_edge" name="entity2" type="Selection"/>
+      <zdvyfzvv descr="Edge" name="edge1" type="Selection"/>
+      <rutwufxc descr="Point_of_tangency" descrs="Vertex|Anywhere" name="point1" type="String" values="vertex|anywhere"/>
+      <uzrawfwt descr="Vertex" name="vertex1" type="Selection"/>
+      <xeeadxtu descr="Edge" name="edge2" type="Selection"/>
+      <arstwwzb descr="Point_of_tangency" descrs="Vertex|Anywhere" name="point2" type="String" values="vertex|anywhere"/>
+      <dacvrysp descr="Vertex" name="vertex2" type="Selection"/>
+      <xeqzxbuf descr="First_help_point" name="helppoint1" type="DoubleArray"/>
+      <yurdsxqp descr="Second_help_point" name="helppoint2" type="DoubleArray"/>
+      <scuwqqrq descr="First_entity" name="entity1" type="Selection"/>
+      <zubzvfrr descr="Second_entity" name="entity2" type="Selection"/>
+      <szsdtwqr descr="Vertices" name="vertex" type="Selection"/>
+      <vssftftx descr="Third_entity" name="entity3" type="Selection"/>
+      <tbxtucad descr="Fourth_entity" name="entity4" type="Selection"/>
+      <srryrxxw descr="Third_help_point" name="helppoint3" type="DoubleArray"/>
+      <zwqvvzyc descr="Fourth_help_point" name="helppoint4" type="DoubleArray"/>
+      <vcauwdxw descr="First_circular_edge" name="edge1" type="Selection"/>
+      <wfazusuz descr="Second_circular_edge" name="edge2" type="Selection"/>
+      <ryfrsvbz descr="Distance" name="distance" type="Double"/>
+      <bsexqvye descr="Direction" descrs="Vector|Parallel_with_edge|Perpendicular_to_edge" name="direction" type="String" values="vector|parallel|perpendicular"/>
+      <dwecbwvq descr="Vector" name="vector" type="DoubleArray"/>
+      <uwwetfft descr="Straight_edge" name="edge" type="Selection"/>
+      <dxvuaadb descr="Length" name="length" type="Double"/>
+      <bbabfbyu descr="First_edge" name="edge1" type="Selection"/>
+      <ddvzdvar descr="Reverse_direction" descrs="On|Off" name="reverse1" type="Boolean" values="on|off"/>
+      <tdctddvr descr="Second_edge" name="edge2" type="Selection"/>
+      <wzfaqqas descr="Reverse_direction" descrs="On|Off" name="reverse2" type="Boolean" values="on|off"/>
+      <fdceurxr descr="Angle" name="angle" type="Double"/>
+      <xxruwtwe descr="Circular_edge" name="edge" type="Selection"/>
+      <brvybwuu descr="Vertex_to_fix" name="vertex" type="Selection"/>
+      <ebwwxtrf descr="Coordinates" name="pos" type="DoubleArray"/>
+      <vbszqsyy descr="Show_selection_colors" descrs="On|Off|From_view" name="showselection" type="String" values="on|off|fromview"/>
+      <fdvtrscr descr="Show_material_color_and_texture" descrs="On|Off|From_view" name="showmaterial" type="String" values="on|off|fromview"/>
+      <zzdctzqf descr="Geometry_representation" descrs="CAD_kernel|COMSOL_kernel" name="geomrep" type="String" values="cadps|comsol"/>
+      <wecezrxp descr="Show_in_physics" descrs="All_levels|Domain_selection|Boundary_selection|Edge_selection|Point_selection|Off" name="selresultshow" type="String" values="all|dom|bnd|edg|pnt|off"/>
+      <atbdzrbp descr="Show_in_physics" descrs="All_levels|Domain_selection|Boundary_selection|Edge_selection|Point_selection|Off" name="selindividualshow" type="String" values="all|dom|bnd|edg|pnt|off"/>
+      <uedxaesx descr="Source[import]" descrs="Any_importable_file|Mesh_or_STL_file|COMSOL_Multiphysics_file|3D_CAD_file|ECAD_file" name="type" type="String" values="file|mesh|native|cad|ecad"/>
+      <batzcyte descr="Simplify_mesh" descrs="On|Off" name="simplifymesh" type="String" values="on|off"/>
+      <wxtzvdfv descr="Relative_simplification_tolerance" name="simplifytol" type="Double"/>
+      <ucwbcwaw descr="Defect_removal_factor" name="defectremoval" type="Double"/>
+      <trdtzwfs descr="Form_solids_from_surface_objects" descrs="On|Off" name="formsolid" type="Boolean" values="on|off"/>
+      <tarftzff descr="Length_unit" descrs="From_CAD_document|From_COMSOL" name="unit" type="String" values="source|current"/>
+      <ayfuxtsq descr="Intermediate conversion unit" descrs="Automatic|#nm|#µin|#µm|#min|#mm|#cm|#in|#dm|#ft|#m|#km|#mi" name="conversionunit" type="String" values="auto|nm|uin|um|min|mm|cm|in|dm|ft|m|km|mi"/>
+      <stcceefs descr="Solids" descrs="On|Off" name="keepsolid" type="Boolean" values="on|off"/>
+      <drbbrrsy descr="Surfaces" descrs="On|Off" name="keepbnd" type="String" values="on|off"/>
+      <ebtbtdtp descr="For_surface_objects" descrs="Form_solids|Knit|Do_not_knit" name="knit" type="String" values="solid|surface|off"/>
+      <fqdqrfxp descr="Fill_holes" descrs="On|Off" name="fillholes" type="Boolean" values="on|off"/>
+      <srybqecw descr="Curves_and_points" descrs="On|Off" name="keepfree" type="String" values="on|off"/>
+      <fcvyvcdb descr="Unite_curve_objects" descrs="On|Off" name="unitecurves" type="Boolean" values="on|off"/>
+      <tfvytxcq descr="Absolute_import_tolerance" name="importtol" type="Double"/>
+      <ezsytbuy descr="Check_imported_objects_for_errors" descrs="On|Off" name="check" type="Boolean" values="on|off"/>
+      <usuqzxqy descr="Repair_imported_objects" descrs="On|Off" name="repair" type="Boolean" values="on|off"/>
+      <bxeuabqp descr="Remove_redundant_edges_and_vertices" descrs="On|Off" name="removeredundant" type="Boolean" values="on|off"/>
+      <vbbrtyap descr="Face_partitioning" descrs="Manual|Automatic" name="facepartition" type="String" values="manual|auto"/>
+      <fewazxvz descr="Basic parameters" descrs="On" name="basic" type="String" values="on"/>
+      <equfyvee descr="Maximum_angle_within_boundary" name="faceangle" type="Double"/>
+      <vzweuxda descr="Maximum_face_neighbor_angle" name="neighangle" type="Double"/>
+      <xuefrxwu descr="Detect_planar_faces" descrs="On|Off" name="planar" type="String" values="on|off"/>
+      <fraauzyt descr="Minimum_relative_area" name="minareaplane" type="Double"/>
+      <vfcrtdqd descr="Maximum_neighbor_angle" name="planarangle" type="Double"/>
+      <uauwczdf descr="Removal_of_small_boundaries" name="facecleanup" type="Double"/>
+      <zyzaades descr="Advanced_parameters" descrs="Manual|Automatic" name="curvedface" type="String" values="manual|auto"/>
+      <wuffftxy descr="Maximum_angle_extruded_plane" name="extrangle" type="Double"/>
+      <ddbvyqwb descr="Detect_extruded_boundaries" name="minareaextr" type="Double"/>
+      <vfyeeyav descr="Maximum_curvature_deviation_in_boundary" name="facecurv" type="Double"/>
+      <zsbtzetc descr="Detect_constant_curvature" name="minareacurv" type="Double"/>
+      <sfwdderz descr="Grouping_of_geometries" descrs="All|By_layer|No_grouping" name="grouping" type="String" values="all|layer|none"/>
+      <dvzsuvxb descr="Type_of_import" descrs="Full_3D|Metal_shell" name="importtype" type="String" values="full3d|shell"/>
+      <cvezucvc descr="Manual_control_of_elevations" descrs="On|Off" name="manualelevation" type="Boolean" values="on|off"/>
+      <eeuaevsb descr="Import_dielectric_regions" descrs="On|Off" name="dielectric" type="String" values="on|off"/>
+      <utvtfuss descr="Left_margin" name="leftmargin" type="Double"/>
+      <eqvrxbua descr="Right_margin" name="rightmargin" type="Double"/>
+      <wudbxqwa descr="Top_margin" name="topmargin" type="Double"/>
+      <xzrafzda descr="Bottom_margin" name="bottommargin" type="Double"/>
+      <vcxcxxcu descr="Selection_name" name="selnetnamebnd" type="StringArray"/>
+      <trqtxxtf descr="Take_work_plane_from" descrs="A_reference_to_a_part_instance_feature|This_sequence" isref="true" name="workplanesrc" type="String" values="{ModelEntity}|this"/>
+      <tfyxxbxp descr="Work_plane" descrs="A_reference_to_a_work_plane|xy-plane" isref="true" name="workplane" type="String" values="{ModelEntity}|xyplane"/>
+      <zrqxecxr descr="z" name="z" type="Double"/>
+      <aradcttw descr="Type" descrs="Solid[geometric]|Surface" name="type" type="String" values="solid|surface"/>
+      <abswvdvq descr="Axis" name="axis" type="DoubleArray"/>
+      <txtvwvct descr="Axis_type" descrs="X-axis#x|X-axis#y|X-axis#z|Cartesian|Spherical" name="axistype" type="String" values="x|y|z|cartesian|spherical"/>
+      <fesauxxv descr="Axis" name="ax3" type="DoubleArray"/>
+      <tzzywvvw descr="Axis" name="ax2" type="DoubleArray"/>
+      <bdvtfcex descr="Depth" name="ly" type="Double"/>
+      <uddxqdcu descr="Height" name="lz" type="Double"/>
+      <zqzqbetf descr="Left" descrs="On|Off" name="layerleft" type="Boolean" values="on|off"/>
+      <wqwwdatx descr="Right" descrs="On|Off" name="layerright" type="Boolean" values="on|off"/>
+      <tsdrsrrp descr="Front" descrs="On|Off" name="layerfront" type="Boolean" values="on|off"/>
+      <wedzuttc descr="Back[layer_side]" descrs="On|Off" name="layerback" type="Boolean" values="on|off"/>
+      <bdayebff descr="Bottom" descrs="On|Off" name="layerbottom" type="Boolean" values="on|off"/>
+      <xbzayesz descr="Top" descrs="On|Off" name="layertop" type="Boolean" values="on|off"/>
+      <zrqqavup descr="#layerimage" name="layerimage" type="String"/>
+      <efwfydws descr="Layers_on_side" descrs="On|Off" name="layerside" type="Boolean" values="on|off"/>
+      <vcxesvyv descr="Bottom_radius" name="r" type="Double"/>
+      <dsdffbre descr="Height" name="h" type="Double"/>
+      <stvzvtzr descr="Specify_top_size_using" descrs="Angle|Radius" name="specifytop" type="String" values="angle|radius"/>
+      <vtwdbvzc descr="Semiangle" name="ang" type="Double"/>
+      <rvbuvfae descr="Top_radius" name="rtop" type="Double"/>
+      <ebuzcezx descr="Ratio" name="rat" type="Double"/>
+      <vtudxvsx descr="Top_displacement" name="displ" type="DoubleArray"/>
+      <rbzewtcb descr="c-semiaxis" name="c" type="Double"/>
+      <vqbqruvf descr="Number_of_turns" name="turns" type="Double"/>
+      <azazdxcb descr="Major_radius" name="rmaj" type="Double"/>
+      <yyywddub descr="Minor_radius" name="rmin" type="Double"/>
+      <sqwzycpp descr="Axial_pitch" name="axialpitch" type="Double"/>
+      <tuabdfxq descr="Radial_pitch" name="radialpitch" type="Double"/>
+      <sautvscv descr="Chirality" descrs="Right_handed|Left_handed" name="chirality" type="String" values="right|left"/>
+      <drxutvea descr="End_caps" descrs="Parallel_to_axis|Perpendicular_to_axis|Perpendicular_to_spine" name="endcaps" type="String" values="paraaxis|perpaxis|perpspine"/>
+      <ysrwcfuc descr="Twist_compensation" descrs="On|Off" name="twistcomp" type="Boolean" values="on|off"/>
+      <xexdtxvz descr="Geometry_representation" descrs="Bezier|Spline" name="grep" type="String" values="bezier|spline"/>
+      <baadettx descr="Vertices" name="p" type="DoubleMatrix"/>
+      <wfuyttca descr="Show_in_physics" descrs="All_levels|Boundary_selection|Edge_selection|Point_selection|Off" name="selresultshow" type="String" values="all|bnd|edg|pnt|off"/>
+      <bzyerzrf descr="Name" name="parname1" type="String"/>
+      <ctuzzerf descr="Minimum" name="parmin1" type="Double"/>
+      <byutvfut descr="Maximum" name="parmax1" type="Double"/>
+      <ayrrrfaq descr="Name" name="parname2" type="String"/>
+      <audbxbfe descr="Minimum" name="parmin2" type="Double"/>
+      <zzdvtdss descr="Maximum" name="parmax2" type="Double"/>
+      <axxzrszw descr="Base_length_1" name="a" type="Double"/>
+      <sdfecdtw descr="Base_length_2" name="b" type="Double"/>
+      <yquacyff descr="Revolution_angle" name="angle" type="Double"/>
+      <uraxzzbq descr="Interior_faces" descrs="On|Off" name="intfaces" type="Boolean" values="on|off"/>
+      <bzssbtbb descr="Show_in_physics" descrs="All_levels|Edge_selection|Point_selection|Off" name="selresultshow" type="String" values="all|edg|pnt|off"/>
+      <edcyatfp descr="Type" descrs="Closed_curve|Open_curve" name="type" type="String" values="closed|open"/>
+      <tyqyryqd descr="#z" name="z" type="DoubleArray"/>
+      <scecweze descr="Show_in_physics" descrs="On|Off" name="selplaneshow" type="Boolean" values="on|off"/>
+      <usbczrrw descr="Plane_type" descrs="Quick|Face_parallel|Edge_parallel|Edge_angle|Circle_perpendicular|Vertices|Coordinates|Transformed" name="planetype" type="String" values="quick|faceparallel|edgeparallel|edgeangle|circleperpendicular|vertices|coordinates|transformed"/>
+      <uywtycqw descr="Plane" descrs="X-plane#xy|X-plane#yz|X-plane#zx|X-plane#yx|X-plane#zy|X-plane#xz" name="quickplane" type="String" values="xy|yz|zx|yx|zy|xz"/>
+      <etwbwqrv descr="Offset_type" descrs="Distance|Through_vertex" name="quickoffsettype" type="String" values="distance|vertex"/>
+      <sqafaxrb descr="Offset_vertex" name="offsetvertex" type="Selection"/>
+      <uaeatzdc descr="X-coordinate#x" name="quickx" type="Double"/>
+      <zvrbdtre descr="X-coordinate#y" name="quicky" type="Double"/>
+      <dfudwcwq descr="X-coordinate#z" name="quickz" type="Double"/>
+      <ssvubxvt descr="Planar_face" name="face" type="Selection"/>
+      <seczfres descr="Offset_type" descrs="Distance|Through_vertex" name="offsettype" type="String" values="distance|vertex"/>
+      <aevzfatx descr="Offset_in_normal_direction" name="offset" type="Double"/>
+      <ydeuwars descr="Reverse_normal_direction" descrs="On|Off" name="reverse" type="Boolean" values="on|off"/>
+      <xbdurtxx descr="Planar_curved_edge" name="planaredge" type="Selection"/>
+      <bxaczdxe descr="Face_adjacent_to_edge" name="adjface" type="Selection"/>
+      <dvvduubt descr="Angle_between_face_and_work_plane" name="angle" type="Double"/>
+      <fcqrquqv descr="Circular_edge" name="circedge" type="Selection"/>
+      <duvvruxq descr="Point_on_plane" descrs="Start_vertex|End_vertex|Other_vertex" name="circpoint" type="String" values="startvertex|endvertex|othervertex"/>
+      <trzwxebv descr="Vertex" name="circvertex" type="Selection"/>
+      <zrzetvty descr="Angle_offset" name="circoffset" type="Double"/>
+      <dvveayzs descr="First_vertex" name="vertex1" type="Selection"/>
+      <bxwraatr descr="Second_vertex" name="vertex2" type="Selection"/>
+      <fbuxexbz descr="Third_vertex" name="vertex3" type="Selection"/>
+      <srsetfeu descr="Points" name="genpoints" type="DoubleMatrix"/>
+      <ydsyrfee descr="Work_plane_to_transform" descrs="A_reference_to_a_work_plane|xy-plane" isref="true" name="workplane" type="String" values="{ModelEntity}|xyplane"/>
+      <dyrutasv descr="Displacement" name="transdispl" type="DoubleArray"/>
+      <sbrcstay descr="Axis" name="transaxis" type="DoubleArray"/>
+      <bssbfacu descr="Axis_type" descrs="X-axis#xw|X-axis#yw|X-axis#zw|Cartesian|Spherical" name="transaxistype" type="String" values="x|y|z|cartesian|spherical"/>
+      <afbwvwrd descr="Axis" name="transax3" type="DoubleArray"/>
+      <ebsuxtfe descr="Axis" name="transax2" type="DoubleArray"/>
+      <xexczevq descr="Rotation_angle" name="transrot" type="Double"/>
+      <zdzsqqwx descr="Origin" descrs="Global|Vertex_projection" name="quickorigin" type="String" values="global|vertexproj"/>
+      <tasebrxv descr="Vertex_for_origin" name="originvertex" type="Selection"/>
+      <uvfezsca descr="Local_x-axis" descrs="Natural|Through_vertex_projection" name="quickaxis" type="String" values="natural|vertexproj"/>
+      <btybesbp descr="Vertex_for_axis" name="axisvertex" type="Selection"/>
+      <rzaasqte descr="-displacement" name="displ" type="DoubleArray"/>
+      <yybqescx descr="Origin" descrs="Center_of_face|Bounding_box_corner|Vertex_projection" name="origin" type="String" values="facecenter|boxcorner|vertexproj"/>
+      <asewyuzs descr="Local_x-axis" descrs="First_parameter_direction|Second_parameter_direction|Through_vertex_projection" name="faceparallelaxis" type="String" values="s1|s2|vertexproj"/>
+      <reebcrqw descr="Origin" descrs="Start_vertex|End_vertex|Vertex_projection" name="edgeparallelorigin" type="String" values="startvertex|endvertex|vertexproj"/>
+      <yuxuxrrt descr="Local_x-axis" descrs="Tangent_direction|Through_vertex_projection" name="edgeparallelaxis" type="String" values="tangent|vertexproj"/>
+      <syrwuvqw descr="Unite_objects" descrs="On|Off" name="unite" type="String" values="on|off"/>
+      <dtqbsbrx descr="View_work_plane_geometry_in_3D " descrs="On|Off" name="workplane3d" type="Boolean" values="on|off"/>
+      <bsqwwzyc descr="Coincident_entities_blue" descrs="On|Off" name="showcoincident" type="Boolean" values="on|off"/>
+      <yexxrbyf descr="Intersection_cyan" descrs="On|Off" name="showintersection" type="Boolean" values="on|off"/>
+      <sausytcf descr="Projection_light_blue" descrs="On|Off" name="showprojection" type="Boolean" values="on|off"/>
+      <uzdtsbfz descr="Extrude_from" descrs="Work_plane|Faces" name="extrudefrom" type="String" values="workplane|faces"/>
+      <uvbffztc descr="Input_faces" name="inputface" type="Selection"/>
+      <vsswuyqb descr="Input_object_handling" descrs="Keep|Remove|Unite_with" name="inputhandling" type="String" values="keep|remove|unite"/>
+      <fezzwuyd descr="Specify" descrs="Distances_from_plane|Vertices_to_extrude_to" name="specify" type="String" values="distances|vertices"/>
+      <zacqarbw descr="#Distances" name="distance" type="DoubleArray"/>
+      <tyddqffu descr="Reverse_direction" descrs="On|Off" name="reverse" type="Boolean" values="on|off"/>
+      <yttxdbdb descr="Vertices_to_extrude_to" name="vertex" type="Selection"/>
+      <yvuusutc descr="Include_input_faces" descrs="On|Off" name="includeinput" type="Boolean" values="on|off"/>
+      <fzcyzzva descr="Keep_cross-sectional_faces" descrs="On|Off" name="crossfaces" type="Boolean" values="on|off"/>
+      <deqazwfu descr="#Scales" name="scale" type="DoubleMatrix"/>
+      <eyafzarr descr="#Displacements" name="displ" type="DoubleMatrix"/>
+      <ceqctzts descr="#Twist_angles" name="twist" type="DoubleArray"/>
+      <yuqwsxqs descr="Resolution" name="polres" type="Int"/>
+      <dwuwytbz descr="Revolve_from" descrs="Work_plane|Faces" name="revolvefrom" type="String" values="workplane|faces"/>
+      <rveffbtq descr="Angles" name="angles" type="DoubleArray"/>
+      <btyeabce descr="Type_of_specification" descrs="Full_revolution|Angles" name="angtype" type="String" values="full|specang"/>
+      <czwccyux descr="Keep_original_faces" descrs="On|Off" name="origfaces" type="Boolean" values="on|off"/>
+      <fezdxuec descr="Axis_type" descrs="2D|3D" name="axistype" type="String" values="2d|3d"/>
+      <yrwscbzu descr="Point_on_the_revolution_axis" name="pos" type="DoubleArray"/>
+      <tcfbedde descr="Direction_of_revolution_axis" name="axis" type="DoubleArray"/>
+      <sqytedez descr="Point_on_the_revolution_axis" name="pos3" type="DoubleArray"/>
+      <rxsqefed descr="Direction_of_revolution_axis" name="axis3" type="DoubleArray"/>
+      <vesfuuqv descr="Revolution_axis" name="revaxis" type="DoubleMatrix"/>
+      <wcbxxwqq descr="Faces_to_sweep" name="face" type="Selection"/>
+      <rswdxqdr descr="Create_cross-sectional_faces" descrs="On|Off" name="crossfaces" type="Boolean" values="on|off"/>
+      <csesbqwp descr="Include_all_inputs_in_form_union/assembly" descrs="On|Off" name="includefinal" type="Boolean" values="on|off"/>
+      <vxecqtrd descr="Edges_to_follow" name="edge" type="Selection"/>
+      <vfyarecs descr="Direction_defining_edge" name="diredge" type="Selection"/>
+      <tfafwexd descr="Reverse_direction" descrs="On|Off" name="reversedir" type="Boolean" values="on|off"/>
+      <ctcsewas descr="Smooth_edge_connections" descrs="On|Off" name="smooth" type="Boolean" values="on|off"/>
+      <fttvzfxe descr="Parameterization" descrs="Arc_length|Normalized_arc_length|Internal" name="parameterization" type="String" values="arclength|normalizedarclength|internal"/>
+      <aevarfvc descr="Parameter_name" name="parname" type="String"/>
+      <ztaswstd descr="Scale_factor" name="scale" type="String"/>
+      <eedyzruv descr="Twist_angle" name="twist" type="String"/>
+      <wezddqve descr="Face-spine_alignment" descrs="No_adjustment|Adjust_spine|Move_face" name="align" type="String" values="noadjust|adjustspine|moveface"/>
+      <efcwvsbz descr="Adjustment_parameter_length" name="adjustlen" type="Double"/>
+      <zybwuwtr descr="Partition_with" descrs="Objects|Work_plane" name="partitionwith" type="String" values="objects|workplane"/>
+      <tdusrctc descr="Partition_with" descrs="Work_plane|Faces|Extended_faces|Objects" name="partitionwith" type="String" values="workplane|faces|extendedfaces|objects"/>
+      <ecrcbxwx descr="Faces" name="face" type="Selection"/>
+      <dxsaezvw descr="Planar,_cylindrical,_or_spherical_faces" name="extendedface" type="Selection"/>
+      <dxqsaffe descr="Faces_to_partition" name="face" type="Selection"/>
+      <axyuvtxe descr="Partition_with" descrs="Curve_segments_between_vertices|Extended_edges|Work_plane" name="partitionwith" type="String" values="curvesegments|extendededges|workplane"/>
+      <vrufffce descr="Vertices_defining_curve_segments" name="vertexsegment" type="Selection"/>
+      <zeqybbex descr="Planar_edges" name="extendededge" type="Selection"/>
+      <zvqxatyz descr="Array_type" descrs="Linear|Three-dimensional" name="type" type="String" values="linear|three-dimensional"/>
+      <zqsfwbrx descr="#z" name="displz" type="DoubleArray"/>
+      <ebqayqzd descr="Bounding_edges" name="input" type="Selection"/>
+      <tqbtfzzq descr="Absolute_repair_tolerance" name="repairtol" type="Double"/>
+      <atcdssfa descr="Simplify_curves_and_surfaces" descrs="On|Off" name="simplify" type="Boolean" values="on|off"/>
+      <wxesaqyw descr="Mode_of_operation" descrs="Automatic|Manual" name="automatic" type="String" values="on|off"/>
+      <vwbcqqzd descr="Short_edges" descrs="On|Off" name="shortedges" type="Boolean" values="on|off"/>
+      <uzeysdxd descr="Small_faces" descrs="On|Off" name="smallfaces" type="Boolean" values="on|off"/>
+      <byrbsfbx descr="Sliver_faces" descrs="On|Off" name="sliverfaces" type="Boolean" values="on|off"/>
+      <uvcwydad descr="Vertices_with_continuous_tangent" descrs="On|Off" name="contvertices" type="Boolean" values="on|off"/>
+      <tevtdtet descr="Thin_domains" descrs="On|Off" name="thindomains" type="Boolean" values="on|off"/>
+      <rccrxcdc descr="Detail_size" descrs="Automatic|Relative|Absolute" name="detailsizetype" type="String" values="auto|relative|absolute"/>
+      <asaabdqp descr="Maximum_relative_size" name="maxrelsize" type="Double"/>
+      <rcwwebuc descr="Maximum_absolute_size" name="maxabssize" type="Double"/>
+      <crdbtuys descr="Continuous_tangent_tolerance" name="contangletol" type="Double"/>
+      <vswatfyu descr="No details" name="nodetail" type="String"/>
+      <xfwrvdzs descr="Removed details" name="removeddetails" type="StringMatrix"/>
+      <xvvtxzdf descr="Entities" descrs="Entire_geometry|Selection" name="selection" type="String" values="geometry|entities"/>
+      <wxuzfcwb descr="Faces_to_ignore" name="input" type="Selection"/>
+      <crddqebv descr="Ignore_adjacent_edges_and_vertices" descrs="On|Off" name="ignoreadj" type="Boolean" values="on|off"/>
+      <wcfqurue descr="Faces_to_composite" name="input" type="Selection"/>
+      <frqbeqqw descr="Faces_to_collapse" name="input" type="Selection"/>
+      <xbrxdwvz descr="Ignore_merged_entities" descrs="On|Off" name="ignoremerged" type="Boolean" values="on|off"/>
+      <xxzaxsww descr="Collapse_to_vertex_tolerance" descrs="Automatic|Manual" name="collvtxtol" type="String" values="auto|manual"/>
+      <udztyccv descr="Maximum_face_perimeter" name="maxfaceperimeter" type="Double"/>
+      <edrzbedu descr="Faces" name="input" type="Selection"/>
+      <atcwsqce descr="Narrow_regions_tolerance" descrs="Automatic|Manual" name="narrowtol" type="String" values="auto|manual"/>
+      <xwaqvadw descr="Maximum_width" name="maxwidth" type="Double"/>
+      <cxvxqtxp descr="Edges_to_keep" name="keepedg" type="Selection"/>
+      <wuxzyqrx descr="Edges_to_remove" name="removeedg" type="Selection"/>
+      <ydubszsf descr="Faces_to_include" name="input" type="Selection"/>
+      <errassrf descr="Include_adjacent_edges_and_vertices" descrs="On|Off" name="includeadj" type="Boolean" values="on|off"/>
+      <ycydwzfy descr="Work_plane_in_part" descrs="A_reference_to_a_work_plane|xy-plane" isref="true" name="workplanepart" type="String" values="{ModelEntity}|xyplane"/>
+      <erfcauwc descr="Axis_type" descrs="X-axis#xw|X-axis#yw|X-axis#zw|Cartesian|Spherical" name="axistype" type="String" values="x|y|z|cartesian|spherical"/>
+      <tdtrsayc descr="Selection name" name="selnameedg" type="StringArray"/>
+      <eqdtsetp descr="Contribute_to" descrs="None" name="selcontributetoedg" type="StringArray" values="none"/>
+      <dtruecec descr="Keep" descrs="On|Off" name="selkeepedg" type="StringArray" values="on|off"/>
+      <fzzxqeyy descr="Physics" descrs="On|Off" name="selshowedg" type="StringArray" values="on|off"/>
+      <rervwzas descr="Level" descrs="Object|Domain|Boundary|Edge|Point" name="entitydim" type="Int" values="-1|3|2|1|0"/>
+      <vuxvyyct descr="Top_distance" name="top" type="Double"/>
+      <bxedvauf descr="Bottom_distance" name="bottom" type="Double"/>
+      <dtzcstdw descr="Include_entity_if" descrs="Entity_intersects_cylinder|Entity_inside_cylinder|Some_vertex_inside_cylinder|All_vertices_inside_cylinder" name="condition" type="String" values="intersects|inside|somevertex|allvertices"/>
+      <zrtdufax descr="Geometric_entity_level" descrs="Domain|Boundary|Edge|Point" name="entitydim" type="Int" values="3|2|1|0"/>
+      <tcazqbqq descr="Geometric_entity_level" descrs="Adjacent_domains|Adjacent_boundaries|Adjacent_edges|Adjacent_points" name="outputdim" type="Int" values="3|2|1|0"/>
+      <cdqbafvr descr="#r" name="displx" type="DoubleArray"/>
+      <rwdrytus descr="#r" name="posx" type="Double"/>
+      <abbwtwqb descr="#z" name="posy" type="Double"/>
+      <uqzaecsx descr="#ϕ" name="posz" type="Double"/>
+      <trqbcaed descr="X_minimum#r" name="xmin" type="Double"/>
+      <aaybwysd descr="X_maximum#r" name="xmax" type="Double"/>
+      <xbtdwutw descr="X_minimum#z" name="ymin" type="Double"/>
+      <fubdqrxw descr="X_maximum#z" name="ymax" type="Double"/>
+      <cvwfqqds descr="X_minimum#ϕ" name="zmin" type="Double"/>
+      <teeezers descr="X_maximum#ϕ" name="zmax" type="Double"/>
+      <xueuvcux descr="#r" name="x" type="DoubleArray"/>
+      <vwxwtase descr="#z" name="y" type="DoubleArray"/>
+      <aezdydty descr="#z" name="disply" type="DoubleArray"/>
+      <vtdswcba descr="#r" name="xvertex" type="Double"/>
+      <auxcuact descr="#z" name="yvertex" type="Double"/>
+    </Properties>
+  </model.geom>
+</COMSOLCompletionData>

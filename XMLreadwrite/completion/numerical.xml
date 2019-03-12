@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<COMSOLCompletionData>
+  <model.result.numerical geomspecific="false">
+    <NumericalFeature topic="NumericalList">
+      <AvLine descr="Line_average" id="av" props="fesfyqcx vqctddcw ytwwrtfu fczsrfbx bssysaxf stcvbarx bstrbcwu awzufrya bzyqrdxa ftauxwvx xsaufxxy stqvdzyu sacrsycz vsbxrcqf utqcfcxt xrvfztfq zzeyqbyd txaxctbt vdzyrvdu tcqurvty etudxvbp brwtuqvu rbqvsazz sfxeqxzy bxrucqea auaryett xctyezzs tsbvtvef vaceszaf" topic="numerical_AvLine"/>
+      <AvSurface descr="Surface_average" id="av" props="fesfyqcx vqctddcw ytwwrtfu fczsrfbx bssysaxf stcvbarx bstrbcwu awzufrya bzyqrdxa ftauxwvx xsaufxxy stqvdzyu sacrsycz vsbxrcqf utqcfcxt xrvfztfq zzeyqbyd txaxctbt vdzyrvdu tcqurvty etudxvbp brwtuqvu rbqvsazz sfxeqxzy fteweecq auaryett xctyezzs tsbvtvef vaceszaf" topic="numerical_AvSurface"/>
+      <AvVolume descr="Volume_average[numerical]" id="av" props="fesfyqcx vqctddcw ytwwrtfu fczsrfbx bssysaxf stcvbarx bstrbcwu awzufrya bzyqrdxa ftauxwvx xsaufxxy stqvdzyu sacrsycz vsbxrcqf utqcfcxt xrvfztfq zzeyqbyd txaxctbt vdzyrvdu tcqurvty etudxvbp brwtuqvu rbqvsazz sfxeqxzy auaryett xctyezzs tsbvtvef vaceszaf" topic="numerical_AvVolume"/>
+      <Eval descr="Evaluation" id="pev" props="fesfyqcx eqyqtsyu stcvbarx dbvywvvb awzufrya utqcfcxt xrvfztfq zzeyqbyd vdzyrvdu tcqurvty etudxvbp xcuvqqwf tdqzrwua wzycabta cuavwurq eaxrucua dabubaus ewzqxuee szdqcxrd txacrase ftxqvcvx uvydrvba tqdfsxwe fvwvyswe" topic="numerical_Eval"/>
+      <Global descr="Interpolation" id="int" props="fesfyqcx eqyqtsyu stcvbarx dbvywvvb awzufrya utqcfcxt xrvfztfq zzeyqbyd vdzyrvdu tcqurvty etudxvbp tdqzrwua wzycabta uvydrvba tqdfsxwe fvwvyswe" topic="numerical_Global"/>
+      <EvalAberration descr="Aberration_evaluation" id="oae" props="sacrsycz fesfyqcx eqyqtsyu stcvbarx dbvywvvb awzufrya uaezduaq zyaxdstf" topic="numerical_EvalAberration"/>
+      <EvalGlobal descr="Global_evaluation" id="gev" props="fesfyqcx vqctddcw ytwwrtfu fczsrfbx bssysaxf stcvbarx bstrbcwu awzufrya bzyqrdxa ftauxwvx xsaufxxy stqvdzyu sacrsycz vsbxrcqf utqcfcxt xrvfztfq zzeyqbyd txaxctbt vdzyrvdu tcqurvty etudxvbp auaryett xctyezzs tsbvtvef vaceszaf" topic="numerical_EvalGlobal"/>
+      <EvalGlobalMatrix descr="Global_matrix_evaluation" id="gmev" props="fesfyqcx vqctddcw ytwwrtfu fczsrfbx bssysaxf stcvbarx bstrbcwu awzufrya bzyqrdxa ftauxwvx xsaufxxy stqvdzyu sacrsycz zrwdrdqu evayadtw dysrdbuv txaxctbt ryexacwc vdzyrvdu tcqurvty etudxvbp dzswtsvq sdctefcw vtdbsvdv ysccsqvw zxrbdtrz usyzwdzq" topic="numerical_EvalGlobalMatrix"/>
+      <EvalPoint descr="Point_evaluation" id="pev" props="fesfyqcx vqctddcw ytwwrtfu fczsrfbx bssysaxf stcvbarx bstrbcwu awzufrya bzyqrdxa ftauxwvx xsaufxxy stqvdzyu sacrsycz vsbxrcqf utqcfcxt xrvfztfq zzeyqbyd txaxctbt vdzyrvdu tcqurvty etudxvbp rdctbfya auaryett xctyezzs tsbvtvef vaceszaf" topic="numerical_EvalPoint"/>
+      <EvalPointMatrix descr="Point_matrix_evaluation" id="gpev" props="fesfyqcx vqctddcw ytwwrtfu fczsrfbx bssysaxf stcvbarx bstrbcwu awzufrya bzyqrdxa ftauxwvx xsaufxxy stqvdzyu sacrsycz zrwdrdqu evayadtw dysrdbuv txaxctbt ryexacwc vdzyrvdu tcqurvty etudxvbp dzswtsvq sdctefcw vtdbsvdv" topic="numerical_EvalPointMatrix"/>
+      <Interp descr="Interpolation" id="int" props="fesfyqcx eqyqtsyu stcvbarx dbvywvvb awzufrya utqcfcxt xrvfztfq zzeyqbyd vdzyrvdu tcqurvty etudxvbp xcuvqqwf tdqzrwua wzycabta vaxyswds etuefaer dyqeqwsd tfeyudct uvydrvba tqdfsxwe fvwvyswe" topic="numerical_Interp"/>
+      <IntLine descr="Line_integration" id="int" props="fesfyqcx vqctddcw ytwwrtfu fczsrfbx bssysaxf stcvbarx bstrbcwu awzufrya bzyqrdxa ftauxwvx xsaufxxy stqvdzyu sacrsycz vsbxrcqf utqcfcxt xrvfztfq zzeyqbyd txaxctbt vdzyrvdu tcqurvty etudxvbp brwtuqvu rbqvsazz sfxeqxzy bxrucqea auaryett xctyezzs tsbvtvef vaceszaf" topic="numerical_IntLine"/>
+      <IntSurface descr="Surface_integration" id="int" props="fesfyqcx vqctddcw ytwwrtfu fczsrfbx bssysaxf stcvbarx bstrbcwu awzufrya bzyqrdxa ftauxwvx xsaufxxy stqvdzyu sacrsycz vsbxrcqf utqcfcxt xrvfztfq zzeyqbyd txaxctbt vdzyrvdu tcqurvty etudxvbp brwtuqvu rbqvsazz sfxeqxzy fteweecq auaryett xctyezzs tsbvtvef vaceszaf" topic="numerical_IntSurface"/>
+      <IntVolume descr="Volume_integration" id="int" props="fesfyqcx vqctddcw ytwwrtfu fczsrfbx bssysaxf stcvbarx bstrbcwu awzufrya bzyqrdxa ftauxwvx xsaufxxy stqvdzyu sacrsycz vsbxrcqf utqcfcxt xrvfztfq zzeyqbyd txaxctbt vdzyrvdu tcqurvty etudxvbp brwtuqvu rbqvsazz sfxeqxzy auaryett xctyezzs tsbvtvef vaceszaf" topic="numerical_IntVolume"/>
+      <MaxLine descr="Line_maximum" id="max" props="fesfyqcx vqctddcw ytwwrtfu fczsrfbx bssysaxf stcvbarx bstrbcwu awzufrya bzyqrdxa ftauxwvx xsaufxxy stqvdzyu sacrsycz vsbxrcqf utqcfcxt xrvfztfq zzeyqbyd txaxctbt vdzyrvdu tcqurvty etudxvbp uvqcwfcf tdqzrwua auaryett xctyezzs" topic="numerical_MaxLine"/>
+      <MaxSurface descr="Surface_maximum" id="max" props="fesfyqcx vqctddcw ytwwrtfu fczsrfbx bssysaxf stcvbarx bstrbcwu awzufrya bzyqrdxa ftauxwvx xsaufxxy stqvdzyu sacrsycz vsbxrcqf utqcfcxt xrvfztfq zzeyqbyd txaxctbt vdzyrvdu tcqurvty etudxvbp uvqcwfcf tdqzrwua auaryett xctyezzs" topic="numerical_MaxSurface"/>
+      <MaxVolume descr="Volume_maximum" id="max" props="fesfyqcx vqctddcw ytwwrtfu fczsrfbx bssysaxf stcvbarx bstrbcwu awzufrya bzyqrdxa ftauxwvx xsaufxxy stqvdzyu sacrsycz vsbxrcqf utqcfcxt xrvfztfq zzeyqbyd txaxctbt vdzyrvdu tcqurvty etudxvbp uvqcwfcf tdqzrwua auaryett xctyezzs" topic="numerical_MaxVolume"/>
+      <MinLine descr="Line_minimum" id="min" props="fesfyqcx vqctddcw ytwwrtfu fczsrfbx bssysaxf stcvbarx bstrbcwu awzufrya bzyqrdxa ftauxwvx xsaufxxy stqvdzyu sacrsycz vsbxrcqf utqcfcxt xrvfztfq zzeyqbyd txaxctbt vdzyrvdu tcqurvty etudxvbp svstdsar tdqzrwua auaryett xctyezzs" topic="numerical_MinLine"/>
+      <MinSurface descr="Surface_minimum" id="min" props="fesfyqcx vqctddcw ytwwrtfu fczsrfbx bssysaxf stcvbarx bstrbcwu awzufrya bzyqrdxa ftauxwvx xsaufxxy stqvdzyu sacrsycz vsbxrcqf utqcfcxt xrvfztfq zzeyqbyd txaxctbt vdzyrvdu tcqurvty etudxvbp svstdsar tdqzrwua auaryett xctyezzs" topic="numerical_MinSurface"/>
+      <MinVolume descr="Volume_minimum" id="min" props="fesfyqcx vqctddcw ytwwrtfu fczsrfbx bssysaxf stcvbarx bstrbcwu awzufrya bzyqrdxa ftauxwvx xsaufxxy stqvdzyu sacrsycz vsbxrcqf utqcfcxt xrvfztfq zzeyqbyd txaxctbt vdzyrvdu tcqurvty etudxvbp svstdsar tdqzrwua auaryett xctyezzs" topic="numerical_MinVolume"/>
+      <Particle descr="Particle_evaluation" id="par" props="fesfyqcx vqctddcw ytwwrtfu fczsrfbx bssysaxf stcvbarx bstrbcwu awzufrya bzyqrdxa ftauxwvx xsaufxxy stqvdzyu sacrsycz vsbxrcqf erffwdrc dysrdbuv txaxctbt ryexacwc vdzyrvdu tcqurvty etudxvbp wzazrvbp xercwbtr cedzfbfb" topic="numerical_Particle"/>
+      <Ray descr="Ray_evaluation" id="ray" props="fesfyqcx vqctddcw ytwwrtfu fczsrfbx bssysaxf stcvbarx bstrbcwu awzufrya bzyqrdxa ftauxwvx xsaufxxy stqvdzyu sacrsycz vsbxrcqf erffwdrc dysrdbuv txaxctbt ryexacwc vdzyrvdu tcqurvty etudxvbp twcctzyx dxwqqsyv fqazzbxb" topic="numerical_Ray"/>
+      <SystemMatrix descr="System_matrix" id="sys" props="sacrsycz sbsvbfzx ytsxvaed febdxvfy wszwdvcv syteqffa saszwcbt brzybbaw wevywefz" topic="numerical_SystemMatrix"/>
+    </NumericalFeature>
+    <Properties>
+      <fesfyqcx descr="Data_set" descrs="None|A_reference_to_a_data_set" isref="true" name="data" type="String" values="none|{DatasetFeature}"/>
+      <vqctddcw descr="#Parameter selection" descrs="All|First[step]|Last|From_list|Manual" name="outerinput" type="String" values="all|first|last|manual|manualindices"/>
+      <ytwwrtfu descr="Parameter_values" name="outersolnum" type="IntArray" values="1"/>
+      <fczsrfbx descr="Parameter_indices" name="outersolnumindices" type="DoubleArray"/>
+      <bssysaxf descr="Solution_selection" descrs="All|First[step]|Last|From_list|Manual" name="innerinput" type="String" values="all|first|last|manual|manualindices"/>
+      <stcvbarx descr="Solution" name="solnum" type="IntArray" values=""/>
+      <bstrbcwu descr="#Solution indices" name="solnumindices" type="DoubleArray"/>
+      <awzufrya descr="Times" name="t" type="DoubleArray"/>
+      <bzyqrdxa descr="Loop_level_input" name="looplevelinput" type="StringArray"/>
+      <ftauxwvx descr="Loop_level" name="looplevel" type="DoubleRowMatrix"/>
+      <xsaufxxy descr="Loop_level_indices" name="looplevelindices" type="DoubleRowMatrix"/>
+      <stqvdzyu descr="Interpolated_times" name="interp" type="DoubleRowMatrix"/>
+      <sacrsycz descr="New table" descrs="New_table|A_reference_to_a_model_entity" isref="true" name="table" type="String" values="new|{TableFeature}"/>
+      <vsbxrcqf descr="Table_columns" descrs="Data_only" name="tablecols" type="String" values="data"/>
+      <utqcfcxt descr="Expression" name="expr" type="StringArray"/>
+      <xrvfztfq descr="Unit" name="unit" type="StringArray"/>
+      <zzeyqbyd descr="Description" name="descr" type="StringArray"/>
+      <txaxctbt descr="Description" descrs="On|Off" name="descractive" type="Boolean" values="on|off"/>
+      <vdzyrvdu descr="Expression_evaluated_for" descrs="Static_solution|Harmonic_perturbation|Total_instantaneous_solution|Average_for_total_solution|RMS_for_total_solution|Peak_value_for_total_solution" name="evalmethod" type="String" values="linpoint|harmonic|lintotal|lintotalavg|lintotalrms|lintotalpeak"/>
+      <tcqurvty descr="Compute_differential" descrs="On|Off" name="differential" type="Boolean" values="on|off"/>
+      <etudxvbp descr="Parameters" name="const" type="StringMatrix"/>
+      <brwtuqvu descr="Method" descrs="Auto|Integration|Summation_over_nodes" name="method" type="String" values="auto|integration|summation"/>
+      <rbqvsazz descr="Integration_order" name="intorder" type="Int"/>
+      <sfxeqxzy descr="Integration_order" descrs="On|Off" name="intorderactive" type="Boolean" values="on|off"/>
+      <bxrucqea descr="Compute_surface_integral_(axial_symmetry)" descrs="On|Off" name="intsurface" type="Boolean" values="on|off"/>
+      <auaryett descr="Operation" descrs="None[operation]|Average|Integral|Maximum|Minimum|RMS|Standard_deviation|Variance" name="dataseries" type="String" values="none|average|integral|maximum|minimum|rms|stddev|variance"/>
+      <xctyezzs descr="Method" descrs="Auto|Integration|Summation" name="dataseriesmethod" type="String" values="auto|integration|summation"/>
+      <tsbvtvef descr="Find_maximum_of" descrs="Absolute_value|Real_part" name="maximumobj" type="String" values="abs|real"/>
+      <vaceszaf descr="Find_minimum_of" descrs="Absolute_value|Real_part" name="minimumobj" type="String" values="abs|real"/>
+      <fteweecq descr="Compute_volume_integral_(axial_symmetry)" descrs="On|Off" name="intvolume" type="Boolean" values="on|off"/>
+      <eqyqtsyu descr="#Parameter value" name="outersolnum" type="Int" values="1"/>
+      <dbvywvvb descr="Select_via" descrs="Interpolated_times|Stored_output_times" name="timeinterp" type="String" values="on|off"/>
+      <xcuvqqwf descr="Recover" descrs="Off|Within_domains|Everywhere" name="recover" type="String" values="off|pprint|ppr"/>
+      <tdqzrwua descr="Element_refinement" name="refine" type="Int"/>
+      <wzycabta descr="Element_refinement" descrs="Automatic" isref="true" name="refine" type="String" values="auto"/>
+      <cuavwurq descr="Smoothing" descrs="None[smoothing]|Inside_material_domains[smoothing]|Inside_geometry_domains[smoothing]|Everywhere|Expression" name="smooth" type="String" values="none|material|internal|everywhere|expression"/>
+      <eaxrucua descr="Expression" name="smoothexpr" type="String"/>
+      <dabubaus descr="Smoothing_threshold" descrs="None|Manual" name="threshold" type="String" values="none|manual"/>
+      <ewzqxuee descr="Threshold[smoothing]" name="thresholdvalue" type="Double"/>
+      <szdqcxrd descr="True_if_smoothing_inside_material_domains_can_be_used" descrs="On|Off" name="allowmaterialsmoothing" type="Boolean" values="on|off"/>
+      <txacrase descr="Evaluate_in" descrs="Lagrange_points|Gauss_points" name="pattern" type="String" values="lagrange|gauss"/>
+      <ftxqvcvx descr="Gauss_point_order" name="gporder" type="Int"/>
+      <uvydrvba descr="Solution_at_angle_(phase)" name="phase" type="Double"/>
+      <tqdfsxwe descr="Complex-valued functions with real input" descrs="On|Off" name="complexfun" type="Boolean" values="on|off"/>
+      <fvwvyswe descr="Error for undefined operation or variable" descrs="On|Off" name="matherr" type="Boolean" values="on|off"/>
+      <uaezduaq descr="Length_unit" name="lunit" type="String" values="Å|nm|µin|µm|mil|mm|cm|in|dm|ft|yd|m|km|mi|nmi|Mm|Gm"/>
+      <zyaxdstf descr="Maximum_polynomial_order" name="maxorder" type="Int" values="2|3|4|5"/>
+      <zrwdrdqu descr="Table_columns" descrs="Inner_solutions|Outer_solutions" name="tablecols" type="String" values="inner|outer"/>
+      <evayadtw descr="Matrix_variable" name="expr" type="String"/>
+      <dysrdbuv descr="Unit" name="unit" type="String" values=""/>
+      <ryexacwc descr="Description" name="descr" type="String"/>
+      <dzswtsvq descr="Inner_solutions" descrs="None[operation]|Average|Sum" name="dataseries" type="String" values="none|average|sum"/>
+      <sdctefcw descr="Outer_solutions" descrs="None[operation]|Average|Sum" name="outerdataseries" type="String" values="none|average|sum"/>
+      <vtdbsvdv descr="Ignore_NaN" descrs="On|Off" name="ignorenan" type="Boolean" values="on|off"/>
+      <ysccsqvw descr="Transformation" descrs="None[transformation]|Inverse[matrix]|From_X_to_X#s#y|From_X_to_X#s#z|From_X_to_X#y#s|From_X_to_X#y#z|From_X_to_X#z#s|From_X_to_X#z#y|From_Maxwell_to_mutual|From_mutual_to_Maxwell|From_inverse_Maxwell_to_mutual" name="trans" type="String" values="none|inverse|sy|sz|ys|yz|zs|zy|maxwellmutual|mutualmaxwell|invmaxwellmutual"/>
+      <zxrbdtrz descr="Characteristic_admittance" name="y0" type="DoubleArray"/>
+      <usyzwdzq descr="Characteristic_impedance" name="z0" type="DoubleArray"/>
+      <rdctbfya descr="Method[summation]" descrs="None[method]|Sum|Average" name="summethod" type="String" values="none|sum|average"/>
+      <vaxyswds descr="Element dimension" name="edim" type="Int" values="0|1|2|3"/>
+      <etuefaer descr="Element_dimension" descrs="Automatic" isref="true" name="edim" type="String" values="auto"/>
+      <dyqeqwsd descr="Extrapolation distance" name="ext" type="Double"/>
+      <tfeyudct descr="Fail if all evaluation points fall outside the mesh" descrs="On|Off" name="coorderr" type="Boolean" values="on|off"/>
+      <uvqcwfcf descr="Find_maximum_of" descrs="Absolute_value|Real_part" name="obj" type="String" values="abs|real"/>
+      <svstdsar descr="Find_minimum_of" descrs="Absolute_value|Real_part" name="obj" type="String" values="abs|real"/>
+      <erffwdrc descr="Expression" name="expr" type="String"/>
+      <wzazrvbp descr="Particles_to_evaluate" descrs="All|Fraction|Number" name="evaluate" type="String" values="all|fraction|number"/>
+      <xercwbtr descr="Fraction_of_particles" name="fraction" type="Double"/>
+      <cedzfbfb descr="Number_of_particles" name="number" type="Int"/>
+      <twcctzyx descr="Rays_to_evaluate" descrs="All|Fraction|Number" name="evaluate" type="String" values="all|fraction|number"/>
+      <dxwqqsyv descr="Fraction_of_rays" name="fraction" type="Double"/>
+      <fqazzbxb descr="Number_of_rays" name="number" type="Int"/>
+      <sbsvbfzx descr="Solution" descrs="None[solution]|A_reference_to_a_solution" isref="true" name="solution" type="String" values="none|{SolverSequence}"/>
+      <ytsxvaed descr="Solver_feature" descrs="A_reference_to_a_solver_feature" isref="true" name="feature" type="String" values="{ModelEntity}"/>
+      <febdxvfy descr="Matrix" descrs="Load_vector|Stiffness_matrix|Damping_matrix|Mass_matrix|Constraint_vector|Constraint_Jacobian|Constraint_force_Jacobian|Eliminated_load_vector|Eliminated_stiffness_matrix|Eliminated_damping_matrix|Eliminated_mass_matrix|Constraint_null-space_basis|Constraint_force_null-space_basis|Particular_solution_(ud)|Scale_vector|Optimization_constraint_Jacobian|Optimization_constraint_vector|Lower_bound_constraint_vector|Upper_bound_constraint_vector" name="matrixassem" type="String" values="load|stiffness|damping|mass|constraint|constraintjac|constraintforcejac|elimload|elimstiffness|elimdamping|elimmass|constraintnullbasis|constraintforcenullbasis|partsol|uscale|optconstraintjac|optconstraint|lowerboundconstraint|upperboundconstraint"/>
+      <wszwdvcv descr="Matrix" descrs="Stiffness_matrix@# (Kr)|Damping_matrix@# (Dr)|Damping_ratio_matrix@# (Dra)|Mass_matrix@# (Er)|Input_matrix@# (Br)|Time_derivative_input_matrix@# (Brdot)|Second_time_derivative_input_matrix@# (Brdotdot)|Output_matrix@# (Cr)|Output_bias@# (Y0)|Input_feedback@# (F)|Initial_value_input_matrix@# (B0r)|Initial_time_derivative_input_matrix@# (B0rdot)|Projection_matrix@# (Pm)|Load_vector@# (L)|All_load_vectors@# (AllL)|Initial_value_vector@# (U0)|Initial_derivative_vector@# (Udot0)|Linearization_point@# (UL)|Mass_matrix_times_particular_solution@# (EPartSol)|Damping_matrix_times_particular_solution@# (DPartSol)|Stiffness_matrix_times_ud@# (Kud)" name="matrixmodal" type="String" values="stiffness|damping|dampingratio|mass|inctrl|dinctrl|ddinctrl|output|outputbias|inoutput|inctrl0|dinctrl0|projection|load|allloads|u0|udot0|ul|epartsol|dpartsol|kud"/>
+      <syteqffa descr="Matrix" descrs="Stiffness_matrix@# (Kr)|Damping_matrix@# (Dr)|Damping_ratio_matrix@# (Dra)|Mass_matrix@# (Er)|Input_matrix@# (Br)|Time_derivative_input_matrix@# (Brdot)|Second_time_derivative_input_matrix@# (Brdotdot)|Output_matrix@# (Cr)|Output_bias@# (Y0)|Input_feedback@# (F)|Initial_value_input_matrix@# (B0r)|Initial_time_derivative_input_matrix@# (B0rdot)|Projection_matrix@# (Pm)|Load_vector@# (L)|All_load_vectors@# (AllL)|Initial_value_vector@# (U0)|Initial_derivative_vector@# (Udot0)|Linearization_point@# (UL)|Mass_matrix_times_particular_solution@# (EPartSol)|Damping_matrix_times_particular_solution@# (DPartSol)|Stiffness_matrix_times_ud@# (Kud)|Damping_matrix@# (Mc)|Stiffness_matrix@# (MA)|Input_matrix@# (MB)|Projection_matrix@# (Null)|Input_feedback@# (D)|Output_matrix@# (C)|Initial_value_vector@# (x0)|Particular_solution_(ud)" name="matrixmodalstate" type="String" values="stiffness|damping|dampingratio|mass|inctrl|dinctrl|ddinctrl|output|outputbias|inoutput|inctrl0|dinctrl0|projection|load|allloads|u0|udot0|ul|epartsol|dpartsol|kud|ssmc|ssma|ssmb|ssnull|ssd|ssc|ssx0|ssud"/>
+      <saszwcbt descr="Matrix" descrs="Stiffness_matrix@# (Kr)|Damping_matrix@# (Dr)|Damping_ratio_matrix@# (Dra)|Mass_matrix@# (Er)|Input_matrix@# (Br)|Time_derivative_input_matrix@# (Brdot)|Second_time_derivative_input_matrix@# (Brdotdot)|Output_matrix@# (Cr)|Output_bias@# (Y0)|Input_feedback@# (F)|Initial_value_input_matrix@# (B0r)|Initial_time_derivative_input_matrix@# (B0rdot)|Projection_matrix@# (Pm)|Load_vector@# (L)|All_load_vectors@# (AllL)|Initial_value_vector@# (U0)|Initial_derivative_vector@# (Udot0)|Linearization_point@# (UL)|Mass_matrix_times_particular_solution@# (EPartSol)|Damping_matrix_times_particular_solution@# (DPartSol)|Stiffness_matrix_times_ud@# (Kud)|Damping_matrix@# (Mc)|Stiffness_matrix@# (MA)|Input_matrix@# (MB)|Projection_matrix@# (Null)|Input_feedback@# (D)|Output_matrix@# (C)|Initial_value_vector@# (x0)|Particular_solution_(ud)" name="reducedmodelmatrix" type="String" values="stiffness|damping|dampingratio|mass|inctrl|dinctrl|ddinctrl|output|outputbias|inoutput|inctrl0|dinctrl0|projection|load|allloads|u0|udot0|ul|epartsol|dpartsol|kud|ssmc|ssma|ssmb|ssnull|ssd|ssc|ssx0|ssud"/>
+      <brzybbaw descr="Matrix" descrs="Damping_matrix@# (Mc)|Stiffness_matrix@# (MA)|Input_matrix@# (MB)|Projection_matrix@# (Null)|Input_feedback@# (D)|Output_matrix@# (C)|Initial_value_vector@# (x0)|Particular_solution_(ud)" name="matrixstatespace" type="String" values="ssmc|ssma|ssmb|ssnull|ssd|ssc|ssx0|ssud"/>
+      <wevywefz descr="Format" descrs="Filled|Sparse" name="format" type="String" values="filled|sparse"/>
+    </Properties>
+  </model.result.numerical>
+</COMSOLCompletionData>

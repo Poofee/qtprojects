@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<COMSOLCompletionData>
+  <model.nodeGroup geomspecific="false">
+    <NodeGroup>
+      <Definitions descr="Group[noun]" id="grp" props="drxdaydv" topic="NodeGroup"/>
+      <GlobalDefinitions descr="Group[noun]" id="grp" props="dftcyzdf" topic="NodeGroup"/>
+      <Material descr="Group[noun]" id="grp" topic="NodeGroup"/>
+      <Physics descr="Group[noun]" id="grp" props="duauvcxb" topic="NodeGroup"/>
+      <Results descr="Group[noun]" id="grp" props="sbtsebrc bzbuzavc wqzwyqyb dytuyuzr fdvwqufz tvuuavzx wsyfawab" topic="NodeGroup"/>
+    </NodeGroup>
+    <Properties>
+      <drxdaydv descr="Type" descrs="None|Variables|Multiphysics|Moving_mesh|Variable_utilities|Topology_optimization|Mass_properties|Functions|Probes|Component_couplings|Selections|Pairs|Coordinate_systems|Domain_properties|Extra_dimensions|Views" name="type" type="String" values="none|variable|commondef|ale|varutil|topopt|massprop|func|probe|cpl|selection|pair|coordsys|domprops|extradim|view"/>
+      <dftcyzdf descr="Type" descrs="None|Parameters|Variables|Functions|Method_calls|Settings_forms|Load_and_constraint_groups|Variable_utilities|Multiphysics|Reduced_model_inputs|Geometry_parts|Mesh_parts|Materials|Extra_dimensions|Reduced_models" name="type" type="String" values="none|param|variable|func|methodcall|form|group|varutil|commondef|controls|geompart|meshpart|material|extradim|reduced"/>
+      <duauvcxb descr="Space_dimension" descrs="None" name="edim" type="String" values="none"/>
+      <sbtsebrc descr="Type" descrs="None|Data_sets|Views|Derived_values|Tables|Plot_groups|Evaluation_groups|Export|Reports" name="type" type="String" values="none|dataset|view|numerical|table|plotgroup|evaluationgroup|export|report"/>
+      <bzbuzavc descr="Show_data_sets" descrs="On|Off" name="showdatasets" type="Boolean" values="on|off"/>
+      <wqzwyqyb descr="Show_views" descrs="On|Off" name="showviews" type="Boolean" values="on|off"/>
+      <dytuyuzr descr="Show_derived_values" descrs="On|Off" name="shownumerical" type="Boolean" values="on|off"/>
+      <fdvwqufz descr="Show_tables" descrs="On|Off" name="showtables" type="Boolean" values="on|off"/>
+      <tvuuavzx descr="Show_export" descrs="On|Off" name="showexport" type="Boolean" values="on|off"/>
+      <wsyfawab descr="Show_reports" descrs="On|Off" name="showreports" type="Boolean" values="on|off"/>
+    </Properties>
+  </model.nodeGroup>
+</COMSOLCompletionData>
