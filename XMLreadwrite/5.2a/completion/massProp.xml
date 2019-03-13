@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<COMSOLCompletionData>
+  <model.massProp geomspecific="true">
+    <ProbeFeature help="comsol/comsol_api_general.37.31.html" topic="MassPropList">
+      <Global axi="false" dim="-1"/>
+      <S1D axi="false" dim="1">
+        <MassProperties descr="Mass_properties" id="mass" props="vcfvyeut yafrbvcc watzcydt esbbxety avdffbdx fxcbqeqt usqvttxw yqwuecvq txvzcbry yywtbuau csfzcfxz wsaetvwf zxqdyddd rbqvsazz" topic="probe_MassProperties">
+          <MassContributions descr="Mass_contributions" id="mc" props="vcfvyeut yafrbvcc watzcydt esbbxety avdffbdx fxcbqeqt usqvttxw" topic="probe_MassContributions"/>
+        </MassProperties>
+      </S1D>
+      <S2D axi="false" dim="2">
+        <MassProperties descr="Mass_properties" id="mass" props="vcfvyeut yafrbvcc watzcydt esbbxety avdffbdx fxcbqeqt usqvttxw yqwuecvq txvzcbry yywtbuau csfzcfxz wsaetvwf zxqdyddd rbqvsazz" topic="probe_MassProperties">
+          <MassContributions descr="Mass_contributions" id="mc" props="vcfvyeut yafrbvcc watzcydt esbbxety avdffbdx fxcbqeqt usqvttxw" topic="probe_MassContributions"/>
+        </MassProperties>
+      </S2D>
+      <S3D axi="false" dim="3">
+        <MassProperties descr="Mass_properties" id="mass" props="vcfvyeut yafrbvcc watzcydt esbbxety avdffbdx fxcbqeqt usqvttxw yqwuecvq txvzcbry yywtbuau csfzcfxz wsaetvwf zxqdyddd rbqvsazz" topic="probe_MassProperties">
+          <MassContributions descr="Mass_contributions" id="mc" props="vcfvyeut yafrbvcc watzcydt esbbxety avdffbdx fxcbqeqt usqvttxw" topic="probe_MassContributions"/>
+        </MassProperties>
+      </S3D>
+      <S1DAxi axi="true" dim="1">
+        <MassProperties descr="Mass_properties" id="mass" props="vcfvyeut yafrbvcc watzcydt ztueayxc avdffbdx fxcbqeqt usqvttxw cwruxezu txvzcbry yywtbuau csfzcfxz wsaetvwf zxqdyddd rbqvsazz" topic="probe_MassProperties">
+          <MassContributions descr="Mass_contributions" id="mc" props="vcfvyeut yafrbvcc watzcydt ztueayxc avdffbdx fxcbqeqt usqvttxw" topic="probe_MassContributions"/>
+        </MassProperties>
+      </S1DAxi>
+      <S2DAxi axi="true" dim="2">
+        <MassProperties descr="Mass_properties" id="mass" props="vcfvyeut yafrbvcc watzcydt ztueayxc avdffbdx fxcbqeqt usqvttxw cwruxezu txvzcbry yywtbuau csfzcfxz wsaetvwf zxqdyddd rbqvsazz" topic="probe_MassProperties">
+          <MassContributions descr="Mass_contributions" id="mc" props="vcfvyeut yafrbvcc watzcydt ztueayxc avdffbdx fxcbqeqt usqvttxw" topic="probe_MassContributions"/>
+        </MassProperties>
+      </S2DAxi>
+      <S0D axi="false" dim="0"/>
+      <S0DAxi axi="true" dim="0"/>
+    </ProbeFeature>
+    <Properties>
+      <vcfvyeut descr="Identifier" name="name" type="String"/>
+      <yafrbvcc descr="Density_source" descrs="User_defined|From_physics_interface|From_specified_physics_interface" name="densitySource" type="String" values="userDefined|fromPhysics|fromSpecifiedPhysics"/>
+      <watzcydt descr="Density_expression" name="expr" type="String"/>
+      <esbbxety descr="Integration_frame" descrs="Mesh_frame_coord# (x, y, z)|Geometry_frame_coord# (x, y, z)|Material_frame_coord# (x, y, z)|Spatial_frame_coord# (x, y, z)" name="integrationFrame" type="String" values="mesh|geometry|material|spatial"/>
+      <avdffbdx descr="Include_adjacent_entities_of_lower_dimension" descrs="On|Off" name="includeLowerPh" type="Boolean" values="on|off"/>
+      <fxcbqeqt descr="Physics" descrs="A_reference_to_a_physics_interface" isref="true" name="physics" type="String" values="{Physics}"/>
+      <usqvttxw descr="Include_adjacent_entities_of_lower_dimension" descrs="On|Off" name="includeLowerSPh" type="Boolean" values="on|off"/>
+      <yqwuecvq descr="Frame" descrs="Mesh_frame_coord# (x, y, z)|Geometry_frame_coord# (x, y, z)|Material_frame_coord# (x, y, z)|Spatial_frame_coord# (x, y, z)" name="outputFrame" type="String" values="mesh|geometry|material|spatial"/>
+      <txvzcbry descr="Create_volume_variable" descrs="On|Off" name="createVolume" type="Boolean" values="on|off"/>
+      <yywtbuau descr="Create_mass_variable" descrs="On|Off" name="createMass" type="Boolean" values="on|off"/>
+      <csfzcfxz descr="Create_center_of_mass_variables" descrs="On|Off" name="createCenterOfMass" type="Boolean" values="on|off"/>
+      <wsaetvwf descr="Create_moment_of_inertia_variables" descrs="On|Off" name="createMomentOfInertia" type="Boolean" values="on|off"/>
+      <zxqdyddd descr="Create_principal_moment_of_inertia_variables" descrs="On|Off" name="createPrincipalInertia" type="Boolean" values="on|off"/>
+      <rbqvsazz descr="Integration_order" name="intorder" type="Int"/>
+      <ztueayxc descr="Integration_frame" descrs="Mesh_frame_coord# (r, phi, z)|Geometry_frame_coord# (r, phi, z)|Material_frame_coord# (r, phi, z)|Spatial_frame_coord# (r, phi, z)" name="integrationFrame" type="String" values="mesh|geometry|material|spatial"/>
+      <cwruxezu descr="Frame" descrs="Mesh_frame_coord# (r, phi, z)|Geometry_frame_coord# (r, phi, z)|Material_frame_coord# (r, phi, z)|Spatial_frame_coord# (r, phi, z)" name="outputFrame" type="String" values="mesh|geometry|material|spatial"/>
+    </Properties>
+  </model.massProp>
+</COMSOLCompletionData>

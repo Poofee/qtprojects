@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<COMSOLCompletionData>
+  <model.probe geomspecific="true">
+    <ProbeFeature help="comsol/comsol_api_general.37.42.html" topic="ProbeFeatureList">
+      <Global axi="false" dim="-1">
+        <GlobalVariable descr="Global_variable_probe" help="comsol/comsol_api_general.37.42.html" id="var" props="tucwfsxv erffwdrc zyezzfsw txaxctbt ryexacwc rdzbsawv scqtsqae" topic="probe_GlobalVariable"/>
+      </Global>
+      <S1D axi="false" dim="1">
+        <Domain descr="Domain_probe" help="comsol/comsol_api_general.37.42.html" id="dom" props="vucwrqwt tucwfsxv erffwdrc zyezzfsw txaxctbt ryexacwc yscaqwvw rbqvsazz cbbtywyd bxrucqea fteweecq rdzbsawv scqtsqae" topic="probe_Domain"/>
+        <DomainPoint descr="Domain_point_probe" help="comsol/comsol_api_general.37.42.html" id="pdom" props="cbbtywyd cdaxbtfa xzcbabap cfyrqxrz fdqsfxzf cyattbqe zdrysqtv vruwwvsr xdbdebfr wffdfbsd drvavaty twcdzzxe" topic="probe_DomainPoint">
+          <PointExpr descr="Point_probe_expression" help="comsol/comsol_api_general.37.42.html" id="ppb" props="tucwfsxv erffwdrc zyezzfsw txaxctbt ryexacwc rdzbsawv scqtsqae" topic="probe_PointExpr"/>
+        </DomainPoint>
+        <GlobalVariable descr="Global_variable_probe" help="comsol/comsol_api_general.37.42.html" id="var" props="tucwfsxv erffwdrc zyezzfsw txaxctbt ryexacwc rdzbsawv scqtsqae" topic="probe_GlobalVariable"/>
+      </S1D>
+      <S2D axi="false" dim="2">
+        <Domain descr="Domain_probe" help="comsol/comsol_api_general.37.42.html" id="dom" props="vucwrqwt tucwfsxv erffwdrc zyezzfsw txaxctbt ryexacwc yscaqwvw rbqvsazz cbbtywyd bxrucqea fteweecq rdzbsawv scqtsqae" topic="probe_Domain"/>
+        <Boundary descr="Boundary_probe" help="comsol/comsol_api_general.37.42.html" id="bnd" props="vucwrqwt tucwfsxv erffwdrc zyezzfsw txaxctbt ryexacwc yscaqwvw rbqvsazz cbbtywyd bxrucqea rdzbsawv scqtsqae" topic="probe_Boundary"/>
+        <DomainPoint descr="Domain_point_probe" help="comsol/comsol_api_general.37.42.html" id="pdom" props="cbbtywyd cdaxbtfa xzcbabap cfyrqxrz fdqsfxzf cyattbqe zdrysqtv vruwwvsr xdbdebfr wffdfbsd drvavaty twcdzzxe" topic="probe_DomainPoint">
+          <PointExpr descr="Point_probe_expression" help="comsol/comsol_api_general.37.42.html" id="ppb" props="tucwfsxv erffwdrc zyezzfsw txaxctbt ryexacwc rdzbsawv scqtsqae" topic="probe_PointExpr"/>
+        </DomainPoint>
+        <GlobalVariable descr="Global_variable_probe" help="comsol/comsol_api_general.37.42.html" id="var" props="tucwfsxv erffwdrc zyezzfsw txaxctbt ryexacwc rdzbsawv scqtsqae" topic="probe_GlobalVariable"/>
+      </S2D>
+      <S3D axi="false" dim="3">
+        <Domain descr="Domain_probe" help="comsol/comsol_api_general.37.42.html" id="dom" props="vucwrqwt tucwfsxv erffwdrc zyezzfsw txaxctbt ryexacwc yscaqwvw rbqvsazz cbbtywyd bxrucqea fteweecq rdzbsawv scqtsqae" topic="probe_Domain"/>
+        <Boundary descr="Boundary_probe" help="comsol/comsol_api_general.37.42.html" id="bnd" props="vucwrqwt tucwfsxv erffwdrc zyezzfsw txaxctbt ryexacwc yscaqwvw rbqvsazz cbbtywyd bxrucqea rdzbsawv scqtsqae" topic="probe_Boundary"/>
+        <Edge descr="Edge_probe" help="comsol/comsol_api_general.37.42.html" id="edge" props="vucwrqwt tucwfsxv erffwdrc zyezzfsw txaxctbt ryexacwc yscaqwvw rbqvsazz cbbtywyd rdzbsawv scqtsqae" topic="probe_Edge"/>
+        <DomainPoint descr="Domain_point_probe" help="comsol/comsol_api_general.37.42.html" id="pdom" props="cbbtywyd cdaxbtfa xzcbabap cfyrqxrz fdqsfxzf cyattbqe zdrysqtv vruwwvsr xdbdebfr wffdfbsd drvavaty twcdzzxe" topic="probe_DomainPoint">
+          <PointExpr descr="Point_probe_expression" help="comsol/comsol_api_general.37.42.html" id="ppb" props="tucwfsxv erffwdrc zyezzfsw txaxctbt ryexacwc rdzbsawv scqtsqae" topic="probe_PointExpr"/>
+        </DomainPoint>
+        <BoundaryPoint descr="Boundary_point_probe" help="comsol/comsol_api_general.37.42.html" id="pbnd" props="csqstdss cbbtywyd sbsdqcex rsswdqvv" topic="probe_BoundaryPoint">
+          <PointExpr descr="Point_probe_expression" help="comsol/comsol_api_general.37.42.html" id="ppb" props="tucwfsxv erffwdrc zyezzfsw txaxctbt ryexacwc rdzbsawv scqtsqae" topic="probe_PointExpr"/>
+        </BoundaryPoint>
+        <GlobalVariable descr="Global_variable_probe" help="comsol/comsol_api_general.37.42.html" id="var" props="tucwfsxv erffwdrc zyezzfsw txaxctbt ryexacwc rdzbsawv scqtsqae" topic="probe_GlobalVariable"/>
+      </S3D>
+      <S1DAxi axi="true" dim="1">
+        <Domain descr="Domain_probe" help="comsol/comsol_api_general.37.42.html" id="dom" props="vucwrqwt tucwfsxv erffwdrc zyezzfsw txaxctbt ryexacwc yscaqwvw rbqvsazz cbbtywyd bxrucqea fteweecq rdzbsawv scqtsqae" topic="probe_Domain"/>
+        <DomainPoint descr="Domain_point_probe" help="comsol/comsol_api_general.37.42.html" id="pdom" props="cbbtywyd cdaxbtfa xzcbabap cfyrqxrz fdqsfxzf cyattbqe zdrysqtv vruwwvsr xdbdebfr wffdfbsd drvavaty twcdzzxe" topic="probe_DomainPoint">
+          <PointExpr descr="Point_probe_expression" help="comsol/comsol_api_general.37.42.html" id="ppb" props="tucwfsxv erffwdrc zyezzfsw txaxctbt ryexacwc rdzbsawv scqtsqae" topic="probe_PointExpr"/>
+        </DomainPoint>
+        <GlobalVariable descr="Global_variable_probe" help="comsol/comsol_api_general.37.42.html" id="var" props="tucwfsxv erffwdrc zyezzfsw txaxctbt ryexacwc rdzbsawv scqtsqae" topic="probe_GlobalVariable"/>
+      </S1DAxi>
+      <S2DAxi axi="true" dim="2">
+        <Domain descr="Domain_probe" help="comsol/comsol_api_general.37.42.html" id="dom" props="vucwrqwt tucwfsxv erffwdrc zyezzfsw txaxctbt ryexacwc yscaqwvw rbqvsazz cbbtywyd bxrucqea fteweecq rdzbsawv scqtsqae" topic="probe_Domain"/>
+        <Boundary descr="Boundary_probe" help="comsol/comsol_api_general.37.42.html" id="bnd" props="vucwrqwt tucwfsxv erffwdrc zyezzfsw txaxctbt ryexacwc yscaqwvw rbqvsazz cbbtywyd bxrucqea rdzbsawv scqtsqae" topic="probe_Boundary"/>
+        <DomainPoint descr="Domain_point_probe" help="comsol/comsol_api_general.37.42.html" id="pdom" props="cbbtywyd cdaxbtfa xzcbabap cfyrqxrz fdqsfxzf cyattbqe zdrysqtv vruwwvsr xdbdebfr wffdfbsd drvavaty twcdzzxe" topic="probe_DomainPoint">
+          <PointExpr descr="Point_probe_expression" help="comsol/comsol_api_general.37.42.html" id="ppb" props="tucwfsxv erffwdrc zyezzfsw txaxctbt ryexacwc rdzbsawv scqtsqae" topic="probe_PointExpr"/>
+        </DomainPoint>
+        <GlobalVariable descr="Global_variable_probe" help="comsol/comsol_api_general.37.42.html" id="var" props="tucwfsxv erffwdrc zyezzfsw txaxctbt ryexacwc rdzbsawv scqtsqae" topic="probe_GlobalVariable"/>
+      </S2DAxi>
+      <S0D axi="false" dim="0">
+        <GlobalVariable descr="Global_variable_probe" help="comsol/comsol_api_general.37.42.html" id="var" props="tucwfsxv erffwdrc zyezzfsw txaxctbt ryexacwc rdzbsawv scqtsqae" topic="probe_GlobalVariable"/>
+      </S0D>
+      <S0DAxi axi="true" dim="0">
+        <GlobalVariable descr="Global_variable_probe" help="comsol/comsol_api_general.37.42.html" id="var" props="tucwfsxv erffwdrc zyezzfsw txaxctbt ryexacwc rdzbsawv scqtsqae" topic="probe_GlobalVariable"/>
+      </S0DAxi>
+    </ProbeFeature>
+    <Properties>
+      <tucwfsxv descr="Probe_variable" name="probename" type="String"/>
+      <erffwdrc descr="Expression" name="expr" type="String"/>
+      <zyezzfsw descr="Table_and_plot_unit" name="unit" type="String" values=""/>
+      <txaxctbt descr="Description" descrs="On|Off" name="descractive" type="Boolean" values="on|off"/>
+      <ryexacwc descr="Description" name="descr" type="String"/>
+      <rdzbsawv descr="Output_table" descrs="Default|New_table|A_reference_to_a_model_entity" isref="true" name="table" type="String" values="default|new|{TableFeature}"/>
+      <scqtsqae descr="Plot_window" descrs="Default|New_window" name="window" type="String" values="default|new"/>
+      <vucwrqwt descr="Type" descrs="Average|Maximum|Minimum|Integral" name="type" type="String" values="average|maximum|minimum|integral"/>
+      <yscaqwvw descr="Method" descrs="Integration|Summation_over_nodes" name="method" type="String" values="integration|summation"/>
+      <rbqvsazz descr="Integration_order" name="intorder" type="Int"/>
+      <cbbtywyd descr="Frame" descrs="Mesh_frame|Geometry_frame|Material_frame|Spatial_frame" name="frame" type="String" values="mesh|geometry|material|spatial"/>
+      <bxrucqea descr="Compute_surface_integral_(axial_symmetry)" descrs="On|Off" name="intsurface" type="Boolean" values="on|off"/>
+      <fteweecq descr="Compute_volume_integral_(axial_symmetry)" descrs="On|Off" name="intvolume" type="Boolean" values="on|off"/>
+      <cdaxbtfa descr="Coordinates" name="coords1" type="DoubleMatrix"/>
+      <xzcbabap descr="Snap_to_closest_point" descrs="On|Off" name="bndsnap1" type="Boolean" values="on|off"/>
+      <cfyrqxrz descr="Coordinates" name="coords2" type="DoubleMatrix"/>
+      <fdqsfxzf descr="Snap_to_closest_boundary" descrs="On|Off" name="bndsnap2" type="Boolean" values="on|off"/>
+      <cyattbqe descr="Line_entry_method" descrs="Point_and_surface_normal|Point_and_direction|Two_points|None" name="method" type="String" values="pointnormal|pointdir|twopoints|none"/>
+      <zdrysqtv descr="Depth_along_line" name="depthpointnormal" type="Double"/>
+      <vruwwvsr descr="Depth_along_line" name="depthpointdir" type="Double"/>
+      <xdbdebfr descr="Point_being_modified" descrs="First_point|Second_point" name="twopointscurrent" type="String" values="first|second"/>
+      <wffdfbsd descr="Depth_along_line" name="depthtwopoints" type="Double"/>
+      <drvavaty descr="Coordinates" name="coords3" type="DoubleMatrix"/>
+      <twcdzzxe descr="Snap_to_closest_boundary" descrs="On|Off" name="bndsnap3" type="Boolean" values="on|off"/>
+      <csqstdss descr="Selection" name="dom" type="Selection"/>
+      <sbsdqcex descr="Coordinates" name="rawcoords" type="DoubleMatrix"/>
+      <rsswdqvv descr="On_surface" name="snapcoords" type="StringArray"/>
+    </Properties>
+  </model.probe>
+</COMSOLCompletionData>

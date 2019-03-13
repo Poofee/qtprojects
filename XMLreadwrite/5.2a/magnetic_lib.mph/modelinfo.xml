@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modelInfo comsolVersion="5.2.1.126" entityComments="Magnetic lib&#xa;&#xa;" modelType="MODEL" isRunnable="false" pdfResources="" passwordProtection="off" startMode="edit" title="Magnetic lib" description="" runtimeProtection="off" windowTitle="Magnetic lib" expectedComputationTime="" lastComputationTime="" mainPartSDim="None">
+  <historyInfo createdIn="COMSOL 5.2a (snapshot) (Build: 126)" author="" createdDate="1462867882579" lastModifiedBy="" lastModifiedDate="1462867882588"/>
+  <licenseInfo products=""/>
+  <physicsInfo physics=""/>
+  <geometryInfo/>
+</modelInfo>
+

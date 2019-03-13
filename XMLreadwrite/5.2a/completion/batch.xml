@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<COMSOLCompletionData>
+  <model.batch geomspecific="false">
+    <BatchFeature help="comsol/comsol_api_general.37.14.html" topic="BatchList">
+      <Parametric descr="Parametric_sweep" help="comsol/comsol_ref_solver.26.159.html" id="p" props="cateszzb aufqfytr eqqxeyfw dzxezqvd ubertzyq wwyarczr eufdfxxu ebqqyazf szasxbys afyqrrrw wzywtybx wedctarb rwrswdfd yasqwddy yzatessd trfdcequ ecvaxaud strtxqee vyubzdst wwtsuybw" topic="batch_parametric">
+        <Save descr="Save_model_to_file" help="comsol/comsol_ref_solver.26.177.html" id="sa" props="dtrrsytq ayeztqfq zsxbtrzd wysdwctc yzatessd" topic="batch_save"/>
+        <Data descr="Batch_data" help="comsol/comsol_ref_solver.26.167.html" id="da" topic="batch_data">
+          <Process descr="External_process" help="comsol/comsol_ref_solver.26.172.html" id="pr" props="ayccdxby zsxbtrzd effwysxa wqxzfwfe zqvcewsq eqqxeyfw xzbcsfva fssdvvvw ydfwewvq uacdfrsr" topic="batch_process"/>
+        </Data>
+        <Class descr="External_class" help="comsol/comsol_ref_solver.26.171.html" id="cl" props="zsxbtrzd wfwratau" topic="batch_class"/>
+        <Jobseq descr="Job" help="comsol/comsol_ref_solver.26.174.html" id="jo" props="uyefbzfy" topic="batch_jobseq"/>
+        <Geomseq descr="Geometry" help="comsol/comsol_ref_solver.26.173.html" id="ge" props="fqrbssrv" topic="batch_geomseq"/>
+        <Meshseq descr="Mesh" help="comsol/comsol_ref_solver.26.175.html" id="me" props="zarazwrv" topic="batch_meshseq"/>
+        <Solutionseq descr="Solution" help="comsol/comsol_ref_solver.26.178.html" id="so" props="rvwuyqvq fwcqxyfs fabydvqc ewfxqdwx yzatessd" topic="batch_solutionseq"/>
+        <Postseq descr="Plot_group" help="comsol/comsol_ref_solver.26.176.html" id="po" props="yauvubdt" topic="batch_postseq"/>
+        <Numericalseq descr="Derived_value" help="comsol/comsol_ref_solver.26.168.html" id="nu" props="zwuqsdta xqyrrety swuyqvrp yzatessd" topic="batch_numericalseq"/>
+        <Evalnumericalseq descr="Evaluate_derived_values" help="comsol/comsol_ref_solver.26.169.html" id="en" props="wsfddxea bqrftyuf swuyqvrp trsvrzwa" topic="batch_evalnumericalseq"/>
+        <Exportseq descr="Export_to_file" help="comsol/comsol_ref_solver.26.170.html" id="ex" props="udfcrbvc fabydvqc ayeztqfq wysdwctc yzatessd" topic="batch_exportseq"/>
+      </Parametric>
+      <FunctionSweep descr="Function_sweep" help="comsol/comsol_ref_solver.26.162.html" id="pf" props="cateszzb eqqxeyfw dzxezqvd ubertzyq wwyarczr eufdfxxu ebqqyazf szasxbys afyqrrrw wzywtybx wedctarb rwrswdfd yasqwddy yzatessd trfdcequ ecvaxaud strtxqee vyubzdst wwtsuybw" topic="batch_functionsweep">
+        <Save descr="Save_model_to_file" help="comsol/comsol_ref_solver.26.177.html" id="sa" props="dtrrsytq ayeztqfq zsxbtrzd wysdwctc yzatessd" topic="batch_save"/>
+        <Data descr="Batch_data" help="comsol/comsol_ref_solver.26.167.html" id="da" topic="batch_data">
+          <Process descr="External_process" help="comsol/comsol_ref_solver.26.172.html" id="pr" props="ayccdxby zsxbtrzd effwysxa wqxzfwfe zqvcewsq eqqxeyfw xzbcsfva fssdvvvw ydfwewvq uacdfrsr" topic="batch_process"/>
+        </Data>
+        <Class descr="External_class" help="comsol/comsol_ref_solver.26.171.html" id="cl" props="zsxbtrzd wfwratau" topic="batch_class"/>
+        <Jobseq descr="Job" help="comsol/comsol_ref_solver.26.174.html" id="jo" props="uyefbzfy" topic="batch_jobseq"/>
+        <Geomseq descr="Geometry" help="comsol/comsol_ref_solver.26.173.html" id="ge" props="fqrbssrv" topic="batch_geomseq"/>
+        <Meshseq descr="Mesh" help="comsol/comsol_ref_solver.26.175.html" id="me" props="zarazwrv" topic="batch_meshseq"/>
+        <Solutionseq descr="Solution" help="comsol/comsol_ref_solver.26.178.html" id="so" props="rvwuyqvq fwcqxyfs fabydvqc ewfxqdwx yzatessd" topic="batch_solutionseq"/>
+        <Postseq descr="Plot_group" help="comsol/comsol_ref_solver.26.176.html" id="po" props="yauvubdt" topic="batch_postseq"/>
+        <Numericalseq descr="Derived_value" help="comsol/comsol_ref_solver.26.168.html" id="nu" props="zwuqsdta xqyrrety swuyqvrp yzatessd" topic="batch_numericalseq"/>
+        <Evalnumericalseq descr="Evaluate_derived_values" help="comsol/comsol_ref_solver.26.169.html" id="en" props="wsfddxea bqrftyuf swuyqvrp trsvrzwa" topic="batch_evalnumericalseq"/>
+        <Exportseq descr="Export_to_file" help="comsol/comsol_ref_solver.26.170.html" id="ex" props="udfcrbvc fabydvqc ayeztqfq wysdwctc yzatessd" topic="batch_exportseq"/>
+      </FunctionSweep>
+      <MaterialSweep descr="Material_sweep" help="comsol/comsol_ref_solver.26.163.html" id="pm" props="cateszzb eqqxeyfw dzxezqvd ubertzyq wwyarczr eufdfxxu ebqqyazf szasxbys afyqrrrw wzywtybx wedctarb rwrswdfd yasqwddy yzatessd trfdcequ ecvaxaud strtxqee vyubzdst wwtsuybw" topic="batch_materialsweep">
+        <Save descr="Save_model_to_file" help="comsol/comsol_ref_solver.26.177.html" id="sa" props="dtrrsytq ayeztqfq zsxbtrzd wysdwctc yzatessd" topic="batch_save"/>
+        <Data descr="Batch_data" help="comsol/comsol_ref_solver.26.167.html" id="da" topic="batch_data">
+          <Process descr="External_process" help="comsol/comsol_ref_solver.26.172.html" id="pr" props="ayccdxby zsxbtrzd effwysxa wqxzfwfe zqvcewsq eqqxeyfw xzbcsfva fssdvvvw ydfwewvq uacdfrsr" topic="batch_process"/>
+        </Data>
+        <Class descr="External_class" help="comsol/comsol_ref_solver.26.171.html" id="cl" props="zsxbtrzd wfwratau" topic="batch_class"/>
+        <Jobseq descr="Job" help="comsol/comsol_ref_solver.26.174.html" id="jo" props="uyefbzfy" topic="batch_jobseq"/>
+        <Geomseq descr="Geometry" help="comsol/comsol_ref_solver.26.173.html" id="ge" props="fqrbssrv" topic="batch_geomseq"/>
+        <Meshseq descr="Mesh" help="comsol/comsol_ref_solver.26.175.html" id="me" props="zarazwrv" topic="batch_meshseq"/>
+        <Solutionseq descr="Solution" help="comsol/comsol_ref_solver.26.178.html" id="so" props="rvwuyqvq fwcqxyfs fabydvqc ewfxqdwx yzatessd" topic="batch_solutionseq"/>
+        <Postseq descr="Plot_group" help="comsol/comsol_ref_solver.26.176.html" id="po" props="yauvubdt" topic="batch_postseq"/>
+        <Numericalseq descr="Derived_value" help="comsol/comsol_ref_solver.26.168.html" id="nu" props="zwuqsdta xqyrrety swuyqvrp yzatessd" topic="batch_numericalseq"/>
+        <Evalnumericalseq descr="Evaluate_derived_values" help="comsol/comsol_ref_solver.26.169.html" id="en" props="wsfddxea bqrftyuf swuyqvrp trsvrzwa" topic="batch_evalnumericalseq"/>
+        <Exportseq descr="Export_to_file" help="comsol/comsol_ref_solver.26.170.html" id="ex" props="udfcrbvc fabydvqc ayeztqfq wysdwctc yzatessd" topic="batch_exportseq"/>
+      </MaterialSweep>
+      <Batch descr="Batch" help="comsol/comsol_ref_solver.26.160.html" id="b" props="cateszzb tyserzdr bzdddwxa uwxqtqey cfaetyqu rwtfdyvw vfwdxzvs avusayyw uxdcuruc sufuvybw abecfrst svavdabb wddcwstp vufxzsqb cybfuwet abwzbefx zrabybzu fzwbcvbt waxcasdc syqwvzbq czqquecq vbwqtsey vyszqewd szasxbys afyqrrrw wzywtybx wedctarb rwrswdfd yxaxbxsv seqeycwb uwsywexf" topic="batch_batch">
+        <Save descr="Save_model_to_file" help="comsol/comsol_ref_solver.26.177.html" id="sa" props="dtrrsytq ayeztqfq zsxbtrzd wysdwctc yzatessd" topic="batch_save"/>
+        <Data descr="Batch_data" help="comsol/comsol_ref_solver.26.167.html" id="da" topic="batch_data">
+          <Process descr="External_process" help="comsol/comsol_ref_solver.26.172.html" id="pr" props="ayccdxby zsxbtrzd effwysxa wqxzfwfe zqvcewsq eqqxeyfw xzbcsfva fssdvvvw ydfwewvq uacdfrsr" topic="batch_process"/>
+        </Data>
+        <Class descr="External_class" help="comsol/comsol_ref_solver.26.171.html" id="cl" props="zsxbtrzd wfwratau" topic="batch_class"/>
+        <Jobseq descr="Job" help="comsol/comsol_ref_solver.26.174.html" id="jo" props="uyefbzfy" topic="batch_jobseq"/>
+        <Geomseq descr="Geometry" help="comsol/comsol_ref_solver.26.173.html" id="ge" props="fqrbssrv" topic="batch_geomseq"/>
+        <Meshseq descr="Mesh" help="comsol/comsol_ref_solver.26.175.html" id="me" props="zarazwrv" topic="batch_meshseq"/>
+        <Solutionseq descr="Solution" help="comsol/comsol_ref_solver.26.178.html" id="so" props="rvwuyqvq fwcqxyfs fabydvqc ewfxqdwx yzatessd" topic="batch_solutionseq"/>
+        <Postseq descr="Plot_group" help="comsol/comsol_ref_solver.26.176.html" id="po" props="yauvubdt" topic="batch_postseq"/>
+        <Numericalseq descr="Derived_value" help="comsol/comsol_ref_solver.26.168.html" id="nu" props="zwuqsdta xqyrrety swuyqvrp yzatessd" topic="batch_numericalseq"/>
+        <Evalnumericalseq descr="Evaluate_derived_values" help="comsol/comsol_ref_solver.26.169.html" id="en" props="wsfddxea bqrftyuf swuyqvrp trsvrzwa" topic="batch_evalnumericalseq"/>
+        <Exportseq descr="Export_to_file" help="comsol/comsol_ref_solver.26.170.html" id="ex" props="udfcrbvc fabydvqc ayeztqfq wysdwctc yzatessd" topic="batch_exportseq"/>
+      </Batch>
+      <Cluster descr="Cluster_computing" help="comsol/comsol_ref_solver.26.161.html" id="c" props="cateszzb dvqzqtzu afvyxzuq vedctvsa fzbbvvcq esxwscff xvbxcdvx cuqvcdwq ffqdzccb avbxurfu aeqysfdx uqcvcarq ecbdszxq zrrwzard urxyrtva vvfrewre zzwwstbr tsbtutyt yztzsxrv dbxwyvsd ewtxdcbu uvcqfcsu ydqfrasv vuswerrx evwruevp tzucewst xdarfxey astbdvsa bqvdvzqf euufdzzp xzebbrab tqvrzqxv eutqfeba auzsurzz fbvwafts wrwrvrww ydaqwsrb rfzecbqu eqzwwytt rdeswcxb tvcxtyqb crcvwcyd yzfvcbba zvzauvwz urcqxuub dbuddequ wtzuftva rrssyufa xbuaxevd aszfuaxw" topic="batch_cluster"/>
+      <Optimization descr="Optimization" help="comsol/comsol_ref_solver.26.164.html" id="o" props="trfwfdqd vyubzdst wwtsuybw" topic="batch_optimization"/>
+      <Sequence descr="Sequence" help="comsol/comsol_ref_solver.26.165.html" id="s" props="cateszzb vyubzdst wwtsuybw" topic="batch_sequence">
+        <Save descr="Save_model_to_file" help="comsol/comsol_ref_solver.26.177.html" id="sa" props="dtrrsytq ayeztqfq zsxbtrzd wysdwctc yzatessd" topic="batch_save"/>
+        <Data descr="Batch_data" help="comsol/comsol_ref_solver.26.167.html" id="da" topic="batch_data">
+          <Process descr="External_process" help="comsol/comsol_ref_solver.26.172.html" id="pr" props="ayccdxby zsxbtrzd effwysxa wqxzfwfe zqvcewsq eqqxeyfw xzbcsfva fssdvvvw ydfwewvq uacdfrsr" topic="batch_process"/>
+        </Data>
+        <Class descr="External_class" help="comsol/comsol_ref_solver.26.171.html" id="cl" props="zsxbtrzd wfwratau" topic="batch_class"/>
+        <Jobseq descr="Job" help="comsol/comsol_ref_solver.26.174.html" id="jo" props="uyefbzfy" topic="batch_jobseq"/>
+        <Geomseq descr="Geometry" help="comsol/comsol_ref_solver.26.173.html" id="ge" props="fqrbssrv" topic="batch_geomseq"/>
+        <Meshseq descr="Mesh" help="comsol/comsol_ref_solver.26.175.html" id="me" props="zarazwrv" topic="batch_meshseq"/>
+        <Solutionseq descr="Solution" help="comsol/comsol_ref_solver.26.178.html" id="so" props="rvwuyqvq fwcqxyfs fabydvqc ewfxqdwx yzatessd" topic="batch_solutionseq"/>
+        <Postseq descr="Plot_group" help="comsol/comsol_ref_solver.26.176.html" id="po" props="yauvubdt" topic="batch_postseq"/>
+        <Numericalseq descr="Derived_value" help="comsol/comsol_ref_solver.26.168.html" id="nu" props="zwuqsdta xqyrrety swuyqvrp yzatessd" topic="batch_numericalseq"/>
+        <Evalnumericalseq descr="Evaluate_derived_values" help="comsol/comsol_ref_solver.26.169.html" id="en" props="wsfddxea bqrftyuf swuyqvrp trsvrzwa" topic="batch_evalnumericalseq"/>
+        <Exportseq descr="Export_to_file" help="comsol/comsol_ref_solver.26.170.html" id="ex" props="udfcrbvc fabydvqc ayeztqfq wysdwctc yzatessd" topic="batch_exportseq"/>
+      </Sequence>
+    </BatchFeature>
+    <Properties>
+      <cateszzb descr="Defined_by_study_step" descrs="User_defined|A_reference_to_a_model_entity" isref="true" name="control" type="String" values="user|{ModelEntity}"/>
+      <aufqfytr descr="Sweep_type" descrs="All_combinations|Specified_combinations" name="sweeptype" type="String" values="filled|sparse"/>
+      <eqqxeyfw descr="Parameter_name" name="pname" type="StringArray"/>
+      <dzxezqvd descr="Parameter_value_list" name="plistarr" type="DoubleRowMatrix"/>
+      <ubertzyq descr="Unit" name="punit" type="StringArray"/>
+      <wwyarczr descr="Stop_condition" name="stopcond" type="String"/>
+      <eufdfxxu descr="Plot[verb]" descrs="On|Off" name="plot" type="String" values="on|off"/>
+      <ebqqyazf descr="Plot_group" descrs="A_reference_to_a_plot_group" isref="true" name="plotgroup" type="String" values="Default|{ResultFeature}"/>
+      <szasxbys descr="Probes" descrs="All|None|Manual" name="probesel" type="String" values="all|none|manual"/>
+      <afyqrrrw descr="Probes" descrs="A_reference_to_a_probe" isref="true" name="probes" type="StringArray" values="{ProbeFeature}"/>
+      <wzywtybx descr="Accumulated_probe_table" descrs="On|Off" name="useaccumtable" type="String" values="on|off"/>
+      <wedctarb descr="Output_table" descrs="New|A_reference_to_a_model_entity" isref="true" name="accumtable" type="String" values="new|{TableFeature}"/>
+      <rwrswdfd descr="Use_all_probes" descrs="On|Off" name="accumtableall" type="Boolean" values="on|off"/>
+      <yasqwddy descr="Stop_if_error" descrs="On|Off" name="err" type="Boolean" values="on|off"/>
+      <yzatessd descr="Parameters" name="param" type="StringArray"/>
+      <trfdcequ descr="Distribute_parameters" descrs="On|Off" name="pdistrib" type="String" values="on|off"/>
+      <ecvaxaud descr="Maximum_number_of_groups" name="pwork" type="Int"/>
+      <strtxqee descr="Maximum_number_of_groups" descrs="On|Off" name="pworkactive" type="Boolean" values="on|off"/>
+      <vyubzdst descr="Keep_warnings_in_stored_log" descrs="On|Off" name="keeplog" type="Boolean" values="on|off"/>
+      <wwtsuybw descr="Log_message" name="message" type="String"/>
+      <dtrrsytq descr="Overwrite_previous_model_files" descrs="On|Off" name="clear" type="Boolean" values="on|off"/>
+      <ayeztqfq descr="Add_parameters_to_filename" descrs="None|Parameter_name_and_value|Index" name="paramfilename" type="String" values="off|on|index"/>
+      <zsxbtrzd descr="Filename" name="filename" type="String"/>
+      <wysdwctc descr="Open_file" descrs="None" name="openfile" type="String" values="none"/>
+      <ayccdxby descr="Start_command" name="cmd" type="StringArray"/>
+      <effwysxa descr="Client_filename" name="clientfilename" type="String"/>
+      <wqxzfwfe descr="To_remote_command" name="filetransfertocmd" type="StringArray"/>
+      <zqvcewsq descr="From_remote_command" name="filetransferfromcmd" type="StringArray"/>
+      <xzbcsfva descr="Parameter_values" name="plist" type="DoubleArray"/>
+      <fssdvvvw descr="Parameter_unit" name="punit" type="StringArray"/>
+      <ydfwewvq descr="#Status: Unknown" name="status" type="String"/>
+      <uacdfrsr descr="Update" name="update" type="String"/>
+      <wfwratau descr="Input" name="input" type="StringArray"/>
+      <uyefbzfy descr="Run" descrs="A_reference_to_a_model_entity" isref="true" name="seq" type="String" values="{BatchFeature}"/>
+      <fqrbssrv descr="Run" descrs="All|A_reference_to_a_geometry_sequence" isref="true" name="seq" type="String" values="all|{Geom}"/>
+      <zarazwrv descr="Run" descrs="All|A_reference_to_a_mesh" isref="true" name="seq" type="String" values="all|{Mesh}"/>
+      <rvwuyqvq descr="Run" descrs="All|A_reference_to_a_solution" isref="true" name="seq" type="String" values="all|{SolverSequence}"/>
+      <fwcqxyfs descr="Keep_all_solutions" descrs="On|Off" name="store" type="String" values="on|off"/>
+      <fabydvqc descr="Clear_previous" descrs="On|Off" name="clear" type="Boolean" values="on|off"/>
+      <ewfxqdwx descr="Solution" descrs="None|A_reference_to_a_solution" isref="true" name="psol" type="String" values="none|{SolverSequence}"/>
+      <yauvubdt descr="Run" descrs="All|A_reference_to_a_model_entity" isref="true" name="seq" type="String" values="all|{ResultFeature}"/>
+      <zwuqsdta descr="Run" descrs="All|A_reference_to_a_model_entity" isref="true" name="seq" type="String" values="all|{NumericalFeature}"/>
+      <xqyrrety descr="Table" descrs="New|A_reference_to_a_model_entity" isref="true" name="table" type="String" values="new|{TableFeature}"/>
+      <swuyqvrp descr="Update_table" descrs="Append_data_to_table|Clear_initial_table|Clear_table_for_every_new_parameter_value" name="clear" type="String" values="off|on|clearforvalue"/>
+      <wsfddxea descr="Evaluate" descrs="All|Manual|A_reference_to_a_model_entity" isref="true" name="seq" type="String" values="all|manual|{NumericalFeature}"/>
+      <bqrftyuf descr="Derived_values" descrs="A_reference_to_a_numerical_feature" isref="true" name="seqs" type="StringArray" values="{NumericalFeature}"/>
+      <trsvrzwa descr="Add_parameters_to_description" descrs="On|Off" name="paramtitle" type="Boolean" values="on|off"/>
+      <udfcrbvc descr="Run" descrs="All|A_reference_to_a_model_entity" isref="true" name="seq" type="String" values="all|{ExportFeature}"/>
+      <tyserzdr descr="Number_of_cores" name="np" type="Double"/>
+      <bzdddwxa descr="Number_of_cores" descrs="On|Off" name="npactive" type="Boolean" values="on|off"/>
+      <uwxqtqey descr="Use_graphics" descrs="On|Off" name="graphics" type="Boolean" values="on|off"/>
+      <cfaetyqu descr="Number_of_simultaneous_jobs" name="maxallow" type="Int"/>
+      <rwtfdyvw descr="Number_of_job_restarts" name="maxrestart" type="Int"/>
+      <vfwdxzvs descr="Alive_time_(seconds)" name="maxalive" type="Int"/>
+      <avusayyw descr="Start_time" descrs="Now|" isref="true" name="starttime" type="String" values="now|0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23"/>
+      <uxdcuruc descr="Filename" name="batchfile" type="String"/>
+      <sufuvybw descr="Clear_previous_model" descrs="On|Off" name="clear" type="Boolean" values="on|off"/>
+      <abecfrst descr="Clear_meshes" descrs="On|Off" name="clearmesh" type="Boolean" values="on|off"/>
+      <svavdabb descr="Clear_solutions" descrs="On|Off" name="clearsol" type="Boolean" values="on|off"/>
+      <wddcwstp descr="Output_model_to_file" descrs="On|Off" name="savefile" type="Boolean" values="on|off"/>
+      <vufxzsqb descr="Directory" name="batchdir" type="String"/>
+      <cybfuwet descr="Add_parameters_to_filename" descrs="Parameter_name_and_value|Index" name="paramfilename" type="String" values="on|index"/>
+      <abwzbefx descr="Specify_server_directory_path" descrs="On|Off" name="specserverdir" type="String" values="on|off"/>
+      <zrabybzu descr="Directory" name="serverdir" type="String"/>
+      <fzwbcvbt descr="Specify_external_COMSOL_batch_directory_path" descrs="On|Off" name="specbatchdir" type="String" values="on|off"/>
+      <waxcasdc descr="Directory" name="rundir" type="String"/>
+      <syqwvzbq descr="Specify_external_COMSOL_installation_directory_path" descrs="On|Off" name="speccomsoldir" type="String" values="on|off"/>
+      <czqquecq descr="Directory" name="comsoldir" type="String"/>
+      <vbwqtsey descr="Synchronize_solutions" descrs="On|Off" name="synchsolutions" type="Boolean" values="on|off"/>
+      <vyszqewd descr="Synchronize_accumulated_probe_table" descrs="On|Off" name="synchaccumprobetable" type="Boolean" values="on|off"/>
+      <yxaxbxsv descr="Client" descrs="On|Off" name="client" type="String" values="on|off"/>
+      <seqeycwb descr="Host_name" name="host" type="String"/>
+      <uwsywexf descr="Port_number" name="port" type="Int"/>
+      <dvqzqtzu descr="Prepend_command" name="precmd" type="String"/>
+      <afvyxzuq descr="Postpend_command" name="postcmd" type="String"/>
+      <vedctvsa descr="Batch_job" descrs="A_reference_to_a_model_entity" isref="true" name="batch" type="String" values="{BatchFeature}"/>
+      <fzbbvvcq descr="Use_batch_license" descrs="On|Off" name="batchlic" type="Boolean" values="on|off"/>
+      <esxwscff descr="Scheduler_type" descrs="General|HPCS_2008_2012|WCCS_2003|OGS/GE|SLURM|Not_distributed" name="clustertype" type="String" values="general|whpc2008|wccs2003|sge|slurm|none"/>
+      <xvbxcdvx descr="MPD_is_running" descrs="On|Off" name="mpd" type="Boolean" values="on|off"/>
+      <cuqvcdwq descr="Host_file" name="hostfile" type="String"/>
+      <ffqdzccb descr="Bootstrap_server" name="mpibootstrap" type="String"/>
+      <avbxurfu descr="#Rsh" name="mpirsh" type="String"/>
+      <aeqysfdx descr="Additional_MPI_arguments" name="mpiargs" type="String"/>
+      <uqcvcarq descr="Number_of_nodes" name="nn" type="Double"/>
+      <ecbdszxq descr="Number_of_processes_on_host" name="perhost" type="Int"/>
+      <zrrwzard descr="Additional_scheduler_arguments" name="schedargs" type="String"/>
+      <urxyrtva descr="Node_granularity" descrs="Node|Socket|Core" name="nodegran" type="String" values="node|socket|core"/>
+      <vvfrewre descr="Exclusive_nodes" descrs="On|Off" name="exclusive" type="Boolean" values="on|off"/>
+      <zzwwstbr descr="Scheduler" name="scheduler" type="String"/>
+      <tsbtutyt descr="Requested_nodes" name="reqnodes" type="StringArray"/>
+      <yztzsxrv descr="Node_group" name="nodegroup" type="StringArray"/>
+      <dbxwyvsd descr="Cores_per_node" name="corespernode" type="Int"/>
+      <ewtxdcbu descr="Memory_per_node_(MB)" name="memorypernode" type="Int"/>
+      <uvcqfcsu descr="Runtime_(minutes)" name="runtime" type="String"/>
+      <ydqfrasv descr="User" name="user" type="String"/>
+      <vuswerrx descr="Priority" descrs="Highest|Above_normal|Normal[usual]|Below_normal|Lowest" name="priority" type="String" values="Highest|AboveNormal|Normal|BelowNormal|Lowest"/>
+      <evwruevp descr="Slot_granularity" descrs="Host|Slot|Manual" name="sgegran" type="String" values="host|slot|manual"/>
+      <tzucewst descr="Number_of_slots" name="sgenn" type="Double"/>
+      <xdarfxey descr="Queue_name" name="sgequeue" type="String"/>
+      <astbdvsa descr="Priority_value" name="sgepriority" type="Int"/>
+      <bqvdvzqf descr="Run_remote" descrs="On|Off" name="remote" type="String" values="on|off"/>
+      <euufdzzp descr="Remote_invoke_command" descrs="None|#SSH|User" name="remotecmd" type="String" values="none|ssh|user"/>
+      <xzebbrab descr="SSH_command" descrs="#SSH|#Putty|User" name="sshcmd" type="String" values="ssh|putty|user"/>
+      <tqvrzqxv descr="Command" name="sshusercmd" type="String"/>
+      <eutqfeba descr="SSH_directory" name="sshpath" type="String"/>
+      <auzsurzz descr="SSH_key_file" name="sshkey" type="String"/>
+      <fbvwafts descr="Forward_ports" name="sshports" type="StringArray"/>
+      <wrwrvrww descr="Port_host" name="sshporthost" type="String"/>
+      <ydaqwsrb descr="Additional_SSH_arguments" name="sshargs" type="String"/>
+      <rfzecbqu descr="SSH_user" name="sshuser" type="String"/>
+      <eqzwwytt descr="Command" name="remoteusercmd" type="String"/>
+      <rdeswcxb descr="File_transfer_command" descrs="None|#SCP|User" name="filetransfercmd" type="String" values="none|scp|user"/>
+      <tvcxtyqb descr="SCP_command" descrs="#SCP|#Putty|User" name="scpcmd" type="String" values="scp|putty|user"/>
+      <crcvwcyd descr="Command" name="scpusercmd" type="String"/>
+      <yzfvcbba descr="SCP_directory" name="scppath" type="String"/>
+      <zvzauvwz descr="SCP_key_file" name="scpkey" type="String"/>
+      <urcqxuub descr="Additional_SCP_arguments" name="scpargs" type="String"/>
+      <dbuddequ descr="SCP_user" name="scpuser" type="String"/>
+      <wtzuftva descr="To_remote_command" name="filetransfertousercmd" type="String"/>
+      <rrssyufa descr="From_remote_command" name="filetransferfromusercmd" type="String"/>
+      <xbuaxevd descr="Remote_hosts" name="remotehosts" type="StringArray"/>
+      <aszfuaxw descr="Remote_OS" descrs="Native|#Windows|#Linux" name="remoteos" type="String" values="native|windows|linux"/>
+      <trfwfdqd descr="Parametric_jobs" descrs="A_reference_to_a_parametric_batch_feature" isref="true" name="parametricjobs" type="StringArray" values="{BatchFeature}"/>
+    </Properties>
+  </model.batch>
+</COMSOLCompletionData>

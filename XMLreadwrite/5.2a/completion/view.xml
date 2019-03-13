@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<COMSOLCompletionData>
+  <model.view geomspecific="true">
+    <Global axi="false" dim="-1"/>
+    <S1D axi="false" dim="1">
+      <View>
+        <ModelView1D descr="View" id="view" props="vfrfarte cyuubeqz xatrvqaf" topic="view_ModelView1D">
+          <ViewFeature>
+            <Axis1D descr="Axis" id="axis" props="trqbcaft aaybwytt dezscbav yvwvvcvx wferddcw" topic="view_Axis1D"/>
+          </ViewFeature>
+        </ModelView1D>
+      </View>
+    </S1D>
+    <S2D axi="false" dim="2">
+      <View>
+        <ModelView2D descr="View" id="view" props="vfrfarte cyuubeqz dbbsrdtb xatrvqaf" topic="view_ModelView2D">
+          <ViewFeature>
+            <Axis2D descr="Axis" id="axis" props="trqbcaft aaybwytt xbtdwutv fubdqrxv drebudzc ecavtftx twdwdyxz urdtzucx ewxetfzy xfbzftxv fevbdsdt zddfxuza dfveavvc dezscbav yvwvvcvx bebwwdrz wferddcw wqbsevsw" topic="view_Axis2D"/>
+          </ViewFeature>
+        </ModelView2D>
+        <ResultView2D descr="View_2D" id="view" props="vfrfarte cyuubeqz dbbsrdtb xatrvqaf" topic="view_ResultView2D">
+          <ViewFeature>
+            <Axis2D descr="Axis" id="axis" props="trqbcaft aaybwytt xbtdwutv fubdqrxv drebudzc ecavtftx twdwdyxz urdtzucx ewxetfzy xfbzftxv fevbdsdt zddfxuza dfveavvc dezscbav yvwvvcvx bebwwdrz wferddcw wqbsevsw" topic="view_Axis2D"/>
+          </ViewFeature>
+        </ResultView2D>
+      </View>
+    </S2D>
+    <S3D axi="false" dim="3">
+      <View>
+        <ModelView3D descr="View" id="view" props="abbtxppp vfrfarte cyuubeqz dbbsrdtb ysrcaqvw cquzuzbt tbdcysap crxfutwv vfeetqeu zvwsvawq xzsrcdqb ycdserep vxvfufyz deqycsqz rrydcbfp vbbvbbvr" topic="view_ModelView3D">
+          <ViewFeature>
+            <Axis3D descr="Axis" id="axis" props="trqbcaft aaybwytt xbtdwutv fubdqrxv cvwefdxx teeezabx drebudzc ecavtftx twdwdyxz yrqyxrbb dezscbav yvwvvcvx bebwwdrz fyqxxddb wferddcw wqbsevsw vrytecyw" topic="view_Axis3D"/>
+            <Camera descr="Camera" help="comsol/comsol_api_general.37.52.html" id="cam" props="xtyraedp xvburfzc fzbuybsv drebudzc ecavtftx twdwdyxz yrqyxrbb tdrzbsdq bqvsqxzq sfxeuazs dwqtquad ybbrxdbv dezscbav yvwvvcvx bebwwdrz fyqxxddb wferddcw wqbsevsw vrytecyw" topic="view_Camera"/>
+            <DirectionalLight descr="Directional_light" id="lgt" props="ycaytuby dsxazuqy xsqqqucz rttdfufr fvryarft dtuqtwtu uwafyfwc" topic="view_DirectionalLight"/>
+            <PointLight descr="Point_light" id="lgt" props="tdrzbsdq dsxazuqy xsqqqucz rttdfufr fvryarft dtuqtwtu uwafyfwc" topic="view_PointLight"/>
+            <SpotLight descr="Spotlight" id="lgt" props="tdrzbsdq evccycye evarrazw dsxazuqy xsqqqucz rttdfufr fvryarft dtuqtwtu uwafyfwc" topic="view_SpotLight"/>
+            <HeadLight descr="Head_light" id="lgt" props="dsxazuqy xsqqqucz rttdfufr fvryarft uwafyfwc" topic="view_HeadLight"/>
+          </ViewFeature>
+        </ModelView3D>
+        <ResultView3D descr="View_3D" id="view" props="abbtxppp vfrfarte cyuubeqz dbbsrdtb ysrcaqvw cquzuzbt tbdcysap crxfutwv vfeetqeu zvwsvawq xzsrcdqb ycdserep vxvfufyz deqycsqz rrydcbfp vbbvbbvr" topic="view_ResultView3D">
+          <ViewFeature>
+            <Axis3D descr="Axis" id="axis" props="trqbcaft aaybwytt xbtdwutv fubdqrxv cvwefdxx teeezabx drebudzc ecavtftx twdwdyxz yrqyxrbb dezscbav yvwvvcvx bebwwdrz fyqxxddb wferddcw wqbsevsw vrytecyw" topic="view_Axis3D"/>
+            <Camera descr="Camera" help="comsol/comsol_api_general.37.52.html" id="cam" props="xtyraedp xvburfzc fzbuybsv drebudzc ecavtftx twdwdyxz yrqyxrbb tdrzbsdq bqvsqxzq sfxeuazs dwqtquad ybbrxdbv dezscbav yvwvvcvx bebwwdrz fyqxxddb wferddcw wqbsevsw vrytecyw" topic="view_Camera"/>
+            <DirectionalLight descr="Directional_light" id="lgt" props="ycaytuby dsxazuqy xsqqqucz rttdfufr fvryarft dtuqtwtu uwafyfwc" topic="view_DirectionalLight"/>
+            <PointLight descr="Point_light" id="lgt" props="tdrzbsdq dsxazuqy xsqqqucz rttdfufr fvryarft dtuqtwtu uwafyfwc" topic="view_PointLight"/>
+            <SpotLight descr="Spotlight" id="lgt" props="tdrzbsdq evccycye evarrazw dsxazuqy xsqqqucz rttdfufr fvryarft dtuqtwtu uwafyfwc" topic="view_SpotLight"/>
+            <HeadLight descr="Head_light" id="lgt" props="dsxazuqy xsqqqucz rttdfufr fvryarft uwafyfwc" topic="view_HeadLight"/>
+          </ViewFeature>
+        </ResultView3D>
+      </View>
+    </S3D>
+    <S1DAxi axi="true" dim="1">
+      <View>
+        <ModelView1D descr="View" id="view" props="vfrfarte cyuubeqz xatrvqaf" topic="view_ModelView1D">
+          <ViewFeature>
+            <Axis1D descr="Axis" id="axis" props="trqbcaed aaybwysd dezscbav yvwvvcvr wferddcq" topic="view_Axis1D"/>
+          </ViewFeature>
+        </ModelView1D>
+      </View>
+    </S1DAxi>
+    <S2DAxi axi="true" dim="2">
+      <View>
+        <ModelView2D descr="View" id="view" props="vfrfarte cyuubeqz dbbsrdtb xatrvqaf" topic="view_ModelView2D">
+          <ViewFeature>
+            <Axis2D descr="Axis" id="axis" props="trqbcaed aaybwysd xbtdwutw fubdqrxw drebudzc ecavtftx twdwdyxz urdtzucx ewxetfzy xfbzftxv fevbdsdt zddfxuza dfveavvc dezscbav yvwvvcvr bebwwdra wferddcq wqbsevsx" topic="view_Axis2D"/>
+          </ViewFeature>
+        </ModelView2D>
+        <ResultView2D descr="View_2D" id="view" props="vfrfarte cyuubeqz dbbsrdtb xatrvqaf" topic="view_ResultView2D">
+          <ViewFeature>
+            <Axis2D descr="Axis" id="axis" props="trqbcaft aaybwytt xbtdwutv fubdqrxv drebudzc ecavtftx twdwdyxz urdtzucx ewxetfzy xfbzftxv fevbdsdt zddfxuza dfveavvc dezscbav yvwvvcvx bebwwdrz wferddcw wqbsevsw" topic="view_Axis2D"/>
+          </ViewFeature>
+        </ResultView2D>
+      </View>
+    </S2DAxi>
+    <S0D axi="false" dim="0"/>
+    <S0DAxi axi="true" dim="0"/>
+    <Properties>
+      <vfrfarte descr="Show_geometry_labels" descrs="On|Off" name="showlabels" type="Boolean" values="on|off"/>
+      <cyuubeqz descr="Show_edge_direction_arrows" descrs="On|Off" name="showDirections" type="Boolean" values="on|off"/>
+      <xatrvqaf descr="Lock_axis" descrs="On|Off" name="locked" type="Boolean" values="on|off"/>
+      <trqbcaft descr="X_minimum#x" name="xmin" type="Double"/>
+      <aaybwytt descr="X_maximum#x" name="xmax" type="Double"/>
+      <dezscbav descr="Manual_spacing" descrs="On|Off" name="manualgrid" type="String" values="on|off"/>
+      <yvwvvcvx descr="X_spacing#x" name="xspacing" type="Double"/>
+      <wferddcw descr="Extra_X#x" name="xextra" type="DoubleArray"/>
+      <dbbsrdtb descr="Show_grid" descrs="On|Off" name="showgrid" type="Boolean" values="on|off"/>
+      <xbtdwutv descr="X_minimum#y" name="ymin" type="Double"/>
+      <fubdqrxv descr="X_maximum#y" name="ymax" type="Double"/>
+      <drebudzc descr="View_scale" descrs="None|Automatic|Manual" name="viewscaletype" type="String" values="none|automatic|manual"/>
+      <ecavtftx descr="X_scale#x" name="xscale" type="Double"/>
+      <twdwdyxz descr="X_scale#y" name="yscale" type="Double"/>
+      <urdtzucx descr="left ratio" name="abstractviewlratio" type="Double"/>
+      <ewxetfzy descr="right ratio" name="abstractviewrratio" type="Double"/>
+      <xfbzftxv descr="bottom ratio" name="abstractviewbratio" type="Double"/>
+      <fevbdsdt descr="top ratio" name="abstractviewtratio" type="Double"/>
+      <zddfxuza descr="x scale" name="abstractviewxscale" type="Double"/>
+      <dfveavvc descr="y scale" name="abstractviewyscale" type="Double"/>
+      <bebwwdrz descr="X_spacing#y" name="yspacing" type="Double"/>
+      <wqbsevsw descr="Extra_X#y" name="yextra" type="DoubleArray"/>
+      <abbtxppp descr="Wireframe_rendering" descrs="On|Off" name="renderwireframe" type="Boolean" values="on|off"/>
+      <ysrcaqvw descr="Show_axis_orientation" descrs="On|Off" name="showaxisorientation" type="Boolean" values="on|off"/>
+      <cquzuzbt descr="Lock_camera" descrs="On|Off" name="locked" type="Boolean" values="on|off"/>
+      <tbdcysap descr="Scene_light" descrs="On|Off" name="scenelight" type="String" values="on|off"/>
+      <crxfutwv descr="Light_intensity" name="totlightintensity" type="Double"/>
+      <vfeetqeu descr="Diffuse_light" descrs="On|Off" name="usediffuse" type="Boolean" values="on|off"/>
+      <zvwsvawq descr="Specular_light" descrs="On|Off" name="usespecular" type="Boolean" values="on|off"/>
+      <xzsrcdqb descr="Ambient_light" descrs="On|Off" name="globalambient" type="String" values="on|off"/>
+      <ycdserep descr="Ambient_intensity" name="totambient" type="Double"/>
+      <vxvfufyz descr="Color" descrs="Custom|Black|Blue|Cyan|Gray|Green|Magenta|Red|White|Yellow" name="ambientcolor" type="String" values="custom|black|blue|cyan|gray|green|magenta|red|white|yellow"/>
+      <deqycsqz descr="Custom_color" name="customambientcolor" type="DoubleArray"/>
+      <rrydcbfp descr="Transparency" descrs="On|Off" name="transparency" type="String" values="on|off"/>
+      <vbbvbbvr descr="Alpha" name="alpha" type="Double"/>
+      <cvwefdxx descr="X_minimum#z" name="zmin" type="Double"/>
+      <teeezabx descr="X_maximum#z" name="zmax" type="Double"/>
+      <yrqyxrbb descr="X_scale#z" name="zscale" type="Double"/>
+      <fyqxxddb descr="X_spacing#z" name="zspacing" type="Double"/>
+      <vrytecyw descr="Extra_X#z" name="zextra" type="DoubleArray"/>
+      <xtyraedp descr="Projection" descrs="Orthographic|Perspective" name="projection" type="String" values="orthographic|perspective"/>
+      <xvburfzc descr="Orthographic_scale" name="orthoscale" type="Double"/>
+      <fzbuybsv descr="Zoom_angle" name="zoomanglefull" type="Double"/>
+      <tdrzbsdq descr="Position" name="position" type="DoubleArray"/>
+      <bqvsqxzq descr="Target" name="target" type="DoubleArray"/>
+      <sfxeuazs descr="Up_vector" name="up" type="DoubleArray"/>
+      <dwqtquad descr="Rotation_point" name="rotationpoint" type="DoubleArray"/>
+      <ybbrxdbv descr="View_offset" name="viewoffset" type="DoubleArray"/>
+      <ycaytuby descr="Direction" name="lightdirection" type="DoubleArray"/>
+      <dsxazuqy descr="Light_intensity" name="intensity" type="Double"/>
+      <xsqqqucz descr="Specular_intensity" name="specular" type="Double"/>
+      <rttdfufr descr="Color" descrs="Custom|Black|Blue|Cyan|Gray|Green|Magenta|Red|White|Yellow" name="color" type="String" values="custom|black|blue|cyan|gray|green|magenta|red|white|yellow"/>
+      <fvryarft descr="Custom_color" name="customcolor" type="DoubleArray"/>
+      <dtuqtwtu descr="Show_in_camera_coordinate_system" descrs="On|Off" name="cameracoord" type="Boolean" values="on|off"/>
+      <uwafyfwc descr="Show_light_marker" descrs="On|Off" name="showmarker" type="Boolean" values="on|off"/>
+      <evccycye descr="Direction" name="direction" type="DoubleArray"/>
+      <evarrazw descr="Spread_angle" name="spreadangle" type="Double"/>
+      <trqbcaed descr="X_minimum#r" name="xmin" type="Double"/>
+      <aaybwysd descr="X_maximum#r" name="xmax" type="Double"/>
+      <yvwvvcvr descr="X_spacing#r" name="xspacing" type="Double"/>
+      <wferddcq descr="Extra_X#r" name="xextra" type="DoubleArray"/>
+      <xbtdwutw descr="X_minimum#z" name="ymin" type="Double"/>
+      <fubdqrxw descr="X_maximum#z" name="ymax" type="Double"/>
+      <bebwwdra descr="X_spacing#z" name="yspacing" type="Double"/>
+      <wqbsevsx descr="Extra_X#z" name="yextra" type="DoubleArray"/>
+    </Properties>
+  </model.view>
+</COMSOLCompletionData>

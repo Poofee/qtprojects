@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<COMSOLCompletionData>
+  <model.cpl geomspecific="true">
+    <Cpl help="comsol/comsol_api_general.37.20.html" topic="CplList">
+      <Global axi="false" dim="-1"/>
+      <S1D axi="false" dim="1">
+        <GeneralExtrusion descr="General_extrusion" help="comsol/comsol_api_general.37.20.html" id="genext" props="zsrtfsab cexbuvts avsyeczf xrztdufe fzffbabq zqardqzu tqsdbysx evzryrrx" topic="cpl_GeneralExtrusion"/>
+        <LinearExtrusion descr="Linear_extrusion" help="comsol/comsol_api_general.37.20.html" id="linext" props="zsrtfsab vqsqfycc xzxqddue xycwvxqq bvewrbsq xfqyasdf dwqvrzut avsyeczf xrztdufe fzffbabq zqardqzu tqsdbysx evzryrrx" topic="cpl_LinearExtrusion"/>
+        <IdentityMapping descr="Identity_mapping" help="comsol/comsol_api_general.37.20.html" id="idmap" props="zsrtfsab avsyeczf xfqyasdf dwqvrzut zqardqzu tqsdbysx evzryrrx" topic="cpl_IdentityMapping"/>
+        <GeneralProjection descr="General_projection" help="comsol/comsol_api_general.37.20.html" id="genproj" props="zsrtfsab cexbuvts avsyeczf fzffbabq tqsdbysx rbqvsazz" topic="cpl_GeneralProjection"/>
+        <LinearProjection descr="Linear_projection" help="comsol/comsol_api_general.37.20.html" id="linproj" props="zsrtfsab vqsqfycc xzxqddue xycwvxqq xfqyasdf dwqvrzut avsyeczf tqsdbysx rbqvsazz" topic="cpl_LinearProjection"/>
+        <Integration descr="Integration" help="comsol/comsol_api_general.37.20.html" id="intop" props="zsrtfsab yscaqwvw rbqvsazz cyzcccaf tssbscrs" topic="cpl_Integration"/>
+        <Average descr="Average" help="comsol/comsol_api_general.37.20.html" id="aveop" props="zsrtfsab rbqvsazz cyzcccaf tssbscrs" topic="cpl_Average"/>
+        <Maximum descr="Maximum" help="comsol/comsol_api_general.37.20.html" id="maxop" props="zsrtfsab yssdybvp rbqvsazz svbwvdzy" topic="cpl_Maximum"/>
+        <Minimum descr="Minimum" help="comsol/comsol_api_general.37.20.html" id="minop" props="zsrtfsab yssdybvp rbqvsazz svbwvdzy" topic="cpl_Minimum"/>
+      </S1D>
+      <S2D axi="false" dim="2">
+        <GeneralExtrusion descr="General_extrusion" help="comsol/comsol_api_general.37.20.html" id="genext" props="zsrtfsab cexbuvts avsyeczf xrztdufe fzffbabq zqardqzu tqsdbysx evzryrrx" topic="cpl_GeneralExtrusion"/>
+        <LinearExtrusion descr="Linear_extrusion" help="comsol/comsol_api_general.37.20.html" id="linext" props="zsrtfsab vqsqfycc xzxqddue ascqcrdq xycwvxqq bvewrbsq ftqvdfuq xfqyasdf dwqvrzut avsyeczf xrztdufe fzffbabq zqardqzu tqsdbysx evzryrrx" topic="cpl_LinearExtrusion"/>
+        <BoundarySimilarity descr="Boundary_similarity" help="comsol/comsol_api_general.37.20.html" id="bndsim" props="scursxzz evvvaudc xrztdufe fzffbabq zsrtfsab zqardqzu tqsdbysx evzryrrx" topic="cpl_BoundarySimilarity"/>
+        <IdentityMapping descr="Identity_mapping" help="comsol/comsol_api_general.37.20.html" id="idmap" props="zsrtfsab avsyeczf xfqyasdf dwqvrzut zqardqzu tqsdbysx evzryrrx" topic="cpl_IdentityMapping"/>
+        <GeneralProjection descr="General_projection" help="comsol/comsol_api_general.37.20.html" id="genproj" props="zsrtfsab cexbuvts avsyeczf fzffbabq tqsdbysx rbqvsazz" topic="cpl_GeneralProjection"/>
+        <LinearProjection descr="Linear_projection" help="comsol/comsol_api_general.37.20.html" id="linproj" props="zsrtfsab vqsqfycc xzxqddue ascqcrdq xycwvxqq bvewrbsq xfqyasdf dwqvrzut avsyeczf tqsdbysx rbqvsazz" topic="cpl_LinearProjection"/>
+        <Integration descr="Integration" help="comsol/comsol_api_general.37.20.html" id="intop" props="zsrtfsab yscaqwvw rbqvsazz cyzcccaf tssbscrs" topic="cpl_Integration"/>
+        <Average descr="Average" help="comsol/comsol_api_general.37.20.html" id="aveop" props="zsrtfsab rbqvsazz cyzcccaf tssbscrs" topic="cpl_Average"/>
+        <Maximum descr="Maximum" help="comsol/comsol_api_general.37.20.html" id="maxop" props="zsrtfsab yssdybvp rbqvsazz svbwvdzy" topic="cpl_Maximum"/>
+        <Minimum descr="Minimum" help="comsol/comsol_api_general.37.20.html" id="minop" props="zsrtfsab yssdybvp rbqvsazz svbwvdzy" topic="cpl_Minimum"/>
+      </S2D>
+      <S3D axi="false" dim="3">
+        <GeneralExtrusion descr="General_extrusion" help="comsol/comsol_api_general.37.20.html" id="genext" props="zsrtfsab cexbuvts avsyeczf xrztdufe fzffbabq zqardqzu tqsdbysx evzryrrx" topic="cpl_GeneralExtrusion"/>
+        <LinearExtrusion descr="Linear_extrusion" help="comsol/comsol_api_general.37.20.html" id="linext" props="zsrtfsab vqsqfycc xzxqddue ascqcrdq ccrqawvs xycwvxqq bvewrbsq ftqvdfuq tqsvatwq xfqyasdf dwqvrzut avsyeczf xrztdufe fzffbabq zqardqzu tqsdbysx evzryrrx" topic="cpl_LinearExtrusion"/>
+        <BoundarySimilarity descr="Boundary_similarity" help="comsol/comsol_api_general.37.20.html" id="bndsim" props="scursxzz xrztdufe fzffbabq zsrtfsab zqardqzu tqsdbysx evzryrrx" topic="cpl_BoundarySimilarity"/>
+        <OnePointMap descr="One-point_map" help="comsol/comsol_api_general.37.20.html" id="pm" props="vafasasv tvfsxzqt" topic="cpl_OnePointMap"/>
+        <TwoPointMap descr="Two-point_map" help="comsol/comsol_api_general.37.20.html" id="pm" props="eqrdrbdw ydzessbs ywzyztsx cuzxvaet" topic="cpl_TwoPointMap"/>
+        <EdgeMap descr="Edge_map" help="comsol/comsol_api_general.37.20.html" id="em" props="bxwzcyzw euecffty evvvaudc" topic="cpl_EdgeMap"/>
+        <IdentityMapping descr="Identity_mapping" help="comsol/comsol_api_general.37.20.html" id="idmap" props="zsrtfsab avsyeczf xfqyasdf dwqvrzut zqardqzu tqsdbysx evzryrrx" topic="cpl_IdentityMapping"/>
+        <GeneralProjection descr="General_projection" help="comsol/comsol_api_general.37.20.html" id="genproj" props="zsrtfsab cexbuvts avsyeczf fzffbabq tqsdbysx rbqvsazz" topic="cpl_GeneralProjection"/>
+        <LinearProjection descr="Linear_projection" help="comsol/comsol_api_general.37.20.html" id="linproj" props="zsrtfsab vqsqfycc xzxqddue ascqcrdq ccrqawvs xycwvxqq bvewrbsq ftqvdfuq xfqyasdf dwqvrzut avsyeczf tqsdbysx rbqvsazz" topic="cpl_LinearProjection"/>
+        <Integration descr="Integration" help="comsol/comsol_api_general.37.20.html" id="intop" props="zsrtfsab yscaqwvw rbqvsazz cyzcccaf tssbscrs" topic="cpl_Integration"/>
+        <Average descr="Average" help="comsol/comsol_api_general.37.20.html" id="aveop" props="zsrtfsab rbqvsazz cyzcccaf tssbscrs" topic="cpl_Average"/>
+        <Maximum descr="Maximum" help="comsol/comsol_api_general.37.20.html" id="maxop" props="zsrtfsab yssdybvp rbqvsazz svbwvdzy" topic="cpl_Maximum"/>
+        <Minimum descr="Minimum" help="comsol/comsol_api_general.37.20.html" id="minop" props="zsrtfsab yssdybvp rbqvsazz svbwvdzy" topic="cpl_Minimum"/>
+      </S3D>
+      <S1DAxi axi="true" dim="1">
+        <GeneralExtrusion descr="General_extrusion" help="comsol/comsol_api_general.37.20.html" id="genext" props="zsrtfsab cexbuvts axfwbfet xrztdufe fzffbabq zqardqzu tqsdbysx evzryrrx" topic="cpl_GeneralExtrusion"/>
+        <LinearExtrusion descr="Linear_extrusion" help="comsol/comsol_api_general.37.20.html" id="linext" props="zsrtfsab vqsqfycc xzxqddue xycwvxqq bvewrbsq xfqyasdf fbbeqyyx axfwbfet xrztdufe fzffbabq zqardqzu tqsdbysx evzryrrx" topic="cpl_LinearExtrusion"/>
+        <IdentityMapping descr="Identity_mapping" help="comsol/comsol_api_general.37.20.html" id="idmap" props="zsrtfsab axfwbfet xfqyasdf fbbeqyyx zqardqzu tqsdbysx evzryrrx" topic="cpl_IdentityMapping"/>
+        <GeneralProjection descr="General_projection" help="comsol/comsol_api_general.37.20.html" id="genproj" props="zsrtfsab cexbuvts axfwbfet fzffbabq tqsdbysx rbqvsazz" topic="cpl_GeneralProjection"/>
+        <LinearProjection descr="Linear_projection" help="comsol/comsol_api_general.37.20.html" id="linproj" props="zsrtfsab vqsqfycc xzxqddue xycwvxqq xfqyasdf fbbeqyyx axfwbfet tqsdbysx rbqvsazz" topic="cpl_LinearProjection"/>
+        <Integration descr="Integration" help="comsol/comsol_api_general.37.20.html" id="intop" props="zsrtfsab yscaqwvw rbqvsazz cddryfft tssbscrs" topic="cpl_Integration"/>
+        <Average descr="Average" help="comsol/comsol_api_general.37.20.html" id="aveop" props="zsrtfsab rbqvsazz cddryfft tssbscrs" topic="cpl_Average"/>
+        <Maximum descr="Maximum" help="comsol/comsol_api_general.37.20.html" id="maxop" props="zsrtfsab yssdybvp rbqvsazz svbwvdzy" topic="cpl_Maximum"/>
+        <Minimum descr="Minimum" help="comsol/comsol_api_general.37.20.html" id="minop" props="zsrtfsab yssdybvp rbqvsazz svbwvdzy" topic="cpl_Minimum"/>
+      </S1DAxi>
+      <S2DAxi axi="true" dim="2">
+        <GeneralExtrusion descr="General_extrusion" help="comsol/comsol_api_general.37.20.html" id="genext" props="zsrtfsab cexbuvts axfwbfet xrztdufe fzffbabq zqardqzu tqsdbysx evzryrrx" topic="cpl_GeneralExtrusion"/>
+        <LinearExtrusion descr="Linear_extrusion" help="comsol/comsol_api_general.37.20.html" id="linext" props="zsrtfsab vqsqfycc xzxqddue ascqcrdq xycwvxqq bvewrbsq ftqvdfuq xfqyasdf fbbeqyyx axfwbfet xrztdufe fzffbabq zqardqzu tqsdbysx evzryrrx" topic="cpl_LinearExtrusion"/>
+        <BoundarySimilarity descr="Boundary_similarity" help="comsol/comsol_api_general.37.20.html" id="bndsim" props="scursxzz evvvaudc xrztdufe fzffbabq zsrtfsab zqardqzu tqsdbysx evzryrrx" topic="cpl_BoundarySimilarity"/>
+        <IdentityMapping descr="Identity_mapping" help="comsol/comsol_api_general.37.20.html" id="idmap" props="zsrtfsab axfwbfet xfqyasdf fbbeqyyx zqardqzu tqsdbysx evzryrrx" topic="cpl_IdentityMapping"/>
+        <GeneralProjection descr="General_projection" help="comsol/comsol_api_general.37.20.html" id="genproj" props="zsrtfsab cexbuvts axfwbfet fzffbabq tqsdbysx rbqvsazz" topic="cpl_GeneralProjection"/>
+        <LinearProjection descr="Linear_projection" help="comsol/comsol_api_general.37.20.html" id="linproj" props="zsrtfsab vqsqfycc xzxqddue ascqcrdq xycwvxqq bvewrbsq xfqyasdf fbbeqyyx axfwbfet tqsdbysx rbqvsazz" topic="cpl_LinearProjection"/>
+        <Integration descr="Integration" help="comsol/comsol_api_general.37.20.html" id="intop" props="zsrtfsab yscaqwvw rbqvsazz cddryfft tssbscrs" topic="cpl_Integration"/>
+        <Average descr="Average" help="comsol/comsol_api_general.37.20.html" id="aveop" props="zsrtfsab rbqvsazz cddryfft tssbscrs" topic="cpl_Average"/>
+        <Maximum descr="Maximum" help="comsol/comsol_api_general.37.20.html" id="maxop" props="zsrtfsab yssdybvp rbqvsazz svbwvdzy" topic="cpl_Maximum"/>
+        <Minimum descr="Minimum" help="comsol/comsol_api_general.37.20.html" id="minop" props="zsrtfsab yssdybvp rbqvsazz svbwvdzy" topic="cpl_Minimum"/>
+      </S2DAxi>
+      <S0D axi="false" dim="0"/>
+      <S0DAxi axi="true" dim="0"/>
+    </Cpl>
+    <Properties>
+      <zsrtfsab descr="Operator_name" name="opname" type="String"/>
+      <cexbuvts descr="Destination_map" name="dstmap" type="StringArray"/>
+      <avsyeczf descr="Source_frame" descrs="Mesh_frame_coord# (x, y, z)|Geometry_frame_coord# (x, y, z)|Material_frame_coord# (x, y, z)|Spatial_frame_coord# (x, y, z)" name="srcframe" type="String" values="mesh|geometry|material|spatial"/>
+      <xrztdufe descr="Use_source_map" descrs="On|Off" name="usesrcmap" type="String" values="on|off"/>
+      <fzffbabq descr="Source_map" name="srcmap" type="StringArray"/>
+      <zqardqzu descr="Mesh_search_method" descrs="Use_tolerance|Closest_point" name="method" type="String" values="usetol|closest"/>
+      <tqsdbysx descr="Extrapolation_tolerance" name="exttol" type="Double"/>
+      <evzryrrx descr="Use_NaN_when_mapping_fails" descrs="On|Off" name="usenan" type="Boolean" values="on|off"/>
+      <axfwbfet descr="Source_frame" descrs="Mesh_frame_coord# (r, phi, z)|Geometry_frame_coord# (r, phi, z)|Material_frame_coord# (r, phi, z)|Spatial_frame_coord# (r, phi, z)" name="srcframe" type="String" values="mesh|geometry|material|spatial"/>
+      <vqsqfycc descr="Source_vertex_X#1" name="srcvertex1" type="Selection"/>
+      <xzxqddue descr="Source_vertex_X#2" name="srcvertex2" type="Selection"/>
+      <xycwvxqq descr="Destination_vertex_X#1" name="dstvertex1" type="Selection"/>
+      <bvewrbsq descr="Destination_vertex_X#2" name="dstvertex2" type="Selection"/>
+      <xfqyasdf descr="Destination_geometry" descrs="A_reference_to_a_geometry_sequence" isref="true" name="dstgeom" type="String" values="{Geom}"/>
+      <dwqvrzut descr="Destination_frame" descrs="Mesh_frame_coord# (x, y, z)|Geometry_frame_coord# (x, y, z)|Material_frame_coord# (x, y, z)|Spatial_frame_coord# (x, y, z)" name="dstframe" type="String" values="mesh|geometry|material|spatial"/>
+      <ascqcrdq descr="Source_vertex_X#3" name="srcvertex3" type="Selection"/>
+      <ftqvdfuq descr="Destination_vertex_X#3" name="dstvertex3" type="Selection"/>
+      <ccrqawvs descr="Source_vertex_X#4" name="srcvertex4" type="Selection"/>
+      <tqsvatwq descr="Destination_vertex_X#4" name="dstvertex4" type="Selection"/>
+      <fbbeqyyx descr="Destination_frame" descrs="Mesh_frame_coord# (r, phi, z)|Geometry_frame_coord# (r, phi, z)|Material_frame_coord# (r, phi, z)|Spatial_frame_coord# (r, phi, z)" name="dstframe" type="String" values="mesh|geometry|material|spatial"/>
+      <scursxzz descr="Destination_boundary" name="destination" type="Selection"/>
+      <evvvaudc descr="Direction" descrs="Automatic_orientation|Same_orientation|Opposite_orientation" name="direction" type="String" values="auto|same|opposite"/>
+      <vafasasv descr="Point_on_source" name="srcpoint1" type="Selection"/>
+      <tvfsxzqt descr="Point_on_destination" name="dstpoint1" type="Selection"/>
+      <eqrdrbdw descr="First_point_on_source" name="srcpoint1" type="Selection"/>
+      <ydzessbs descr="First_point_on_destination" name="dstpoint1" type="Selection"/>
+      <ywzyztsx descr="Second_point_on_source" name="srcpoint2" type="Selection"/>
+      <cuzxvaet descr="Second_point_on_destination" name="dstpoint2" type="Selection"/>
+      <bxwzcyzw descr="Source_edge" name="srcedge" type="Selection"/>
+      <euecffty descr="Destination_edge" name="dstedge" type="Selection"/>
+      <rbqvsazz descr="Integration_order" name="intorder" type="Int"/>
+      <yscaqwvw descr="Method" descrs="Integration|Summation_over_nodes" name="method" type="String" values="integration|summation"/>
+      <cyzcccaf descr="Frame" descrs="Mesh_frame_coord# (x, y, z)|Geometry_frame_coord# (x, y, z)|Material_frame_coord# (x, y, z)|Spatial_frame_coord# (x, y, z)" name="frame" type="String" values="mesh|geometry|material|spatial"/>
+      <tssbscrs descr="Compute_integral_in_revolved_geometry" descrs="On|Off" name="axisym" type="Boolean" values="on|off"/>
+      <cddryfft descr="Frame" descrs="Mesh_frame_coord# (r, phi, z)|Geometry_frame_coord# (r, phi, z)|Material_frame_coord# (r, phi, z)|Spatial_frame_coord# (r, phi, z)" name="frame" type="String" values="mesh|geometry|material|spatial"/>
+      <yssdybvp descr="Point_type" descrs="Node_points|Integration_points|Lagrange_points" name="points" type="String" values="node|integration|lagrange"/>
+      <svbwvdzy descr="Lagrange_order" name="lagrange" type="Int"/>
+    </Properties>
+  </model.cpl>
+</COMSOLCompletionData>

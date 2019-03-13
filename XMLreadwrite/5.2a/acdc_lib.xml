@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lib type="class">
+  <name>comsol_acdc_lib</name>
+  <descr>acdc_lib_descr</descr>
+  <version type="class">
+    <name>COMSOL 3.5</name>
+    <ext>a</ext>
+  </version>
+  <groups type="array">
+    <object type="class">
+      <name>Electromagnetic (AC/DC)</name>
+      <variables type="stringarray">
+        {"alphares","T0","res0","Br","normfH","fH","normfB","fB"}
+      </variables>
+      <descr type="stringarray">
+        {"Temperature coefficient","Reference temperature","Resistivity at reference temperature","Remanent flux density","Nonlinear magnetic field, norm","Nonlinear magnetic field","Nonlinear magnetic flux density, norm","Nonlinear magnetic flux density"}
+      </descr>
+    </object>
+  </groups>
+  <mat type="array">
+    <object type="class">
+      <name>Copper</name>
+      <appearance>copper</appearance>
+      <variables type="class">
+        <alphares>3.9e-3[1/K]</alphares>
+        <mur>1</mur>
+        <sigma>5.998e7[S/m]</sigma>
+        <C>385[J/(kg*K)]</C>
+        <epsilonr>1</epsilonr>
+        <epsilon>0.5</epsilon>
+        <res0>1.72e-8[ohm*m]</res0>
+        <T0>273.15[K]</T0>
+        <rho>8700[kg/m^3]</rho>
+        <k>400[W/(m*K)]</k>
+      </variables>
+    </object>
+    <object type="class">
+      <name>Soft Iron (without losses)</name>
+      <appearance>iron</appearance>
+      <variables type="class">
+        <normfB>BH(normH[m/A])[T]</normfB>
+        <sigma>0[S/m]</sigma>
+        <normfH>HB(normB[1/T])[A/m]</normfH>
+        <epsilonr>1</epsilonr>
+        <normfBeff>BHeff(normHeff[m/A])[T]</normfBeff>
+        <normfHeff>HBeff(normBeff[1/T])[A/m]</normfHeff>
+      </variables>
+      <functions type="array">
+        <object type="class">
+          <type>interp</type>
+          <name>HB</name>
+          <method>linear</method>
+          <extmethod>linear</extmethod>
+          <x type="stringarray">
+            {"0","1","1.1","1.2","1.3","1.4","1.5","1.6","1.7","1.8","1.9","2.0","2.1","2.2","2.3","2.4"}
+          </x>
+          <data type="stringarray">
+            {"0","663.146","1067.5","1705.23","2463.11","3841.67","5425.74","7957.75","12298.3","20462.8","32169.6","61213.4","111408","175070","261469","318310"}
+          </data>
+        </object>
+        <object type="class">
+          <type>interp</type>
+          <name>BH</name>
+          <method>linear</method>
+          <extmethod>linear</extmethod>
+          <x type="stringarray">
+            {"0","663.146","1067.5","1705.23","2463.11","3841.67","5425.74","7957.75","12298.3","20462.8","32169.6","61213.4","111408","175070","261469","318310"}
+          </x>
+          <data type="stringarray">
+            {"0","1","1.1","1.2","1.3","1.4","1.5","1.6","1.7","1.8","1.9","2.0","2.1","2.2","2.3","2.4"}
+          </data>
+        </object>
+        <object type="class">
+          <type>interp</type>
+          <name>HBeff</name>
+          <method>linear</method>
+          <extmethod>linear</extmethod>
+          <x type="stringarray">
+            {"0", "1", "1.4943906486860214", "1.941630073817125", "2.257619494050335", "2.729755059668001", "2.8756651489647296", "3.149029234016385", "3.4529372126833744", "3.7845615956017395", "4.060195910283011", "4.421777266072753", "4.721954005107204", "4.941198649690261", "5.1446599438425515", "5.253346039640234"}
+          </x>
+          <data type="stringarray">
+            {"0","663.146","1067.5","1705.23","2463.11","3841.67","5425.74","7957.75","12298.3","20462.8","32169.6","61213.4","111408","175070","261469","318310"}
+          </data>
+        </object>
+        <object type="class">
+          <type>interp</type>
+          <name>BHeff</name>
+          <method>linear</method>
+          <extmethod>linear</extmethod>
+          <x type="stringarray">
+            {"0","663.146","1067.5","1705.23","2463.11","3841.67","5425.74","7957.75","12298.3","20462.8","32169.6","61213.4","111408","175070","261469","318310"}
+          </x>
+          <data type="stringarray">
+            {"0", "1", "1.4943906486860214", "1.941630073817125", "2.257619494050335", "2.729755059668001", "2.8756651489647296", "3.149029234016385", "3.4529372126833744", "3.7845615956017395", "4.060195910283011", "4.421777266072753", "4.721954005107204", "4.941198649690261", "5.1446599438425515", "5.253346039640234"}
+          </data>
+        </object>
+      </functions>
+    </object>
+    <object type="class">
+      <name>Soft Iron (with losses)</name>
+      <appearance>iron</appearance>
+      <variables type="class">
+        <normfB>BH(normH[m/A])[T]</normfB>
+        <sigma>1.12e7[S/m]</sigma>
+        <normfH>HB(normB[1/T])[A/m]</normfH>
+        <epsilonr>1</epsilonr>
+        <normfBeff>BHeff(normHeff[m/A])[T]</normfBeff>
+        <normfHeff>HBeff(normBeff[1/T])[A/m]</normfHeff>        
+      </variables>
+      <functions type="array">
+        <object type="class">
+          <type>interp</type>
+          <name>HB</name>
+          <method>linear</method>
+          <extmethod>linear</extmethod>
+          <x type="stringarray">
+            {"0","1","1.1","1.2","1.3","1.4","1.5","1.6","1.7","1.8","1.9","2.0","2.1","2.2","2.3","2.4"}
+          </x>
+          <data type="stringarray">
+            {"0","663.146","1067.5","1705.23","2463.11","3841.67","5425.74","7957.75","12298.3","20462.8","32169.6","61213.4","111408","175070","261469","318310"}
+          </data>
+        </object>
+        <object type="class">
+          <type>interp</type>
+          <name>BH</name>
+          <method>linear</method>
+          <extmethod>linear</extmethod>
+          <x type="stringarray">
+            {"0","663.146","1067.5","1705.23","2463.11","3841.67","5425.74","7957.75","12298.3","20462.8","32169.6","61213.4","111408","175070","261469","318310"}
+          </x>
+          <data type="stringarray">
+            {"0","1","1.1","1.2","1.3","1.4","1.5","1.6","1.7","1.8","1.9","2.0","2.1","2.2","2.3","2.4"}
+          </data>
+        </object>
+        <object type="class">
+          <type>interp</type>
+          <name>HBeff</name>
+          <method>linear</method>
+          <extmethod>linear</extmethod>
+          <x type="stringarray">
+            {"0", "1", "1.4943906486860214", "1.941630073817125", "2.257619494050335", "2.729755059668001", "2.8756651489647296", "3.149029234016385", "3.4529372126833744", "3.7845615956017395", "4.060195910283011", "4.421777266072753", "4.721954005107204", "4.941198649690261", "5.1446599438425515", "5.253346039640234"}
+          </x>
+          <data type="stringarray">
+            {"0","663.146","1067.5","1705.23","2463.11","3841.67","5425.74","7957.75","12298.3","20462.8","32169.6","61213.4","111408","175070","261469","318310"}
+          </data>
+        </object>
+        <object type="class">
+          <type>interp</type>
+          <name>BHeff</name>
+          <method>linear</method>
+          <extmethod>linear</extmethod>
+          <x type="stringarray">
+            {"0","663.146","1067.5","1705.23","2463.11","3841.67","5425.74","7957.75","12298.3","20462.8","32169.6","61213.4","111408","175070","261469","318310"}
+          </x>
+          <data type="stringarray">
+            {"0", "1", "1.4943906486860214", "1.941630073817125", "2.257619494050335", "2.729755059668001", "2.8756651489647296", "3.149029234016385", "3.4529372126833744", "3.7845615956017395", "4.060195910283011", "4.421777266072753", "4.721954005107204", "4.941198649690261", "5.1446599438425515", "5.253346039640234"}
+          </data>
+        </object>        
+      </functions>
+    </object>
+    <object type="class">
+      <name>Quartz</name>
+      <appearance>GLASS</appearance>
+      <variables type="class">
+        <mur>1</mur>
+        <sigma>1e-12[S/m]</sigma>
+        <C>820[J/(kg*K)]</C>
+        <epsilonr>4.2</epsilonr>
+        <epsilon>0.7</epsilon>
+        <rho>2600[kg/m^3]</rho>
+        <k>3[W/(m*K)]</k>
+      </variables>
+    </object>
+    <object type="class">
+      <name>Graphite</name>
+      <appearance>METAL SPECULAR 200 200 200 DIFFUSE 200 200 200 AMBIENT 100 100 100 FRESNEL 0.99 ROUGHNESS 0.14</appearance>
+      <variables type="class">
+        <mur>1</mur>
+        <sigma>3e3[S/m]</sigma>
+        <C>710[J/(kg*K)]</C>
+        <epsilonr>1</epsilonr>
+        <epsilon>1</epsilon>
+        <rho>1950[kg/m^3]</rho>
+        <k>150[W/(m*K)]*(300[K]/T)</k>
+      </variables>
+    </object>
+    <object type="class">
+      <name>Graphite felt</name>
+      <appearance>METAL SPECULAR 200 200 200 DIFFUSE 200 200 200 AMBIENT 100 100 100 FRESNEL 0.99 ROUGHNESS 0.14</appearance>
+      <variables type="class">
+        <mur>1</mur>
+        <sigma>100[S/m]</sigma>
+        <C>200[J/(kg*K)]</C>
+        <epsilonr>1</epsilonr>
+        <epsilon>1</epsilon>
+        <rho>120[kg/m^3]</rho>
+        <k>0.3[W/(m*K)]</k>
+      </variables>
+    </object>
+    <object type="class">
+      <name>Silicon Carbide</name>
+      <appearance>GLASS</appearance>
+      <variables type="class">
+        <mur>1</mur>
+        <sigma>1e3[S/m]</sigma>
+        <C>1200[J/(kg*K)]</C>
+        <epsilonr>10</epsilonr>
+        <epsilon>0.5</epsilon>
+        <rho>3200[kg/m^3]</rho>
+        <k>450[W/(m*K)]*(300[K]/T)^0.75</k>
+      </variables>
+    </object>
+	<object type="class">
+      <name>Jiles-Atherton Isotropic Hysteretic Material</name>
+      <appearance>iron</appearance>
+      <variables type="class">
+        <sigma>0[S/m]</sigma>
+        <epsilonr>1</epsilonr>
+        <MsJA>1.6e6[A/m]</MsJA>
+        <aJA>560[A/m]</aJA>
+        <kJA>1200[A/m]</kJA>
+        <cJA>0.1</cJA>
+        <alphaJA>0.0007</alphaJA>
+      </variables>
+    </object>
+  </mat>
+</lib>
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<COMSOLCompletionData>
+  <model.material geomspecific="false">
+    <Material descr="Material" help="comsol/comsol_ref_materials.16.08.html" id="mat" props="wxcdfxrp ruzxezfz ryyqtrrr swdxzstv bqyzdwzu vedczfxv duefucre cerxdezr rvdxtqes dfwfdqrs yryztwtw rqfqdrzy txzbufdb yvtrfvff tyyyyxbw suvszyvz" topic="materialitem"/>
+    <Properties>
+      <wxcdfxrp descr="Family" descrs="Air|Aluminum|Brick|Concrete|Copper|Gold|Iron|Lead[element]|Magnesium|Plastic[appearance]|Steel|Titanium|Water|Custom" name="family" type="String" values="air|aluminum|brick|concrete|copper|gold|iron|lead|magnesium|plastic|steel|titanium|water|custom"/>
+      <ruzxezfz descr="Specular_color" descrs="Custom|Black|Blue|Cyan|Gray|Green|Magenta|Red|White|Yellow" name="specular" type="String" values="custom|black|blue|cyan|gray|green|magenta|red|white|yellow"/>
+      <ryyqtrrr descr="Custom_color" name="customspecular" type="DoubleArray"/>
+      <swdxzstv descr="Diffuse_color" descrs="Custom|Black|Blue|Cyan|Gray|Green|Magenta|Red|White|Yellow" name="diffuse" type="String" values="custom|black|blue|cyan|gray|green|magenta|red|white|yellow"/>
+      <bqyzdwzu descr="Custom_color" name="customdiffuse" type="DoubleArray"/>
+      <vedczfxv descr="Ambient_color" descrs="Custom|Black|Blue|Cyan|Gray|Green|Magenta|Red|White|Yellow" name="ambient" type="String" values="custom|black|blue|cyan|gray|green|magenta|red|white|yellow"/>
+      <duefucre descr="Custom_color" name="customambient" type="DoubleArray"/>
+      <cerxdezr descr="Noise" descrs="Off|On" name="noise" type="String" values="off|on"/>
+      <rvdxtqes descr="Normal_vector_noise_scale" name="noisescale" type="Double"/>
+      <dfwfdqrs descr="Normal_vector_noise_frequency" name="noisefreq" type="Double"/>
+      <yryztwtw descr="Diffuse_and_ambient_color_opacity" name="alpha" type="Double"/>
+      <rqfqdrzy descr="Lighting_model" descrs="Cook-Torrance|Blinn-Phong|Simple" name="lighting" type="String" values="cooktorrance|phong|simple"/>
+      <txzbufdb descr="Reflectance_at_normal_incidence" name="fresnel" type="Double"/>
+      <yvtrfvff descr="Surface_roughness" name="roughness" type="Double"/>
+      <tyyyyxbw descr="Specular_exponent" name="shininess" type="Double"/>
+      <suvszyvz descr="#Material Library Subgroups (Development only)" name="groups" type="StringMatrix"/>
+    </Properties>
+  </model.material>
+</COMSOLCompletionData>

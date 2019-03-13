@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<COMSOLCompletionData>
+  <model.result.report geomspecific="false">
+    <ReportFeature topic="ReportList">
+      <Report descr="Report" id="rpt" props="wtzuqbfy zevztzdz zsxbtrzd bayracwd wuqsuuuw edydueeq zvbtuseb ycesxrxf rqbxtduv bbdayrwv wcetyeve xvzuefrx auavtasa yxxsfwcr bqcdszsf edsuxcat euqxucyw bbybtrxt cdtfvcez uqqrdecb tdffbwxp" topic="report_Report">
+        <TitlePage descr="Title_page" id="tp" props="aqtrftfd tdtuvvdr wvuexrqv ffbxbbwd ccdzxtvq ytbxeccb babyuxsv dsyuyzuy ubtvscvr wqurwvwb byttscfr ctfctaqs rzqywtfu szxcbsdp zewcvvdr zrusawdu sqrcrczd xsdwqqcy" topic="report_TitlePage"/>
+        <TableOfContents descr="Table_of_contents" id="toc" props="xwqfwdzz zuexduqs bqaxqxfr" topic="report_TableOfContents"/>
+        <Section descr="Section" id="sec" props="vussqrut zavrvsvr" topic="report_Section">
+          <Model descr="Root" help="comsol/comsol_api_general.37.11.html" id="root" props="ucudtbxf edyqueuc tydfxabs wvqecfxx xveabexf affutsbf xzuqtatt ezucdqbe cfxxsvyy" topic="report_Model"/>
+          <ModelNode descr="Component" id="comp" props="ucudtbxf edyqueuc satxfver awdqdrvp wvqecfxx fxqbfazs ezucdqbe vtavqerz" topic="report_ModelNode"/>
+          <Parameter descr="Parameters" id="param" props="ucudtbxf edyqueuc satxfver awdqdrvp wvqecfxx arzufrbv zvcdrsbd bbybtrxt cdtfvcez uqqrdecb" topic="report_Parameter"/>
+          <Variables descr="Variables" id="var" props="ucudtbxf edyqueuc satxfver awdqdrvp wvqecfxx ffqazddz aqtcsvuc zvcdrsbd bbybtrxt cdtfvcez uqqrdecb" topic="report_Variables"/>
+          <MassProperties descr="Mass_properties" id="massprop" props="ucudtbxf edyqueuc satxfver awdqdrvp wvqecfxx ereyaayr zctqxtxf dbxfedqp" topic="report_MassProperties"/>
+          <Functions descr="Function" id="func" props="ucudtbxf edyqueuc satxfver awdqdrvp wvqecfxx aryyzrzz wqqrxcwx zctqxtxf zvcdrsbd bbybtrxt cdtfvcez uqqrdecb" topic="report_Functions"/>
+          <Probe descr="Probe" id="prb" props="ucudtbxf edyqueuc satxfver awdqdrvp wvqecfxx ereyaayr zctqxtxf dbxfedqp zvcdrsbd bbybtrxt cdtfvcez uqqrdecb" topic="report_Probe"/>
+          <ComponentCoupling descr="Component_coupling" id="cpl" props="ucudtbxf edyqueuc satxfver awdqdrvp wvqecfxx sutbfary zctqxtxf dbxfedqp zvcdrsbd bbybtrxt cdtfvcez uqqrdecb" topic="report_ComponentCoupling"/>
+          <Selection descr="Selection" id="sel" props="ucudtbxf edyqueuc satxfver awdqdrvp wvqecfxx basazbcb zctqxtxf wqqrxcwx zvcdrsbd bbybtrxt cdtfvcez uqqrdecb" topic="report_Selection"/>
+          <CoordinateSystem descr="Coordinate_system" id="csys" props="ucudtbxf edyqueuc satxfver awdqdrvp wvqecfxx tvwftqfx zctqxtxf zvcdrsbd bbybtrxt cdtfvcez uqqrdecb" topic="report_CoordinateSystem"/>
+          <PML descr="Perfectly_matched_layer" id="pml" props="ucudtbxf edyqueuc satxfver awdqdrvp wvqecfxx eeabvccw zctqxtxf zvcdrsbd bbybtrxt cdtfvcez uqqrdecb" topic="report_PML"/>
+          <InfiniteElements descr="Infinite_element_domain" id="ie" props="ucudtbxf edyqueuc satxfver awdqdrvp wvqecfxx exrvvufu zctqxtxf zvcdrsbd bbybtrxt cdtfvcez uqqrdecb" topic="report_InfiniteElements"/>
+          <AbsorbingLayer descr="Absorbing_layer" id="abs" props="ucudtbxf edyqueuc satxfver awdqdrvp wvqecfxx yxwbdrfa zctqxtxf zvcdrsbd bbybtrxt cdtfvcez uqqrdecb" topic="report_AbsorbingLayer"/>
+          <Pair descr="Pair" id="pair" props="ucudtbxf edyqueuc satxfver awdqdrvp wvqecfxx xvwxytud zctqxtxf dbxfedqp" topic="report_Pair"/>
+          <Geometry descr="Geometry" id="geom" props="ucudtbxf edyqueuc satxfver awdqdrvp wvqecfxx bsyudyxs wqqrxcwx exuesbyf vtuwfsdt aqtcsvuc zvcdrsbd bbybtrxt cdtfvcez uqqrdecb" topic="report_Geometry"/>
+          <Material descr="Material" id="mat" props="ucudtbxf edyqueuc satxfver awdqdrvp wvqecfxx vetcweex wqqrxcwx bvbaccqz zctqxtxf aqtcsvuc zvcdrsbd bbybtrxt cdtfvcez uqqrdecb" topic="report_Material"/>
+          <Physics descr="Physics_interface" id="phys" props="ucudtbxf edyqueuc satxfver awdqdrvp wvqecfxx cfxxsvyy zebcaybx aetbretu vuqwrzdy bvqfybff zctqxtxf daxqdude aqtcsvuc dtzqavzf urcsrydy drsfyauq yyavterd zvcdrsbd bbybtrxt cdtfvcez uqqrdecb" topic="report_Physics"/>
+          <Multiphysics descr="Multiphysics_coupling" id="mph" props="ucudtbxf edyqueuc satxfver awdqdrvp wvqecfxx cfxxsvyy adfsfbbr aetbretu vuqwrzdy bvqfybff zctqxtxf dtzqavzf urcsrydy drsfyauq yyavterd zvcdrsbd bbybtrxt cdtfvcez uqqrdecb" topic="report_Multiphysics"/>
+          <Mesh descr="Mesh" help="comsol/comsol_api_fileformats.44.32.html" id="mesh" props="ucudtbxf edyqueuc satxfver awdqdrvp wvqecfxx csvvryer wqqrxcwx vtuwfsdt aqtcsvuc zvcdrsbd bbybtrxt cdtfvcez uqqrdecb" topic="report_Mesh"/>
+          <Study descr="Study" id="std" props="ucudtbxf edyqueuc satxfver awdqdrvp wvqecfxx yxvdbzxv weaayxra aqtcsvuc" topic="report_Study"/>
+          <Solver descr="Solver" id="sol" props="ucudtbxf edyqueuc satxfver awdqdrvp wvqecfxx cczcrfba ytetxttz aqtcsvuc zvcdrsbd bbybtrxt cdtfvcez uqqrdecb" topic="report_Solver"/>
+          <ResultParameter descr="Parameters" id="param" props="ucudtbxf edyqueuc satxfver awdqdrvp wvqecfxx arzufrbv zvcdrsbd bbybtrxt cdtfvcez uqqrdecb" topic="report_ResultParameter"/>
+          <DataSet descr="Data_set" id="dset" props="ucudtbxf edyqueuc satxfver awdqdrvp wvqecfxx bfsxbduz zctqxtxf dbxfedqp zvcdrsbd bbybtrxt cdtfvcez uqqrdecb" topic="report_DataSet"/>
+          <DerivedValues descr="Derived_values" id="num" props="ucudtbxf edyqueuc satxfver awdqdrvp wvqecfxx xverbecz zctqxtxf zvcdrsbd bbybtrxt cdtfvcez uqqrdecb" topic="report_DerivedValues"/>
+          <Table descr="Table" id="mtbl" props="ucudtbxf edyqueuc satxfver awdqdrvp wvqecfxx dywsczfp zvcdrsbd bbybtrxt cdtfvcez uqqrdecb" topic="report_Table"/>
+          <PlotGroup descr="Plot_group" id="pg" props="ucudtbxf edyqueuc satxfver awdqdrvp wvqecfxx rrrwxvtw udeftdzc yadsxeys vfwfbazx" topic="report_PlotGroup"/>
+          <Export descr="Export[noun]" id="exp" props="ucudtbxf edyqueuc satxfver awdqdrvp wvqecfxx tyrtubxv cfdzzcwr udxsrczt araryddr" topic="report_Export"/>
+          <Bibliography descr="Bibliography" id="bibl" props="sxwzbtru rwzzaqsd" topic="report_Bibliography">
+            <Reference descr="Reference" id="ref" props="dvzzbaze tyddbdzr tdtuvvdr rfvcsrbr aqbtrube vvrcscwq faczttqp arertyqz exyedxbr uxueaddr tdscbfbr zeytatec" topic="report_Reference"/>
+          </Bibliography>
+          <Code descr="Code" id="code" props="uadsxbwz" topic="report_Code"/>
+          <Equation descr="Equation" id="eqn" props="bawdfruy brfyuavw yvvesbvt wbvxczez" topic="report_Equation"/>
+          <Heading descr="Heading" id="head" props="wrfyczez uxftrrwp" topic="report_Heading"/>
+          <DocImage descr="Image" id="img" props="cvzzzdsp araryddr" topic="report_DocImage"/>
+          <List descr="List" id="list" props="affvrfvq" topic="report_List">
+            <ListItem descr="List_item" id="lit" props="xawfbefc" topic="report_ListItem">
+              <Code descr="Code" id="code" props="uadsxbwz" topic="report_Code"/>
+              <Equation descr="Equation" id="eqn" props="bawdfruy brfyuavw yvvesbvt wbvxczez" topic="report_Equation"/>
+              <Graphics descr="Image" id="img" props="udwqdbrr uedxwvax cvzzzdsp vzscaduf araryddr" topic="report_Graphics"/>
+              <List descr="List" id="list" props="affvrfvq" topic="report_List"/>
+              <Tbl descr="Table" id="btbl" props="tdtuvvdr eeuqbxct" topic="report_Tbl">
+                <TblHRow descr="Table_heading_row" id="tblhrow" props="zexzzrqv wcstfscx tzcevuyz" topic="report_TblHRow"/>
+                <TblRow descr="Table_row" id="trow" props="xavtuezd uxfdbqvf rvayrssr" topic="report_TblRow"/>
+              </Tbl>
+              <Text descr="Text" id="txt" props="wrfyczez" topic="report_Text"/>
+            </ListItem>
+          </List>
+          <Note descr="Note" id="note" props="wacwzuuw bqddurzv wrfyczez" topic="report_Note"/>
+          <Tbl descr="Table" id="btbl" props="tdtuvvdr eeuqbxct" topic="report_Tbl"/>
+          <Text descr="Text" id="txt" props="wrfyczez" topic="report_Text"/>
+          <StringDataField descr="String[declarations]" id="field" props="ucudtbxf edyqueuc satxfver awdqdrvp wvqecfxx fxesbvcz" topic="report_StringDataField"/>
+          <BooleanDataField descr="Boolean[declarations]" id="field" props="ucudtbxf edyqueuc satxfver awdqdrvp wvqecfxx fxesbvcz" topic="report_BooleanDataField"/>
+          <IntegerDataField descr="Integer[declarations]" id="field" props="ucudtbxf edyqueuc satxfver awdqdrvp wvqecfxx fxesbvcz" topic="report_IntegerDataField"/>
+          <DoubleDataField descr="Double[declarations]" id="field" props="ucudtbxf edyqueuc satxfver awdqdrvp wvqecfxx fxesbvcz zvcdrsbd bbybtrxt cdtfvcez uqqrdecb" topic="report_DoubleDataField"/>
+          <StringArrayDataField descr="Array_1D_string[declarations]" id="field" props="ucudtbxf edyqueuc satxfver awdqdrvp wvqecfxx fxesbvcz" topic="report_StringArrayDataField"/>
+          <BooleanArrayDataField descr="Array_1D_boolean[declarations]" id="field" props="ucudtbxf edyqueuc satxfver awdqdrvp wvqecfxx fxesbvcz" topic="report_BooleanArrayDataField"/>
+          <IntegerArrayDataField descr="Array_1D_integer[declarations]" id="field" props="ucudtbxf edyqueuc satxfver awdqdrvp wvqecfxx fxesbvcz" topic="report_IntegerArrayDataField"/>
+          <DoubleArrayDataField descr="Array_1D_double[declarations]" id="field" props="ucudtbxf edyqueuc satxfver awdqdrvp wvqecfxx fxesbvcz zvcdrsbd bbybtrxt cdtfvcez uqqrdecb" topic="report_DoubleArrayDataField"/>
+          <StringMatrixDataField descr="Array_2D_string[declarations]" id="field" props="ucudtbxf edyqueuc satxfver awdqdrvp wvqecfxx fxesbvcz" topic="report_StringMatrixDataField"/>
+          <BooleanMatrixDataField descr="Array_2D_boolean[declarations]" id="field" props="ucudtbxf edyqueuc satxfver awdqdrvp wvqecfxx fxesbvcz" topic="report_BooleanMatrixDataField"/>
+          <IntegerMatrixDataField descr="Array_2D_integer[declarations]" id="field" props="ucudtbxf edyqueuc satxfver awdqdrvp wvqecfxx fxesbvcz" topic="report_IntegerMatrixDataField"/>
+          <DoubleMatrixDataField descr="Array_2D_double[declarations]" id="field" props="ucudtbxf edyqueuc satxfver awdqdrvp wvqecfxx fxesbvcz zvcdrsbd bbybtrxt cdtfvcez uqqrdecb" topic="report_DoubleMatrixDataField"/>
+          <ChoiceList descr="Choice_list" id="choicelist" props="buwfbfwd" topic="report_ChoiceList"/>
+          <UnitSet descr="Unit_set" id="unitset" props="buwfbfwd" topic="report_UnitSet"/>
+          <Arrays descr="Arrays" id="arr" props="tdtuvvdr ubfsayxs tcwddywa zvcdrsbd bbybtrxt cdtfvcez uqqrdecb" topic="report_Arrays"/>
+          <Scalars descr="Scalars" id="sclr" props="tdtuvvdr yqwtacct ubfsayxs zvcdrsbd bbybtrxt cdtfvcez uqqrdecb" topic="report_Scalars"/>
+          <Graphics descr="Image" id="img" props="udwqdbrr uedxwvax cvzzzdsp vzscaduf araryddr" topic="report_Graphics"/>
+          <Section descr="Section" id="sec" props="vussqrut zavrvsvr" topic="report_Section"/>
+          <AppBuilderFeature descr="#Application (develop only)" id="af" props="ucudtbxf edyqueuc satxfver awdqdrvp wvqecfxx" topic="report_AppBuilderFeature"/>
+        </Section>
+      </Report>
+    </ReportFeature>
+    <Properties>
+      <wtzuqbfy descr="Use_default_settings_for" descrs="Brief|Intermediate|Complete" isref="true" name="level" type="String" values="brief|intermediate|complete"/>
+      <zevztzdz descr="Output_format" descrs="#HTML|#Microsoft Word" name="format" type="String" values="html|docx"/>
+      <zsxbtrzd descr="Filename" name="filename" type="String"/>
+      <bayracwd descr="Always_ask_for_filename" descrs="On|Off" name="alwaysask" type="Boolean" values="on|off"/>
+      <wuqsuuuw descr="Open_finished_report" descrs="On|Off" name="openwhenfinished" type="Boolean" values="on|off"/>
+      <edydueeq descr="Disable_cross-reference_hyperlinks" descrs="On|Off" name="disablehyperlinks" type="Boolean" values="on|off"/>
+      <zvbtuseb descr="Stylesheet" descrs="Default|Custom" name="stylesheet" type="String" values="default|custom"/>
+      <ycesxrxf descr="Stylesheet_file" name="cssfile" type="String"/>
+      <rqbxtduv descr="Generate_separate_files_at_section_level" descrs="None[level]|Level_N#1|Level_N#2|Level_N#3" name="stublevel" type="String" values="0|1|2|3"/>
+      <bbdayrwv descr="Template[docx]" descrs="Default|Custom" name="template" type="String" values="default|custom"/>
+      <wcetyeve descr="Template_file[docx]" name="templatefile" type="String"/>
+      <xvzuefrx descr="Start_new_page_at_section_level" descrs="None[level]|Level_N#1|Level_N#2|Level_N#3" name="pagebreaklevel" type="String" values="0|1|2|3"/>
+      <auavtasa descr="Enumerate_sections_to_level" descrs="None[level]|Level_N#1|Level_N#2|Level_N#3|Level_N#4|Level_N#5|Level_N#6|All" name="enumlevel" type="String" values="none|level1|level2|level3|level4|level5|level6|all"/>
+      <yxxsfwcr descr="Size" descrs="Extra_small|Small|Medium[size]|Large|Extra_large" name="imagesize" type="String" values="xsmall|small|medium|large|xlarge"/>
+      <bqcdszsf descr="Type" descrs="#PNG|#JPEG|#BMP" name="imagetype" type="String" values="png|jpeg|bmp"/>
+      <edsuxcat descr="Disable_image_generation" descrs="On|Off" name="disableimages" type="Boolean" values="on|off"/>
+      <euqxucyw descr="Format" descrs="Default|Custom" name="numberformat" type="String" values="default|custom"/>
+      <bbybtrxt descr="Precision" name="precision" type="Int"/>
+      <cdtfvcez descr="Notation" descrs="Automatic[notation]|Scientific[notation]|Decimal[notation]" name="notation" type="String" values="auto|scientific|decimal"/>
+      <uqqrdecb descr="Display_all_significant_digits" descrs="On|Off" name="allsignificant" type="Boolean" values="on|off"/>
+      <tdffbwxp descr="Right_align_numeric_columns" descrs="On|Off" name="rightalign" type="Boolean" values="on|off"/>
+      <aqtrftfd descr="Report_title" descrs="From_model|Custom" name="reporttitle" type="String" values="model|custom"/>
+      <tdtuvvdr descr="Title" name="title" type="String"/>
+      <wvuexrqv descr="Image" descrs="None[image]|Thumbnail|A_reference_to_a_plot_group" isref="true" name="titleimage" type="String" values="none|modelthumbnail|{ResultFeature}"/>
+      <ffbxbbwd descr="Layout" descrs="Table|Headings" name="frontmatterlayout" type="String" values="table|headings"/>
+      <ccdzxtvq descr="Logotype" descrs="None[group]|Default|Custom" name="logo" type="String" values="none|default|custom"/>
+      <ytbxeccb descr="Logotype_file" name="customlogo" type="String"/>
+      <babyuxsv descr="Author" name="author" type="String"/>
+      <dsyuyzuy descr="Author" descrs="On|Off" name="includeauthor" type="Boolean" values="on|off"/>
+      <ubtvscvr descr="Report_date" descrs="None[date]|Current[present]|Custom" name="reportdate" type="String" values="none|current|custom"/>
+      <wqurwvwb descr="Date" name="date" type="String"/>
+      <byttscfr descr="Company" name="company" type="String"/>
+      <ctfctaqs descr="Company" descrs="On|Off" name="includecompany" type="Boolean" values="on|off"/>
+      <rzqywtfu descr="Report_version" name="version" type="String"/>
+      <szxcbsdp descr="Report_version" descrs="On|Off" name="includeversion" type="Boolean" values="on|off"/>
+      <zewcvvdr descr="Summary" name="summary" type="String"/>
+      <zrusawdu descr="Summary" descrs="On|Off" name="includesummary" type="Boolean" values="on|off"/>
+      <sqrcrczd descr="Acknowledgment" name="acknowledgment" type="String"/>
+      <xsdwqqcy descr="Acknowledgment" descrs="On|Off" name="includeacknowledgment" type="Boolean" values="on|off"/>
+      <xwqfwdzz descr="Heading" name="tocheading" type="String"/>
+      <zuexduqs descr="Section_levels_in_table_of_contents" name="levels" type="String" values="1|2|3|4|5"/>
+      <bqaxqxfr descr="Contents" name="toc" type="String"/>
+      <vussqrut descr="Source" descrs="From_first_child|Custom" name="source" type="String" values="firstchild|custom"/>
+      <zavrvsvr descr="Heading" name="heading" type="String"/>
+      <ucudtbxf descr="Include_author" descrs="On|Off" name="includeauthor" type="Boolean" values="on|off"/>
+      <edyqueuc descr="Include_date_created" descrs="On|Off" name="includedatecreated" type="Boolean" values="on|off"/>
+      <tydfxabs descr="Include_application_version" descrs="On|Off" name="includeversion" type="Boolean" values="on|off"/>
+      <wvqecfxx descr="Comments" name="comments" type="String"/>
+      <xveabexf descr="Include_name" descrs="On|Off" name="includename" type="Boolean" values="on|off"/>
+      <affutsbf descr="Include_path" descrs="On|Off" name="includepath" type="Boolean" values="on|off"/>
+      <xzuqtatt descr="Include_COMSOL_version" descrs="On|Off" name="includeprogram" type="Boolean" values="on|off"/>
+      <ezucdqbe descr="Include_unit_system" descrs="On|Off" name="includeunitsystem" type="Boolean" values="on|off"/>
+      <cfxxsvyy descr="Include_used_products" descrs="On|Off" name="includeusedproducts" type="Boolean" values="on|off"/>
+      <satxfver descr="Include_version" descrs="On|Off" name="includeversion" type="Boolean" values="on|off"/>
+      <awdqdrvp descr="Comments" descrs="None[comment]|From_referenced_node|Custom" name="commentssource" type="String" values="none|refnode|custom"/>
+      <fxqbfazs descr="Source" descrs="None[source]|A_reference_to_a_component" isref="true" name="noderef" type="String" values="none|{ModelNode}"/>
+      <vtavqerz descr="Include_geometry_shape_order" descrs="On|Off" name="includegeomshapeorder" type="Boolean" values="on|off"/>
+      <arzufrbv descr="#Children" name="children" type="StringMatrix"/>
+      <zvcdrsbd descr="Format" descrs="From_report|Custom" name="numberformat" type="String" values="report|custom"/>
+      <ffqazddz descr="Source" descrs="None|A_reference_to_a_model_entity" isref="true" name="noderef" type="String" values="none|{Expr}"/>
+      <aqtcsvuc descr="Children" name="children" type="StringMatrix"/>
+      <ereyaayr descr="Source" descrs="None[source]|A_reference_to_a_model_entity" isref="true" name="noderef" type="String" values="none|{ProbeFeature}"/>
+      <zctqxtxf descr="Include_settings" descrs="On|Off" name="includesettings" type="Boolean" values="on|off"/>
+      <dbxfedqp descr="Include_selection_image" descrs="On|Off" name="selectionimage" type="Boolean" values="on|off"/>
+      <aryyzrzz descr="Source" descrs="None[source]|A_reference_to_a_model_entity" isref="true" name="noderef" type="String" values="none|{FunctionFeature}"/>
+      <wqqrxcwx descr="Include_image" descrs="On|Off" name="includeimage" type="Boolean" values="on|off"/>
+      <sutbfary descr="Source" descrs="None[source]|A_reference_to_a_model_entity" isref="true" name="noderef" type="String" values="none|{Cpl}"/>
+      <basazbcb descr="Source" descrs="None[source]|A_reference_to_a_model_entity" isref="true" name="noderef" type="String" values="none|{Selection}"/>
+      <tvwftqfx descr="Source" descrs="None[source]|A_reference_to_a_nonscaling_coordinate_system" isref="true" name="noderef" type="String" values="none|{Coordsys}"/>
+      <eeabvccw descr="Source" descrs="None[source]|A_reference_to_a_PML_coordinate_system" isref="true" name="noderef" type="String" values="none|{Coordsys}"/>
+      <exrvvufu descr="Source" descrs="None[source]|A_reference_to_an_infinite_element_coordinate_system" isref="true" name="noderef" type="String" values="none|{Coordsys}"/>
+      <yxwbdrfa descr="Source" descrs="None[source]|A_reference_to_an_absorbing_layer_coordinate_system" isref="true" name="noderef" type="String" values="none|{Coordsys}"/>
+      <xvwxytud descr="Source" descrs="None[source]|A_reference_to_a_model_entity" isref="true" name="noderef" type="String" values="none|{Pair}"/>
+      <bsyudyxs descr="Source" descrs="None|A_reference_to_a_model_entity" isref="true" name="noderef" type="String" values="none|{Geom}"/>
+      <exuesbyf descr="Include_units" descrs="On|Off" name="includeunits" type="Boolean" values="on|off"/>
+      <vtuwfsdt descr="Include_statistics" descrs="On|Off" name="includestats" type="Boolean" values="on|off"/>
+      <vetcweex descr="Source" descrs="None|A_reference_to_a_model_entity" isref="true" name="noderef" type="String" values="none|{Material}"/>
+      <bvbaccqz descr="Include_selection" descrs="On|Off" name="includeselection" type="Boolean" values="on|off"/>
+      <zebcaybx descr="Source" descrs="None|A_reference_to_a_model_entity" isref="true" name="noderef" type="String" values="none|{Physics}"/>
+      <aetbretu descr="Include_selection_image" descrs="On|Off" name="includeimage" type="Boolean" values="on|off"/>
+      <vuqwrzdy descr="Include_selection_table" descrs="On|Off" name="includeselection" type="Boolean" values="on|off"/>
+      <bvqfybff descr="Include_equations" descrs="On|Off" name="includeequations" type="Boolean" values="on|off"/>
+      <daxqdude descr="Include_feature_table" descrs="On|Off" name="includefeaturetable" type="Boolean" values="on|off"/>
+      <dtzqavzf descr="Include_variables" descrs="On|Off" name="includevariables" type="Boolean" values="on|off"/>
+      <urcsrydy descr="Include_shape_functions" descrs="On|Off" name="includeshapefunctions" type="Boolean" values="on|off"/>
+      <drsfyauq descr="Include_weak_expressions" descrs="On|Off" name="includeweakexpressions" type="Boolean" values="on|off"/>
+      <yyavterd descr="Include_constraints" descrs="On|Off" name="includeconstraints" type="Boolean" values="on|off"/>
+      <adfsfbbr descr="Source" descrs="None[source]|A_reference_to_a_multiphysics_coupling" isref="true" name="noderef" type="String" values="none|{MultiphysicsCoupling}"/>
+      <csvvryer descr="Source" descrs="None|A_reference_to_a_model_entity" isref="true" name="noderef" type="String" values="none|{Mesh}"/>
+      <yxvdbzxv descr="Source" descrs="None|A_reference_to_a_model_entity" isref="true" name="noderef" type="String" values="none|{Study}"/>
+      <weaayxra descr="Include_computation_information" descrs="On|Off" name="includecomputationinfo" type="Boolean" values="on|off"/>
+      <cczcrfba descr="Source" descrs="None|A_reference_to_a_model_entity" isref="true" name="noderef" type="String" values="none|{SolverSequence}"/>
+      <ytetxttz descr="Include_log" descrs="On|Off" name="includelog" type="Boolean" values="on|off"/>
+      <bfsxbduz descr="Source" descrs="None[source]|A_reference_to_a_model_entity" isref="true" name="noderef" type="String" values="none|{DatasetFeature}"/>
+      <xverbecz descr="Source" descrs="None[source]|A_reference_to_a_model_entity" isref="true" name="noderef" type="String" values="none|{NumericalFeature}"/>
+      <dywsczfp descr="Source" descrs="None[source]|A_reference_to_a_model_entity" isref="true" name="noderef" type="String" values="none|{TableFeature}"/>
+      <rrrwxvtw descr="Source" descrs="None[source]|A_reference_to_a_plot_group" isref="true" name="noderef" type="String" values="none|{ResultFeature}"/>
+      <udeftdzc descr="Caption_source" descrs="None[source]|From_plot_group_title|Custom" name="caption" type="String" values="none|pgtitle|custom"/>
+      <yadsxeys descr="Caption" name="customcaption" type="String"/>
+      <vfwfbazx descr="Zoom_extents" descrs="On|Off" name="zoomextents" type="Boolean" values="on|off"/>
+      <tyrtubxv descr="Source" descrs="None[source]|A_reference_to_a_model_entity" isref="true" name="noderef" type="String" values="none|{ExportFeature}"/>
+      <cfdzzcwr descr="Size" descrs="Object_settings|Report_image_size" name="size" type="String" values="object|report"/>
+      <udxsrczt descr="File_format" descrs="Object_setting|Report_image_type" name="type" type="String" values="object|report"/>
+      <araryddr descr="Caption" name="caption" type="String"/>
+      <sxwzbtru descr="Heading" descrs="Bibliography|References|Custom" name="heading" type="String" values="biblio|refs|custom"/>
+      <rwzzaqsd descr="Text" name="customheading" type="String"/>
+      <dvzzbaze descr="Type" descrs="Journal_article|Book|Conference_paper|Thesis|Web" name="type" type="String" values="article|book|conference|thesis|web"/>
+      <tyddbdzr descr="Authors" name="authors" type="String"/>
+      <rfvcsrbr descr="Journal" name="journal" type="String"/>
+      <aqbtrube descr="Volume[journal]" name="volume" type="String"/>
+      <vvrcscwq descr="Number[journal]" name="number" type="String"/>
+      <faczttqp descr="Pages[journal]" name="pages" type="String"/>
+      <arertyqz descr="Year" name="year" type="String"/>
+      <exyedxbr descr="URL" name="url" type="String"/>
+      <uxueaddr descr="Publisher" name="publisher" type="String"/>
+      <tdscbfbr descr="Proceedings" name="proceedings" type="String"/>
+      <zeytatec descr="Institute[academic]" name="institute" type="String"/>
+      <uadsxbwz descr="Code" name="code" type="String"/>
+      <bawdfruy descr="Source" descrs="LaTeX_markup|Image_file" name="source" type="String" values="latex|file"/>
+      <brfyuavw descr="LaTeX_markup" name="latex" type="String"/>
+      <yvvesbvt descr="File" name="equationfile" type="String"/>
+      <wbvxczez descr="Equation" name="equationDisp" type="String"/>
+      <wrfyczez descr="Text" name="text" type="String"/>
+      <uxftrrwp descr="Size_relative_to_section_heading" descrs="Same[heading_size]|One_step_smaller[heading_size]|Two_steps_smaller[heading_size]|Three_steps_smaller[heading_size]" name="sublevel" type="String" values="level0|level1|level2|level3"/>
+      <cvzzzdsp descr="File" name="externalfile" type="String"/>
+      <affvrfvq descr="Numbered" descrs="On|Off" name="numbered" type="Boolean" values="on|off"/>
+      <xawfbefc descr="Text" name="itemtext" type="String"/>
+      <udwqdbrr descr="Source" descrs="Plot_group|External|From_export" name="source" type="String" values="plotgroup|external|fromexport"/>
+      <uedxwvax descr="Plot_group" descrs="None[group]|A_reference_to_a_plot_group" isref="true" name="plotgroup" type="String" values="none|{ResultFeature}"/>
+      <vzscaduf descr="Image" descrs="None[group]|A_reference_to_a_model_entity" isref="true" name="exportimage" type="String" values="none|{ExportFeature}"/>
+      <eeuqbxct descr="Number_of_columns" name="ncols" type="Int"/>
+      <zexzzrqv descr="Column_X#1" name="hcol1" type="String"/>
+      <wcstfscx descr="Column_X#2" name="hcol2" type="String"/>
+      <tzcevuyz descr="Column_X#3" name="hcol3" type="String"/>
+      <xavtuezd descr="Column_X#1" name="col1" type="String"/>
+      <uxfdbqvf descr="Column_X#2" name="col2" type="String"/>
+      <rvayrssr descr="Column_X#3" name="col3" type="String"/>
+      <wacwzuuw descr="Type" descrs="Note|Caution|Important|Model|See_also|Tip[suggestion]" name="type" type="String" values="note|caution|important|model|seealso|tip"/>
+      <bqddurzv descr="Show" descrs="Icon|Description|Icon_and_description" name="bullet" type="String" values="icon|text|icontext"/>
+      <fxesbvcz descr="#Name" name="name" type="StringArray"/>
+      <buwfbfwd descr="#Tag" name="tag" type="StringArray"/>
+      <ubfsayxs descr="Data_node" name="entityreferences" type="StringArray"/>
+      <tcwddywa descr="Heading" name="tableHeaders" type="StringArray"/>
+      <yqwtacct descr="Heading" name="headings" type="StringArray"/>
+    </Properties>
+  </model.result.report>
+</COMSOLCompletionData>

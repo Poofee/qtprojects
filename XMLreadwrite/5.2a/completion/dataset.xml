@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<COMSOLCompletionData>
+  <model.result.dataset geomspecific="false">
+    <DatasetFeature topic="DataSetList">
+      <Array2D descr="Array_2D" help="comsol/comsol_api_results.42.015.html" id="arr" props="dwuzcsfs wcebdfwr fvcxbdzq bvxbrzxr drvuqwcv ybzszauz uxqdwacu yexyczsx dscrfysr dtfrbrbd ecdwuyyp uwswbvuq sddvxxca tbzyaefc aqryzqqp zqrdfzvv" topic="dataset_Array2D"/>
+      <Array3D descr="Array_3D" help="comsol/comsol_api_results.42.015.html" id="arr" props="dwuzcsfs wcebdfwr fvcxbdzq bvxbrzxr drvuqwcv zvqxatyz uxqdwacu yexyczsx dscrfysr dtfrbrbd ecdwuyyp uwswbvuq sddvxxca tbzyaefc aqryzqqp zqrdfzvv" topic="dataset_Array3D"/>
+      <Average descr="Average" help="comsol/comsol_api_results.42.018.html" id="av" props="dwuzcsfs brwtuqvu rbqvsazz sfxeqxzy uaqaxdxa bxrucqea fteweecq" topic="dataset_Average"/>
+      <Contour descr="Contour" help="comsol/comsol_api_results.42.021.html" id="con" props="dwuzcsfs erffwdrc dysrdbuv txaxctbt ryexacwc vdzyrvdu tcqurvty etudxvbp wsyvacye xrvwrezb rafzceua" topic="dataset_Contour"/>
+      <CutLine2D descr="Cut_line_2D" help="comsol/comsol_api_results.42.023.html" id="cln" props="dwuzcsfs wuvrfvdc bvxvutau eeufeqbw zvcxxztc srezybwy rscqarxa raywuupp wtwsxbqd dyfyfdzt sdsdvuqy" topic="dataset_CutLine2D"/>
+      <CutLine3D descr="Cut_line_3D" help="comsol/comsol_api_results.42.023.html" id="cln" props="dwuzcsfs wuvrfvdc bvxvutau eeufeqbw zvcxxztc srezybwy rscqarxa raywuupp btyevytw wtwsxbqd dyfyfdzt" topic="dataset_CutLine3D"/>
+      <CutPlane descr="Cut_plane" help="comsol/comsol_api_results.42.024.html" id="cpl" props="dwuzcsfs fysuuudc yqrbuzty rtxzcvvs xfrwzsce czuyscrq webzvuts bvxvutau bauevyas wwxftfvd ftyrfqxc raywuupp uwswbvuq sdsdvuqy" topic="dataset_CutPlane"/>
+      <CutPoint1D descr="Cut_point_1D" help="comsol/comsol_api_results.42.025.html" id="cpt" props="dwuzcsfs zvucxxct cdayxwuc zsxbtrzd vfrrzbzt uvuzvdwu wtwsxbqd eyzqtruy" topic="dataset_CutPoint1D"/>
+      <CutPoint2D descr="Cut_point_2D" help="comsol/comsol_api_results.42.025.html" id="cpt" props="dwuzcsfs zvucxxct cdayxwuc wsydszqe zsxbtrzd vfrrzbzt uqatxzxt uvuzvdwu uxssbqyu wtwsxbqd eyzqtruy" topic="dataset_CutPoint2D"/>
+      <CutPoint3D descr="Cut_point_3D" help="comsol/comsol_api_results.42.025.html" id="cpt" props="dwuzcsfs zvucxxct cdayxwuc wsydszqe fxxrdbdq zsxbtrzd vfrrzbzt uqatxzxt sstvvxvt uvuzvdwu uxssbqyu uyfcqtau wtwsxbqd eyzqtruy" topic="dataset_CutPoint3D"/>
+      <Edge2D descr="Edge_2D" help="comsol/comsol_api_results.42.029.html" id="edg" props="dwuzcsfs" topic="dataset_Edge2D"/>
+      <Edge3D descr="Edge_3D" help="comsol/comsol_api_results.42.029.html" id="edg" props="dwuzcsfs" topic="dataset_Edge3D"/>
+      <Grid1D descr="Grid_1D" help="comsol/comsol_api_results.42.040.html" id="grid" props="awbyqxqc rtcdxvtp dwuzcsfs xebzebfr bcctxrua ctuzzerf byutvfut aattyaeu" topic="dataset_Grid1D"/>
+      <Grid2D descr="Grid_2D" help="comsol/comsol_api_results.42.040.html" id="grid" props="awbyqxqc rtcdxvtp dwuzcsfs xebzebfr bcctxrua ctuzzerf byutvfut abuwxxcb audbxbfe zzdvtdss vsqasvqq tzabfbwq" topic="dataset_Grid2D"/>
+      <Grid3D descr="Grid_3D" help="comsol/comsol_api_results.42.040.html" id="grid" props="awbyqxqc rtcdxvtp dwuzcsfs xebzebfr bcctxrua ctuzzerf byutvfut abuwxxcb audbxbfe zzdvtdss zzczxeuc ywwdvzdd xbwxrbqr vsqasvqq tzabfbwq sruddrcq" topic="dataset_Grid3D"/>
+      <Integral descr="Integral" help="comsol/comsol_api_results.42.018.html" id="int" props="dwuzcsfs brwtuqvu rbqvsazz sfxeqxzy uaqaxdxa bxrucqea fteweecq" topic="dataset_Integral"/>
+      <IntersectionPoint2D descr="Intersection_point_2D" id="ip" props="fesfyqcx vqctddcw ytwwrtfu fczsrfbx bssysaxf stcvbarx bstrbcwu awzufrya bzyqrdxa ftauxwvx xsaufxxy stqvdzyu fcvbyuzt wuvrfvdc bvxvutau eeufeqbw zvcxxztc srezybwy rscqarxa raywuupp ssqrwdvq drdbyuft wytqtfzq erffwdrc dyfyfdzt sdsdvuqy" topic="dataset_IntersectionPoint2D"/>
+      <IntersectionPoint3D descr="Intersection_point_3D" id="ip" props="fesfyqcx vqctddcw ytwwrtfu fczsrfbx bssysaxf stcvbarx bstrbcwu awzufrya bzyqrdxa ftauxwvx xsaufxxy stqvdzyu berfwuax fysuuudc yqrbuzty rtxzcvvs xfrwzsce czuyscrq webzvuts bvxvutau bauevyas wwxftfvd ftyrfqxc raywuupp ssqrwdvq drdbyuft wytqtfzq erffwdrc uwswbvuq sdsdvuqy" topic="dataset_IntersectionPoint3D"/>
+      <Isosurface descr="Isosurface" help="comsol/comsol_api_results.42.049.html" id="iso" props="dwuzcsfs erffwdrc dysrdbuv txaxctbt ryexacwc vdzyrvdu tcqurvty etudxvbp wsyvacye xrvwrezb rafzceua" topic="dataset_Isosurface"/>
+      <Join descr="Join" help="comsol/comsol_api_results.42.050.html" id="join" props="uaurasuf vywqrfwf eqyqtsyu xsfybyrs fxudtbdc drfsrczq bvdccwdp syazfffr vrqfbwzu uvdvxdry duxqquzw acazcbva dyczybqu xeabwqrr erffwdrc" topic="dataset_Join"/>
+      <Maximum descr="Maximum" help="comsol/comsol_api_results.42.018.html" id="max" props="dwuzcsfs uaqaxdxa tdqzrwua" topic="dataset_Maximum"/>
+      <Mesh descr="Mesh" help="comsol/comsol_api_results.42.057.html" id="mesh" props="rytrdxww" topic="dataset_Mesh"/>
+      <Minimum descr="Minimum" help="comsol/comsol_api_results.42.018.html" id="min" props="dwuzcsfs uaqaxdxa tdqzrwua" topic="dataset_Minimum"/>
+      <Mirror2D descr="Mirror_2D" help="comsol/comsol_api_results.42.059.html" id="mir" props="dwuzcsfs tcxtuccz bvxvutau zvcxxztc srezybwy vuvrwzcf sbyfyyue uwswbvuq" topic="dataset_Mirror2D"/>
+      <Mirror3D descr="Mirror_3D" help="comsol/comsol_api_results.42.059.html" id="mir" props="dwuzcsfs fysuuudc yqrbuzty rtxzcvvs xfrwzsce czuyscrq webzvuts bvxvutau bauevyas wwxftfvd vuvrwzcf sbyfyyue uwswbvuq" topic="dataset_Mirror3D"/>
+      <Parametric1D descr="Parametric_Extrusion_1D" help="comsol/comsol_api_results.42.063.html" id="par" props="fesfyqcx vqctddcw ytwwrtfu fczsrfbx bssysaxf stcvbarx bstrbcwu awzufrya bzyqrdxa ftauxwvx xsaufxxy stqvdzyu xxuwtzte brabsyes uxbcwqzu vrcurzyt ubescyyy" topic="dataset_Parametric1D"/>
+      <Parametric2D descr="Parametric_Extrusion_2D" help="comsol/comsol_api_results.42.063.html" id="par" props="fesfyqcx vqctddcw ytwwrtfu fczsrfbx bssysaxf stcvbarx bstrbcwu awzufrya bzyqrdxa ftauxwvx xsaufxxy stqvdzyu xxuwtzte brabsyes uxbcwqzu vrcurzyt ubescyyy" topic="dataset_Parametric2D"/>
+      <ParCurve2D descr="Parameterized_curve_2D" help="comsol/comsol_api_results.42.064.html" id="pc" props="dwuzcsfs bcctxrua ctuzzerf byutvfut auewdqcx tzcbytyz rxsuutwp aattyaeu" topic="dataset_ParCurve2D"/>
+      <ParCurve3D descr="Parameterized_curve_3D" help="comsol/comsol_api_results.42.064.html" id="pc" props="dwuzcsfs bcctxrua ctuzzerf byutvfut auewdqcx tzcbytyz cebqtwub rxsuutwp aattyaeu" topic="dataset_ParCurve3D"/>
+      <ParSurface descr="Parameterized_surface" help="comsol/comsol_api_results.42.065.html" id="ps" props="dwuzcsfs bcctxrua ctuzzerf byutvfut abuwxxcb audbxbfe zzdvtdss auewdqcx tzcbytyz cebqtwub rxsuutwp eftaxazw fbdtxqry" topic="dataset_ParSurface"/>
+      <Particle descr="Particle" help="comsol/comsol_api_results.42.068.html" id="part" props="sbsvbfzx bscfdxvq fxstwdtq sxwvrsxc fryudaff" topic="dataset_Particle"/>
+      <Ray descr="Ray" help="comsol/comsol_api_results.42.081.html" id="ray" props="sbsvbfzx uzarsqqw wbbsdcau sxwvrsxc stsvtxxt" topic="dataset_Ray"/>
+      <Revolve1D descr="Revolution_1D" help="comsol/comsol_api_results.42.085.html" id="rev" props="dwuzcsfs abftdyxv vaeszdcx vbbfusew cqztextw bvtvvxtc bqefyara uwswbvuq zwzuywae" topic="dataset_Revolve1D"/>
+      <Revolve2D descr="Revolution_2D" help="comsol/comsol_api_results.42.085.html" id="rev" props="dwuzcsfs tcxtuccz bvxvutau zvcxxztc srezybwy vaeszdcx vbbfusew cqztextw bvtvvxtc cvvxbfzs bqefyara uwswbvuq zwzuywae" topic="dataset_Revolve2D"/>
+      <Sector2D descr="Sector_2D" help="comsol/comsol_api_results.42.087.html" id="sec" props="dwuzcsfs abftdyxv ywqvwtqr uabzfuwd cuaxzyuu acvxcsry tazwfyet cxtuqqet yuwcfzra zdusfubs uwswbvuq aquurdss rssyfxew xufayztv" topic="dataset_Sector2D"/>
+      <Sector3D descr="Sector_3D" help="comsol/comsol_api_results.42.087.html" id="sec" props="dwuzcsfs tcxtuccz bvxvutau zvcxxztc srezybwy ywqvwtqr uabzfuwd cuaxzyuu acvxcsry tazwfyet syaavzsw yuwcfzra zdusfubs uwswbvuq aquurdss rssyfxew xufayztv" topic="dataset_Sector3D"/>
+      <Solution descr="Solution" help="comsol/comsol_api_results.42.090.html" id="dset" props="sbsvbfzx zdfezbrs rzqttbzt uvydrvba advzbacc" topic="dataset_Solution"/>
+      <Surface descr="Surface" help="comsol/comsol_api_results.42.093.html" id="surf" props="dwuzcsfs wfbuddtb beqqvvbd eaattbfp" topic="dataset_Surface"/>
+      <TimeAverage descr="Time_average" help="comsol/comsol_api_results.42.099.html" id="tavg" props="fesfyqcx vqctddcw ytwwrtfu fczsrfbx bssysaxf stcvbarx bstrbcwu awzufrya bzyqrdxa ftauxwvx xsaufxxy stqvdzyu sdvsrqvf rvyqusdd" topic="dataset_TimeAverage"/>
+      <TimeIntegral descr="Time_integral" help="comsol/comsol_api_results.42.099.html" id="tint" props="fesfyqcx vqctddcw ytwwrtfu fczsrfbx bssysaxf stcvbarx bstrbcwu awzufrya bzyqrdxa ftauxwvx xsaufxxy stqvdzyu sdvsrqvf rvyqusdd" topic="dataset_TimeIntegral"/>
+    </DatasetFeature>
+    <Properties>
+      <dwuzcsfs descr="Data_set" descrs="None[data_set]|A_reference_to_a_data_set" isref="true" name="data" type="String" values="none|{DatasetFeature}"/>
+      <wcebdfwr descr="Method" descrs="Automatic|Manual" name="inputmethod" type="String" values="auto|manual"/>
+      <fvcxbdzq descr="Size" name="size" type="StringArray"/>
+      <bvxbrzxr descr="Base" descrs="Center|Corner" name="base" type="String" values="center|corner"/>
+      <drvuqwcv descr="Position" name="pos" type="StringArray"/>
+      <ybzszauz descr="Array_type" descrs="Linear|Rectangular" name="type" type="String" values="linear|rectangular"/>
+      <uxqdwacu descr="Size" name="linearsize" type="Int"/>
+      <yexyczsx descr="Size" name="fullsize" type="IntArray"/>
+      <dscrfysr descr="Method" descrs="Automatic|Manual" name="displmethod" type="String" values="auto|manual"/>
+      <dtfrbrbd descr="Displacement" name="displ" type="StringArray"/>
+      <ecdwuyyp descr="Define_variables" descrs="On|Off" name="hasvars" type="String" values="on|off"/>
+      <uwswbvuq descr="Space_variables" name="spacevars" type="StringArray"/>
+      <sddvxxca descr="Cell_variable" name="celllinearvar" type="String"/>
+      <tbzyaefc descr="Cell_variables" name="cellvars" type="StringArray"/>
+      <aqryzqqp descr="Floquet_periodicity" descrs="On|Off" name="floquetper" type="String" values="on|off"/>
+      <zqrdfzvv descr="Wave_vector" name="wavevector" type="StringArray"/>
+      <zvqxatyz descr="Array_type" descrs="Linear|Three-dimensional" name="type" type="String" values="linear|three-dimensional"/>
+      <brwtuqvu descr="Method" descrs="Auto|Integration|Summation_over_nodes" name="method" type="String" values="auto|integration|summation"/>
+      <rbqvsazz descr="Integration_order" name="intorder" type="Int"/>
+      <sfxeqxzy descr="Integration_order" descrs="On|Off" name="intorderactive" type="Boolean" values="on|off"/>
+      <uaqaxdxa descr="Geometry_level" descrs="Take_from_data_set|Volume[geometry]|Surface|Line|Point" name="level" type="String" values="fromdataset|volume|surface|line|point"/>
+      <bxrucqea descr="Compute_surface_integral_(axial_symmetry)" descrs="On|Off" name="intsurface" type="Boolean" values="on|off"/>
+      <fteweecq descr="Compute_volume_integral_(axial_symmetry)" descrs="On|Off" name="intvolume" type="Boolean" values="on|off"/>
+      <erffwdrc descr="Expression" name="expr" type="String"/>
+      <dysrdbuv descr="Unit" name="unit" type="String" values=""/>
+      <txaxctbt descr="Description" descrs="On|Off" name="descractive" type="Boolean" values="on|off"/>
+      <ryexacwc descr="Description" name="descr" type="String"/>
+      <vdzyrvdu descr="Expression_evaluated_for" descrs="Static_solution|Harmonic_perturbation|Total_instantaneous_solution|Average_for_total_solution|RMS_for_total_solution|Peak_value_for_total_solution" name="evalmethod" type="String" values="linpoint|harmonic|lintotal|lintotalavg|lintotalrms|lintotalpeak"/>
+      <tcqurvty descr="Compute_differential" descrs="On|Off" name="differential" type="Boolean" values="on|off"/>
+      <etudxvbp descr="Parameters" name="const" type="StringMatrix"/>
+      <wsyvacye descr="Entry_method" descrs="Levels|Number_of_levels" name="levelmethod" type="String" values="levels|number"/>
+      <xrvwrezb descr="Levels" name="level" type="DoubleArray"/>
+      <rafzceua descr="Total_levels" name="number" type="Int"/>
+      <wuvrfvdc descr="Line_entry_method" descrs="Two_points|Point_and_direction" name="method" type="String" values="twopoint|pointdir"/>
+      <bvxvutau descr="Points" name="genpoints" type="StringMatrix"/>
+      <eeufeqbw descr="Bounded_by_points" descrs="On|Off" name="bounded" type="Boolean" values="on|off"/>
+      <zvcxxztc descr="Point" name="pdpoint" type="StringArray"/>
+      <srezybwy descr="Direction" name="pddir" type="StringArray"/>
+      <rscqarxa descr="Additional_parallel_lines" descrs="On|Off" name="genparaactive" type="String" values="on|off"/>
+      <raywuupp descr="Distances" name="genparadist" type="DoubleArray"/>
+      <wtwsxbqd descr="Snap_to_closest_boundary" descrs="On|Off" name="bndsnap" type="Boolean" values="on|off"/>
+      <dyfyfdzt descr="Space_variable" name="spacevars" type="StringArray"/>
+      <sdsdvuqy descr="Normal_variables" name="normal" type="StringArray"/>
+      <btyevytw descr="Orthogonal_vector" name="orthvec" type="StringArray"/>
+      <fysuuudc descr="Plane_type" descrs="Quick|General" name="planetype" type="String" values="quick|general"/>
+      <yqrbuzty descr="Plane" descrs="X_planes#xy|X_planes#yz|X_planes#zx|X_planes#yx|X_planes#zy|X_planes#xz" name="quickplane" type="String" values="xy|yz|zx|yx|zy|xz"/>
+      <rtxzcvvs descr="X_coordinate#z" name="quickz" type="String"/>
+      <xfrwzsce descr="X_coordinate#x" name="quickx" type="String"/>
+      <czuyscrq descr="X_coordinate#y" name="quicky" type="String"/>
+      <webzvuts descr="Plane_entry_method" descrs="Three_points|Point_and_normal" name="genmethod" type="String" values="threepoint|pointnormal"/>
+      <bauevyas descr="Point" name="genpnpoint" type="StringArray"/>
+      <wwxftfvd descr="Normal[perpendicular]" name="genpnvec" type="StringArray"/>
+      <ftyrfqxc descr="Additional_parallel_planes" descrs="On|Off" name="genparaactive" type="String" values="on|off"/>
+      <zvucxxct descr="Entry_method" descrs="Coordinates|From_file|Grid|Regular_grid" name="method" type="String" values="coords|file|grid|regulargrid"/>
+      <cdayxwuc descr="#x" name="pointx" type="String"/>
+      <zsxbtrzd descr="Filename" name="filename" type="String"/>
+      <vfrrzbzt descr="#x" name="gridx" type="DoubleArray"/>
+      <uvuzvdwu descr="Number_of_X_points#x" name="regulargridx" type="Int"/>
+      <eyzqtruy descr="Point_number_variable[cut_point]" name="pointvar" type="String"/>
+      <wsydszqe descr="#y" name="pointy" type="String"/>
+      <uqatxzxt descr="#y" name="gridy" type="DoubleArray"/>
+      <uxssbqyu descr="Number_of_X_points#y" name="regulargridy" type="Int"/>
+      <fxxrdbdq descr="#z" name="pointz" type="String"/>
+      <sstvvxvt descr="#z" name="gridz" type="DoubleArray"/>
+      <uyfcqtau descr="Number_of_X_points#z" name="regulargridz" type="Int"/>
+      <awbyqxqc descr="Source" descrs="Function|Data_set" name="source" type="String" values="function|data"/>
+      <rtcdxvtp descr="Function" descrs="None[function]|All|A_reference_to_a_function" isref="true" name="function" type="String" values="none|all|{FunctionFeature}"/>
+      <xebzebfr descr="help" name="help" type="String"/>
+      <bcctxrua descr="Name" name="par1" type="String"/>
+      <ctuzzerf descr="Minimum" name="parmin1" type="Double"/>
+      <byutvfut descr="Maximum" name="parmax1" type="Double"/>
+      <aattyaeu descr="Resolution" name="res1" type="Int"/>
+      <abuwxxcb descr="Name" name="par2" type="String"/>
+      <audbxbfe descr="Minimum" name="parmin2" type="Double"/>
+      <zzdvtdss descr="Maximum" name="parmax2" type="Double"/>
+      <vsqasvqq descr="X_resolution#x" name="res1" type="Int"/>
+      <tzabfbwq descr="X_resolution#y" name="res2" type="Int"/>
+      <zzczxeuc descr="Name" name="par3" type="String"/>
+      <ywwdvzdd descr="Minimum" name="parmin3" type="Double"/>
+      <xbwxrbqr descr="Maximum" name="parmax3" type="Double"/>
+      <sruddrcq descr="X_resolution#z" name="res3" type="Int"/>
+      <fesfyqcx descr="Data_set" descrs="None|A_reference_to_a_data_set" isref="true" name="data" type="String" values="none|{DatasetFeature}"/>
+      <vqctddcw descr="#Parameter selection" descrs="All|First[step]|Last|From_list|Manual" name="outerinput" type="String" values="all|first|last|manual|manualindices"/>
+      <ytwwrtfu descr="Parameter_values" name="outersolnum" type="IntArray" values="1"/>
+      <fczsrfbx descr="Parameter_indices" name="outersolnumindices" type="DoubleArray"/>
+      <bssysaxf descr="Solution_selection" descrs="All|First[step]|Last|From_list|Manual" name="innerinput" type="String" values="all|first|last|manual|manualindices"/>
+      <stcvbarx descr="Solution" name="solnum" type="IntArray" values=""/>
+      <bstrbcwu descr="#Solution indices" name="solnumindices" type="DoubleArray"/>
+      <awzufrya descr="Times" name="t" type="DoubleArray"/>
+      <bzyqrdxa descr="Loop_level_input" name="looplevelinput" type="StringArray"/>
+      <ftauxwvx descr="Loop_level" name="looplevel" type="DoubleRowMatrix"/>
+      <xsaufxxy descr="Loop_level_indices" name="looplevelindices" type="DoubleRowMatrix"/>
+      <stqvdzyu descr="Interpolated_times" name="interp" type="DoubleRowMatrix"/>
+      <fcvbyuzt descr="Curve_type" descrs="Line|Circle|Semicircle|General" name="type" type="String" values="line|circle|semicircle|general"/>
+      <ssqrwdvq descr="Center" name="center" type="StringArray"/>
+      <drdbyuft descr="Radius" name="radius" type="String"/>
+      <wytqtfzq descr="Axis_direction" name="axis" type="StringArray"/>
+      <berfwuax descr="Surface_type" descrs="Plane[noun]|Sphere|Hemisphere|General" name="type" type="String" values="plane|sphere|hemisphere|general"/>
+      <uaurasuf descr="Data" descrs="None[data_set]|A_reference_to_a_data_set" isref="true" name="data" type="String" values="none|{DatasetFeature}"/>
+      <vywqrfwf descr="Solutions" descrs="All|One" name="solutions" type="String" values="all|one"/>
+      <eqyqtsyu descr="#Parameter value" name="outersolnum" type="Int" values="1"/>
+      <xsfybyrs descr="Solution_number" name="solnum" type="String" values=""/>
+      <fxudtbdc descr="Selection" isref="true" name="solnum" type="Int" values="1"/>
+      <drfsrczq descr="Time" name="t" type="Double"/>
+      <bvdccwdp descr="Data" descrs="None[data_set]|A_reference_to_a_data_set" isref="true" name="data2" type="String" values="none|{DatasetFeature}"/>
+      <syazfffr descr="Solutions" descrs="All|One" name="solutions2" type="String" values="all|one"/>
+      <vrqfbwzu descr="#Parameter value" name="outersolnum2" type="Int" values="1"/>
+      <uvdvxdry descr="Solution_number" name="solnum2" type="String" values=""/>
+      <duxqquzw descr="Selection" isref="true" name="solnum2" type="Int" values="1"/>
+      <acazcbva descr="Time" name="t2" type="Double"/>
+      <dyczybqu descr="Method" descrs="Difference|Norm_of_difference|Explicit|General|Product[multiplication]|Quotient|Sum" name="method" type="String" values="difference|differencenorm|explicit|general|product|quotient|sum"/>
+      <xeabwqrr descr="Help" name="help" type="String"/>
+      <tdqzrwua descr="Element_refinement" name="refine" type="Int"/>
+      <rytrdxww descr="Mesh" descrs="None[mesh]|A_reference_to_a_mesh" isref="true" name="mesh" type="String" values="none|{Mesh}"/>
+      <tcxtuccz descr="Axis_entry_method" descrs="Two_points|Point_and_direction" name="method" type="String" values="twopoint|pointdir"/>
+      <vuvrwzcf descr="Define_variables" descrs="On|Off" name="hasvar" type="String" values="on|off"/>
+      <sbyfyyue descr="Positive_side_indicator" name="sidevar" type="String"/>
+      <xxuwtzte descr="Level_transformation" descrs="None[transformation]|Expression" name="leveltrans" type="String" values="none|expression"/>
+      <brabsyes descr="Transformation_expression" name="transexpr" type="String"/>
+      <uxbcwqzu descr="Level_scale_factor" name="levelscale" type="Double"/>
+      <vrcurzyt descr="Level_scale_factor" descrs="On|Off" name="levelscaleactive" type="Boolean" values="on|off"/>
+      <ubescyyy descr="Separate_levels" descrs="On|Off" name="seplevels" type="Boolean" values="on|off"/>
+      <auewdqcx descr="#x" name="exprx" type="String"/>
+      <tzcbytyz descr="#y" name="expry" type="String"/>
+      <rxsuutwp descr="Only_evaluate_globally_defined_expressions" descrs="On|Off" name="global" type="Boolean" values="on|off"/>
+      <cebqtwub descr="#z" name="exprz" type="String"/>
+      <eftaxazw descr="X_resolution#s1" name="res1" type="Int"/>
+      <fbdtxqry descr="X_resolution#s2" name="res2" type="Int"/>
+      <sbsvbfzx descr="Solution" descrs="None[solution]|A_reference_to_a_solution" isref="true" name="solution" type="String" values="none|{SolverSequence}"/>
+      <bscfdxvq descr="Particle_geometry_specification" descrs="Manual|From_physics_interface" name="pgeomspec" type="String" values="manual|fromphysics"/>
+      <fxstwdtq descr="Particle_geometry" name="pgeom" type="String"/>
+      <sxwvrsxc descr="Position-dependent_variables" name="posdof" type="StringArray"/>
+      <fryudaff descr="Physics_interface" descrs="None[interface]|A_reference_to_a_particle_tracing_interface" isref="true" name="physicsinterface" type="String" values="none|{Physics}"/>
+      <uzarsqqw descr="Ray_geometry_specification" descrs="Manual|From_physics_interface" name="rgeomspec" type="String" values="manual|fromphysics"/>
+      <wbbsdcau descr="Ray_geometry" name="rgeom" type="String"/>
+      <stsvtxxt descr="Physics_interface" descrs="None[interface]|A_reference_to_a_geometrical_optics_or_ray_acoustics_interface" isref="true" name="physicsinterface" type="String" values="none|{Physics}"/>
+      <abftdyxv descr="#x" name="point" type="StringArray"/>
+      <vaeszdcx descr="Number_of_layers" descrs="Fine|Normal[usual]|Coarse|Custom" name="layermethod" type="String" values="fine|normal|coarse|custom"/>
+      <vbbfusew descr="Layers" name="revlayers" type="Int"/>
+      <cqztextw descr="Start_angle" name="startangle" type="Double"/>
+      <bvtvvxtc descr="Revolution_angle" name="revangle" type="Double"/>
+      <bqefyara descr="Define_variables" descrs="On|Off" name="hasspacevars" type="String" values="on|off"/>
+      <zwzuywae descr="phi" name="anglevar" type="String"/>
+      <cvvxbfzs descr="Map_plane_to" descrs="X_plane#xy|X_plane#xz" name="planemap" type="String" values="xy|xz"/>
+      <ywqvwtqr descr="Number_of_sectors[post]" name="sectors" type="Double"/>
+      <uabzfuwd descr="Sectors_to_include" descrs="All|Manual" name="include" type="String" values="all|manual"/>
+      <cuaxzyuu descr="Start_sector" name="startsector" type="Int"/>
+      <acvxcsry descr="Number_of_sectors_to_include[post]" name="sectorsinclude" type="Int"/>
+      <tazwfyet descr="Transformation" descrs="Rotation|Rotation_and_reflection" name="trans" type="String" values="rot|rotrefl"/>
+      <cxtuqqet descr="Direction_of_reflection_axis" name="reflaxis" type="StringArray"/>
+      <yuwcfzra descr="Define_variables" descrs="Off|On" name="hasspacevars" type="String" values="off|on"/>
+      <zdusfubs descr="Sector_number" name="sectorvar" type="String"/>
+      <aquurdss descr="Azimuthal_mode_number" name="modenumber" type="Double"/>
+      <rssyfxew descr="Invert_phase_when_rotating" descrs="On|Off" name="rotinv" type="Boolean" values="on|off"/>
+      <xufayztv descr="Invert_phase_when_reflecting" descrs="On|Off" name="reflinv" type="Boolean" values="on|off"/>
+      <syaavzsw descr="Radial_direction_of_reflection_plane" name="reflaxis" type="StringArray"/>
+      <zdfezbrs descr="Component" descrs="A_reference_to_a_geometry_sequence" isref="true" name="geom" type="String" values="{ModelEntity}"/>
+      <rzqttbzt descr="Frame" descrs="Mesh_frame|Geometry_frame|Material_frame|Spatial_frame" name="frametype" type="String" values="mesh|geometry|material|spatial"/>
+      <uvydrvba descr="Solution_at_angle_(phase)" name="phase" type="Double"/>
+      <advzbacc descr="Scale_factor" name="scalefactor" type="Double"/>
+      <wfbuddtb descr="x-_and_y-axes" descrs="Surface_parameters|X_plane#xy|X_plane#yz|X_plane#zx|X_plane#yx|X_plane#zy|X_plane#xz|Expression" name="param" type="String" values="face|xy|yz|zx|yx|zy|xz|expr"/>
+      <beqqvvbd descr="X-axis#x" name="exprx" type="String"/>
+      <eaattbfp descr="X-axis#y" name="expry" type="String"/>
+      <sdvsrqvf descr="Tolerance" name="rtol" type="Double"/>
+      <rvyqusdd descr="Minimum_interval_length" name="minlen" type="Double"/>
+    </Properties>
+  </model.result.dataset>
+</COMSOLCompletionData>

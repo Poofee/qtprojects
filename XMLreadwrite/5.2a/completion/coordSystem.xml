@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<COMSOLCompletionData>
+  <model.coordSystem geomspecific="true">
+    <Coordsys help="comsol/comsol_api_general.37.19.html" topic="CoordsysList">
+      <S1D axi="false" dim="1">
+        <VectorBase descr="Base_vector_system" help="comsol/comsol_api_general.37.19.html" id="base" props="seyrxavp avaysayu wdsacqrq ecsxrars vvadvtur vdbcybrd" topic="coordSystem_VectorBase"/>
+        <Mapping descr="Mapped_system" help="comsol/comsol_api_general.37.19.html" id="map" props="seyrxavp avaysayu tqcbvebv ecsxrars evdufacd dxwuqtzb vdbcybrd" topic="coordSystem_Mapping"/>
+        <Scaling descr="Scaling_system" help="comsol/comsol_api_general.37.19.html" id="scaling" props="seyrxavp avaysayu ecsxrars evdufacd dxwuqtzb" topic="coordSystem_Scaling"/>
+        <PML descr="Perfectly_matched_layer" help="comsol/comsol_api_general.37.19.html" id="pml" props="seyrxavp avaysayu bwbabtqd dwdsscyt azbrtqdw yeztfcyu yuqqxudy xxaurvvr etvwetec dacqvaqc dxqdxyyu ccwydrda uauqvwba eydruafv" topic="coordSystem_PML"/>
+        <InfiniteElement descr="Infinite_element_domain" help="comsol/comsol_api_general.37.19.html" id="ie" props="seyrxavp avaysayu bwbabtqd dwdsscyt azbrtqdw yeztfcyu zyqzxdft rfubavbv" topic="coordSystem_InfiniteElement"/>
+        <AbsorbingLayer descr="Absorbing_layer" help="comsol/comsol_api_general.37.19.html" id="ab" props="seyrxavp avaysayu bwbabtqd dwdsscyt azbrtqdw yeztfcyu zyqzxdft rfubavbv" topic="coordSystem_AbsorbingLayer"/>
+      </S1D>
+      <S2D axi="false" dim="2">
+        <VectorBase descr="Base_vector_system" help="comsol/comsol_api_general.37.19.html" id="base" props="seyrxavp avaysayu yzsvyace ecsxrars vvadvtur vdbcybrd" topic="coordSystem_VectorBase"/>
+        <Mapping descr="Mapped_system" help="comsol/comsol_api_general.37.19.html" id="map" props="seyrxavp avaysayu tqcbvebv ecsxrars evdufacd dxwuqtzb vdbcybrd" topic="coordSystem_Mapping"/>
+        <Rotated descr="Rotated_system" help="comsol/comsol_api_general.37.19.html" id="rot" props="seyrxavp avaysayu dqybzzbd rxfaatzd txduccss yderrsbr" topic="coordSystem_Rotated"/>
+        <Boundary descr="Boundary_system" help="comsol/comsol_api_general.37.19.html" id="bnd" props="seyrxavp avaysayu tdrcdysq wcwezfcb rscdyfce fwfssyra utaeqwqf" topic="coordSystem_Boundary"/>
+        <Scaling descr="Scaling_system" help="comsol/comsol_api_general.37.19.html" id="scaling" props="seyrxavp avaysayu ecsxrars evdufacd dxwuqtzb" topic="coordSystem_Scaling"/>
+        <Cylindrical descr="Cylindrical_system" help="comsol/comsol_api_general.37.19.html" id="cyl" props="seyrxavp avaysayu tqcbvebv yrastrbq yderrsbr edbevysb" topic="coordSystem_Cylindrical"/>
+        <PML descr="Perfectly_matched_layer" help="comsol/comsol_api_general.37.19.html" id="pml" props="seyrxavp avaysayu fqrecqwz vqrxzfbq dwdsscyt azbrtqdw yeztfcyu yuqqxudy xxaurvvr etvwetec dacqvaqc dxqdxyyu ccwydrda uauqvwba eydruafv" topic="coordSystem_PML"/>
+        <InfiniteElement descr="Infinite_element_domain" help="comsol/comsol_api_general.37.19.html" id="ie" props="seyrxavp avaysayu fqrecqwz vqrxzfbq dwdsscyt azbrtqdw yeztfcyu zyqzxdft rfubavbv" topic="coordSystem_InfiniteElement"/>
+        <AbsorbingLayer descr="Absorbing_layer" help="comsol/comsol_api_general.37.19.html" id="ab" props="seyrxavp avaysayu fqrecqwz vqrxzfbq dwdsscyt azbrtqdw yeztfcyu zyqzxdft rfubavbv" topic="coordSystem_AbsorbingLayer"/>
+      </S2D>
+      <S3D axi="false" dim="3">
+        <VectorBase descr="Base_vector_system" help="comsol/comsol_api_general.37.19.html" id="base" props="seyrxavp avaysayu ecsxrars vvadvtur vdbcybrd" topic="coordSystem_VectorBase"/>
+        <Mapping descr="Mapped_system" help="comsol/comsol_api_general.37.19.html" id="map" props="seyrxavp avaysayu tqcbvebv ecsxrars evdufacd dxwuqtzb vdbcybrd" topic="coordSystem_Mapping"/>
+        <Rotated descr="Rotated_system" help="comsol/comsol_api_general.37.19.html" id="rot" props="seyrxavp avaysayu dqybzzbd yderrsbr" topic="coordSystem_Rotated"/>
+        <Boundary descr="Boundary_system" help="comsol/comsol_api_general.37.19.html" id="bnd" props="seyrxavp avaysayu tdrcdysq wcwezfcb rscdyfce fwfssyra utaeqwqf" topic="coordSystem_Boundary"/>
+        <Scaling descr="Scaling_system" help="comsol/comsol_api_general.37.19.html" id="scaling" props="seyrxavp avaysayu ecsxrars evdufacd dxwuqtzb" topic="coordSystem_Scaling"/>
+        <Cylindrical descr="Cylindrical_system" help="comsol/comsol_api_general.37.19.html" id="cyl" props="seyrxavp avaysayu tqcbvebv yrastrbq yuzstysb btuvvzwx yderrsbr edbevysb" topic="coordSystem_Cylindrical"/>
+        <Spherical descr="Spherical_system" help="comsol/comsol_api_general.37.19.html" id="sph" props="seyrxavp avaysayu tqcbvebv yrastrbq yddybqcs fvyardxf yderrsbr edbevysb" topic="coordSystem_Spherical"/>
+        <PML descr="Perfectly_matched_layer" help="comsol/comsol_api_general.37.19.html" id="pml" props="seyrxavp avaysayu bqzcwqax vqrxzfbq wsqsaewe dwdsscyt azbrtqdw yeztfcyu yuqqxudy xxaurvvr etvwetec dacqvaqc dxqdxyyu ccwydrda uauqvwba eydruafv" topic="coordSystem_PML"/>
+        <InfiniteElement descr="Infinite_element_domain" help="comsol/comsol_api_general.37.19.html" id="ie" props="seyrxavp avaysayu bqzcwqax vqrxzfbq wsqsaewe dwdsscyt azbrtqdw yeztfcyu zyqzxdft rfubavbv" topic="coordSystem_InfiniteElement"/>
+        <AbsorbingLayer descr="Absorbing_layer" help="comsol/comsol_api_general.37.19.html" id="ab" props="seyrxavp avaysayu bqzcwqax vqrxzfbq wsqsaewe dwdsscyt azbrtqdw yeztfcyu zyqzxdft rfubavbv" topic="coordSystem_AbsorbingLayer"/>
+      </S3D>
+      <S1DAxi axi="true" dim="1">
+        <VectorBase descr="Base_vector_system" help="comsol/comsol_api_general.37.19.html" id="base" props="seyrxavp avaysayu wdsacqrq ecsxrars vvadvtur vdbcybrd" topic="coordSystem_VectorBase"/>
+        <Mapping descr="Mapped_system" help="comsol/comsol_api_general.37.19.html" id="map" props="seyrxavp avaysayu ayeybbfz ecsxrars evdufacd dxwuqtzb vdbcybrd" topic="coordSystem_Mapping"/>
+        <Scaling descr="Scaling_system" help="comsol/comsol_api_general.37.19.html" id="scaling" props="seyrxavp avaysayu ecsxrars evdufacd dxwuqtzb" topic="coordSystem_Scaling"/>
+        <PML descr="Perfectly_matched_layer" help="comsol/comsol_api_general.37.19.html" id="pml" props="seyrxavp avaysayu cdqvvdcr dwdsscyt azbrtqdw yeztfcyu yuqqxudy xxaurvvr etvwetec dacqvaqc dxqdxyyu ccwydrda uauqvwba eydruafv" topic="coordSystem_PML"/>
+        <InfiniteElement descr="Infinite_element_domain" help="comsol/comsol_api_general.37.19.html" id="ie" props="seyrxavp avaysayu cdqvvdcr dwdsscyt azbrtqdw yeztfcyu zyqzxdft rfubavbv" topic="coordSystem_InfiniteElement"/>
+        <AbsorbingLayer descr="Absorbing_layer" help="comsol/comsol_api_general.37.19.html" id="ab" props="seyrxavp avaysayu cdqvvdcr dwdsscyt azbrtqdw yeztfcyu zyqzxdft rfubavbv" topic="coordSystem_AbsorbingLayer"/>
+      </S1DAxi>
+      <S2DAxi axi="true" dim="2">
+        <VectorBase descr="Base_vector_system" help="comsol/comsol_api_general.37.19.html" id="base" props="seyrxavp avaysayu yzsvyace ecsxrars vvadvtur vdbcybrd" topic="coordSystem_VectorBase"/>
+        <Mapping descr="Mapped_system" help="comsol/comsol_api_general.37.19.html" id="map" props="seyrxavp avaysayu ayeybbfz ecsxrars evdufacd dxwuqtzb vdbcybrd" topic="coordSystem_Mapping"/>
+        <Rotated descr="Rotated_system" help="comsol/comsol_api_general.37.19.html" id="rot" props="seyrxavp avaysayu dqybzzbd rxfaatzd txduccss yderrsbr" topic="coordSystem_Rotated"/>
+        <Boundary descr="Boundary_system" help="comsol/comsol_api_general.37.19.html" id="bnd" props="seyrxavp avaysayu tdrcdysq wcwezfcb vxbbvvyq fwfssyra utaeqwqf" topic="coordSystem_Boundary"/>
+        <Scaling descr="Scaling_system" help="comsol/comsol_api_general.37.19.html" id="scaling" props="seyrxavp avaysayu ecsxrars evdufacd dxwuqtzb" topic="coordSystem_Scaling"/>
+        <PML descr="Perfectly_matched_layer" help="comsol/comsol_api_general.37.19.html" id="pml" props="seyrxavp avaysayu aetcutbf xxrcqebd dwdsscyt azbrtqdw yeztfcyu yuqqxudy xxaurvvr etvwetec dacqvaqc dxqdxyyu ccwydrda uauqvwba eydruafv" topic="coordSystem_PML"/>
+        <InfiniteElement descr="Infinite_element_domain" help="comsol/comsol_api_general.37.19.html" id="ie" props="seyrxavp avaysayu aetcutbf xxrcqebd dwdsscyt azbrtqdw yeztfcyu zyqzxdft rfubavbv" topic="coordSystem_InfiniteElement"/>
+        <AbsorbingLayer descr="Absorbing_layer" help="comsol/comsol_api_general.37.19.html" id="ab" props="seyrxavp avaysayu aetcutbf xxrcqebd dwdsscyt azbrtqdw yeztfcyu zyqzxdft rfubavbv" topic="coordSystem_AbsorbingLayer"/>
+      </S2DAxi>
+    </Coordsys>
+    <Properties>
+      <seyrxavp descr="Name" name="name" type="String"/>
+      <avaysayu descr="Coordinate_names" name="coord" type="StringMatrix"/>
+      <wdsacqrq descr="In-plane_index" descrs="#1|#2|#3" name="outofplane" type="String" values="1,2|0,2|0,1"/>
+      <ecsxrars descr="transposedCoord" name="transposedCoord" type="StringMatrix"/>
+      <vvadvtur descr="Base_vectors" name="base" type="StringMatrix"/>
+      <vdbcybrd descr="Assume_orthonormal" descrs="On|Off" name="orthonormal" type="Boolean" values="on|off"/>
+      <yzsvyace descr="Out-of-plane_index" descrs="#1|#2|#3" name="outofplane" type="String" values="0|1|2"/>
+      <tqcbvebv descr="Frame" descrs="Mesh_frame_coord# (x, y, z)|Geometry_frame_coord# (x, y, z)|Material_frame_coord# (x, y, z)|Spatial_frame_coord# (x, y, z)" name="frametype" type="String" values="mesh|geometry|material|spatial"/>
+      <evdufacd descr="#" name="coordUnits" type="StringArray"/>
+      <dxwuqtzb descr="Coordinate_mapping" name="map" type="StringArray"/>
+      <ayeybbfz descr="Frame" descrs="Mesh_frame_coord# (r, phi, z)|Geometry_frame_coord# (r, phi, z)|Material_frame_coord# (r, phi, z)|Spatial_frame_coord# (r, phi, z)" name="frametype" type="String" values="mesh|geometry|material|spatial"/>
+      <dqybzzbd descr="Angles" name="angle" type="StringArray"/>
+      <rxfaatzd descr="In_plane_components" name="inPlaneBaseVectors" type="StringMatrix"/>
+      <txduccss descr="Out-of-plane_axis" descrs="First_out_of_screen|First_into_screen|Second_out_of_screen|Second_into_screen|Third_out_of_screen|Third_into_screen" name="outofplane" type="String" values="0|3|1|4|2|5"/>
+      <yderrsbr descr="Image" name="image" type="String"/>
+      <tdrcdysq descr="Frame" descrs="Geometry_configuration|Reference_configuration|Deformed_configuration" name="frametype" type="String" values="geometry|material|spatial"/>
+      <wcwezfcb descr="Reverse_normal_direction" descrs="On|Off" name="reversenormal" type="Boolean" values="on|off"/>
+      <rscdyfce descr="Axis" descrs="Manual|x|y|z" name="mastercoordsystcomp" type="String" values="manual|1|2|3"/>
+      <fwfssyra descr="Tangent_direction" name="tangent" type="StringArray"/>
+      <utaeqwqf descr="Create_first_tangent_direction_from" descrs="Global_Cartesian|A_reference_to_a_coordinate_system" isref="true" name="mastersystem" type="String" values="globalCartesianSpatial|{Coordsys}"/>
+      <vxbbvvyq descr="Axis" descrs="Manual|r|phi|z" name="mastercoordsystcomp" type="String" values="manual|1|2|3"/>
+      <yrastrbq descr="Origin" name="origin" type="StringArray"/>
+      <edbevysb descr="#" name="angleRanges" type="String"/>
+      <yuzstysb descr="Longitudinal_axis" name="axis" type="StringArray"/>
+      <btuvvzwx descr="Direction_of_axis_phi_equals_zero" name="radialbasevector" type="StringArray"/>
+      <yddybqcs descr="Direction_of_axis_theta_equals_zero" name="axis" type="StringArray"/>
+      <fvyardxf descr="Direction_of_axis_theta_equals_pi/2,_phi_equals_zero" name="radialbasevector" type="StringArray"/>
+      <bwbabtqd descr="Type" descrs="Cartesian|User_defined" name="ScalingType" type="String" values="Cartesian|userDefined"/>
+      <dwdsscyt descr="Number_of_stretching_directions" name="directions" type="String" values="1|2|3"/>
+      <azbrtqdw descr="Distance_function" name="d" type="StringArray"/>
+      <yeztfcyu descr="Thickness" name="dmax" type="StringArray"/>
+      <yuqqxudy descr="Coordinate_stretching_type" descrs="Polynomial|Rational|Elliptic|Logarithmic|User_defined" name="stretchingType" type="String" values="polynomial|rational|elliptic|logarithmic|userDefined"/>
+      <xxaurvvr descr="Typical_wavelength_from" descrs="Physics_interface|User_defined" name="wavelengthSourceType" type="String" values="fromPhysics|userDefined"/>
+      <etvwetec descr="Physics" descrs="Physics" isref="true" name="wavelengthSource" type="String" values="{Physics}"/>
+      <dacqvaqc descr="Typical_wavelength" name="typicalWavelength" type="String"/>
+      <dxqdxyyu descr="PML_scaling_factor" name="PMLfactor" type="String"/>
+      <ccwydrda descr="PML_scaling_curvature_parameter" name="PMLgamma" type="String"/>
+      <uauqvwba descr="Real_part_of_stretching_function" descrs="None|A_reference_to_a_function" isref="true" name="realFunction" type="String" values="none|{FunctionFeature}"/>
+      <eydruafv descr="Imaginary_part_of_stretching_function" descrs="None|A_reference_to_a_function" isref="true" name="imagFunction" type="String" values="none|{FunctionFeature}"/>
+      <fqrecqwz descr="Type" descrs="Cartesian|Cylindrical|User_defined" name="ScalingType" type="String" values="Cartesian|Cylindrical|userDefined"/>
+      <vqrxzfbq descr="Center_coordinate" name="r0" type="StringArray"/>
+      <bqzcwqax descr="Type" descrs="Cartesian|Spherical|Cylindrical|User_defined" name="ScalingType" type="String" values="Cartesian|Spherical|Cylindrical|userDefined"/>
+      <wsqsaewe descr="Center_axis_direction" name="raxis" type="StringArray"/>
+      <cdqvvdcr descr="Type" descrs="Cylindrical|User_defined" name="ScalingType" type="String" values="Cylindrical|userDefined"/>
+      <aetcutbf descr="Type" descrs="Spherical|Cylindrical|User_defined" name="ScalingType" type="String" values="Spherical|Cylindrical|userDefined"/>
+      <xxrcqebd descr="Center_coordinate" name="z0" type="String"/>
+      <zyqzxdft descr="Physical_width" name="width" type="String"/>
+      <rfubavbv descr="Pole_distance" name="pole" type="String"/>
+    </Properties>
+  </model.coordSystem>
+</COMSOLCompletionData>

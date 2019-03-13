@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<COMSOLCompletionData>
+  <model.mesh geomspecific="true">
+    <Mesh topic="MeshPartList">
+      <Global axi="false" dim="-1"/>
+      <S1D axi="false" dim="1">
+        <MeshSequence descr="Mesh" help="comsol/comsol_api_general.37.33.html" id="mesh" props="vbyuuwcr zfdxdvvz" topic="MeshSequence">
+          <MeshFeature>
+            <Edge descr="Edge" help="comsol/comsol_api_mesh.39.56.html" id="edg" topic="mesh_Edge">
+              <Size descr="Size" help="comsol/comsol_api_mesh.39.71.html" id="size" props="eurzbavu vdzddswe wxfebcfr yvyuxbse bqzsyfrv cqdxyfqv bxeqvzds rasvdsus cyqvcsdx yysuzcvr rxrevses bvaxztva ctzvbeqr" topic="mesh_Size"/>
+              <Distribution descr="Distribution" help="comsol/comsol_api_mesh.39.55.html" id="dis" props="xecttbat zxrccurw tyddqffu zexfdfud ffvzuavy yeytxstd uuwbccqs ssyrcaqv" topic="mesh_Distribution"/>
+            </Edge>
+            <Refine descr="Refine" help="comsol/comsol_api_mesh.39.69.html" id="ref" props="uvqebtfb raydfwad" topic="mesh_Refine"/>
+            <Reference descr="Reference" help="comsol/comsol_api_mesh.39.68.html" id="rf" props="wawyvqwf" topic="mesh_Reference"/>
+            <Size descr="Size" help="comsol/comsol_api_mesh.39.71.html" id="size" props="eurzbavu vdzddswe wxfebcfr yvyuxbse bqzsyfrv cqdxyfqv bxeqvzds rasvdsus cyqvcsdx yysuzcvr rxrevses bvaxztva ctzvbeqr" topic="mesh_Size"/>
+            <Distribution descr="Distribution" help="comsol/comsol_api_mesh.39.55.html" id="dis" props="xecttbat zxrccurw tyddqffu zexfdfud ffvzuavy yeytxstd uuwbccqs ssyrcaqv" topic="mesh_Distribution"/>
+            <Scale descr="Scale" help="comsol/comsol_api_mesh.39.70.html" id="sca" props="buuvcayy" topic="mesh_Scale"/>
+          </MeshFeature>
+        </MeshSequence>
+      </S1D>
+      <S2D axi="false" dim="2">
+        <MeshSequence descr="Mesh" help="comsol/comsol_api_general.37.33.html" id="mesh" props="vbyuuwcr zfdxdvvz" topic="MeshSequence">
+          <MeshFeature>
+            <FreeTri descr="Free_triangular" help="comsol/comsol_api_mesh.39.61.html" id="ftri" props="rastscuw dvxdyewz vtvvuawb frqfaeyf uxcutyvp swssvdsv bfdstscz" topic="mesh_FreeTri">
+              <Size descr="Size" help="comsol/comsol_api_mesh.39.71.html" id="size" props="eurzbavu vdzddswe wxfebcfr yvyuxbse bqzsyfrv cqdxyfqv bxeqvzds rasvdsus cyqvcsdx yysuzcvr rxrevses bvaxztva ctzvbeqr" topic="mesh_Size"/>
+              <Distribution descr="Distribution" help="comsol/comsol_api_mesh.39.55.html" id="dis" props="xecttbat zxrccurw tyddqffu zexfdfud ffvzuavy yeytxstd uuwbccqs ssyrcaqv" topic="mesh_Distribution"/>
+              <CornerRefinement descr="Corner_refinement" help="comsol/comsol_api_mesh.39.49.html" id="cr" props="ryvfeafz cyvatuwc cdcuyrey" topic="mesh_CornerRefinement"/>
+            </FreeTri>
+            <FreeQuad descr="Free_quad" help="comsol/comsol_api_mesh.39.59.html" id="fq" props="rastscuw dvxdyewz vtvvuawb frqfaeyf uxcutyvp swssvdsv syyuctax" topic="mesh_FreeQuad">
+              <Size descr="Size" help="comsol/comsol_api_mesh.39.71.html" id="size" props="eurzbavu vdzddswe wxfebcfr yvyuxbse bqzsyfrv cqdxyfqv bxeqvzds rasvdsus cyqvcsdx yysuzcvr rxrevses bvaxztva ctzvbeqr" topic="mesh_Size"/>
+              <Distribution descr="Distribution" help="comsol/comsol_api_mesh.39.55.html" id="dis" props="xecttbat zxrccurw tyddqffu zexfdfud ffvzuavy yeytxstd uuwbccqs ssyrcaqv" topic="mesh_Distribution"/>
+              <CornerRefinement descr="Corner_refinement" help="comsol/comsol_api_mesh.39.49.html" id="cr" props="ryvfeafz cyvatuwc cdcuyrey" topic="mesh_CornerRefinement"/>
+            </FreeQuad>
+            <Map descr="Mapped" help="comsol/comsol_api_mesh.39.65.html" id="map" props="frqfaeyf uxcutyvp swssvdsv zbdbsdce rastscuw" topic="mesh_Map">
+              <Size descr="Size" help="comsol/comsol_api_mesh.39.71.html" id="size" props="eurzbavu vdzddswe wxfebcfr yvyuxbse bqzsyfrv cqdxyfqv bxeqvzds rasvdsus cyqvcsdx yysuzcvr rxrevses bvaxztva ctzvbeqr" topic="mesh_Size"/>
+              <Distribution descr="Distribution" help="comsol/comsol_api_mesh.39.55.html" id="dis" props="xecttbat zxrccurw tyddqffu zexfdfud ffvzuavy yeytxstd uuwbccqs ssyrcaqv" topic="mesh_Distribution"/>
+            </Map>
+            <Edge descr="Edge" help="comsol/comsol_api_mesh.39.56.html" id="edg" props="frqfaeyf uxcutyvp swssvdsv" topic="mesh_Edge">
+              <Size descr="Size" help="comsol/comsol_api_mesh.39.71.html" id="size" props="eurzbavu vdzddswe wxfebcfr yvyuxbse bqzsyfrv cqdxyfqv bxeqvzds rasvdsus cyqvcsdx yysuzcvr rxrevses bvaxztva ctzvbeqr" topic="mesh_Size"/>
+              <Distribution descr="Distribution" help="comsol/comsol_api_mesh.39.55.html" id="dis" props="xecttbat zxrccurw tyddqffu zexfdfud ffvzuavy yeytxstd uuwbccqs ssyrcaqv" topic="mesh_Distribution"/>
+              <CornerRefinement descr="Corner_refinement" help="comsol/comsol_api_mesh.39.49.html" id="cr" props="ryvfeafz cyvatuwc cdcuyrey" topic="mesh_CornerRefinement"/>
+            </Edge>
+            <CopyDomain descr="Copy_domain" help="comsol/comsol_api_mesh.39.47.html" id="cpd" props="axdvvdxc wactvaeq suafqwru frqfaeyf uxcutyvp swssvdsv" topic="mesh_CopyDomain"/>
+            <CopyEdge descr="Copy_edge" help="comsol/comsol_api_mesh.39.45.html" id="cpe" props="ftxtrddb sqzvxvfx evvvaudc suafqwru frqfaeyf uxcutyvp swssvdsv" topic="mesh_CopyEdge"/>
+            <Copy descr="Copy" help="comsol/comsol_api_mesh.39.48.html" id="copy" props="yfurqder edazccse zstydyru sdqayxtq suafqwru frqfaeyf uxcutyvp swssvdsv" topic="mesh_Copy"/>
+            <BndLayer descr="Boundary_layers" help="comsol/comsol_api_mesh.39.41.html" id="bl" props="bxcueeuv rsuyfrcp bzdbccxy teatxqsd eeyusrcs vebucvue euxzysyt uxcutyvp swssvdsv rastscuw" topic="mesh_BndLayer">
+              <Scale descr="Scale" help="comsol/comsol_api_mesh.39.70.html" id="sca" props="buuvcayy" topic="mesh_Scale"/>
+            </BndLayer>
+            <Refine descr="Refine" help="comsol/comsol_api_mesh.39.69.html" id="ref" props="xtafdyve acvszraf rfeuuvqx ddbuvret rxwzxuvp bfuwausr uvqebtfb raydfwad" topic="mesh_Refine"/>
+            <Convert descr="Convert" help="comsol/comsol_api_mesh.39.44.html" id="conv" props="dsbxvvxa" topic="mesh_Convert"/>
+            <Reference descr="Reference" help="comsol/comsol_api_mesh.39.68.html" id="rf" props="wawyvqwf" topic="mesh_Reference"/>
+            <Size descr="Size" help="comsol/comsol_api_mesh.39.71.html" id="size" props="eurzbavu vdzddswe wxfebcfr yvyuxbse bqzsyfrv cqdxyfqv bxeqvzds rasvdsus cyqvcsdx yysuzcvr rxrevses bvaxztva ctzvbeqr" topic="mesh_Size"/>
+            <Distribution descr="Distribution" help="comsol/comsol_api_mesh.39.55.html" id="dis" props="xecttbat zxrccurw tyddqffu zexfdfud ffvzuavy yeytxstd uuwbccqs ssyrcaqv" topic="mesh_Distribution"/>
+            <CornerRefinement descr="Corner_refinement" help="comsol/comsol_api_mesh.39.49.html" id="cr" props="ryvfeafz cyvatuwc cdcuyrey" topic="mesh_CornerRefinement"/>
+            <Scale descr="Scale" help="comsol/comsol_api_mesh.39.70.html" id="sca" props="buuvcayy" topic="mesh_Scale"/>
+          </MeshFeature>
+        </MeshSequence>
+      </S2D>
+      <S3D axi="false" dim="3">
+        <MeshSequence descr="Mesh" help="comsol/comsol_api_general.37.33.html" id="mesh" props="vbyuuwcr zfdxdvvz" topic="MeshSequence">
+          <MeshFeature>
+            <FreeTet descr="Free_tetrahedral" help="comsol/comsol_api_mesh.39.60.html" id="ftet" props="rastscuw dvxdyewz vtvvuawb frqfaeyf uxcutyvp swssvdsv drsdqwwd ecacesfr rsbcwvzq vqwafaaz crfxxbyp" topic="mesh_FreeTet">
+              <Size descr="Size" help="comsol/comsol_api_mesh.39.71.html" id="size" props="eurzbavu vdzddswe wxfebcfr yvyuxbse bqzsyfrv cqdxyfqv bxeqvzds rasvdsus cyqvcsdx yysuzcvr rxrevses bvaxztva ctzvbeqr" topic="mesh_Size"/>
+              <Distribution descr="Distribution" help="comsol/comsol_api_mesh.39.55.html" id="dis" props="xecttbat zxrccurw tyddqffu zexfdfud ffvzuavy yeytxstd uuwbccqs ssyrcaqv" topic="mesh_Distribution"/>
+              <CornerRefinement descr="Corner_refinement" help="comsol/comsol_api_mesh.39.49.html" id="cr" props="ryvfeafz cyvatuwc cdcuyrey" topic="mesh_CornerRefinement"/>
+            </FreeTet>
+            <Sweep descr="Swept" help="comsol/comsol_api_mesh.39.72.html" id="swe" props="wqxbcasc xrvvzdwc ztryctts xqadwyxc frqfaeyf uxcutyvp swssvdsv rastscuw frvfyucw scxdyyqx" topic="mesh_Sweep">
+              <Size descr="Size" help="comsol/comsol_api_mesh.39.71.html" id="size" props="eurzbavu vdzddswe wxfebcfr yvyuxbse bqzsyfrv cqdxyfqv bxeqvzds rasvdsus cyqvcsdx yysuzcvr rxrevses bvaxztva ctzvbeqr" topic="mesh_Size"/>
+              <Distribution descr="Distribution" help="comsol/comsol_api_mesh.39.55.html" id="dis" props="xecttbat zxrccurw tyddqffu zexfdfud ffvzuavy yeytxstd uuwbccqs ssyrcaqv" topic="mesh_Distribution"/>
+            </Sweep>
+            <FreeTri descr="Free_triangular" help="comsol/comsol_api_mesh.39.61.html" id="ftri" props="rastscuw dvxdyewz vtvvuawb frqfaeyf uxcutyvp swssvdsv drsdqwwd bfdstscz" topic="mesh_FreeTri">
+              <Size descr="Size" help="comsol/comsol_api_mesh.39.71.html" id="size" props="eurzbavu vdzddswe wxfebcfr yvyuxbse bqzsyfrv cqdxyfqv bxeqvzds rasvdsus cyqvcsdx yysuzcvr rxrevses bvaxztva ctzvbeqr" topic="mesh_Size"/>
+              <Distribution descr="Distribution" help="comsol/comsol_api_mesh.39.55.html" id="dis" props="xecttbat zxrccurw tyddqffu zexfdfud ffvzuavy yeytxstd uuwbccqs ssyrcaqv" topic="mesh_Distribution"/>
+              <CornerRefinement descr="Corner_refinement" help="comsol/comsol_api_mesh.39.49.html" id="cr" props="ryvfeafz cyvatuwc cdcuyrey" topic="mesh_CornerRefinement"/>
+            </FreeTri>
+            <FreeQuad descr="Free_quad" help="comsol/comsol_api_mesh.39.59.html" id="fq" props="rastscuw dvxdyewz vtvvuawb frqfaeyf uxcutyvp swssvdsv drsdqwwd syyuctax" topic="mesh_FreeQuad">
+              <Size descr="Size" help="comsol/comsol_api_mesh.39.71.html" id="size" props="eurzbavu vdzddswe wxfebcfr yvyuxbse bqzsyfrv cqdxyfqv bxeqvzds rasvdsus cyqvcsdx yysuzcvr rxrevses bvaxztva ctzvbeqr" topic="mesh_Size"/>
+              <Distribution descr="Distribution" help="comsol/comsol_api_mesh.39.55.html" id="dis" props="xecttbat zxrccurw tyddqffu zexfdfud ffvzuavy yeytxstd uuwbccqs ssyrcaqv" topic="mesh_Distribution"/>
+              <CornerRefinement descr="Corner_refinement" help="comsol/comsol_api_mesh.39.49.html" id="cr" props="ryvfeafz cyvatuwc cdcuyrey" topic="mesh_CornerRefinement"/>
+            </FreeQuad>
+            <Map descr="Mapped" help="comsol/comsol_api_mesh.39.65.html" id="map" props="czxzwcys frqfaeyf uxcutyvp swssvdsv zbdbsdce rastscuw" topic="mesh_Map">
+              <Size descr="Size" help="comsol/comsol_api_mesh.39.71.html" id="size" props="eurzbavu vdzddswe wxfebcfr yvyuxbse bqzsyfrv cqdxyfqv bxeqvzds rasvdsus cyqvcsdx yysuzcvr rxrevses bvaxztva ctzvbeqr" topic="mesh_Size"/>
+              <Distribution descr="Distribution" help="comsol/comsol_api_mesh.39.55.html" id="dis" props="xecttbat zxrccurw tyddqffu zexfdfud ffvzuavy yeytxstd uuwbccqs ssyrcaqv" topic="mesh_Distribution"/>
+            </Map>
+            <Edge descr="Edge" help="comsol/comsol_api_mesh.39.56.html" id="edg" props="frqfaeyf uxcutyvp swssvdsv" topic="mesh_Edge">
+              <Size descr="Size" help="comsol/comsol_api_mesh.39.71.html" id="size" props="eurzbavu vdzddswe wxfebcfr yvyuxbse bqzsyfrv cqdxyfqv bxeqvzds rasvdsus cyqvcsdx yysuzcvr rxrevses bvaxztva ctzvbeqr" topic="mesh_Size"/>
+              <Distribution descr="Distribution" help="comsol/comsol_api_mesh.39.55.html" id="dis" props="xecttbat zxrccurw tyddqffu zexfdfud ffvzuavy yeytxstd uuwbccqs ssyrcaqv" topic="mesh_Distribution"/>
+              <CornerRefinement descr="Corner_refinement" help="comsol/comsol_api_mesh.39.49.html" id="cr" props="ryvfeafz cyvatuwc cdcuyrey" topic="mesh_CornerRefinement"/>
+            </Edge>
+            <CopyDomain descr="Copy_domain" help="comsol/comsol_api_mesh.39.47.html" id="cpd" props="axdvvdxc wactvaeq suafqwru frqfaeyf uxcutyvp swssvdsv" topic="mesh_CopyDomain"/>
+            <CopyFace descr="Copy_face" help="comsol/comsol_api_mesh.39.46.html" id="cpf" props="ftxtrddb sqzvxvfx suafqwru frqfaeyf uxcutyvp swssvdsv" topic="mesh_CopyFace"/>
+            <CopyEdge descr="Copy_edge" help="comsol/comsol_api_mesh.39.45.html" id="cpe" props="fzycdset xzesdzux evvvaudc suafqwru frqfaeyf uxcutyvp swssvdsv" topic="mesh_CopyEdge"/>
+            <Copy descr="Copy" help="comsol/comsol_api_mesh.39.48.html" id="copy" props="yfurqder tbvqzayy zstydyru sdqayxtq suafqwru frqfaeyf uxcutyvp swssvdsv" topic="mesh_Copy"/>
+            <BndLayer descr="Boundary_layers" help="comsol/comsol_api_mesh.39.41.html" id="bl" props="cswyqwvd rsuyfrcp bzdbccxy teatxqsd eeyusrcs vebucvue euxzysyt uxcutyvp swssvdsv rastscuw" topic="mesh_BndLayer">
+              <Scale descr="Scale" help="comsol/comsol_api_mesh.39.70.html" id="sca" props="buuvcayy" topic="mesh_Scale"/>
+            </BndLayer>
+            <Refine descr="Refine" help="comsol/comsol_api_mesh.39.69.html" id="ref" props="xtafdyve acvszraf rfeuuvqx ddbuvret rxwzxuvp bfuwausr etqyezyt aqdyfwvf uvqebtfb raydfwad" topic="mesh_Refine"/>
+            <Convert descr="Convert" help="comsol/comsol_api_mesh.39.44.html" id="conv" props="dsbxvvxa" topic="mesh_Convert"/>
+            <Reference descr="Reference" help="comsol/comsol_api_mesh.39.68.html" id="rf" props="wawyvqwf" topic="mesh_Reference"/>
+            <Size descr="Size" help="comsol/comsol_api_mesh.39.71.html" id="size" props="eurzbavu vdzddswe wxfebcfr yvyuxbse bqzsyfrv cqdxyfqv bxeqvzds rasvdsus cyqvcsdx yysuzcvr rxrevses bvaxztva ctzvbeqr" topic="mesh_Size"/>
+            <Distribution descr="Distribution" help="comsol/comsol_api_mesh.39.55.html" id="dis" props="xecttbat zxrccurw tyddqffu zexfdfud ffvzuavy yeytxstd uuwbccqs ssyrcaqv" topic="mesh_Distribution"/>
+            <CornerRefinement descr="Corner_refinement" help="comsol/comsol_api_mesh.39.49.html" id="cr" props="ryvfeafz cyvatuwc cdcuyrey" topic="mesh_CornerRefinement"/>
+            <Scale descr="Scale" help="comsol/comsol_api_mesh.39.70.html" id="sca" props="buuvcayy" topic="mesh_Scale"/>
+          </MeshFeature>
+        </MeshSequence>
+      </S3D>
+      <S1DAxi axi="true" dim="1">
+        <MeshSequence descr="Mesh" help="comsol/comsol_api_general.37.33.html" id="mesh" props="vbyuuwcr zfdxdvvz" topic="MeshSequence">
+          <MeshFeature>
+            <Edge descr="Edge" help="comsol/comsol_api_mesh.39.56.html" id="edg" topic="mesh_Edge">
+              <Size descr="Size" help="comsol/comsol_api_mesh.39.71.html" id="size" props="eurzbavu vdzddswe wxfebcfr yvyuxbse bqzsyfrv cqdxyfqv bxeqvzds rasvdsus cyqvcsdx yysuzcvr rxrevses bvaxztva ctzvbeqr" topic="mesh_Size"/>
+              <Distribution descr="Distribution" help="comsol/comsol_api_mesh.39.55.html" id="dis" props="xecttbat zxrccurw tyddqffu zexfdfud ffvzuavy yeytxstd uuwbccqs ssyrcaqv" topic="mesh_Distribution"/>
+            </Edge>
+            <Refine descr="Refine" help="comsol/comsol_api_mesh.39.69.html" id="ref" props="uvqebtfb raydfwad" topic="mesh_Refine"/>
+            <Reference descr="Reference" help="comsol/comsol_api_mesh.39.68.html" id="rf" props="wawyvqwf" topic="mesh_Reference"/>
+            <Size descr="Size" help="comsol/comsol_api_mesh.39.71.html" id="size" props="eurzbavu vdzddswe wxfebcfr yvyuxbse bqzsyfrv cqdxyfqv bxeqvzds rasvdsus cyqvcsdx yysuzcvr rxrevses bvaxztva ctzvbeqr" topic="mesh_Size"/>
+            <Distribution descr="Distribution" help="comsol/comsol_api_mesh.39.55.html" id="dis" props="xecttbat zxrccurw tyddqffu zexfdfud ffvzuavy yeytxstd uuwbccqs ssyrcaqv" topic="mesh_Distribution"/>
+            <Scale descr="Scale" help="comsol/comsol_api_mesh.39.70.html" id="sca" props="buuvcayy" topic="mesh_Scale"/>
+          </MeshFeature>
+        </MeshSequence>
+      </S1DAxi>
+      <S2DAxi axi="true" dim="2">
+        <MeshSequence descr="Mesh" help="comsol/comsol_api_general.37.33.html" id="mesh" props="vbyuuwcr zfdxdvvz" topic="MeshSequence">
+          <MeshFeature>
+            <FreeTri descr="Free_triangular" help="comsol/comsol_api_mesh.39.61.html" id="ftri" props="rastscuw dvxdyewt vtvvuawc frqfaeyf uxcutyvp swssvdsv bfdstscz" topic="mesh_FreeTri">
+              <Size descr="Size" help="comsol/comsol_api_mesh.39.71.html" id="size" props="eurzbavu vdzddswe wxfebcfr yvyuxbse bqzsyfrv cqdxyfqv bxeqvzds rasvdsus cyqvcsdx yysuzcvr rxrevses bvaxztva ctzvbeqr" topic="mesh_Size"/>
+              <Distribution descr="Distribution" help="comsol/comsol_api_mesh.39.55.html" id="dis" props="xecttbat zxrccurw tyddqffu zexfdfud ffvzuavy yeytxstd uuwbccqs ssyrcaqv" topic="mesh_Distribution"/>
+              <CornerRefinement descr="Corner_refinement" help="comsol/comsol_api_mesh.39.49.html" id="cr" props="ryvfeafz cyvatuwc cdcuyrey" topic="mesh_CornerRefinement"/>
+            </FreeTri>
+            <FreeQuad descr="Free_quad" help="comsol/comsol_api_mesh.39.59.html" id="fq" props="rastscuw dvxdyewt vtvvuawc frqfaeyf uxcutyvp swssvdsv syyuctax" topic="mesh_FreeQuad">
+              <Size descr="Size" help="comsol/comsol_api_mesh.39.71.html" id="size" props="eurzbavu vdzddswe wxfebcfr yvyuxbse bqzsyfrv cqdxyfqv bxeqvzds rasvdsus cyqvcsdx yysuzcvr rxrevses bvaxztva ctzvbeqr" topic="mesh_Size"/>
+              <Distribution descr="Distribution" help="comsol/comsol_api_mesh.39.55.html" id="dis" props="xecttbat zxrccurw tyddqffu zexfdfud ffvzuavy yeytxstd uuwbccqs ssyrcaqv" topic="mesh_Distribution"/>
+              <CornerRefinement descr="Corner_refinement" help="comsol/comsol_api_mesh.39.49.html" id="cr" props="ryvfeafz cyvatuwc cdcuyrey" topic="mesh_CornerRefinement"/>
+            </FreeQuad>
+            <Map descr="Mapped" help="comsol/comsol_api_mesh.39.65.html" id="map" props="frqfaeyf uxcutyvp swssvdsv zbdbsdce rastscuw" topic="mesh_Map">
+              <Size descr="Size" help="comsol/comsol_api_mesh.39.71.html" id="size" props="eurzbavu vdzddswe wxfebcfr yvyuxbse bqzsyfrv cqdxyfqv bxeqvzds rasvdsus cyqvcsdx yysuzcvr rxrevses bvaxztva ctzvbeqr" topic="mesh_Size"/>
+              <Distribution descr="Distribution" help="comsol/comsol_api_mesh.39.55.html" id="dis" props="xecttbat zxrccurw tyddqffu zexfdfud ffvzuavy yeytxstd uuwbccqs ssyrcaqv" topic="mesh_Distribution"/>
+            </Map>
+            <Edge descr="Edge" help="comsol/comsol_api_mesh.39.56.html" id="edg" props="frqfaeyf uxcutyvp swssvdsv" topic="mesh_Edge">
+              <Size descr="Size" help="comsol/comsol_api_mesh.39.71.html" id="size" props="eurzbavu vdzddswe wxfebcfr yvyuxbse bqzsyfrv cqdxyfqv bxeqvzds rasvdsus cyqvcsdx yysuzcvr rxrevses bvaxztva ctzvbeqr" topic="mesh_Size"/>
+              <Distribution descr="Distribution" help="comsol/comsol_api_mesh.39.55.html" id="dis" props="xecttbat zxrccurw tyddqffu zexfdfud ffvzuavy yeytxstd uuwbccqs ssyrcaqv" topic="mesh_Distribution"/>
+              <CornerRefinement descr="Corner_refinement" help="comsol/comsol_api_mesh.39.49.html" id="cr" props="ryvfeafz cyvatuwc cdcuyrey" topic="mesh_CornerRefinement"/>
+            </Edge>
+            <CopyDomain descr="Copy_domain" help="comsol/comsol_api_mesh.39.47.html" id="cpd" props="axdvvdxc wactvaeq suafqwru frqfaeyf uxcutyvp swssvdsv" topic="mesh_CopyDomain"/>
+            <CopyEdge descr="Copy_edge" help="comsol/comsol_api_mesh.39.45.html" id="cpe" props="ftxtrddb sqzvxvfx evvvaudc suafqwru frqfaeyf uxcutyvp swssvdsv" topic="mesh_CopyEdge"/>
+            <Copy descr="Copy" help="comsol/comsol_api_mesh.39.48.html" id="copy" props="yfurqder edazccse zstydyru sdqayxtq suafqwru frqfaeyf uxcutyvp swssvdsv" topic="mesh_Copy"/>
+            <BndLayer descr="Boundary_layers" help="comsol/comsol_api_mesh.39.41.html" id="bl" props="bxcueeuv rsuyfrcp bzdbccxy teatxqsd eeyusrcs vebucvue euxzysyt uxcutyvp swssvdsv rastscuw" topic="mesh_BndLayer">
+              <Scale descr="Scale" help="comsol/comsol_api_mesh.39.70.html" id="sca" props="buuvcayy" topic="mesh_Scale"/>
+            </BndLayer>
+            <Refine descr="Refine" help="comsol/comsol_api_mesh.39.69.html" id="ref" props="xtafdyve acvszraf rfeuuvqx ddbuvret rxwzxuvp bfuwausr uvqebtfb raydfwad" topic="mesh_Refine"/>
+            <Convert descr="Convert" help="comsol/comsol_api_mesh.39.44.html" id="conv" props="dsbxvvxa" topic="mesh_Convert"/>
+            <Reference descr="Reference" help="comsol/comsol_api_mesh.39.68.html" id="rf" props="wawyvqwf" topic="mesh_Reference"/>
+            <Size descr="Size" help="comsol/comsol_api_mesh.39.71.html" id="size" props="eurzbavu vdzddswe wxfebcfr yvyuxbse bqzsyfrv cqdxyfqv bxeqvzds rasvdsus cyqvcsdx yysuzcvr rxrevses bvaxztva ctzvbeqr" topic="mesh_Size"/>
+            <Distribution descr="Distribution" help="comsol/comsol_api_mesh.39.55.html" id="dis" props="xecttbat zxrccurw tyddqffu zexfdfud ffvzuavy yeytxstd uuwbccqs ssyrcaqv" topic="mesh_Distribution"/>
+            <CornerRefinement descr="Corner_refinement" help="comsol/comsol_api_mesh.39.49.html" id="cr" props="ryvfeafz cyvatuwc cdcuyrey" topic="mesh_CornerRefinement"/>
+            <Scale descr="Scale" help="comsol/comsol_api_mesh.39.70.html" id="sca" props="buuvcayy" topic="mesh_Scale"/>
+          </MeshFeature>
+        </MeshSequence>
+      </S2DAxi>
+      <S0D axi="false" dim="0"/>
+      <S0DAxi axi="true" dim="0"/>
+    </Mesh>
+    <Properties>
+      <vbyuuwcr descr="Sequence_type" descrs="User_controlled_mesh|Physics_controlled_mesh" name="meshtype" type="String" values="manual|automatic"/>
+      <zfdxdvvz descr="Element_size" descrs="Extremely_fine|Extra_fine|Finer|Fine|Normal[usual]|Coarse|Coarser|Extra_coarse|Extremely_coarse" name="meshsize" type="String" values="1.0|2.0|3.0|4.0|5.0|6.0|7.0|8.0|9.0"/>
+      <eurzbavu descr="Calibrate_for" descrs="General_physics|Fluid_dynamics|Plasma|Semiconductor" name="table" type="String" values="default|cfd|plasma|semi"/>
+      <vdzddswe descr="Maximum_element_size" name="hmax" type="Double"/>
+      <wxfebcfr descr="Maximum_element_size" descrs="On|Off" name="hmaxactive" type="Boolean" values="on|off"/>
+      <yvyuxbse descr="Minimum_element_size" name="hmin" type="Double"/>
+      <bqzsyfrv descr="Minimum_element_size" descrs="On|Off" name="hminactive" type="Boolean" values="on|off"/>
+      <cqdxyfqv descr="Curvature_factor" name="hcurve" type="Double"/>
+      <bxeqvzds descr="Curvature_factor" descrs="On|Off" name="hcurveactive" type="Boolean" values="on|off"/>
+      <rasvdsus descr="Resolution_of_narrow_regions" name="hnarrow" type="Double"/>
+      <cyqvcsdx descr="Resolution_of_narrow_regions" descrs="On|Off" name="hnarrowactive" type="Boolean" values="on|off"/>
+      <yysuzcvr descr="Maximum_element_growth_rate" name="hgrad" type="Double"/>
+      <rxrevses descr="Maximum_element_growth_rate" descrs="On|Off" name="hgradactive" type="Boolean" values="on|off"/>
+      <bvaxztva descr="Predefined_size" descrs="Extremely_fine|Extra_fine|Finer|Fine|Normal[usual]|Coarse|Coarser|Extra_coarse|Extremely_coarse" name="hauto" type="Double" values="1|2|3|4|5|6|7|8|9"/>
+      <ctzvbeqr descr="Custom_element_size" descrs="Predefined|Custom" name="custom" type="String" values="off|on"/>
+      <xecttbat descr="Distribution_properties" descrs="Explicit_distribution|Fixed_number_of_elements|Predefined_distribution_type" name="type" type="String" values="explicit|number|predefined"/>
+      <zxrccurw descr="Explicit_element_distribution" name="explicit" type="DoubleArray"/>
+      <tyddqffu descr="Reverse_direction" descrs="On|Off" name="reverse" type="Boolean" values="on|off"/>
+      <zexfdfud descr="Number_of_elements" name="numelem" type="Double"/>
+      <ffvzuavy descr="Number_of_elements" name="elemcount" type="Double"/>
+      <yeytxstd descr="Element_ratio" name="elemratio" type="Double"/>
+      <uuwbccqs descr="Distribution_method" descrs="Arithmetic_sequence|Geometric_sequence" name="method" type="String" values="arithmetic|geometric"/>
+      <ssyrcaqv descr="Symmetric_distribution" descrs="On|Off" name="symmetric" type="Boolean" values="on|off"/>
+      <uvqebtfb descr="Elements_to_refine" name="element" type="IntArray"/>
+      <raydfwad descr="Number_of_refinements" name="numrefine" type="IntArray"/>
+      <wawyvqwf descr="Mesh" descrs="None|A_reference_to_a_mesh" isref="true" name="sequence" type="String" values="none|{Mesh}"/>
+      <buuvcayy descr="Element_size_scale" name="scale" type="Double"/>
+      <rastscuw descr="Continue_meshing" descrs="On|Off" name="continue" type="Boolean" values="on|off"/>
+      <dvxdyewz descr="X-direction_scale#x" name="xscale" type="Double"/>
+      <vtvvuawb descr="X-direction_scale#y" name="yscale" type="Double"/>
+      <frqfaeyf descr="Smooth_across_removed_control_entities" descrs="On|Off" name="smoothcontrol" type="String" values="on|off"/>
+      <uxcutyvp descr="Number_of_iterations" name="smoothmaxiter" type="Double"/>
+      <swssvdsv descr="Maximum_element_depth_to_process" name="smoothmaxdepth" type="Double"/>
+      <bfdstscz descr="Method" descrs="Automatic|Delaunay|Advancing_front" name="method" type="String" values="auto|del|af"/>
+      <ryvfeafz descr="Boundary_selection" name="boundary" type="Selection"/>
+      <cyvatuwc descr="Minimum_angle_between_boundaries" name="minangle" type="Double"/>
+      <cdcuyrey descr="Element_size_scaling_factor" name="refinement" type="Double"/>
+      <syyuctax descr="Method" descrs="Automatic|Legacy_version" name="method" type="String" values="auto|legacy52"/>
+      <zbdbsdce descr="Adjust_evenly_distributed_edge_mesh" descrs="On|Off" name="adjustedgdistr" type="Boolean" values="on|off"/>
+      <axdvvdxc descr="Source_domains" name="source" type="Selection"/>
+      <wactvaeq descr="Destination_domains" name="destination" type="Selection"/>
+      <suafqwru descr="Copy_method" descrs="Automatic|Single_destination_(many-to-one)|Array_copy_(many-to-many)" name="copymethod" type="String" values="auto|singlecopy|arraycopy"/>
+      <ftxtrddb descr="Source_boundaries" name="source" type="Selection"/>
+      <sqzvxvfx descr="Destination_boundaries" name="destination" type="Selection"/>
+      <evvvaudc descr="Direction" descrs="Automatic_orientation|Same_orientation|Opposite_orientation" name="direction" type="String" values="auto|same|opposite"/>
+      <yfurqder descr="Mesh" descrs="A_reference_to_a_mesh" isref="true" name="mesh" type="String" values="{Mesh}"/>
+      <edazccse descr="Geometric_entity_level" descrs="Boundary|Domain" name="dimension" type="Int" values="1|2"/>
+      <zstydyru descr="Source_entities" name="source" type="Selection"/>
+      <sdqayxtq descr="Destination_entities" name="destination" type="Selection"/>
+      <bxcueeuv descr="Handling_of_sharp_corners" descrs="Trimming|Splitting|None" name="sharpcorners" type="String" values="trim|split|none"/>
+      <rsuyfrcp descr="Minimum_angle_for_trimming" name="trimminangle" type="Double"/>
+      <bzdbccxy descr="Maximum_angle_for_trimming" name="trimmaxangle" type="Double"/>
+      <teatxqsd descr="Minimum_angle_for_splitting" name="splitangle" type="Double"/>
+      <eeyusrcs descr="Maximum_angle_per_split" name="splitdivangle" type="Double"/>
+      <vebucvue descr="Maximum_layer_decrement" name="layerdec" type="Int"/>
+      <euxzysyt descr="Smooth_transition_to_interior_mesh" descrs="On|Off" name="smoothtransition" type="String" values="on|off"/>
+      <xtafdyve descr="Refinement_method" descrs="Split_longest_side|Regular_refinement" name="rmethod" type="String" values="longest|regular"/>
+      <acvszraf descr="Specify_bounding_box" descrs="Use_bounding_box|No_bounding_box" name="boxcoord" type="String" values="on|off"/>
+      <rfeuuvqx descr="xmax" name="xmax" type="Double"/>
+      <ddbuvret descr="xmin" name="xmin" type="Double"/>
+      <rxwzxuvp descr="ymax" name="ymax" type="Double"/>
+      <bfuwausr descr="ymin" name="ymin" type="Double"/>
+      <dsbxvvxa descr="Element_split_method" descrs="Insert_diagonal_edges|Insert_center_points" name="splitmethod" type="String" values="diagonal|center"/>
+      <drsdqwwd descr="X-direction_scale#z" name="zscale" type="Double"/>
+      <ecacesfr descr="Method" descrs="Automatic|Delaunay|Delaunay_(legacy_version)" name="method" type="String" values="auto|del|dellegacy52"/>
+      <rsbcwvzq descr="Optimization_level" descrs="Basic|Medium|High" name="optlevel" type="String" values="basic|medium|high"/>
+      <vqwafaaz descr="Avoid_inverted_curved_elements" descrs="On|Off" name="optcurved" type="Boolean" values="on|off"/>
+      <crfxxbyp descr="Avoid_too_large_elements" descrs="On|Off" name="optlarge" type="Boolean" values="on|off"/>
+      <wqxbcasc descr="Sweep_path_calculation" descrs="Automatic|Sweep_following_straight_lines|Sweep_following_circular_arcs|Sweep_using_interpolation" name="sweeppath" type="String" values="auto|straight|circular|general"/>
+      <xrvvzdwc descr="Destination_mesh_generation" descrs="Determine_suitable_method|Use_a_rigid_transformation|Morph_source_onto_destination|Project_source_onto_destination" name="targetmesh" type="String" values="auto|rigid|morph|project"/>
+      <ztryctts descr="Face_meshing_method" descrs="Quadrilateral_(Hexahedron)|Triangular_(Prism)|Quadrilateral_(Legacy)" name="facemethod" type="String" values="quad|tri|quadlegacy52"/>
+      <xqadwyxc descr="Interpolation_method_for_linking_faces" descrs="Automatic|Transfinite_in_2D|Transfinite_in_3D" name="mapinterpmethod" type="String" values="auto|transfinite2D|transfinite3D"/>
+      <frvfyucw descr="Source_faces" name="sourceface" type="Selection"/>
+      <scxdyyqx descr="Destination_faces" name="targetface" type="Selection"/>
+      <czxzwcys descr="Interpolation_method" descrs="Automatic|Transfinite_in_2D|Transfinite_in_3D" name="interpmethod" type="String" values="auto|transfinite2D|transfinite3D"/>
+      <fzycdset descr="Source_edges" name="source" type="Selection"/>
+      <xzesdzux descr="Destination_edges" name="destination" type="Selection"/>
+      <tbvqzayy descr="Geometric_entity_level" descrs="Edge|Boundary|Domain" name="dimension" type="Int" values="1|2|3"/>
+      <cswyqwvd descr="Handling_of_sharp_edges" descrs="Trimming|Splitting|None" name="sharpcorners" type="String" values="trim|split|none"/>
+      <etqyezyt descr="zmax" name="zmax" type="Double"/>
+      <aqdyfwvf descr="zmin" name="zmin" type="Double"/>
+      <dvxdyewt descr="X-direction_scale#r" name="xscale" type="Double"/>
+      <vtvvuawc descr="X-direction_scale#z" name="yscale" type="Double"/>
+    </Properties>
+  </model.mesh>
+</COMSOLCompletionData>
