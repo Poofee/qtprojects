@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
     PersistentSettingsReader *reader = new PersistentSettingsReader();
     /** 相对路径生成绝对路径（shadowbuild） **/
     QString appPath = QApplication::applicationDirPath();
-    QString fileName("/../../XMLreadwrite/XMLreadwrite.pro.user");
+    QString fileName("/../XMLreadwrite/XMLreadwrite.pro.user");
     fileName = appPath + fileName;
     reader->load(fileName);
 
