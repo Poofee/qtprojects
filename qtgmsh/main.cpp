@@ -16,6 +16,7 @@ typedef struct _CNode
 typedef struct _CElement
 {
     int n[3];// ni, nj, nk;//
+    int ele_type;
     int physic_tag;
     int geometry_tag;
 }CElement;
@@ -90,8 +91,9 @@ bool loadGmsh22(const char fn[]){
     fgets(ch, 256, fp);
     int number_ele;
     int ele_number;
-    int elm_type;
+//    int elm_type;
     int number_of_tags;
+    char * chtmp;
     if(fscanf(fp,"%d\n",&number_ele) != 1){
         return false;
     }else{
@@ -101,16 +103,15 @@ bool loadGmsh22(const char fn[]){
             if(i == 2162){
                 int a = 0;
             }
-            fgets(ch, 256, fp);
-            printf("%s",ch);
-            ele_number = next_int(&ch);
-            elm_type = next_int(&ch);
-            number_of_tags = next_int(&ch);
-            elementList[i].physic_tag = next_int(&ch);
-            elementList[i].geometry_tag = next_int(&ch);
+            chtmp = fgets(ch, 256, fp);
+            ele_number = next_int(&chtmp);
+            elementList[i].ele_type = next_int(&chtmp);
+            number_of_tags = next_int(&chtmp);
+            elementList[i].physic_tag = next_int(&chtmp);
+            elementList[i].geometry_tag = next_int(&chtmp);
 
             int element_nodes = 0;
-            switch (elm_type) {
+            switch (elementList[i].ele_type) {
             case 15:
                 element_nodes = 1;
                 break;
@@ -126,11 +127,13 @@ bool loadGmsh22(const char fn[]){
             }
 
             for(int j = 0; j < element_nodes;++j)
-                elementList[i].n[j] = next_int(&ch);
-//            qDebug()<<elementList[i].geometry_tag;
+                elementList[i].n[j] = next_int(&chtmp);
+            qDebug()<<elementList[i].geometry_tag<<elementList[i].physic_tag
+                   <<elementList[i].n[0]<<elementList[i].n[1]<<elementList[i].n[2];
 
         }
     }
+    fclose(fp);
     return true;
 }
 int main(int argc, char *argv[])
