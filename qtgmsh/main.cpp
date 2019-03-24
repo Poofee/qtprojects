@@ -127,7 +127,7 @@ bool loadGmsh22(const char fn[]){
             }
 
             for(int j = 0; j < element_nodes;++j)
-                elementList[i].n[j] = next_int(&chtmp);
+                elementList[i].n[j] = next_int(&chtmp)-1;
             qDebug()<<elementList[i].geometry_tag<<elementList[i].physic_tag
                    <<elementList[i].n[0]<<elementList[i].n[1]<<elementList[i].n[2];
 
