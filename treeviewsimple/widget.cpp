@@ -1,16 +1,18 @@
 #include "widget.h"
 #include <QStandardItemModel>
-#include <QHBoxLayout>
+#include <QVBoxLayout>
 #include <QDebug>
 #include <QMenu>
 
 #include "mydelegate.h"
+#include "mytreeview.h"
 
 Widget::Widget(QWidget *parent)
     : QWidget(parent)
     ,treeView(new QTreeView())
 {
     /**1，构造Model，这里示例具有3层关系的model构造过程**/
+    /**QStandardItemModel的父级最好定义，因为这样可以不用你自己销毁，Qt的智能指针机制是非常方便的。在这里定义了一个它关联的树形控件作为它的父级。**/
     mModel = new QStandardItemModel(treeView);
     mModel->setHorizontalHeaderLabels(QStringList()<<QStringLiteral("Number") << QStringLiteral("Name"));
     for(int i=0;i<5;i++)
@@ -48,9 +50,46 @@ Widget::Widget(QWidget *parent)
     /**2，给QTreeView应用model**/
     treeView->setModel(mModel);
 
-    QHBoxLayout* hbox = new QHBoxLayout;
-    hbox->addWidget(treeView);
-    this->setLayout(hbox);
+    QVBoxLayout* vbox = new QVBoxLayout;
+    MyTreeView* mytreeview = new MyTreeView(this);
+    QStandardItemModel* model = new QStandardItemModel(mytreeview);
+    model->setHorizontalHeaderLabels(QStringList()<<QStringLiteral("Number") << QStringLiteral("Name"));
+    for(int i=0;i<5;i++)
+    {
+        /**一级节点，加入model**/
+        QList<QStandardItem*> items1;
+        QStandardItem* item1 = new QStandardItem(QString::number(i));
+        QStandardItem* item2 = new QStandardItem(QStringLiteral("1"));
+        items1.append(item1);
+        items1.append(item2);
+        model->appendRow(items1);
+
+        for(int j=0;j<5;j++)
+        {
+            /**二级节点,加入第1个一级节点**/
+            QList<QStandardItem*> items2;
+            QStandardItem* item3 = new QStandardItem(QString::number(j));
+            QStandardItem* item4 = new QStandardItem(QStringLiteral("2"));
+            items2.append(item3);
+            items2.append(item4);
+            item1->appendRow(items2);
+
+            for(int k=0;k<5;k++)
+            {
+                /**三级节点,加入第1个二级节点**/
+                QList<QStandardItem*> items3;
+                QStandardItem* item5 = new QStandardItem(QString::number(k));
+                QStandardItem* item6 = new QStandardItem(QStringLiteral("3"));
+                items3.append(item5);
+                items3.append(item6);
+                item3->appendRow(items3);
+            }
+        }
+    }
+    mytreeview->setModel(model);
+    vbox->addWidget(treeView);
+    vbox->addWidget(mytreeview);
+    this->setLayout(vbox);
 
     /** connect函数得放在此处，放在前面的话因为变量还没有被生成，所以无效 **/
     connect(treeView->selectionModel(),&QItemSelectionModel::selectionChanged,this,&Widget::slotSelectionChanged);

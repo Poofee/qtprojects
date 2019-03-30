@@ -27,11 +27,15 @@ CONFIG += c++11
 SOURCES += \
         main.cpp \
         widget.cpp \
-    mydelegate.cpp
+    mydelegate.cpp \
+    mytreeview.cpp \
+    myqstyleditemdelegate.cpp
 
 HEADERS += \
         widget.h \
-    mydelegate.h
+    mydelegate.h \
+    mytreeview.h \
+    myqstyleditemdelegate.h
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

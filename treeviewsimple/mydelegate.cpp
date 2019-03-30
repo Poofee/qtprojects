@@ -11,7 +11,7 @@ QWidget *MyDelegate::createEditor(QWidget *parent,
                                   const QStyleOptionViewItem &/* option */,
                                   const QModelIndex & index ) const
 {
-    if(index.column() == 0) /**只对第4列采用此方法编辑**/
+    if(index.column() == 1) /**只对第4列采用此方法编辑**/
     {
         QComboBox* box = new QComboBox(parent);
         box->addItems(QStringList()<<"good"<<"well"<<"bad");
