@@ -2,6 +2,7 @@
 #include <QStandardItemModel>
 #include <QHBoxLayout>
 #include <QDebug>
+#include <QMenu>
 
 Widget::Widget(QWidget *parent)
     : QWidget(parent)
@@ -53,6 +54,10 @@ Widget::Widget(QWidget *parent)
     connect(treeView->selectionModel(),&QItemSelectionModel::selectionChanged,this,&Widget::slotSelectionChanged);
     connect(treeView->selectionModel(),&QItemSelectionModel::currentChanged,this,&Widget::slotCurrentChanged);
     connect(treeView->selectionModel(),&QItemSelectionModel::currentRowChanged,this,&Widget::slotCurrentRowChanged);
+
+    treeView->setContextMenuPolicy(Qt::CustomContextMenu);
+    connect(treeView, &QTreeView::customContextMenuRequested, this, &Widget::slotTreeMenu);
+
 }
 
 Widget::~Widget()
@@ -100,5 +105,50 @@ void Widget::slotCurrentRowChanged(const QModelIndex &t, const QModelIndex &prev
     if(item)
     {
 
+    }
+}
+
+void Widget::slotTreeMenu(const QPoint &pos)
+{
+    QMenu menu;
+    //menu.setStyleSheet(qss);    //可以给菜单设置样式
+
+    QModelIndex curIndex = treeView->indexAt(pos);      //当前点击的元素的index
+    QModelIndex index = curIndex.sibling(curIndex.row(),0); //该行的第1列元素的index
+    if (index.isValid())
+    {
+        //可获取元素的文本、data,进行其他判断处理
+        //QStandardItem* item = mModel->itemFromIndex(index);
+        //QString text = item->text();
+        //QVariant data = item->data(Qt::UserRole + 1);
+        //...
+
+        //添加一行菜单，进行展开
+        menu.addAction(QStringLiteral("Expand"), this, SLOT(slotTreeMenuExpand(bool)));
+        menu.addSeparator();    //添加一个分隔线
+        menu.addAction(QStringLiteral("Collapse"), this, SLOT(slotTreeMenuCollapse(bool)));
+    }
+    menu.exec(QCursor::pos());  //显示菜单
+}
+
+void Widget::slotTreeMenuExpand(bool checked)
+{
+    qDebug()<<Q_FUNC_INFO;
+    QModelIndex curIndex = treeView->currentIndex();
+    QModelIndex index = curIndex.sibling(curIndex.row(),0); //同一行第一列元素的index
+    if(index.isValid())
+    {
+        treeView->expand(index);
+    }
+}
+
+void Widget::slotTreeMenuCollapse(bool checked)
+{
+    qDebug()<<Q_FUNC_INFO;
+    QModelIndex curIndex = treeView->currentIndex();
+    QModelIndex index = curIndex.sibling(curIndex.row(),0); //同一行第一列元素的index
+    if(index.isValid())
+    {
+        treeView->collapse(index);
     }
 }

@@ -17,6 +17,13 @@ private:
     void slotCurrentChanged(const QModelIndex &t, const QModelIndex &previous);
     void slotCurrentRowChanged(const QModelIndex &t, const QModelIndex &previous);
 
+
+private slots:
+    void slotTreeMenu(const QPoint &pos);
+    void slotTreeMenuExpand(bool checked = false);
+    void slotTreeMenuCollapse(bool checked = false);
+
+private:
     QTreeView* treeView;
     QStandardItemModel* mModel;
 };
