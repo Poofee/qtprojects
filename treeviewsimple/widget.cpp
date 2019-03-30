@@ -4,6 +4,8 @@
 #include <QDebug>
 #include <QMenu>
 
+#include "mydelegate.h"
+
 Widget::Widget(QWidget *parent)
     : QWidget(parent)
     ,treeView(new QTreeView())
@@ -58,6 +60,10 @@ Widget::Widget(QWidget *parent)
     treeView->setContextMenuPolicy(Qt::CustomContextMenu);
     connect(treeView, &QTreeView::customContextMenuRequested, this, &Widget::slotTreeMenu);
 
+    this->setGeometry(900,500,800,500);
+
+    MyDelegate* delegate = new MyDelegate;
+    treeView->setItemDelegate(delegate);
 }
 
 Widget::~Widget()
@@ -80,7 +86,7 @@ void Widget::slotSelectionChanged(const QItemSelection &selected, const QItemSel
             /**你的操作,比如取文本、取附带的data**/
             QString text = item->text();
             QString data1 = item->data(Qt::UserRole + 1).toString();
-//            QString data2 = item->data(Qt::UserRole + 2).toInt();
+            //            QString data2 = item->data(Qt::UserRole + 2).toInt();
             qDebug()<<text<<data1;
         }
     }
