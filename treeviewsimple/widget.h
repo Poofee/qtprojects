@@ -5,12 +5,14 @@
 #include <QTreeView>
 #include <QStandardItemModel>
 
+class TreeViewModel;
+
 class Widget : public QWidget
 {
     Q_OBJECT
 
 public:
-    Widget(QWidget *parent = 0);
+    Widget(QWidget *parent = nullptr);
     ~Widget();
 private:
     void slotSelectionChanged(const QItemSelection &selected, const QItemSelection &deselected);
@@ -22,10 +24,13 @@ private slots:
     void slotTreeMenu(const QPoint &pos);
     void slotTreeMenuExpand(bool checked = false);
     void slotTreeMenuCollapse(bool checked = false);
+    void slot_selectionChanged(const QItemSelection &selected, const QItemSelection &deselected);
+
 
 private:
     QTreeView* treeView;
     QStandardItemModel* mModel;
+    TreeViewModel* m_treeModel;
 };
 
 #endif // WIDGET_H

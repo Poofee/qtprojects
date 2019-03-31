@@ -29,13 +29,17 @@ SOURCES += \
         widget.cpp \
     mydelegate.cpp \
     mytreeview.cpp \
-    myqstyleditemdelegate.cpp
+    myqstyleditemdelegate.cpp \
+    treeviewmodel.cpp \
+    atheaderview.cpp
 
 HEADERS += \
         widget.h \
     mydelegate.h \
     mytreeview.h \
-    myqstyleditemdelegate.h
+    myqstyleditemdelegate.h \
+    treeviewmodel.h \
+    atheaderview.h
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

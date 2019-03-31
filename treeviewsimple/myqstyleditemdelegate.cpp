@@ -8,6 +8,11 @@ MyQStyledItemDelegate::MyQStyledItemDelegate(QObject *parent)
 
 }
 
+MyQStyledItemDelegate::~MyQStyledItemDelegate()
+{
+
+}
+
 void MyQStyledItemDelegate::paint(QPainter *painter, const QStyleOptionViewItem &option, const QModelIndex &index) const
 {
     QStyleOptionViewItem itemOption(option);

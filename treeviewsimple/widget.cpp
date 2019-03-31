@@ -3,9 +3,12 @@
 #include <QVBoxLayout>
 #include <QDebug>
 #include <QMenu>
+#include <QDateTime>
 
 #include "mydelegate.h"
 #include "mytreeview.h"
+#include "atheaderview.h"
+#include "treeviewmodel.h"
 
 Widget::Widget(QWidget *parent)
     : QWidget(parent)
@@ -89,6 +92,37 @@ Widget::Widget(QWidget *parent)
     mytreeview->setModel(model);
     vbox->addWidget(treeView);
     vbox->addWidget(mytreeview);
+
+    /**添加第三个表**/
+    ATHeaderView* m_headerView = new ATHeaderView(this);
+    m_treeModel = new TreeViewModel(this);
+
+    QTreeView* treeView_flashindex = new QTreeView();
+    treeView_flashindex->setModel(m_treeModel);
+    treeView_flashindex->setHeader(m_headerView);
+    treeView_flashindex->setSelectionMode(QAbstractItemView::ExtendedSelection);
+    treeView_flashindex->setExpandsOnDoubleClick(false);
+    treeView_flashindex->setIndentation(5);
+    treeView_flashindex->setColumnWidth(0,150);
+    treeView_flashindex->setColumnWidth(1,400);
+    treeView_flashindex->header()->setStretchLastSection(true);
+
+    /**设置数据**/
+    QList<FlashIndexData> flash_data;
+    FlashIndexData tmp_FlashIndexData;
+    for(int i = 0; i < 10; ++i){
+        QDateTime time = QDateTime::currentDateTime();   //获取当前时间
+        quint32 timeT = time.toTime_t()+100*i;
+        tmp_FlashIndexData.unix_time = timeT;
+        tmp_FlashIndexData.addr = i;
+        flash_data.push_back(tmp_FlashIndexData);
+    }
+    m_treeModel->setFlashData(flash_data);
+
+    connect(m_headerView,SIGNAL(stateChanged(Qt::CheckState)),m_treeModel,SLOT(slot_stateChanged(Qt::CheckState)));
+    connect(m_treeModel,SIGNAL(stateChanged(Qt::CheckState)),m_headerView,SLOT(slot_stateChanged(Qt::CheckState)));
+    connect(treeView_flashindex->selectionModel(),SIGNAL(selectionChanged(QItemSelection,QItemSelection)),this,SLOT(slot_selectionChanged(QItemSelection,QItemSelection)));
+    vbox->addWidget(treeView_flashindex);
     this->setLayout(vbox);
 
     /** connect函数得放在此处，放在前面的话因为变量还没有被生成，所以无效 **/
@@ -99,7 +133,7 @@ Widget::Widget(QWidget *parent)
     treeView->setContextMenuPolicy(Qt::CustomContextMenu);
     connect(treeView, &QTreeView::customContextMenuRequested, this, &Widget::slotTreeMenu);
 
-    this->setGeometry(900,500,800,500);
+//    this->setGeometry(900,500,800,500);
 
     MyDelegate* delegate = new MyDelegate;
     treeView->setItemDelegate(delegate);
@@ -195,5 +229,18 @@ void Widget::slotTreeMenuCollapse(bool checked)
     if(index.isValid())
     {
         treeView->collapse(index);
+    }
+}
+
+void Widget::slot_selectionChanged(const QItemSelection &selected, const QItemSelection &deselected)
+{
+    for(int i = 0;i < selected.indexes().count();++i)
+    {
+        m_treeModel->setData(selected.indexes().at(i),Qt::Checked,Qt::UserRole+1);
+    }
+
+    for(int i = 0;i < deselected.indexes().count();++i)
+    {
+        m_treeModel->setData(deselected.indexes().at(i),Qt::Unchecked,Qt::UserRole+1);
     }
 }
