@@ -27,11 +27,13 @@ CONFIG += c++11
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
-    mystring.cpp
+    mystring.cpp \
+    mystringrvalue.cpp
 
 HEADERS += \
         mainwindow.h \
-    mystring.h
+    mystring.h \
+    mystringrvalue.h
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

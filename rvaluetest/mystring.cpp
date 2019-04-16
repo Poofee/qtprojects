@@ -21,14 +21,6 @@ MyString::MyString(const MyString &str)
     init_data(str._data);
 }
 
-MyString::MyString(MyString &&str)
-{
-    qDebug()<<"Move constructor is called here!";
-    _length = str._length;
-    _data = str._data;
-    str._length = 0;
-    str._data = nullptr;/** 防止调用析构函数的时候释放空间 **/
-}
 
 MyString::~MyString()
 {
@@ -48,16 +40,5 @@ MyString &MyString::operator=(const MyString &str)
     return *this;
 }
 
-MyString &MyString::operator=(MyString &&str)
-{
-    qDebug()<<"Move assignment is called here!";
-    if(this != &str){
-        _length = str._length;
-        _data = str._data;
-        str._length = 0;
-        str._data = nullptr;
-    }
-    return *this;
-}
 
 

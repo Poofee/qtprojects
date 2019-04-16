@@ -14,11 +14,9 @@ public:
     MyString();
     MyString(const char* p);
     MyString(const MyString& str);
-    MyString(MyString&& str);/** 转移构造函数 **/
     ~MyString();
 
     MyString& operator=(const MyString& str);
-    MyString& operator=(MyString&& str);/** 转移赋值操作符 **/
 
 private:
     void init_data(const char* s){
