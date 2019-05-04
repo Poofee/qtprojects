@@ -21,10 +21,10 @@ void MyTreeView::mousePressEvent(QMouseEvent *e)
             QVariant data = index.data(Qt::UserRole+1);
             qDebug()<<index.data().toString()<<index.row();
 
-            if(!isExpanded(index))
-                expand(index);
-            else
-                collapse(index);
+//            if(!isExpanded(index))
+//                expand(index);
+//            else
+//                collapse(index);
         }
 
 
@@ -55,7 +55,7 @@ void MyTreeView::mouseDoubleClickEvent(QMouseEvent *event)
     qDebug()<<Q_FUNC_INFO;
 
     QModelIndex curIndex = currentIndex();
-    QModelIndex index = curIndex.sibling(curIndex.row(),0); //同一行第一列元素的index
+    QModelIndex index = curIndex;//.sibling(curIndex.row(),0); //同一行第一列元素的index
     if(index.isValid())
     {
         qDebug()<<"expanding..."<<curIndex.row();
