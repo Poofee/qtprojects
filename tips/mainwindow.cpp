@@ -2,6 +2,7 @@
 #include "qcalltip.h"
 #include <QLabel>
 #include <QPainterPath>
+#include <QDebug>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -10,57 +11,9 @@ MainWindow::MainWindow(QWidget *parent)
 //    la = new QLabel(this);
 //    la->setText("hello");
 //    la->setGeometry(300,400,40,40);
-//    setMouseTracking(true);
+    setMouseTracking(true);
     setGeometry(300,300,600,1000);
-}
 
-MainWindow::~MainWindow()
-{
-    if(la)
-        delete la;
-    la = nullptr;
-}
-
-void MainWindow::mouseMoveEvent(QMouseEvent *e)
-{
-    //    la->setGeometry(e->x(),e->y(),100,100);
-}
-
-void MainWindow::paintEvent(QPaintEvent *e)
-{
-//    QLinearGradient myGradient;
-//    QPen myPen;
-//    QPolygonF myPolygon;
-//    myPolygon.append(QPointF(50,50));
-//    myPolygon.append(QPointF(100,50));
-//    myPolygon.append(QPointF(100,100));
-//    myPolygon.append(QPointF(50,100));
-
-//    QPolygonF myPolygonout;
-//    myPolygonout.append(QPointF(0,0));
-//    myPolygonout.append(QPointF(150,0));
-//    myPolygonout.append(QPointF(150,150));
-//    myPolygonout.append(QPointF(0,150));
-
-//    QPainterPath myPath;
-//    myPath.addPolygon(myPolygon);
-//    myPath.addPolygon(myPolygonout);
-
-//    QPainter painter(this);
-//    painter.setBrush(QColor(Qt::red));
-//    painter.setPen(QColor(Qt::red));
-//    painter.drawPath(myPath);
-
-//    QPainterPath dataPath;
-////    myPath.setFillRule(Qt::OddEvenFill);
-////    dataPath.moveTo(QPoint(200,200));
-//    dataPath.addEllipse(200,200,200,200);
-//    dataPath.addEllipse(275,275,50,50);
-//    dataPath.addEllipse(250,250,30,30);
-
-////    p.setPen(QPen(palette().shadow().color(), m_outlinePenWidth));
-//    painter.setBrush(Qt::blue);
-//    painter.drawPath(dataPath);
     QPolygonF air;
     air.append(QPointF(6,917));
     air.append((QPointF(459,917)));
@@ -124,7 +77,7 @@ void MainWindow::paintEvent(QPaintEvent *e)
     pm1.append(QPointF(56,437));
     pm1.append(QPointF(56,469));
 
-    QPainterPath geo;
+//    QPainterPath geo;
     geo.addPolygon(air);
     geo.addPolygon(mover);
     geo.addPolygon(pm);
@@ -132,6 +85,56 @@ void MainWindow::paintEvent(QPaintEvent *e)
     geo.addPolygon(upcoil);
     geo.addPolygon(downcoil);
     geo.addPolygon(pm1);
+}
+
+MainWindow::~MainWindow()
+{
+    if(la)
+        delete la;
+    la = nullptr;
+}
+
+void MainWindow::mouseMoveEvent(QMouseEvent *e)
+{
+    //    la->setGeometry(e->x(),e->y(),100,100);
+    qDebug()<<geo.contains(QPoint(e->x(),e->y()));
+}
+
+void MainWindow::paintEvent(QPaintEvent *e)
+{
+//    QLinearGradient myGradient;
+//    QPen myPen;
+//    QPolygonF myPolygon;
+//    myPolygon.append(QPointF(50,50));
+//    myPolygon.append(QPointF(100,50));
+//    myPolygon.append(QPointF(100,100));
+//    myPolygon.append(QPointF(50,100));
+
+//    QPolygonF myPolygonout;
+//    myPolygonout.append(QPointF(0,0));
+//    myPolygonout.append(QPointF(150,0));
+//    myPolygonout.append(QPointF(150,150));
+//    myPolygonout.append(QPointF(0,150));
+
+//    QPainterPath myPath;
+//    myPath.addPolygon(myPolygon);
+//    myPath.addPolygon(myPolygonout);
+
+//    QPainter painter(this);
+//    painter.setBrush(QColor(Qt::red));
+//    painter.setPen(QColor(Qt::red));
+//    painter.drawPath(myPath);
+
+//    QPainterPath dataPath;
+////    myPath.setFillRule(Qt::OddEvenFill);
+////    dataPath.moveTo(QPoint(200,200));
+//    dataPath.addEllipse(200,200,200,200);
+//    dataPath.addEllipse(275,275,50,50);
+//    dataPath.addEllipse(250,250,30,30);
+
+////    p.setPen(QPen(palette().shadow().color(), m_outlinePenWidth));
+//    painter.setBrush(Qt::blue);
+//    painter.drawPath(dataPath);    
 
     QPainter painter(this);
     painter.setBrush(QColor(Qt::red));

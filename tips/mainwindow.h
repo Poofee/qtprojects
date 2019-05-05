@@ -16,6 +16,7 @@ public:
     void paintEvent(QPaintEvent* e);
 private:
     QLabel* la = nullptr;
+    QPainterPath geo;
 };
 
 #endif // MAINWINDOW_H
