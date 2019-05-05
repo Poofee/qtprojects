@@ -14,77 +14,140 @@ MainWindow::MainWindow(QWidget *parent)
     setMouseTracking(true);
     setGeometry(300,300,600,1000);
 
-    QPolygonF air;
-    air.append(QPointF(6,917));
-    air.append((QPointF(459,917)));
-    air.append((QPointF(459,8)));
-    air.append(QPointF(6,8));
-    air.append(QPointF(6,917));
+//    QPolygonF air;
+//    air.append(QPointF(6,917));
+//    air.append((QPointF(459,917)));
+//    air.append((QPointF(459,8)));
+//    air.append(QPointF(6,8));
+//    air.append(QPointF(6,917));
 
-    QPolygonF mover;
-    mover.append(QPointF(16,495));
-    mover.append(QPointF(50,495));
-    mover.append(QPointF(50,423));
-    mover.append(QPointF(16,423));
-    mover.append(QPointF(16,495));
+//    QPolygonF mover;
+//    mover.append(QPointF(16,495));
+//    mover.append(QPointF(50,495));
+//    mover.append(QPointF(50,423));
+//    mover.append(QPointF(16,423));
+//    mover.append(QPointF(16,495));
 
-    QPolygonF pm;
-    pm.append(QPointF(6,100));
-    pm.append(QPointF(50,100));
-    pm.append(QPointF(50,200));
-    pm.append(QPointF(6,200));
-    pm.append(QPointF(6,100));
+//    QPolygonF pm;
+//    pm.append(QPointF(6,100));
+//    pm.append(QPointF(50,100));
+//    pm.append(QPointF(50,200));
+//    pm.append(QPointF(6,200));
+//    pm.append(QPointF(6,100));
 
-    QPolygonF xiantie;
-    xiantie.append(QPointF(6,634));
-    xiantie.append(QPointF(180,634));
-    xiantie.append(QPointF(180,294));
-    xiantie.append(QPointF(27,294));
-    xiantie.append(QPointF(27,315));
-    xiantie.append(QPointF(20,315));
-    xiantie.append(QPointF(20,379));
-    xiantie.append(QPointF(17,379));
-    xiantie.append(QPointF(17,402));
-    xiantie.append(QPointF(51,402));
-    xiantie.append(QPointF(51,315));
-    xiantie.append(QPointF(167,315));
-    xiantie.append(QPointF(167,437));
-    xiantie.append(QPointF(167,469));
-    xiantie.append(QPointF(167,619));
-    xiantie.append(QPointF(51,619));
-    xiantie.append(QPointF(51,502));
-    xiantie.append(QPointF(6,502));
-    xiantie.append(QPointF(6,634));
+//    QPolygonF xiantie;
+//    xiantie.append(QPointF(6,634));
+//    xiantie.append(QPointF(180,634));
+//    xiantie.append(QPointF(180,294));
+//    xiantie.append(QPointF(27,294));
+//    xiantie.append(QPointF(27,315));
+//    xiantie.append(QPointF(20,315));
+//    xiantie.append(QPointF(20,379));
+//    xiantie.append(QPointF(17,379));
+//    xiantie.append(QPointF(17,402));
+//    xiantie.append(QPointF(51,402));
+//    xiantie.append(QPointF(51,315));
+//    xiantie.append(QPointF(167,315));
+//    xiantie.append(QPointF(167,437));
+//    xiantie.append(QPointF(167,469));
+//    xiantie.append(QPointF(167,619));
+//    xiantie.append(QPointF(51,619));
+//    xiantie.append(QPointF(51,502));
+//    xiantie.append(QPointF(6,502));
+//    xiantie.append(QPointF(6,634));
 
-    QPolygonF upcoil;
-    upcoil.append(QPointF(62,429));
-    upcoil.append(QPointF(156,429));
-    upcoil.append(QPointF(156,382));
-    upcoil.append(QPointF(62,382));
-    upcoil.append(QPointF(62,429));
+//    QPolygonF upcoil;
+//    upcoil.append(QPointF(62,429));
+//    upcoil.append(QPointF(156,429));
+//    upcoil.append(QPointF(156,382));
+//    upcoil.append(QPointF(62,382));
+//    upcoil.append(QPointF(62,429));
 
-    QPolygonF downcoil;
-    downcoil.append(QPointF(62,611));
-    downcoil.append(QPointF(154,611));
-    downcoil.append(QPointF(154,476));
-    downcoil.append(QPointF(62,476));
-    downcoil.append(QPointF(62,611));
+//    QPolygonF downcoil;
+//    downcoil.append(QPointF(62,611));
+//    downcoil.append(QPointF(154,611));
+//    downcoil.append(QPointF(154,476));
+//    downcoil.append(QPointF(62,476));
+//    downcoil.append(QPointF(62,611));
 
-    QPolygonF pm1;
-    pm1.append(QPointF(56,469));
-    pm1.append(QPointF(167,469));
-    pm1.append(QPointF(167,437));
-    pm1.append(QPointF(56,437));
-    pm1.append(QPointF(56,469));
+//    QPolygonF pm1;
+//    pm1.append(QPointF(56,469));
+//    pm1.append(QPointF(167,469));
+//    pm1.append(QPointF(167,437));
+//    pm1.append(QPointF(56,437));
+//    pm1.append(QPointF(56,469));
 
-//    QPainterPath geo;
-    geo.addPolygon(air);
-    geo.addPolygon(mover);
-    geo.addPolygon(pm);
-    geo.addPolygon(xiantie);
-    geo.addPolygon(upcoil);
-    geo.addPolygon(downcoil);
-    geo.addPolygon(pm1);
+////    QPainterPath geo;
+//    geo.addPolygon(air);
+//    geo.addPolygon(mover);
+//    geo.addPolygon(pm);
+//    geo.addPolygon(xiantie);
+//    geo.addPolygon(upcoil);
+//    geo.addPolygon(downcoil);
+//    geo.addPolygon(pm1);
+    //air
+    geo.moveTo(QPointF(6,917));
+    geo.lineTo((QPointF(459,917)));
+    geo.lineTo((QPointF(459,8)));
+    geo.lineTo(QPointF(6,8));
+//    geo.lineTo(QPointF(6,917));
+
+    // mover;
+    geo.moveTo(QPointF(16,495));
+    geo.lineTo(QPointF(50,495));
+    geo.lineTo(QPointF(50,423));
+    geo.lineTo(QPointF(16,423));
+//    geo.lineTo(QPointF(16,495));
+
+    // pm;
+    geo.moveTo(QPointF(6,100));
+    geo.lineTo(QPointF(50,100));
+    geo.lineTo(QPointF(50,200));
+    geo.lineTo(QPointF(6,200));
+//    geo.lineTo(QPointF(6,100));
+
+    // xiantie;
+    geo.moveTo(QPointF(6,634));
+    geo.lineTo(QPointF(180,634));
+    geo.lineTo(QPointF(180,294));
+    geo.lineTo(QPointF(27,294));
+    geo.lineTo(QPointF(27,315));
+    geo.lineTo(QPointF(20,315));
+    geo.lineTo(QPointF(20,379));
+    geo.lineTo(QPointF(17,379));
+    geo.lineTo(QPointF(17,402));
+    geo.lineTo(QPointF(51,402));
+    geo.lineTo(QPointF(51,315));
+    geo.lineTo(QPointF(167,315));
+    geo.lineTo(QPointF(167,437));
+    geo.lineTo(QPointF(167,469));
+    geo.lineTo(QPointF(167,619));
+    geo.lineTo(QPointF(51,619));
+    geo.lineTo(QPointF(51,502));
+    geo.lineTo(QPointF(6,502));
+//    geo.lineTo(QPointF(6,634));
+
+    // upcoil;
+    geo.moveTo(QPointF(62,429));
+    geo.lineTo(QPointF(156,429));
+    geo.lineTo(QPointF(156,382));
+    geo.lineTo(QPointF(62,382));
+//    geo.lineTo(QPointF(62,429));
+
+    // downcoil;
+    geo.moveTo(QPointF(62,611));
+    geo.lineTo(QPointF(154,611));
+    geo.lineTo(QPointF(154,476));
+    geo.lineTo(QPointF(62,476));
+//    geo.lineTo(QPointF(62,611));
+
+    // pm1;
+    geo.moveTo(QPointF(56,469));
+    geo.lineTo(QPointF(167,469));
+    geo.lineTo(QPointF(167,437));
+    geo.lineTo(QPointF(56,437));
+//    geo.lineTo(QPointF(56,469));
+
 }
 
 MainWindow::~MainWindow()
@@ -139,6 +202,7 @@ void MainWindow::paintEvent(QPaintEvent *e)
     QPainter painter(this);
     painter.setBrush(QColor(Qt::red));
     painter.setPen((Qt::NoPen));
+    geo.setFillRule(Qt::OddEvenFill);
     painter.drawPath(geo);
 
 }
