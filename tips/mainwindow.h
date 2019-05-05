@@ -17,6 +17,13 @@ public:
 private:
     QLabel* la = nullptr;
     QPainterPath geo;
+    QList<QPainterPath> paths;
+    bool inGeo;
+    QColor selected;
+    QColor noSelected;
+    QColor toSelect;
+    QColor deSelect;
+    int currentIndex;
 };
 
 #endif // MAINWINDOW_H
