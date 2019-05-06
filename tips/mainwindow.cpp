@@ -193,9 +193,10 @@ void MainWindow::mouseMoveEvent(QMouseEvent *e)
         if(paths.at(i).contains(QPoint(e->x(),e->y()))){
             currentIndex = i;
             qDebug()<<currentIndex;
-            break;
+            return;
         }
     }
+    currentIndex = -1;
 }
 
 void MainWindow::paintEvent(QPaintEvent *e)
@@ -234,7 +235,7 @@ void MainWindow::paintEvent(QPaintEvent *e)
 //    painter.setBrush(Qt::blue);
 //    painter.drawPath(dataPath);
     QPainter painter(this);
-    painter.setBrush(Qt::NoBrush);
+    painter.setBrush(noSelected);
     painter.setPen(Qt::black);
     for(int i = 0;i < paths.size();++i){
         painter.drawPath(paths.at(i));
