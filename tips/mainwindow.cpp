@@ -193,9 +193,10 @@ void MainWindow::mouseMoveEvent(QMouseEvent *e)
         if(paths.at(i).contains(QPoint(e->x(),e->y()))){
             currentIndex = i;
             qDebug()<<currentIndex;
-            break;
+            return;
         }
     }
+    currentIndex = -1;
 }
 
 void MainWindow::paintEvent(QPaintEvent *e)
