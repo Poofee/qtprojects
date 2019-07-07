@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 //    gmsh::write("square.msh");
 
     int myargn = 6;
-    char *myargv[] = {"gmsh","-setnumber","disp","0.001","-format","msh2"};
+    char *myargv[] = {(char*)"gmsh",(char*)"-setnumber",(char*)"disp",(char*)"0.001",(char*)"-format",(char*)"msh2"};
     gmsh::initialize(myargn,myargv);
     gmsh::option::setNumber("General.Terminal", 1);
     gmsh::open("../bin/modelpm.geo");

@@ -1,0 +1,1 @@
+gmsh -setnumber disp 0 model.geo
