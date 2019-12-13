@@ -24,9 +24,12 @@ MainWindow::MainWindow(QWidget *parent)
     setCentralWidget(w);
     QToolButton* okButton = new QToolButton(w);
     okButton->setText("OK");
+    QToolButton cancelbt(w);/** 函数结束后被释放，无法显示 **/
+    cancelbt.setText("Cancel");
 //    okButton->setAutoRaise(true);
     QHBoxLayout* hbox = new QHBoxLayout(w);
     hbox->addWidget(okButton);
+    hbox->addWidget(&cancelbt);
     w->setLayout(hbox);
 }
 
@@ -37,10 +40,10 @@ MainWindow::~MainWindow()
 
 void MainWindow::showDialog()
 {
-//    auto d = new QWidget;
-//    d->setAttribute(Qt::WA_QuitOnClose,false);
-//    d->setWindowFlags(Qt::WindowStaysOnTopHint);
-//    d->show();
+    auto d = new QWidget;
+    d->setAttribute(Qt::WA_QuitOnClose,false);
+    d->setWindowFlags(Qt::WindowStaysOnTopHint);
+    d->show();
 
     auto dialog = new QDialog(this);
     auto pushbutton1 = new QPushButton(dialog);
