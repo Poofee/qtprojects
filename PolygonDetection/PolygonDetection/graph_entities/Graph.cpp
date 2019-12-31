@@ -1,0 +1,419 @@
+#include <stdlib.h> // because of malloc
+#include <malloc.h> // because of malloc
+#include <memory.h> // because of memcpy and memset
+
+//#include <wx/utils.h> // to allow use of SafeYield
+
+//#ifdef GRAPH_DEBUG
+//#include <wx/log.h>
+//#endif
+
+#include "Graph.h"
+#include "Cycle.h"
+
+#include "../PDMacros.h"
+#include "../PDConsts.h"
+#include "../PolygonDetector.h"
+
+using namespace PolygonDetection;
+
+//////////////////////////////////////////////////////////////////////
+// Construction/Destruction
+//////////////////////////////////////////////////////////////////////
+
+/***
+* @desc contructor
+* @param number of vertices (max. 65535)
+* @note limit of 65535 vertices (requires aprox. 4GB of memory)
+* @todo this can be optimized by using just half of the entries
+*       and using a bit matrix instead of a byte matrix, but the 
+*       computing overhead created does not justify it.
+*/
+Graph::Graph(size_t vertices) : 
+_p_adjacency_matrix(nullptr),
+_predecessor_matrix(nullptr),
+_d_matrix(nullptr)
+{	
+	_vertex_count = vertices;	
+	_p_adjacency_matrix = new MatrixModuloTwo(vertices, vertices);	
+}
+
+/***
+* @desc destructor
+*/ 
+Graph::~Graph()
+{		
+	DELETE_OBJECT(_p_adjacency_matrix);
+
+	FREE(_predecessor_matrix);
+	FREE(_d_matrix);
+
+}
+
+/***
+* @desc indicates that two vertices (v1 and v2) are adjacent
+* @param v1, v2 vertex numbers
+*/
+void Graph::SetAdjacency(size_t v1, size_t v2)
+{
+	_p_adjacency_matrix->SetAt(v1,v2, 1);
+	_p_adjacency_matrix->SetAt(v2,v1,1);
+}
+
+
+/***
+* @desc tells if two vertices (v1 and v2) are adjacent
+* @param v1, v2 vertex numbers
+* @return boolean true if they are adjacent, false otherwise
+*/
+bool Graph::isAdjacent(size_t v1, size_t v2)
+{
+	return (_p_adjacency_matrix->GetAt(v1,v2)==1) || (_p_adjacency_matrix->GetAt(v2,v1)==1);
+}
+
+/***
+* @desc count the edges of the graph
+*/
+size_t Graph::GetEdgeCount()
+{
+	size_t i, j, result = 0;
+	
+	
+	for(i=0; i<GetVertexCount(); i++) {
+		for(j=i+1;j<GetVertexCount(); j++)		
+			if (isAdjacent(i,j))
+				result++;
+	}
+	
+	return result;
+}
+
+/***
+* @desc calculates the matrix offset of the pair v1, v2
+* @return the offset at the adjacency matrix
+* @note this calculation does not use the prperty of Symmetry
+*       along the main diagonal of the adjacency matrix,
+* @see Corman, T, Leiserson, C, Rivest, R, "Introduction to Algorithms", pp.467
+*/
+size_t Graph::MatrixOffset(size_t v1, size_t v2)
+{
+	return (v1*_vertex_count+v2);
+}
+
+/***
+* @desc implements the Floyd-Warshall algorithm
+* @see Corman, T, Leiserson, C, Rivest, R, "Introduction to Algorithms", pp.560
+*/
+void Graph::FloydWarshall()
+{
+    printf("Floyd-Warshall algorithm");
+	
+	size_t k, i, j, offset;
+	size_t n = GetVertexCount();
+
+	InitializeFloydWarshall();
+	YIELD_CONTROL();
+	
+	// 'd' matrices
+	size_t * previous_d_matrix = _d_matrix;
+	size_t * current_d_matrix = ALLOCATE_MEMORY(size_t, _vertex_count*_vertex_count);
+
+	// 'pi' matrices
+	size_t * previous_pi_matrix = _predecessor_matrix;
+	size_t * current_pi_matrix = ALLOCATE_MEMORY(size_t, _vertex_count*_vertex_count);
+	
+	// initialize current matrix
+	for (i=0;i<n;i++)
+		for (j=0;j<n;j++) {
+			current_d_matrix[i*n+j]=MAX_VERTICES;
+			current_pi_matrix[i*n+j]=MAX_VERTICES;
+		}
+	
+	// apply floyd warshall algorithm
+	for (k=0; k<n && !PolygonDetector::WasInterrupted(); k++){	
+//		if (EXCEEDING_PROCESSING_TIME(wxDateTime::UNow(), start)) {
+//			PolygonDetector::Interrupt(); break;
+//		}
+//		YIELD_CONTROL();
+		for (i=0; i<n && !PolygonDetector::WasInterrupted(); i++) {
+//			if (EXCEEDING_PROCESSING_TIME(wxDateTime::UNow(), start)) {
+//				PolygonDetector::Interrupt(); break;
+//			}
+//			YIELD_CONTROL();
+			for (j=0; j<n && !PolygonDetector::WasInterrupted(); j++){
+				if (i!=j) {				
+					offset = MatrixOffset(i,j);			
+					
+					size_t previous_d_ij= previous_d_matrix[offset];
+					size_t previous_d_ik= previous_d_matrix[MatrixOffset(i,k)];
+					size_t previous_d_kj = previous_d_matrix[MatrixOffset(k,j)]; 
+
+					// start of 'd' calculation
+					if (previous_d_ik==MAX_VERTICES || previous_d_kj==MAX_VERTICES)
+						current_d_matrix[offset]=previous_d_ij;
+					else
+						current_d_matrix[offset]=MIN(previous_d_ij, previous_d_ik+previous_d_kj);
+					// end of 'd' calculation
+
+					
+					// start of 'PI' calculation		
+					if (previous_d_ij <= (previous_d_ik+previous_d_kj))
+						current_pi_matrix[offset] = previous_pi_matrix[offset];
+					else
+						current_pi_matrix[offset] = previous_pi_matrix[MatrixOffset(k,j)];
+					// end of 'PI' calculation					
+				}
+				
+			}				
+		}
+		previous_d_matrix = current_d_matrix;
+		previous_pi_matrix = current_pi_matrix;
+	}
+	
+	FREE(_d_matrix);
+	FREE(_predecessor_matrix);
+	
+	_d_matrix = current_d_matrix;
+	_predecessor_matrix = current_pi_matrix;	
+
+    //ENDING_PROCESS_MESSAGE();
+}
+
+
+/***
+* @desc initializes the matrices needed for Floyd-Warshal Algorithm
+*/
+void Graph::InitializeFloydWarshall()
+{
+	
+	_predecessor_matrix = ALLOCATE_MEMORY(size_t, _vertex_count*_vertex_count);
+	_d_matrix = ALLOCATE_MEMORY(size_t, _vertex_count*_vertex_count);
+
+	size_t i, j, offset;
+
+	
+	for (i=0; i<_vertex_count; i++) 
+		for (j=0;j<_vertex_count; j++){			
+			offset = i*_vertex_count+j;
+			_d_matrix[offset] = _p_adjacency_matrix->Get(offset,0)==1?1:MAX_VERTICES;
+			_predecessor_matrix[offset] =  (_p_adjacency_matrix->Get(offset,0)==1 && (i!=j))?i:MAX_VERTICES;
+		}
+	
+}
+
+/***
+* @desc implements the Horton's algorithm for minimum cycle base
+* @return pointer to a miminum cycle base
+* @note DELETE the cycle base returned. It wont be deleted by the graph class
+*       when it were destroyed
+* @see Horton, J.D., "A polynomial-time algorithm to find the shortest cycle basis of a graph", 
+*      SIAm J. Comput. 16(2):pp.358-366, 1987
+* @see Vismara, P., "Union if all minimum cycle bases of a graph", Electronic Journal of 
+*      Combinatronics 4:73--87, 1997 (Paper No. #R9 )
+*/
+CycleSet * Graph::Horton()
+{
+    printf("Horton algorithm");
+
+	// creates a new cycles set	
+	CycleSet * p_cycle_set = new CycleSet();
+
+	wxArrayInt * path_vx, * path_vy;
+	
+	Cycle * cycle;
+
+	size_t v, x, y;
+
+	// visit all vertices on the graph
+	for(v=0; v<GetVertexCount() && !PolygonDetector::WasInterrupted();v++) {
+		YIELD_CONTROL();
+		for(x=v+1; x<GetVertexCount() && !PolygonDetector::WasInterrupted();x++) {
+			path_vx = GetShortestPath(v,x);
+			YIELD_CONTROL();
+			
+			for (y=x+1; y<GetVertexCount() && !PolygonDetector::WasInterrupted(); y++){								
+				path_vy = GetShortestPath(v,y);
+				YIELD_CONTROL();			
+
+				// if paths exists and points x and y are adjacent
+				if (path_vx && path_vy && isAdjacent(x,y))
+					if (IsOnlyCommonPointInPaths(v, path_vx, path_vy) &&
+						IsTiermanCompliant(v, path_vx, path_vy)){												
+
+						cycle = new Cycle(path_vx, path_vy);
+						if (cycle->GetLength()>0)  
+							p_cycle_set->AddCycle(cycle);
+						else
+							DELETE_OBJECT(cycle);
+					}
+					
+				DELETE_ARRAY(path_vy);				
+				if (EXCEEDING_PROCESSING_TIME(wxDateTime::UNow(), start)) {
+					PolygonDetector::Interrupt(); break;
+				}
+			}
+			DELETE_ARRAY(path_vx);
+			if (EXCEEDING_PROCESSING_TIME(wxDateTime::UNow(), start)) {
+				PolygonDetector::Interrupt(); break;
+			}
+		}
+		if (EXCEEDING_PROCESSING_TIME(wxDateTime::UNow(), start)) {
+				PolygonDetector::Interrupt(); break;
+		}
+	}	
+
+	// sort the cycles
+	p_cycle_set->Sort();
+	
+	// lets apply the gaussian elimination
+	if (p_cycle_set) {
+		p_cycle_set->SelectCycles();
+	}
+	
+    //ENDING_PROCESS_MESSAGE();
+
+	return p_cycle_set;
+}
+
+/***
+* @desc returns the shortest path between 'i' and 'j'
+*       this method is based on the PrintAllPairsShorthestPath algorithm
+* @see Corman, T, Leiserson, C, Rivest, R, "Introduction to Algorithms", pp.551
+*/
+wxArrayInt * Graph::GetShortestPath(size_t i, size_t j)
+{
+
+    wxArrayInt * path = nullptr;
+
+	// in case we end reach the end of the path
+	if (i==j) {
+		path = new wxArrayInt();
+		path->Add(i);
+	}
+	else {
+		size_t offset_ij = MatrixOffset(i,j); 			
+		if (_predecessor_matrix[offset_ij]==MAX_VERTICES)
+            return nullptr;
+		
+		path = GetShortestPath(i, _predecessor_matrix[offset_ij]);
+
+		if (path)
+			path->Add(j);
+
+		return  path;
+	}
+			
+	return path;
+}
+
+/***
+* @desc detect if  istersection between 'p1' and 'p2' is only 'v'
+* @return true if v is only common point between p1 and p2, false otherwise
+*/
+bool Graph::IsOnlyCommonPointInPaths(size_t v, wxArrayInt * p1,  wxArrayInt * p2)
+{
+	size_t i, j;
+	size_t item_p1;
+	size_t item_p2;
+	bool v_exists_in_p1 = false;
+	bool v_exists_in_p2 = false;
+
+	for (i=0; i<p1->GetCount(); i++) {
+		item_p1 = p1->Item(i);
+
+		// checks if v exists in p1
+		v_exists_in_p1 |= (item_p1 == v);
+		
+		for (j=0; j<p2->GetCount();j++) {
+			item_p2 = p2->Item(j);
+		
+			if (item_p1 == item_p2 && item_p1 != v)
+				return false;
+
+			// checks if v exists in p2
+			v_exists_in_p2 |= (item_p2 == v);
+		}
+	}
+			
+	return v_exists_in_p2 && v_exists_in_p1;
+}
+
+
+/***
+* @desc detects of the cycle generated from initial point v using paths vx and vy is
+*       compliant eith the condition suggested  by Tierman
+* @see Tierman J., "An efficient search algorithm to find the elementary circuits of
+*       a Graph", Comm. ACM 13: 722-726, 1970
+*/
+bool Graph::IsTiermanCompliant(size_t v, wxArrayInt * path_vx, wxArrayInt * path_vy)
+{
+	size_t i;
+	size_t item_vx = path_vx->Item(0);
+	size_t item_vy = path_vy->Item(0);
+
+	// checks if both path start at 'v'
+	if (item_vx != v || item_vy != v)
+		return false;
+
+	// checks if a cycle only contains vertices that precede v 
+	for (i=1; i< path_vx->GetCount(); i++) {
+		item_vx = path_vx->Item(i);
+		if (item_vx<=v)
+			return false;
+	}
+	for (i=1; i< path_vy->GetCount(); i++) {
+		item_vy = path_vy->Item(i);
+		if (item_vy<=v)
+			return false;
+	}
+
+	return true;
+}
+
+
+#ifdef GRAPH_DEBUG
+
+/***
+* @desc writes the graph in the log
+*/
+void Graph::Log()
+{
+    printf("Graph:\n\tVertices: %d\n\tEdges: %d", GetVertexCount(), GetEdgeCount());
+	
+	size_t i,j, n;
+	wxString d, p;
+	for (i=0; i<GetVertexCount();i++) {		
+		for (j=0; j<GetVertexCount();j++) {			
+			d += wxString::Format("%u\t", _d_matrix[i*GetVertexCount()+j]);
+			p += wxString::Format("%u\t", _predecessor_matrix[i*GetVertexCount()+j]);
+		}
+		p += "\n";
+		d += "\n";
+	}
+	
+    printf("\n----------\n");
+    printf(d);
+    printf("\n----------\n");
+    printf(p);
+    printf("\n----------\n");
+	
+	p = "";
+	for (i=0; i<GetVertexCount();i++) 
+		for (j=i+1; j<GetVertexCount();j++){
+			wxArrayInt * path = GetShortestPath(i,j);
+			
+			if (path) {
+				for (n=0; n<path->GetCount(); n++)
+					p += wxString::Format("-%u", path->Item(n));
+
+				DELETE_ARRAY(path);
+			} else	
+				p += wxString::Format("no path from %d to %d exists.",i,j);
+			p += _("\n");	
+		}
+
+    printf(p);
+    printf("\n----------\n");
+	
+}
+#endif
