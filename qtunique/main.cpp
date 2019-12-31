@@ -13,7 +13,7 @@ ForwardIterator Myunique (ForwardIterator first, ForwardIterator last)
     if (first==last) return last;
 
     ForwardIterator result = first;
-    while (++first <= last)
+    while (++first < last)
     {
         if(*result == *first){
             /** 由于在这里已经到达last了，导致下一次加的时候就超过
@@ -30,9 +30,9 @@ ForwardIterator Myunique (ForwardIterator first, ForwardIterator last)
 //            qDebug()<<*first;
         }
         /** 最后一个数是不重复的 **/
-        if (first==last-1){
-            break;
-        }
+//        if (first==last-1){
+//            break;
+//        }
         /** 最后几个数是重复的 **/
         if (first==last){
             return result;
@@ -59,7 +59,7 @@ int main(int argc, char *argv[])
     MainWindow w;
     w.show();
 
-    vector<int> a ={1,2,3,3,4,5,5,6,7,8,8,8,9};
+    vector<int> a ={100,100,100,100,1,2,3,4,5,5,101,102};
     vector<int>::iterator it_1 = a.begin();
     vector<int>::iterator it_2 = a.end();
     vector<int>::iterator new_end;
