@@ -12,7 +12,7 @@
 /***
 * @desc contructor
 */
-PolygonDetection::Vertex::Vertex(size_t id)
+PolygonDetection::Vertex::Vertex(int id)
 {	
 	_id = id;	
 }

@@ -552,113 +552,113 @@ void Line2D::Rotate(double theta)
 /***
 * @desc writes the line in given image
 */
-bool Line2D::WriteImage(wxImage *dest, const wxColour &colour, double factor, double dx, double dy)
-{
-	if (!dest) return false;
+//bool Line2D::WriteImage(wxImage *dest, const wxColour &colour, double factor, double dx, double dy)
+//{
+//	if (!dest) return false;
 
-	int x1 = (int) ((_start_point.GetX()+dx)*factor);
-	int y1 = (int) ((_start_point.GetY()+dy)*factor);
+//	int x1 = (int) ((_start_point.GetX()+dx)*factor);
+//	int y1 = (int) ((_start_point.GetY()+dy)*factor);
 
-	int x2 = (int) ((_end_point.GetX()+dx)*factor);
-	int y2 = (int) ((_end_point.GetY()+dy)*factor);
+//	int x2 = (int) ((_end_point.GetX()+dx)*factor);
+//	int y2 = (int) ((_end_point.GetY()+dy)*factor);
 
-	return Bresenham(dest, x1, y1, x2, y2, colour);
+//	return Bresenham(dest, x1, y1, x2, y2, colour);
 	
-}
+//}
 
 /***
 * @desc writes the line using bresenham algorithm
 */
-bool Line2D::Bresenham(wxImage *dest, int x1, int y1, int x2, int y2, const wxColour &colour)
-{
-	if (!dest) return false;
+//bool Line2D::Bresenham(wxImage *dest, int x1, int y1, int x2, int y2, const wxColour &colour)
+//{
+//	if (!dest) return false;
 	
-	int xc[2];
-	int yc[2];
+//	int xc[2];
+//	int yc[2];
 	
-	xc[0] = y1<y2?x1:x2;
-	xc[1] = y1<y2?x2:x1;
-	yc[0] = y1<y2?y1:y2;
-	yc[1] = y1<y2?y2:y1; 
+//	xc[0] = y1<y2?x1:x2;
+//	xc[1] = y1<y2?x2:x1;
+//	yc[0] = y1<y2?y1:y2;
+//	yc[1] = y1<y2?y2:y1;
 	
-	int x[2], y[2], xx, yy,
-		d,    dx,   dy,   ince, incne, incy,
-		swap, tmp, i;
+//	int x[2], y[2], xx, yy,
+//		d,    dx,   dy,   ince, incne, incy,
+//		swap, tmp, i;
 	
-	/* computes xx and yy interval*/
-	dx = xc[1] - xc[0];
-	dy = yc[1] - yc[0];
+//	/* computes xx and yy interval*/
+//	dx = xc[1] - xc[0];
+//	dy = yc[1] - yc[0];
 	
-	/* swap x with y if interval in yy is bigger than in xx */
-	if ( abs( dx) >= abs( dy) ) { 
-		for( i=0; i<2; i++) { 
-			x[i] = xc[i];
-			y[i] = yc[i];
-		}
-		swap = 0;
-	} else { 
-		for( i=0; i<2; i++) { 
-			x[i] = yc[i];
-			y[i] = xc[i];
-		}
-		swap = 1;
-		tmp = dx;
-		dx  = dy;
-		dy  = tmp;
-	}
+//	/* swap x with y if interval in yy is bigger than in xx */
+//	if ( abs( dx) >= abs( dy) ) {
+//		for( i=0; i<2; i++) {
+//			x[i] = xc[i];
+//			y[i] = yc[i];
+//		}
+//		swap = 0;
+//	} else {
+//		for( i=0; i<2; i++) {
+//			x[i] = yc[i];
+//			y[i] = xc[i];
+//		}
+//		swap = 1;
+//		tmp = dx;
+//		dx  = dy;
+//		dy  = tmp;
+//	}
 	
-	/* Swap segment endpoints to make x variation positive */
-	if ( dx < 0 ) { 
-		tmp  = x[0];
-		x[0] = x[1];
-		x[1] = tmp;
-		tmp  = y[0];
-		y[0] = y[1];
-		y[1] = tmp;
-		dx   = -dx;
-		dy   = -dy;
-	}
+//	/* Swap segment endpoints to make x variation positive */
+//	if ( dx < 0 ) {
+//		tmp  = x[0];
+//		x[0] = x[1];
+//		x[1] = tmp;
+//		tmp  = y[0];
+//		y[0] = y[1];
+//		y[1] = tmp;
+//		dx   = -dx;
+//		dy   = -dy;
+//	}
 	
-	/* Prepares y increment according to dy signal and
-	assures that dy is positive */
-	if ( dy < 0 ) { 
-		incy = -1;
-		dy   = -dy;
-	} else incy = 1;
+//	/* Prepares y increment according to dy signal and
+//	assures that dy is positive */
+//	if ( dy < 0 ) {
+//		incy = -1;
+//		dy   = -dy;
+//	} else incy = 1;
 	
-	/* Assign initial values for Bresenham algorithm */
-	xx    = x[0];
-	yy    = y[0];
-	d     = 2 * dy - dx;
-	ince  = 2 * dy;
-	incne = 2 * (dy - dx);
+//	/* Assign initial values for Bresenham algorithm */
+//	xx    = x[0];
+//	yy    = y[0];
+//	d     = 2 * dy - dx;
+//	ince  = 2 * dy;
+//	incne = 2 * (dy - dx);
 	
-	/* Paints inicial point (attention to x and y swaping) */
-	if ( swap )
-		dest->SetRGB( yy, xx, colour.Red(), colour.Green(), colour.Blue());  
-    else
-		dest->SetRGB( xx, yy, colour.Red(), colour.Green(), colour.Blue());  
+//	/* Paints inicial point (attention to x and y swaping) */
+//	if ( swap )
+//		dest->SetRGB( yy, xx, colour.Red(), colour.Green(), colour.Blue());
+//    else
+//		dest->SetRGB( xx, yy, colour.Red(), colour.Green(), colour.Blue());
 	
-	/* Bresenham algorithm main cycle*/
-	while( xx < x[1] ) { 
-		if ( d <= 0  ) { 
-			d += ince;
-			xx++;
-		} else { 
-			d += incne;
-			xx++;
-			yy += incy;
-		}
+//	/* Bresenham algorithm main cycle*/
+//	while( xx < x[1] ) {
+//		if ( d <= 0  ) {
+//			d += ince;
+//			xx++;
+//		} else {
+//			d += incne;
+//			xx++;
+//			yy += incy;
+//		}
 	
-		/* Paints computed point (attention to x and y swaping) */
-		if ( swap )
-			dest->SetRGB( yy, xx, colour.Red(), colour.Green(), colour.Blue());  
-		else
-			dest->SetRGB( xx, yy, colour.Red(), colour.Green(), colour.Blue());  
-	}
+//		/* Paints computed point (attention to x and y swaping) */
+//		if ( swap )
+//			dest->SetRGB( yy, xx, colour.Red(), colour.Green(), colour.Blue());
+//		else
+//			dest->SetRGB( xx, yy, colour.Red(), colour.Green(), colour.Blue());
+//	}
 	
-	return true;
-}
+//	return true;
+//}
 
 /***
 * @desc computes the Minkowski Sum of this line

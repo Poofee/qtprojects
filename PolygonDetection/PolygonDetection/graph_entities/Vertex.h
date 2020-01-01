@@ -41,11 +41,11 @@ namespace PolygonDetection {
 	class Vertex
 	{
 	public:		
-		Vertex(size_t id);
+		Vertex(int id);
 		virtual ~Vertex();
 
 	private:
-		size_t _id;
+		int _id;
 	// 	EdgeList * _edge_list;
 	};
 }

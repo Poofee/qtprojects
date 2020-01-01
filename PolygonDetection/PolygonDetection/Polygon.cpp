@@ -8,5 +8,5 @@ Polygon::Polygon(void) : GraphicalPrimitives2D::Polygon2D()
 
 Polygon::~Polygon(void)
 {
-	GraphicalPrimitives2D::Polygon2D::~Polygon2D();
+    GraphicalPrimitives2D::Polygon2D::~Polygon2D();
 }

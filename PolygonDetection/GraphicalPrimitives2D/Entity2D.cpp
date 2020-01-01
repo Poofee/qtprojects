@@ -5,11 +5,11 @@
 
 #include "./GPMacros.h"
 
-#include <wx/arrimpl.cpp> 
+//#include <wx/arrimpl.cpp>
 
 using namespace GraphicalPrimitives2D;
 
-WX_DEFINE_OBJARRAY(EntityArray);
+//WX_DEFINE_OBJARRAY(EntityArray);
 
 /***
 * @desc constructor
@@ -85,9 +85,9 @@ double Entity2D::Area(Point2D *a, Point2D *b, Point2D *c)
 // /***
 // * @return a string containing the text with the type name of the entity
 // */
-// wxString Entity2D::Name(entity_type et)
+// QString Entity2D::Name(entity_type et)
 // {
-//     static wxString name[] = {
+//     static QString name[] = {
 //         "Point",
 //         "Line",
 //         "Polyline",

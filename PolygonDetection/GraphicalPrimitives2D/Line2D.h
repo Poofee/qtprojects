@@ -5,8 +5,8 @@
 
 #include "Point2D.h"	// Added by ClassView
 
-#include <wx/image.h>
-#include <wx/colour.h>
+//#include <wx/image.h>
+//#include <wx/colour.h>
 
 namespace GraphicalPrimitives2D {
 	 class Polygon2D; // forward declaration because of 'Minkowsky Sum'
@@ -14,7 +14,7 @@ namespace GraphicalPrimitives2D {
 	class Line2D : public Entity2D 
 	{
 	public:
-		bool WriteImage(wxImage *dest, const wxColour &colour=*wxBLACK, double factor=1.0, double dx=0.0, double dy=0.);
+//		bool WriteImage(wxImage *dest, const wxColour &colour=*wxBLACK, double factor=1.0, double dx=0.0, double dy=0.);
 		Line2D(double x1, double y1, double x2, double y2);
 		
 		virtual void Rotate(double theta);
@@ -25,14 +25,14 @@ namespace GraphicalPrimitives2D {
 		static double Distance(Point2D *endpoint_1, Point2D *endpoint_2, Point2D * p, Point2D * nearest_point = nullptr);
 		inline double Distance(Point2D * p, Point2D * nearest_point=nullptr);
 		
-		inline bool Contains(Point2D *point) { return Contains(this, point); };;
+        inline bool Contains(Point2D *point) { return Contains(this, point); }
 		static bool Contains(Line2D * line, Point2D *point);
-		inline bool Contains(Line2D * line) { return Contains(this, line); };
+        inline bool Contains(Line2D * line) { return Contains(this, line); }
 		static bool Contains(Line2D *line_1, Line2D * line_2);
 
-		inline bool StrictContains(Point2D *point) { return StrictContains(this, point); };;
+        inline bool StrictContains(Point2D *point) { return StrictContains(this, point); }
 		static bool StrictContains(Line2D * line, Point2D *point);
-		inline bool StrictContains(Line2D * line) { return StrictContains(this, line); };
+        inline bool StrictContains(Line2D * line) { return StrictContains(this, line); }
 		static bool StrictContains(Line2D *line_1, Line2D * line_2);
 
 		static Line2D * SimplifiedLine( Line2D * line_1, Line2D * line_2);
@@ -70,7 +70,7 @@ namespace GraphicalPrimitives2D {
 		double GetMinY(void);
 
 	private:
-		static bool Bresenham(wxImage *dest, int x1, int y1, int x2, int y2, const wxColour &colour);
+//		static bool Bresenham(wxImage *dest, int x1, int y1, int x2, int y2, const wxColour &colour);
 		Point2D _start_point;
 		Point2D _end_point;
 	};

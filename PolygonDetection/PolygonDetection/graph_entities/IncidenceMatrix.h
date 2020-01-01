@@ -38,7 +38,7 @@
 #include <wx/dynarray.h>
 
 namespace PolygonDetection {
-	WX_DECLARE_OBJARRAY(Edge *, EdgeArray);
+typedef QVector<Edge *> EdgeArray;
 
 	class IncidenceMatrix
 	{
@@ -53,9 +53,9 @@ namespace PolygonDetection {
 		virtual ~IncidenceMatrix();
 
 	private:
-		size_t GetEdgeNumber( size_t vertex_a, size_t vertex_b);
-		size_t _edge_count;
-		size_t _independent_cycle_count;
+		int GetEdgeNumber( int vertex_a, int vertex_b);
+		int _edge_count;
+		int _independent_cycle_count;
 
 		MatrixModuloTwo * _p_incidence_matrix;
 

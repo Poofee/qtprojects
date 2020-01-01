@@ -35,23 +35,23 @@ namespace PolygonDetection {
 	class Edge
 	{
 	public:		
-		inline bool Equals(size_t vertex_a, size_t vertex_b) {
+		inline bool Equals(int vertex_a, int vertex_b) {
 			return (vertex_a==_vertex_a && vertex_b==_vertex_b) || 
 				(vertex_a==_vertex_b && vertex_b==_vertex_a); 
 		};
-		inline size_t GetId() { return _id; };
-		inline void SetVertices(size_t vertex_a, size_t vertex_b) {
+		inline int GetId() { return _id; };
+		inline void SetVertices(int vertex_a, int vertex_b) {
 			_vertex_a = vertex_a;
 			_vertex_b = vertex_b;
 		};
-		Edge(size_t id);
+		Edge(int id);
 		virtual ~Edge();
 
 	private:
-		size_t _id;
+		int _id;
 
-		size_t _vertex_a;
-		size_t _vertex_b;
+		int _vertex_a;
+		int _vertex_b;
 
 	};
 }

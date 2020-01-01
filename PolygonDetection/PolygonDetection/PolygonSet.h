@@ -1,42 +1,42 @@
 #pragma once
 
-#include "./Polygon.h"
+#include "./polygon.h"
 #include "./graph_entities/Graph.h"
 #include "LineSet.h"
 
 namespace PolygonDetection {
 
-	WX_DECLARE_OBJARRAY(Polygon*, PolygonsArray);
+typedef QVector<Polygon*> PolygonsArray;
 
-	class PolygonSet
-	{
-	public:
-		PolygonSet(void);
-		~PolygonSet(void);
-		// Constructs a polygon set from given line set
-		bool Construct(LineSet * line_set);
+class PolygonSet
+{
+public:
+    PolygonSet(void);
+    ~PolygonSet(void);
+    // Constructs a polygon set from given line set
+    bool Construct(LineSet * line_set);
 
-		// Simplifies the polygon set
-		void Simplify(double smaller_polygon_length);
+    // Simplifies the polygon set
+    void Simplify(double smaller_polygon_length);
 
-		inline size_t GetCount() { return _polygons_array.GetCount(); };
-		inline Polygon * Item(size_t i) { return _polygons_array.Item(i); };
+    inline int size() { return _polygons_array.size(); }
+    inline Polygon * Item(int i) { return _polygons_array.at(i); }
 
-		void Clear(void);
+    void Clear(void);
 
-	private:
-		void CreatePointsArray(LineSet * line_set);
-		Graph * LinesToGraph(LineSet * line_set);
-		void CyclesToPolygons(CycleSet * cycle_set);
+private:
+    void CreatePointsArray(LineSet * line_set);
+    Graph * LinesToGraph(LineSet * line_set);
+    void CyclesToPolygons(CycleSet * cycle_set);
 
-		size_t GetPointCount();
-		GraphicalPrimitives2D::Point2D * PointByID(size_t id);
+    int GetPointCount();
+    GraphicalPrimitives2D::Point2D * PointByID(int id);
 
-		GraphicalPrimitives2D::PointArray _all_points_array;
-		PolygonsArray _polygons_array;
+    GraphicalPrimitives2D::PointArray _all_points_array;
+    PolygonsArray _polygons_array;
 
-	public:
-		// Returns a string with the SVG containing the polygon set
-		wxString AsSVG(bool colorized=false);
-	};
+public:
+    // Returns a string with the SVG containing the polygon set
+    QString AsSVG(bool colorized=false);
+};
 }

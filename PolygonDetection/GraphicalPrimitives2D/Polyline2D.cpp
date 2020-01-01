@@ -4,9 +4,6 @@
 #include "Point2D.h"
 #include "./GPMacros.h"
 
-#include <wx/log.h>
-#include <wx/string.h>
-
 #include <math.h> // because of sqrt
 
 using namespace GraphicalPrimitives2D;
@@ -16,40 +13,40 @@ using namespace GraphicalPrimitives2D;
 */
 Polyline2D::Polyline2D() : Entity2D(Entity2D::et_polyline)
 {
-    _closed=false; 
+    _closed=false;
     _length=0.0f;
     _p_bounding_box = nullptr;
-	CalculateFirstAndLastPoint();
-	
+    CalculateFirstAndLastPoint();
+
 }
 
 /***
 * @desc constructor 
 */
 Polyline2D::Polyline2D(entity_type type ) : 
-	Entity2D(type)
+    Entity2D(type)
 {
-	_length = 0.0f;
-	_p_bounding_box = nullptr;
-	CalculateFirstAndLastPoint();
+    _length = 0.0f;
+    _p_bounding_box = nullptr;
+    CalculateFirstAndLastPoint();
 }
 
 /***
 * @desc constructor 
 */
 Polyline2D::Polyline2D(Line2D * line ) : 
-	Entity2D(Entity2D::et_polyline)
+    Entity2D(Entity2D::et_polyline)
 {
-	_closed = false;
-	_length = 0.0f;
-	_p_bounding_box = nullptr;
+    _closed = false;
+    _length = 0.0f;
+    _p_bounding_box = nullptr;
 
-	if (line) {
-		AddVertex(new Point2D(line->GetStartPoint()));
-		AddVertex(new Point2D(line->GetEndPoint()));
-	}
+    if (line) {
+        AddVertex(new Point2D(line->GetStartPoint()));
+        AddVertex(new Point2D(line->GetEndPoint()));
+    }
 
-	CalculateFirstAndLastPoint();
+    CalculateFirstAndLastPoint();
 }
 
 /***
@@ -57,29 +54,29 @@ Polyline2D::Polyline2D(Line2D * line ) :
 * @note duplicates the polylines (including all verteices)
 */
 Polyline2D::Polyline2D(Polyline2D * polyline ) : 
-	Entity2D(Entity2D::et_polyline)
+    Entity2D(Entity2D::et_polyline)
 {
-	_closed = false;
-	_length = 0.0f;
-	_p_bounding_box = nullptr;
+    _closed = false;
+    _length = 0.0f;
+    _p_bounding_box = nullptr;
 
-	if (polyline) 
-		for (size_t i=0; i<polyline->GetVertexCount();i++) 
-			AddVertex(new Point2D(polyline->GetVertexAt(i)));
+    if (polyline)
+        for (int i=0; i<polyline->GetVertexCount();i++)
+            AddVertex(new Point2D(polyline->GetVertexAt(i)));
 
-	CalculateFirstAndLastPoint();
+    CalculateFirstAndLastPoint();
 }
 
-	
+
 
 /***
 * @desc destructor
 */
 Polyline2D::~Polyline2D()
 {	
-	DELETE_OBJECT(_p_bounding_box);	
+    DELETE_OBJECT(_p_bounding_box);
     WX_CLEAR_ARRAY(_vertex_array);
-	_vertex_array.Clear();
+    _vertex_array.clear();
 }
 
 /***
@@ -88,60 +85,60 @@ Polyline2D::~Polyline2D()
 * @note will be stored a pointer to the point passed on
 *       a vertex list, but this class DELETES the point
 */
-bool Polyline2D::AddVertex(Point2D *vertex, short flag, size_t pos)
+bool Polyline2D::AddVertex(Point2D *vertex, short flag, int pos)
 {
-	if (vertex) {
+    if (vertex) {
 
-		// check if in case of middle insertion the position given is
-		// at the begin or at the end of the polyline
-		if CHECK_FLAG(flag, AT_MIDDLE)  {
-			if (pos>=_vertex_array.GetCount())
-				flag = AT_END;
-			
-			if (pos==0u)
-				flag = AT_BEGIN;
-		}
+        // check if in case of middle insertion the position given is
+        // at the begin or at the end of the polyline
+        if CHECK_FLAG(flag, AT_MIDDLE)  {
+            if (pos>=_vertex_array.size())
+                flag = AT_END;
 
-		if (_vertex_array.GetCount() >0) {
-			
-			// calculates the length of the line if vertex added at begin or end
-			if (CHECK_FLAG(flag,AT_END)||CHECK_FLAG(flag,AT_BEGIN)) {
-				Point2D * previous = CHECK_FLAG(flag,AT_END)?_vertex_array.Last():_vertex_array[0];
-			
-				if (previous)
-					_length += previous->DistanceTo(vertex);
-			}
+            if (pos==0u)
+                flag = AT_BEGIN;
+        }
 
-			if (CHECK_FLAG(flag,AT_MIDDLE)) {
-				Point2D * previous = _vertex_array[pos-1];
-				Point2D * next = _vertex_array[pos];
+        if (_vertex_array.size() >0) {
 
-				if (previous && next) {
-					_length -= previous->DistanceTo(next);
-					_length += vertex->DistanceTo(previous);
-					_length += vertex->DistanceTo(next);
-				}
-			}
+            // calculates the length of the line if vertex added at begin or end
+            if (CHECK_FLAG(flag,AT_END)||CHECK_FLAG(flag,AT_BEGIN)) {
+                Point2D * previous = CHECK_FLAG(flag,AT_END)?_vertex_array.last():_vertex_array[0];
 
-		}
-		vertex->SetOwnerEntity(this);
-		
-		if CHECK_FLAG(flag, AT_END)
-			_vertex_array.Add(vertex);
-		
-		if CHECK_FLAG(flag, AT_BEGIN)
-			_vertex_array.Insert(vertex, 0u);
+                if (previous)
+                    _length += previous->DistanceTo(vertex);
+            }
 
-		if CHECK_FLAG(flag, AT_MIDDLE)
-			_vertex_array.Insert(vertex, pos);
-		
-		// when a vertex is added it will be needed to recalculate the 
-		// bounding box
-		DELETE_OBJECT( _p_bounding_box );
-		return true;
-	}
-	
-	return false;
+            if (CHECK_FLAG(flag,AT_MIDDLE)) {
+                Point2D * previous = _vertex_array[pos-1];
+                Point2D * next = _vertex_array[pos];
+
+                if (previous && next) {
+                    _length -= previous->DistanceTo(next);
+                    _length += vertex->DistanceTo(previous);
+                    _length += vertex->DistanceTo(next);
+                }
+            }
+
+        }
+        vertex->SetOwnerEntity(this);
+
+        if CHECK_FLAG(flag, AT_END)
+                _vertex_array.append(vertex);
+
+        if CHECK_FLAG(flag, AT_BEGIN)
+                _vertex_array.insert(0,vertex);
+
+        if CHECK_FLAG(flag, AT_MIDDLE)
+                _vertex_array.insert(pos,vertex);
+
+        // when a vertex is added it will be needed to recalculate the
+        // bounding box
+        DELETE_OBJECT( _p_bounding_box );
+        return true;
+    }
+
+    return false;
 }
 
 /***
@@ -149,49 +146,49 @@ bool Polyline2D::AddVertex(Point2D *vertex, short flag, size_t pos)
 */
 void Polyline2D::CalculateBoundingBox()
 {
-	
-	// if bounding box already exists it will not calculate
-	if (_p_bounding_box)
-		return;
-	
-	// a bounding box must have more than two vertices
-	if (_vertex_array.GetCount()<2) 
-		return;
-	
-	double min_x=0.0f, max_x=0.0f, x;  
-	double min_y=0.0f, max_y=0.0f, y;  
-	Point2D *vertex;
-	bool first=true;  
-	
-	for (size_t i=0; i<_vertex_array.GetCount(); i++)
-	{
-		vertex = _vertex_array[i];    
-		
-		x=vertex->GetX();
-		y=vertex->GetY();
-		
-		if (first) {
-			first = false;
-			min_x=max_x=x;
-			min_y=max_y=y;
-		} else {      
-			min_x=MIN(min_x,x);
-			min_y=MIN(min_y,y);
-			
-			max_x=MAX(max_x,x);
-			max_y=MAX(max_y,y);
-		}    
-	}
-	
-	DELETE_OBJECT(_p_bounding_box)
-		
-		Point2D start_point(min_x, min_y);
-	
-	_p_bounding_box = new Box2D(
-		start_point, 
-		Vector2D(start_point, max_x-min_x, 0), 
-		Vector2D(start_point, 0, max_y-min_y) 
-		);
+
+    // if bounding box already exists it will not calculate
+    if (_p_bounding_box)
+        return;
+
+    // a bounding box must have more than two vertices
+    if (_vertex_array.size()<2)
+        return;
+
+    double min_x=0.0f, max_x=0.0f, x;
+    double min_y=0.0f, max_y=0.0f, y;
+    Point2D *vertex;
+    bool first=true;
+
+    for (int i=0; i<_vertex_array.size(); i++)
+    {
+        vertex = _vertex_array[i];
+
+        x=vertex->GetX();
+        y=vertex->GetY();
+
+        if (first) {
+            first = false;
+            min_x=max_x=x;
+            min_y=max_y=y;
+        } else {
+            min_x=MIN(min_x,x);
+            min_y=MIN(min_y,y);
+
+            max_x=MAX(max_x,x);
+            max_y=MAX(max_y,y);
+        }
+    }
+
+    DELETE_OBJECT(_p_bounding_box)
+
+            Point2D start_point(min_x, min_y);
+
+    _p_bounding_box = new Box2D(
+                start_point,
+                Vector2D(start_point, max_x-min_x, 0),
+                Vector2D(start_point, 0, max_y-min_y)
+                );
 }
 
 
@@ -202,43 +199,43 @@ void Polyline2D::CalculateBoundingBox()
 void Polyline2D::CalculateFirstAndLastPoint()
 {
     // if there are only one vertex it is not a polyline
-    if (_vertex_array.GetCount()<2){     
-		if (_vertex_array.GetCount()>0){ 
-			SetFirstPoint(_vertex_array[0]);		
-			SetLastPoint(_vertex_array[0]);		
-		}
+    if (_vertex_array.size()<2){
+        if (_vertex_array.size()>0){
+            SetFirstPoint(_vertex_array[0]);
+            SetLastPoint(_vertex_array[0]);
+        }
         return;
-	}
-	
-    // let's see first if the polyline is closed, ie. is a polygon	
-    _closed |= (((Point2D) (*_vertex_array[0])) == ((Point2D)(*_vertex_array.Last())));	
-	
+    }
+
+    // let's see first if the polyline is closed, ie. is a polygon
+    _closed |= (((Point2D) (*_vertex_array[0])) == ((Point2D)(*_vertex_array.last())));
+
     if (_closed) {
-		// the case of the closed polyline
-		// here we're going to find the first point by seeing them all		
-		Point2D *vertex=nullptr, *first_vertex=_vertex_array[0];
-		
-		
-		for (size_t i=1; i<_vertex_array.GetCount(); i++)
-		{
-			vertex = _vertex_array[i];
-			
-			if (!Point2D::Ordered(first_vertex,vertex))				
-				first_vertex = vertex;
-			
-		}
-		
-		if (first_vertex) {
-			SetFirstPoint(first_vertex);
-			// in a closed polyline the first and last point coincide
-			SetLastPoint(vertex);
-		}
-		
+        // the case of the closed polyline
+        // here we're going to find the first point by seeing them all
+        Point2D *vertex=nullptr, *first_vertex=_vertex_array[0];
+
+
+        for (int i=1; i<_vertex_array.size(); i++)
+        {
+            vertex = _vertex_array[i];
+
+            if (!Point2D::Ordered(first_vertex,vertex))
+                first_vertex = vertex;
+
+        }
+
+        if (first_vertex) {
+            SetFirstPoint(first_vertex);
+            // in a closed polyline the first and last point coincide
+            SetLastPoint(vertex);
+        }
+
     } else {
         // case the polyline is not closed, just consider the
         // extremities
-		SetFirstPoint(_vertex_array[0]);
-		SetLastPoint(_vertex_array.Last());
+        SetFirstPoint(_vertex_array[0]);
+        SetLastPoint(_vertex_array.last());
     }
 }
 
@@ -262,29 +259,29 @@ void Polyline2D::CalculateFirstAndLastPoint()
 */
 Point2D * Polyline2D::GetOtherPoint(Point2D *p)
 {
-	if (_vertex_array.Count()<2)
-		return nullptr;
-	
-	if ((*p)==(*GetFirstVertex()))
-		return GetLastVertex();
-	
-	if ((*p)==(*GetLastVertex()))
-		return GetFirstVertex();
-	
-	return nullptr;
+    if (_vertex_array.size()<2)
+        return nullptr;
+
+    if ((*p)==(*GetFirstVertex()))
+        return GetLastVertex();
+
+    if ((*p)==(*GetLastVertex()))
+        return GetFirstVertex();
+
+    return nullptr;
 }
 
 Point2D * Polyline2D::PointAt(double x, double y)
 {
-	if (x == GetFirstVertex()->GetX() && y == GetFirstVertex()->GetY()) {
-		return GetFirstVertex();
-	}
-	
-	if (x == GetLastVertex()->GetX() && y == GetLastVertex()->GetY()) {
-		return GetLastVertex();
-	}
-	
-	return nullptr;
+    if (x == GetFirstVertex()->GetX() && y == GetFirstVertex()->GetY()) {
+        return GetFirstVertex();
+    }
+
+    if (x == GetLastVertex()->GetX() && y == GetLastVertex()->GetY()) {
+        return GetLastVertex();
+    }
+
+    return nullptr;
 }
 
 /***
@@ -296,30 +293,30 @@ void Polyline2D::AddPolyline(Polyline2D *pl)
     // if pl is not defined does nothing
     if (!pl)
         return;
-	
+
     // forces first and last point calculations
     pl->CalculateFirstAndLastPoint();
     CalculateFirstAndLastPoint();
-	
+
     // simple cases
-    if (_vertex_array.GetCount()==0) {
-		ExecuteJoin(pl);
-		return;
-    }
-	
-    if (pl->_vertex_array.GetCount()==0)
+    if (_vertex_array.size()==0) {
+        ExecuteJoin(pl);
         return;
-	
+    }
+
+    if (pl->_vertex_array.size()==0)
+        return;
+
     Point2D * this_polyline_first_vertex = GetFirstVertex();
     Point2D * other_polyline_first_vertex = pl->GetFirstVertex();
-	
+
     Point2D * this_polyline_last_vertex = GetLastVertex();
-	Point2D * other_polyline_last_vertex = pl->GetLastVertex();
-	
+    Point2D * other_polyline_last_vertex = pl->GetLastVertex();
+
     // NOTE: the case of coincident extremities is treated by 'ExecuteJoin()'
-	
+
     if ( (*this_polyline_last_vertex)==(*other_polyline_first_vertex)){
-        ExecuteJoin(pl, NORMAL_ORDER | AT_END);		
+        ExecuteJoin(pl, NORMAL_ORDER | AT_END);
         return;
     }
     
@@ -327,12 +324,12 @@ void Polyline2D::AddPolyline(Polyline2D *pl)
         ExecuteJoin(pl, NORMAL_ORDER | AT_BEGIN);
         return;
     }
-	
+
     if ( (*this_polyline_last_vertex)==(*other_polyline_last_vertex) ){
-        ExecuteJoin(pl, INVERSE_ORDER | AT_END);		
+        ExecuteJoin(pl, INVERSE_ORDER | AT_END);
         return;
     }
-	
+
     if ( (*this_polyline_first_vertex)==(*other_polyline_first_vertex)){
         ExecuteJoin(pl, INVERSE_ORDER | AT_BEGIN);
         return;
@@ -348,12 +345,12 @@ Polyline2D * Polyline2D::Join(Polyline2D *polyline1, Polyline2D *polyline2)
 {
     if (!polyline1 || !polyline2)
         return nullptr;
-	
+
     Polyline2D * pl = new Polyline2D();
-	
+
     pl->AddPolyline(polyline1);
     pl->AddPolyline(polyline2);
-	
+
     return pl;
 }
 
@@ -361,12 +358,12 @@ Polyline2D * Polyline2D::Join(Polyline2D *polyline1, Polyline2D *polyline2)
 void Polyline2D::ExecuteJoin(Polyline2D *pl, short flags)
 {
     Point2D * p;
-    size_t i = 0, count = pl->GetVertexCount();	
-	
+    int i = 0, count = pl->GetVertexCount();
+
     
-    // skips the first vertex, if necessary    
-    if (pl->GetVertexCount()>0 && GetVertexCount()>0) {        
-        if (CHECK_FLAG(flags, INVERSE_ORDER)) {            
+    // skips the first vertex, if necessary
+    if (pl->GetVertexCount()>0 && GetVertexCount()>0) {
+        if (CHECK_FLAG(flags, INVERSE_ORDER)) {
             if ( ((*(pl->GetLastVertex())) == (*GetLastVertex())) || ((*(pl->GetFirstVertex())) == (*GetFirstVertex())))
                 i++;
         } else {
@@ -374,20 +371,20 @@ void Polyline2D::ExecuteJoin(Polyline2D *pl, short flags)
                 i++;
         }
     }
-	
+
     for( ; i<count; i++)
         if (CHECK_FLAG(flags, AT_END)) {
-            p = new Point2D(pl->_vertex_array[CHECK_FLAG(flags, INVERSE_ORDER)?count-i-1:i]);        
+            p = new Point2D(pl->_vertex_array[CHECK_FLAG(flags, INVERSE_ORDER)?count-i-1:i]);
             AddVertex(p, AT_END);
-        } else 
+        } else
             if (CHECK_FLAG(flags, AT_BEGIN)){
-                p = new Point2D(pl->_vertex_array[CHECK_FLAG(flags, INVERSE_ORDER)?i:count-i-1]);                    
+                p = new Point2D(pl->_vertex_array[CHECK_FLAG(flags, INVERSE_ORDER)?i:count-i-1]);
                 AddVertex(p, AT_BEGIN);
             }
-			
-			// recalculates the first and last point
-			CalculateFirstAndLastPoint();
-			
+
+    // recalculates the first and last point
+    CalculateFirstAndLastPoint();
+
 }
 
 /***
@@ -395,12 +392,12 @@ void Polyline2D::ExecuteJoin(Polyline2D *pl, short flags)
 */
 void Polyline2D::PerformRounding(double gamma)
 {
-	Point2D * p;
+    Point2D * p;
 
-	for (size_t i=0; i<_vertex_array.GetCount();i++) {
-		p = _vertex_array[i];
-		p->PerformRounding(gamma);
-	}
+    for (int i=0; i<_vertex_array.size();i++) {
+        p = _vertex_array[i];
+        p->PerformRounding(gamma);
+    }
 }
 
 /***
@@ -408,36 +405,36 @@ void Polyline2D::PerformRounding(double gamma)
 */
 void Polyline2D::Simplify()
 {
-	size_t vertex_count = _vertex_array.GetCount();	
+    int vertex_count = _vertex_array.size();
 
-	// simplify just makes sense when the polyline have more than two vertices
-	if (vertex_count>2) {
+    // simplify just makes sense when the polyline have more than two vertices
+    if (vertex_count>2) {
 
-		size_t p1_index = IsClosed()?vertex_count-2:0;
-		size_t p2_index = p1_index+1;
+        int p1_index = IsClosed()?vertex_count-2:0;
+        int p2_index = p1_index+1;
 
-		Point2D * point;
-		
-		for (size_t p3_index=IsClosed()?0:2;p3_index<vertex_count; p3_index++) {
-			
-			// see if three points are collinear
-			if (_vertex_array[p3_index]->Collinear(_vertex_array[p1_index],_vertex_array[p2_index])) {
+        Point2D * point;
 
-				// in case they were, remove the middle one				
-				point = _vertex_array[p2_index];				
-				_vertex_array.RemoveAt(p2_index);
-				DELETE_OBJECT(point);
-				vertex_count--;
+        for (int p3_index=IsClosed()?0:2;p3_index<vertex_count; p3_index++) {
 
-				if (p2_index<p3_index) p3_index--;
+            // see if three points are collinear
+            if (_vertex_array[p3_index]->Collinear(_vertex_array[p1_index],_vertex_array[p2_index])) {
+
+                // in case they were, remove the middle one
+                point = _vertex_array[p2_index];
+                _vertex_array.removeAt(p2_index);
+                DELETE_OBJECT(point);
+                vertex_count--;
+
+                if (p2_index<p3_index) p3_index--;
                 if (p2_index<p1_index) p1_index--;
                 
-			} else {
-				p1_index = p2_index;
-			}
-			p2_index = p3_index;
-		}
-	}
+            } else {
+                p1_index = p2_index;
+            }
+            p2_index = p3_index;
+        }
+    }
 }
 
 /***
@@ -447,30 +444,30 @@ void Polyline2D::Simplify()
 void Polyline2D::VertexReduction(double tolerance)
 {
 
-	double squared_tolerance = SQR(tolerance);
+    double squared_tolerance = SQR(tolerance);
 
-	Point2D * current_vertex;
-	Point2D * previous_vertex=nullptr;
-	size_t n, count = _vertex_array.GetCount();
+    Point2D * current_vertex;
+    Point2D * previous_vertex=nullptr;
+    int n, count = _vertex_array.size();
 
-	// checks if polyline is not empty
-	if (count>0) {
-		previous_vertex = _vertex_array[count-1];
-	
-		// starts from second vertex
-		for (size_t i=1; i<count-1; i++) {
-			n = count-i-1;
-			current_vertex = _vertex_array[n];
+    // checks if polyline is not empty
+    if (count>0) {
+        previous_vertex = _vertex_array[count-1];
 
-			// see if consecutive points are clustered too closely
-			if (previous_vertex->SquareDistanceTo(current_vertex)<squared_tolerance) {
-				// remove unnecessary vertices
-				_vertex_array.RemoveAt(n);
-				DELETE_OBJECT(current_vertex);
-			} else 
-				previous_vertex = current_vertex;
-		}
-	}
+        // starts from second vertex
+        for (int i=1; i<count-1; i++) {
+            n = count-i-1;
+            current_vertex = _vertex_array[n];
+
+            // see if consecutive points are clustered too closely
+            if (previous_vertex->SquareDistanceTo(current_vertex)<squared_tolerance) {
+                // remove unnecessary vertices
+                _vertex_array.removeAt(n);
+                DELETE_OBJECT(current_vertex);
+            } else
+                previous_vertex = current_vertex;
+        }
+    }
 }
 
 /***
@@ -479,49 +476,49 @@ void Polyline2D::VertexReduction(double tolerance)
 *    of points required to represent a digitized line or its caricature", The 
 *    Canadian Cartographer 10(2), pp. 112-122 (1973)
 */
-void Polyline2D::DouglasPeucker(double tolerance, size_t start_index, size_t end_index)
+void Polyline2D::DouglasPeucker(double tolerance, int start_index, int end_index)
 {
-	// see if there are vertices in between that can be used in simplification
-	if (start_index>=end_index)
-		// nothing else to simplify: stop recursion
-		return;
+    // see if there are vertices in between that can be used in simplification
+    if (start_index>=end_index)
+        // nothing else to simplify: stop recursion
+        return;
 
-	if (end_index>=_vertex_array.GetCount()) 
-		// wrong indices
-		return;
+    if (end_index>=_vertex_array.size())
+        // wrong indices
+        return;
 
-	// lets start by finding the farthest point from line segment
-	double maximum_distance=0.0f;
-	double current_distance=0.0f;
-	size_t maximum_index = start_index+1;
+    // lets start by finding the farthest point from line segment
+    double maximum_distance=0.0f;
+    double current_distance=0.0f;
+    int maximum_index = start_index+1;
 
-	// sweep all points...
-	for (size_t i=start_index+1; i<end_index; i++) {
-		current_distance = Line2D::Distance(
-			GetVertexAt(start_index),
-			GetVertexAt(end_index), 
-			GetVertexAt(i));
+    // sweep all points...
+    for (int i=start_index+1; i<end_index; i++) {
+        current_distance = Line2D::Distance(
+                    GetVertexAt(start_index),
+                    GetVertexAt(end_index),
+                    GetVertexAt(i));
 
-		if (current_distance>maximum_distance) {
-			maximum_distance = current_distance;
-			maximum_index = i;
-		}
-	}
+        if (current_distance>maximum_distance) {
+            maximum_distance = current_distance;
+            maximum_index = i;
+        }
+    }
 
-	// and here we have the index of the farthest point and its distance to
-	// selected line segment
-	
-	// now lets see if the distance is bigger than tolerance
-	if (maximum_distance>tolerance) {
-		
-		// in this case lets split the polyline at the farthest vertex
-		DouglasPeucker(tolerance, start_index, maximum_index);
-		DouglasPeucker(tolerance, maximum_index, end_index);
-		
-		// flag the vertex to avoid later removal
-		GetVertexAt(maximum_index)->SetFlag(FLAG_KEEP);
+    // and here we have the index of the farthest point and its distance to
+    // selected line segment
 
-	}
+    // now lets see if the distance is bigger than tolerance
+    if (maximum_distance>tolerance) {
+
+        // in this case lets split the polyline at the farthest vertex
+        DouglasPeucker(tolerance, start_index, maximum_index);
+        DouglasPeucker(tolerance, maximum_index, end_index);
+
+        // flag the vertex to avoid later removal
+        GetVertexAt(maximum_index)->SetFlag(FLAG_KEEP);
+
+    }
 
 }
 
@@ -531,27 +528,27 @@ void Polyline2D::DouglasPeucker(double tolerance, size_t start_index, size_t end
 void Polyline2D::Simplify(double tolerance)
 {	
 
-	DouglasPeucker(tolerance, 0, _vertex_array.GetCount()-1);
+    DouglasPeucker(tolerance, 0, _vertex_array.size()-1);
 
-	Point2D * vertex;
+    Point2D * vertex;
 
-	// flags first and last vertex
-	//vertex = GetFirstVertex();
-	//if (vertex) vertex->SetFlag(FLAG_KEEP);
+    // flags first and last vertex
+    //vertex = GetFirstVertex();
+    //if (vertex) vertex->SetFlag(FLAG_KEEP);
 
-	//vertex = GetLastVertex();
-	//if (vertex) vertex->SetFlag(FLAG_KEEP);
+    //vertex = GetLastVertex();
+    //if (vertex) vertex->SetFlag(FLAG_KEEP);
 
-	// if the vertex array have more than two vertices
-	if (_vertex_array.GetCount()>2) 
-		// removes unflagged vertices
-		for (size_t i=_vertex_array.GetCount()-2; i>0;i--) 
-			//--i;
-			if (!_vertex_array[i]->GetFlag(FLAG_KEEP)) {
-				vertex = _vertex_array[i];
-				_vertex_array.RemoveAt(i); 
-				DELETE_OBJECT(vertex);
-			}
+    // if the vertex array have more than two vertices
+    if (_vertex_array.size()>2)
+        // removes unflagged vertices
+        for (int i=_vertex_array.size()-2; i>0;i--)
+            //--i;
+            if (!_vertex_array[i]->GetFlag(FLAG_KEEP)) {
+                vertex = _vertex_array[i];
+                _vertex_array.removeAt(i);
+                DELETE_OBJECT(vertex);
+            }
 }
 
 /***
@@ -559,24 +556,24 @@ void Polyline2D::Simplify(double tolerance)
 * @param p1, p2 pointers to polylines
 * @param i, j pointers to the indices of first common vertices found
 */
-bool Polyline2D::HaveCommonVertex(Polyline2D *p1, Polyline2D *p2, size_t *i, size_t *j)
+bool Polyline2D::HaveCommonVertex(Polyline2D *p1, Polyline2D *p2, int *i, int *j)
 {
-	// check if indices are defined
-	if (!i || !j)
-		return false;
-	
-	Point2D *v;
-	
-	// sweeps all vertices in p1
-	for ((*i)=0; (*i)<VERTEX_COUNT_IN_POLYLINE(p1);(*i)++) {
-		v = p1->GetVertexAt(*i);
-		// see if current vertex of p1 is a vertex in p2
-		if (p2->HaveVertex(v, j))
-			// if it is we have a common vertex
-			return true;		
-	}
+    // check if indices are defined
+    if (!i || !j)
+        return false;
 
-	return false;
+    Point2D *v;
+
+    // sweeps all vertices in p1
+    for ((*i)=0; (*i)<VERTEX_COUNT_IN_POLYLINE(p1);(*i)++) {
+        v = p1->GetVertexAt(*i);
+        // see if current vertex of p1 is a vertex in p2
+        if (p2->HaveVertex(v, j))
+            // if it is we have a common vertex
+            return true;
+    }
+
+    return false;
 }
 
 
@@ -585,22 +582,22 @@ bool Polyline2D::HaveCommonVertex(Polyline2D *p1, Polyline2D *p2, size_t *i, siz
 * @param index index of point if it is a vertex of this polyline
 * @return true if p is a vertex of this polyline, false otherwise
 */
-bool Polyline2D::HaveVertex(Point2D *p, size_t *index)
+bool Polyline2D::HaveVertex(Point2D *p, int *index)
 {
-	Point2D * v;
-	// sweeps all vertices of polyline
-	for (size_t i=0; i<VERTEX_COUNT_IN_POLYLINE(this);i++) {
-		v = GetVertexAt(i);
-		// see if point <p> is coincident with current vertex 
-		if ((*p)==(*(v))) {
-			// in case index have been passed, updates its value
-			if (index)
-				(*index)=i;
-			return true;
-		}
-	}
+    Point2D * v;
+    // sweeps all vertices of polyline
+    for (int i=0; i<VERTEX_COUNT_IN_POLYLINE(this);i++) {
+        v = GetVertexAt(i);
+        // see if point <p> is coincident with current vertex
+        if ((*p)==(*(v))) {
+            // in case index have been passed, updates its value
+            if (index)
+                (*index)=i;
+            return true;
+        }
+    }
 
-	return false;
+    return false;
 }
 
 
@@ -609,14 +606,14 @@ bool Polyline2D::HaveVertex(Point2D *p, size_t *index)
 * @note this works as a circular buffer of vertices, when reached 
 *       the end it jumps to the beggining and vice-versa
 */
-Point2D * Polyline2D::GetVertexAt(size_t index, short offset)
+Point2D * Polyline2D::GetVertexAt(int index, short offset)
 {
- 	if (GetVertexCount()<1)
- 		return nullptr;
- 
- 	STEP_ITERATOR(index, offset,VERTEX_COUNT_IN_POLYLINE(this));
- 
- 	return GetVertexAt(index);
+    if (GetVertexCount()<1)
+        return nullptr;
+
+    STEP_ITERATOR(index, offset,VERTEX_COUNT_IN_POLYLINE(this));
+
+    return GetVertexAt(index);
 }
 
 
@@ -627,16 +624,16 @@ Point2D * Polyline2D::GetVertexAt(size_t index, short offset)
 */
 void Polyline2D::Scale(double sx, double sy)
 {
-	for (size_t i=0; i<_vertex_array.Count();i++)
-		_vertex_array[i]->Scale(sx,sy);
+    for (int i=0; i<_vertex_array.size();i++)
+        _vertex_array[i]->Scale(sx,sy);
 
-	// in case of unioform scale
-	if (sx==sy)
-		_length *= sx;
-	else {
-		// lets re-calculate length
-		RecalculateLength();
-	}
+    // in case of unioform scale
+    if (sx==sy)
+        _length *= sx;
+    else {
+        // lets re-calculate length
+        RecalculateLength();
+    }
 }
 
 /***
@@ -646,8 +643,8 @@ void Polyline2D::Scale(double sx, double sy)
 */
 void Polyline2D::Translate(double dx, double dy)
 {
-	for (size_t i=0; i<_vertex_array.Count();i++)
-		_vertex_array[i]->Translate(dx,dy);
+    for (int i=0; i<_vertex_array.size();i++)
+        _vertex_array[i]->Translate(dx,dy);
 }
 
 /***
@@ -656,8 +653,8 @@ void Polyline2D::Translate(double dx, double dy)
 */
 void Polyline2D::Rotate(double theta)
 {
-	for (size_t i=0; i<_vertex_array.Count();i++)
-		_vertex_array[i]->Rotate(theta);
+    for (int i=0; i<_vertex_array.size();i++)
+        _vertex_array[i]->Rotate(theta);
 }
 
 /***
@@ -665,53 +662,53 @@ void Polyline2D::Rotate(double theta)
 */
 void Polyline2D::RecalculateLength()
 {
-	_length = 0;
-	Point2D *current, *previous=nullptr; 
+    _length = 0;
+    Point2D *current, *previous=nullptr;
 
-	// sweeps all points of polyline
-	for (size_t i=0;i<_vertex_array.Count();i++){
-		current = _vertex_array[i];
-		if (previous)
-			_length+=current->DistanceTo(previous);
-		previous = current;
-	}
+    // sweeps all points of polyline
+    for (int i=0;i<_vertex_array.size();i++){
+        current = _vertex_array[i];
+        if (previous)
+            _length+=current->DistanceTo(previous);
+        previous = current;
+    }
 }
 
 /***
 * @return string containing polylines coordinates
 */
-wxString Polyline2D::AsString(bool svg_format, const wxString & stroke_color, const wxString & fill_color)
+QString Polyline2D::AsString(bool svg_format, const QString & stroke_color, const QString & fill_color)
 {
-	Point2D * vertex;
-	wxString result = wxEmptyString;
+//    Point2D * vertex;
+    QString result;// = wxEmptyString;
 
-	// checks format
-	if (svg_format) {
-		// adds svg polyline entity tag
-		result+=wxT("<polyline fill=\""+fill_color+"\" stroke=\""+stroke_color+"\" stroke-width=\"0.002\"\n");
-		result+=wxT("points=\"");
-	}
+//    // checks format
+//    if (svg_format) {
+//        // adds svg polyline entity tag
+//        result+=wxT("<polyline fill=\""+fill_color+"\" stroke=\""+stroke_color+"\" stroke-width=\"0.002\"\n");
+//        result+=wxT("points=\"");
+//    }
 
-	for (size_t i=0; i<GetVertexCount(); i++){
-		vertex = GetVertexAt(i);
-		wxString format;
-		 if(svg_format)
-			 format=wxT("%f,%f ") ;
-		else
-			 format=wxT("%f\t%f\t");
-		result += wxString::Format(format, vertex->GetX(), vertex->GetY());
-	}		
+//    for (int i=0; i<GetVertexCount(); i++){
+//        vertex = GetVertexAt(i);
+//        QString format;
+//        if(svg_format)
+//            format=wxT("%f,%f ") ;
+//        else
+//            format=wxT("%f\t%f\t");
+//        result += QString::Format(format, vertex->GetX(), vertex->GetY());
+//    }
 
-	// checks format
-	if (svg_format) {
-		// adds svg polyline entity tag end symbol			
-		result+=wxT("\"/>");
-	}
+//    // checks format
+//    if (svg_format) {
+//        // adds svg polyline entity tag end symbol
+//        result+=wxT("\"/>");
+//    }
 
-	// adds the new line indicating the end of the polyline
-	result += wxT("\n");
+//    // adds the new line indicating the end of the polyline
+//    result += wxT("\n");
 
-	return result;		
+    return result;
 }
 
 /***
@@ -719,55 +716,55 @@ wxString Polyline2D::AsString(bool svg_format, const wxString & stroke_color, co
 */
 int Polyline2D::Intersections()
 {
-	size_t i, j;
-	int counter=0;
-	Line2D * line_i, * line_j;
+    int i, j;
+    int counter=0;
+    Line2D * line_i, * line_j;
 
-	for (i=0; i<GetVertexCount()-2;i++){
-		line_i = new Line2D(GetVertexAt(i), GetVertexAt(i+1));
-		for (j=i+1; j<GetVertexCount()-1;j++) {
-			line_j = new Line2D(GetVertexAt(j), GetVertexAt(j+1));			
+    for (i=0; i<GetVertexCount()-2;i++){
+        line_i = new Line2D(GetVertexAt(i), GetVertexAt(i+1));
+        for (j=i+1; j<GetVertexCount()-1;j++) {
+            line_j = new Line2D(GetVertexAt(j), GetVertexAt(j+1));
 
-			if (line_i->IntersectsProper(line_j))
-				counter++;
+            if (line_i->IntersectsProper(line_j))
+                counter++;
 
-			DELETE_OBJECT(line_j);
-		}
-		DELETE_OBJECT(line_i);
-	}
+            DELETE_OBJECT(line_j);
+        }
+        DELETE_OBJECT(line_i);
+    }
 
-	return counter;
+    return counter;
 }
 
 /***
 * @returns the shorter distance between given point and this polyline
 */
-double Polyline2D::DistanceTo(Point2D *point, Point2D *nearest_point, size_t * pred, size_t * succ)
+double Polyline2D::DistanceTo(Point2D *point, Point2D *nearest_point, int * pred, int * succ)
 {
-	if (!point)
-		return false;
+    if (!point)
+        return false;
 
-	double shorter_distance = -1.0;
-	double distance;
+    double shorter_distance = -1.0;
+    double distance;
 
-	Point2D * previous_vertex = GetFirstVertex();
-	Point2D * current_vertex;
-	Point2D auxiliar_point;
+    Point2D * previous_vertex = GetFirstVertex();
+    Point2D * current_vertex;
+    Point2D auxiliar_point;
 
-	for (size_t i=1; i<GetVertexCount(); i++) {
-		current_vertex = GetVertexAt(i);				
-		distance = Line2D::Distance(previous_vertex, current_vertex, point, nearest_point?&auxiliar_point:nullptr);
-		if (distance<=shorter_distance || shorter_distance<0){
-			if (nearest_point) (*nearest_point)=auxiliar_point;
-			if (pred) (*pred) = i-1;
-			if (succ) (*succ) = i;
-			shorter_distance = distance;
-		}
+    for (int i=1; i<GetVertexCount(); i++) {
+        current_vertex = GetVertexAt(i);
+        distance = Line2D::Distance(previous_vertex, current_vertex, point, nearest_point?&auxiliar_point:nullptr);
+        if (distance<=shorter_distance || shorter_distance<0){
+            if (nearest_point) (*nearest_point)=auxiliar_point;
+            if (pred) (*pred) = i-1;
+            if (succ) (*succ) = i;
+            shorter_distance = distance;
+        }
 
-		previous_vertex = current_vertex;		
-	}
+        previous_vertex = current_vertex;
+    }
 
-	return shorter_distance;
+    return shorter_distance;
 }
 
 /***
@@ -778,37 +775,37 @@ double Polyline2D::DistanceTo(Point2D *point, Point2D *nearest_point, size_t * p
 */
 Point2D * Polyline2D::Extension(double length, short flag)
 {
-	Point2D * u, * v;
+    Point2D * u, * v;
 
-	// if no valid flag given
-	if (!CHECK_FLAG(flag, AT_END) && !CHECK_FLAG(flag,AT_BEGIN))
-		return nullptr;
+    // if no valid flag given
+    if (!CHECK_FLAG(flag, AT_END) && !CHECK_FLAG(flag,AT_BEGIN))
+        return nullptr;
 
-	// if don't exist more than two vertices
-	if (GetVertexCount()<2)
-		return nullptr;
+    // if don't exist more than two vertices
+    if (GetVertexCount()<2)
+        return nullptr;
 
-	if (CHECK_FLAG(flag, AT_END)) {
-		u = GetLastVertex();
-		v = GetVertexAt(GetVertexCount()-2);
-	} else {
-		u = GetFirstVertex();
-		v = GetVertexAt(1);
-	}
+    if (CHECK_FLAG(flag, AT_END)) {
+        u = GetLastVertex();
+        v = GetVertexAt(GetVertexCount()-2);
+    } else {
+        u = GetFirstVertex();
+        v = GetVertexAt(1);
+    }
 
-	double x = u->GetX()-v->GetX();
-	double y = u->GetY()-v->GetY();
+    double x = u->GetX()-v->GetX();
+    double y = u->GetY()-v->GetY();
 
-	double l = sqrt(SQR(x)+SQR(y));
+    double l = sqrt(SQR(x)+SQR(y));
 
-	/* to avoid div/0 */
-	if (l==0.0f)
-		return nullptr;
+    /* to avoid div/0 */
+    if (l==0.0f)
+        return nullptr;
 
-	double ext_x = x*length/l;
-	double ext_y = y*length/l;
+    double ext_x = x*length/l;
+    double ext_y = y*length/l;
 
-	return new Point2D(u->GetX()+ext_x, u->GetY()+ext_y);
+    return new Point2D(u->GetX()+ext_x, u->GetY()+ext_y);
 }
 
 /***
@@ -819,39 +816,39 @@ Point2D * Polyline2D::Extension(double length, short flag)
 */
 bool Polyline2D::Intersects(Line2D *line, bool proper)
 {
-	Point2D * previous_vertex = nullptr;
-	Point2D * current_vertex = nullptr;
+    Point2D * previous_vertex = nullptr;
+    Point2D * current_vertex = nullptr;
 
-	bool intersects;
+    bool intersects;
 
-//	bool (*fn) (Line2D*);
-//
-//	if (proper)
-//		fn = &Line2D::IntersectsProper;
-//	else
-//		fn = &Line2D::Intersects;
+    //	bool (*fn) (Line2D*);
+    //
+    //	if (proper)
+    //		fn = &Line2D::IntersectsProper;
+    //	else
+    //		fn = &Line2D::Intersects;
 
-	// sweeps all vertices in polyline
-	for (size_t i=0; i<VERTEX_COUNT_IN_POLYLINE(this);i++) {
-		current_vertex = GetVertexAt(i);
-		if (previous_vertex) {
-			Line2D aux_line(previous_vertex, current_vertex);
+    // sweeps all vertices in polyline
+    for (int i=0; i<VERTEX_COUNT_IN_POLYLINE(this);i++) {
+        current_vertex = GetVertexAt(i);
+        if (previous_vertex) {
+            Line2D aux_line(previous_vertex, current_vertex);
 
-//			if (fn(&line))
-//				return true;
-			
-			if (proper)
-				intersects = aux_line.IntersectsProper(line);
-			else
-				intersects = aux_line.Intersects(line);
+            //			if (fn(&line))
+            //				return true;
 
-			if (intersects)
-				return true;
-		}
-		previous_vertex = current_vertex;
-	}
+            if (proper)
+                intersects = aux_line.IntersectsProper(line);
+            else
+                intersects = aux_line.Intersects(line);
 
-	return false;
+            if (intersects)
+                return true;
+        }
+        previous_vertex = current_vertex;
+    }
+
+    return false;
 }
 
 
@@ -860,27 +857,27 @@ bool Polyline2D::Intersects(Line2D *line, bool proper)
 */
 bool Polyline2D::Intersects(Polyline2D *polyline)
 {
-	if (!polyline) return false;
-	
-	
-	
-	bool intersects=false;
-	Line2D * edge;
+    if (!polyline) return false;
 
-	Point2D * current_vertex = nullptr;	
-	Point2D * previous_vertex = polyline->GetFirstVertex();
 
-	for (size_t i=1; i<polyline->GetVertexCount() && !intersects;i++) {
-		current_vertex = polyline->GetVertexAt(i);
-		edge = new Line2D(previous_vertex, current_vertex);
 
-		intersects |= Intersects(edge);
-		
-		previous_vertex = current_vertex;
-		DELETE_OBJECT(edge);
-	}
+    bool intersects=false;
+    Line2D * edge;
 
-	return intersects;
+    Point2D * current_vertex = nullptr;
+    Point2D * previous_vertex = polyline->GetFirstVertex();
+
+    for (int i=1; i<polyline->GetVertexCount() && !intersects;i++) {
+        current_vertex = polyline->GetVertexAt(i);
+        edge = new Line2D(previous_vertex, current_vertex);
+
+        intersects |= Intersects(edge);
+
+        previous_vertex = current_vertex;
+        DELETE_OBJECT(edge);
+    }
+
+    return intersects;
 }
 
 
@@ -889,17 +886,17 @@ bool Polyline2D::Intersects(Polyline2D *polyline)
 */
 bool Polyline2D::Intersects(Entity2D *entity)
 {	
-	if (!entity) return false;
-	
-	switch(entity->GetType()) {
-	case et_polygon:
-	case et_polyline:
-		return Intersects((Polyline2D*) entity);
-	case et_line:
-		return Intersects((Line2D *) entity);
-	default:
-		return false;
-	}
+    if (!entity) return false;
+
+    switch(entity->GetType()) {
+    case et_polygon:
+    case et_polyline:
+        return Intersects((Polyline2D*) entity);
+    case et_line:
+        return Intersects((Line2D *) entity);
+    default:
+        return false;
+    }
 }
 
 
@@ -909,50 +906,50 @@ bool Polyline2D::Intersects(Entity2D *entity)
 */
 PointArray * Polyline2D::IntersectionPoints(Line2D *line, wxArrayInt * indexes)
 {
-	PointArray * intersections = new PointArray();
+    PointArray * intersections = new PointArray();
 
-	Point2D * previous_vertex = nullptr;
-	Point2D * current_vertex = nullptr;
+    Point2D * previous_vertex = nullptr;
+    Point2D * current_vertex = nullptr;
 
-	// sweeps all vertices in polyline
-	for (size_t i=0; i<VERTEX_COUNT_IN_POLYLINE(this);i++) {
-		current_vertex = GetVertexAt(i);
+    // sweeps all vertices in polyline
+    for (int i=0; i<VERTEX_COUNT_IN_POLYLINE(this);i++) {
+        current_vertex = GetVertexAt(i);
 
-		if (previous_vertex) {
-			Line2D aux_line(previous_vertex, current_vertex);
-			if (aux_line.Intersects(line)){
-				Point2D * intersection = aux_line.IntersectionPoint(line);				
-				
-				if (intersection) {
-					intersections->Add(intersection);
-					if (indexes)
-						indexes->Add(i);
-				}
-			}
-		}
+        if (previous_vertex) {
+            Line2D aux_line(previous_vertex, current_vertex);
+            if (aux_line.Intersects(line)){
+                Point2D * intersection = aux_line.IntersectionPoint(line);
 
-		previous_vertex = current_vertex;
-	}
+                if (intersection) {
+                    intersections->append(intersection);
+                    if (indexes)
+                        indexes->append(i);
+                }
+            }
+        }
 
-	return intersections;
+        previous_vertex = current_vertex;
+    }
+
+    return intersections;
 }
 
 /***
 * @return a string with the text entry of this polygon on the output file
 */
-// wxString Polyline2D::GetGeometricFeatures()
+// QString Polyline2D::GetGeometricFeatures()
 // {
-// 	wxString result="";	
-// 	size_t i;
+// 	QString result="";
+// 	int i;
 // 
 // 	float * fvector = GetGeometricFeaturesVector();
 // 	
 // 	// writes the dimension of the vector and the id of the polygon
-// 	result += wxString::Format("%d\n%d", (int) fvector[0], GetID());
+// 	result += QString::Format("%d\n%d", (int) fvector[0], GetID());
 // 
 // 	// writes the vector on the string
 // 	for (i=1;i<=fvector	[0];i++) 
-// 		result+=wxString::Format(" %f", fvector[i]);
+// 		result+=QString::Format(" %f", fvector[i]);
 // 
 // 	FREE(fvector);
 // 
@@ -965,7 +962,7 @@ PointArray * Polyline2D::IntersectionPoints(Line2D *line, wxArrayInt * indexes)
 */
 // float * Polyline2D::GetGeometricFeaturesVector()
 // {
-// 	size_t i, vector_length;
+// 	int i, vector_length;
 // 	Point2D * vertex;	
 // 	float *fvector, *fresult;
 // 	Geometry g;
@@ -1000,7 +997,7 @@ PointArray * Polyline2D::IntersectionPoints(Line2D *line, wxArrayInt * indexes)
 // 	CIScribble * scribble = new CIScribble();
 // 	CIStroke * stroke = new CIStroke();
 // 	Point2D *vertex;
-// 	size_t i;
+// 	int i;
 // 
 // 	for (i=0; i<VERTEX_COUNT_IN_POLYLINE(this);i++) {
 // 		vertex = GetVertexAt(i);

@@ -15,7 +15,7 @@ using namespace PolygonDetection;
 * @desc contructor
 */
 
-Edge::Edge(size_t id)
+Edge::Edge(int id)
 {	
 	_id = id;	
 }

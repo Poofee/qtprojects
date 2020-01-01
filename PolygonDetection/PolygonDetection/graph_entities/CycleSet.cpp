@@ -13,7 +13,7 @@
 
 using namespace PolygonDetection;
 
-WX_DEFINE_OBJARRAY(CyclesArray);
+//WX_DEFINE_OBJARRAY(CyclesArray);
 
 //////////////////////////////////////////////////////////////////////
 // Construction/Destruction
@@ -30,7 +30,7 @@ _p_cycles_array(nullptr)
 CycleSet::~CycleSet()
 {	
 	if (_p_cycles_array)
-		WX_CLEAR_ARRAY(*_p_cycles_array);
+        WX_CLEAR_ARRAY((*_p_cycles_array));
 	DELETE_ARRAY(_p_cycles_array);
 }
 
@@ -42,7 +42,7 @@ void CycleSet::AddCycle(Cycle *c)
 		_p_cycles_array = new CyclesArray();
 
 	if (c)
-		_p_cycles_array->Add(c);
+        _p_cycles_array->append(c);
 }
 
 #ifdef GRAPH_DEBUG	
@@ -52,19 +52,19 @@ void CycleSet::AddCycle(Cycle *c)
 void CycleSet::Log()
 {
 
-	wxString s = "\n-------\nCycles:\n--------\n";	
+	QString s = "\n-------\nCycles:\n--------\n";	
 		
 	if (_p_cycles_array) 
-		for (size_t j=0; j<_p_cycles_array->GetCount();j++) {
+		for (int j=0; j<_p_cycles_array->size();j++) {
 			Cycle * cycle = _p_cycles_array->Item(j);
 
-			for (size_t i=0; i<cycle->GetVertexCount(); i++) 
-				s += wxString::Format("->%d", cycle->GetVertex(i));
+			for (int i=0; i<cycle->GetVertexCount(); i++) 
+				s += QString::Format("->%d", cycle->GetVertex(i));
 			
 			s += "\n (Edges: ";	
 
 			for (i=0; i<cycle->GetEdgeCount(); i++) 
-				s += wxString::Format("-%d", cycle->GetEdge(i));
+				s += QString::Format("-%d", cycle->GetEdge(i));
 			
 			s += ")\n";	
 		}
@@ -77,18 +77,18 @@ void CycleSet::Log()
 /***
 * @return the number of cycles existing in this cycle set
 */
-size_t CycleSet::GetCount()
+int CycleSet::size()
 {
-	return _p_cycles_array?_p_cycles_array->GetCount():0;
+	return _p_cycles_array?_p_cycles_array->size():0;
 }
 
 /***
 * @return the cycle at the position indicated, nullptr if does not exists
 */
-Cycle * CycleSet::GetCycle(size_t number)
+Cycle * CycleSet::GetCycle(int number)
 {
-	if (_p_cycles_array && _p_cycles_array->GetCount()>number)
-		return _p_cycles_array->Item(number);
+	if (_p_cycles_array && _p_cycles_array->size()>number)
+        return _p_cycles_array->at(number);
 
 	return nullptr;
 }
@@ -98,23 +98,23 @@ Cycle * CycleSet::GetCycle(size_t number)
 */
 void CycleSet::SelectCycles()
 {
-	size_t c;
+	int c;
 	bool independent_cycle;
 
 	// creation of incidence matrix 
 	IncidenceMatrix * incidence_matrix = new IncidenceMatrix();
 
-	for (c=0; c<GetCount();c++) 
-		incidence_matrix->AddCycleToEdgePool(_p_cycles_array->Item(c));
+	for (c=0; c<size();c++) 
+        incidence_matrix->AddCycleToEdgePool(_p_cycles_array->at(c));
 
 	incidence_matrix->CreateMatrix();
 
-	for (c=0; c<GetCount();)  {		
-		independent_cycle = incidence_matrix->IndependentCycle(_p_cycles_array->Item(c));
+	for (c=0; c<size();)  {		
+        independent_cycle = incidence_matrix->IndependentCycle(_p_cycles_array->at(c));
 		
 		if (!independent_cycle) {
-			Cycle * cycle = _p_cycles_array->Item(c);
-			_p_cycles_array->RemoveAt(c);		
+            Cycle * cycle = _p_cycles_array->at(c);
+            _p_cycles_array->removeAt(c);
 			DELETE_OBJECT(cycle);
 		}
 		else 
@@ -131,6 +131,6 @@ void CycleSet::SelectCycles()
 
 void CycleSet::Sort()
 {
-	if (_p_cycles_array)
-		_p_cycles_array->Sort(Cycle::CompareOrder);
+//	if (_p_cycles_array)
+//		_p_cycles_array->Sort(Cycle::CompareOrder);
 }

@@ -1,36 +1,3 @@
-/*
-+--------------------------------------------------------------------+
-| GPMacros.h: header file for macros                                 |
-+--------------------------------------------------------------------+
-|                                                                    |
-| Author : Alfredo Ferreira (Jr.)                                    |
-| E-mail : alfredo.ferreira.jr@inesc-id.pt                           |
-| Website: http://immi.inesc-id.pt/~afj                              |
-|                                                                    |
-| Version: 2.00 (converted from KernelMacros)                        |
-| Created: Jan-Apr 2003                                              |
-| Updated: May 2003                                                  |
-| Updated: Jan 2008                                                  |
-|                                                                    |
-+--------------------------------------------------------------------+
-| Intelligent Multimodal Interfaces Group at INESC-ID                |
-| Department of Information Systems and Computer Science             |
-| IST/Technical University of Lisbon                                 |
-| Rua Alves Redol 9                                                  |
-| 100-029 Lisboa, Portugal                                           |
-+--------------------------------------------------------------------+
-|                                                                    |
-| Copyright (c) 2003-2008 INESC-ID                                   |
-|                                                                    |
-|   The copyright to the computer program(s) herein is the property  |
-| of INESC-ID, Portugal. The program(s) may be used and/or copied    |
-| only with the written permission of INESC-ID or in accordance with |
-| the terms and conditions stipulated in the agreement/contract      |
-| under which the program(s) have been supplied.                     |
-|                                                                    |
-+--------------------------------------------------------------------+
-*/
-
 #pragma once
 
 #ifndef GP_MACROS_H_INCLUDED
@@ -49,7 +16,7 @@
 // to sweep across the arrays
 //
 #define ITERATE_ALL_ENTITIES(entities_array, method) { \
-	for (size_t k=(entities_array).GetCount(); k>0; ) \
+	for (int k=(entities_array).size(); k>0; ) \
 		(entities_array)[--k]->method; \
 }
 
@@ -84,7 +51,7 @@
 // // Following macros are used to display messages during processing
 // //
 // #define printf(step) \
-// 	const wxString __step_msg(step); \
+// 	const QString __step_msg(step); \
 // 	wxDateTime start = wxDateTime::UNow(); \
 // 	if (!PolygonDetection::PolygonDetector::Silent())	printf("%s started.", __step_msg);
 // 
@@ -120,11 +87,11 @@
 
 #define DELETE_FLAGGED_ENTITIES(entity_array, flag) { \
 	Entity2D *e; \
-	for (size_t i=entity_array.GetCount(); i>0; ) \
+	for (int i=entity_array.size(); i>0; ) \
 		if (entity_array[--i]->GetFlag(flag)) { \
 			e = entity_array[i]; \
 			DELETE_OBJECT(e); \
-			entity_array.RemoveAt(i); \
+			entity_array.removeAt(i); \
 		} \
 }
 

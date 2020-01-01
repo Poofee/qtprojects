@@ -39,24 +39,24 @@ namespace PolygonDetection {
 		void Log();
 #endif
 
-		void GaussianElimination(size_t rows);	
+		void GaussianElimination(int rows);	
 
-		inline __int8 Get(size_t base, size_t offset) { return _matrix[base+offset];}
-		inline void Set(size_t base, size_t offset, __int8 value) {
+		inline __int8 Get(int base, int offset) { return _matrix[base+offset];}
+		inline void Set(int base, int offset, __int8 value) {
 			_matrix[base+offset] = value;
 		}
 
-		inline __int8 GetAt(size_t row, size_t col) { return _matrix[GetAddress(row,col)]; };
-		inline void SetAt(size_t row, size_t col, __int8 value) { _matrix[GetAddress(row, col)] = value; };
+		inline __int8 GetAt(int row, int col) { return _matrix[GetAddress(row,col)]; };
+		inline void SetAt(int row, int col, __int8 value) { _matrix[GetAddress(row, col)] = value; };
 		
-		MatrixModuloTwo(size_t rows, size_t cols);
+		MatrixModuloTwo(int rows, int cols);
 		virtual ~MatrixModuloTwo();
 
 	private:
-		void SwapMatrixRows(size_t row_a, size_t row_b);
-		inline size_t GetAddress(size_t row, size_t col) { return row*_cols+col; };
-		size_t _rows;
-		size_t _cols;
+		void SwapMatrixRows(int row_a, int row_b);
+		inline int GetAddress(int row, int col) { return row*_cols+col; };
+		int _rows;
+		int _cols;
 
 		__int8 * _matrix;
 	};

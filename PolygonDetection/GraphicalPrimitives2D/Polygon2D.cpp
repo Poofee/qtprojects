@@ -2,7 +2,7 @@
 #include "Line2D.h"
 
 #include "./GPMacros.h"
-#include <wx/log.h>
+//#include <wx/log.h>
 
 using namespace GraphicalPrimitives2D;
 
@@ -23,7 +23,7 @@ Polygon2D::Polygon2D(Polygon2D *polygon) : 	Polyline2D(Entity2D::et_polygon)
 	Initialize();
 	
 	if (polygon) {
-		for (size_t i=0;i<polygon->GetVertexCount();i++) {
+        for (int i=0;i<polygon->GetVertexCount();i++) {
 			AddVertex(new Point2D(polygon->GetVertexAt(i)));
 		}
 	}
@@ -114,7 +114,7 @@ bool Polygon2D::Contains(Point2D *point, bool strict)
     Box2D * bb = GetBoundingBox();
     
     if (!bb) {
-        printf(wxT("Unable to determine bounding box for \'Point in Polygon\' check."));
+//        printf(wxT("Unable to determine bounding box for \'Point in Polygon\' check."));
         return false;
     }
     
@@ -124,15 +124,15 @@ bool Polygon2D::Contains(Point2D *point, bool strict)
 		return false;
 
 	bool inside = false;
-	//size_t vertex_count = _vertex_array.GetCount();
-	size_t vertex_count = VERTEX_COUNT_IN_POLYLINE(this);
+    //int vertex_count = _vertex_array.size();
+    int vertex_count = VERTEX_COUNT_IN_POLYLINE(this);
 
 	if (vertex_count>0) {
 		
 		Point2D * current_vertex;
 		Point2D * previous_vertex = _vertex_array[VERTEX_COUNT_IN_POLYLINE(this)-1];
 		
-		for (size_t i=0; i<vertex_count;i++) {
+        for (int i=0; i<vertex_count;i++) {
 			current_vertex = _vertex_array[i];
 			
 			// let's see if point is lays on the edge
@@ -164,7 +164,7 @@ bool Polygon2D::Contains(Polyline2D *polyline, bool strict)
 	Point2D * current_outter_vertex = nullptr;
 	Point2D * previous_outter_vertex = nullptr;
 	Point2D * p;
-    size_t i, outter_vertex_index;
+    int i, outter_vertex_index;
 	
 	// first lets see if all vertices in polyline lay inside or in the border of the polygon
 	for (i=0; i<VERTEX_COUNT_IN_POLYLINE(polyline);i++) {
@@ -233,7 +233,7 @@ bool Polygon2D::Contains(Line2D *line, bool strict)
 	Point2D * p2 = line->GetEndPoint();
 
 	if (Contains(p1, strict) && Contains(p2, strict)){
-		size_t i;
+        int i;
 		Line2D * edge;
 		bool intersects = false;
 		Point2D * current_vertex, * previous_vertex = GetFirstVertex();
@@ -264,7 +264,7 @@ bool Polygon2D::Disjoint(Polygon2D *polygon)
 {
 	// checks if any point of given polygon lays inside (or in 
 	// the border) of this polygon
-	for (size_t i=0; i<VERTEX_COUNT_IN_POLYLINE(polygon); i++)
+    for (int i=0; i<VERTEX_COUNT_IN_POLYLINE(polygon); i++)
 		if (Contains(polygon->GetVertexAt(i)))
 			return false;
 
@@ -285,7 +285,7 @@ bool Polygon2D::Disjoint(Polygon2D *polygon)
 bool Polygon2D::IsAdjacent(Polygon2D *p1, Polygon2D *p2, bool strict)
 {
 
-	size_t i, j;
+    int i, j;
 	Point2D *v1, *v2;
 	Point2D *previous_v1 = p1->GetLastVertex();
 	Point2D *previous_v2 = p2->GetLastVertex();
@@ -329,9 +329,9 @@ bool Polygon2D::IsAdjacent(Polygon2D *p1, Polygon2D *p2, bool strict)
 * @note two polylines have single adjacency if they share at least one edge 
 *       and all edges they share are consecutive in both polygons
 */
-bool Polygon2D::SingleAdjacency(Polygon2D *p1, Polygon2D *p2, size_t *i, size_t* j, long *length)
+bool Polygon2D::SingleAdjacency(Polygon2D *p1, Polygon2D *p2, int *i, int* j, long *length)
 {
-	size_t n1, n2;
+    int n1, n2;
 	(*length) = 0;
 
 	// in case p1 and p2 have not common vertices then they cannot have single adjacency	
@@ -351,7 +351,7 @@ bool Polygon2D::SingleAdjacency(Polygon2D *p1, Polygon2D *p2, size_t *i, size_t*
 		no_adjacency
 	} status = adjacency;
 
-	size_t index, triggering_counter = 0;
+    int index, triggering_counter = 0;
 	short increment = 0;
 	Point2D *v1, *v2;
 
@@ -438,7 +438,7 @@ bool Polygon2D::SingleAdjacency(Polygon2D *p1, Polygon2D *p2, size_t *i, size_t*
 */
 bool Polygon2D::Minus(Polygon2D *p)
 {
-	size_t i, j;
+    int i, j;
 	long l;
 	
 	// in cases different than single adjacency, do nothing
@@ -449,7 +449,7 @@ bool Polygon2D::Minus(Polygon2D *p)
 		return false;
 
 	long n;
-	size_t m=i;
+    int m=i;
 	Point2D *v;	
 	bool changes = false;
 	
@@ -458,7 +458,7 @@ bool Polygon2D::Minus(Polygon2D *p)
     if ((*GetFirstVertex())==(*GetLastVertex())) {
 		v = GetLastVertex();
 		DELETE_OBJECT(v);
-		_vertex_array.RemoveAt(_vertex_array.GetCount()-1);        
+        _vertex_array.removeAt(_vertex_array.size()-1);
 	}
 
 	// now lets reset remove flag from all vertices
@@ -492,7 +492,7 @@ bool Polygon2D::Minus(Polygon2D *p)
         
         
         STEP_ITERATOR(m, 1, GetVertexCount());
-        _vertex_array.Insert(new Point2D(v), m);        
+        _vertex_array.insert(m,new Point2D(v));
         
 		// if we are here than something changed in polygon
 		changes |= true;
@@ -500,7 +500,7 @@ bool Polygon2D::Minus(Polygon2D *p)
 
 	// now we need to reconstruct the polygon
 	if (((*GetFirstVertex())!=(*GetLastVertex())))		
-        _vertex_array.Add(new Point2D(GetFirstVertex()));		
+        _vertex_array.append(new Point2D(GetFirstVertex()));
 
 	// in case there were changes, lets recalculate the axis aligned bounding box
 	if (changes) {		
@@ -520,7 +520,7 @@ bool Polygon2D::ConsecutiveVertices(Point2D *v1, Point2D *v2, short * index_incr
 	if (!v1 || !v2)
 		return false;
 
-	size_t index_v1, index_v2;
+    int index_v1, index_v2;
 
 	// if any vertex does not exist in this polygonm then
 	// they cannot be consecutive

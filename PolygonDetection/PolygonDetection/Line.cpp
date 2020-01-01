@@ -30,7 +30,7 @@ Line::~Line(void)
 */
 void Line::AddIntersectionPoint(GraphicalPrimitives2D::Point2D *p)
 {
-	if (p) _intersections.Add(p);
+    if (p) _intersections.append(p);
 }
 
 /***
@@ -38,13 +38,13 @@ void Line::AddIntersectionPoint(GraphicalPrimitives2D::Point2D *p)
 */
 void Line::SortIntersectionsList()
 {
-	_intersections.Sort(GraphicalPrimitives2D::Point2D::CompareOrder);
+//	_intersections.Sort(GraphicalPrimitives2D::Point2D::CompareOrder);
 }
 
 Line * PolygonDetection::Line::SimplifiedLine(Line * line_1, Line * line_2)
 {
 	if (!line_1 || !line_2)
-		return false;
+        return nullptr;
 
 	GraphicalPrimitives2D:: Line2D * line = 
 		GraphicalPrimitives2D::Line2D::SimplifiedLine(line_1, line_2);

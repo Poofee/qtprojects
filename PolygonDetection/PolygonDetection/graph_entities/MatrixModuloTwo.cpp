@@ -18,7 +18,7 @@ using namespace PolygonDetection;
 * @desc contructor
 */
 
-MatrixModuloTwo::MatrixModuloTwo(size_t rows, size_t cols)
+MatrixModuloTwo::MatrixModuloTwo(int rows, int cols)
 {	
 	_rows = rows;
 	_cols = cols;
@@ -26,7 +26,7 @@ MatrixModuloTwo::MatrixModuloTwo(size_t rows, size_t cols)
 	// create the matrix
 
 	// first allocates memory
-	size_t dim = _rows*_cols;
+	int dim = _rows*_cols;
 	_matrix = ALLOCATE_MEMORY(__int8, dim);
 
 	// the reset memory to zero reserved memory
@@ -39,7 +39,7 @@ MatrixModuloTwo::MatrixModuloTwo(size_t rows, size_t cols)
 			kbytes = true;
 			used_memory /= 1024;
 		}
-		printf("Adjacency matrix uses %u %s.", used_memory, kbytes?"KB":"bytes");
+        printf("Adjacency matrix uses %u %s.\n", used_memory, kbytes?"KB":"bytes");
 	}
 	
 }
@@ -54,18 +54,18 @@ MatrixModuloTwo::~MatrixModuloTwo()
 
 /***
 * @desc swaps the matrix row <row_a> with row <row_b>
-* @param size_t row_a indicates the number of one row  
-* @param size_t row_b indicates the number of other row  
+* @param int row_a indicates the number of one row  
+* @param int row_b indicates the number of other row  
 */
-void MatrixModuloTwo::SwapMatrixRows(size_t row_a, size_t row_b)
+void MatrixModuloTwo::SwapMatrixRows(int row_a, int row_b)
 {
 	__int8 t; // variable to store temporarily the value
 
-	size_t row_a_offset = row_a*_cols;
-	size_t row_b_offset = row_b*_cols;
+	int row_a_offset = row_a*_cols;
+	int row_b_offset = row_b*_cols;
 
 	
-	for (size_t k=0; k<_cols; k++) {
+	for (int k=0; k<_cols; k++) {
 		t = _matrix[row_a_offset+k];
 		_matrix[row_a_offset+k] = _matrix[row_b_offset+k];
 		_matrix[row_b_offset+k] = t;
@@ -75,11 +75,11 @@ void MatrixModuloTwo::SwapMatrixRows(size_t row_a, size_t row_b)
 /***
 * @desc performs gaussian elimination of first <rows> of the matrix
 */
-void MatrixModuloTwo::GaussianElimination(size_t rows)
+void MatrixModuloTwo::GaussianElimination(int rows)
 {
-	size_t c, r, k, max; //, address;
+	int c, r, k, max; //, address;
 
-	size_t pivot_row=0;
+	int pivot_row=0;
 
 
 		for(c=0;c<_cols;c++) {		
@@ -119,11 +119,11 @@ void MatrixModuloTwo::GaussianElimination(size_t rows)
 #ifdef GRAPH_DEBUG	
 void MatrixModuloTwo::Log()
 {
-	wxString s="";	
+	QString s="";	
 
-	for (size_t i=0; i<_rows;i++) {
-		for(size_t j=0; j<_cols;j++)
-			s += wxString::Format("%d ",_matrix[GetAddress(i,j)]);
+	for (int i=0; i<_rows;i++) {
+		for(int j=0; j<_cols;j++)
+			s += QString::Format("%d ",_matrix[GetAddress(i,j)]);
 		
 		s += "\n";		
 	}

@@ -55,11 +55,11 @@ namespace GraphicalPrimitives2D {
 // 
 // 		static int CompareDeepness(Polygon2D ***p_p1, Polygon2D ***p_p2);
 // 		
-// 		inline size_t GetDeepness() { 
-// 			return _container_polygons?_container_polygons->GetCount():0;
+// 		inline int GetDeepness() { 
+// 			return _container_polygons?_container_polygons->size():0;
 // 		};
 
-//		wxString GetTopologyFileEntry();
+//		QString GetTopologyFileEntry();
 			
 //		inline void AddSibling(Polygon2D *p) { AddPolygonToArray(p, &_sibling_polygons); };
 //		inline void AddSon(Polygon2D * p) { AddPolygonToArray(p, &_son_polygons); };
@@ -85,7 +85,7 @@ namespace GraphicalPrimitives2D {
 //		bool _is_convex;
 		void Initialize();
         bool ConsecutiveVertices(Point2D *v1, Point2D* v2, short * index_increment = nullptr);
-		static bool SingleAdjacency(Polygon2D *p1, Polygon2D *p2, size_t *i, size_t* j, long *length);
+		static bool SingleAdjacency(Polygon2D *p1, Polygon2D *p2, int *i, int* j, long *length);
 //		static bool Siblings(Polygon2D* p1, Polygon2D* p2);
 
 //		void AddPolygonToArray(Polygon2D * p, EntityArray ** a);

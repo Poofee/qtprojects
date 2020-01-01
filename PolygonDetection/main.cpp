@@ -1,11 +1,6 @@
-extern char * app_name = (char*)("PolygonDetector v0.1 (2008/03/05)");
-extern char * app_description = (char*)"Prototype for detecting polygons from a set of lines";
-extern char * app_author = (char*)"Alfredo Ferreira";
-extern int app_year = 2008;
-
-extern void print_header();
-extern void print_gpl();
-extern void print_warranty();
+//extern void print_header();
+//extern void print_gpl();
+//extern void print_warranty();
 
 #include <stdio.h>
 #include <string>
@@ -48,16 +43,16 @@ bool process(int argc, char* argv[]) {
     while (argc > 0) {
         if ((*argv)[0] == '-') {
             if ((strcmp(*argv, "-h")==0) || (strcmp(*argv, "--help")==0)) {
-                print_help();
+//                print_help();
                 return true;
             }
             else
                 if ((strcmp(*argv, "-gpl")==0) || (strcmp(*argv, "--gpl")==0)) {
-                    print_gpl();
+//                    print_gpl();
                     return true;
                 }
                 if (strcmp(*argv, "--warranty")==0) {
-                    print_warranty();
+//                    print_warranty();
                     return true;
                 }
                 else
@@ -81,7 +76,7 @@ bool process(int argc, char* argv[]) {
                                     }
                                 } else {
                                     fprintf(stderr, "Error: Invalid program argument: %s", *argv);
-                                    print_help();
+//                                    print_help();
                                     return false;
                                 }
                 argv++; argc--;
@@ -92,7 +87,7 @@ bool process(int argc, char* argv[]) {
                 if (dest.empty()) dest = (*argv);
                 else {
                     fprintf(stderr, "Error: Invalid program argument: %s", *argv);
-                    print_help();
+//                    print_help();
                     return false;
                 }
             argv++; argc--;
@@ -101,7 +96,7 @@ bool process(int argc, char* argv[]) {
 
     if (src.empty() || dest.empty()) {
         fprintf(stderr,"Error: Source and destination files must be specified.\n");
-        print_help();
+//        print_help();
         return false;
     }
 
@@ -139,11 +134,31 @@ bool process(int argc, char* argv[]) {
 
 int main(int argc, char * argv[])
 {
-    print_header();
+//    print_header();
 
-    if (!process(argc, argv))
-        return 1;
+//    if (!process(argc, argv))
+//        return 1;
 
+    PolygonDetection::PolygonDetector polygon_detector;
+    if (!polygon_detector.ReadSVGfile("lines.svg"))  {
+        fprintf(stderr,"Error: Unable to read line set from SVG file.\n");
+        return 0;
+    }
+
+    // the lines were loaded, lets detect the polygons
+    if (!polygon_detector.DetectPolygons() || !polygon_detector.GetPolygonSet()) {
+        fprintf(stderr, "Error: Failed to detect the polygons.\n");
+        return 0;
+    }
+
+    //simplify the polygon set
+    polygon_detector.SimplifyPolygons(0.0);
+
+    // the polygons were detected, lets save them
+    if (!polygon_detector.CreateSVGwithPolygons("line2.svg")) {
+        fprintf(stderr, "Error: Failed to crate the SVG with the polygons.\n");
+        return 0;
+    }
     return 0;
 }
 

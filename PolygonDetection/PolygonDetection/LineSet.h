@@ -5,36 +5,36 @@
 
 namespace PolygonDetection {
 
-//	WX_DECLARE_OBJARRAY(Line*, LinesArray);
+typedef QVector<Line*> LinesArray;
 
-	class LineSet
-	{
-	public:
-		LineSet(void);
-		~LineSet(void);
+class LineSet
+{
+public:
+    LineSet(void);
+    ~LineSet(void);
 
-		void Add(Line * line);
-        inline size_t GetCount() { return _lines_array.GetCount();}
-        inline Line * Item(size_t i) {return _lines_array.Item(i);}
+    void Add(Line * line);
+    inline int size() { return _lines_array.size();}
+    inline Line * Item(int i) {return _lines_array.at(i);}
 
-		bool RemoveIntersections(void);		
+    bool RemoveIntersections(void);
 
-		void Clear(void);
-		bool Normalize(void);
-		void Sort(void);
+    void Clear(void);
+    bool Normalize(void);
+    void Sort(void);
 
-	private:
-		void RemoveZeroLengthLines(void);
-		void RemoveOverlappings(void);
-		void CalculateLinesFirstAndLastPoint(void);
-		unsigned int DetectIntersections(void);
+private:
+    void RemoveZeroLengthLines(void);
+    void RemoveOverlappings(void);
+    void CalculateLinesFirstAndLastPoint(void);
+    unsigned int DetectIntersections(void);
 
-		LinesArray _lines_array;
+    LinesArray _lines_array;
 
-		// Performs a scale transformation on lines of this set
-		void Scale(double sx, double sy);
+    // Performs a scale transformation on lines of this set
+    void Scale(double sx, double sy);
 
-		// Performs a translation transformation on lines of this set
-		void Translate(double dx, double dy);
-	};
+    // Performs a translation transformation on lines of this set
+    void Translate(double dx, double dy);
+};
 }

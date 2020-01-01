@@ -36,11 +36,11 @@
 #include "./GPMacros.h"
 
 #include <math.h>
-#include <wx/arrimpl.cpp> 
+//#include <wx/arrimpl.cpp>
 
 using namespace GraphicalPrimitives2D;
 
-WX_DEFINE_OBJARRAY(PointArray);
+//WX_DEFINE_OBJARRAY(PointArray);
 
 /***
 * @desc constructor
