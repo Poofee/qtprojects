@@ -2,8 +2,7 @@
 #include "..\GraphicalPrimitives2D\Line2D.h"
 
 namespace PolygonDetection {
-class Line :
-        public GraphicalPrimitives2D::Line2D
+class Line : public GraphicalPrimitives2D::Line2D
 {
 public:
     Line(void);
@@ -19,7 +18,7 @@ public:
 
     static Line * SimplifiedLine(Line * line_1, Line * line_2);
 
-    static int CompareOrder(Line *** p_line1, Line *** p_line2);
+    static bool CompareOrder(PolygonDetection::Line* p_line1, PolygonDetection::Line* p_line2);
 
 private:
     GraphicalPrimitives2D::PointArray _intersections;

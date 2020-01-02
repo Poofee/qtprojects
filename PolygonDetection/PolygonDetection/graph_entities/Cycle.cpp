@@ -9,9 +9,9 @@ using namespace PolygonDetection;
 * @desc contructor
 */
 Cycle::Cycle(wxArrayInt *path_vx, wxArrayInt *path_vy) : 
+    _generated_from(0),
     _p_cycle(nullptr),
-    _p_edge_list(nullptr),
-    _generated_from(0)
+    _p_edge_list(nullptr)
 {		
     int i;
     int item_vx = path_vx->at(0);
@@ -54,7 +54,7 @@ Cycle::~Cycle()
 *         passed to it is less than, equal to or 
 *         greater than the second one. 
 */
-int Cycle::CompareOrder(Cycle *p_c1, Cycle *p_c2)
+bool Cycle::CompareOrder(Cycle *p_c1, Cycle *p_c2)
 {
     if (p_c1->GetLength()==p_c2->GetLength()) {
         return p_c1->_generated_from - p_c2->_generated_from;
@@ -71,7 +71,7 @@ int Cycle::CompareOrder(Cycle *p_c1, Cycle *p_c2)
 //	return (_p_cycle && _p_cycle->size()>number)?_p_cycle->Item(number):0;
 //}
 
-int Cycle::CompareOrder(Cycle ***p_c1, Cycle ***p_c2)
-{
-    return CompareOrder(**p_c1, **p_c2);
-}
+//int Cycle::CompareOrder(Cycle ***p_c1, Cycle ***p_c2)
+//{
+//    return CompareOrder(**p_c1, **p_c2);
+//}

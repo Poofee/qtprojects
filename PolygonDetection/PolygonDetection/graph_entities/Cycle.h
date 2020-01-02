@@ -8,8 +8,8 @@ namespace PolygonDetection {
 	class Cycle
 	{
 	public:
-		static int CompareOrder(Cycle * p_c1, Cycle * p_c2);
-		static int CompareOrder(Cycle ***p_c1, Cycle ***p_c2);
+        static bool CompareOrder(Cycle * p_c1, Cycle * p_c2);
+//		static int CompareOrder(Cycle ***p_c1, Cycle ***p_c2);
 
         void AddEdge(unsigned int edge_id) { if (_p_edge_list) _p_edge_list->append(edge_id); }
 

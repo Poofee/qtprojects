@@ -12,6 +12,9 @@
 
 #include "./PolygonDetector.h"
 
+#include <QtAlgorithms>
+#include <QDebug>
+
 /************************************************************************/
 /* Local Macro to help creating a new line segment between two lines    */
 /*       and add it to a lines list                                     */
@@ -213,7 +216,7 @@ unsigned int PolygonDetection::LineSet::DetectIntersections(void)
     LinesArray * active_line_segments_array = new LinesArray();
 
     int j, counter = _lines_array.size();
-    double current_y = 0.0f, next_y;
+    double current_y = 0, next_y;
     Line * current_line, * other_line;
     bool move_sweep_line = false;
 
@@ -280,6 +283,7 @@ void PolygonDetection::LineSet::Sort(void)
 {
     CalculateLinesFirstAndLastPoint();
 //    _lines_array.Sort(Line::CompareOrder);
+    qSort(_lines_array.begin(),_lines_array.end(),Line::CompareOrder);
 }
 
 /***

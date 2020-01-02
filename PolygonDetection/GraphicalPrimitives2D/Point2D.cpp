@@ -48,7 +48,7 @@ using namespace GraphicalPrimitives2D;
 */
 Point2D::Point2D(void) : Entity2D(Entity2D::et_point)
 {
-  Initialize(0,0);
+    Initialize(0,0);
 }
 
 /***
@@ -58,7 +58,7 @@ Point2D::Point2D(void) : Entity2D(Entity2D::et_point)
 */
 Point2D::Point2D(double x, double y) : Entity2D(Entity2D::et_point)
 {
-	Initialize(x,y);  
+    Initialize(x,y);
 }
 
 /***
@@ -67,11 +67,11 @@ Point2D::Point2D(double x, double y) : Entity2D(Entity2D::et_point)
 */
 Point2D::Point2D(Point2D * p_point) : Entity2D( Entity2D::et_point)
 {
-	// initializes the attributes, just in case of a invalid point
-	Initialize(0,0);
+    // initializes the attributes, just in case of a invalid point
+    Initialize(0,0);
 
-	// sets the attributes with the other point value
-	this->Set(p_point);
+    // sets the attributes with the other point value
+    this->Set(p_point);
 }
 
 /***
@@ -79,13 +79,13 @@ Point2D::Point2D(Point2D * p_point) : Entity2D( Entity2D::et_point)
 */
 void Point2D::Initialize(double x, double y)
 {
-	_x = x;
-	_y = y;
+    _x = x;
+    _y = y;
 
-	_owner_entity = nullptr;
+    _owner_entity = nullptr;
 
-	_index = 0;
-	
+    _index = 0;
+
 }
 
 /***
@@ -93,9 +93,9 @@ void Point2D::Initialize(double x, double y)
 */
 Point2D::~Point2D()
 {
-	// there are no need to delete the owner entity because
-	// it is just a pointer to a entity that will be deleted
-	// elsewhere
+    // there are no need to delete the owner entity because
+    // it is just a pointer to a entity that will be deleted
+    // elsewhere
 }
 
 /***
@@ -105,8 +105,8 @@ Point2D::~Point2D()
 */
 void Point2D::Scale(double sx, double sy)
 {
-  SetX(GetX()*sx);
-  SetY(GetY()*sy);
+    SetX(GetX()*sx);
+    SetY(GetY()*sy);
 }
 
 /***
@@ -116,8 +116,8 @@ void Point2D::Scale(double sx, double sy)
 */
 void Point2D::Translate(double dx, double dy)
 {
-  SetX(GetX()+dx);
-  SetY(GetY()+dy);
+    SetX(GetX()+dx);
+    SetY(GetY()+dy);
 }
 
 /***
@@ -128,11 +128,11 @@ void Point2D::Translate(double dx, double dy)
 */
 void Point2D::Rotate(double theta)
 {
-	double rotated_x = GetX()*cos(theta)-GetY()*sin(theta);
-	double rotated_y = GetX()*sin(theta)+GetY()*cos(theta);
+    double rotated_x = GetX()*cos(theta)-GetY()*sin(theta);
+    double rotated_y = GetX()*sin(theta)+GetY()*cos(theta);
 
-	SetX(rotated_x);
-	SetY(rotated_y);
+    SetX(rotated_x);
+    SetY(rotated_y);
 }
 
 /***
@@ -142,10 +142,10 @@ void Point2D::Rotate(double theta)
 */
 double Point2D::DistanceTo(Point2D *p)
 {
-  if (!p)
-    return 0.0f;
+    if (!p)
+        return 0.0f;
 
-  return sqrt(SquareDistanceTo(p));
+    return sqrt(SquareDistanceTo(p));
 }
 
 
@@ -157,7 +157,7 @@ double Point2D::DistanceTo(Point2D *p)
 */
 double Point2D::SquareDistanceTo(Point2D *p)
 {
-	return SQR(fabs(GetX()-p->GetX()))+SQR(fabs(GetY()-p->GetY()));
+    return SQR(fabs(GetX()-p->GetX()))+SQR(fabs(GetY()-p->GetY()));
 }
 
 /***
@@ -166,10 +166,10 @@ double Point2D::SquareDistanceTo(Point2D *p)
 */
 void Point2D::Set(Point2D *p)
 {
-	if (p) {
-		_x = p->GetX();
-		_y = p->GetY();
-	}
+    if (p) {
+        _x = p->GetX();
+        _y = p->GetY();
+    }
 }
 
 
@@ -178,8 +178,8 @@ void Point2D::Set(Point2D *p)
 */
 void Point2D::CalculateFirstAndLastPoint()
 {
-	SetFirstPoint(this);
-	SetLastPoint(this);
+    SetFirstPoint(this);
+    SetLastPoint(this);
 }
 
 /***
@@ -187,7 +187,7 @@ void Point2D::CalculateFirstAndLastPoint()
 */
 bool Point2D::operator ==(const Point2D &p)
 {    
-    return (_x == p._x) && (_y == p._y); 
+    return (_x == p._x) && (_y == p._y);
 }
 
 
@@ -196,7 +196,7 @@ bool Point2D::operator ==(const Point2D &p)
 */
 bool Point2D::operator !=(const Point2D &p)
 {    
-    return !((_x == p._x) && (_y == p._y)); 
+    return !((_x == p._x) && (_y == p._y));
 }
 
 /***
@@ -205,7 +205,7 @@ bool Point2D::operator !=(const Point2D &p)
 void Point2D::operator =(const Point2D &p)
 {    
     _x = p._x;
-	_y = p._y; 
+    _y = p._y;
 }
 
 
@@ -216,10 +216,10 @@ void Point2D::operator =(const Point2D &p)
 *         passed to it is less than, equal to or 
 *         greater than the second one. 
 */
-int Point2D::CompareOrder(Point2D ***p_p1, Point2D ***p_p2)
-{
-	return CompareOrder(**p_p1, **p_p2);
-}
+//int Point2D::CompareOrder(Point2D ***p_p1, Point2D ***p_p2)
+//{
+//    return CompareOrder(**p_p1, **p_p2);
+//}
 
 /**
 * @desc compares two points in term of order
@@ -228,10 +228,10 @@ int Point2D::CompareOrder(Point2D ***p_p1, Point2D ***p_p2)
 *         passed to it is less than, equal to or 
 *         greater than the second one. 
 */
-int Point2D::CompareOrder(Entity2D ***p_p1, Entity2D ***p_p2)
-{
-	return CompareOrder((Point2D *) **p_p1, (Point2D *) **p_p2);
-}
+//int Point2D::CompareOrder(Entity2D ***p_p1, Entity2D ***p_p2)
+//{
+//    return CompareOrder((Point2D *) **p_p1, (Point2D *) **p_p2);
+//}
 
 /**
 * @desc compares two points in term of order
@@ -240,22 +240,20 @@ int Point2D::CompareOrder(Entity2D ***p_p1, Entity2D ***p_p2)
 *         passed to it is less than, equal to or 
 *         greater than the second one. 
 */
-int Point2D::CompareOrder(Point2D *p1, Point2D *p2)
+bool Point2D::CompareOrder(Point2D *p2, Point2D *p1)
 {
-	
-	if (p1->GetY() < p2->GetY())
-		return -1;
-	else
-		if (p1->GetY() == p2->GetY()) {
-			if (p1->GetX() < p2->GetX())
-				return -1;
-			else 
-				if (p1->GetX() == p2->GetX())
-					return 0;
-		}
-	
-	// p1 is greater than p2
-	return 1;
+
+    if (p1->GetY() < p2->GetY())
+        return false;
+    else if (p1->GetY() == p2->GetY()) {
+        if (p1->GetX() < p2->GetX())
+            return false;
+        else if (p1->GetX() == p2->GetX())
+            return false;
+    }
+
+    // p1 is greater than p2
+    return true;
 
 }
 
@@ -274,7 +272,7 @@ int Point2D::CompareOrderUsingDistanceToOwner(Point2D ***p1, Point2D ***p2)
     Point2D *first_point_owner_p1 = (**p1)->_owner_entity->GetFirstPoint();
     Point2D *first_point_owner_p2 = (**p2)->_owner_entity->GetFirstPoint();
     
-    // if any of the points owner entity have no first point computed 
+    // if any of the points owner entity have no first point computed
     // then the points cannot be compared
     if (!first_point_owner_p1 || !first_point_owner_p2) return 0;
 
@@ -295,10 +293,10 @@ int Point2D::CompareOrderUsingDistanceToOwner(Point2D ***p1, Point2D ***p2)
 */
 bool Point2D::Ordered(Point2D *p1, Point2D *p2)
 {
-	if (CompareOrder(p1, p2) > 0)
-		return false;
-	else
-		return true;
+    if (CompareOrder(p1, p2) > 0)
+        return false;
+    else
+        return true;
 }
 
 /***
@@ -308,7 +306,7 @@ bool Point2D::Ordered(Point2D *p1, Point2D *p2)
 */
 bool Point2D::Collinear(Point2D *a, Point2D *b)
 {
-	return Area(a, b, this) == 0.0f;
+    return Area(a, b, this) == 0.0f;
 }
 
 
@@ -319,7 +317,7 @@ bool Point2D::Collinear(Point2D *a, Point2D *b)
 */
 bool Point2D::Left(Point2D *a, Point2D *b)
 {
-	return Area(a,b, this) > 0.0f;
+    return Area(a,b, this) > 0.0f;
 }
 
 /***
@@ -329,17 +327,17 @@ bool Point2D::Left(Point2D *a, Point2D *b)
 */
 bool Point2D::Between(Point2D *a, Point2D *b)
 {
-	// if this point is not collinear with a and b
-	// then it cannot be between this two points
-	if (! Collinear(a,b)) 
-		return false;
+    // if this point is not collinear with a and b
+    // then it cannot be between this two points
+    if (! Collinear(a,b))
+        return false;
 
-	if (a->GetX() != b->GetX()) 
-		return ((a->GetX()<=_x) && (_x<=b->GetX())) ||
-			((a->GetX()>=_x) && (_x >= b->GetX()));
-	else
-		return ((a->GetY()<=_y) && (_y<=b->GetY())) ||
-			((a->GetY()>=_y) && (_y >=b->GetY()));
+    if (a->GetX() != b->GetX())
+        return ((a->GetX()<=_x) && (_x<=b->GetX())) ||
+                ((a->GetX()>=_x) && (_x >= b->GetX()));
+    else
+        return ((a->GetY()<=_y) && (_y<=b->GetY())) ||
+                ((a->GetY()>=_y) && (_y >=b->GetY()));
 }
 
 /***
@@ -350,13 +348,13 @@ bool Point2D::Between(Point2D *a, Point2D *b)
 */
 bool Point2D::StrictBetween(Point2D *a, Point2D *b)
 {
-	// first check if this point is between a and b
-	if (! Between(a,b)) 
-		return false;
+    // first check if this point is between a and b
+    if (! Between(a,b))
+        return false;
 
-	// if is between, lets check if it is not coincident with
-	// one of them
-	return (((*a)!=(*this) && (*b)!=(*this)));
+    // if is between, lets check if it is not coincident with
+    // one of them
+    return (((*a)!=(*this) && (*b)!=(*this)));
 }
 
 /***
@@ -364,8 +362,8 @@ bool Point2D::StrictBetween(Point2D *a, Point2D *b)
 */
 void Point2D::PerformRounding(double gamma)
 {
-	Point2D::Round(&_x, &gamma);
-	Point2D::Round(&_y, &gamma);
+    Point2D::Round(&_x, &gamma);
+    Point2D::Round(&_y, &gamma);
 }
 
 /***
@@ -374,12 +372,12 @@ void Point2D::PerformRounding(double gamma)
 */
 void Point2D::Round(double *value, double *gamma)
 {
-	double v = (*value) / (*gamma);
+    double v = (*value) / (*gamma);
 
-	double v_ceil = ceil(v);
+    double v_ceil = ceil(v);
 
-	if (fabs(v-v_ceil)<=0.5)
-		(*value) = v_ceil * (*gamma);
-	else
-		(*value) = floor(v) * (*gamma);
+    if (fabs(v-v_ceil)<=0.5)
+        (*value) = v_ceil * (*gamma);
+    else
+        (*value) = floor(v) * (*gamma);
 }

@@ -25,11 +25,11 @@ public:
     bool Collinear(Point2D *a, Point2D *b);
 
     static bool Ordered(Point2D * p1, Point2D * p2);
-    static int CompareOrder(Point2D * p1, Point2D * p2);
+    static bool CompareOrder(Point2D * p2, Point2D * p1);
 
     // the next two methods are used to sort arrays
-    static int CompareOrder(Point2D *** p_p1, Point2D *** p_p2);
-    static int CompareOrder(Entity2D *** p_p1, Entity2D *** p_p2);
+//    static int CompareOrder(Point2D *** p_p1, Point2D *** p_p2);
+//    static int CompareOrder(Entity2D *** p_p1, Entity2D *** p_p2);
 
     inline Entity2D * GetOwnerEntity() { return _owner_entity;}
     inline void SetOwnerEntity(Entity2D * owner_entity) { _owner_entity = owner_entity;}

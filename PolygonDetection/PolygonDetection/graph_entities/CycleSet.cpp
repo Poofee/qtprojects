@@ -11,6 +11,8 @@
 #include <stdlib.h> // for malloc and free
 #include <malloc.h> // for malloc and free
 
+#include <QtAlgorithms>
+
 using namespace PolygonDetection;
 
 //WX_DEFINE_OBJARRAY(CyclesArray);
@@ -131,6 +133,8 @@ void CycleSet::SelectCycles()
 
 void CycleSet::Sort()
 {
-//	if (_p_cycles_array)
+    if (_p_cycles_array){
+        qSort(_p_cycles_array->begin(),_p_cycles_array->end(),Cycle::CompareOrder);
+    }
 //		_p_cycles_array->Sort(Cycle::CompareOrder);
 }

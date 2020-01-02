@@ -9,6 +9,10 @@
 
 #include "../GraphicalPrimitives2D/Color.h"
 
+#include <QtAlgorithms>
+#include <QDebug>
+#include <algorithm>
+
 using namespace PolygonDetection;
 
 //WX_DEFINE_OBJARRAY(PolygonsArray);
@@ -103,36 +107,26 @@ bool PolygonDetection::PolygonSet::Construct(LineSet * line_set)
     } else {
         // run the Floyd-Warshall Algorithm
         G->FloydWarshall();
-        //		YIELD_CONTROL();
+        // run the Horton's Algorithm
+        CycleSet * cycle_set = G->Horton();
 
-        if (!PolygonDetector::WasInterrupted()){
-            // run the Horton's Algorithm
-            CycleSet * cycle_set = G->Horton();
-            //			YIELD_CONTROL();
+        if (!cycle_set) {
+            printf("Could not find the cycle set produced by Horton algorithm.\n");
+        } else {
+            if (!PolygonDetector::Silent())
+                printf("Detected %d cycles.\n", cycle_set->size());
 
-            if (!cycle_set) {
-                printf("Could not find the cycle set produced by Horton algorithm.\n");
-            } else {
-#ifdef GRAPH_DEBUG	
-                G->Log();
-                cycle_set->Log();
-#endif 	
-                if (!PolygonDetector::Silent())
-                    printf("Detected %d cycles.\n", cycle_set->size());
-
-                if (!PolygonDetector::WasInterrupted()){
-                    // Convert cycles to polygons
-                    CyclesToPolygons(cycle_set);
-                }
-
-                DELETE_OBJECT(cycle_set);
+            if (!PolygonDetector::WasInterrupted()){
+                // Convert cycles to polygons
+                CyclesToPolygons(cycle_set);
             }
+
+            DELETE_OBJECT(cycle_set);
         }
+
     }
 
     wxDELETE(G);
-
-    //	//ENDING_PROCESS_MESSAGE();
 
     return true;
 }
@@ -146,9 +140,7 @@ void PolygonDetection::PolygonSet::CreatePointsArray(LineSet * line_set)
 
     if (line_set) {
         _all_points_array.clear();
-
         for (int i=0; i< line_set->size(); i++) {
-
             Line * line = line_set->Item(i);
             line->CalculateFirstAndLastPoint();
 
@@ -170,6 +162,11 @@ void PolygonDetection::PolygonSet::CreatePointsArray(LineSet * line_set)
         // the points are sorted in order to allow fast
         // identification of coincident points
         //        _all_points_array.Sort(GraphicalPrimitives2D::Point2D::CompareOrder);
+        for(auto p : _all_points_array)
+            qDebug()<<p->GetX()<<","<<p->GetY();
+        qSort(_all_points_array.begin(),_all_points_array.end(),GraphicalPrimitives2D::Point2D::CompareOrder);
+        for(auto p : _all_points_array)
+            qDebug()<<p->GetX()<<","<<p->GetY();
 
         // at the end we update the index on all points
         for(int i=0; i<_all_points_array.size();i++)

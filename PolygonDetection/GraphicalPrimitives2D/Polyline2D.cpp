@@ -679,34 +679,34 @@ void Polyline2D::RecalculateLength()
 */
 QString Polyline2D::AsString(bool svg_format, const QString & stroke_color, const QString & fill_color)
 {
-//    Point2D * vertex;
-    QString result;// = wxEmptyString;
+    Point2D * vertex;
+    QString result;
 
-//    // checks format
-//    if (svg_format) {
-//        // adds svg polyline entity tag
-//        result+=wxT("<polyline fill=\""+fill_color+"\" stroke=\""+stroke_color+"\" stroke-width=\"0.002\"\n");
-//        result+=wxT("points=\"");
-//    }
+    // checks format
+    if (svg_format) {
+        // adds svg polyline entity tag
+        result+=("<polyline fill=\""+fill_color+"\" stroke=\""+stroke_color+"\" stroke-width=\"0.002\"\n");
+        result+=("points=\"");
+    }
 
-//    for (int i=0; i<GetVertexCount(); i++){
-//        vertex = GetVertexAt(i);
-//        QString format;
-//        if(svg_format)
-//            format=wxT("%f,%f ") ;
-//        else
-//            format=wxT("%f\t%f\t");
-//        result += QString::Format(format, vertex->GetX(), vertex->GetY());
-//    }
+    for (int i=0; i<GetVertexCount(); i++){
+        vertex = GetVertexAt(i);
+        QString format;
+        if(svg_format)
+            format=QString("%1,%2 ").arg(vertex->GetX()).arg(vertex->GetY()) ;
+        else
+            format=QString("%1\t%2\t").arg(vertex->GetX()).arg(vertex->GetY());
+        result += format;
+    }
 
-//    // checks format
-//    if (svg_format) {
-//        // adds svg polyline entity tag end symbol
-//        result+=wxT("\"/>");
-//    }
+    // checks format
+    if (svg_format) {
+        // adds svg polyline entity tag end symbol
+        result+=("\"/>");
+    }
 
-//    // adds the new line indicating the end of the polyline
-//    result += wxT("\n");
+    // adds the new line indicating the end of the polyline
+    result += ("\n");
 
     return result;
 }

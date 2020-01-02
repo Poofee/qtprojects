@@ -62,14 +62,14 @@ bool PolygonDetector::ReadSVGfile(const char * filename) {
         const char * y2_s= line_element->Attribute("y2");
 
         if (!x1_s || !x2_s || !y1_s || !y2_s) {
-//            wxLogWarning("Failed to read line from SVG file.");
+            printf("Failed to read line from SVG file.\n");
             continue;
         }
 
-        float x1 = atof(x1_s);
-        float y1 = atof(y1_s);
-        float x2 = atof(x2_s);
-        float y2 = atof(y2_s);
+        double x1 = atof(x1_s);
+        double y1 = atof(y1_s);
+        double x2 = atof(x2_s);
+        double y2 = atof(y2_s);
 
         AddLine(x1,y1,x2,y2);
     }
@@ -120,6 +120,7 @@ bool PolygonDetection::PolygonDetector::DetectPolygons(void)
         printf("After removal, line set contains %d lines.\n", GetLineCount());
 
     _line_set.Sort();
+
 
     if (!_polygon_set.Construct(&_line_set)) {
         printf("Error constructing the polygon set.\n");

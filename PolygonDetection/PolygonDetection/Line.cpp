@@ -1,5 +1,7 @@
 #include ".\line.h"
 
+#include <QtAlgorithms>
+
 using namespace PolygonDetection;
 Line::Line(void) : 
 GraphicalPrimitives2D::Line2D()
@@ -39,6 +41,7 @@ void Line::AddIntersectionPoint(GraphicalPrimitives2D::Point2D *p)
 void Line::SortIntersectionsList()
 {
 //	_intersections.Sort(GraphicalPrimitives2D::Point2D::CompareOrder);
+    qSort(_intersections.begin(),_intersections.end(),GraphicalPrimitives2D::Point2D::CompareOrder);
 }
 
 Line * PolygonDetection::Line::SimplifiedLine(Line * line_1, Line * line_2)
@@ -58,8 +61,8 @@ Line * PolygonDetection::Line::SimplifiedLine(Line * line_1, Line * line_2)
 	return (Line*) line;
 }
 
-int PolygonDetection::Line::CompareOrder(Line *** p_line1, Line *** p_line2) {
+bool PolygonDetection::Line::CompareOrder(Line * p_line1, Line * p_line2) {
 	return GraphicalPrimitives2D::Line2D::CompareOrder(
-		(GraphicalPrimitives2D::Line2D ***) p_line1, 
-		(GraphicalPrimitives2D::Line2D ***) p_line2);
+        (GraphicalPrimitives2D::Line2D *) p_line1,
+        (GraphicalPrimitives2D::Line2D *) p_line2);
 }

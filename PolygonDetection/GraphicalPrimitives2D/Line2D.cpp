@@ -238,19 +238,19 @@ Point2D * Line2D::IntersectionPoint(Line2D *line)
 * @param pointer to point2D entity
 * @note the point will be deleted by the line destructor
 */
-// void Line2D::AddIntersectionPoint(Point2D *p)
-// {
-// 	if (p)
-// 		_intersections.Add(p);
-// }
-// 
-// /***
-// * @desc sort the intersections list
-// */
-// void Line2D::SortIntersectionsList()
-// {
-// 	_intersections.Sort(Point2D::CompareOrder);
-// }
+//void Line2D::AddIntersectionPoint(Point2D *p)
+//{
+//    if (p)
+//        _intersections.Add(p);
+//}
+
+/***
+ * @desc sort the intersections list
+ */
+//void Line2D::SortIntersectionsList()
+//{
+//    _intersections.Sort(Point2D::CompareOrder);
+//}
 
 /**
 * @desc compares two lines in term of order
@@ -259,44 +259,44 @@ Point2D * Line2D::IntersectionPoint(Line2D *line)
 *         passed to it is less than, equal to or 
 *         greater than the second one. 
 */
-int Line2D::CompareOrder(Line2D ***p_line1, Line2D ***p_line2)
+bool Line2D::CompareOrder(Line2D *p_line2, Line2D *p_line1)
 {
-	int result = Point2D::CompareOrder((**p_line1)->GetFirstPoint(), (**p_line2)->GetFirstPoint());
+    bool result = Point2D::CompareOrder((p_line1)->GetFirstPoint(), (p_line2)->GetFirstPoint());
 
-	if (result==0) {
+    if (result==false) {
 		// in case lines share first point
 		// we must order the lines by its slope
 
-		double dx1 = (**p_line1)->GetLastPoint()->GetX() - (**p_line1)->GetFirstPoint()->GetX();
-		double dy1 = (**p_line1)->GetLastPoint()->GetY() - (**p_line1)->GetFirstPoint()->GetY();
-		double dx2 = (**p_line2)->GetLastPoint()->GetX() - (**p_line2)->GetFirstPoint()->GetX();
-		double dy2 = (**p_line2)->GetLastPoint()->GetY() - (**p_line2)->GetFirstPoint()->GetY();
+        double dx1 = (p_line1)->GetLastPoint()->GetX() - (p_line1)->GetFirstPoint()->GetX();
+        double dy1 = (p_line1)->GetLastPoint()->GetY() - (p_line1)->GetFirstPoint()->GetY();
+        double dx2 = (p_line2)->GetLastPoint()->GetX() - (p_line2)->GetFirstPoint()->GetX();
+        double dy2 = (p_line2)->GetLastPoint()->GetY() - (p_line2)->GetFirstPoint()->GetY();
 
 		// by definition of first and last point we are sure that dy > 0
 
 		if (dx1>0 && dx2<0)
 			// line 1 in 1st quadrant, line 2 in 2nd quadrant
 			// this means line 2 cames first
-			return 1;
+            return true;
 
 		if (dx1<0 && dx2>0)
 			// line 1 in 2nd quadrant, line 2 in 1st quadrant
 			// this means line 1 cames first
-			return -1;
+            return false;
 
 		if (dx1==0) {
 			// first line is vertical
 			if (dx2>0)
 				// second line in 1st quadrant
 				// first line is previous
-				return -1;
+                return false;
 
 			if (dx2<0)
 				// second line in 2nd quadrant
 				// second line is previous
-				return 1;
+                return true;
 			// this should no happen
-			return 0;
+            return false;
 		}
 
 		if (dx2==0) {
@@ -304,15 +304,15 @@ int Line2D::CompareOrder(Line2D ***p_line1, Line2D ***p_line2)
 			if (dx1>0)
 				// first line in 1st quadrant
 				// second line is previous
-				return 1;
+                return true;
 
 			if (dx1<0)
 				// first line in 2nd quadrant
 				// first line is previous
-				return -1;
+                return false;
 
 			// this should not happen
-			return 0;
+            return false;
 		}
 
 
@@ -321,13 +321,13 @@ int Line2D::CompareOrder(Line2D ***p_line1, Line2D ***p_line2)
 		double m2 = dy2/dx2;
 		// line 1 and line 2 in 2nd quadrant
 		if (m1>m2)
-			return -1;
+            return false;
 		if (m1<m2)
-			return 1;
+            return true;
 		
 		// in this case we have the same slope in both lines, 
 		// which means that both lines are coincident.
-		return 0;
+        return false;
 	}
 
 	return result;

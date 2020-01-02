@@ -11,11 +11,12 @@ namespace PolygonDetection {
 class Graph
 {
 public:
+    Graph(int vertices);
+    virtual ~Graph();
+
     CycleSet * Horton();
     void FloydWarshall();
     void SetAdjacency(int v1, int v2);
-    Graph(int vertices);
-    virtual ~Graph();
 
     int GetEdgeCount();
     inline int GetVertexCount() { return _vertex_count; }
@@ -28,10 +29,11 @@ private:
 
     void InitializeFloydWarshall();
     int MatrixOffset(int v1, int v2);
-    int _vertex_count;
-    MatrixModuloTwo * _p_adjacency_matrix;
 
     wxArrayInt * GetShortestPath(int i, int j);
+
+    int _vertex_count;
+    MatrixModuloTwo * _p_adjacency_matrix;
     int * _d_matrix;
     int * _predecessor_matrix;
 };
