@@ -44,7 +44,7 @@ Polygon2D::~Polygon2D()
 void Polygon2D::Initialize()
 {
 	_closed=true; 
-    _area=0.0f;    
+    _area=0;
 	
 // 
 // 	_is_convex = false;

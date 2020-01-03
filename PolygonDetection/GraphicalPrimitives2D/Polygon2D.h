@@ -39,67 +39,67 @@
 //#include <wx/string.h>
 
 namespace GraphicalPrimitives2D {
-	class Polygon2D : public Polyline2D
-	{
-	public:	
-//		inline void SetConvex(bool convex) { _is_convex = convex; };
-//		inline bool IsConvex() { return _is_convex; };
+class Polygon2D : public Polyline2D
+{
+public:
+    Polygon2D(Polygon2D * polygon);
+    Polygon2D();
+    virtual ~Polygon2D();
 
-		bool Contains(Line2D * line, bool strict=false);
-		bool Contains(Entity2D * entity, bool strict=false);	
-		bool Disjoint(Polygon2D *polygon);
-		bool Minus(Polygon2D * p);	
+    //		inline void SetConvex(bool convex) { _is_convex = convex; };
+    //		inline bool IsConvex() { return _is_convex; };
 
-// 		void FindSiblings();
-// 		void FindSons();
-// 
-// 		static int CompareDeepness(Polygon2D ***p_p1, Polygon2D ***p_p2);
-// 		
-// 		inline int GetDeepness() { 
-// 			return _container_polygons?_container_polygons->size():0;
-// 		};
+    bool Contains(Line2D * line, bool strict=false);
+    bool Contains(Entity2D * entity, bool strict=false);
+    bool Disjoint(Polygon2D *polygon);
+    bool Minus(Polygon2D * p);
 
-//		QString GetTopologyFileEntry();
-			
-//		inline void AddSibling(Polygon2D *p) { AddPolygonToArray(p, &_sibling_polygons); };
-//		inline void AddSon(Polygon2D * p) { AddPolygonToArray(p, &_son_polygons); };
-		
-//		inline void SetParent(Polygon2D * p) { _parent_polygon = p; };
-//		inline Polygon2D * GetParent() { return _parent_polygon; };
-		
-//		inline void AddAdjacent(Polygon2D *p) { AddPolygonToArray(p, &_adjacent_polygons); };
-//		inline void AddContained(Polygon2D * p) { AddPolygonToArray(p, &_contained_polygons); };
-//		inline void AddContainer(Polygon2D * p) { AddPolygonToArray(p, &_container_polygons); };	
+    // 		void FindSiblings();
+    // 		void FindSons();
+    //
+    // 		static int CompareDeepness(Polygon2D ***p_p1, Polygon2D ***p_p2);
+    //
+    // 		inline int GetDeepness() {
+    // 			return _container_polygons?_container_polygons->size():0;
+    // 		};
 
-        static bool IsAdjacent( Polygon2D *p1, Polygon2D *p2, bool strict=false);
-        inline bool IsAdjacent(Polygon2D *p, bool strict=false) { return IsAdjacent(this, p, strict); }
-		bool Contains(Polyline2D *polyline, bool strict=false);
-		bool Contains(Point2D * point, bool strict=false);	
-        virtual inline bool IsClosed() { return true; }
+    //		QString GetTopologyFileEntry();
 
-		Polygon2D(Polygon2D * polygon);
-		Polygon2D();
-		virtual ~Polygon2D();
+    //		inline void AddSibling(Polygon2D *p) { AddPolygonToArray(p, &_sibling_polygons); };
+    //		inline void AddSon(Polygon2D * p) { AddPolygonToArray(p, &_son_polygons); };
 
-	private:	
-//		bool _is_convex;
-		void Initialize();
-        bool ConsecutiveVertices(Point2D *v1, Point2D* v2, short * index_increment = nullptr);
-		static bool SingleAdjacency(Polygon2D *p1, Polygon2D *p2, int *i, int* j, long *length);
-//		static bool Siblings(Polygon2D* p1, Polygon2D* p2);
+    //		inline void SetParent(Polygon2D * p) { _parent_polygon = p; };
+    //		inline Polygon2D * GetParent() { return _parent_polygon; };
 
-//		void AddPolygonToArray(Polygon2D * p, EntityArray ** a);
-		double _area;
+    //		inline void AddAdjacent(Polygon2D *p) { AddPolygonToArray(p, &_adjacent_polygons); };
+    //		inline void AddContained(Polygon2D * p) { AddPolygonToArray(p, &_contained_polygons); };
+    //		inline void AddContainer(Polygon2D * p) { AddPolygonToArray(p, &_container_polygons); };
 
-//		Polygon2D * _parent_polygon;
+    static bool IsAdjacent( Polygon2D *p1, Polygon2D *p2, bool strict=false);
+    inline bool IsAdjacent(Polygon2D *p, bool strict=false) { return IsAdjacent(this, p, strict); }
+    bool Contains(Polyline2D *polyline, bool strict=false);
+    bool Contains(Point2D * point, bool strict=false);
+    virtual inline bool IsClosed() { return true; }
 
-//		EntityArray * _son_polygons;
-//		EntityArray * _sibling_polygons ;
+private:
+    //		bool _is_convex;
+    void Initialize();
+    bool ConsecutiveVertices(Point2D *v1, Point2D* v2, short * index_increment = nullptr);
+    static bool SingleAdjacency(Polygon2D *p1, Polygon2D *p2, int *i, int* j, long *length);
+    //		static bool Siblings(Polygon2D* p1, Polygon2D* p2);
 
-//		EntityArray * _container_polygons;
-//		EntityArray * _contained_polygons;
-//		EntityArray * _adjacent_polygons ;
-	};
+    //		void AddPolygonToArray(Polygon2D * p, EntityArray ** a);
+    double _area;
+
+    //		Polygon2D * _parent_polygon;
+
+    //		EntityArray * _son_polygons;
+    //		EntityArray * _sibling_polygons ;
+
+    //		EntityArray * _container_polygons;
+    //		EntityArray * _contained_polygons;
+    //		EntityArray * _adjacent_polygons ;
+};
 }
 
 #endif // !defined(POLYGON2D_H)

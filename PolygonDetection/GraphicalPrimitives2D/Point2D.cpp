@@ -143,7 +143,7 @@ void Point2D::Rotate(double theta)
 double Point2D::DistanceTo(Point2D *p)
 {
     if (!p)
-        return 0.0f;
+        return 0;
 
     return sqrt(SquareDistanceTo(p));
 }
@@ -293,7 +293,7 @@ int Point2D::CompareOrderUsingDistanceToOwner(Point2D ***p1, Point2D ***p2)
 */
 bool Point2D::Ordered(Point2D *p1, Point2D *p2)
 {
-    if (CompareOrder(p1, p2) > 0)
+    if (CompareOrder(p1, p2))
         return false;
     else
         return true;
@@ -306,7 +306,7 @@ bool Point2D::Ordered(Point2D *p1, Point2D *p2)
 */
 bool Point2D::Collinear(Point2D *a, Point2D *b)
 {
-    return Area(a, b, this) == 0.0f;
+    return Area(a, b, this) == 0;
 }
 
 
@@ -317,7 +317,7 @@ bool Point2D::Collinear(Point2D *a, Point2D *b)
 */
 bool Point2D::Left(Point2D *a, Point2D *b)
 {
-    return Area(a,b, this) > 0.0f;
+    return Area(a,b, this) > 0;
 }
 
 /***

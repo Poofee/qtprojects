@@ -66,7 +66,7 @@ Box2D * Entity2D::GetBoundingBox()
 double Entity2D::Area(Point2D *a, Point2D *b, Point2D *c)
 {
 	if (a==nullptr || b==nullptr || c==nullptr)
-		return 0.0f;
+        return 0;
 
 	return (b->GetX() - a->GetX())*(c->GetY()-a->GetY())-
 		(c->GetX()-a->GetX())*(b->GetY()-a->GetY());

@@ -135,7 +135,7 @@ bool PolygonDetection::LineSet::RemoveIntersections(void)
 //    WX_APPEND_ARRAY(_lines_array, created_lines_list);
     for(auto l : created_lines_list)
         _lines_array.append(l);
-    created_lines_list.clear();
+    WX_CLEAR_ARRAY(created_lines_list);
 
     //ENDING_PROCESS_MESSAGE();
     return true;

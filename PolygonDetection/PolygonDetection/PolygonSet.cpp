@@ -23,7 +23,7 @@ PolygonSet::PolygonSet(void)
 
 PolygonSet::~PolygonSet(void)
 {
-    Clear();
+    //    Clear();
 }
 
 void PolygonSet::Clear(void)
@@ -113,13 +113,9 @@ bool PolygonDetection::PolygonSet::Construct(LineSet * line_set)
         if (!cycle_set) {
             printf("Could not find the cycle set produced by Horton algorithm.\n");
         } else {
-            if (!PolygonDetector::Silent())
-                printf("Detected %d cycles.\n", cycle_set->size());
-
-            if (!PolygonDetector::WasInterrupted()){
-                // Convert cycles to polygons
-                CyclesToPolygons(cycle_set);
-            }
+            printf("Detected %d cycles.\n", cycle_set->size());
+            // Convert cycles to polygons
+            CyclesToPolygons(cycle_set);
 
             DELETE_OBJECT(cycle_set);
         }
@@ -139,7 +135,7 @@ void PolygonDetection::PolygonSet::CreatePointsArray(LineSet * line_set)
 {
 
     if (line_set) {
-        _all_points_array.clear();
+        WX_CLEAR_ARRAY(_all_points_array);
         for (int i=0; i< line_set->size(); i++) {
             Line * line = line_set->Item(i);
             line->CalculateFirstAndLastPoint();
@@ -161,12 +157,7 @@ void PolygonDetection::PolygonSet::CreatePointsArray(LineSet * line_set)
 
         // the points are sorted in order to allow fast
         // identification of coincident points
-        //        _all_points_array.Sort(GraphicalPrimitives2D::Point2D::CompareOrder);
-        for(auto p : _all_points_array)
-            qDebug()<<p->GetX()<<","<<p->GetY();
         qSort(_all_points_array.begin(),_all_points_array.end(),GraphicalPrimitives2D::Point2D::CompareOrder);
-        for(auto p : _all_points_array)
-            qDebug()<<p->GetX()<<","<<p->GetY();
 
         // at the end we update the index on all points
         for(int i=0; i<_all_points_array.size();i++)
@@ -243,7 +234,6 @@ void PolygonSet::CyclesToPolygons(CycleSet *cycle_set)
         // then create polygons
         for (int i=0; i<cycle_set->size();i++){
             Cycle * cycle = cycle_set->GetCycle(i);
-            //YIELD_CONTROL();
 
             if (cycle->GetVertexCount()>2) {
                 Polygon * plg = new Polygon();
@@ -259,19 +249,15 @@ void PolygonSet::CyclesToPolygons(CycleSet *cycle_set)
 
                 // update polygon first and last point, plus closed status
                 plg->CalculateFirstAndLastPoint();
-
-
                 // simplify the polygon, removing unnecessary vertices
                 // IMPORTANT NOTICE: This should not be called here,
                 // because we need all vertices for remove contained polygons
                 // with single adjacencies. This simplification is done
                 // later, within the polygon set simplification
                 // plg->Simplify();
-
             }
         }
     }
-    //ENDING_PROCESS_MESSAGE();
 }
 
 /***

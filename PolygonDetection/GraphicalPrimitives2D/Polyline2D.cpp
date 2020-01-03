@@ -14,7 +14,7 @@ using namespace GraphicalPrimitives2D;
 Polyline2D::Polyline2D() : Entity2D(Entity2D::et_polyline)
 {
     _closed=false;
-    _length=0.0f;
+    _length=0;
     _p_bounding_box = nullptr;
     CalculateFirstAndLastPoint();
 
@@ -26,7 +26,7 @@ Polyline2D::Polyline2D() : Entity2D(Entity2D::et_polyline)
 Polyline2D::Polyline2D(entity_type type ) : 
     Entity2D(type)
 {
-    _length = 0.0f;
+    _length = 0;
     _p_bounding_box = nullptr;
     CalculateFirstAndLastPoint();
 }
@@ -38,7 +38,7 @@ Polyline2D::Polyline2D(Line2D * line ) :
     Entity2D(Entity2D::et_polyline)
 {
     _closed = false;
-    _length = 0.0f;
+    _length = 0;
     _p_bounding_box = nullptr;
 
     if (line) {
@@ -57,7 +57,7 @@ Polyline2D::Polyline2D(Polyline2D * polyline ) :
     Entity2D(Entity2D::et_polyline)
 {
     _closed = false;
-    _length = 0.0f;
+    _length = 0;
     _p_bounding_box = nullptr;
 
     if (polyline)
@@ -155,8 +155,8 @@ void Polyline2D::CalculateBoundingBox()
     if (_vertex_array.size()<2)
         return;
 
-    double min_x=0.0f, max_x=0.0f, x;
-    double min_y=0.0f, max_y=0.0f, y;
+    double min_x=0, max_x=0, x;
+    double min_y=0, max_y=0, y;
     Point2D *vertex;
     bool first=true;
 
@@ -488,8 +488,8 @@ void Polyline2D::DouglasPeucker(double tolerance, int start_index, int end_index
         return;
 
     // lets start by finding the farthest point from line segment
-    double maximum_distance=0.0f;
-    double current_distance=0.0f;
+    double maximum_distance=0;
+    double current_distance=0;
     int maximum_index = start_index+1;
 
     // sweep all points...
@@ -799,7 +799,7 @@ Point2D * Polyline2D::Extension(double length, short flag)
     double l = sqrt(SQR(x)+SQR(y));
 
     /* to avoid div/0 */
-    if (l==0.0f)
+    if (l==0)
         return nullptr;
 
     double ext_x = x*length/l;

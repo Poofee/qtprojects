@@ -79,7 +79,7 @@ T ORERED(const T& a, const T& b, const T& c)
 		for (size_t _array_index=0; _array_index<p_array->GetCount();_array_index++) DELETE_OBJECT((*p_array)[_array_index]); \
 		DELETE_OBJECT(p_array); }}
 #define WX_CLEAR_ARRAY(p_array) {  {\
-        for (int _array_index=0; _array_index<p_array.size();_array_index++) delete(p_array.at(_array_index)); \
+        for (int _array_index=0; _array_index<p_array.size();_array_index++) {}/*delete(p_array.at(_array_index));*/ \
          }}
 
 
@@ -93,7 +93,7 @@ T ORERED(const T& a, const T& b, const T& c)
 #define RAD90DEG	1.5707963267948966192313216916398f
 #define RAD45DEG	0.78539816339744830961566084581988f
 
-#define DEG2RAD(ang) (ang*PI/180.0f)
+#define DEG2RAD(ang) (ang*PI/180)
 
 template <typename T>
 T SQR(const T& value)
