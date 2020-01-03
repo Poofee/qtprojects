@@ -50,7 +50,7 @@ void PolygonSet::Simplify(double smaller_polygon_length)
 
         if (p1->GetLength()< smaller_polygon_length )  {
             _polygons_array.removeAt(i);
-            //			wxDELETE(p1);
+            wxDELETE(p1);
             j++;
         }
     }
@@ -76,11 +76,11 @@ void PolygonSet::Simplify(double smaller_polygon_length)
                         changes |= p2->Minus(p1);
                     }
                 }
+            }else{
+                /** 不相邻的情况，孔 **/
             }
         }
     }
-
-    //	//ENDING_PROCESS_MESSAGE();
 }
 
 

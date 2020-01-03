@@ -218,7 +218,6 @@ bool Polygon2D::Contains(Polyline2D *polyline, bool strict)
 		previous_inner_vertex = current_inner_vertex;
     }
 	 
-    
 	return true;
 }
 
@@ -304,13 +303,10 @@ bool Polygon2D::IsAdjacent(Polygon2D *p1, Polygon2D *p2, bool strict)
 				DELETE_OBJECT(line1);
 				DELETE_OBJECT(line2);
 				return true;
-			}
-				
-			
-			DELETE_OBJECT(line2);
+            }
+            DELETE_OBJECT(line2);
 			previous_v2 = v2;
 		}
-
 		DELETE_OBJECT(line1);
 		previous_v1 = v1;
 	}
@@ -462,7 +458,7 @@ bool Polygon2D::Minus(Polygon2D *p)
 	}
 
 	// now lets reset remove flag from all vertices
-	for (n=0;n< (long) GetVertexCount();n++)
+    for (n=0;n<GetVertexCount();n++)
 		_vertex_array[n]->ResetFlag(FLAG_REMOVE);
 	
 	// then lets flag vertices for removal from polygon
@@ -486,7 +482,7 @@ bool Polygon2D::Minus(Polygon2D *p)
 		
 	// and now lets add the new ones
     m = i;    
-	for (n=0;n<(long) VERTEX_COUNT_IN_POLYLINE(p)-abs(l);n++) {				
+    for (n=0;n< VERTEX_COUNT_IN_POLYLINE(p)-abs(l);n++) {
         STEP_ITERATOR(j, (l>0?-1:1), VERTEX_COUNT_IN_POLYLINE(p));
 		v = p->GetVertexAt(j);
         
