@@ -18,6 +18,11 @@ INCLUDEPATH += $$PWD/Geo
 INCLUDEPATH += $$PWD/Common
 INCLUDEPATH += $$PWD/Mesh
 INCLUDEPATH += $$PWD/Numeric
+INCLUDEPATH += $$PWD/Parser
+INCLUDEPATH += $$PWD/Post
+
+
+DESTDIR = $$PWD/../bin
 
 DEFINES += _USE_MATH_DEFINES NOMINMAX WIN32
 
@@ -199,7 +204,11 @@ HEADERS += \
     Numeric/simpleFunctionPython.h \
     Common/gmsh.h \
     Common/gmshc.h \
-    Geo/GModelIO_OCC.h
+    Geo/GModelIO_OCC.h \
+    Parser/FunctionManager.h \
+    Parser/Gmsh.tab.hpp \
+    Parser/Parser.h \
+    Post/ColorTable.h
 
 SOURCES += \
     Common/avl.cpp \
@@ -387,5 +396,9 @@ SOURCES += \
     Numeric/pyramidalBasis.cpp \
     Numeric/robustPredicates.cpp \
     main.cpp \
-    Geo/GModelIO_OCC.cpp
+    Geo/GModelIO_OCC.cpp \
+    Parser/FunctionManager.cpp \
+    Parser/Gmsh.tab.cpp \
+    Parser/Gmsh.yy.cpp \
+    Post/ColorTable.cpp
 

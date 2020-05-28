@@ -553,22 +553,22 @@ static void PrintOptionCategory(int level, int diff, int help, const char *cat,
   }
 }
 
-//GmshColorTable *GetColorTable(int num)
-//{
-//#if defined(HAVE_POST)
-//  PViewOptions *opt;
-//  if(PView::list.empty() || num < 0 || num > (int)PView::list.size() - 1)
-//    opt = PViewOptions::reference();
-//  else{
-//    opt = PView::list[num]->getOptions();
-//    // assume that if we access the colortable we will change it
-//    PView::list[num]->setChanged(true);
-//  }
-//  return &opt->colorTable;
-//#else
-//  return 0;
-//#endif
-//}
+GmshColorTable *GetColorTable(int num)
+{
+#if defined(HAVE_POST)
+  PViewOptions *opt;
+  if(PView::list.empty() || num < 0 || num > (int)PView::list.size() - 1)
+    opt = PViewOptions::reference();
+  else{
+    opt = PView::list[num]->getOptions();
+    // assume that if we access the colortable we will change it
+    PView::list[num]->setChanged(true);
+  }
+  return &opt->colorTable;
+#else
+  return 0;
+#endif
+}
 
 static void PrintColorTable(int num, int diff, const char *prefix, FILE *file,
                             std::vector<std::string> *vec)

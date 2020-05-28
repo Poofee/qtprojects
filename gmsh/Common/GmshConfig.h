@@ -53,7 +53,7 @@
 //#define HAVE_OPENGL
 //#define HAVE_OPTHOM
 //#define HAVE_OSMESA
-//#define HAVE_PARSER
+#define HAVE_PARSER
 //#define HAVE_PETSC
 //#define HAVE_PETSC4PY
 //#define HAVE_PLUGINS
