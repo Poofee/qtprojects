@@ -8,12 +8,12 @@
 
 class List_T {
 public:
-  int nmax;
-  int size;
-  int incr;
-  int n;
-  int isorder;
-  char *array;
+    int nmax;
+    int size;
+    int incr;
+    int n;
+    int isorder;
+    char *array;
 };
 
 List_T *List_Create(int n, int incr, int size);

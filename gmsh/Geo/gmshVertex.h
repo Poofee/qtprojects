@@ -12,24 +12,24 @@ class Vertex;
 
 class gmshVertex : public GVertex {
 protected:
-  Vertex *v;
+    Vertex *v;
 
 public:
-  gmshVertex(GModel *m, Vertex *_v);
-  virtual ~gmshVertex() {}
-  virtual void resetMeshAttributes();
-  virtual GPoint point() const;
-  virtual double x() const;
-  virtual double y() const;
-  virtual double z() const;
-  virtual void setPosition(GPoint &p);
-  virtual GeomType geomType() const;
-  ModelType getNativeType() const { return GmshModel; }
-  void *getNativePtr() const { return v; }
-  virtual void setPrescribedMeshSizeAtVertex(double l);
-  virtual SPoint2 reparamOnFace(const GFace *gf, int) const;
-  virtual void writeGEO(FILE *fp, const std::string &meshSizeParameter = "");
-  void resetNativePtr(Vertex *_v);
+    gmshVertex(GModel *m, Vertex *_v);
+    virtual ~gmshVertex() {}
+    virtual void resetMeshAttributes();
+    virtual GPoint point() const;
+    virtual double x() const;
+    virtual double y() const;
+    virtual double z() const;
+    virtual void setPosition(GPoint &p);
+    virtual GeomType geomType() const;
+    ModelType getNativeType() const { return GmshModel; }
+    void *getNativePtr() const { return v; }
+    virtual void setPrescribedMeshSizeAtVertex(double l);
+    virtual SPoint2 reparamOnFace(const GFace *gf, int) const;
+    virtual void writeGEO(FILE *fp, const std::string &meshSizeParameter = "");
+    void resetNativePtr(Vertex *_v);
 };
 
 #endif

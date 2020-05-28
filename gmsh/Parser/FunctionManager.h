@@ -16,18 +16,18 @@ class FunctionManagerMap;
 
 class FunctionManager
 {
-  FunctionManagerMap *functions;
-  FunctionManagerStack *calls;
-  FunctionManager ();
-  static FunctionManager *instance;
- public :
-  static FunctionManager* Instance();
-  int createFunction(const std::string &name, FILE *f,
-                     const std::string &filename, int lineno);
-  int enterFunction(const std::string &name, FILE **f,
-                    std::string &filename, int &lineno) const;
-  int leaveFunction(FILE **f, std::string &filename, int &lineno);
-  void clear();
+    FunctionManagerMap *functions;
+    FunctionManagerStack *calls;
+    FunctionManager ();
+    static FunctionManager *instance;
+public :
+    static FunctionManager* Instance();
+    int createFunction(const std::string &name, FILE *f,
+                       const std::string &filename, int lineno);
+    int enterFunction(const std::string &name, FILE **f,
+                      std::string &filename, int &lineno) const;
+    int leaveFunction(FILE **f, std::string &filename, int &lineno);
+    void clear();
 };
 
 #endif

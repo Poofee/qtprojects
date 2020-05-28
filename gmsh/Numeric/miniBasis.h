@@ -12,11 +12,11 @@
 
 class miniBasisTri : public polynomialBasis {
 public:
-  miniBasisTri();
+    miniBasisTri();
 };
 class miniBasisTet : public polynomialBasis {
 public:
-  miniBasisTet();
+    miniBasisTet();
 };
 
 #endif

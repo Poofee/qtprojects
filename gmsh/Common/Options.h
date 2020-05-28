@@ -832,35 +832,35 @@ unsigned int opt_view_color_background2d(OPT_ARGS_COL);
 // Data structures and global functions
 
 typedef struct {
-  const char *str;
-  int int1, int2, int3, int4;
+    const char *str;
+    int int1, int2, int3, int4;
 } StringX4Int;
 
 typedef struct {
-  int level;
-  const char *str;
-  std::string (*function)(int num, int action, std::string val);
-  std::string def;
-  const char *help;
+    int level;
+    const char *str;
+    std::string (*function)(int num, int action, std::string val);
+    std::string def;
+    const char *help;
 } StringXString;
 
 typedef struct {
-  int level;
-  const char *str;
-  double (*function)(int num, int action, double val);
-  double def;
-  const char *help;
+    int level;
+    const char *str;
+    double (*function)(int num, int action, double val);
+    double def;
+    const char *help;
 } StringXNumber;
 
 typedef struct {
-  int level;
-  const char *str;
-  unsigned int (*function)(int num, int action, unsigned int val);
-  // the defaults are stored in individual bytes so that we can initialize
-  // them statically independently of the machine endianness. They will be
-  // packed into unsigned ints at runtime
-  unsigned char def1[4], def2[4], def3[4], def4[4];
-  const char *help;
+    int level;
+    const char *str;
+    unsigned int (*function)(int num, int action, unsigned int val);
+    // the defaults are stored in individual bytes so that we can initialize
+    // them statically independently of the machine endianness. They will be
+    // packed into unsigned ints at runtime
+    unsigned char def1[4], def2[4], def3[4], def4[4];
+    const char *help;
 } StringXColor;
 
 void InitOptions(int num);

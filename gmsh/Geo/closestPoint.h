@@ -17,18 +17,18 @@
 class GEntity;
 class closestPointFinder {
 #if defined(HAVE_ANN)
-  ANNkd_tree *kdtree;
-  ANNpointArray zeronodes;
-  ANNidxArray index;
-  ANNdistArray dist;
+    ANNkd_tree *kdtree;
+    ANNpointArray zeronodes;
+    ANNidxArray index;
+    ANNdistArray dist;
 #endif
-  double _tolerance;
+    double _tolerance;
 
 public:
-  closestPointFinder(GEntity *, double);
-  ~closestPointFinder();
-  SPoint3 operator()(const SPoint3 &p);
-  inline double tol() const { return _tolerance; }
+    closestPointFinder(GEntity *, double);
+    ~closestPointFinder();
+    SPoint3 operator()(const SPoint3 &p);
+    inline double tol() const { return _tolerance; }
 };
 
 #endif

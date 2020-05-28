@@ -17,17 +17,17 @@ class MVertex;
 
 class MVertexBoundaryLayerData {
 private:
-  std::vector<std::vector<MVertex *> > children;
+    std::vector<std::vector<MVertex *> > children;
 
 public:
-  MVertexBoundaryLayerData(){};
-  ~MVertexBoundaryLayerData(){};
+    MVertexBoundaryLayerData(){};
+    ~MVertexBoundaryLayerData(){};
 
-  std::vector<MVertex *> *getChildren(int i);
-  int getNumChildren(int i);
+    std::vector<MVertex *> *getChildren(int i);
+    int getNumChildren(int i);
 
-  int getNumChildrenFamilies();
-  void addChildrenFamily(const std::vector<MVertex *> &family);
+    int getNumChildrenFamilies();
+    void addChildrenFamily(const std::vector<MVertex *> &family);
 };
 
 #endif

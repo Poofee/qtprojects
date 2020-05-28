@@ -20,27 +20,27 @@ class ACISFace;
 #include <edge.hxx>
 
 class ACISEdge : public GEdge {
-  EDGE *_e;
-  double s0, s1;
+    EDGE *_e;
+    double s0, s1;
 
 public:
-  ACISEdge(GModel *model, EDGE *e, int num, GVertex *v1, GVertex *v2);
-  virtual ~ACISEdge() {}
-  virtual Range<double> parBounds(int i) const;
-  virtual GeomType geomType() const;
-  virtual bool degenerate(int) const;
-  virtual GPoint point(double p) const;
-  virtual SVector3 firstDer(double par) const;
-  virtual double curvature(double par) const;
-  virtual SPoint2 reparamOnFace(const GFace *face, double epar, int dir) const;
-  virtual GPoint closestPoint(const SPoint3 &queryPoint, double &param) const;
-  ModelType getNativeType() const { return AcisModel; }
-  void *getNativePtr() const { return (void *)_e; }
-  virtual int minimumMeshSegments() const;
-  virtual int minimumDrawSegments() const;
-  bool isSeam(const GFace *) const;
-  virtual void writeGEO(FILE *fp);
-  EDGE *getEDGE() const { return _e; }
+    ACISEdge(GModel *model, EDGE *e, int num, GVertex *v1, GVertex *v2);
+    virtual ~ACISEdge() {}
+    virtual Range<double> parBounds(int i) const;
+    virtual GeomType geomType() const;
+    virtual bool degenerate(int) const;
+    virtual GPoint point(double p) const;
+    virtual SVector3 firstDer(double par) const;
+    virtual double curvature(double par) const;
+    virtual SPoint2 reparamOnFace(const GFace *face, double epar, int dir) const;
+    virtual GPoint closestPoint(const SPoint3 &queryPoint, double &param) const;
+    ModelType getNativeType() const { return AcisModel; }
+    void *getNativePtr() const { return (void *)_e; }
+    virtual int minimumMeshSegments() const;
+    virtual int minimumDrawSegments() const;
+    bool isSeam(const GFace *) const;
+    virtual void writeGEO(FILE *fp);
+    EDGE *getEDGE() const { return _e; }
 };
 GEdge *getACISEdgeByNativePtr(GModel *model, EDGE *toFind);
 

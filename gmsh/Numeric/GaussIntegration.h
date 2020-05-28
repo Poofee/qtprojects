@@ -9,8 +9,8 @@
 #include "fullMatrix.h"
 
 struct IntPt {
-  double pt[3];
-  double weight;
+    double pt[3];
+    double weight;
 };
 
 int GaussLegendreTri(int n1, int n2, IntPt *pts);
@@ -39,22 +39,22 @@ IntPt *getGQHPts(int order);
 
 class gaussIntegration {
 public:
-  static void get(int elementType, int order, fullMatrix<double> &pts,
-                  fullVector<double> &weights);
-  static void getTriangle(int order, fullMatrix<double> &pts,
-                          fullVector<double> &weights);
-  static void getLine(int order, fullMatrix<double> &pts,
-                      fullVector<double> &weights);
-  static void getQuad(int order, fullMatrix<double> &pts,
-                      fullVector<double> &weights);
-  static void getTetrahedron(int order, fullMatrix<double> &pts,
-                             fullVector<double> &weights);
-  static void getHexahedron(int order, fullMatrix<double> &pts,
+    static void get(int elementType, int order, fullMatrix<double> &pts,
+                    fullVector<double> &weights);
+    static void getTriangle(int order, fullMatrix<double> &pts,
                             fullVector<double> &weights);
-  static void getPrism(int order, fullMatrix<double> &pts,
-                       fullVector<double> &weights);
-  static void getPyramid(int order, fullMatrix<double> &pts,
+    static void getLine(int order, fullMatrix<double> &pts,
+                        fullVector<double> &weights);
+    static void getQuad(int order, fullMatrix<double> &pts,
+                        fullVector<double> &weights);
+    static void getTetrahedron(int order, fullMatrix<double> &pts,
+                               fullVector<double> &weights);
+    static void getHexahedron(int order, fullMatrix<double> &pts,
+                              fullVector<double> &weights);
+    static void getPrism(int order, fullMatrix<double> &pts,
                          fullVector<double> &weights);
+    static void getPyramid(int order, fullMatrix<double> &pts,
+                           fullVector<double> &weights);
 };
 
 #endif

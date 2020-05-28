@@ -16,21 +16,21 @@
 
 class ACISVertex : public GVertex {
 protected:
-  VERTEX *_v;
-  double _x, _y, _z;
+    VERTEX *_v;
+    double _x, _y, _z;
 
 public:
-  ACISVertex(GModel *m, int num, VERTEX *_v);
-  virtual ~ACISVertex() {}
-  virtual GPoint point() const { return GPoint(x(), y(), z()); }
-  virtual double x() const { return _x; }
-  virtual double y() const { return _y; }
-  virtual double z() const { return _z; }
-  virtual void setPosition(GPoint &p);
-  ModelType getNativeType() const { return AcisModel; }
-  void *getNativePtr() const { return (void *)_v; }
-  virtual SPoint2 reparamOnFace(const GFace *gf, int) const;
-  VERTEX *getVERTEX() { return _v; }
+    ACISVertex(GModel *m, int num, VERTEX *_v);
+    virtual ~ACISVertex() {}
+    virtual GPoint point() const { return GPoint(x(), y(), z()); }
+    virtual double x() const { return _x; }
+    virtual double y() const { return _y; }
+    virtual double z() const { return _z; }
+    virtual void setPosition(GPoint &p);
+    ModelType getNativeType() const { return AcisModel; }
+    void *getNativePtr() const { return (void *)_v; }
+    virtual SPoint2 reparamOnFace(const GFace *gf, int) const;
+    VERTEX *getVERTEX() { return _v; }
 };
 GVertex *getACISVertexByNativePtr(GModel *model, VERTEX *);
 

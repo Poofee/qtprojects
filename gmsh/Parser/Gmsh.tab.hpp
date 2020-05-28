@@ -47,8 +47,8 @@ extern int gmsh_yydebug;
 /* Token type.  */
 #ifndef YYTOKENTYPE
 # define YYTOKENTYPE
-  enum yytokentype
-  {
+enum yytokentype
+{
     tDOUBLE = 258,
     tSTRING = 259,
     tBIGSTR = 260,
@@ -278,7 +278,7 @@ extern int gmsh_yydebug;
     tPLUSPLUS = 484,
     tMINUSMINUS = 485,
     UNARYPREC = 486
-  };
+};
 #endif
 
 /* Value type.  */
@@ -288,14 +288,14 @@ union YYSTYPE
 {
 #line 166 "Gmsh.y" /* yacc.c:1921  */
 
-  char *c;
-  int i;
-  unsigned int u;
-  double d;
-  double v[5];
-  Shape s;
-  List_T *l;
-  struct TwoChar c2;
+    char *c;
+    int i;
+    unsigned int u;
+    double d;
+    double v[5];
+    Shape s;
+    List_T *l;
+    struct TwoChar c2;
 
 #line 301 "Gmsh.tab.hpp" /* yacc.c:1921  */
 };

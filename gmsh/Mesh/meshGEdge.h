@@ -10,20 +10,20 @@ class GEdge;
 
 // Create the mesh of the edge
 struct meshGEdge {
-  meshGEdge() {}
-  void operator()(GEdge *);
+    meshGEdge() {}
+    void operator()(GEdge *);
 };
 
 // destroy the mesh of the edge
 struct deMeshGEdge {
-  deMeshGEdge() {}
-  void operator()(GEdge *);
+    deMeshGEdge() {}
+    void operator()(GEdge *);
 };
 
 // Orient the mesh of an edge. This is necessary to comply with the orientation
 // constraints
 struct orientMeshGEdge {
-  void operator()(GEdge *);
+    void operator()(GEdge *);
 };
 
 int MeshExtrudedCurve(GEdge *ge);

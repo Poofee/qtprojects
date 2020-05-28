@@ -22,32 +22,32 @@ class MTriangle;
 // Create the mesh of the region
 class meshGRegion {
 public:
-  std::vector<GRegion *> &delaunay;
-  meshGRegion(std::vector<GRegion *> &d) : delaunay(d) {}
-  void operator()(GRegion *);
+    std::vector<GRegion *> &delaunay;
+    meshGRegion(std::vector<GRegion *> &d) : delaunay(d) {}
+    void operator()(GRegion *);
 };
 
 class meshGRegionExtruded {
 public:
-  void operator()(GRegion *);
+    void operator()(GRegion *);
 };
 
 // Optimize the mesh of the region using gmsh's algo
 class optimizeMeshGRegion {
 public:
-  void operator()(GRegion *, bool always = false);
+    void operator()(GRegion *, bool always = false);
 };
 
 // Optimize the mesh of the region using netgen's algo
 class optimizeMeshGRegionNetgen {
 public:
-  void operator()(GRegion *, bool always = false);
+    void operator()(GRegion *, bool always = false);
 };
 
 // destroy the mesh of the region
 class deMeshGRegion {
 public:
-  void operator()(GRegion *);
+    void operator()(GRegion *);
 };
 
 void MeshDelaunayVolume(std::vector<GRegion *> &delaunay);
@@ -70,20 +70,20 @@ bool buildEdgeSearchStructure(GModel *model, es_cont &search);
 // hybrid mesh recovery structure
 class splitQuadRecovery {
 private:
-  std::map<MFace, MVertex *, Less_Face> _quad;
-  std::map<MFace, GFace *, Less_Face> _tri;
+    std::map<MFace, MVertex *, Less_Face> _quad;
+    std::map<MFace, GFace *, Less_Face> _tri;
 public:
-  splitQuadRecovery() {}
-  void add(const MFace &f, MVertex *v, GFace *gf);
-  std::map<MFace, GFace *, Less_Face> &getTri() { return _tri; }
-  std::map<MFace, MVertex *, Less_Face> &getQuad() { return _quad; }
-  int buildPyramids(GModel *gm);
+    splitQuadRecovery() {}
+    void add(const MFace &f, MVertex *v, GFace *gf);
+    std::map<MFace, GFace *, Less_Face> &getTri() { return _tri; }
+    std::map<MFace, MVertex *, Less_Face> &getQuad() { return _quad; }
+    int buildPyramids(GModel *gm);
 };
 
 // adapt the mesh of a region
 class adaptMeshGRegion {
 public:
-  void operator()(GRegion *);
+    void operator()(GRegion *);
 };
 
 #endif

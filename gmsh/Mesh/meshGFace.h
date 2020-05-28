@@ -19,23 +19,23 @@ class MVertex;
 
 // Create the mesh of the face
 class meshGFace {
-  const bool repairSelfIntersecting1dMesh;
-  bool onlyInitialMesh;
+    const bool repairSelfIntersecting1dMesh;
+    bool onlyInitialMesh;
 
 public:
-  meshGFace(bool r = true)
-    : repairSelfIntersecting1dMesh(r), onlyInitialMesh(false)
-  {
-  }
-  void operator()(GFace *, bool print = true);
-  void setOnlyInitial() { onlyInitialMesh = true; }
+    meshGFace(bool r = true)
+        : repairSelfIntersecting1dMesh(r), onlyInitialMesh(false)
+    {
+    }
+    void operator()(GFace *, bool print = true);
+    void setOnlyInitial() { onlyInitialMesh = true; }
 };
 
 // Destroy the mesh of the face
 class deMeshGFace {
 public:
-  deMeshGFace() {}
-  void operator()(GFace *);
+    deMeshGFace() {}
+    void operator()(GFace *);
 };
 
 // Orient the mesh of a face to match the orientation of the underlying
@@ -46,14 +46,14 @@ public:
 // 3) users can choose to reverse the natural orientation
 class orientMeshGFace {
 public:
-  void operator()(GFace *);
+    void operator()(GFace *);
 };
 
 void fourthPoint(double *p1, double *p2, double *p3, double *p4);
 void findTransfiniteCorners(GFace *gf, std::vector<MVertex *> &corners);
 int MeshTransfiniteSurface(GFace *gf);
 int MeshExtrudedSurface(
-  GFace *gf, std::set<std::pair<MVertex *, MVertex *> > *constrainedEdges = 0);
+        GFace *gf, std::set<std::pair<MVertex *, MVertex *> > *constrainedEdges = 0);
 bool meshGenerator(GFace *gf, int RECUR_ITER, bool repairSelfIntersecting1dMesh,
                    bool onlyInitialMesh, bool debug = true,
                    std::vector<GEdge *> *replacement_edges = 0);

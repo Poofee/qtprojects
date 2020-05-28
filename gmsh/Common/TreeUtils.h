@@ -11,8 +11,8 @@
 
 class Tree_T {
 public:
-  int size;
-  avl_tree *root;
+    int size;
+    avl_tree *root;
 };
 
 Tree_T *Tree_Create(int size, int (*fcmp)(const void *a, const void *b));

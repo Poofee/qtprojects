@@ -20,10 +20,10 @@
 
 inline size_t hash_FNV1a(const void *const key, const int len)
 {
-  const unsigned char *p = static_cast<const unsigned char *>(key);
-  size_t hash = FNV_OFFSET_BASIS;
-  for(int n = len; n--;) hash = (hash ^ static_cast<size_t>(*p++)) * FNV_PRIME;
-  return hash;
+    const unsigned char *p = static_cast<const unsigned char *>(key);
+    size_t hash = FNV_OFFSET_BASIS;
+    for(int n = len; n--;) hash = (hash ^ static_cast<size_t>(*p++)) * FNV_PRIME;
+    return hash;
 }
 
 //--Hash FNV1a implemented via template-metaprogramming loop.  This should be
@@ -31,27 +31,27 @@ inline size_t hash_FNV1a(const void *const key, const int len)
 //--Use the entry point HashFNV1a<N>::eval(key).
 
 template <int N> struct Hash1FNV1a {
-  static size_t eval(size_t hash, const unsigned char *p)
-  {
-    return Hash1FNV1a<N - 1>::eval((hash ^ static_cast<size_t>(*p)) * FNV_PRIME,
-                                   p + 1);
-  }
+    static size_t eval(size_t hash, const unsigned char *p)
+    {
+        return Hash1FNV1a<N - 1>::eval((hash ^ static_cast<size_t>(*p)) * FNV_PRIME,
+                                       p + 1);
+    }
 };
 
 template <> struct Hash1FNV1a<1> {
-  static size_t eval(size_t hash, const unsigned char *p)
-  {
-    return (hash ^ static_cast<size_t>(*p)) * FNV_PRIME;
-  }
+    static size_t eval(size_t hash, const unsigned char *p)
+    {
+        return (hash ^ static_cast<size_t>(*p)) * FNV_PRIME;
+    }
 };
 
 // Entry point
 template <int N> struct HashFNV1a {
-  static size_t eval(const void *const key)
-  {
-    size_t hash = FNV_OFFSET_BASIS;
-    return Hash1FNV1a<N>::eval(hash, static_cast<const unsigned char *>(key));
-  }
+    static size_t eval(const void *const key)
+    {
+        size_t hash = FNV_OFFSET_BASIS;
+        return Hash1FNV1a<N>::eval(hash, static_cast<const unsigned char *>(key));
+    }
 };
 
 #endif

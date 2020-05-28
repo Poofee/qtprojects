@@ -8,8 +8,8 @@
 
 class Shape {
 public:
-  int Type;
-  int Num;
+    int Type;
+    int Num;
 };
 
 // type/100 gives (dimension+1)

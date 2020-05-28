@@ -14,10 +14,10 @@
 #define COLORTABLE_NBMAX_COLOR 1024
 
 typedef struct {
-  unsigned int table[COLORTABLE_NBMAX_COLOR];
-  int size; // must be >= 2
-  int ipar[COLORTABLE_NBMAX_PARAM];
-  double dpar[COLORTABLE_NBMAX_PARAM];
+    unsigned int table[COLORTABLE_NBMAX_COLOR];
+    int size; // must be >= 2
+    int ipar[COLORTABLE_NBMAX_PARAM];
+    double dpar[COLORTABLE_NBMAX_PARAM];
 } GmshColorTable;
 
 // COLORTABLE_MODE

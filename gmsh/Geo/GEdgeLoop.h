@@ -10,36 +10,36 @@
 
 class GEdgeSigned {
 public:
-  int _sign;
-  GEdge *ge;
-  GEdgeSigned(int i, GEdge *g) : _sign(i), ge(g) {}
-  GVertex *getBeginVertex() const
-  {
-    return (_sign == 1) ? ge->getBeginVertex() : ge->getEndVertex();
-  }
-  GVertex *getEndVertex() const
-  {
-    return (_sign != 1) ? ge->getBeginVertex() : ge->getEndVertex();
-  }
-  void print() const;
-  int getSign() const { return _sign; }
+    int _sign;
+    GEdge *ge;
+    GEdgeSigned(int i, GEdge *g) : _sign(i), ge(g) {}
+    GVertex *getBeginVertex() const
+    {
+        return (_sign == 1) ? ge->getBeginVertex() : ge->getEndVertex();
+    }
+    GVertex *getEndVertex() const
+    {
+        return (_sign != 1) ? ge->getBeginVertex() : ge->getEndVertex();
+    }
+    void print() const;
+    int getSign() const { return _sign; }
 };
 
 class GEdgeLoop {
 private:
-  std::list<GEdgeSigned> loop;
+    std::list<GEdgeSigned> loop;
 
 public:
-  typedef std::list<GEdgeSigned>::iterator iter;
-  typedef std::list<GEdgeSigned>::const_iterator citer;
-  GEdgeLoop(const std::vector<GEdge *> &);
-  inline iter begin() { return loop.begin(); }
-  inline iter end() { return loop.end(); }
-  inline citer begin() const { return loop.begin(); }
-  inline citer end() const { return loop.end(); }
-  inline void erase(iter it) { loop.erase(it); }
-  int count(GEdge *) const;
-  int count() const { return (int)loop.size(); }
+    typedef std::list<GEdgeSigned>::iterator iter;
+    typedef std::list<GEdgeSigned>::const_iterator citer;
+    GEdgeLoop(const std::vector<GEdge *> &);
+    inline iter begin() { return loop.begin(); }
+    inline iter end() { return loop.end(); }
+    inline citer begin() const { return loop.begin(); }
+    inline citer end() const { return loop.end(); }
+    inline void erase(iter it) { loop.erase(it); }
+    int count(GEdge *) const;
+    int count() const { return (int)loop.size(); }
 };
 
 #endif

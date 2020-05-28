@@ -16,71 +16,71 @@
 
 template <class T> inline double myhypot(const T &a, const T &b)
 {
-  return std::sqrt(a * a + b * b);
+    return std::sqrt(a * a + b * b);
 }
 
 template <class T> inline double hypotenuse(T const &a, T const &b, T const &c)
 {
-  return std::sqrt(a * a + b * b + c * c);
+    return std::sqrt(a * a + b * b + c * c);
 }
 
 template <typename T> inline int gmsh_sign(T const &value)
 {
-  return (T(0) < value) - (value < T(0));
+    return (T(0) < value) - (value < T(0));
 }
 
 struct mean_plane {
-  double plan[3][3];
-  double a, b, c, d;
-  double x, y, z;
+    double plan[3][3];
+    double a, b, c, d;
+    double x, y, z;
 };
 
 inline double pow_int(const double &a, const int &n)
 {
-  switch(n) {
-  case 0: return 1.0;
-  case 1: return a;
-  case 2: return a * a;
-  case 3: return a * a * a;
-  case 4: {
-    const double a2 = a * a;
-    return a2 * a2;
-  }
-  case 5: {
-    const double a2 = a * a;
-    return a2 * a2 * a;
-  }
-  case 6: {
-    const double a3 = a * a * a;
-    return a3 * a3;
-  }
-  case 7: {
-    const double a3 = a * a * a;
-    return a3 * a3 * a;
-  }
-  case 8: {
-    const double a2 = a * a;
-    const double a4 = a2 * a2;
-    return a4 * a4;
-  }
-  case 9: {
-    const double a3 = a * a * a;
-    return a3 * a3 * a3;
-  }
-  case 10: {
-    const double a2 = a * a;
-    const double a4 = a2 * a2;
-    return a4 * a4 * a2;
-  }
-  default: return pow_int(a, n - 9) * pow_int(a, 9);
-  }
+    switch(n) {
+    case 0: return 1.0;
+    case 1: return a;
+    case 2: return a * a;
+    case 3: return a * a * a;
+    case 4: {
+        const double a2 = a * a;
+        return a2 * a2;
+    }
+    case 5: {
+        const double a2 = a * a;
+        return a2 * a2 * a;
+    }
+    case 6: {
+        const double a3 = a * a * a;
+        return a3 * a3;
+    }
+    case 7: {
+        const double a3 = a * a * a;
+        return a3 * a3 * a;
+    }
+    case 8: {
+        const double a2 = a * a;
+        const double a4 = a2 * a2;
+        return a4 * a4;
+    }
+    case 9: {
+        const double a3 = a * a * a;
+        return a3 * a3 * a3;
+    }
+    case 10: {
+        const double a2 = a * a;
+        const double a4 = a2 * a2;
+        return a4 * a4 * a2;
+    }
+    default: return pow_int(a, n - 9) * pow_int(a, 9);
+    }
 }
 
 inline double pow_int(const double &a, const double &d)
 {
-  // Round double !
-  int n = static_cast<int>(d + .5);
-  return pow_int(a, n);
+    // Round double !
+    int n = static_cast<int>(d + .5);
+    return pow_int(a, n);
 }
 
 double myatan2(double a, double b);
@@ -89,44 +89,44 @@ double myacos(double a);
 
 inline double crossProd(double a[3], double b[3], int i)
 {
-  int i1 = (i + 1) % 3;
-  int i2 = (i + 2) % 3;
-  return a[i1] * b[i2] - a[i2] * b[i1];
+    int i1 = (i + 1) % 3;
+    int i2 = (i + 2) % 3;
+    return a[i1] * b[i2] - a[i2] * b[i1];
 }
 
 inline double scalProd(double a[3], double b[3])
 {
-  return a[0] * b[0] + a[1] * b[1] + a[2] * b[2];
+    return a[0] * b[0] + a[1] * b[1] + a[2] * b[2];
 }
 
 inline void prodve(double a[3], double b[3], double c[3])
 {
-  c[2] = a[0] * b[1] - a[1] * b[0];
-  c[1] = -a[0] * b[2] + a[2] * b[0];
-  c[0] = a[1] * b[2] - a[2] * b[1];
+    c[2] = a[0] * b[1] - a[1] * b[0];
+    c[1] = -a[0] * b[2] + a[2] * b[0];
+    c[0] = a[1] * b[2] - a[2] * b[1];
 }
 
 inline double prosca(double const a[3], double const b[3])
 {
-  return a[0] * b[0] + a[1] * b[1] + a[2] * b[2];
+    return a[0] * b[0] + a[1] * b[1] + a[2] * b[2];
 }
 
 void matvec(double mat[3][3], double vec[3], double res[3]);
 void matmat(double mat1[3][3], double mat2[3][3], double res[3][3]);
 inline double norm3(double a[3])
 {
-  return sqrt(a[0] * a[0] + a[1] * a[1] + a[2] * a[2]);
+    return sqrt(a[0] * a[0] + a[1] * a[1] + a[2] * a[2]);
 }
 inline double norme(double a[3])
 {
-  const double mod = norm3(a);
-  if(mod != 0.0) {
-    const double one_over_mod = 1. / mod;
-    a[0] *= one_over_mod;
-    a[1] *= one_over_mod;
-    a[2] *= one_over_mod;
-  }
-  return mod;
+    const double mod = norm3(a);
+    if(mod != 0.0) {
+        const double one_over_mod = 1. / mod;
+        a[0] *= one_over_mod;
+        a[1] *= one_over_mod;
+        a[2] *= one_over_mod;
+    }
+    return mod;
 }
 double norm2(double a[3][3]);
 
@@ -207,11 +207,11 @@ void signedDistancesPointsEllipsePoint(std::vector<double> &distances,
                                        const double radius);
 
 void signedDistancesPointsEllipseLine(
-  std::vector<double> &distances, std::vector<double> &distancesE,
-  std::vector<int> &isInYarn, std::vector<SPoint3> &closePts,
-  const std::vector<SPoint3> &pts, const SPoint3 &p1, const SPoint3 &p2,
-  const double maxA, const double minA, const double maxB, const double minB,
-  const int typeLevelSet);
+        std::vector<double> &distances, std::vector<double> &distancesE,
+        std::vector<int> &isInYarn, std::vector<SPoint3> &closePts,
+        const std::vector<SPoint3> &pts, const SPoint3 &p1, const SPoint3 &p2,
+        const double maxA, const double minA, const double maxB, const double minB,
+        const int typeLevelSet);
 
 int intersection_segments(const SPoint3 &p1, const SPoint3 &p2,
                           const SPoint3 &q1, const SPoint3 &q2, double x[2]);
@@ -220,7 +220,7 @@ int intersection_segments(const SPoint2 &p1, const SPoint2 &p2,
 
 // tools for projection onto plane
 void fillMeanPlane(double res[4], double t1[3], double t2[3],
-                   mean_plane &meanPlane);
+mean_plane &meanPlane);
 void computeMeanPlaneSimple(const std::vector<SPoint3> &points,
                             mean_plane &meanPlane);
 void projectPointToPlane(const SPoint3 &pt, SPoint3 &ptProj,

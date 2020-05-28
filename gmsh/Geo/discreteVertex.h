@@ -12,15 +12,15 @@
 
 class discreteVertex : public GVertex {
 private:
-  double _x, _y, _z;
+    double _x, _y, _z;
 public:
-  discreteVertex(GModel *m, int num, double x = 0., double y = 0.,
-                 double z = 0.);
-  virtual ~discreteVertex();
-  virtual GPoint point() const;
-  virtual double x() const;
-  virtual double y() const;
-  virtual double z() const;
+    discreteVertex(GModel *m, int num, double x = 0., double y = 0.,
+                   double z = 0.);
+    virtual ~discreteVertex();
+    virtual GPoint point() const;
+    virtual double x() const;
+    virtual double y() const;
+    virtual double z() const;
 };
 
 #endif

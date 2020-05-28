@@ -14,18 +14,18 @@ class MElement;
 
 class MElementOctree {
 private:
-  Octree *_octree;
-  GModel *_gm;
-  std::vector<MElement *> _elems;
+    Octree *_octree;
+    GModel *_gm;
+    std::vector<MElement *> _elems;
 
 public:
-  MElementOctree(GModel *);
-  MElementOctree(const std::vector<MElement *> &);
-  ~MElementOctree();
-  MElement *find(double x, double y, double z, int dim = -1,
-                 bool strict = false) const;
-  Octree *getInternalOctree() { return _octree; }
-  std::vector<MElement *> findAll(double x, double y, double z, int dim,
-                                  bool strict = false);
+    MElementOctree(GModel *);
+    MElementOctree(const std::vector<MElement *> &);
+    ~MElementOctree();
+    MElement *find(double x, double y, double z, int dim = -1,
+                   bool strict = false) const;
+    Octree *getInternalOctree() { return _octree; }
+    std::vector<MElement *> findAll(double x, double y, double z, int dim,
+                                    bool strict = false);
 };
 #endif

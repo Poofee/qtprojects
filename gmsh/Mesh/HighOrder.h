@@ -14,7 +14,7 @@
 // vertices in the list is supposed to be (by construction) consistent
 // with the ordering of the pair.
 typedef std::map<std::pair<MVertex *, MVertex *>, std::vector<MVertex *> >
-  edgeContainer;
+edgeContainer;
 
 // for each face (a list of vertices) we build a list of vertices that
 // are the high order representation of the face

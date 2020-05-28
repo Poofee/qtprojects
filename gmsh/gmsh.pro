@@ -26,6 +26,14 @@ DESTDIR = $$PWD/../bin
 
 DEFINES += _USE_MATH_DEFINES NOMINMAX WIN32
 
+win32-msvc* {
+    #ignore warning C4819
+    QMAKE_CXXFLAGS += /wd"4819"
+    QMAKE_CXXFLAGS *=  /wd"4100"
+    contains (QMAKE_CXXFLAGS_WARN_ON, -w34100) : QMAKE_CXXFLAGS_WARN_ON -= -w34100
+    DEFINES += _CRT_SECURE_NO_WARNINGS
+}
+
 HEADERS += \
     Common/avl.h \
     Common/Colors.h \
@@ -44,7 +52,6 @@ HEADERS += \
     Common/MallocUtils.h \
     Common/Octree.h \
     Common/OctreeInternals.h \
-    Common/onelabUtils.h \
     Common/OpenFile.h \
     Common/Options.h \
     Common/OS.h \
