@@ -17,7 +17,7 @@ public:
 
     std::string getDescription() { return "simple call to a python function"; }
 
-    FieldPython(PyObject *cb, PyObject *arg = NULL)
+    FieldPython(PyObject *cb, PyObject *arg = nullptr)
     {
         _callback = cb;
         Py_INCREF(_callback);

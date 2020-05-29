@@ -57,7 +57,7 @@ List_T *List_Create(int n, int incr, int size)
   liste->size = size;
   liste->n = 0;
   liste->isorder = 0;
-  liste->array = NULL;
+  liste->array = nullptr;
 
   List_Realloc(liste, n);
   return (liste);
@@ -74,7 +74,7 @@ void List_Realloc(List_T *liste, int n)
 {
   if(!liste || n <= 0) return;
 
-  if(liste->array == NULL) {
+  if(liste->array == nullptr) {
     // This does not permit to allocate lists smaller that liste->incr:
     // liste->nmax = ((n - 1) / liste->incr + 1) * liste->incr;
     // So this is much better
@@ -202,7 +202,7 @@ int List_Search(List_T *liste, void *data,
     liste->isorder = 1;
   }
   ptr = (void *)bsearch(data, liste->array, liste->n, liste->size, fcmp);
-  if(ptr == NULL) return (0);
+  if(ptr == nullptr) return (0);
   return (1);
 }
 
@@ -233,7 +233,7 @@ int List_Suppress(List_T *liste, void *data,
 {
   if(!liste) return 0;
   char *ptr = (char *)List_PQuery(liste, data, fcmp);
-  if(ptr == NULL) return (0);
+  if(ptr == nullptr) return (0);
   liste->n--;
   int len = liste->n - (((intptr_t)ptr - (intptr_t)liste->array) / liste->size);
   if(len > 0) memmove(ptr, ptr + liste->size, len * liste->size);
@@ -244,7 +244,7 @@ int List_PSuppress(List_T *liste, int index)
 {
   if(!liste) return 0;
   char *ptr = (char *)List_Pointer_NoChange(liste, index);
-  if(ptr == NULL) return (0);
+  if(ptr == nullptr) return (0);
   liste->n--;
   int len = liste->n - (((intptr_t)ptr - (intptr_t)liste->array) / liste->size);
   if(len > 0) memmove(ptr, ptr + liste->size, len * liste->size);

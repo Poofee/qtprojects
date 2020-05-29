@@ -214,11 +214,11 @@ public:
     }
 
     // get and set parent and children for hierarchial grids
-    virtual MElement *getParent() const { return NULL; }
+    virtual MElement *getParent() const { return nullptr; }
     virtual void setParent(MElement *p, bool owner = false) {}
     virtual void updateParent(GModel *gm) {} // used only for reading msh files
     virtual int getNumChildren() const { return 0; }
-    virtual MElement *getChild(int i) const { return NULL; }
+    virtual MElement *getChild(int i) const { return nullptr; }
     virtual bool ownsParent() const { return false; }
 
     // get base element in case of MSubElement
@@ -226,7 +226,7 @@ public:
     virtual MElement *getBaseElement() { return this; }
 
     // get and set domain for borders
-    virtual MElement *getDomain(int i) const { return NULL; }
+    virtual MElement *getDomain(int i) const { return nullptr; }
     virtual void setDomain(MElement *e, int i) {}
 
     // get the type of the element
@@ -501,7 +501,7 @@ class MElementFactory {
 public:
     MElement *create(int type, std::vector<MVertex *> &v, std::size_t num = 0,
                      int part = 0, bool owner = false, int parent = 0,
-                     MElement *parent_ptr = NULL, MElement *d1 = 0,
+                     MElement *parent_ptr = nullptr, MElement *d1 = 0,
                      MElement *d2 = 0);
     MElement *create(int num, int type, const std::vector<int> &data,
                      GModel *model);

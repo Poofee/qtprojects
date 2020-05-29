@@ -19,7 +19,7 @@ typedef struct elem {
     double centroid[3]; // centroid of element bounding box inside of the octant
     double minPt[3]; // corner of element bounding box nearest the origin
     double maxPt[3]; // corner of elem bound box furthest from the origin
-    struct elem *next; // link to next item in list, NULL if end
+    struct elem *next; // link to next item in list, nullptr if end
 } Elem;
 typedef Elem *ELink;
 
@@ -29,7 +29,7 @@ struct bucket {
     double maxPt[3]; //  the point with the biggest coordinates
     int numElements; // number of elements contained by bucket
     int precision; // the level of precision of the bucket
-    ELink lhead; // list of elements in bucket, if NULL -> no elements
+    ELink lhead; // list of elements in bucket, if nullptr -> no elements
     std::vector<void *> listBB; // list of elements in bucket by Bounding Box
     struct bucket *next; // link to ragged digit extensions to bucket array
     struct bucket *parent; // link to the parent bucket

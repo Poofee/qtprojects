@@ -301,7 +301,7 @@ namespace tetgenBR {
       ver2tetarray = new tetrahedron[_vertices.size() + in->firstnumber];
       for(std::size_t i = 0; i < _vertices.size() + in->firstnumber; i++) {
         setpointtype(idx2verlist[i], VOLVERTEX); // initial type.
-        ver2tetarray[i] = NULL;
+        ver2tetarray[i] = nullptr;
       }
 
 
@@ -375,7 +375,7 @@ namespace tetgenBR {
           // Push the current tet onto the stack.
           ver2tetarray[idx] = encode(tetloop);
           decode(tptr, checktet);
-          if(checktet.tet != NULL) {
+          if(checktet.tet != nullptr) {
             p[0] = org(tetloop); // a
             p[1] = dest(tetloop); // b
             p[2] = apex(tetloop); // c
@@ -389,7 +389,7 @@ namespace tetgenBR {
               for(int j = 0; j < 3; j++) {
                 // Go to the face [b',a',d], or [c',b',d], or [a',c',d].
                 esym(checktet, face2);
-                if(face2.tet[face2.ver & 3] == NULL) {
+                if(face2.tet[face2.ver & 3] == nullptr) {
                   k = ((j + 1) % 3);
                   if(q[k] == p[0]) { // b', c', a' = a
                     if(q[j] == p[1]) { // a', b', c' = b
@@ -435,8 +435,8 @@ namespace tetgenBR {
                 prevchktet = checktet;
               }
               decode(tptr, checktet);
-            } while(checktet.tet != NULL);
-          } // if(checktet.tet != NULL)
+            } while(checktet.tet != nullptr);
+          } // if(checktet.tet != nullptr)
         } // for(tetloop.ver = 0; ...
       } // i
 
@@ -449,10 +449,10 @@ namespace tetgenBR {
 
       tetrahedrons->traversalinit();
       tetloop.tet = tetrahedrontraverse();
-      while(tetloop.tet != (tetrahedron *)NULL) {
+      while(tetloop.tet != (tetrahedron *)nullptr) {
         tptr = encode(tetloop);
         for(tetloop.ver = 0; tetloop.ver < 4; tetloop.ver++) {
-          if(tetloop.tet[tetloop.ver] == NULL) {
+          if(tetloop.tet[tetloop.ver] == nullptr) {
             // Create a hull tet.
             maketetrahedron(&hulltet);
             p[0] = org(tetloop);
@@ -464,14 +464,14 @@ namespace tetgenBR {
             for(int j = 0; j < 3; j++) {
               fsym(hulltet, face2);
               while(1) {
-                if(face2.tet == NULL) break;
+                if(face2.tet == nullptr) break;
                 esymself(face2);
                 if(apex(face2) == dummypoint) break;
                 fsymself(face2);
               }
-              if(face2.tet != NULL) {
+              if(face2.tet != nullptr) {
                 // Found an adjacent hull tet.
-                assert(face2.tet[face2.ver & 3] == NULL);
+                assert(face2.tet[face2.ver & 3] == nullptr);
                 esym(hulltet, face1);
                 bond(face1, face2);
               }
@@ -482,7 +482,7 @@ namespace tetgenBR {
           // Create the point-to-tet map.
           setpoint2tet((point)(tetloop.tet[4 + tetloop.ver]), tptr);
           // Clean the temporary used space.
-          tetloop.tet[8 + tetloop.ver] = NULL;
+          tetloop.tet[8 + tetloop.ver] = nullptr;
         }
         tetloop.tet = tetrahedrontraverse();
       }
@@ -521,7 +521,7 @@ namespace tetgenBR {
           recentsh = newsh;
           for(int j = 0; j < 3; j++) {
             makeshellface(subsegs, &newseg);
-            setshvertices(newseg, sorg(newsh), sdest(newsh), NULL);
+            setshvertices(newseg, sorg(newsh), sdest(newsh), nullptr);
             // Set the default segment marker '-1'.
             setshellmark(newseg, -1);
             ssbond(newsh, newseg);
@@ -547,7 +547,7 @@ namespace tetgenBR {
           recentsh = newsh;
           for(int j = 0; j < 3; j++) {
             makeshellface(subsegs, &newseg);
-            setshvertices(newseg, sorg(newsh), sdest(newsh), NULL);
+            setshvertices(newseg, sorg(newsh), sdest(newsh), nullptr);
             // Set the default segment marker '-1'.
             setshellmark(newseg, -1);
             ssbond(newsh, newseg);
@@ -586,8 +586,8 @@ namespace tetgenBR {
             continue; // Skip this edge.
           }
           // Find a face contains the edge p[0], p[1].
-          newseg.sh = NULL;
-          searchsh.sh = NULL;
+          newseg.sh = nullptr;
+          searchsh.sh = nullptr;
           idx = pointmark(p[0]) - in->firstnumber;
           for(int j = idx2shlist[idx]; j < idx2shlist[idx + 1]; j++) {
             checkpt = sdest(shperverlist[j]);
@@ -604,20 +604,20 @@ namespace tetgenBR {
               }
             }
           } // j
-          if(searchsh.sh != NULL) {
+          if(searchsh.sh != nullptr) {
             // Check if this edge is already a segment of the mesh.
             sspivot(searchsh, checkseg);
-            if(checkseg.sh != NULL) {
+            if(checkseg.sh != nullptr) {
               // This segment already exist.
               newseg = checkseg;
             }
             else {
               // Create a new segment at this edge.
               makeshellface(subsegs, &newseg);
-              setshvertices(newseg, p[0], p[1], NULL);
+              setshvertices(newseg, p[0], p[1], nullptr);
               ssbond(searchsh, newseg);
               spivot(searchsh, neighsh);
-              if(neighsh.sh != NULL) {
+              if(neighsh.sh != nullptr) {
                 ssbond(neighsh, newseg);
               }
             }
@@ -629,7 +629,7 @@ namespace tetgenBR {
             /*	  point *ppt;
             subsegs->traversalinit();
             segloop.sh = shellfacetraverse(subsegs);
-            while (segloop.sh != NULL){
+            while (segloop.sh != nullptr){
               ppt = (point *) &(segloop.sh[3]);
               if(((ppt[0] == p[0]) && (ppt[1] == p[1])) ||
               ((ppt[0] == p[1]) && (ppt[1] == p[0]))){
@@ -639,9 +639,9 @@ namespace tetgenBR {
               }
               segloop.sh = shellfacetraverse(subsegs);
               }*/
-            if(newseg.sh == NULL) {
+            if(newseg.sh == nullptr) {
               makeshellface(subsegs, &newseg);
-              setshvertices(newseg, p[0], p[1], NULL);
+              setshvertices(newseg, p[0], p[1], nullptr);
             }
           }
           setshellmark(newseg, ge->tag());
@@ -765,16 +765,16 @@ namespace tetgenBR {
         // The new vertices must be added at the end of the point list.
         points->traversalinit();
         pointloop = pointtraverse();
-        while(pointloop != (point)NULL) {
+        while(pointloop != (point)nullptr) {
           if(issteinerpoint(pointloop)) {
             // Check if this Steiner point locates on boundary.
             if(pointtype(pointloop) == FREESEGVERTEX) {
               sdecode(point2sh(pointloop), parentseg);
-              assert(parentseg.sh != NULL);
+              assert(parentseg.sh != nullptr);
               l_edges.insert(shellmark(parentseg));
               // Get the GEdge containing this vertex.
-              GEdge *ge = NULL;
-              GFace *gf = NULL;
+              GEdge *ge = nullptr;
+              GFace *gf = nullptr;
               int etag = shellmark(parentseg);
               for(std::vector<GEdge *>::const_iterator it = e_list.begin();
                   it != e_list.end(); ++it) {
@@ -783,7 +783,7 @@ namespace tetgenBR {
                   break;
                 }
               }
-              if(ge != NULL) {
+              if(ge != nullptr) {
                 MEdgeVertex *v = new MEdgeVertex(pointloop[0], pointloop[1],
                                                  pointloop[2], ge, 0);
                 double uu = 0;
@@ -795,8 +795,8 @@ namespace tetgenBR {
                 _extras[pointmark(pointloop) - in->firstnumber] = v;
               }
               spivot(parentseg, parentsh);
-              if(parentsh.sh != NULL) {
-                if(ge == NULL) {
+              if(parentsh.sh != nullptr) {
+                if(ge == nullptr) {
                   // We treat this vertex a facet vertex.
                   int ftag = shellmark(parentsh);
                   for(std::vector<GFace *>::const_iterator it = f_list.begin();
@@ -806,7 +806,7 @@ namespace tetgenBR {
                       break;
                     }
                   }
-                  if(gf != NULL) {
+                  if(gf != nullptr) {
                     MFaceVertex *v = new MFaceVertex(pointloop[0], pointloop[1],
                                                      pointloop[2], gf, 0, 0);
                     SPoint2 param;
@@ -827,7 +827,7 @@ namespace tetgenBR {
                   if(spinsh.sh == parentsh.sh) break;
                 }
               }
-              if((ge == NULL) && (gf == NULL)) {
+              if((ge == nullptr) && (gf == nullptr)) {
                 // Create an interior mesh vertex.
                 MVertex *v =
                   new MVertex(pointloop[0], pointloop[1], pointloop[2], _gr);
@@ -838,10 +838,10 @@ namespace tetgenBR {
             }
             else if(pointtype(pointloop) == FREEFACETVERTEX) {
               sdecode(point2sh(pointloop), parentsh);
-              assert(parentsh.sh != NULL);
+              assert(parentsh.sh != nullptr);
               l_faces.insert(shellmark(parentsh));
               // Get the GFace containing this vertex.
-              GFace *gf = NULL;
+              GFace *gf = nullptr;
               int ftag = shellmark(parentsh);
               for(std::vector<GFace *>::const_iterator it = f_list.begin();
                   it != f_list.end(); ++it) {
@@ -850,7 +850,7 @@ namespace tetgenBR {
                   break;
                 }
               }
-              if(gf != NULL) {
+              if(gf != nullptr) {
                 MFaceVertex *v = new MFaceVertex(pointloop[0], pointloop[1],
                                                  pointloop[2], gf, 0, 0);
                 SPoint2 param;
@@ -896,7 +896,7 @@ namespace tetgenBR {
           // Find the GFace with tag = *it.
 
           // TODO C++11 use std::find_if
-          GEdge *ge = NULL;
+          GEdge *ge = nullptr;
           int etag = *it;
           for(std::vector<GEdge *>::const_iterator eit = e_list.begin();
               eit != e_list.end(); ++eit) {
@@ -905,7 +905,7 @@ namespace tetgenBR {
               break;
             }
           }
-          assert(ge != NULL);
+          assert(ge != nullptr);
           Msg::Info("Steiner points exist on curve %d", ge->tag());
           // Delete the old triangles.
           for(std::size_t i = 0; i < ge->lines.size(); i++)
@@ -916,7 +916,7 @@ namespace tetgenBR {
           segloop.shver = 0;
           subsegs->traversalinit();
           segloop.sh = shellfacetraverse(subsegs);
-          while(segloop.sh != NULL) {
+          while(segloop.sh != nullptr) {
             if(shellmark(segloop) == etag) {
               p[0] = sorg(segloop);
               p[1] = sdest(segloop);
@@ -941,7 +941,7 @@ namespace tetgenBR {
         for(std::set<int>::iterator it = l_faces.begin(); it != l_faces.end();
             ++it) {
           // Find the GFace with tag = *it.
-          GFace *gf = NULL;
+          GFace *gf = nullptr;
           int ftag = *it;
           // TODO C++11 std::find_if
           for(std::vector<GFace *>::const_iterator fit = f_list.begin();
@@ -951,7 +951,7 @@ namespace tetgenBR {
               break;
             }
           }
-          assert(gf != NULL);
+          assert(gf != nullptr);
           // Delete the old triangles.
           Msg::Info("Steiner points exist on surface %d", gf->tag());
           for(std::size_t i = 0; i < gf->triangles.size(); i++)
@@ -967,7 +967,7 @@ namespace tetgenBR {
           subloop.shver = 0;
           subfaces->traversalinit();
           subloop.sh = shellfacetraverse(subfaces);
-          while(subloop.sh != NULL) {
+          while(subloop.sh != nullptr) {
             if(shellmark(subloop) == ftag) {
               p[0] = sorg(subloop);
               p[1] = sdest(subloop);
@@ -995,7 +995,7 @@ namespace tetgenBR {
       tetrahedrons->traversalinit();
       tetloop.tet = tetrahedrontraverse();
 
-      while(tetloop.tet != (tetrahedron *)NULL) {
+      while(tetloop.tet != (tetrahedron *)nullptr) {
         p[0] = org(tetloop);
         p[1] = dest(tetloop);
         p[2] = apex(tetloop);
@@ -1041,7 +1041,7 @@ namespace tetgenBR {
   // 'mfilename' is a filename without suffix.
   void tetgenmesh::outsurfacemesh(const char *mfilename)
   {
-    FILE *outfile = NULL;
+    FILE *outfile = nullptr;
     char sfilename[256];
     int firstindex;
 
@@ -1059,7 +1059,7 @@ namespace tetgenBR {
     points->traversalinit();
     pointloop = pointtraverse();
     pointnumber = firstindex; // in->firstnumber;
-    while(pointloop != (point)NULL) {
+    while(pointloop != (point)nullptr) {
       // Point number, x, y and z coordinates.
       fprintf(outfile, "%4d    %.17g  %.17g  %.17g", pointnumber, pointloop[0],
               pointloop[1], pointloop[2]);
@@ -1085,7 +1085,7 @@ namespace tetgenBR {
     fprintf(outfile, "%ld  1\n", subfaces->items);
     subfaces->traversalinit();
     faceloop.sh = shellfacetraverse(subfaces);
-    while(faceloop.sh != (shellface *)NULL) {
+    while(faceloop.sh != (shellface *)nullptr) {
       torg = sorg(faceloop);
       tdest = sdest(faceloop);
       tapex = sapex(faceloop);
@@ -1110,7 +1110,7 @@ namespace tetgenBR {
     subsegs->traversalinit();
     edgeloop.sh = shellfacetraverse(subsegs);
     edgenumber = firstindex; // in->firstnumber;
-    while(edgeloop.sh != (shellface *)NULL) {
+    while(edgeloop.sh != (shellface *)nullptr) {
       torg = sorg(edgeloop);
       tdest = sdest(edgeloop);
       fprintf(outfile, "%5d   %4d  %4d  %d\n", edgenumber,
@@ -1134,7 +1134,7 @@ namespace tetgenBR {
     int shift = 0;
     int marker;
 
-    if(mfilename != (char *)NULL && mfilename[0] != '\0') {
+    if(mfilename != (char *)nullptr && mfilename[0] != '\0') {
       strcpy(mefilename, mfilename);
     }
     else {
@@ -1146,7 +1146,7 @@ namespace tetgenBR {
       printf("Writing %s.\n", mefilename);
     }
     outfile = fopen(mefilename, "w");
-    if(outfile == (FILE *)NULL) {
+    if(outfile == (FILE *)nullptr) {
       printf("File I/O Error:  Cannot create file %s.\n", mefilename);
       return;
     }
@@ -1164,7 +1164,7 @@ namespace tetgenBR {
     points->traversalinit();
     ptloop = pointtraverse();
     // pointnumber = 1;
-    while(ptloop != (point)NULL) {
+    while(ptloop != (point)nullptr) {
       // Point coordinates.
       fprintf(outfile, "%.17g  %.17g  %.17g", ptloop[0], ptloop[1], ptloop[2]);
       fprintf(outfile, "    0\n");
@@ -1190,7 +1190,7 @@ namespace tetgenBR {
 
     tetrahedrons->traversalinit();
     tetptr = tetrahedrontraverse();
-    while(tetptr != (tetrahedron *)NULL) {
+    while(tetptr != (tetrahedron *)nullptr) {
       if(!b->reversetetori) {
         p1 = (point)tetptr[4];
         p2 = (point)tetptr[5];
@@ -1224,7 +1224,7 @@ namespace tetgenBR {
 
     subfaces->traversalinit();
     sface.sh = shellfacetraverse(subfaces);
-    while(sface.sh != NULL) {
+    while(sface.sh != nullptr) {
       p1 = sorg(sface);
       p2 = sdest(sface);
       p3 = sapex(sface);

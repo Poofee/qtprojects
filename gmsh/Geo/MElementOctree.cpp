@@ -270,5 +270,5 @@ MElement *MElementOctree::find(double x, double y, double z, int dim,
     MElement::setTolerance(initialTol);
     // Msg::Warning("Point %g %g %g not found",x,y,z);
   }
-  return NULL;
+  return nullptr;
 }

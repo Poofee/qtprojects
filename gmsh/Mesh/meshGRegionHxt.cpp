@@ -132,8 +132,8 @@ static HXTStatus Hxt2Gmsh(std::vector<GRegion *> &regions, HXTMesh *m,
 {
   std::vector<GFace *> allFaces;
   std::vector<GEdge *> allEdges;
-  HXT_CHECK(getAllFacesOfAllRegions(regions, NULL, allFaces));
-  HXT_CHECK(getAllEdgesOfAllFaces(allFaces, NULL, allEdges));
+  HXT_CHECK(getAllFacesOfAllRegions(regions, nullptr, allFaces));
+  HXT_CHECK(getAllEdgesOfAllFaces(allFaces, nullptr, allEdges));
   std::map<int, GEdge *> i2e;
   std::map<int, GFace *> i2f;
   for(size_t i = 0; i < allFaces.size(); i++)
@@ -143,7 +143,7 @@ static HXTStatus Hxt2Gmsh(std::vector<GRegion *> &regions, HXTMesh *m,
 
   c2v.resize(m->vertices.num);
   for(size_t i = c2v.size(); i < m->vertices.num; i++) {
-    c2v[i] = NULL;
+    c2v[i] = nullptr;
   }
 
   for(size_t j = 0; j < allEdges.size(); j++) {
@@ -348,7 +348,7 @@ static HXTStatus _meshGRegionHxt(std::vector<GRegion *> &regions)
   HXT_CHECK(
 	    hxtTetMesh3d(mesh, 0, 0, 0, reproducible, verbosity, stat, refine, optimize,
 			 threshold, hxt_boundary_recovery,
-			 NULL, // hxtMeshSizeGmshCallBack, // FIXME does not work yet
+			 nullptr, // hxtMeshSizeGmshCallBack, // FIXME does not work yet
 			 regions[0]));
 
   //  HXT_CHECK(hxtMeshWriteGmsh(mesh, "hxt.msh"));

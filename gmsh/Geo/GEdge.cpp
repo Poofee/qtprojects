@@ -22,7 +22,7 @@
 
 GEdge::GEdge(GModel *model, int tag, GVertex *_v0, GVertex *_v1)
   : GEntity(model, tag), _length(0.), _tooSmall(false), _cp(0), v0(_v0),
-    v1(_v1), masterOrientation(0), compound_edge(NULL)
+    v1(_v1), masterOrientation(0), compound_edge(nullptr)
 {
   if(v0) v0->addEdge(this);
   if(v1 && v1 != v0) v1->addEdge(this);
@@ -32,7 +32,7 @@ GEdge::GEdge(GModel *model, int tag, GVertex *_v0, GVertex *_v1)
 
 GEdge::GEdge(GModel *model, int tag)
   : GEntity(model, tag), _length(0.), _tooSmall(false), _cp(0), v0(0), v1(0),
-    masterOrientation(0), compound_edge(NULL)
+    masterOrientation(0), compound_edge(nullptr)
 {
   meshStatistics.status = GEdge::PENDING;
   GEdge::resetMeshAttributes();
@@ -741,7 +741,7 @@ static void meshCompound(GEdge *ge)
     }
   }
   discreteEdge *de =
-    new discreteEdge(ge->model(), ge->tag() + 100000, NULL, NULL);
+    new discreteEdge(ge->model(), ge->tag() + 100000, nullptr, nullptr);
   ge->model()->add(de);
   de->lines = lines;
   de->createGeometry();

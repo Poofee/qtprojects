@@ -54,7 +54,7 @@ int GModel::readDIFF(const std::string &name)
   std::vector<MVertex *> vertexVector;
 
   {
-    while(strstr(str, "Number of space dim. =") == NULL) {
+    while(strstr(str, "Number of space dim. =") == nullptr) {
       if(!fgets(str, sizeof(str), fp) || feof(fp)) break;
     }
 
@@ -70,7 +70,7 @@ int GModel::readDIFF(const std::string &name)
       fclose(fp);
       return 0;
     }
-    while(strstr(str, "Number of elements   =") == NULL) {
+    while(strstr(str, "Number of elements   =") == nullptr) {
       if(!fgets(str, sizeof(str), fp) || feof(fp)) break;
     }
     if(sscanf(str, "%*s %*s %*s %*s %d", &numElements) != 1) {
@@ -84,7 +84,7 @@ int GModel::readDIFF(const std::string &name)
       fclose(fp);
       return 0;
     }
-    while(strstr(str, "Number of nodes      =") == NULL) {
+    while(strstr(str, "Number of nodes      =") == nullptr) {
       if(!fgets(str, sizeof(str), fp) || feof(fp)) break;
     }
     if(sscanf(str, "%*s %*s %*s %*s %d", &numVertices) != 1) {
@@ -98,7 +98,7 @@ int GModel::readDIFF(const std::string &name)
       fclose(fp);
       return 0;
     }
-    while(strstr(str, "Max number of nodes in an element:") == NULL) {
+    while(strstr(str, "Max number of nodes in an element:") == nullptr) {
       if(!fgets(str, sizeof(str), fp) || feof(fp)) break;
     }
     if(sscanf(str, "%*s %*s %*s %*s %*s %*s %*s %d", &numVerticesPerElement) !=
@@ -131,8 +131,8 @@ int GModel::readDIFF(const std::string &name)
       fclose(fp);
       return 0;
     }
-    while(strstr(str, "Boundary indicators:") == NULL &&
-          strstr(str, "boundary indicators:") == NULL) {
+    while(strstr(str, "Boundary indicators:") == nullptr &&
+          strstr(str, "boundary indicators:") == nullptr) {
       if(!fgets(str, sizeof(str), fp) || feof(fp)) break;
     }
     if(sscanf(str, "%d %*s %*s", &nbi) != 1) {

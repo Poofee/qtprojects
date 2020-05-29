@@ -46,19 +46,19 @@ protected:
 public:
     MSubTetrahedron(MVertex *v0, MVertex *v1, MVertex *v2, MVertex *v3,
                     int num = 0, int part = 0, bool owner = false,
-                    MElement *orig = NULL)
+                    MElement *orig = nullptr)
         : MTetrahedron(v0, v1, v2, v3, num, part), _owner(owner), _orig(orig),
           _base(0), _pOrder(-1), _npts(0), _pts(0)
     {
     }
     MSubTetrahedron(const std::vector<MVertex *> &v, int num = 0, int part = 0,
-                    bool owner = false, MElement *orig = NULL)
+                    bool owner = false, MElement *orig = nullptr)
         : MTetrahedron(v, num, part), _owner(owner), _orig(orig), _base(0),
           _pOrder(-1), _npts(0), _pts(0)
     {
     }
     MSubTetrahedron(const MTetrahedron &tet, bool owner = false,
-                    MElement *orig = NULL)
+                    MElement *orig = nullptr)
         : MTetrahedron(tet), _owner(owner), _orig(orig), _base(0), _pOrder(-1),
           _npts(0), _pts(0)
     {
@@ -154,18 +154,18 @@ protected:
             GModel *gm); // NEVER ever use this ! (except for reading msh files !)
 public:
     MSubTriangle(MVertex *v0, MVertex *v1, MVertex *v2, int num = 0, int part = 0,
-                 bool owner = false, MElement *orig = NULL)
+                 bool owner = false, MElement *orig = nullptr)
         : MTriangle(v0, v1, v2, num, part), _owner(owner), _orig(orig), _base(0),
           _pOrder(-1), _npts(0), _pts(0)
     {
     }
     MSubTriangle(const std::vector<MVertex *> &v, int num = 0, int part = 0,
-                 bool owner = false, MElement *orig = NULL)
+                 bool owner = false, MElement *orig = nullptr)
         : MTriangle(v, num, part), _owner(owner), _orig(orig), _base(0),
           _pOrder(-1), _npts(0), _pts(0)
     {
     }
-    MSubTriangle(const MTriangle &tri, bool owner = false, MElement *orig = NULL)
+    MSubTriangle(const MTriangle &tri, bool owner = false, MElement *orig = nullptr)
         : MTriangle(tri), _owner(owner), _orig(orig), _base(0), _pOrder(-1),
           _npts(0), _pts(0)
     {
@@ -261,18 +261,18 @@ protected:
             GModel *gm); // NEVER ever use this ! (except for reading msh files !)
 public:
     MSubLine(MVertex *v0, MVertex *v1, int num = 0, int part = 0,
-             bool owner = false, MElement *orig = NULL)
+             bool owner = false, MElement *orig = nullptr)
         : MLine(v0, v1, num, part), _owner(owner), _orig(orig), _base(0),
           _pOrder(-1), _npts(0), _pts(0)
     {
     }
     MSubLine(const std::vector<MVertex *> &v, int num = 0, int part = 0,
-             bool owner = false, MElement *orig = NULL)
+             bool owner = false, MElement *orig = nullptr)
         : MLine(v, num, part), _owner(owner), _orig(orig), _base(0), _pOrder(-1),
           _npts(0), _pts(0)
     {
     }
-    MSubLine(const MLine &lin, bool owner = false, MElement *orig = NULL)
+    MSubLine(const MLine &lin, bool owner = false, MElement *orig = nullptr)
         : MLine(lin), _owner(owner), _orig(orig), _base(0), _pOrder(-1), _npts(0),
           _pts(0)
     {
@@ -368,18 +368,18 @@ protected:
             GModel *gm); // NEVER ever use this ! (except for reading msh files !)
 public:
     MSubPoint(MVertex *v0, int num = 0, int part = 0, bool owner = false,
-              MElement *orig = NULL)
+              MElement *orig = nullptr)
         : MPoint(v0, num, part), _owner(owner), _orig(orig), _base(0), _pOrder(-1),
           _npts(0), _pts(0)
     {
     }
     MSubPoint(const std::vector<MVertex *> &v, int num = 0, int part = 0,
-              bool owner = false, MElement *orig = NULL)
+              bool owner = false, MElement *orig = nullptr)
         : MPoint(v, num, part), _owner(owner), _orig(orig), _base(0), _pOrder(-1),
           _npts(0), _pts(0)
     {
     }
-    MSubPoint(const MPoint &pt, bool owner = false, MElement *orig = NULL)
+    MSubPoint(const MPoint &pt, bool owner = false, MElement *orig = nullptr)
         : MPoint(pt), _owner(owner), _orig(orig), _base(0), _pOrder(-1), _npts(0),
           _pts(0)
     {

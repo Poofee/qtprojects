@@ -114,9 +114,9 @@ bool buildMeshGenerationDataStructures(
   for(std::size_t i = 0; i < gf->triangles.size(); i++)
     setLcsInit(gf->triangles[i], vSizesMap);
 
-  std::map<MVertex *, double>::iterator itfind = vSizesMap.find(NULL);
+  std::map<MVertex *, double>::iterator itfind = vSizesMap.find(nullptr);
   if(itfind != vSizesMap.end()) {
-    Msg::Error("Some NULL points exist in 2D mesh");
+    Msg::Error("Some nullptr points exist in 2D mesh");
     return false;
   }
 
@@ -1218,7 +1218,7 @@ static void _recombineIntoQuads(GFace *gf, bool blossom, bool cubicGraph = 1)
           makeGraphPeriodic.find(v);
         if(itv == makeGraphPeriodic.end()) {
           makeGraphPeriodic[v] =
-            std::make_pair(it->second.first, static_cast<MElement *>(NULL));
+            std::make_pair(it->second.first, static_cast<MElement *>(nullptr));
         }
         else {
           if(itv->second.first != it->second.first)
@@ -1288,7 +1288,7 @@ static void _recombineIntoQuads(GFace *gf, bool blossom, bool cubicGraph = 1)
       double matzeit = 0.0;
       char MATCHFILE[256];
       sprintf(MATCHFILE, ".face.match");
-      if(perfect_match(ncount, NULL, ecount, &elist, &elen, NULL, MATCHFILE, 0,
+      if(perfect_match(ncount, nullptr, ecount, &elist, &elen, nullptr, MATCHFILE, 0,
                        0, 0, 0, &matzeit)) {
         Msg::Error("Perfect Match failed in quadrangulation, try something else");
         free(elist);
@@ -1310,7 +1310,7 @@ static void _recombineIntoQuads(GFace *gf, bool blossom, bool cubicGraph = 1)
             MElement *t2 = n2t[i2];
             touched.insert(t1);
             touched.insert(t2);
-            MVertex *other = NULL;
+            MVertex *other = nullptr;
             for(int i = 0; i < 3; i++) {
               if(t1->getVertex(0) != t2->getVertex(i) &&
                  t1->getVertex(1) != t2->getVertex(i) &&
@@ -1582,7 +1582,7 @@ void splitElementsInBoundaryLayerIfNeeded(GFace *gf)
     int n = fields->getNumBoundaryLayerFields();
     for(int i = 0; i < n; ++i) {
       Field *bl_field = fields->get(fields->getBoundaryLayerField(i));
-      if(bl_field == NULL) continue;
+      if(bl_field == nullptr) continue;
       BoundaryLayerField *blf = dynamic_cast<BoundaryLayerField *>(bl_field);
       if(blf->iRecombine)
         ++numNoSplit;

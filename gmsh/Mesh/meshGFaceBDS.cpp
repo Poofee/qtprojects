@@ -361,7 +361,7 @@ static void splitEdgePass(GFace *gf, BDS_Mesh &m, double MAXE_, int &nb_split,
 
   for(std::size_t i = 0; i < edges.size(); ++i) {
     BDS_Edge *e = edges[i].second;
-    BDS_Point *mid = NULL;
+    BDS_Point *mid = nullptr;
     if(!e->deleted) {
       double U1 = e->p1->u;
       double U2 = e->p2->u;

@@ -24,7 +24,7 @@
 #include "Parser.h"
 #endif
 
-static List_T *ListOfTransformedPoints = NULL;
+static List_T *ListOfTransformedPoints = nullptr;
 
 int CompareVertex(const void *a, const void *b)
 {
@@ -134,7 +134,7 @@ void FreeVertex(void *a, void *b)
   Vertex *v = *(Vertex **)a;
   if(v) {
     delete v;
-    v = NULL;
+    v = nullptr;
   }
 }
 
@@ -160,7 +160,7 @@ void FreePhysicalGroup(void *a, void *b)
   if(p) {
     List_Delete(p->Entities);
     delete p;
-    p = NULL;
+    p = nullptr;
   }
 }
 
@@ -185,7 +185,7 @@ void FreeEdgeLoop(void *a, void *b)
   if(l) {
     List_Delete(l->Curves);
     delete l;
-    l = NULL;
+    l = nullptr;
   }
 }
 
@@ -210,7 +210,7 @@ void FreeSurfaceLoop(void *a, void *b)
   if(l) {
     List_Delete(l->Surfaces);
     delete l;
-    l = NULL;
+    l = nullptr;
   }
 }
 
@@ -251,7 +251,7 @@ void EndCurve(Curve *c)
     if(List_Nbr(c->Control_Points) == 4)
       List_Read(c->Control_Points, 2, &v[3]);
     else
-      v[3] = NULL;
+      v[3] = nullptr;
     if(c->Typ == MSH_SEGM_CIRC_INV || c->Typ == MSH_SEGM_ELLI_INV) {
       List_Read(c->Control_Points, 0, &v[2]);
       List_Read(c->Control_Points, 1, &v[1]);
@@ -449,7 +449,7 @@ Curve *CreateCurve(int Num, int Typ, int Order, List_T *Liste, List_T *Knots,
     {-1, 3, -3, 1}, {3, -6, 3, 0}, {-3, 3, 0, 0}, {1, 0, 0, 0}};
 
   Curve *pC = new Curve;
-  pC->Extrude = NULL;
+  pC->Extrude = nullptr;
   pC->Typ = Typ;
   pC->Num = Num;
   GModel::current()->getGEOInternals()->setMaxTag(
@@ -464,9 +464,9 @@ Curve *CreateCurve(int Num, int Typ, int Order, List_T *Liste, List_T *Knots,
   pC->typeTransfinite = 0;
   pC->coeffTransfinite = 0.;
   pC->ReverseMesh = 0;
-  pC->beg = NULL;
-  pC->end = NULL;
-  pC->Control_Points = NULL;
+  pC->beg = nullptr;
+  pC->end = nullptr;
+  pC->Control_Points = nullptr;
   pC->degenerated = false;
 
   if(Typ == MSH_SEGM_SPLN) {
@@ -499,7 +499,7 @@ Curve *CreateCurve(int Num, int Typ, int Order, List_T *Liste, List_T *Knots,
     }
   }
   else
-    pC->k = NULL;
+    pC->k = nullptr;
 
   if(List_Nbr(Liste)) {
     pC->Control_Points = List_Create(List_Nbr(Liste), 1, sizeof(Vertex *));
@@ -551,7 +551,7 @@ void FreeCurve(void *a, void *b)
     List_Delete(pC->Control_Points);
     if(pC->Extrude) delete pC->Extrude;
     delete pC;
-    pC = NULL;
+    pC = nullptr;
   }
 }
 
@@ -570,10 +570,10 @@ Surface *CreateSurface(int Num, int Typ)
   pS->Recombine_Dir = -1;
   pS->TransfiniteSmoothing = -1;
   pS->TrsfPoints = List_Create(4, 4, sizeof(Vertex *));
-  pS->Generatrices = NULL;
-  pS->GeneratricesByTag = NULL;
-  pS->Extrude = NULL;
-  pS->geometry = NULL;
+  pS->Generatrices = nullptr;
+  pS->GeneratricesByTag = nullptr;
+  pS->Extrude = nullptr;
+  pS->geometry = nullptr;
   pS->ReverseMesh = 0;
   return (pS);
 }
@@ -587,7 +587,7 @@ void FreeSurface(void *a, void *b)
     List_Delete(pS->GeneratricesByTag);
     if(pS->Extrude) delete pS->Extrude;
     delete pS;
-    pS = NULL;
+    pS = nullptr;
   }
 }
 
@@ -605,7 +605,7 @@ Volume *CreateVolume(int Num, int Typ)
   pV->Surfaces = List_Create(1, 2, sizeof(Surface *));
   pV->SurfacesOrientations = List_Create(1, 2, sizeof(int));
   pV->SurfacesByTag = List_Create(1, 2, sizeof(int));
-  pV->Extrude = NULL;
+  pV->Extrude = nullptr;
   return pV;
 }
 
@@ -619,7 +619,7 @@ void FreeVolume(void *a, void *b)
     List_Delete(pV->SurfacesByTag);
     if(pV->Extrude) delete pV->Extrude;
     delete pV;
-    pV = NULL;
+    pV = nullptr;
   }
 }
 
@@ -662,7 +662,7 @@ static Vertex *FindPoint(int inum, Tree_T *t)
   if(Tree_Query(t, &pc)) {
     return pc;
   }
-  return NULL;
+  return nullptr;
 }
 
 Vertex *FindPoint(int inum)
@@ -678,7 +678,7 @@ static Curve *FindCurve(int inum, Tree_T *t)
   if(Tree_Query(t, &pc)) {
     return pc;
   }
-  return NULL;
+  return nullptr;
 }
 
 Curve *FindCurve(int inum)
@@ -694,7 +694,7 @@ static Surface *FindSurface(int inum, Tree_T *t)
   if(Tree_Query(t, &ps)) {
     return ps;
   }
-  return NULL;
+  return nullptr;
 }
 
 Surface *FindSurface(int inum)
@@ -710,7 +710,7 @@ Volume *FindVolume(int inum)
   if(Tree_Query(GModel::current()->getGEOInternals()->Volumes, &pv)) {
     return pv;
   }
-  return NULL;
+  return nullptr;
 }
 
 EdgeLoop *FindEdgeLoop(int inum)
@@ -721,7 +721,7 @@ EdgeLoop *FindEdgeLoop(int inum)
   if(Tree_Query(GModel::current()->getGEOInternals()->EdgeLoops, &ps)) {
     return ps;
   }
-  return NULL;
+  return nullptr;
 }
 
 SurfaceLoop *FindSurfaceLoop(int inum)
@@ -732,7 +732,7 @@ SurfaceLoop *FindSurfaceLoop(int inum)
   if(Tree_Query(GModel::current()->getGEOInternals()->SurfaceLoops, &ps)) {
     return ps;
   }
-  return NULL;
+  return nullptr;
 }
 
 PhysicalGroup *FindPhysicalGroup(int num, int type)
@@ -746,7 +746,7 @@ PhysicalGroup *FindPhysicalGroup(int num, int type)
         ComparePhysicalGroup))) {
     return *ppp;
   }
-  return NULL;
+  return nullptr;
 }
 
 static void CopyVertex(Vertex *v, Vertex *vv)
@@ -760,7 +760,7 @@ static void CopyVertex(Vertex *v, Vertex *vv)
 
 Vertex *DuplicateVertex(Vertex *v)
 {
-  if(!v) return NULL;
+  if(!v) return nullptr;
   Vertex *pv = CreateVertex(NEWPOINT(), 0, 0, 0, 0, 0);
   CopyVertex(v, pv);
   Tree_Insert(GModel::current()->getGEOInternals()->Points, &pv);
@@ -799,7 +799,7 @@ static void CopyCurve(Curve *c, Curve *cc)
 
 Curve *DuplicateCurve(Curve *c)
 {
-  Curve *pc = CreateCurve(NEWLINE(), 0, 1, NULL, NULL, -1, -1, 0., 1.);
+  Curve *pc = CreateCurve(NEWLINE(), 0, 1, nullptr, nullptr, -1, -1, 0., 1.);
   CopyCurve(c, pc);
   Tree_Insert(GModel::current()->getGEOInternals()->Curves, &pc);
   for(int i = 0; i < List_Nbr(c->Control_Points); i++) {
@@ -1077,7 +1077,7 @@ void DeletePhysicalVolume(int num)
 
 Curve *CreateReversedCurve(Curve *c)
 {
-  Curve *newc = CreateCurve(-c->Num, c->Typ, 1, NULL, NULL, -1, -1, 0., 1.);
+  Curve *newc = CreateCurve(-c->Num, c->Typ, 1, nullptr, nullptr, -1, -1, 0., 1.);
 
   if(List_Nbr(c->Control_Points)) {
     newc->Control_Points =
@@ -1122,7 +1122,7 @@ Curve *CreateReversedCurve(Curve *c)
   Curve **pc;
   if((pc = (Curve **)Tree_PQuery(GModel::current()->getGEOInternals()->Curves,
                                  &newc))) {
-    FreeCurve(&newc, NULL);
+    FreeCurve(&newc, nullptr);
     return *pc;
   }
   else {
@@ -2388,8 +2388,8 @@ void ReplaceAllDuplicatesNew(double tol)
 {
   if(tol < 0) tol = CTX::instance()->geom.tolerance * CTX::instance()->lc;
   ReplaceDuplicatePointsNew(tol);
-  ReplaceDuplicateCurves(NULL);
-  ReplaceDuplicateSurfaces(NULL);
+  ReplaceDuplicateCurves(nullptr);
+  ReplaceDuplicateSurfaces(nullptr);
 }
 
 void ProtudeXYZ(double &x, double &y, double &z, ExtrudeParams *e)
@@ -2432,7 +2432,7 @@ int ExtrudePoint(int type, int ip, double T0, double T1, double T2, double A0,
 
   pv = &V;
   pv->Num = ip;
-  *pc = *prc = NULL;
+  *pc = *prc = nullptr;
   if(!Tree_Query(GModel::current()->getGEOInternals()->Points, &pv)) return 0;
 
   Msg::Debug("Extrude Point %d", ip);
@@ -2448,7 +2448,7 @@ int ExtrudePoint(int type, int ip, double T0, double T1, double T2, double A0,
     List_Reset(ListOfTransformedPoints);
     ApplyTransformationToPoint(matrix, chapeau);
     if(!ComparePosition(&pv, &chapeau)) return pv->Num;
-    c = CreateCurve(NEWLINE(), MSH_SEGM_LINE, 1, NULL, NULL, -1, -1, 0., 1.);
+    c = CreateCurve(NEWLINE(), MSH_SEGM_LINE, 1, nullptr, nullptr, -1, -1, 0., 1.);
     c->Control_Points = List_Create(2, 1, sizeof(Vertex *));
     c->Extrude = new ExtrudeParams;
     c->Extrude->fill(type, T0, T1, T2, A0, A1, A2, X0, X1, X2, alpha);
@@ -2462,7 +2462,7 @@ int ExtrudePoint(int type, int ip, double T0, double T1, double T2, double A0,
     chapeau->Typ = MSH_POINT_BND_LAYER;
     if(e) chapeau->boundaryLayerIndex = e->mesh.BoundaryLayerIndex;
     c =
-      CreateCurve(NEWLINE(), MSH_SEGM_BND_LAYER, 1, NULL, NULL, -1, -1, 0., 1.);
+      CreateCurve(NEWLINE(), MSH_SEGM_BND_LAYER, 1, nullptr, nullptr, -1, -1, 0., 1.);
     c->Control_Points = List_Create(2, 1, sizeof(Vertex *));
     c->Extrude = new ExtrudeParams;
     c->Extrude->fill(type, T0, T1, T2, A0, A1, A2, X0, X1, X2, alpha);
@@ -2492,7 +2492,7 @@ int ExtrudePoint(int type, int ip, double T0, double T1, double T2, double A0,
     List_Reset(ListOfTransformedPoints);
     ApplyTransformationToPoint(matrix, chapeau);
     if(!ComparePosition(&pv, &chapeau)) return pv->Num;
-    c = CreateCurve(NEWLINE(), MSH_SEGM_CIRC, 1, NULL, NULL, -1, -1, 0., 1.);
+    c = CreateCurve(NEWLINE(), MSH_SEGM_CIRC, 1, nullptr, nullptr, -1, -1, 0., 1.);
     c->Control_Points = List_Create(3, 1, sizeof(Vertex *));
     c->Extrude = new ExtrudeParams;
     c->Extrude->fill(type, T0, T1, T2, A0, A1, A2, X0, X1, X2, alpha);
@@ -2519,7 +2519,7 @@ int ExtrudePoint(int type, int ip, double T0, double T1, double T2, double A0,
   case TRANSLATE_ROTATE:
     d = CTX::instance()->geom.extrudeSplinePoints;
     d = d ? d : 1;
-    c = CreateCurve(NEWLINE(), MSH_SEGM_SPLN, 1, NULL, NULL, -1, -1, 0., 1.);
+    c = CreateCurve(NEWLINE(), MSH_SEGM_SPLN, 1, nullptr, nullptr, -1, -1, 0., 1.);
     c->Control_Points = List_Create(
       CTX::instance()->geom.extrudeSplinePoints + 1, 1, sizeof(Vertex *));
     c->Extrude = new ExtrudeParams;
@@ -2581,7 +2581,7 @@ int ExtrudePoint(int type, int ip, double T0, double T1, double T2, double A0,
       chap_num = report[0][chap_num];
     else
       chap_num = 0;
-    if(report[1][body_num] != body_num) *pc = *prc = NULL;
+    if(report[1][body_num] != body_num) *pc = *prc = nullptr;
   }
   return chap_num;
 }
@@ -2598,7 +2598,7 @@ int ExtrudeCurve(int type, int ic, double T0, double T1, double T2, double A0,
 
   pc = FindCurve(ic);
   revpc = FindCurve(-ic);
-  *ps = NULL;
+  *ps = nullptr;
 
   if(!pc || !revpc) {
     return 0;
@@ -2760,7 +2760,7 @@ int ExtrudeCurve(int type, int ic, double T0, double T1, double T2, double A0,
       chap_num = report[1][chap_num];
     else
       chap_num = 0;
-    if(report[2][body_num] != body_num) *ps = NULL;
+    if(report[2][body_num] != body_num) *ps = nullptr;
   }
 
   return chap_num;
@@ -2775,7 +2775,7 @@ int ExtrudeSurface(int type, int is, double T0, double T1, double T2, double A0,
   int i;
   Surface *s, *ps, *chapeau;
 
-  *pv = NULL;
+  *pv = nullptr;
 
   // 'is' can be negative, to signify that the surface orientation
   // should be reversed. This orientation information is only used at
@@ -3148,20 +3148,20 @@ static Curve *_create_splitted_curve(Curve *c, List_T *nodes)
   List_Read(nodes, 0, &beg);
   List_Read(nodes, List_Nbr(nodes) - 1, &end);
   int id = NEWLINE();
-  Curve *cnew = NULL;
+  Curve *cnew = nullptr;
   switch(c->Typ) {
   case MSH_SEGM_LINE:
-    cnew = CreateCurve(id, c->Typ, 1, nodes, NULL, -1, -1, 0., 1.);
+    cnew = CreateCurve(id, c->Typ, 1, nodes, nullptr, -1, -1, 0., 1.);
     break;
   case MSH_SEGM_SPLN:
-    cnew = CreateCurve(id, c->Typ, 3, nodes, NULL, -1, -1, 0., 1.);
+    cnew = CreateCurve(id, c->Typ, 3, nodes, nullptr, -1, -1, 0., 1.);
     break;
   case MSH_SEGM_BSPLN:
-    cnew = CreateCurve(id, c->Typ, 2, nodes, NULL, -1, -1, 0., 1.);
+    cnew = CreateCurve(id, c->Typ, 2, nodes, nullptr, -1, -1, 0., 1.);
     break;
   default: // should never reach this point...
     Msg::Error("Cannot split a curve with type %i", c->Typ);
-    return NULL;
+    return nullptr;
   }
   Tree_Add(GModel::current()->getGEOInternals()->Curves, &cnew);
   CreateReversedCurve(cnew);
@@ -3419,7 +3419,7 @@ void SetSurfaceGeneratrices(Surface *s, List_T *loops)
     if(!(el = FindEdgeLoop(abs(iLoop)))) {
       Msg::Error("Unknown line loop %d in GEO face %d", iLoop, s->Num);
       List_Delete(s->Generatrices);
-      s->Generatrices = NULL;
+      s->Generatrices = nullptr;
       return;
     }
     else {

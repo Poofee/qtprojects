@@ -294,7 +294,7 @@ public:
 
   void assignGhostCells()
   {
-    std::vector<GEntity *> ghostEntities(_nparts, (GEntity *)NULL);
+    std::vector<GEntity *> ghostEntities(_nparts, (GEntity *)nullptr);
     int elementaryNumber = _model->getMaxElementaryNumber(_dim);
 
     for(unsigned int i = 1; i <= _nparts; i++) {

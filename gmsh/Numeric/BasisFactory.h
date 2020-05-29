@@ -23,7 +23,7 @@ private:
     static std::map<FuncSpaceData, GradientBasis *> gs;
 
 public:
-    // Caution: the returned pointer can be NULL
+    // Caution: the returned pointer can be nullptr
 
     // Nodal
     static const nodalBasis *getNodalBasis(int tag);

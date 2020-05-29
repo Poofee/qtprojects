@@ -32,7 +32,7 @@ protected:
 
 public:
     MPolyhedron(std::vector<MVertex *> v, int num = 0, int part = 0,
-                bool owner = false, MElement *orig = NULL)
+                bool owner = false, MElement *orig = nullptr)
         : MElement(num, part), _owner(owner), _orig(orig), _intpt(0)
     {
         if(v.size() % 4) {
@@ -44,7 +44,7 @@ public:
         _init();
     }
     MPolyhedron(std::vector<MTetrahedron *> vT, int num = 0, int part = 0,
-                bool owner = false, MElement *orig = NULL)
+                bool owner = false, MElement *orig = nullptr)
         : MElement(num, part), _owner(owner), _orig(orig), _intpt(0)
     {
         for(std::size_t i = 0; i < vT.size(); i++) _parts.push_back(vT[i]);
@@ -208,7 +208,7 @@ protected:
 
 public:
     MPolygon(std::vector<MVertex *> v, int num = 0, int part = 0,
-             bool owner = false, MElement *orig = NULL)
+             bool owner = false, MElement *orig = nullptr)
         : MElement(num, part), _owner(owner), _orig(orig), _intpt(0)
     {
         for(std::size_t i = 0; i < v.size() / 3; i++)
@@ -216,7 +216,7 @@ public:
         _initVertices();
     }
     MPolygon(std::vector<MTriangle *> vT, int num = 0, int part = 0,
-             bool owner = false, MElement *orig = NULL)
+             bool owner = false, MElement *orig = nullptr)
         : MElement(num, part), _owner(owner), _orig(orig), _intpt(0)
     {
         for(std::size_t i = 0; i < vT.size(); i++) {
@@ -367,12 +367,12 @@ protected:
 
 public:
     MLineChild(MVertex *v0, MVertex *v1, int num = 0, int part = 0,
-               bool owner = false, MElement *orig = NULL)
+               bool owner = false, MElement *orig = nullptr)
         : MLine(v0, v1, num, part), _owner(owner), _orig(orig), _intpt(0)
     {
     }
     MLineChild(const std::vector<MVertex *> &v, int num = 0, int part = 0,
-               bool owner = false, MElement *orig = NULL)
+               bool owner = false, MElement *orig = nullptr)
         : MLine(v, num, part), _owner(owner), _orig(orig), _intpt(0)
     {
     }
@@ -429,14 +429,14 @@ protected:
 
 public:
     MTriangleBorder(MVertex *v0, MVertex *v1, MVertex *v2, int num = 0,
-                    int part = 0, MElement *d1 = NULL, MElement *d2 = NULL)
+                    int part = 0, MElement *d1 = nullptr, MElement *d2 = nullptr)
         : MTriangle(v0, v1, v2, num, part), _intpt(0)
     {
         _domains[0] = d1;
         _domains[1] = d2;
     }
     MTriangleBorder(const std::vector<MVertex *> &v, int num = 0, int part = 0,
-                    MElement *d1 = NULL, MElement *d2 = NULL)
+                    MElement *d1 = nullptr, MElement *d2 = nullptr)
         : MTriangle(v, num, part), _intpt(0)
     {
         _domains[0] = d1;
@@ -449,7 +449,7 @@ public:
     {
         if(_domains[0]) return _domains[0]->getParent();
         if(_domains[1]) return _domains[1]->getParent();
-        return NULL;
+        return nullptr;
     }
     virtual int getTypeForMSH() const { return MSH_TRI_B; }
     virtual bool isInside(double u, double v, double w) const;
@@ -465,16 +465,16 @@ protected:
 
 public:
     MPolygonBorder(const std::vector<MTriangle *> &v, int num = 0, int part = 0,
-                   bool own = false, MElement *p = NULL, MElement *d1 = NULL,
-                   MElement *d2 = NULL)
+                   bool own = false, MElement *p = nullptr, MElement *d1 = nullptr,
+                   MElement *d2 = nullptr)
         : MPolygon(v, num, part, own, p), _intpt(0)
     {
         _domains[0] = d1;
         _domains[1] = d2;
     }
     MPolygonBorder(const std::vector<MVertex *> &v, int num = 0, int part = 0,
-                   bool own = false, MElement *p = NULL, MElement *d1 = NULL,
-                   MElement *d2 = NULL)
+                   bool own = false, MElement *p = nullptr, MElement *d1 = nullptr,
+                   MElement *d2 = nullptr)
         : MPolygon(v, num, part, own, p), _intpt(0)
     {
         _domains[0] = d1;
@@ -487,7 +487,7 @@ public:
     {
         if(_domains[0]) return _domains[0]->getParent();
         if(_domains[1]) return _domains[1]->getParent();
-        return NULL;
+        return nullptr;
     }
     virtual int getTypeForMSH() const { return MSH_POLYG_B; }
 };
@@ -499,14 +499,14 @@ protected:
 
 public:
     MLineBorder(MVertex *v0, MVertex *v1, int num = 0, int part = 0,
-                MElement *d1 = NULL, MElement *d2 = NULL)
+                MElement *d1 = nullptr, MElement *d2 = nullptr)
         : MLine(v0, v1, num, part), _intpt(0)
     {
         _domains[0] = d1;
         _domains[1] = d2;
     }
     MLineBorder(const std::vector<MVertex *> &v, int num = 0, int part = 0,
-                MElement *d1 = NULL, MElement *d2 = NULL)
+                MElement *d1 = nullptr, MElement *d2 = nullptr)
         : MLine(v, num, part), _intpt(0)
     {
         _domains[0] = d1;
@@ -519,7 +519,7 @@ public:
     {
         if(_domains[0]) return _domains[0]->getParent();
         if(_domains[1]) return _domains[1]->getParent();
-        return NULL;
+        return nullptr;
     }
     virtual int getTypeForMSH() const { return MSH_LIN_B; }
     virtual bool isInside(double u, double v, double w) const;

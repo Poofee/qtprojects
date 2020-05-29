@@ -1110,7 +1110,7 @@ double tetcircumcenter(double a[3], double b[3], double c[3], double d[3],
   circumcenter[1] = ycirca + a[1];
   circumcenter[2] = zcirca + a[2];
 
-  if(xi != (double *)NULL) {
+  if(xi != (double *)nullptr) {
     /* To interpolate a linear function at the circumcenter, define a    */
     /*   coordinate system with a xi-axis directed from `a' to `b',      */
     /*   an eta-axis directed from `a' to `c', and a zeta-axis directed  */
@@ -1338,7 +1338,7 @@ void insertVerticesInRegion(GRegion *gr, int maxVert, bool _classify,
             (*it2)->tet()->getVertices(vertices);
             for(std::vector<MVertex *>::iterator itv = vertices.begin();
                 itv != vertices.end(); ++itv) {
-              if((*itv)->onWhat() != NULL && (*itv)->onWhat()->dim() == 3 &&
+              if((*itv)->onWhat() != nullptr && (*itv)->onWhat()->dim() == 3 &&
                  (*itv)->onWhat() != myGRegion) {
                 myGRegion->addMeshVertex((*itv));
                 (*itv)->setEntity(myGRegion);
@@ -1423,7 +1423,7 @@ void insertVerticesInRegion(GRegion *gr, int maxVert, bool _classify,
       double pd[3] = {base->getVertex(3)->x(), base->getVertex(3)->y(),
                       base->getVertex(3)->z()};
 
-      tetcircumcenter(pa, pb, pc, pd, center, NULL, NULL, NULL);
+      tetcircumcenter(pa, pb, pc, pd, center, nullptr, nullptr, nullptr);
 
       // A TEST !!!
       std::vector<faceXtet> shell;

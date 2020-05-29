@@ -50,7 +50,7 @@ public:
     {
         GModel *gm = GModel::current();
         if(_macros.empty()) {
-            _macros[-1] = std::make_pair(gm, "NULL");
+            _macros[-1] = std::make_pair(gm, "nullptr");
         }
         GModel *gmNew = new GModel(s);
         GModel::setCurrent(gmNew);
@@ -74,7 +74,7 @@ public:
             if(GModel::current() != it->second.first) {
                 GModel::current()->setVisibility(0);
                 GModel::setCurrent(it->second.first);
-                if(it->second.second != "NULL") MergeFile(it->second.second, true);
+                if(it->second.second != "nullptr") MergeFile(it->second.second, true);
                 it->second.first->setVisibility(1);
             }
         }

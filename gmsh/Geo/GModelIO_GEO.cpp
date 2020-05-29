@@ -162,7 +162,7 @@ bool GEO_Internals::addLine(int &tag, const std::vector<int> &pointTags)
     int t = pointTags[i];
     List_Add(tmp, &t);
   }
-  Curve *c = CreateCurve(tag, MSH_SEGM_LINE, 1, tmp, NULL, -1, -1, 0., 1.);
+  Curve *c = CreateCurve(tag, MSH_SEGM_LINE, 1, tmp, nullptr, -1, -1, 0., 1.);
   Tree_Add(Curves, &c);
   CreateReversedCurve(c);
   List_Delete(tmp);
@@ -182,7 +182,7 @@ bool GEO_Internals::addCircleArc(int &tag, int startTag, int centerTag,
   List_Add(tmp, &startTag);
   List_Add(tmp, &centerTag);
   List_Add(tmp, &endTag);
-  Curve *c = CreateCurve(tag, MSH_SEGM_CIRC, 2, tmp, NULL, -1, -1, 0., 1.);
+  Curve *c = CreateCurve(tag, MSH_SEGM_CIRC, 2, tmp, nullptr, -1, -1, 0., 1.);
   if(nx || ny || nz) {
     c->Circle.n[0] = nx;
     c->Circle.n[1] = ny;
@@ -216,7 +216,7 @@ bool GEO_Internals::addEllipseArc(int &tag, int startTag, int centerTag,
   List_Add(tmp, &centerTag);
   List_Add(tmp, &majorTag);
   List_Add(tmp, &endTag);
-  Curve *c = CreateCurve(tag, MSH_SEGM_ELLI, 2, tmp, NULL, -1, -1, 0., 1.);
+  Curve *c = CreateCurve(tag, MSH_SEGM_ELLI, 2, tmp, nullptr, -1, -1, 0., 1.);
   if(nx || ny || nz) {
     c->Circle.n[0] = nx;
     c->Circle.n[1] = ny;
@@ -252,7 +252,7 @@ bool GEO_Internals::addSpline(int &tag, const std::vector<int> &pointTags)
     int t = pointTags[i];
     List_Add(tmp, &t);
   }
-  Curve *c = CreateCurve(tag, MSH_SEGM_SPLN, 3, tmp, NULL, -1, -1, 0., 1.);
+  Curve *c = CreateCurve(tag, MSH_SEGM_SPLN, 3, tmp, nullptr, -1, -1, 0., 1.);
   Tree_Add(Curves, &c);
   CreateReversedCurve(c);
   List_Delete(tmp);
@@ -276,7 +276,7 @@ bool GEO_Internals::addBezier(int &tag, const std::vector<int> &pointTags)
     int t = pointTags[i];
     List_Add(tmp, &t);
   }
-  Curve *c = CreateCurve(tag, MSH_SEGM_BEZIER, 2, tmp, NULL, -1, -1, 0., 1.);
+  Curve *c = CreateCurve(tag, MSH_SEGM_BEZIER, 2, tmp, nullptr, -1, -1, 0., 1.);
   Tree_Add(Curves, &c);
   CreateReversedCurve(c);
   List_Delete(tmp);
@@ -303,7 +303,7 @@ bool GEO_Internals::addBSpline(int &tag, const std::vector<int> &pointTags,
   }
   Curve *c;
   if(seqknots.empty()) {
-    c = CreateCurve(tag, MSH_SEGM_BSPLN, 2, tmp, NULL, -1, -1, 0., 1.);
+    c = CreateCurve(tag, MSH_SEGM_BSPLN, 2, tmp, nullptr, -1, -1, 0., 1.);
   }
   else {
     int order = seqknots.size() - pointTags.size() - 1;
@@ -1271,7 +1271,7 @@ void GEO_Internals::synchronize(GModel *model)
     std::vector<GEntity *> ents;
     for(std::size_t i = 0; i < compound.size(); i++) {
       int tag = compound[i];
-      GEntity *ent = NULL;
+      GEntity *ent = nullptr;
       switch(dim) {
       case 1: ent = model->getEdgeByTag(tag); break;
       case 2: ent = model->getFaceByTag(tag); break;
@@ -1567,7 +1567,7 @@ int GModel::exportDiscreteGEOInternals()
 
   for(eiter it = firstEdge(); it != lastEdge(); it++) {
     if((*it)->geomType() == GEntity::DiscreteCurve) {
-      Curve *c = CreateCurve((*it)->tag(), MSH_SEGM_DISCRETE, 1, NULL, NULL, -1,
+      Curve *c = CreateCurve((*it)->tag(), MSH_SEGM_DISCRETE, 1, nullptr, nullptr, -1,
                              -1, 0., 1.);
       List_T *points = Tree2List(_geo_internals->Points);
       GVertex *gvb = (*it)->getBeginVertex();

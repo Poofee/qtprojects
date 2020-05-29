@@ -226,10 +226,10 @@ int treat_Struct_FullName_dot_tSTRING_Float_getDim
   (char* c1, char* c2, char* c3);
 char* treat_Struct_FullName_String
   (char* c1, char* c2, int type_var = 1, int index = 0,
-   char* val_default = NULL, int type_treat = 0);
+   char* val_default = nullptr, int type_treat = 0);
 char* treat_Struct_FullName_dot_tSTRING_String
   (char* c1, char* c2, char* c3, int index = 0,
-   char* val_default = NULL, int type_treat = 0);
+   char* val_default = nullptr, int type_treat = 0);
 List_T * treat_Struct_FullName_dot_tSTRING_ListOfString
   (char* c1, char* c2, char* c3);
 
@@ -9205,7 +9205,7 @@ yyreduce:
           double d;
           List_Read((yyvsp[-1].l), 0, &d);
           gLevelset *pl = gLevelset::find((int)d);
-          gLevelset *ls = NULL;
+          gLevelset *ls = nullptr;
           if(!pl) yymsg(0, "Unknown levelset %d", (int)d);
           else ls = new gLevelsetReverse(pl, t);
           if(ls) gLevelset::add(ls);
@@ -10116,7 +10116,7 @@ yyreduce:
       if(!FunctionManager::Instance()->createFunction
          (std::string((yyvsp[0].c)), gmsh_yyin, gmsh_yyname, gmsh_yylineno))
 	yymsg(0, "Redefinition of function %s", (yyvsp[0].c));
-      skip(NULL, "Return");
+      skip(nullptr, "Return");
       Free((yyvsp[0].c));
     }
 #line 10123 "Gmsh.tab.cpp" /* yacc.c:1652  */
@@ -10128,7 +10128,7 @@ yyreduce:
       if(!FunctionManager::Instance()->createFunction
          (std::string((yyvsp[0].c)), gmsh_yyin, gmsh_yyname, gmsh_yylineno))
 	yymsg(0, "Redefinition of function %s", (yyvsp[0].c));
-      skip(NULL, "Return");
+      skip(nullptr, "Return");
       Free((yyvsp[0].c));
     }
 #line 10135 "Gmsh.tab.cpp" /* yacc.c:1652  */
@@ -12198,7 +12198,7 @@ yyreduce:
   case 443:
 #line 5114 "Gmsh.y" /* yacc.c:1652  */
     {
-      (yyval.d) = treat_Struct_FullName_Float(NULL, (yyvsp[-3].c), 2, (int)(yyvsp[-1].d));
+      (yyval.d) = treat_Struct_FullName_Float(nullptr, (yyvsp[-3].c), 2, (int)(yyvsp[-1].d));
     }
 #line 12204 "Gmsh.tab.cpp" /* yacc.c:1652  */
     break;
@@ -12206,7 +12206,7 @@ yyreduce:
   case 444:
 #line 5119 "Gmsh.y" /* yacc.c:1652  */
     {
-      (yyval.d) = treat_Struct_FullName_Float(NULL, (yyvsp[-3].c), 2, (int)(yyvsp[-1].d));
+      (yyval.d) = treat_Struct_FullName_Float(nullptr, (yyvsp[-3].c), 2, (int)(yyvsp[-1].d));
     }
 #line 12212 "Gmsh.tab.cpp" /* yacc.c:1652  */
     break;
@@ -12389,7 +12389,7 @@ yyreduce:
   case 459:
 #line 5259 "Gmsh.y" /* yacc.c:1652  */
     {
-      (yyval.d) = treat_Struct_FullName_dot_tSTRING_Float(NULL, (yyvsp[-2].c), (yyvsp[0].c));
+      (yyval.d) = treat_Struct_FullName_dot_tSTRING_Float(nullptr, (yyvsp[-2].c), (yyvsp[0].c));
     }
 #line 12395 "Gmsh.tab.cpp" /* yacc.c:1652  */
     break;
@@ -12405,7 +12405,7 @@ yyreduce:
   case 461:
 #line 5268 "Gmsh.y" /* yacc.c:1652  */
     {
-      (yyval.d) = treat_Struct_FullName_dot_tSTRING_Float(NULL, (yyvsp[-5].c), (yyvsp[-3].c), (int)(yyvsp[-1].d));
+      (yyval.d) = treat_Struct_FullName_dot_tSTRING_Float(nullptr, (yyvsp[-5].c), (yyvsp[-3].c), (int)(yyvsp[-1].d));
     }
 #line 12411 "Gmsh.tab.cpp" /* yacc.c:1652  */
     break;
@@ -12421,7 +12421,7 @@ yyreduce:
   case 463:
 #line 5276 "Gmsh.y" /* yacc.c:1652  */
     {
-      (yyval.d) = treat_Struct_FullName_dot_tSTRING_Float(NULL, (yyvsp[-5].c), (yyvsp[-3].c), (int)(yyvsp[-1].d));
+      (yyval.d) = treat_Struct_FullName_dot_tSTRING_Float(nullptr, (yyvsp[-5].c), (yyvsp[-3].c), (int)(yyvsp[-1].d));
     }
 #line 12427 "Gmsh.tab.cpp" /* yacc.c:1652  */
     break;
@@ -12568,7 +12568,7 @@ yyreduce:
 
   case 476:
 #line 5379 "Gmsh.y" /* yacc.c:1652  */
-    { (yyval.c) = NULL; }
+    { (yyval.c) = nullptr; }
 #line 12573 "Gmsh.tab.cpp" /* yacc.c:1652  */
     break;
 
@@ -12608,7 +12608,7 @@ yyreduce:
 
   case 480:
 #line 5409 "Gmsh.y" /* yacc.c:1652  */
-    { (yyval.c2).char1 = NULL; (yyval.c2).char2 = (yyvsp[0].c); }
+    { (yyval.c2).char1 = nullptr; (yyval.c2).char2 = (yyvsp[0].c); }
 #line 12613 "Gmsh.tab.cpp" /* yacc.c:1652  */
     break;
 
@@ -13045,7 +13045,7 @@ yyreduce:
   case 524:
 #line 5701 "Gmsh.y" /* yacc.c:1652  */
     {
-      (yyval.l) = treat_Struct_FullName_dot_tSTRING_ListOfFloat(NULL, (yyvsp[-4].c), (yyvsp[-2].c));
+      (yyval.l) = treat_Struct_FullName_dot_tSTRING_ListOfFloat(nullptr, (yyvsp[-4].c), (yyvsp[-2].c));
     }
 #line 13051 "Gmsh.tab.cpp" /* yacc.c:1652  */
     break;
@@ -13362,7 +13362,7 @@ yyreduce:
 #line 5937 "Gmsh.y" /* yacc.c:1652  */
     {
       // No need to extend to Struct_FullName (a Tag is not a String)
-      (yyval.c) = treat_Struct_FullName_String(NULL, (yyvsp[0].c));
+      (yyval.c) = treat_Struct_FullName_String(nullptr, (yyvsp[0].c));
     }
 #line 13368 "Gmsh.tab.cpp" /* yacc.c:1652  */
     break;
@@ -13406,7 +13406,7 @@ yyreduce:
   case 553:
 #line 5972 "Gmsh.y" /* yacc.c:1652  */
     {
-      (yyval.c) = treat_Struct_FullName_dot_tSTRING_String(NULL, (yyvsp[-2].c), (yyvsp[0].c));
+      (yyval.c) = treat_Struct_FullName_dot_tSTRING_String(nullptr, (yyvsp[-2].c), (yyvsp[0].c));
     }
 #line 13412 "Gmsh.tab.cpp" /* yacc.c:1652  */
     break;
@@ -13422,7 +13422,7 @@ yyreduce:
   case 555:
 #line 5980 "Gmsh.y" /* yacc.c:1652  */
     {
-      (yyval.c) = treat_Struct_FullName_dot_tSTRING_String(NULL, (yyvsp[-5].c), (yyvsp[-3].c), (int)(yyvsp[-1].d));
+      (yyval.c) = treat_Struct_FullName_dot_tSTRING_String(nullptr, (yyvsp[-5].c), (yyvsp[-3].c), (int)(yyvsp[-1].d));
     }
 #line 13428 "Gmsh.tab.cpp" /* yacc.c:1652  */
     break;
@@ -13573,7 +13573,7 @@ yyreduce:
   case 570:
 #line 6075 "Gmsh.y" /* yacc.c:1652  */
     {
-      (yyval.c) = treat_Struct_FullName_String(NULL, (yyvsp[-2].c2).char2, 1, 0, (yyvsp[-1].c), 2);
+      (yyval.c) = treat_Struct_FullName_String(nullptr, (yyvsp[-2].c2).char2, 1, 0, (yyvsp[-1].c), 2);
     }
 #line 13579 "Gmsh.tab.cpp" /* yacc.c:1652  */
     break;
@@ -13852,7 +13852,7 @@ yyreduce:
 #line 6269 "Gmsh.y" /* yacc.c:1652  */
     {
       std::string out;
-      const std::string * key_struct = NULL;
+      const std::string * key_struct = nullptr;
       switch (gmsh_yynamespaces.get_key_struct_from_tag(struct_namespace,
                                                         (int)(yyvsp[-1].d), key_struct)) {
       case 0:
@@ -13966,7 +13966,7 @@ yyreduce:
   case 603:
 #line 6355 "Gmsh.y" /* yacc.c:1652  */
     {
-      (yyval.l) = treat_Struct_FullName_dot_tSTRING_ListOfString(NULL, (yyvsp[-4].c), (yyvsp[-2].c));
+      (yyval.l) = treat_Struct_FullName_dot_tSTRING_ListOfString(nullptr, (yyvsp[-4].c), (yyvsp[-2].c));
     }
 #line 13972 "Gmsh.tab.cpp" /* yacc.c:1652  */
     break;
@@ -14964,7 +14964,7 @@ double treat_Struct_FullName_dot_tSTRING_Float
     break;
   case 2:
     if (type_treat != 0) {
-      const std::string * out_dummy = NULL;
+      const std::string * out_dummy = nullptr;
       out = (gmsh_yynamespaces.getMember
              (struct_namespace, struct_name, key_member, out_dummy))?
         val_default : 1.;
@@ -14989,7 +14989,7 @@ double treat_Struct_FullName_dot_tSTRING_Float
 List_T * treat_Struct_FullName_dot_tSTRING_ListOfFloat
 (char* c1, char* c2, char* c3)
 {
-  List_T * out, * val_default = NULL;
+  List_T * out, * val_default = nullptr;
   const std::vector<double> * out_vector; double val_;
   std::string struct_namespace(c1? c1 : std::string("")), struct_name(c2);
   std::string key_member(c3);
@@ -15043,7 +15043,7 @@ char * treat_Struct_FullName_String
 (char* c1, char* c2, int type_var, int index, char * val_default, int type_treat)
 {
   std::string string_default(val_default? val_default : std::string(""));
-  const std::string * out = NULL;
+  const std::string * out = nullptr;
   std::string out_tmp;
   if(!c1 && gmsh_yystringsymbols.count(c2)){
     // Get (0) or GetForced (2)
@@ -15071,7 +15071,7 @@ char* treat_Struct_FullName_dot_tSTRING_String
 (char* c1, char* c2, char* c3, int index, char * val_default, int type_treat)
 {
   std::string string_default(val_default? val_default : std::string(""));
-  const std::string * out = NULL;
+  const std::string * out = nullptr;
   std::string out_tmp; // PD: we should avoid that -> StringOption() to be changed
   std::string struct_namespace(c1? c1 : std::string("")), struct_name(c2);
   std::string key_member(c3);
@@ -15106,7 +15106,7 @@ char* treat_Struct_FullName_dot_tSTRING_String
 List_T * treat_Struct_FullName_dot_tSTRING_ListOfString
 (char* c1, char* c2, char* c3)
 {
-  List_T * out, * val_default = NULL;
+  List_T * out, * val_default = nullptr;
   const std::vector<std::string> * out_vector; char * val_;
   std::string struct_namespace(c1? c1 : std::string("")), struct_name(c2);
   std::string key_member(c3);

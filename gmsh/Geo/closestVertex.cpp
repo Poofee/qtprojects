@@ -54,13 +54,13 @@ MVertex *closestVertexFinder ::operator()(const SPoint3 &p)
 {
 #if defined(HAVE_ANN)
 
-  if(nbVtcs == 0) return NULL;
+  if(nbVtcs == 0) return nullptr;
 
   double xyz[3] = {p.x(), p.y(), p.z()};
   kdtree->annkSearch(xyz, 1, index, dist);
   return vertex[index[0]];
 #else
-  return NULL;
+  return nullptr;
 #endif
 }
 
@@ -69,7 +69,7 @@ MVertex *closestVertexFinder ::operator()(const SPoint3 &p,
 {
 #if defined(HAVE_ANN)
 
-  if(nbVtcs == 0) return NULL;
+  if(nbVtcs == 0) return nullptr;
 
   double ori[4] = {p.x(), p.y(), p.z(), 1};
   double xyz[4] = {0, 0, 0, 0};
@@ -83,6 +83,6 @@ MVertex *closestVertexFinder ::operator()(const SPoint3 &p,
   kdtree->annkSearch(xyz, 1, index, dist);
   return vertex[index[0]];
 #else
-  return NULL;
+  return nullptr;
 #endif
 }

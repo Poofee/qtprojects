@@ -16,16 +16,16 @@ class MElement;
 namespace jacobianBasedQuality {
 
 void minMaxJacobianDeterminant(MElement *el, double &min, double &max,
-                               const fullMatrix<double> *normals = NULL);
+                               const fullMatrix<double> *normals = nullptr);
 double minIGEMeasure(MElement *el, bool knownValid = false,
                      bool reversedOk = false,
-                     const fullMatrix<double> *normals = NULL);
+                     const fullMatrix<double> *normals = nullptr);
 double minICNMeasure(MElement *el, bool knownValid = false,
                      bool reversedOk = false,
-                     const fullMatrix<double> *normals = NULL);
+                     const fullMatrix<double> *normals = nullptr);
 void sampleIGEMeasure(MElement *el, int order, double &min, double &max);
 void sampleJacobian(MElement *el, int order, fullVector<double> &jac,
-                    const fullMatrix<double> *normals = NULL);
+                    const fullMatrix<double> *normals = nullptr);
 void sampleIGEMeasure(MElement *el, int order, fullVector<double> &ige);
 void sampleICNMeasure(MElement *el, int order, fullVector<double> &icn);
 double minSampledICNMeasure(MElement *el, int order); // fordebug

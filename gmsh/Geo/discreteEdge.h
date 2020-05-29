@@ -37,7 +37,7 @@ public:
         _split[1] = e1;
     }
     void getSplit (std::vector<GEdge*> & s) {
-        if (_split[0] == NULL){
+        if (_split[0] == nullptr){
             if (std::find(s.begin(),s.end(),this) == s.end())
                 s.push_back(this);
         }

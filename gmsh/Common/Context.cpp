@@ -114,7 +114,7 @@ CTX::~CTX()
 //  if(gamepad) delete gamepad;
 }
 
-CTX *CTX::_instance = NULL;
+CTX *CTX::_instance = nullptr;
 
 CTX *CTX::instance()
 {

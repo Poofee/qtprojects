@@ -979,12 +979,12 @@ static void elementCutMesh(
         isCut = (isCut || iC);
       }
     }
-    MPolyhedron *p1 = NULL, *p2 = NULL;
+    MPolyhedron *p1 = nullptr, *p2 = nullptr;
     if(isCut) {
       std::vector<MTetrahedron *> poly[2];
 
       for(std::size_t i = nbTe; i < tetras.size(); i++) {
-        MVertex *mv[4] = {NULL, NULL, NULL, NULL};
+        MVertex *mv[4] = {nullptr, nullptr, nullptr, nullptr};
         for(int j = 0; j < 4; j++) {
           int numV = getElementVertexNum(tetras[i]->pt(j), e);
           if(numV == -1) {
@@ -1055,7 +1055,7 @@ static void elementCutMesh(
       for(std::size_t i = 0; i < bords.size(); i++)
         borders[1].insert(bords[i]);
       if(eParent) {
-        copy->setParent(NULL, false);
+        copy->setParent(nullptr, false);
         delete copy;
       }
     }
@@ -1082,7 +1082,7 @@ static void elementCutMesh(
     }
 
     for(std::size_t i = nbTr; i < triangles.size(); i++) {
-      MVertex *mv[3] = {NULL, NULL, NULL};
+      MVertex *mv[3] = {nullptr, nullptr, nullptr};
       for(int j = 0; j < 3; j++) {
         int numV = getElementVertexNum(triangles[i]->pt(j), e);
         if(numV == -1) {
@@ -1184,12 +1184,12 @@ static void elementCutMesh(
       }
     }
 
-    MPolygon *p1 = NULL, *p2 = NULL;
+    MPolygon *p1 = nullptr, *p2 = nullptr;
     if(isCut) {
       std::vector<MTriangle *> poly[2];
 
       for(std::size_t i = nbTr; i < triangles.size(); i++) {
-        MVertex *mv[3] = {NULL, NULL, NULL};
+        MVertex *mv[3] = {nullptr, nullptr, nullptr};
         for(int j = 0; j < 3; j++) {
           int numV = getElementVertexNum(triangles[i]->pt(j), e);
           if(numV == -1) {
@@ -1219,7 +1219,7 @@ static void elementCutMesh(
       }
       // if quads
       for(std::size_t i = nbQ; i < quads.size(); i++) {
-        MVertex *mv[4] = {NULL, NULL, NULL, NULL};
+        MVertex *mv[4] = {nullptr, nullptr, nullptr, nullptr};
         for(int j = 0; j < 4; j++) {
           int numV = getElementVertexNum(quads[i]->pt(j), e);
           if(numV == -1) {
@@ -1311,7 +1311,7 @@ static void elementCutMesh(
       for(std::size_t i = 0; i < bords.size(); i++)
         borders[0].insert(bords[i]);
       if(eParent) {
-        copy->setParent(NULL, false);
+        copy->setParent(nullptr, false);
         delete copy;
       }
     }
@@ -1338,7 +1338,7 @@ static void elementCutMesh(
     }
 
     for(std::size_t i = nbL; i < lines.size(); i++) {
-      MVertex *mv[2] = {NULL, NULL};
+      MVertex *mv[2] = {nullptr, nullptr};
       for(int j = 0; j < 2; j++) {
         int numV = getElementVertexNum(lines[i]->pt(j), e);
         if(numV == -1) {
@@ -1406,7 +1406,7 @@ static void elementCutMesh(
     if(isCut) {
       bool own = (eParent && !e->ownsParent()) ? false : true;
       for(std::size_t i = nbL; i < lines.size(); i++) {
-        MVertex *mv[2] = {NULL, NULL};
+        MVertex *mv[2] = {nullptr, nullptr};
         for(int j = 0; j < 2; j++) {
           int numV = getElementVertexNum(lines[i]->pt(j), e);
           if(numV == -1) {
@@ -1449,7 +1449,7 @@ static void elementCutMesh(
               std::pair<MElement *, MElement *>(ml->getDomain(i), ml));
       }
       if(eParent) {
-        copy->setParent(NULL, false);
+        copy->setParent(nullptr, false);
         delete copy;
       }
     }

@@ -570,8 +570,8 @@ public:
             sloc = sbowywat = 0;
 
             refineflag = 0;
-            refinetet.tet = NULL;
-            refinesh.sh = NULL;
+            refinetet.tet = nullptr;
+            refinesh.sh = nullptr;
             smlenflag = 0;
             smlen = 0.0;
         }
@@ -628,9 +628,9 @@ public:
             cosdihed_out = 0.0;
 
             checkflipeligibility = 0;
-            seg[0] = NULL;
-            fac[0] = NULL;
-            remvert = NULL;
+            seg[0] = nullptr;
+            fac[0] = nullptr;
+            remvert = nullptr;
         }
     };
 
@@ -1360,31 +1360,31 @@ public:
 
     void initializetetgenmesh()
     {
-        in = addin = NULL;
-        b = NULL;
-        bgm = NULL;
+        in = addin = nullptr;
+        b = nullptr;
+        bgm = nullptr;
 
-        tetrahedrons = subfaces = subsegs = points = NULL;
-        badtetrahedrons = badsubfacs = badsubsegs = NULL;
-        tet2segpool = tet2subpool = NULL;
-        flippool = NULL;
+        tetrahedrons = subfaces = subsegs = points = nullptr;
+        badtetrahedrons = badsubfacs = badsubsegs = nullptr;
+        tet2segpool = tet2subpool = nullptr;
+        flippool = nullptr;
 
-        dummypoint = NULL;
-        flipstack = NULL;
-        unflipqueue = NULL;
+        dummypoint = nullptr;
+        flipstack = nullptr;
+        unflipqueue = nullptr;
 
-        cavetetlist = cavebdrylist = caveoldtetlist = NULL;
-        cavetetshlist = cavetetseglist = cavetetvertlist = NULL;
-        caveencshlist = caveencseglist = NULL;
-        caveshlist = caveshbdlist = cavesegshlist = NULL;
+        cavetetlist = cavebdrylist = caveoldtetlist = nullptr;
+        cavetetshlist = cavetetseglist = cavetetvertlist = nullptr;
+        caveencshlist = caveencseglist = nullptr;
+        caveshlist = caveshbdlist = cavesegshlist = nullptr;
 
-        subsegstack = subfacstack = subvertstack = NULL;
-        encseglist = encshlist = NULL;
-        idx2facetlist = NULL;
-        facetverticeslist = NULL;
-        segmentendpointslist = NULL;
+        subsegstack = subfacstack = subvertstack = nullptr;
+        encseglist = encshlist = nullptr;
+        idx2facetlist = nullptr;
+        facetverticeslist = nullptr;
+        segmentendpointslist = nullptr;
 
-        highordertable = NULL;
+        highordertable = nullptr;
 
         numpointattrib = numelemattrib = 0;
         sizeoftensor = 0;
@@ -1428,22 +1428,22 @@ public:
 
     void freememory()
     {
-        if(bgm != NULL) {
+        if(bgm != nullptr) {
             delete bgm;
         }
 
-        if(points != (memorypool *)NULL) {
+        if(points != (memorypool *)nullptr) {
             delete points;
             delete[] dummypoint;
         }
-        if(tetrahedrons != (memorypool *)NULL) {
+        if(tetrahedrons != (memorypool *)nullptr) {
             delete tetrahedrons;
         }
-        if(subfaces != (memorypool *)NULL) {
+        if(subfaces != (memorypool *)nullptr) {
             delete subfaces;
             delete subsegs;
         }
-        if(tet2segpool != NULL) {
+        if(tet2segpool != nullptr) {
             delete tet2segpool;
             delete tet2subpool;
         }
@@ -1464,19 +1464,19 @@ public:
             delete encshlist;
         }
 
-        if(flippool != NULL) {
+        if(flippool != nullptr) {
             delete flippool;
             delete unflipqueue;
         }
 
-        if(cavetetlist != NULL) {
+        if(cavetetlist != nullptr) {
             delete cavetetlist;
             delete cavebdrylist;
             delete caveoldtetlist;
             delete cavetetvertlist;
         }
 
-        if(caveshlist != NULL) {
+        if(caveshlist != nullptr) {
             delete caveshlist;
             delete caveshbdlist;
             delete cavesegshlist;
@@ -1486,22 +1486,22 @@ public:
             delete caveencseglist;
         }
 
-        if(subsegstack != NULL) {
+        if(subsegstack != nullptr) {
             delete subsegstack;
             delete subfacstack;
             delete subvertstack;
         }
 
-        if(idx2facetlist != NULL) {
+        if(idx2facetlist != nullptr) {
             delete[] idx2facetlist;
             delete[] facetverticeslist;
         }
 
-        if(segmentendpointslist != NULL) {
+        if(segmentendpointslist != nullptr) {
             delete[] segmentendpointslist;
         }
 
-        if(highordertable != NULL) {
+        if(highordertable != nullptr) {
             delete[] highordertable;
         }
 
@@ -1629,7 +1629,7 @@ inline void tetgenmesh::bond(triface &t1, triface &t2)
 
 // dissolve()  a bond (from one side).
 
-inline void tetgenmesh::dissolve(triface &t) { t.tet[t.ver & 3] = NULL; }
+inline void tetgenmesh::dissolve(triface &t) { t.tet[t.ver & 3] = nullptr; }
 
 // enext()  finds the next edge (counterclockwise) in the same face.
 
@@ -1980,7 +1980,7 @@ inline bool tetgenmesh::ishulltet(triface &t)
 
 inline bool tetgenmesh::isdeadtet(triface &t)
 {
-    return ((t.tet == NULL) || (t.tet[4] == NULL));
+    return ((t.tet == nullptr) || (t.tet[4] == nullptr));
 }
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -2034,7 +2034,7 @@ inline void tetgenmesh::sbond1(face &s1, face &s2)
 // Dissolve a subface bond (from one side).  Note that the other subface
 //   will still think it's connected to this subface.
 
-inline void tetgenmesh::sdissolve(face &s) { s.sh[s.shver >> 1] = NULL; }
+inline void tetgenmesh::sdissolve(face &s) { s.sh[s.shver >> 1] = nullptr; }
 
 // spivot() finds the adjacent subface (s2) for a given subface (s1).
 //   s1 and s2 share at the same edge.
@@ -2254,12 +2254,12 @@ inline int tetgenmesh::getfacetindex(face &s)
 
 inline void tetgenmesh::tsbond(triface &t, face &s)
 {
-    if((t).tet[9] == NULL) {
+    if((t).tet[9] == nullptr) {
         // Allocate space for this tet.
         (t).tet[9] = (tetrahedron)tet2subpool->alloc();
         // Initialize.
         for(int i = 0; i < 4; i++) {
-            ((shellface *)(t).tet[9])[i] = NULL;
+            ((shellface *)(t).tet[9])[i] = nullptr;
         }
     }
     // Bond t <== s.
@@ -2271,14 +2271,14 @@ inline void tetgenmesh::tsbond(triface &t, face &s)
 }
 
 // tspivot() finds a subface (s) abutting on the given tetrahdera (t).
-//   Return s.sh = NULL if there is no subface at t. Otherwise, return
+//   Return s.sh = nullptr if there is no subface at t. Otherwise, return
 //   the subface s, and s and t must be at the same edge wth the same
 //   orientation.
 
 inline void tetgenmesh::tspivot(triface &t, face &s)
 {
-    if((t).tet[9] == NULL) {
-        (s).sh = NULL;
+    if((t).tet[9] == nullptr) {
+        (s).sh = nullptr;
         return;
     }
     // Get the attached subface s.
@@ -2296,7 +2296,7 @@ inline void tetgenmesh::tspivot(triface &t, face &s)
 inline void tetgenmesh::stpivot(face &s, triface &t)
 {
     decode((tetrahedron)s.sh[9 + (s.shver & 1)], t);
-    if((t).tet == NULL) {
+    if((t).tet == nullptr) {
         return;
     }
     (t).ver = stpivottbl[t.ver][s.shver];
@@ -2310,8 +2310,8 @@ inline void tetgenmesh::stpivot(face &s, triface &t)
 
 inline void tetgenmesh::tsdissolve(triface &t)
 {
-    if((t).tet[9] != NULL) {
-        ((shellface *)(t).tet[9])[(t).ver & 3] = NULL;
+    if((t).tet[9] != nullptr) {
+        ((shellface *)(t).tet[9])[(t).ver & 3] = nullptr;
     }
 }
 
@@ -2319,8 +2319,8 @@ inline void tetgenmesh::tsdissolve(triface &t)
 
 inline void tetgenmesh::stdissolve(face &s)
 {
-    (s).sh[9] = NULL;
-    (s).sh[10] = NULL;
+    (s).sh[9] = nullptr;
+    (s).sh[10] = nullptr;
 }
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -2345,7 +2345,7 @@ inline void tetgenmesh::ssbond1(face &s, face &edge)
 
 // ssdisolve() dissolve a bond (from the subface side)
 
-inline void tetgenmesh::ssdissolve(face &s) { s.sh[6 + (s.shver >> 1)] = NULL; }
+inline void tetgenmesh::ssdissolve(face &s) { s.sh[6 + (s.shver >> 1)] = nullptr; }
 
 // sspivot() finds a subsegment abutting a subface.
 
@@ -2366,12 +2366,12 @@ inline void tetgenmesh::sspivot(face &s, face &edge)
 
 inline void tetgenmesh::tssbond1(triface &t, face &s)
 {
-    if((t).tet[8] == NULL) {
+    if((t).tet[8] == nullptr) {
         // Allocate space for this tet.
         (t).tet[8] = (tetrahedron)tet2segpool->alloc();
         // Initialization.
         for(int i = 0; i < 6; i++) {
-            ((shellface *)(t).tet[8])[i] = NULL;
+            ((shellface *)(t).tet[8])[i] = nullptr;
         }
     }
     ((shellface *)(t).tet[8])[ver2edge[(t).ver]] = sencode((s));
@@ -2384,23 +2384,23 @@ inline void tetgenmesh::sstbond1(face &s, triface &t)
 
 inline void tetgenmesh::tssdissolve1(triface &t)
 {
-    if((t).tet[8] != NULL) {
-        ((shellface *)(t).tet[8])[ver2edge[(t).ver]] = NULL;
+    if((t).tet[8] != nullptr) {
+        ((shellface *)(t).tet[8])[ver2edge[(t).ver]] = nullptr;
     }
 }
 
 inline void tetgenmesh::sstdissolve1(face &s)
 {
-    ((tetrahedron *)(s).sh)[9] = NULL;
+    ((tetrahedron *)(s).sh)[9] = nullptr;
 }
 
 inline void tetgenmesh::tsspivot1(triface &t, face &s)
 {
-    if((t).tet[8] != NULL) {
+    if((t).tet[8] != nullptr) {
         sdecode(((shellface *)(t).tet[8])[ver2edge[(t).ver]], s);
     }
     else {
-        (s).sh = NULL;
+        (s).sh = nullptr;
     }
 }
 
@@ -2620,7 +2620,7 @@ inline void tetgenmesh::point2shorg(point pa, face &searchsh)
         searchsh.shver = 0;
     }
     else if((point)searchsh.sh[4] == pa) {
-        searchsh.shver = (searchsh.sh[5] != NULL ? 2 : 1);
+        searchsh.shver = (searchsh.sh[5] != nullptr ? 2 : 1);
     }
     else {
         searchsh.shver = 4;
@@ -2638,7 +2638,7 @@ inline tetgenmesh::point tetgenmesh::farsorg(face &s)
     while(1) {
         senext2(travesh, neighsh);
         spivotself(neighsh);
-        if(neighsh.sh == NULL) break;
+        if(neighsh.sh == nullptr) break;
         if(sorg(neighsh) != sorg(travesh)) sesymself(neighsh);
         senext2(neighsh, travesh);
     }
@@ -2653,7 +2653,7 @@ inline tetgenmesh::point tetgenmesh::farsdest(face &s)
     while(1) {
         senext(travesh, neighsh);
         spivotself(neighsh);
-        if(neighsh.sh == NULL) break;
+        if(neighsh.sh == nullptr) break;
         if(sdest(neighsh) != sdest(travesh)) sesymself(neighsh);
         senext(neighsh, travesh);
     }

@@ -182,7 +182,7 @@ public:
   double _distance;
   SPoint3 _closestPoint;
   MTriangle *_t3d, *_t2d;
-  dfWrapper(const SPoint3 &p) : _p(p), _distance(1.e22), _t3d(NULL), _t2d(NULL)
+  dfWrapper(const SPoint3 &p) : _p(p), _distance(1.e22), _t3d(nullptr), _t2d(nullptr)
   {
   }
 };
@@ -605,7 +605,7 @@ GPoint discreteFace::intersectionWithCircle(const SVector3 &n1,
   MTriangle *t2d =
     (MTriangle *)_parametrizations[_currentParametrization].oct->find(
       uv[0], uv[1], 0.0);
-  MTriangle *t3d = NULL;
+  MTriangle *t3d = nullptr;
   if(t2d) {
     int position =
       (int)(t2d - &_parametrizations[_currentParametrization].t2d[0]);
@@ -941,7 +941,7 @@ bool discreteFace::_computeTopologyOfPartition(
 HXTStatus discreteFace::_reparametrizeThroughHxt()
 {
   int n = 1;
-  HXT_CHECK(hxtInitializeLinearSystems(&n, NULL));
+  HXT_CHECK(hxtInitializeLinearSystems(&n, nullptr));
 
   HXTMesh *m;
   std::map<MVertex *, int> v2c;

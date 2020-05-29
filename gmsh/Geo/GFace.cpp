@@ -1095,7 +1095,7 @@ private:
 public:
     data_wrapper()
     {
-        gf = NULL;
+        gf = nullptr;
         point = SPoint3();
     }
     ~data_wrapper() {}
@@ -1185,7 +1185,7 @@ GPoint GFace::closestPoint(const SPoint3 &queryPoint,
     data_wrapper w;
     w.set_point(queryPoint);
     w.set_face(this);
-    minlbfgsoptimize(state, bfgs_callback, NULL, &w);
+    minlbfgsoptimize(state, bfgs_callback, nullptr, &w);
 
     // Get results
     alglib::minlbfgsreport rep;
@@ -1693,7 +1693,7 @@ void GFace::setMeshMaster(GFace *master, const std::vector<double> &tfo)
             xyzTfo[i] += tfo[idx++];
         }
 
-        GVertex *l_vertex = NULL;
+        GVertex *l_vertex = nullptr;
 
         double dist_min = 1.e22;
         std::set<GVertex *>::iterator lvIter = l_vertices.begin();
@@ -1707,7 +1707,7 @@ void GFace::setMeshMaster(GFace *master, const std::vector<double> &tfo)
             }
         }
 
-        if(l_vertex == NULL) {
+        if(l_vertex == nullptr) {
             Msg::Error("Was not able to find corresponding node %d "
                        "for periodic connection of surface %d to %d "
                        "(min distance is %g with a tolerance of %g)",

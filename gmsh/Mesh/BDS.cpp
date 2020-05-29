@@ -247,7 +247,7 @@ BDS_Point *BDS_Mesh::find_point(int p)
   BDS_Point P(p);
   std::set<BDS_Point *, PointLessThan>::iterator it = points.find(&P);
 
-  return it != points.end() ? static_cast<BDS_Point *>(*it) : NULL;
+  return it != points.end() ? static_cast<BDS_Point *>(*it) : nullptr;
 }
 
 BDS_Edge *BDS_Mesh::find_edge(BDS_Point *p, int num2)

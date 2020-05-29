@@ -17,11 +17,11 @@ private:
 public:
     partitionVertex(GModel *model, int num,
                     const std::vector<unsigned int> &partitions)
-        : discreteVertex(model, num), _partitions(partitions), _parentEntity(NULL)
+        : discreteVertex(model, num), _partitions(partitions), _parentEntity(nullptr)
     {
     }
     partitionVertex(GModel *model, int num)
-        : discreteVertex(model, num), _partitions(), _parentEntity(NULL)
+        : discreteVertex(model, num), _partitions(), _parentEntity(nullptr)
     {
     }
     virtual ~partitionVertex() {}

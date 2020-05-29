@@ -72,12 +72,12 @@ public:
     void delRegion(GRegion *r)
     {
         if(r1 == r) r1 = r2;
-        r2 = NULL;
+        r2 = nullptr;
     }
     GRegion *getRegion(int const num) const { return num == 0 ? r1 : r2; }
 
     // get number of regions
-    int numRegions() const { return (r1 != NULL) + (r2 != NULL); }
+    int numRegions() const { return (r1 != nullptr) + (r2 != nullptr); }
 
     std::list<GRegion *> regions() const
     {

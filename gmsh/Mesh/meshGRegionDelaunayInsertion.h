@@ -90,7 +90,7 @@ public:
         double B[4] = {v1->x(), v1->y(), v1->z()};
         double C[4] = {v2->x(), v2->y(), v2->z()};
         double D[4] = {v3->x(), v3->y(), v3->z()};
-        tetcircumcenter(A, B, C, D, res, NULL, NULL, NULL);
+        tetcircumcenter(A, B, C, D, res, nullptr, nullptr, nullptr);
     }
 
     void setup(MTetrahedron *t, std::vector<double> &sizes,

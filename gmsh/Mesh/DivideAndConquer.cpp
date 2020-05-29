@@ -31,7 +31,7 @@
 PointNumero DocRecord::Predecessor(PointNumero a, PointNumero b)
 {
   DListPeek p = points[a].adjacent;
-  if(p == NULL) return -1;
+  if(p == nullptr) return -1;
 
   do {
     if(p->point_num == b) return Pred(p)->point_num;
@@ -44,7 +44,7 @@ PointNumero DocRecord::Predecessor(PointNumero a, PointNumero b)
 PointNumero DocRecord::Successor(PointNumero a, PointNumero b)
 {
   DListPeek p = points[a].adjacent;
-  if(p == NULL) return -1;
+  if(p == nullptr) return -1;
 
   do {
     if(p->point_num == b) return Succ(p)->point_num;
@@ -57,7 +57,7 @@ PointNumero DocRecord::Successor(PointNumero a, PointNumero b)
 int DocRecord::FixFirst(PointNumero x, PointNumero f)
 {
   DListPeek p = points[x].adjacent;
-  if(p == NULL) return 0;
+  if(p == nullptr) return 0;
 
   int out = 0;
   DListPeek copy = p;
@@ -324,7 +324,7 @@ int DocRecord::DListInsert(PointNumero centerPoint, PointNumero newPoint)
   newp->point_num = newPoint;
 
   DListRecord **dlist = &points[centerPoint].adjacent;
-  if(*dlist == NULL) {
+  if(*dlist == nullptr) {
     *dlist = newp;
     Pred(*dlist) = newp;
     Succ(*dlist) = newp;
@@ -412,11 +412,11 @@ int DocRecord::DListDelete(DListPeek *dlist, PointNumero oldPoint)
 {
   DListPeek p;
 
-  if(*dlist == NULL) return 0;
+  if(*dlist == nullptr) return 0;
   if(Succ(*dlist) == *dlist) {
     if((*dlist)->point_num == oldPoint) {
       delete *dlist;
-      *dlist = NULL;
+      *dlist = nullptr;
       return 1;
     }
     else
@@ -454,7 +454,7 @@ int DocRecord::CountPointsOnHull()
   PointNumero p, p2, temp;
   int i, n = numPoints;
 
-  if(points[0].adjacent == NULL) return 0;
+  if(points[0].adjacent == nullptr) return 0;
   i = 1;
   p = 0;
   p2 = First(0);
@@ -472,7 +472,7 @@ void DocRecord::ConvexHull()
 {
   PointNumero p, p2, temp;
 
-  if(points[0].adjacent == NULL) return;
+  if(points[0].adjacent == nullptr) return;
   int count = 0;
   p = 0;
   _hull[count++] = p;
@@ -497,7 +497,7 @@ PointNumero *DocRecord::ConvertDlistToArray(DListPeek *dlist, int *n)
     p = Pred(p);
   } while(p != *dlist);
   ptr = new PointNumero[max + 1];
-  if(ptr == NULL) return NULL;
+  if(ptr == nullptr) return nullptr;
   p = *dlist;
   for(i = 0; i < max; i++) {
     ptr[i] = p->point_num;
@@ -506,7 +506,7 @@ PointNumero *DocRecord::ConvertDlistToArray(DListPeek *dlist, int *n)
     delete temp;
   }
   ptr[max] = ptr[0];
-  *dlist = NULL;
+  *dlist = nullptr;
   *n = max;
   return ptr;
 }
@@ -817,20 +817,20 @@ void DocRecord::RemoveAllDList()
   DListPeek p, temp;
 
   for(i = 0; i < numPoints; i++)
-    if(points[i].adjacent != NULL) {
+    if(points[i].adjacent != nullptr) {
       p = points[i].adjacent;
       do {
         temp = p;
         p = Pred(p);
         delete temp;
       } while(p != points[i].adjacent);
-      points[i].adjacent = NULL;
+      points[i].adjacent = nullptr;
     }
 }
 
 DocRecord::DocRecord(int n)
-  : _hullSize(0), _hull(NULL), _adjacencies(NULL), numPoints(n), points(NULL),
-    numTriangles(0), triangles(NULL)
+  : _hullSize(0), _hull(nullptr), _adjacencies(nullptr), numPoints(n), points(nullptr),
+    numTriangles(0), triangles(nullptr)
 {
   if(numPoints) points = new PointRecord[numPoints + 3000];
 }
@@ -849,7 +849,7 @@ DocRecord::~DocRecord()
 bool DocRecord::AdjacentNullptrExists()
 {
   for(int i = 0; i < numPoints; i++) {
-    if(points[i].adjacent == NULL) return false;
+    if(points[i].adjacent == nullptr) return false;
   }
   return true;
 }
@@ -882,7 +882,7 @@ void DocRecord::setPoints(fullMatrix<double> *p)
   for(int i = 0; i < p->size1(); i++) {
     x(i) = (*p)(i, 0);
     y(i) = (*p)(i, 1);
-    data(i) = (*p)(i, 2) < 0 ? (void *)1 : NULL;
+    data(i) = (*p)(i, 2) < 0 ? (void *)1 : nullptr;
   }
 }
 

@@ -301,7 +301,7 @@ SOrientedBoundingBox::buildOBB(std::vector<SPoint3> &vertices)
     record.points[i].where.v =
       points[i]->y() + (10e-6) * sizes[smallest_comp == 2 ? 1 : 0] *
                          (-0.5 + ((double)rand()) / RAND_MAX);
-    record.points[i].adjacent = NULL;
+    record.points[i].adjacent = nullptr;
   }
 
   try {

@@ -1030,7 +1030,7 @@ public:
             FaceDataB(const int _zoneIndex,
                       const typename MZone<DIM>::BoFaceMap::const_iterator bFMapIt)
                 : // face(bFMapIt->first),
-                  face(NULL), // NBN: need to load this after insertion into container
+                  face(nullptr), // NBN: need to load this after insertion into container
                   parentElement(bFMapIt->second.parentElement),
                   parentFace(bFMapIt->second.parentFace),
                   faceIndex(bFMapIt->second.faceIndex), zoneIndex(_zoneIndex)
@@ -1097,7 +1097,7 @@ public:
                 FaceT *p = ref.faces[i].face;
                 if(p) {
                     delete(p);
-                    p = NULL;
+                    p = nullptr;
                 }
             }
         }

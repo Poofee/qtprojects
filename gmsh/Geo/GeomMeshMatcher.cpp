@@ -615,7 +615,7 @@ static void copy_periodicity(std::vector<Pair<GEType *, GEType *> > &eCor,
     GEType *oldTgt = srcIter->first;
     GEType *oldSrc = dynamic_cast<GEType *>(oldTgt->getMeshMaster());
 
-    if(oldSrc != NULL && oldSrc != oldTgt) {
+    if(oldSrc != nullptr && oldSrc != oldTgt) {
       GEType *newTgt = srcIter->second;
       typename std::multimap<GEType *, GEType *>::iterator tgtIter =
         eMap.find(oldSrc);
@@ -871,10 +871,10 @@ int GeomMeshMatcher::match(GModel *geom, GModel *mesh)
 
   bool ok = true;
 
-  std::vector<Pair<GVertex *, GVertex *> > *coresp_v(NULL);
-  std::vector<Pair<GEdge *, GEdge *> > *coresp_e(NULL);
-  std::vector<Pair<GFace *, GFace *> > *coresp_f(NULL);
-  std::vector<Pair<GRegion *, GRegion *> > *coresp_r(NULL);
+  std::vector<Pair<GVertex *, GVertex *> > *coresp_v(nullptr);
+  std::vector<Pair<GEdge *, GEdge *> > *coresp_e(nullptr);
+  std::vector<Pair<GFace *, GFace *> > *coresp_f(nullptr);
+  std::vector<Pair<GRegion *, GRegion *> > *coresp_r(nullptr);
 
   coresp_v = matchVertices(geom, mesh, ok);
   if(ok) {

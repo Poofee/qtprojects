@@ -409,11 +409,11 @@ void meshMetric::computeMetricHessian(MVertex *ver, SMetric3 &hessian,
                                       double y, double z)
 {
   SVector3 gr;
-  if(ver != NULL) {
+  if(ver != nullptr) {
     gr = grads[ver];
     hessian = hessians[ver];
   }
-  else if(ver == NULL) {
+  else if(ver == nullptr) {
     _fct->gradient(x, y, z, gr(0), gr(1), gr(2));
     _fct->hessian(x, y, z, hessian(0, 0), hessian(0, 1), hessian(0, 2),
                   hessian(1, 0), hessian(1, 1), hessian(1, 2), hessian(2, 0),
@@ -853,22 +853,22 @@ void meshMetric::operator()(double x, double y, double z, SMetric3 &metr,
         double size;
         switch(_technique) {
         case(LEVELSET):
-          computeMetricLevelSet(NULL, hessian, metric, size, x, y, z);
+          computeMetricLevelSet(nullptr, hessian, metric, size, x, y, z);
           break;
         case(HESSIAN):
-          computeMetricHessian(NULL, hessian, metric, size, x, y, z);
+          computeMetricHessian(nullptr, hessian, metric, size, x, y, z);
           break;
         case(FREY):
-          computeMetricFrey(NULL, hessian, metric, size, x, y, z);
+          computeMetricFrey(nullptr, hessian, metric, size, x, y, z);
           break;
         case(EIGENDIRECTIONS):
-          computeMetricEigenDir(NULL, hessian, metric, size, x, y, z);
+          computeMetricEigenDir(nullptr, hessian, metric, size, x, y, z);
           break;
         case(EIGENDIRECTIONS_LINEARINTERP_H):
-          computeMetricEigenDir(NULL, hessian, metric, size, x, y, z);
+          computeMetricEigenDir(nullptr, hessian, metric, size, x, y, z);
           break;
         case(ISOTROPIC_LINEARINTERP_H):
-          computeMetricIsoLinInterp(NULL, hessian, metric, size, x, y, z);
+          computeMetricIsoLinInterp(nullptr, hessian, metric, size, x, y, z);
           break;
         }
         newSetOfMetrics[iMetric] = metric;

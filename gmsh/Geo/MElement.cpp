@@ -711,7 +711,7 @@ const nodalBasis *MElement::getFunctionSpace(int order, bool serendip) const
 {
   if(order == -1) return BasisFactory::getNodalBasis(getTypeForMSH());
   int type = ElementType::getType(getType(), order, serendip);
-  return type ? BasisFactory::getNodalBasis(type) : NULL;
+  return type ? BasisFactory::getNodalBasis(type) : nullptr;
 }
 
 const JacobianBasis *MElement::getJacobianFuncSpace(int order) const

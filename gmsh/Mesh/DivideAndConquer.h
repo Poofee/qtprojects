@@ -107,9 +107,9 @@ public:
     {
         return std::binary_search(_hull, _hull + _hullSize, i);
     }
-    void makePosView(const std::string &, GFace *gf = NULL);
-    void printMedialAxis(Octree *_octree, const std::string &, GFace *gf = NULL,
-                         GEdge *ge = NULL);
+    void makePosView(const std::string &, GFace *gf = nullptr);
+    void printMedialAxis(Octree *_octree, const std::string &, GFace *gf = nullptr,
+                         GEdge *ge = nullptr);
     void voronoiCell(PointNumero pt, std::vector<SPoint2> &pts) const;
 
     std::set<std::pair<void *, void *> > boundaryEdges;

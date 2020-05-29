@@ -41,7 +41,7 @@ static double mylength(GEdge *ge, int i, double *u)
 }
 
 static void myresid(int N, GEdge *ge, double *u, fullVector<double> &r,
-                    double *weight = NULL)
+                    double *weight = nullptr)
 {
   double L[100];
   for(int i = 0; i < N - 1; i++) L[i] = mylength(ge, i, u);
@@ -212,7 +212,7 @@ static bool computeEquidistantParameters(GFace *gf, double u0, double uN,
   return true;
 }
 
-static fullMatrix<double> *lob2lagP6 = NULL;
+static fullMatrix<double> *lob2lagP6 = nullptr;
 
 void createMatLob2LagP6()
 {
@@ -1253,7 +1253,7 @@ static void updatePeriodicEdgesAndFaces(GModel *m)
 
     GEdge *src = dynamic_cast<GEdge *>(tgt->getMeshMaster());
 
-    if(src != NULL && src != tgt) {
+    if(src != nullptr && src != tgt) {
       std::map<MVertex *, MVertex *> &v2v = tgt->correspondingVertices;
       std::map<MVertex *, MVertex *> &p2p = tgt->correspondingHOPoints;
       p2p.clear();
@@ -1331,7 +1331,7 @@ static void updatePeriodicEdgesAndFaces(GModel *m)
     if(tgt->vertexCounterparts.empty()) continue;
 
     GFace *src = dynamic_cast<GFace *>(tgt->getMeshMaster());
-    if(src != NULL && src != tgt) {
+    if(src != nullptr && src != tgt) {
       Msg::Info("Reconstructing periodicity for surface connection %d - %d",
                 tgt->tag(), src->tag());
 

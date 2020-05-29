@@ -47,24 +47,24 @@ public:
 
     // Constructors for the function space of a different order
     FuncSpaceData(const FuncSpaceData &fsd, int order,
-                  const bool *serendip = NULL);
+                  const bool *serendip = nullptr);
     FuncSpaceData(const FuncSpaceData &fsd, int nij, int nk,
-                  const bool *serendip = NULL);
+                  const bool *serendip = nullptr);
 
     // Constructors using MElement*
-    FuncSpaceData(const MElement *el, const bool *serendip = NULL);
-    FuncSpaceData(const MElement *el, int order, const bool *serendip = NULL);
+    FuncSpaceData(const MElement *el, const bool *serendip = nullptr);
+    FuncSpaceData(const MElement *el, int order, const bool *serendip = nullptr);
     FuncSpaceData(const MElement *el, bool pyr, int nij, int nk,
-                  const bool *serendip = NULL);
+                  const bool *serendip = nullptr);
 
     // Constructor using element tag
-    FuncSpaceData(int tag, const bool *serendip = NULL);
+    FuncSpaceData(int tag, const bool *serendip = nullptr);
 
     // constructors using element tag or element type
     FuncSpaceData(bool isTag, int tagOrType, int order,
-                  const bool *serendip = NULL, bool elemIsSerendip = false);
+                  const bool *serendip = nullptr, bool elemIsSerendip = false);
     FuncSpaceData(bool isTag, int tagOrType, bool pyr, int nij, int nk,
-                  const bool *serendip = NULL, bool elemIsSerendip = false);
+                  const bool *serendip = nullptr, bool elemIsSerendip = false);
 
     // Print
     void print() const

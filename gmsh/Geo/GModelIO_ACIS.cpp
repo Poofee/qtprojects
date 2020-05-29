@@ -117,10 +117,10 @@ ACIS_Internals::ACIS_Internals(GModel *gm)
     Msg::Error("Unable to start ACIS");
   }
 
-  option_header *seam_option = NULL;
+  option_header *seam_option = nullptr;
 
   seam_option = find_option("periodic_no_seam");
-  if(seam_option != NULL) seam_option->push(FALSE);
+  if(seam_option != nullptr) seam_option->push(FALSE);
 
   api_initialize_booleans();
   api_initialize_euler_ops();

@@ -253,7 +253,7 @@ static void _relocateVertexOfPyramid(MVertex *ver,
   if(ver->onWhat()->dim() != 3) return;
   double x = 0.0, y = 0.0, z = 0.0;
   int N = 0;
-  MElement *pyramid = NULL;
+  MElement *pyramid = nullptr;
 
   for(std::size_t i = 0; i < lt.size(); i++) {
     double XCG = 0.0, YCG = 0.0, ZCG = 0.0;

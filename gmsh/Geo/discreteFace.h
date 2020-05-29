@@ -39,7 +39,7 @@ public:
     std::vector<MTriangle> t3d;
     std::vector<GEdge *> bnd;
     std::vector<GEdge *> emb;
-    hxt_reparam_surf() : oct(NULL) {}
+    hxt_reparam_surf() : oct(nullptr) {}
     ~hxt_reparam_surf();
 };
 
@@ -64,7 +64,7 @@ public:
     GPoint point(double par1, double par2) const;
     SPoint2 parFromPoint(const SPoint3 &p, bool onSurface = true) const;
     GPoint closestPoint(const SPoint3 &queryPoint, double maxDistance,
-                        SVector3 *normal = NULL) const;
+                        SVector3 *normal = nullptr) const;
     GPoint closestPoint(const SPoint3 &queryPoint,
                         const double initialGuess[2]) const;
     SVector3 normal(const SPoint2 &param) const;

@@ -665,7 +665,7 @@ createElementMSH(GModel *m, int num, int typeMSH, int reg, int part,
 
   if(!e) {
     Msg::Error("Unknown type of element %d", typeMSH);
-    return NULL;
+    return nullptr;
   }
 
   switch(e->getType()) {
@@ -679,7 +679,7 @@ createElementMSH(GModel *m, int num, int typeMSH, int reg, int part,
   case TYPE_PYR: elements[7][reg].push_back(e); break;
   case TYPE_POLYG: elements[8][reg].push_back(e); break;
   case TYPE_POLYH: elements[9][reg].push_back(e); break;
-  default: Msg::Error("Wrong type of element"); return NULL;
+  default: Msg::Error("Wrong type of element"); return nullptr;
   }
 
   return e;
@@ -1052,8 +1052,8 @@ public:
     tgtIJK.reserve(nbPoints);
     srcIJK.reserve(nbPoints);
 
-    tgtVertices.resize(nbPoints, NULL);
-    srcVertices.resize(nbPoints, NULL);
+    tgtVertices.resize(nbPoints, nullptr);
+    srcVertices.resize(nbPoints, nullptr);
 
     IJK src(sr[idx[0]], sr[idx[1]], sr[idx[2]]);
     IJK tgt(tr[0], tr[1], tr[2]);
@@ -1087,8 +1087,8 @@ public:
 
   CGNSStruPeriodic(const CGNSStruPeriodic &old)
   {
-    tgtVertices.resize(old.getNbPoints(), NULL);
-    srcVertices.resize(old.getNbPoints(), NULL);
+    tgtVertices.resize(old.getNbPoints(), nullptr);
+    srcVertices.resize(old.getNbPoints(), nullptr);
 
     tgtZone = old.tgtZone;
     tgtFace = old.tgtFace;
@@ -1109,8 +1109,8 @@ public:
   {
     CGNSStruPeriodic inv;
 
-    inv.tgtVertices.resize(getNbPoints(), NULL);
-    inv.srcVertices.resize(getNbPoints(), NULL);
+    inv.tgtVertices.resize(getNbPoints(), nullptr);
+    inv.srcVertices.resize(getNbPoints(), nullptr);
 
     inv.tgtZone = srcName;
     inv.tgtFace = srcFace;
@@ -1342,7 +1342,7 @@ static bool readCGNSBoundaryConditions(int fileIndex, int baseIndex,
 
     cgsize_t *elt = new cgsize_t[nbElts];
 
-    ierr = cg_boco_read(fileIndex, baseIndex, zoneIndex, boCoIndex, elt, NULL);
+    ierr = cg_boco_read(fileIndex, baseIndex, zoneIndex, boCoIndex, elt, nullptr);
     if(ierr != CG_OK) {
       Msg::Error("%s (%i) : %s", __FILE__, __LINE__, cg_get_error());
       return false;
@@ -1674,7 +1674,7 @@ int GModel::_readCGNSUnstructured(const std::string &fileName)
     // read coordinates and create vertices
 
     addCGNSPoints(fileName, fileIndex, baseIndex, zoneIndex, nbPoints, meshDim,
-                  scale, NULL, vtxIndex, newVertices);
+                  scale, nullptr, vtxIndex, newVertices);
 
     Msg::Info("Read %i points", nbPoints);
 
@@ -1733,7 +1733,7 @@ int GModel::_readCGNSUnstructured(const std::string &fileName)
       cgsize_t *elts = new cgsize_t[sectSize];
 
       if(cg_elements_read(fileIndex, baseIndex, zoneIndex, sectIndex, elts,
-                          NULL) != CG_OK) {
+                          nullptr) != CG_OK) {
         Msg::Error("%s (%i) : Error reading CGNS file %s : %s", __FILE__,
                    __LINE__, fileName.c_str(), cg_get_error());
         return 0;
@@ -1755,7 +1755,7 @@ int GModel::_readCGNSUnstructured(const std::string &fileName)
         int eltType = tagFromCGNSType(myType);
         int eltSize = ElementType::getNumVertices(eltType);
 
-        int *renum = NULL;
+        int *renum = nullptr;
 
         std::map<ElementType_t, int *>::iterator rIter =
           renumbering.find(myType);
@@ -3466,7 +3466,7 @@ int GModel::writeCGNS(const std::string &name, int zoneDefinition,
                    "'Transfinite Surface' in your .geo file.");
       for(std::size_t iFace = 0; iFace < faces.size(); iFace++) {
         GFace *gf = faces[iFace];
-        double *Face_Orientation = NULL;
+        double *Face_Orientation = nullptr;
         Face_Orientation = new double[3];
         faceOrientationTransfinite(gf, &(*Face_Orientation));
         Msg::Info("iFace=  %i \t Orientation=  %f  \t %f  \t %f  ", iFace,
@@ -3611,9 +3611,9 @@ int GModel::writeCGNS(const std::string &name, int zoneDefinition,
         int cgIndexConn(0);
         int interfaceEdge(0);
         int interfaceWritten(0);
-        cgsize_t *Point_Range = NULL;
-        cgsize_t *Point_Donor_Range = NULL;
-        int *Transform = NULL;
+        cgsize_t *Point_Range = nullptr;
+        cgsize_t *Point_Donor_Range = nullptr;
+        int *Transform = nullptr;
         Point_Range = new cgsize_t[4];
         Point_Donor_Range = new cgsize_t[4];
         Transform = new int[2];
@@ -3634,8 +3634,8 @@ int GModel::writeCGNS(const std::string &name, int zoneDefinition,
 
           std::vector<int> physical_num; // Family number
           std::string physical_name; // Family name
-          MVertex *v1Tmp = NULL;
-          MVertex *v2Tmp = NULL;
+          MVertex *v1Tmp = nullptr;
+          MVertex *v2Tmp = nullptr;
           if(iBc == 0) { // Edge between v0-v1
             *(Point_Range + 0) = 1;
             *(Point_Range + 1) = 1;
@@ -4000,9 +4000,9 @@ int GModel::writeCGNS(const std::string &name, int zoneDefinition,
         int cgIndexConn(0);
         int interfaceFace(0);
         int interfaceFaceWritten(0);
-        cgsize_t *Point_Range = NULL;
-        cgsize_t *Point_Donor_Range = NULL;
-        int *Transform = NULL;
+        cgsize_t *Point_Range = nullptr;
+        cgsize_t *Point_Donor_Range = nullptr;
+        int *Transform = nullptr;
         Point_Range = new cgsize_t[6];
         Point_Donor_Range = new cgsize_t[6];
         Transform = new int[3];
@@ -4021,10 +4021,10 @@ int GModel::writeCGNS(const std::string &name, int zoneDefinition,
 
           std::string adjoiningZoneName = "Zone_&I%4&";
 
-          MVertex *v0Tmp = NULL;
-          MVertex *v1Tmp = NULL;
-          MVertex *v2Tmp = NULL;
-          MVertex *v3Tmp = NULL;
+          MVertex *v0Tmp = nullptr;
+          MVertex *v1Tmp = nullptr;
+          MVertex *v2Tmp = nullptr;
+          MVertex *v3Tmp = nullptr;
 
           std::vector<int> physical_num; // Family number
           std::string physical_name; // Family name

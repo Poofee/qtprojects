@@ -29,7 +29,7 @@ const nodalBasis *BasisFactory::getNodalBasis(int tag)
   }
   // Get the parent type to see which kind of basis
   // we want to create
-  nodalBasis *F = NULL;
+  nodalBasis *F = nullptr;
   if(tag == MSH_TRI_MINI)
     F = new miniBasisTri();
   else if(tag == MSH_TET_MINI)
@@ -47,7 +47,7 @@ const nodalBasis *BasisFactory::getNodalBasis(int tag)
     case(TYPE_PYR): F = new pyramidalBasis(tag); break;
     default:
       Msg::Error("Unknown type of element %d (in BasisFactory)", tag);
-      return NULL;
+      return nullptr;
     }
   }
 

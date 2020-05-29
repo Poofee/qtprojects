@@ -180,7 +180,7 @@ public:
         /// Is iterator pointing to valid data
         bool IsNotNull()                              { return (m_tos > 0); }
 
-        /// Access the current data element. Caller must be sure iterator is not NULL first.
+        /// Access the current data element. Caller must be sure iterator is not nullptr first.
         DATATYPE& operator*()
         {
             ASSERT(IsNotNull());
@@ -188,7 +188,7 @@ public:
             return curTos.m_node->m_branch[curTos.m_branchIndex].m_data;
         }
 
-        /// Access the current data element. Caller must be sure iterator is not NULL first.
+        /// Access the current data element. Caller must be sure iterator is not nullptr first.
         const DATATYPE& operator*() const
         {
             ASSERT(IsNotNull());
@@ -310,7 +310,7 @@ public:
     /// Get Next for iteration
     void GetNext(Iterator& a_it)                    { ++a_it; }
 
-    /// Is iterator NULL, or at end?
+    /// Is iterator nullptr, or at end?
     bool IsNull(Iterator& a_it)                     { return a_it.IsNull(); }
 
     /// Get object at iterator position
@@ -424,7 +424,7 @@ public:
 
     RTFileStream()
     {
-        m_file = NULL;
+        m_file = nullptr;
     }
 
     ~RTFileStream()
@@ -457,7 +457,7 @@ public:
         if(m_file)
         {
             fclose(m_file);
-            m_file = NULL;
+            m_file = nullptr;
         }
     }
 
@@ -1002,10 +1002,10 @@ bool RTREE_QUAL::InsertRect(Rect* a_rect, const DATATYPE& a_id, Node** a_root, i
         newRoot->m_level = (*a_root)->m_level + 1;
         branch.m_rect = NodeCover(*a_root);
         branch.m_child = *a_root;
-        AddBranch(&branch, newRoot, NULL);
+        AddBranch(&branch, newRoot, nullptr);
         branch.m_rect = NodeCover(newNode);
         branch.m_child = newNode;
-        AddBranch(&branch, newRoot, NULL);
+        AddBranch(&branch, newRoot, nullptr);
         *a_root = newRoot;
         return true;
     }
@@ -1371,11 +1371,11 @@ void RTREE_QUAL::LoadNodes(Node* a_nodeA, Node* a_nodeB, PartitionVars* a_parVar
 
         if(a_parVars->m_partition[index] == 0)
         {
-            AddBranch(&a_parVars->m_branchBuf[index], a_nodeA, NULL);
+            AddBranch(&a_parVars->m_branchBuf[index], a_nodeA, nullptr);
         }
         else if(a_parVars->m_partition[index] == 1)
         {
-            AddBranch(&a_parVars->m_branchBuf[index], a_nodeB, NULL);
+            AddBranch(&a_parVars->m_branchBuf[index], a_nodeB, nullptr);
         }
     }
 }
@@ -1466,7 +1466,7 @@ bool RTREE_QUAL::RemoveRect(Rect* a_rect, const DATATYPE& a_id, Node** a_root)
     ASSERT(*a_root);
 
     Node* tempNode;
-    ListNode* reInsertList = NULL;
+    ListNode* reInsertList = nullptr;
 
     if(!RemoveRectRec(a_rect, a_id, *a_root, &reInsertList))
     {

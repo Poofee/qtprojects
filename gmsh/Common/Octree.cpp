@@ -27,9 +27,9 @@ void free_buckets(octantBucket *bucket)
   int i, numBuck = 8;
   ELink ptr1, ptr2;
 
-  if(bucket->next == NULL) {
+  if(bucket->next == nullptr) {
     ptr1 = bucket->lhead;
-    while(ptr1 != NULL) {
+    while(ptr1 != nullptr) {
       ptr2 = ptr1;
       ptr1 = ptr1->next;
       delete ptr2;

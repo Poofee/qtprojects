@@ -63,7 +63,7 @@ bool pointInsideParametricDomain(std::vector<SPoint2> &bnd, SPoint2 &p,
 
 static void trueBoundary(GFace *gf, std::vector<SPoint2> &bnd, int debug)
 {
-    FILE *view_t = 0;
+    FILE *view_t = nullptr;
     if(debug) {
         char name[245];
         sprintf(name, "trueBoundary%d.pos", gf->tag());
@@ -1159,7 +1159,7 @@ bool meshGenerator(GFace *gf, int RECUR_ITER, bool repairSelfIntersecting1dMesh,
     std::set<MVertex *, MVertexLessThanNum> all_vertices, boundary;
     std::vector<GEdge *>::const_iterator ite = edges.begin();
 
-    FILE *fdeb = NULL;
+    FILE *fdeb = nullptr;
     if(debug && RECUR_ITER == 0) {
         char name[245];
         sprintf(name, "surface%d-boundary-real.pos", gf->tag());
@@ -1169,7 +1169,7 @@ bool meshGenerator(GFace *gf, int RECUR_ITER, bool repairSelfIntersecting1dMesh,
 
     while(ite != edges.end()) {
         if((*ite)->isSeam(gf)) {
-            if(fdeb != NULL) fclose(fdeb);
+            if(fdeb != nullptr) fclose(fdeb);
             return false;
         }
         if(!(*ite)->isMeshDegenerated()) {
@@ -1303,7 +1303,7 @@ bool meshGenerator(GFace *gf, int RECUR_ITER, bool repairSelfIntersecting1dMesh,
             doc.points[i].where.h = points[i]->u + XX;
             doc.points[i].where.v = points[i]->v + YY;
             doc.points[i].data = points[i];
-            doc.points[i].adjacent = NULL;
+            doc.points[i].adjacent = nullptr;
         }
 
         // increase the size of the bounding box
@@ -1672,10 +1672,10 @@ bool meshGenerator(GFace *gf, int RECUR_ITER, bool repairSelfIntersecting1dMesh,
     // start mesh generation
     if(!algoDelaunay2D(gf) && !onlyInitialMesh) {
         refineMeshBDS(gf, *m, CTX::instance()->mesh.refineSteps, true,
-                      &recoverMapInv, NULL);
+                      &recoverMapInv, nullptr);
         optimizeMeshBDS(gf, *m, 2);
         refineMeshBDS(gf, *m, CTX::instance()->mesh.refineSteps, false,
-                      &recoverMapInv, NULL);
+                      &recoverMapInv, nullptr);
         optimizeMeshBDS(gf, *m, 2);
     }
 
@@ -2056,7 +2056,7 @@ static GEdge *getGEdge(GFace *gf, MVertex *v1, MVertex *v2)
             if(l->getVertex(1) == v1 && l->getVertex(0) == v2) return ge;
         }
     }
-    return NULL;
+    return nullptr;
 }
 
 static bool meshGeneratorPeriodic(GFace *gf, int RECUR_ITER,
@@ -2219,7 +2219,7 @@ static bool meshGeneratorPeriodic(GFace *gf, int RECUR_ITER,
                     (double)RAND_MAX;
             doc.points[count].where.h = pp->u + XX;
             doc.points[count].where.v = pp->v + YY;
-            doc.points[count].adjacent = NULL;
+            doc.points[count].adjacent = nullptr;
             doc.points[count].data = pp;
             count++;
             ++itvx;
@@ -2302,7 +2302,7 @@ static bool meshGeneratorPeriodic(GFace *gf, int RECUR_ITER,
                                 (double)rand() / (double)RAND_MAX;
                         doc.points[count].where.h = pp->u + XX;
                         doc.points[count].where.v = pp->v + YY;
-                        doc.points[count].adjacent = NULL;
+                        doc.points[count].adjacent = nullptr;
                         doc.points[count].data = pp;
                         count++;
                     }
@@ -2327,7 +2327,7 @@ static bool meshGeneratorPeriodic(GFace *gf, int RECUR_ITER,
                         (double)RAND_MAX;
                 doc.points[count].where.h = pp->u + XX;
                 doc.points[count].where.v = pp->v + YY;
-                doc.points[count].adjacent = NULL;
+                doc.points[count].adjacent = nullptr;
                 doc.points[count].data = pp;
                 count++;
             }
@@ -2639,7 +2639,7 @@ static bool meshGeneratorPeriodic(GFace *gf, int RECUR_ITER,
     if(!algoDelaunay2D(gf)) {
         modifyInitialMeshToRemoveDegeneracies(gf, *m, &recoverMap);
 
-        refineMeshBDS(gf, *m, CTX::instance()->mesh.refineSteps, true, NULL,
+        refineMeshBDS(gf, *m, CTX::instance()->mesh.refineSteps, true, nullptr,
                       &recoverMap, &true_boundary);
         if(debug) {
             char name[245];
@@ -2656,7 +2656,7 @@ static bool meshGeneratorPeriodic(GFace *gf, int RECUR_ITER,
             sprintf(name, "surface%d-phase2-param.pos", gf->tag());
             outputScalarField(m->triangles, name, 1, gf);
         }
-        refineMeshBDS(gf, *m, -CTX::instance()->mesh.refineSteps, false, NULL,
+        refineMeshBDS(gf, *m, -CTX::instance()->mesh.refineSteps, false, nullptr,
                       &recoverMap, &true_boundary);
         if(debug) {
             char name[245];

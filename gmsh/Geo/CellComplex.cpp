@@ -918,7 +918,7 @@ Cell *CellComplex::getACell(int dim, int domain)
       Msg::Warning("%d cells in domain", num);
     else if(domain == 2)
       Msg::Warning("%d cells in subdomain", num);
-    return NULL;
+    return nullptr;
   }
 
   for(citer cit = firstCell(dim); cit != lastCell(dim); cit++) {
@@ -928,7 +928,7 @@ Cell *CellComplex::getACell(int dim, int domain)
       return cell;
   }
   Msg::Debug("Domain cell counts not in sync.");
-  return NULL;
+  return nullptr;
 }
 
 bool CellComplex::restoreComplex()

@@ -124,7 +124,7 @@ struct F_Lc_aniso {
     FieldManager *fields = ge->model()->getFields();
     for(int i = 0; i < fields->getNumBoundaryLayerFields(); ++i) {
       Field *bl_field = fields->get(fields->getBoundaryLayerField(i));
-      if(bl_field == NULL) continue;
+      if(bl_field == nullptr) continue;
       BoundaryLayerField *blf = dynamic_cast<BoundaryLayerField *>(bl_field);
       if(blf->isEdgeBL(ge->tag())) break;
       SMetric3 lc_bgm;
@@ -477,7 +477,7 @@ static void addBoundaryLayerPoints(GEdge *ge, double &t_begin, double &t_end,
   // Check if edge is a BL edge
   for(int i = 0; i < n; ++i) {
     Field *bl_field = fields->get(fields->getBoundaryLayerField(i));
-    if(bl_field == NULL) continue;
+    if(bl_field == nullptr) continue;
     BoundaryLayerField *blf = dynamic_cast<BoundaryLayerField *>(bl_field);
     if(blf->isEdgeBL(ge->tag())) return;
   }
@@ -492,7 +492,7 @@ static void addBoundaryLayerPoints(GEdge *ge, double &t_begin, double &t_end,
   // Check if extremity nodes are BL node
   for(int i = 0; i < n; ++i) {
     Field *bl_field = fields->get(fields->getBoundaryLayerField(i));
-    if(bl_field == NULL) continue;
+    if(bl_field == nullptr) continue;
     BoundaryLayerField *blf = dynamic_cast<BoundaryLayerField *>(bl_field);
     blf->setupFor1d(ge->tag());
 

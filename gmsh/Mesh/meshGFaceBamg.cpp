@@ -160,7 +160,7 @@ void meshGFaceBamg(GFace *gf)
   Mesh2 *bamgMesh = new Mesh2(all.size(), gf->triangles.size(), numEdges,
                               bamgVertices, bamgTriangles, bamgBoundary);
 
-  MElementOctree *_octree = NULL;
+  MElementOctree *_octree = nullptr;
 
   Mesh2 *refinedBamgMesh = 0;
   int iterMax = 41;

@@ -55,7 +55,7 @@ incompleteBasis::incompleteBasis(int tag)
   // If the element is complete, compute the incomplete basis anyway
   : nodalBasis(ElementType::getType(ElementType::getParentType(tag),
                                     ElementType::getOrder(tag), true)),
-    completeBasis(NULL), polyBasis(NULL)
+    completeBasis(nullptr), polyBasis(nullptr)
 {
   int tagComplete = ElementType::getType(parentType, order, false);
   switch(parentType) {

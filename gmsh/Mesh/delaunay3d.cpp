@@ -56,7 +56,7 @@ public:
   inline double &lc() { return _lc; }
   inline operator double *() { return _x; }
   Vert(double X = 0, double Y = 0, double Z = 0, double lc = 0, int num = 0)
-    : _num(num), _t(NULL), _thread(0)
+    : _num(num), _t(nullptr), _thread(0)
   {
     _x[0] = X;
     _x[1] = Y;
@@ -184,8 +184,8 @@ struct Tet {
 
   Tet() : _modified(true)
   {
-    V[0] = V[1] = V[2] = V[3] = NULL;
-    T[0] = T[1] = T[2] = T[3] = NULL;
+    V[0] = V[1] = V[2] = V[3] = nullptr;
+    T[0] = T[1] = T[2] = T[3] = nullptr;
     setAllDeleted();
   }
   int setVerticesNoTest(Vert *v0, Vert *v1, Vert *v2, Vert *v3)
@@ -227,7 +227,7 @@ struct Tet {
   Tet(Vert *v0, Vert *v1, Vert *v2, Vert *v3)
   {
     setVertices(v0, v1, v2, v3);
-    T[0] = T[1] = T[2] = T[3] = NULL;
+    T[0] = T[1] = T[2] = T[3] = nullptr;
     setAllDeleted();
   }
   void setAllDeleted()
@@ -673,7 +673,7 @@ static Tet *tetContainsV(Vert *v, cavityContainer &cavity)
     }
     if(count == 4) return cavity[i];
   }
-  return NULL;
+  return nullptr;
 }
 
 static void buildDelaunayBall(cavityContainer &cavity, connContainer &faceToTet)
@@ -734,7 +734,7 @@ static Tet *tetInsideCavityWithFAce(Face &f, cavityContainer &cavity)
       }
     }
   }
-  return NULL;
+  return nullptr;
 }
 
 static bool fixDelaunayCavity(Vert *v, cavityContainer &cavity,
@@ -804,7 +804,7 @@ static void delaunayCavity2(Tet *tet, Tet *prevTet, Vert *v,
 
     for(int iNeigh = iNeighStart; iNeigh < iNeighEnd; iNeigh++) {
       Tet *neigh = t->T[iNeigh];
-      if(neigh == NULL) {
+      if(neigh == nullptr) {
         bnd.push_back(conn(t->getFace(iNeigh), iNeigh, neigh));
       }
       else if(neigh == prev) {
@@ -848,8 +848,8 @@ static Tet *walk(Tet *t, Vert *v, int maxx, double &totSearch, int thread)
   investigatedTets.insert(t);
   while(1) {
     totSearch++;
-    if(t == NULL) {
-      return NULL; // we should NEVER return here
+    if(t == nullptr) {
+      return nullptr; // we should NEVER return here
     }
     // if(t->inSphere(v,thread)){return t;}
     double _min = 0.0;
@@ -1064,7 +1064,7 @@ void delaunayTrgl(const std::size_t numThreads,
       // FIND SEEDS
       for(std::size_t K = 0; K < NPTS_AT_ONCE; K++) {
 	vToAdd[K] = (iPGlob < assignTo[K + myThread * NPTS_AT_ONCE].size()) ?
-	  assignTo[K + myThread * NPTS_AT_ONCE][iPGlob] : NULL;
+	  assignTo[K + myThread * NPTS_AT_ONCE][iPGlob] : nullptr;
 
         if(vToAdd[K]) {
           // In 3D, insertion of a point may lead to deletion of tets !!
@@ -1090,11 +1090,11 @@ void delaunayTrgl(const std::size_t numThreads,
             if(bndK[i].t) bndK[i].t->unset(myThread, K);
           cavityK.clear();
           bndK.clear();
-          delaunayCavity2(t[K], NULL, vToAdd[K], cavityK, bndK, myThread, K);
+          delaunayCavity2(t[K], nullptr, vToAdd[K], cavityK, bndK, myThread, K);
           // verify the cavity
           if(fixDelaunayCavity(vToAdd[K], cavityK, bndK, myThread, K,
                                _negatives)) {
-            vToAdd[K] = NULL;
+            vToAdd[K] = nullptr;
             invalidCavities[myThread]++;
           }
         }
@@ -1128,7 +1128,7 @@ void delaunayTrgl(const std::size_t numThreads,
                                  vToAdd[K]);
             Tet *neigh = bndK[i].t;
             t->T[0] = neigh;
-            t->T[1] = t->T[2] = t->T[3] = NULL;
+            t->T[1] = t->T[2] = t->T[3] = nullptr;
             if(neigh) {
               if(neigh->getFace(0) == bndK[i].f)
                 neigh->T[0] = t;
@@ -1148,7 +1148,7 @@ void delaunayTrgl(const std::size_t numThreads,
             computeAdjacencies(t, 3, faceToTet);
           }
           for(std::size_t i = bSize; i < cSize; i++) {
-            cavityK[i]->V[0] = NULL;
+            cavityK[i]->V[0] = nullptr;
           }
         }
       }
@@ -1310,7 +1310,7 @@ void delaunayTriangulation(const int numThreads, const int nptsatonce,
   for(int i = 0; i < 8; i++) {
     Vert *v = box[i];
     v->setNum(N + i + 1);
-    MVertex *mv = new MVertex(v->x(), v->y(), v->z(), NULL, N + (i + 1));
+    MVertex *mv = new MVertex(v->x(), v->y(), v->z(), nullptr, N + (i + 1));
     _temp[v->getNum()] = mv;
     S.push_back(mv);
   }

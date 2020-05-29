@@ -62,7 +62,7 @@ FieldOption *Field::getOption(const std::string &optionName)
   std::map<std::string, FieldOption *>::iterator it = options.find(optionName);
   if(it == options.end()) {
     Msg::Error("field option :%s does not exist", optionName.c_str());
-    return NULL;
+    return nullptr;
   }
   return it->second;
 }
@@ -78,7 +78,7 @@ void FieldManager::reset()
 Field *FieldManager::get(int id)
 {
   iterator it = find(id);
-  if(it == end()) return NULL;
+  if(it == end()) return nullptr;
   return it->second;
 }
 
@@ -1161,15 +1161,15 @@ class Popen2 {
 public:
   Popen2()
   {
-    _hIn = NULL;
-    _hOut = NULL;
+    _hIn = nullptr;
+    _hOut = nullptr;
   }
   void stop()
   {
     if(_hIn) {
       CloseHandle(_hIn);
       CloseHandle(_hOut);
-      _hIn = _hOut = NULL;
+      _hIn = _hOut = nullptr;
     }
   }
   bool started() const { return _hIn; }
@@ -1181,7 +1181,7 @@ public:
     SECURITY_ATTRIBUTES saAttr;
     saAttr.nLength = sizeof(SECURITY_ATTRIBUTES);
     saAttr.bInheritHandle = TRUE;
-    saAttr.lpSecurityDescriptor = NULL;
+    saAttr.lpSecurityDescriptor = nullptr;
     if(!CreatePipe(&_hIn, &hChildStd_OUT_Wr, &saAttr, 0))
       Msg::Error("StdoutRd CreatePipe");
     if(!CreatePipe(&hChildStd_IN_Rd, &_hOut, &saAttr, 0))
@@ -1199,11 +1199,11 @@ public:
     siStartInfo.hStdOutput = hChildStd_OUT_Wr;
     siStartInfo.hStdInput = hChildStd_IN_Rd;
     siStartInfo.dwFlags |= STARTF_USESTDHANDLES;
-//    bSuccess = CreateProcess(NULL, (char *)command, NULL, NULL, TRUE, 0, NULL,
-//                             NULL, &siStartInfo, &piProcInfo);
+//    bSuccess = CreateProcess(nullptr, (char *)command, nullptr, nullptr, TRUE, 0, nullptr,
+//                             nullptr, &siStartInfo, &piProcInfo);
     if(!bSuccess) {
       Msg::Error("Child process creation failed %i", GetLastError());
-      _hIn = _hOut = NULL;
+      _hIn = _hOut = nullptr;
       return false;
     }
     CloseHandle(piProcInfo.hProcess);
@@ -1214,14 +1214,14 @@ public:
   {
     if(!_hIn) return false;
     DWORD nSuccess = 0;
-    ReadFile(_hIn, data, size, &nSuccess, NULL);
+    ReadFile(_hIn, data, size, &nSuccess, nullptr);
     return nSuccess == size;
   }
   bool write(void *data, size_t size)
   {
     if(!_hOut) return false;
     DWORD nSuccess = 0;
-    WriteFile(_hOut, data, size, &nSuccess, NULL);
+    WriteFile(_hOut, data, size, &nSuccess, nullptr);
     return nSuccess == size;
   }
   ~Popen2() { stop(); }
@@ -1256,7 +1256,7 @@ public:
       dup2(p_stdin[0], 0);
       close(p_stdout[0]);
       dup2(p_stdout[1], 1);
-      execl("/bin/sh", "sh", "-c", command, NULL);
+      execl("/bin/sh", "sh", "-c", command, nullptr);
       perror("execl");
       exit(0);
     }
@@ -1963,7 +1963,7 @@ public:
       edges_id.push_back(tag);
     else if(dim == 2)
       faces_id.push_back(tag);
-    _xField = _yField = _zField = NULL;
+    _xField = _yField = _zField = nullptr;
     _xFieldId = _yFieldId = _zFieldId = -1;
     update_needed = true;
   }
@@ -2011,7 +2011,7 @@ public:
            "Distance instead.";
   }
   void getCoord(double x, double y, double z, double &cx, double &cy,
-                double &cz, GEntity *ge = NULL)
+                double &cz, GEntity *ge = nullptr)
   {
     cx = _xField ? (*_xField)(x, y, z, ge) : x;
     cy = _yField ? (*_yField)(x, y, z, ge) : y;
@@ -2027,11 +2027,11 @@ public:
   {
     if(update_needed) {
       _xField = _xFieldId >= 0 ? (GModel::current()->getFields()->get(_xFieldId)) :
-        NULL;
+        nullptr;
       _yField = _yFieldId >= 0 ? (GModel::current()->getFields()->get(_yFieldId)) :
-        NULL;
+        nullptr;
       _zField = _zFieldId >= 0 ? (GModel::current()->getFields()->get(_zFieldId)) :
-        NULL;
+        nullptr;
       if(zeronodes) {
         annDeallocPts(zeronodes);
         delete kdtree;
@@ -2305,7 +2305,7 @@ public:
   {
     options["InField"] = new FieldOptionInt
       (_inFieldId, "Id of the field to use as x coordinate.", &update_needed);
-    _root = NULL;
+    _root = nullptr;
   }
   ~OctreeField()
   {
@@ -2322,13 +2322,13 @@ public:
       update_needed = false;
       if(_root) {
         delete _root;
-        _root = NULL;
+        _root = nullptr;
       }
     }
     if(!_root) {
       _inField = _inFieldId >= 0 ?
         (GModel::current()->getFields()->get(_inFieldId)) :
-        NULL;
+        nullptr;
       if(!_inField) return;
       GModel::current()->getFields()->get(_inFieldId)->update();
       bounds = GModel::current()->bounds();
@@ -2420,7 +2420,7 @@ class DistanceField : public Field {
 
 public:
   DistanceField()
-    : index(NULL), pc2kd(P), out_index(0), out_dist_sqr(0)
+    : index(nullptr), pc2kd(P), out_index(0), out_dist_sqr(0)
   {
     n_nodes_by_edge = 20;
     options["NodesList"] = new FieldOptionList(
@@ -2446,7 +2446,7 @@ public:
       _zFieldId, "Id of the field to use as z coordinate.", &update_needed);
   }
   DistanceField(int dim, int tag, int nbe)
-    : n_nodes_by_edge(nbe), index(NULL), pc2kd(P), out_index(0), out_dist_sqr(0)
+    : n_nodes_by_edge(nbe), index(nullptr), pc2kd(P), out_index(0), out_dist_sqr(0)
   {
     if(dim == 0)
       nodes_id.push_back(tag);
@@ -2454,7 +2454,7 @@ public:
       edges_id.push_back(tag);
     else if(dim == 3)
       faces_id.push_back(tag);
-    _xField = _yField = _zField = NULL;
+    _xField = _yField = _zField = nullptr;
     _xFieldId = _yFieldId = _zFieldId = -1;
     update_needed = true;
   }
@@ -2480,11 +2480,11 @@ public:
   {
     if(update_needed) {
       _xField = _xFieldId >= 0 ? (GModel::current()->getFields()->get(_xFieldId)) :
-        NULL;
+        nullptr;
       _yField = _yFieldId >= 0 ? (GModel::current()->getFields()->get(_yFieldId)) :
-        NULL;
+        nullptr;
       _zField = _zFieldId >= 0 ? (GModel::current()->getFields()->get(_zFieldId)) :
-        NULL;
+        nullptr;
 
       std::vector<SPoint3> &points = P.pts;
       for(std::list<int>::iterator it = faces_id.begin(); it != faces_id.end();

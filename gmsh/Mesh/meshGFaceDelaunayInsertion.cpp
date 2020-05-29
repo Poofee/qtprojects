@@ -60,7 +60,7 @@ static inline bool intersection_segments_2(double *p1, double *p2, double *q1,
 
 template <class ITERATOR>
 void _printTris(char *name, ITERATOR it, ITERATOR end, bidimMeshData *data,
-                GFace *gf = NULL, std::set<GEntity*> *degenerated = NULL)
+                GFace *gf = nullptr, std::set<GEntity*> *degenerated = nullptr)
 {
   FILE *ff = Fopen(name, "w");
   if(!ff) {
@@ -1329,7 +1329,7 @@ void bowyerWatsonFrontal(GFace *gf, std::map<MVertex *, MVertex *> *equivalence,
     //   sprintf(name,"delFrontal_GFace_%d_Layer_%d.pos",gf->tag(),ITERATION);
     //   _printTris (name, AllTris.begin(), AllTris.end(), &DATA);
     //   sprintf(name,"delFrontal_GFace_%d_Layer_Real%d.pos",gf->tag(),ITERATION);
-    //   _printTris (name, AllTris.begin(), AllTris.end(),NULL);
+    //   _printTris (name, AllTris.begin(), AllTris.end(),nullptr);
     //   sprintf(name,"delFrontal_GFace_%d_Layer_%d_Active.pos",gf->tag(),ITERATION);
     //   _printTris (name, ActiveTris.begin(), ActiveTris.end(), &DATA);
     // }
@@ -1352,7 +1352,7 @@ void bowyerWatsonFrontal(GFace *gf, std::map<MVertex *, MVertex *> *equivalence,
         if(!true_boundary ||
            pointInsideParametricDomain(*true_boundary, NP, FAR, nnnn))
           insertAPoint(gf, AllTris.end(), newPoint, metric, DATA, AllTris,
-                       &ActiveTris, worst, NULL, testStarShapeness);
+                       &ActiveTris, worst, nullptr, testStarShapeness);
       }
     }
   }
@@ -1362,13 +1362,13 @@ void bowyerWatsonFrontal(GFace *gf, std::map<MVertex *, MVertex *> *equivalence,
   //     sprintf(name, "delFrontal_GFace_%d.pos", gf->tag());
   //     _printTris(name, AllTris.begin(), AllTris.end(), &DATA);
   //   sprintf(name, "delFrontal_GFace_NEW_%d.pos", gf->tag());
-  //   _printTris(name, AllTris.begin(), AllTris.end(), &DATA,NULL,&degenerated);
+  //   _printTris(name, AllTris.begin(), AllTris.end(), &DATA,nullptr,&degenerated);
   //     sprintf(name, "delFrontal_GFace_%d_Real.pos", gf->tag());
-  //     _printTris(name, AllTris.begin(), AllTris.end(), NULL);
+  //     _printTris(name, AllTris.begin(), AllTris.end(), nullptr);
   //   sprintf(name, "delFrontal_GFace_%d_Real_Curved.pos", gf->tag());
   //   _printTris(name, AllTris.begin(), AllTris.end(), &DATA,gf,&degenerated);
   // sprintf(name,"delFrontal_GFace_%d_Layer_Real%d.pos",gf->tag(),ITERATION);
-  // _printTris (name, AllTris.begin(), AllTris.end(),NULL);
+  // _printTris (name, AllTris.begin(), AllTris.end(),nullptr);
   // sprintf(name,"delFrontal_GFace_%d_Layer_%d_Active.pos",gf->tag(),ITERATION);
   // _printTris (name, ActiveTris.begin(), ActiveTris.end(), &DATA);
 

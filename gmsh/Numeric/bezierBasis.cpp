@@ -448,7 +448,7 @@ namespace {
 
 } // namespace
 
-bezierBasis::bezierBasis(FuncSpaceData data) : _data(data), _raiser(NULL)
+bezierBasis::bezierBasis(FuncSpaceData data) : _data(data), _raiser(nullptr)
 {
   if(_data.elementType() == TYPE_PYR)
     _constructPyr();
@@ -713,7 +713,7 @@ bezierBasisRaiser *bezierBasis::getRaiser() const
 //{
 //  if(raised != 2 && raised != 3){
 //    Msg::Error("Why would you want other than 2 or 3?");
-//    return NULL;
+//    return nullptr;
 //  }
 //  if(_bfs->_data.elementType() != TYPE_PYR)
 //    return BasisFactory::getBezierBasis(

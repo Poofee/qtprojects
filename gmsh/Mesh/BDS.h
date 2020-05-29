@@ -153,7 +153,7 @@ public:
     std::vector<BDS_Face *> getTriangles() const;
     BDS_Point(int id, double x = 0, double y = 0, double z = 0)
         : _lcBGM(1.e22), _lcPTS(1.e22), X(x), Y(y), Z(z), u(0), v(0),
-          config_modified(true), degenerated(false), _periodicCounterpart(NULL),
+          config_modified(true), degenerated(false), _periodicCounterpart(nullptr),
           iD(id), g(0)
     {
     }
@@ -193,7 +193,7 @@ public:
     {
         if(p1 == p) return p2;
         if(p2 == p) return p1;
-        return NULL;
+        return nullptr;
     }
     void addface(BDS_Face *f) { _faces.push_back(f); }
     bool operator<(const BDS_Edge &other) const

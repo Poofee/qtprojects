@@ -36,7 +36,7 @@ static GFace *haveTowGEdges(std::vector<GFace *> &faces, GEdge *ge1, GEdge *ge2)
        std::find(e.begin(), e.end(), ge2) != e.end())
       return faces[i];
   }
-  return NULL;
+  return nullptr;
 }
 
 static void meshPolygon(GRegion *gr, std::vector<MLine *> &poly,
@@ -133,10 +133,10 @@ public:
       if(gf == _f_per_normal[i]) return _v_per_face[i];
     }
     // if (gf) printf("NONE for face %d\n",gf->tag());
-    return NULL;
+    return nullptr;
   }
 
-  SVector3 average_normal(GFace *gf = NULL) const
+  SVector3 average_normal(GFace *gf = nullptr) const
   {
     SVector3 n(0, 0, 0);
     //    printf("%d %d\n",_normals.size(),_f_per_normal.size());
@@ -226,7 +226,7 @@ public:
     std::vector<GEdge *> edges = gr->edges();
     std::vector<GFace *> faces = gr->faces();
     for(size_t i = 0; i < edges.size(); i++) {
-      GFace *f[2] = {NULL, NULL};
+      GFace *f[2] = {nullptr, nullptr};
       std::vector<GFace *> efaces = edges[i]->faces();
       int count = 0;
       bool seam = false;
@@ -283,7 +283,7 @@ public:
       if(_ridges[i]._ge == ge) return &_ridges[i];
     }
     Msg::Error("unknown ridge %d", ge->tag());
-    return NULL;
+    return nullptr;
   }
 
   void classify_ridges()
@@ -440,8 +440,8 @@ public:
       GFace *f0 = it->first.first;
       GFace *f1 = it->first.second;
       std::vector<MVertex *> &verts = it->second;
-      MVertex *v0 = NULL;
-      MVertex *v1 = NULL;
+      MVertex *v0 = nullptr;
+      MVertex *v1 = nullptr;
       for(size_t i = 0; i < v._v_per_face.size(); i++) {
         if(f0 == v._f_per_normal[i]) v0 = v._v_per_face[i];
         if(f1 == v._f_per_normal[i]) v1 = v._v_per_face[i];
@@ -463,7 +463,7 @@ public:
                    (p1.y() - plane.y) * plane.plan[1][1] +
                    (p1.z() - plane.z) * plane.plan[1][2]);
 
-      MVertex *v_plane_0 = NULL;
+      MVertex *v_plane_0 = nullptr;
       std::map<MVertex *, MVertex *>::iterator itp = plane_vertices.find(v0);
       if(itp != plane_vertices.end())
         v_plane_0 = itp->second;
@@ -471,7 +471,7 @@ public:
         v_plane_0 = new MVertex(P0.x(), P0.y(), 0, _gr);
         plane_vertices[v0] = v_plane_0;
       }
-      MVertex *v_plane_1 = NULL;
+      MVertex *v_plane_1 = nullptr;
       itp = plane_vertices.find(v1);
       if(itp != plane_vertices.end())
         v_plane_1 = itp->second;
@@ -649,7 +649,7 @@ public:
         GEdge *ge1 = it->_gedges[1];
         blyr_ridge *ridge0 = getRidge(ge0);
         blyr_ridge *ridge1 = getRidge(ge1);
-        if(ridge0 == NULL && ridge1 == NULL) // not a ridge
+        if(ridge0 == nullptr && ridge1 == nullptr) // not a ridge
           continue;
         else {
           if(ridge0->getType() == blyr_ridge::INTERNAL) {
@@ -718,7 +718,7 @@ public:
                  n2.y(), n2.z());
           SPoint3 p(it->_v->x() + n.x(), it->_v->y() + n.y(),
                     it->_v->z() + n.z());
-          GFace *gf = NULL;
+          GFace *gf = nullptr;
           for(size_t k = 0; k < it->_gfaces.size(); k++) {
             std::vector<GEdge *> e = it->_gfaces[k]->edges();
             if(std::find(e.begin(), e.end(), ridge->_ge) == e.end()) {
@@ -828,7 +828,7 @@ public:
         blyr_ridge *ridge1 = getRidge(ge1);
         //	printf("%d %d %g %g %d
         //%d\n",ge0->tag(),ge1->tag(),ridge0->min_angle,ridge0->max_angle,ridge0->getType(),blyr_ridge::FLAT);
-        if(ridge0 == NULL && ridge1 == NULL) { // not a ridge
+        if(ridge0 == nullptr && ridge1 == nullptr) { // not a ridge
           if(!it->_triangles.empty()) add_one_normal(*it);
         }
         else {
@@ -964,12 +964,12 @@ public:
             SVector3(mev->x() - v->x(), mev->y() - v->y(), mev->z() - v->z());
         }
         else {
-          vplus.push_back(blyr_mvertex(NULL));
+          vplus.push_back(blyr_mvertex(nullptr));
         }
       }
 
       // CREATE A VOLUME VERTEX IN CASE OF A FULL INTERNAL CORNER
-      MVertex *vr = NULL;
+      MVertex *vr = nullptr;
       if(_externals.empty()) {
         vr =
           new MVertex(v->x() + NR.x(), v->y() + NR.y(), v->z() + NR.z(), _gr);
@@ -978,7 +978,7 @@ public:
 
       // ADD POINTS ON BOTH NEIGHBORING FACES IF RIDGE IS INTERNAL
       for(size_t iGe = 0; iGe < it->_gedges.size(); iGe++) {
-        if(vplus[iGe]._v != NULL) {
+        if(vplus[iGe]._v != nullptr) {
           GEdge *gei = it->_gedges[iGe];
           blyr_ridge *ridgei = getRidge(gei);
 
@@ -988,14 +988,14 @@ public:
               blyr_ridge *ridgej = getRidge(gej);
               GFace *gf = haveTowGEdges(_faces, gei, gej);
               if(gf) {
-                MVertex *vf = NULL;
+                MVertex *vf = nullptr;
                 //		printf("s %d %d %d -- %d %d -- %d -- %p
                 //%p\n",v->getNum(),iGe,jGe,gei->tag(),gej->tag(),gf->tag(),vplus[iGe]._v,vplus[jGe]._v);
 
                 SVector3 dx1(vplus[iGe]._v->x() - v->x(),
                              vplus[iGe]._v->y() - v->y(),
                              vplus[iGe]._v->z() - v->z());
-                if((vplus[jGe]._v != NULL) && (jGe > iGe)) {
+                if((vplus[jGe]._v != nullptr) && (jGe > iGe)) {
                   SVector3 dx2(vplus[jGe]._v->x() - v->x(),
                                vplus[jGe]._v->y() - v->y(),
                                vplus[jGe]._v->z() - v->z());
@@ -1064,7 +1064,7 @@ public:
                     vplus[jGe]._f_per_normal.push_back(gf);
                   }
                 }
-                else if(vplus[jGe]._v == NULL) {
+                else if(vplus[jGe]._v == nullptr) {
                   //		  printf("-------------------------------------->%d
                   //%d %d -- %d %d -- %d -- %p
                   //%p\n",v->getNum(),iGe,jGe,gei->tag(),gej->tag(),gf->tag(),vplus[iGe]._v,vplus[jGe]._v);

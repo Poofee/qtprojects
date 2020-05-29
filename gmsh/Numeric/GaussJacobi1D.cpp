@@ -65,8 +65,8 @@ int main(int argc, char **argv)
   printf(
     "void getGaussJacobiQuadrature(int a, int b, int n, double **pt, double **wt)\n"
     "{\n"
-    "  *pt = NULL;\n"
-    "  *wt = NULL;\n"
+    "  *pt = nullptr;\n"
+    "  *wt = nullptr;\n"
     "  if(a < 0 || a > %i || b < 0 || b > %i)\n"
     "    Msg::Error(\"Gauss-Jacobi %%i %%i quadrature not available.\", a, b);\n"
     "  switch (n) {\n", maxA, maxA);
@@ -4178,8 +4178,8 @@ static double _gaussJacobiWt_20[5][5][20] = {
 
 void getGaussJacobiQuadrature(int a, int b, int n, double **pt, double **wt)
 {
-  *pt = NULL;
-  *wt = NULL;
+  *pt = nullptr;
+  *wt = nullptr;
   if(a < 0 || a > 4 || b < 0 || b > 4)
     Msg::Error("Gauss-Jacobi %i %i quadrature not available.", a, b);
   switch(n) {
