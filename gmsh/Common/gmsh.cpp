@@ -80,7 +80,7 @@ extern "C" {
 
 static int _initialized = 0;
 static int _argc = 0;
-static char **_argv = 0;
+static char **_argv = nullptr;
 
 static bool _isInitialized()
 {
@@ -123,7 +123,7 @@ GMSH_API void gmsh::finalize()
     if(GmshFinalize()) {
         _argc = 0;
         if(_argv) delete[] _argv;
-        _argv = 0;
+        _argv = nullptr;
         _initialized = 0;
         return;
     }
@@ -503,7 +503,7 @@ GMSH_API int gmsh::model::addDiscreteEntity(const int dim, const int tag,
         break;
     }
     case 1: {
-        GEdge *ge = new discreteEdge(GModel::current(), outTag, 0, 0);
+        GEdge *ge = new discreteEdge(GModel::current(), outTag, nullptr, nullptr);
         GModel::current()->add(ge);
         break;
     }
@@ -1160,7 +1160,7 @@ GMSH_API void gmsh::model::mesh::setNodes(
         double x = coord[3 * i];
         double y = coord[3 * i + 1];
         double z = coord[3 * i + 2];
-        MVertex *vv = 0;
+        MVertex *vv = nullptr;
         if(param && dim == 1) {
             double u = parametricCoord[i];
             vv = new MEdgeVertex(x, y, z, ge, u, n);
@@ -1520,7 +1520,7 @@ GMSH_API void gmsh::model::mesh::getElementProperties(
     numNodes = MElement::getInfoMSH(elementType, &n);
     name = n;
     int parentType = ElementType::getParentType(elementType);
-    nodalBasis *basis = 0;
+    nodalBasis *basis = nullptr;
     if(parentType == TYPE_PYR)
         basis = new pyramidalBasis(elementType);
     else
@@ -1953,7 +1953,7 @@ GMSH_API void gmsh::model::mesh::getBasisFunctions(
         integrationPoints.push_back(weights(i));
     }
     // get function space info
-    const nodalBasis *basis = 0;
+    const nodalBasis *basis = nullptr;
     if(numComponents) {
         if(fsOrder == -1) { // isoparametric
             basis = BasisFactory::getNodalBasis(elementType);
@@ -2718,13 +2718,13 @@ static FieldOption *_getFieldOption(const int tag, const std::string &option)
     Field *field = GModel::current()->getFields()->get(tag);
     if(!field) {
         Msg::Error("No field with id %i", tag);
-        return 0;
+        return nullptr;
     }
     FieldOption *o = field->options[option];
     if(!o) {
         Msg::Error("Unknown option '%s' in field %i of type '%s'", option.c_str(),
                    tag, field->getName());
-        return 0;
+        return nullptr;
     }
     return o;
 }
@@ -3018,7 +3018,7 @@ static ExtrudeParams *_getExtrudeParams(const std::vector<int> &numElements,
                                         const std::vector<double> &heights,
                                         const bool recombine)
 {
-    ExtrudeParams *e = 0;
+    ExtrudeParams *e = nullptr;
     if(numElements.size()) {
         e = new ExtrudeParams();
         e->mesh.ExtrudeMesh = true;
@@ -4922,7 +4922,7 @@ GMSH_API void gmsh::logger::stop()
     GmshMessage *msg = Msg::GetCallback();
     if(msg) {
         delete msg;
-        Msg::SetCallback(0);
+        Msg::SetCallback(nullptr);
     }
     else {
         Msg::Warning("Logger not started - ignoring");

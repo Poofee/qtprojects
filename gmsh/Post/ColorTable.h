@@ -46,7 +46,7 @@ void ColorTable_Recompute(GmshColorTable *ct);
 void ColorTable_Copy(GmshColorTable *ct);
 void ColorTable_Paste(GmshColorTable *ct);
 void ColorTable_Print(GmshColorTable *ct, FILE *fp,
-                      std::vector<std::string> *vec = 0);
+                      std::vector<std::string> *vec = nullptr);
 int ColorTable_IsAlpha(GmshColorTable *ct);
 int ColorTable_Diff(GmshColorTable *ct1, GmshColorTable *ct2);
 
